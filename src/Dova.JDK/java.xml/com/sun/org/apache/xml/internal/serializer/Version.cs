@@ -1,0 +1,111 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.com.sun.org.apache.xml.@internal.serializer;
+
+[JniSignatureAttribute("Lcom/sun/org/apache/xml/internal/serializer/Version;", "public final")]
+public partial class Version
+	: Dova.JDK.java.lang.Object
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static Version()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/serializer/Version;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Version", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getVersion", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getProduct", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImplementationLanguage", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getMajorVersionNum", "()I"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getReleaseVersionNum", "()I"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getDevelopmentVersionNum", "()I"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getMaintenanceVersionNum", "()I"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "_main", "([Ljava/lang/String;)V"));
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public Version(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("()V", "public")]
+	public Version() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Lcom/sun/org/apache/xml/internal/serializer/Version;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()Ljava/lang/String;", "public static")]
+	public static Dova.JDK.java.lang.String getVersion()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/lang/String;", "public static")]
+	public static Dova.JDK.java.lang.String getProduct()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/lang/String;", "public static")]
+	public static Dova.JDK.java.lang.String getImplementationLanguage()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("()I", "public static")]
+	public static int getMajorVersionNum()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[3]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()I", "public static")]
+	public static int getReleaseVersionNum()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[4]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()I", "public static")]
+	public static int getDevelopmentVersionNum()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[5]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()I", "public static")]
+	public static int getMaintenanceVersionNum()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[6]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("([Ljava/lang/String;)V", "public static")]
+	public static void _main(JavaArray<Dova.JDK.java.lang.String> arg0)
+	{
+		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+	}
+}

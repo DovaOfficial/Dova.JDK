@@ -1,0 +1,1144 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.javax.imageio;
+
+[JniSignatureAttribute("Ljavax/imageio/ImageIO;", "public final")]
+public partial class ImageIO
+	: Dova.JDK.java.lang.Object
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static ImageIO()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theRegistry", "Ljavax/imageio/spi/IIORegistry;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "readerFormatNamesMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "readerFileSuffixesMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "readerMIMETypesMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "writerFormatNamesMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "writerFileSuffixesMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "writerMIMETypesMethod", "Ljava/lang/reflect/Method;"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageIO", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "contains", "([Ljava/lang/String;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljavax/imageio/stream/ImageOutputStream;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljava/io/File;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljava/io/OutputStream;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/File;)Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljavax/imageio/stream/ImageInputStream;)Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/net/URL;)Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageReader", "(Ljavax/imageio/ImageWriter;)Ljavax/imageio/ImageReader;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getWriterMIMETypes", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageReadersByMIMEType", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createImageInputStream", "(Ljava/lang/Object;)Ljavax/imageio/stream/ImageInputStream;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageWritersByMIMEType", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createImageOutputStream", "(Ljava/lang/Object;)Ljavax/imageio/stream/ImageOutputStream;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getCacheInfo", "()Ljavax/imageio/ImageIO$CacheInfo;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getCacheDirectory", "()Ljava/io/File;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getTempDir", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "setUseCache", "(Z)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getUseCache", "()Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "setCacheDirectory", "(Ljava/io/File;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "hasCachePermission", "()Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getWriter", "(Ljava/awt/image/RenderedImage;Ljava/lang/String;)Ljavax/imageio/ImageWriter;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getReaderWriterInfo", "(Ljava/lang/Class;Ljavax/imageio/ImageIO$SpiInfo;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageReaders", "(Ljava/lang/Object;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "doWrite", "(Ljava/awt/image/RenderedImage;Ljavax/imageio/ImageWriter;Ljavax/imageio/stream/ImageOutputStream;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageWriters", "(Ljavax/imageio/ImageTypeSpecifier;Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "scanForPlugins", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getReaderFormatNames", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getReaderMIMETypes", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getReaderFileSuffixes", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageReadersByFormatName", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageReadersBySuffix", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getWriterFormatNames", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getWriterFileSuffixes", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageWritersByFormatName", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageWritersBySuffix", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageWriter", "(Ljavax/imageio/ImageReader;)Ljavax/imageio/ImageWriter;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getImageTranscoders", "(Ljavax/imageio/ImageReader;Ljavax/imageio/ImageWriter;)Ljava/util/Iterator;"));
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/spi/IIORegistry;", "private static final")]
+	public static Dova.JDK.javax.imageio.spi.IIORegistry theRegistry_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.spi.IIORegistry>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method readerFormatNamesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method readerFileSuffixesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method readerMIMETypesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method writerFormatNamesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method writerFileSuffixesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private static")]
+	public static Dova.JDK.java.lang.reflect.Method writerMIMETypesMethod_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public ImageIO(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("()V", "private")]
+	public ImageIO() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("([Ljava/lang/String;Ljava/lang/String;)Z", "private static")]
+	public static bool contains(JavaArray<Dova.JDK.java.lang.String> arg0, Dova.JDK.java.lang.String arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljavax/imageio/stream/ImageOutputStream;)Z", "public static")]
+	public static bool write(Dova.JDK.java.awt.image.RenderedImage arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.javax.imageio.stream.ImageOutputStream arg2)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljava/io/File;)Z", "public static")]
+	public static bool write(Dova.JDK.java.awt.image.RenderedImage arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.io.File arg2)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/image/RenderedImage;Ljava/lang/String;Ljava/io/OutputStream;)Z", "public static")]
+	public static bool write(Dova.JDK.java.awt.image.RenderedImage arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.io.OutputStream arg2)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1, arg2);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/io/InputStream;)Ljava/awt/image/BufferedImage;", "public static")]
+	public static Dova.JDK.java.awt.image.BufferedImage read(Dova.JDK.java.io.InputStream arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.image.BufferedImage>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/io/File;)Ljava/awt/image/BufferedImage;", "public static")]
+	public static Dova.JDK.java.awt.image.BufferedImage read(Dova.JDK.java.io.File arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.image.BufferedImage>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljavax/imageio/stream/ImageInputStream;)Ljava/awt/image/BufferedImage;", "public static")]
+	public static Dova.JDK.java.awt.image.BufferedImage read(Dova.JDK.javax.imageio.stream.ImageInputStream arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.image.BufferedImage>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/net/URL;)Ljava/awt/image/BufferedImage;", "public static")]
+	public static Dova.JDK.java.awt.image.BufferedImage read(Dova.JDK.java.net.URL arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.image.BufferedImage>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljavax/imageio/ImageWriter;)Ljavax/imageio/ImageReader;", "public static")]
+	public static Dova.JDK.javax.imageio.ImageReader getImageReader(Dova.JDK.javax.imageio.ImageWriter arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageReader>(ret);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getWriterMIMETypes()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[9]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageReadersByMIMEType(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[10], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Object;)Ljavax/imageio/stream/ImageInputStream;", "public static")]
+	public static Dova.JDK.javax.imageio.stream.ImageInputStream createImageInputStream(Dova.JDK.java.lang.Object arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[11], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.stream.ImageInputStream>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageWritersByMIMEType(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[12], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Object;)Ljavax/imageio/stream/ImageOutputStream;", "public static")]
+	public static Dova.JDK.javax.imageio.stream.ImageOutputStream createImageOutputStream(Dova.JDK.java.lang.Object arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[13], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.stream.ImageOutputStream>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljavax/imageio/ImageIO$CacheInfo;", "private static synchronized")]
+	public static Dova.JDK.javax.imageio.ImageIO.CacheInfo getCacheInfo()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[14]);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageIO.CacheInfo>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/io/File;", "public static")]
+	public static Dova.JDK.java.io.File getCacheDirectory()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[15]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/lang/String;", "private static")]
+	public static Dova.JDK.java.lang.String getTempDir()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[16]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("(Z)V", "public static")]
+	public static void setUseCache(bool arg0)
+	{
+		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[17], arg0);
+	}
+
+	[JniSignatureAttribute("()Z", "public static")]
+	public static bool getUseCache()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[18]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/io/File;)V", "public static")]
+	public static void setCacheDirectory(Dova.JDK.java.io.File arg0)
+	{
+		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[19], arg0);
+	}
+
+	[JniSignatureAttribute("()Z", "private static")]
+	public static bool hasCachePermission()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[20]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/image/RenderedImage;Ljava/lang/String;)Ljavax/imageio/ImageWriter;", "private static")]
+	public static Dova.JDK.javax.imageio.ImageWriter getWriter(Dova.JDK.java.awt.image.RenderedImage arg0, Dova.JDK.java.lang.String arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[21], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageWriter>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Class;Ljavax/imageio/ImageIO$SpiInfo;)[Ljava/lang/String;", "private static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getReaderWriterInfo(Dova.JDK.java.lang.Class arg0, Dova.JDK.javax.imageio.ImageIO.SpiInfo arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[22], arg0, arg1);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageReaders(Dova.JDK.java.lang.Object arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[23], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/image/RenderedImage;Ljavax/imageio/ImageWriter;Ljavax/imageio/stream/ImageOutputStream;)Z", "private static")]
+	public static bool doWrite(Dova.JDK.java.awt.image.RenderedImage arg0, Dova.JDK.javax.imageio.ImageWriter arg1, Dova.JDK.javax.imageio.stream.ImageOutputStream arg2)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[24], arg0, arg1, arg2);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljavax/imageio/ImageTypeSpecifier;Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageWriters(Dova.JDK.javax.imageio.ImageTypeSpecifier arg0, Dova.JDK.java.lang.String arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[25], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("()V", "public static")]
+	public static void scanForPlugins()
+	{
+		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[26]);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getReaderFormatNames()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[27]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getReaderMIMETypes()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[28]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getReaderFileSuffixes()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[29]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageReadersByFormatName(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[30], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageReadersBySuffix(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[31], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getWriterFormatNames()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[32]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("()[Ljava/lang/String;", "public static")]
+	public static JavaArray<Dova.JDK.java.lang.String> getWriterFileSuffixes()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[33]);
+		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageWritersByFormatName(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[34], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageWritersBySuffix(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[35], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljavax/imageio/ImageReader;)Ljavax/imageio/ImageWriter;", "public static")]
+	public static Dova.JDK.javax.imageio.ImageWriter getImageWriter(Dova.JDK.javax.imageio.ImageReader arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[36], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageWriter>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljavax/imageio/ImageReader;Ljavax/imageio/ImageWriter;)Ljava/util/Iterator;", "public static")]
+	public static Dova.JDK.java.util.Iterator getImageTranscoders(Dova.JDK.javax.imageio.ImageReader arg0, Dova.JDK.javax.imageio.ImageWriter arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[37], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$CacheInfo;", "static")]
+	public partial class CacheInfo
+		: Dova.JDK.java.lang.Object
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static CacheInfo()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$CacheInfo;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "useCache", "Z"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cacheDirectory", "Ljava/io/File;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hasPermission", "Ljava/lang/Boolean;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CacheInfo", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getHasPermission", "()Ljava/lang/Boolean;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCacheDirectory", "()Ljava/io/File;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setHasPermission", "(Ljava/lang/Boolean;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setUseCache", "(Z)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getUseCache", "()Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setCacheDirectory", "(Ljava/io/File;)V"));
+		}
+
+		[JniSignatureAttribute("Z", "")]
+		public bool useCache_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+		}
+
+		[JniSignatureAttribute("Ljava/io/File;", "")]
+		public Dova.JDK.java.io.File cacheDirectory_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Boolean;", "")]
+		public Dova.JDK.java.lang.Boolean hasPermission_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Boolean>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public CacheInfo(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public CacheInfo() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$CacheInfo;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()Ljava/lang/Boolean;", "public")]
+		public Dova.JDK.java.lang.Boolean getHasPermission()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Boolean>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljava/io/File;", "public")]
+		public Dova.JDK.java.io.File getCacheDirectory()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/Boolean;)V", "public")]
+		public void setHasPermission(Dova.JDK.java.lang.Boolean arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		}
+
+		[JniSignatureAttribute("(Z)V", "public")]
+		public void setUseCache(bool arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		}
+
+		[JniSignatureAttribute("()Z", "public")]
+		public bool getUseCache()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/io/File;)V", "public")]
+		public void setCacheDirectory(Dova.JDK.java.io.File arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$SpiInfo;", "private abstract static")]
+	public partial class SpiInfo
+		: Dova.JDK.java.lang.Enum
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SpiInfo()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$SpiInfo;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FORMAT_NAMES", "Ljavax/imageio/ImageIO$SpiInfo;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MIME_TYPES", "Ljavax/imageio/ImageIO$SpiInfo;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_SUFFIXES", "Ljavax/imageio/ImageIO$SpiInfo;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljavax/imageio/ImageIO$SpiInfo;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SpiInfo", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljavax/imageio/ImageIO$SpiInfo;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljavax/imageio/ImageIO$SpiInfo;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "info", "(Ljavax/imageio/spi/ImageReaderWriterSpi;)[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljavax/imageio/ImageIO$SpiInfo;"));
+		}
+
+		[JniSignatureAttribute("Ljavax/imageio/ImageIO$SpiInfo;", "public static final")]
+		public static Dova.JDK.javax.imageio.ImageIO.SpiInfo FORMAT_NAMES_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageIO.SpiInfo>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljavax/imageio/ImageIO$SpiInfo;", "public static final")]
+		public static Dova.JDK.javax.imageio.ImageIO.SpiInfo MIME_TYPES_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageIO.SpiInfo>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljavax/imageio/ImageIO$SpiInfo;", "public static final")]
+		public static Dova.JDK.javax.imageio.ImageIO.SpiInfo FILE_SUFFIXES_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageIO.SpiInfo>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("[Ljavax/imageio/ImageIO$SpiInfo;", "private static final")]
+		public static JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo> VALUES_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo>>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SpiInfo(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
+		public SpiInfo(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$SpiInfo;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()[Ljavax/imageio/ImageIO$SpiInfo;", "public static")]
+		public static JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo> values()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo>>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/String;)Ljavax/imageio/ImageIO$SpiInfo;", "public static")]
+		public static Dova.JDK.javax.imageio.ImageIO.SpiInfo valueOf(Dova.JDK.java.lang.String arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageIO.SpiInfo>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljavax/imageio/spi/ImageReaderWriterSpi;)[Ljava/lang/String;", "abstract")]
+		public JavaArray<Dova.JDK.java.lang.String> info(Dova.JDK.javax.imageio.spi.ImageReaderWriterSpi arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
+		}
+
+		[JniSignatureAttribute("()[Ljavax/imageio/ImageIO$SpiInfo;", "private static")]
+		public static JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo> _values()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.imageio.ImageIO.SpiInfo>>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$CanDecodeInputFilter;", "static")]
+	public partial class CanDecodeInputFilter
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.javax.imageio.spi.ServiceRegistry.Filter
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static CanDecodeInputFilter()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$CanDecodeInputFilter;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "input", "Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CanDecodeInputFilter", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/lang/Object;)Z"));
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Object;", "")]
+		public Dova.JDK.java.lang.Object input_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public CanDecodeInputFilter(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)V", "public")]
+		public CanDecodeInputFilter(Dova.JDK.java.lang.Object arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$CanDecodeInputFilter;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool filter(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$ImageReaderIterator;", "static")]
+	public partial class ImageReaderIterator
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.java.util.Iterator
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ImageReaderIterator()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$ImageReaderIterator;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "iter", "Ljava/util/Iterator;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageReaderIterator", "(Ljava/util/Iterator;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasNext", "()Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_1", "()Ljavax/imageio/ImageReader;"));
+		}
+
+		[JniSignatureAttribute("Ljava/util/Iterator;", "private")]
+		public Dova.JDK.java.util.Iterator iter_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ImageReaderIterator(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/util/Iterator;)V", "public")]
+		public ImageReaderIterator(Dova.JDK.java.util.Iterator arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$ImageReaderIterator;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()V", "public")]
+		public void remove()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		}
+
+		[JniSignatureAttribute("()Z", "public")]
+		public bool hasNext()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
+		public Dova.JDK.java.lang.Object next_0()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljavax/imageio/ImageReader;", "public")]
+		public Dova.JDK.javax.imageio.ImageReader next_1()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageReader>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$ContainsFilter;", "static")]
+	public partial class ContainsFilter
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.javax.imageio.spi.ServiceRegistry.Filter
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ContainsFilter()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$ContainsFilter;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "method", "Ljava/lang/reflect/Method;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ContainsFilter", "(Ljava/lang/reflect/Method;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/lang/Object;)Z"));
+		}
+
+		[JniSignatureAttribute("Ljava/lang/reflect/Method;", "")]
+		public Dova.JDK.java.lang.reflect.Method method_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.reflect.Method>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String name_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ContainsFilter(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/reflect/Method;Ljava/lang/String;)V", "public")]
+		public ContainsFilter(Dova.JDK.java.lang.reflect.Method arg0, Dova.JDK.java.lang.String arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$ContainsFilter;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool filter(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$ImageWriterIterator;", "static")]
+	public partial class ImageWriterIterator
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.java.util.Iterator
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ImageWriterIterator()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$ImageWriterIterator;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "iter", "Ljava/util/Iterator;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageWriterIterator", "(Ljava/util/Iterator;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasNext", "()Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_1", "()Ljavax/imageio/ImageWriter;"));
+		}
+
+		[JniSignatureAttribute("Ljava/util/Iterator;", "private")]
+		public Dova.JDK.java.util.Iterator iter_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ImageWriterIterator(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/util/Iterator;)V", "public")]
+		public ImageWriterIterator(Dova.JDK.java.util.Iterator arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$ImageWriterIterator;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()V", "public")]
+		public void remove()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		}
+
+		[JniSignatureAttribute("()Z", "public")]
+		public bool hasNext()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
+		public Dova.JDK.java.lang.Object next_0()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljavax/imageio/ImageWriter;", "public")]
+		public Dova.JDK.javax.imageio.ImageWriter next_1()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageWriter>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$CanEncodeImageAndFormatFilter;", "static")]
+	public partial class CanEncodeImageAndFormatFilter
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.javax.imageio.spi.ServiceRegistry.Filter
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static CanEncodeImageAndFormatFilter()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$CanEncodeImageAndFormatFilter;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/imageio/ImageTypeSpecifier;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "formatName", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CanEncodeImageAndFormatFilter", "(Ljavax/imageio/ImageTypeSpecifier;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/lang/Object;)Z"));
+		}
+
+		[JniSignatureAttribute("Ljavax/imageio/ImageTypeSpecifier;", "")]
+		public Dova.JDK.javax.imageio.ImageTypeSpecifier type_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageTypeSpecifier>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String formatName_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public CanEncodeImageAndFormatFilter(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljavax/imageio/ImageTypeSpecifier;Ljava/lang/String;)V", "public")]
+		public CanEncodeImageAndFormatFilter(Dova.JDK.javax.imageio.ImageTypeSpecifier arg0, Dova.JDK.java.lang.String arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$CanEncodeImageAndFormatFilter;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool filter(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$TranscoderFilter;", "static")]
+	public partial class TranscoderFilter
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.javax.imageio.spi.ServiceRegistry.Filter
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static TranscoderFilter()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$TranscoderFilter;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "readerSpiName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writerSpiName", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TranscoderFilter", "(Ljavax/imageio/spi/ImageReaderSpi;Ljavax/imageio/spi/ImageWriterSpi;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/lang/Object;)Z"));
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String readerSpiName_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String writerSpiName_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public TranscoderFilter(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljavax/imageio/spi/ImageReaderSpi;Ljavax/imageio/spi/ImageWriterSpi;)V", "public")]
+		public TranscoderFilter(Dova.JDK.javax.imageio.spi.ImageReaderSpi arg0, Dova.JDK.javax.imageio.spi.ImageWriterSpi arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$TranscoderFilter;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool filter(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+	}
+
+	[JniSignatureAttribute("Ljavax/imageio/ImageIO$ImageTranscoderIterator;", "static")]
+	public partial class ImageTranscoderIterator
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.java.util.Iterator
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ImageTranscoderIterator()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/ImageIO$ImageTranscoderIterator;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "iter", "Ljava/util/Iterator;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageTranscoderIterator", "(Ljava/util/Iterator;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasNext", "()Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next_1", "()Ljavax/imageio/ImageTranscoder;"));
+		}
+
+		[JniSignatureAttribute("Ljava/util/Iterator;", "public")]
+		public Dova.JDK.java.util.Iterator iter_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ImageTranscoderIterator(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/util/Iterator;)V", "public")]
+		public ImageTranscoderIterator(Dova.JDK.java.util.Iterator arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljavax/imageio/ImageIO$ImageTranscoderIterator;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()V", "public")]
+		public void remove()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		}
+
+		[JniSignatureAttribute("()Z", "public")]
+		public bool hasNext()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
+		public Dova.JDK.java.lang.Object next_0()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljavax/imageio/ImageTranscoder;", "public")]
+		public Dova.JDK.javax.imageio.ImageTranscoder next_1()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.ImageTranscoder>(ret);
+		}
+	}
+}

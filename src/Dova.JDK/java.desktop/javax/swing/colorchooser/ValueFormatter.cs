@@ -1,0 +1,167 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.javax.swing.colorchooser;
+
+[JniSignatureAttribute("Ljavax/swing/colorchooser/ValueFormatter;", "final")]
+public partial class ValueFormatter
+	: Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter
+	, Dova.JDK.java.awt.@event.FocusListener
+	, Dova.JDK.java.lang.Runnable
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static ValueFormatter()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/colorchooser/ValueFormatter;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filter", "Ljavax/swing/text/DocumentFilter;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "radix", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "text", "Ljavax/swing/JFormattedTextField;"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ValueFormatter", "(IZ)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "init", "(IZLjavax/swing/JFormattedTextField;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isValid", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isValid", "(I)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "stringToValue", "(Ljava/lang/String;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "valueToString", "(Ljava/lang/Object;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getDocumentFilter", "()Ljavax/swing/text/DocumentFilter;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
+	}
+
+	[JniSignatureAttribute("Ljavax/swing/text/DocumentFilter;", "private final")]
+	public Dova.JDK.javax.swing.text.DocumentFilter filter_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DocumentFilter>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "private final")]
+	public int length_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+	}
+
+	[JniSignatureAttribute("I", "private final")]
+	public int radix_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+	}
+
+	[JniSignatureAttribute("Ljavax/swing/JFormattedTextField;", "private")]
+	public Dova.JDK.javax.swing.JFormattedTextField text_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JFormattedTextField>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public ValueFormatter(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(IZ)V", "")]
+	public ValueFormatter(int arg0, bool arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljavax/swing/colorchooser/ValueFormatter;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()V", "public")]
+	public void run()
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+	}
+
+	[JniSignatureAttribute("(IZLjavax/swing/JFormattedTextField;)V", "static")]
+	public static void init(int arg0, bool arg1, Dova.JDK.javax.swing.JFormattedTextField arg2)
+	{
+		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Z", "private")]
+	public bool isValid(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(I)Z", "private")]
+	public bool isValid(int arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/Object;", "public")]
+	public Dova.JDK.java.lang.Object stringToValue(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/String;", "public")]
+	public Dova.JDK.java.lang.String valueToString(Dova.JDK.java.lang.Object arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljavax/swing/text/DocumentFilter;", "protected")]
+	public Dova.JDK.javax.swing.text.DocumentFilter getDocumentFilter()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DocumentFilter>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/event/FocusEvent;)V", "public")]
+	public void focusGained(Dova.JDK.java.awt.@event.FocusEvent arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/event/FocusEvent;)V", "public")]
+	public void focusLost(Dova.JDK.java.awt.@event.FocusEvent arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+	}
+}

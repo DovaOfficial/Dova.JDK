@@ -1,0 +1,674 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.sun.security.rsa;
+
+[JniSignatureAttribute("Lsun/security/rsa/RSASignature;", "public abstract")]
+public partial class RSASignature
+	: Dova.JDK.java.security.SignatureSpi
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static RSASignature()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "baseLength", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "digestOID", "Lsun/security/util/ObjectIdentifier;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "encodedLength", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "md", "Ljava/security/MessageDigest;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "digestReset", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "privateKey", "Ljava/security/interfaces/RSAPrivateKey;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "publicKey", "Ljava/security/interfaces/RSAPublicKey;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "padding", "Lsun/security/rsa/RSAPadding;"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RSASignature", "(Ljava/lang/String;Lsun/security/util/ObjectIdentifier;I)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGetParameters", "()Ljava/security/AlgorithmParameters;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineUpdate", "([BII)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineUpdate", "(B)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineUpdate", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initCommon", "(Ljava/security/interfaces/RSAKey;Ljava/security/SecureRandom;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineSetParameter", "(Ljava/lang/String;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineSetParameter", "(Ljava/security/spec/AlgorithmParameterSpec;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGetParameter", "(Ljava/lang/String;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineVerify", "([B)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "resetDigest", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInitSign", "(Ljava/security/PrivateKey;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInitSign", "(Ljava/security/PrivateKey;Ljava/security/SecureRandom;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getDigestValue", "()[B"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "encodeSignature", "(Lsun/security/util/ObjectIdentifier;[B)[B"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "decodeSignature", "(Lsun/security/util/ObjectIdentifier;[B)[B"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInitVerify", "(Ljava/security/PublicKey;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineSign", "()[B"));
+	}
+
+	[JniSignatureAttribute("I", "private static final")]
+	public static int baseLength_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+	}
+
+	[JniSignatureAttribute("Lsun/security/util/ObjectIdentifier;", "private final")]
+	public Dova.JDK.sun.security.util.ObjectIdentifier digestOID_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.ObjectIdentifier>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "private final")]
+	public int encodedLength_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+	}
+
+	[JniSignatureAttribute("Ljava/security/MessageDigest;", "private final")]
+	public Dova.JDK.java.security.MessageDigest md_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.security.MessageDigest>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Z", "private")]
+	public bool digestReset_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+	}
+
+	[JniSignatureAttribute("Ljava/security/interfaces/RSAPrivateKey;", "private")]
+	public Dova.JDK.java.security.interfaces.RSAPrivateKey privateKey_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.security.interfaces.RSAPrivateKey>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/security/interfaces/RSAPublicKey;", "private")]
+	public Dova.JDK.java.security.interfaces.RSAPublicKey publicKey_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.security.interfaces.RSAPublicKey>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSAPadding;", "private")]
+	public Dova.JDK.sun.security.rsa.RSAPadding padding_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.rsa.RSAPadding>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public RSASignature(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/ObjectIdentifier;I)V", "")]
+	public RSASignature(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.ObjectIdentifier arg1, int arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()Ljava/security/AlgorithmParameters;", "protected")]
+	public Dova.JDK.java.security.AlgorithmParameters engineGetParameters()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.security.AlgorithmParameters>(ret);
+	}
+
+	[JniSignatureAttribute("([BII)V", "protected")]
+	public void engineUpdate(JavaArray<byte> arg0, int arg1, int arg2)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+	}
+
+	[JniSignatureAttribute("(B)V", "protected")]
+	public void engineUpdate(byte arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "protected")]
+	public void engineUpdate(Dova.JDK.java.nio.ByteBuffer arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/security/interfaces/RSAKey;Ljava/security/SecureRandom;)V", "private")]
+	public void initCommon(Dova.JDK.java.security.interfaces.RSAKey arg0, Dova.JDK.java.security.SecureRandom arg1)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Object;)V", "protected")]
+	public void engineSetParameter(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Object arg1)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+	}
+
+	[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;)V", "protected")]
+	public void engineSetParameter(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/Object;", "protected")]
+	public Dova.JDK.java.lang.Object engineGetParameter(Dova.JDK.java.lang.String arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+	}
+
+	[JniSignatureAttribute("([B)Z", "protected")]
+	public bool engineVerify(JavaArray<byte> arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()V", "private")]
+	public void resetDigest()
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9]);
+	}
+
+	[JniSignatureAttribute("(Ljava/security/PrivateKey;)V", "protected")]
+	public void engineInitSign(Dova.JDK.java.security.PrivateKey arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/security/PrivateKey;Ljava/security/SecureRandom;)V", "protected")]
+	public void engineInitSign(Dova.JDK.java.security.PrivateKey arg0, Dova.JDK.java.security.SecureRandom arg1)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
+	}
+
+	[JniSignatureAttribute("()[B", "private")]
+	public JavaArray<byte> getDigestValue()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12]);
+		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
+	}
+
+	[JniSignatureAttribute("(Lsun/security/util/ObjectIdentifier;[B)[B", "public static")]
+	public static JavaArray<byte> encodeSignature(Dova.JDK.sun.security.util.ObjectIdentifier arg0, JavaArray<byte> arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[13], arg0, arg1);
+		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
+	}
+
+	[JniSignatureAttribute("(Lsun/security/util/ObjectIdentifier;[B)[B", "public static")]
+	public static JavaArray<byte> decodeSignature(Dova.JDK.sun.security.util.ObjectIdentifier arg0, JavaArray<byte> arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[14], arg0, arg1);
+		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/security/PublicKey;)V", "protected")]
+	public void engineInitVerify(Dova.JDK.java.security.PublicKey arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+	}
+
+	[JniSignatureAttribute("()[B", "protected")]
+	public JavaArray<byte> engineSign()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16]);
+		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA3_512withRSA;", "public static final")]
+	public partial class SHA3_512withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA3_512withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA3_512withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_512withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA3_512withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA3_512withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA3_512withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA3_384withRSA;", "public static final")]
+	public partial class SHA3_384withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA3_384withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA3_384withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_384withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA3_384withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA3_384withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA3_384withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA3_256withRSA;", "public static final")]
+	public partial class SHA3_256withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA3_256withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA3_256withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_256withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA3_256withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA3_256withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA3_256withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA3_224withRSA;", "public static final")]
+	public partial class SHA3_224withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA3_224withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA3_224withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_224withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA3_224withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA3_224withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA3_224withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA512_256withRSA;", "public static final")]
+	public partial class SHA512_256withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA512_256withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA512_256withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512_256withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA512_256withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA512_256withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA512_256withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA512_224withRSA;", "public static final")]
+	public partial class SHA512_224withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA512_224withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA512_224withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512_224withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA512_224withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA512_224withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA512_224withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA512withRSA;", "public static final")]
+	public partial class SHA512withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA512withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA512withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA512withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA512withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA512withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA384withRSA;", "public static final")]
+	public partial class SHA384withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA384withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA384withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA384withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA384withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA384withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA384withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA256withRSA;", "public static final")]
+	public partial class SHA256withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA256withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA256withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA256withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA256withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA256withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA256withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA224withRSA;", "public static final")]
+	public partial class SHA224withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA224withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA224withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA224withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA224withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA224withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA224withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$SHA1withRSA;", "public static final")]
+	public partial class SHA1withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static SHA1withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$SHA1withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA1withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public SHA1withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public SHA1withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$SHA1withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$MD5withRSA;", "public static final")]
+	public partial class MD5withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static MD5withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$MD5withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MD5withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public MD5withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public MD5withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$MD5withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+
+	[JniSignatureAttribute("Lsun/security/rsa/RSASignature$MD2withRSA;", "public static final")]
+	public partial class MD2withRSA
+		: Dova.JDK.sun.security.rsa.RSASignature
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static MD2withRSA()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/rsa/RSASignature$MD2withRSA;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MD2withRSA", "()V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public MD2withRSA(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public MD2withRSA() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lsun/security/rsa/RSASignature$MD2withRSA;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+	}
+}

@@ -1,0 +1,468 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.com.sun.tools.javac.model;
+
+[JniSignatureAttribute("Lcom/sun/tools/javac/model/AnnotationProxyMaker;", "public")]
+public partial class AnnotationProxyMaker
+	: Dova.JDK.java.lang.Object
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static AnnotationProxyMaker()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/model/AnnotationProxyMaker;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "anno", "Lcom/sun/tools/javac/code/Attribute$Compound;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "annoType", "Ljava/lang/Class;"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AnnotationProxyMaker", "(Lcom/sun/tools/javac/code/Attribute$Compound;Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateAnnotation", "()Ljava/lang/annotation/Annotation;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "generateAnnotation", "(Lcom/sun/tools/javac/code/Attribute$Compound;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateValue", "(Lcom/sun/tools/javac/code/Symbol$MethodSymbol;Lcom/sun/tools/javac/code/Attribute;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getAllValues", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getAllReflectedValues", "()Ljava/util/Map;"));
+	}
+
+	[JniSignatureAttribute("Lcom/sun/tools/javac/code/Attribute$Compound;", "private final")]
+	public Dova.JDK.com.sun.tools.javac.code.Attribute.Compound anno_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Attribute.Compound>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/Class;", "private final")]
+	public Dova.JDK.java.lang.Class annoType_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Class>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public AnnotationProxyMaker(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Compound;Ljava/lang/Class;)V", "private")]
+	public AnnotationProxyMaker(Dova.JDK.com.sun.tools.javac.code.Attribute.Compound arg0, Dova.JDK.java.lang.Class arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Lcom/sun/tools/javac/model/AnnotationProxyMaker;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()Ljava/lang/annotation/Annotation;", "private")]
+	public Dova.JDK.java.lang.annotation.Annotation generateAnnotation()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.annotation.Annotation>(ret);
+	}
+
+	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Compound;Ljava/lang/Class;)Ljava/lang/annotation/Annotation;", "public static")]
+	public static Dova.JDK.java.lang.Object generateAnnotation(Dova.JDK.com.sun.tools.javac.code.Attribute.Compound arg0, Dova.JDK.java.lang.Class arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+	}
+
+	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$MethodSymbol;Lcom/sun/tools/javac/code/Attribute;)Ljava/lang/Object;", "private")]
+	public Dova.JDK.java.lang.Object generateValue(Dova.JDK.com.sun.tools.javac.code.Symbol.MethodSymbol arg0, Dova.JDK.com.sun.tools.javac.code.Attribute arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/util/Map;", "private")]
+	public Dova.JDK.java.util.Map getAllValues()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/util/Map;", "private")]
+	public Dova.JDK.java.util.Map getAllReflectedValues()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
+	}
+
+	[JniSignatureAttribute("Lcom/sun/tools/javac/model/AnnotationProxyMaker$ValueVisitor;", "private")]
+	public partial class ValueVisitor
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.com.sun.tools.javac.code.Attribute.Visitor
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ValueVisitor()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/model/AnnotationProxyMaker$ValueVisitor;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "meth", "Lcom/sun/tools/javac/code/Symbol$MethodSymbol;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "returnClass", "Ljava/lang/Class;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javac/model/AnnotationProxyMaker;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ValueVisitor", "(Lcom/sun/tools/javac/model/AnnotationProxyMaker;Lcom/sun/tools/javac/code/Symbol$MethodSymbol;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getValue", "(Lcom/sun/tools/javac/code/Attribute;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitEnum", "(Lcom/sun/tools/javac/code/Attribute$Enum;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitArray", "(Lcom/sun/tools/javac/code/Attribute$Array;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "typeMismatch", "(Ljava/lang/reflect/Method;Lcom/sun/tools/javac/code/Attribute;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitClass", "(Lcom/sun/tools/javac/code/Attribute$Class;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitConstant", "(Lcom/sun/tools/javac/code/Attribute$Constant;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitCompound", "(Lcom/sun/tools/javac/code/Attribute$Compound;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitError", "(Lcom/sun/tools/javac/code/Attribute$Error;)V"));
+		}
+
+		[JniSignatureAttribute("Lcom/sun/tools/javac/code/Symbol$MethodSymbol;", "private")]
+		public Dova.JDK.com.sun.tools.javac.code.Symbol.MethodSymbol meth_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Symbol.MethodSymbol>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Class;", "private")]
+		public Dova.JDK.java.lang.Class returnClass_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Class>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Object;", "private")]
+		public Dova.JDK.java.lang.Object value_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Lcom/sun/tools/javac/model/AnnotationProxyMaker;", "final")]
+		public Dova.JDK.com.sun.tools.javac.model.AnnotationProxyMaker this0_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.model.AnnotationProxyMaker>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ValueVisitor(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/model/AnnotationProxyMaker;Lcom/sun/tools/javac/code/Symbol$MethodSymbol;)V", "")]
+		public ValueVisitor(Dova.JDK.com.sun.tools.javac.model.AnnotationProxyMaker arg0, Dova.JDK.com.sun.tools.javac.code.Symbol.MethodSymbol arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lcom/sun/tools/javac/model/AnnotationProxyMaker$ValueVisitor;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute;)Ljava/lang/Object;", "")]
+		public Dova.JDK.java.lang.Object getValue(Dova.JDK.com.sun.tools.javac.code.Attribute arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Enum;)V", "public")]
+		public void visitEnum(Dova.JDK.com.sun.tools.javac.code.Attribute.Enum arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Array;)V", "public")]
+		public void visitArray(Dova.JDK.com.sun.tools.javac.code.Attribute.Array arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/reflect/Method;Lcom/sun/tools/javac/code/Attribute;)V", "private")]
+		public void typeMismatch(Dova.JDK.java.lang.reflect.Method arg0, Dova.JDK.com.sun.tools.javac.code.Attribute arg1)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Class;)V", "public")]
+		public void visitClass(Dova.JDK.com.sun.tools.javac.code.Attribute.Class arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Constant;)V", "public")]
+		public void visitConstant(Dova.JDK.com.sun.tools.javac.code.Attribute.Constant arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Compound;)V", "public")]
+		public void visitCompound(Dova.JDK.com.sun.tools.javac.code.Attribute.Compound arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Attribute$Error;)V", "public")]
+		public void visitError(Dova.JDK.com.sun.tools.javac.code.Attribute.Error arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		}
+	}
+
+	[JniSignatureAttribute("Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypesExceptionProxy;", "private static final")]
+	public partial class MirroredTypesExceptionProxy
+		: Dova.JDK.sun.reflect.annotation.ExceptionProxy
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static MirroredTypesExceptionProxy()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypesExceptionProxy;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/util/List;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "typeStrings", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MirroredTypesExceptionProxy", "(Lcom/sun/tools/javac/util/List;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateException", "()Ljava/lang/RuntimeException;"));
+		}
+
+		[JniSignatureAttribute("J", "static final")]
+		public static long serialVersionUID_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		}
+
+		[JniSignatureAttribute("Lcom/sun/tools/javac/util/List;", "private transient")]
+		public Dova.JDK.com.sun.tools.javac.util.List types_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.util.List>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
+		public Dova.JDK.java.lang.String typeStrings_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public MirroredTypesExceptionProxy(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/List;)V", "")]
+		public MirroredTypesExceptionProxy(Dova.JDK.com.sun.tools.javac.util.List arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypesExceptionProxy;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool equals(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+		public Dova.JDK.java.lang.String toString()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("()I", "public")]
+		public int hashCode()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/io/ObjectInputStream;)V", "private")]
+		public void readObject(Dova.JDK.java.io.ObjectInputStream arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/RuntimeException;", "protected")]
+		public Dova.JDK.java.lang.RuntimeException generateException()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.RuntimeException>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypeExceptionProxy;", "private static final")]
+	public partial class MirroredTypeExceptionProxy
+		: Dova.JDK.sun.reflect.annotation.ExceptionProxy
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static MirroredTypeExceptionProxy()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypeExceptionProxy;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/lang/model/type/TypeMirror;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "typeString", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MirroredTypeExceptionProxy", "(Ljavax/lang/model/type/TypeMirror;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateException", "()Ljava/lang/RuntimeException;"));
+		}
+
+		[JniSignatureAttribute("J", "static final")]
+		public static long serialVersionUID_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		}
+
+		[JniSignatureAttribute("Ljavax/lang/model/type/TypeMirror;", "private transient")]
+		public Dova.JDK.javax.lang.model.type.TypeMirror type_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.type.TypeMirror>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
+		public Dova.JDK.java.lang.String typeString_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public MirroredTypeExceptionProxy(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljavax/lang/model/type/TypeMirror;)V", "")]
+		public MirroredTypeExceptionProxy(Dova.JDK.javax.lang.model.type.TypeMirror arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Lcom/sun/tools/javac/model/AnnotationProxyMaker$MirroredTypeExceptionProxy;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
+		public bool equals(Dova.JDK.java.lang.Object arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+		public Dova.JDK.java.lang.String toString()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("()I", "public")]
+		public int hashCode()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/io/ObjectInputStream;)V", "private")]
+		public void readObject(Dova.JDK.java.io.ObjectInputStream arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/RuntimeException;", "protected")]
+		public Dova.JDK.java.lang.RuntimeException generateException()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.RuntimeException>(ret);
+		}
+	}
+}

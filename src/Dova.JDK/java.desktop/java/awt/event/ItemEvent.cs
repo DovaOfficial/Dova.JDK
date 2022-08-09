@@ -1,0 +1,177 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.java.awt.@event;
+
+[JniSignatureAttribute("Ljava/awt/event/ItemEvent;", "public")]
+public partial class ItemEvent
+	: Dova.JDK.java.awt.AWTEvent
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static ItemEvent()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/event/ItemEvent;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_FIRST", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_LAST", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_STATE_CHANGED", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SELECTED", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DESELECTED", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "item", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "stateChange", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ItemEvent", "(Ljava/awt/ItemSelectable;ILjava/lang/Object;I)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "paramString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getItem", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getItemSelectable", "()Ljava/awt/ItemSelectable;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStateChange", "()I"));
+	}
+
+	[JniSignatureAttribute("I", "public static final")]
+	public static int ITEM_FIRST_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+	}
+
+	[JniSignatureAttribute("I", "public static final")]
+	public static int ITEM_LAST_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+	}
+
+	[JniSignatureAttribute("I", "public static final")]
+	public static int ITEM_STATE_CHANGED_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+	}
+
+	[JniSignatureAttribute("I", "public static final")]
+	public static int SELECTED_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+	}
+
+	[JniSignatureAttribute("I", "public static final")]
+	public static int DESELECTED_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/Object;", "")]
+	public Dova.JDK.java.lang.Object item_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "")]
+	public int stateChange_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+	}
+
+	[JniSignatureAttribute("J", "private static final")]
+	public static long serialVersionUID_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[7]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[7], value);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public ItemEvent(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Ljava/awt/ItemSelectable;ILjava/lang/Object;I)V", "public")]
+	public ItemEvent(Dova.JDK.java.awt.ItemSelectable arg0, int arg1, Dova.JDK.java.lang.Object arg2, int arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljava/awt/event/ItemEvent;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+	public Dova.JDK.java.lang.String paramString()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/lang/Object;", "public")]
+	public Dova.JDK.java.lang.Object getItem()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/awt/ItemSelectable;", "public")]
+	public Dova.JDK.java.awt.ItemSelectable getItemSelectable()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.ItemSelectable>(ret);
+	}
+
+	[JniSignatureAttribute("()I", "public")]
+	public int getStateChange()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
+		return ret;
+	}
+}

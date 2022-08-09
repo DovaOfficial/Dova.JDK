@@ -1,0 +1,787 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.jdk.@internal.net.http;
+
+[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange;", "")]
+public partial class MultiExchange
+	: Dova.JDK.java.lang.Object
+	, Dova.JDK.jdk.@internal.net.http.common.Cancelable
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static MultiExchange()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/MultiExchange;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "userRequest", "Ljava/net/http/HttpRequest;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "request", "Ljdk/internal/net/http/HttpRequestImpl;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "connectTimeout", "Ljdk/internal/net/http/MultiExchange$ConnectTimeoutTracker;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "acc", "Ljava/security/AccessControlContext;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "client", "Ljdk/internal/net/http/HttpClientImpl;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "responseHandler", "Ljava/net/http/HttpResponse$BodyHandler;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "executor", "Ljdk/internal/net/http/HttpClientImpl$DelegatingExecutor;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "attempts", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "currentreq", "Ljdk/internal/net/http/HttpRequestImpl;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "previousreq", "Ljdk/internal/net/http/HttpRequestImpl;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "exchange", "Ljdk/internal/net/http/Exchange;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "previous", "Ljdk/internal/net/http/Exchange;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "retryCause", "Ljava/lang/Throwable;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "expiredOnce", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "response", "Ljava/net/http/HttpResponse;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_MAX_ATTEMPTS", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "max_attempts", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filters", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "responseTimerEvent", "Ljdk/internal/net/http/ResponseTimerEvent;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cancelled", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "interrupted", "Ljava/util/concurrent/atomic/AtomicReference;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pushGroup", "Ljdk/internal/net/http/PushGroup;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "serverauth", "Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "proxyauth", "Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "numberOfRedirects", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RETRY_ALWAYS", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RETRY_CONNECT", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MultiExchange", "(Ljava/net/http/HttpRequest;Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/HttpClientImpl;Ljava/net/http/HttpResponse$BodyHandler;Ljava/net/http/HttpResponse$PushPromiseHandler;Ljava/security/AccessControlContext;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "version", "()Ljava/net/http/HttpClient$Version;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancel", "(Z)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancel", "(Ljava/io/IOException;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "responseAsyncImpl", "()Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getExchange", "()Ljdk/internal/net/http/Exchange;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "client", "()Ljdk/internal/net/http/HttpClientImpl;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remainingConnectTimeout", "()Ljava/util/Optional;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "responseAsync", "(Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancelTimer", "()V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "requestCancelled", "()Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "disableRetryConnect", "()Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "retryPostValue", "()Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "retryOnFailure", "(Ljava/lang/Throwable;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "canRetryRequest", "(Ljava/net/http/HttpRequest;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "retryCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toTimeoutException", "(Ljava/io/IOException;)Ljava/net/http/HttpTimeoutException;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setExchange", "(Ljdk/internal/net/http/Exchange;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "bodyNotPermitted", "(Ljdk/internal/net/http/Response;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "bodyIsPresent", "(Ljdk/internal/net/http/Response;)Z"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleNoBody", "(Ljdk/internal/net/http/Response;Ljdk/internal/net/http/Exchange;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "whenCancelled", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "responseAsync0", "(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "requestFilters", "(Ljdk/internal/net/http/HttpRequestImpl;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getExceptionalCF", "(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "responseFilters", "(Ljdk/internal/net/http/Response;)Ljdk/internal/net/http/HttpRequestImpl;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isIdempotentRequest", "(Ljava/net/http/HttpRequest;)Z"));
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "static final")]
+	public static Dova.JDK.jdk.@internal.net.http.common.Logger debug_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/net/http/HttpRequest;", "private final")]
+	public Dova.JDK.java.net.http.HttpRequest userRequest_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpRequest>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/HttpRequestImpl;", "private final")]
+	public Dova.JDK.jdk.@internal.net.http.HttpRequestImpl request_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpRequestImpl>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange$ConnectTimeoutTracker;", "private final")]
+	public Dova.JDK.jdk.@internal.net.http.MultiExchange.ConnectTimeoutTracker connectTimeout_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.MultiExchange.ConnectTimeoutTracker>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/security/AccessControlContext;", "final")]
+	public Dova.JDK.java.security.AccessControlContext acc_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.security.AccessControlContext>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/HttpClientImpl;", "final")]
+	public Dova.JDK.jdk.@internal.net.http.HttpClientImpl client_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpClientImpl>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/net/http/HttpResponse$BodyHandler;", "final")]
+	public Dova.JDK.java.net.http.HttpResponse.BodyHandler responseHandler_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpResponse.BodyHandler>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/HttpClientImpl$DelegatingExecutor;", "final")]
+	public Dova.JDK.jdk.@internal.net.http.HttpClientImpl.DelegatingExecutor executor_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpClientImpl.DelegatingExecutor>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/util/concurrent/atomic/AtomicInteger;", "final")]
+	public Dova.JDK.java.util.concurrent.atomic.AtomicInteger attempts_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.atomic.AtomicInteger>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/HttpRequestImpl;", "")]
+	public Dova.JDK.jdk.@internal.net.http.HttpRequestImpl currentreq_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpRequestImpl>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/HttpRequestImpl;", "")]
+	public Dova.JDK.jdk.@internal.net.http.HttpRequestImpl previousreq_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpRequestImpl>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/Exchange;", "")]
+	public Dova.JDK.jdk.@internal.net.http.Exchange exchange_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Exchange>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/Exchange;", "")]
+	public Dova.JDK.jdk.@internal.net.http.Exchange previous_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Exchange>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/Throwable;", "volatile")]
+	public Dova.JDK.java.lang.Throwable retryCause_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Z", "volatile")]
+	public bool expiredOnce_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[14]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+	}
+
+	[JniSignatureAttribute("Ljava/net/http/HttpResponse;", "volatile")]
+	public Dova.JDK.java.net.http.HttpResponse response_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpResponse>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "static final")]
+	public static int DEFAULT_MAX_ATTEMPTS_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+	}
+
+	[JniSignatureAttribute("I", "static final")]
+	public static int max_attempts_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+	}
+
+	[JniSignatureAttribute("Ljava/util/List;", "private final")]
+	public Dova.JDK.java.util.List filters_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[18]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[18], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseTimerEvent;", "")]
+	public Dova.JDK.jdk.@internal.net.http.ResponseTimerEvent responseTimerEvent_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[19]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseTimerEvent>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[19], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Z", "volatile")]
+	public bool cancelled_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[20]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[20], value);
+	}
+
+	[JniSignatureAttribute("Ljava/util/concurrent/atomic/AtomicReference;", "")]
+	public Dova.JDK.java.util.concurrent.atomic.AtomicReference interrupted_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.atomic.AtomicReference>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/PushGroup;", "final")]
+	public Dova.JDK.jdk.@internal.net.http.PushGroup pushGroup_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.PushGroup>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;", "volatile")]
+	public Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.AuthInfo serverauth_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.AuthInfo>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;", "volatile")]
+	public Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.AuthInfo proxyauth_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.AuthInfo>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "volatile")]
+	public int numberOfRedirects_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[25]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[25], value);
+	}
+
+	[JniSignatureAttribute("Z", "private static final")]
+	public static bool RETRY_ALWAYS_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[26]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[26], value);
+	}
+
+	[JniSignatureAttribute("Z", "static final")]
+	public static bool RETRY_CONNECT_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[27]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[27], value);
+	}
+
+	[JniSignatureAttribute("Z", "static final")]
+	public static bool assertionsDisabled_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[28]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[28], value);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public MultiExchange(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Ljava/net/http/HttpRequest;Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/HttpClientImpl;Ljava/net/http/HttpResponse$BodyHandler;Ljava/net/http/HttpResponse$PushPromiseHandler;Ljava/security/AccessControlContext;)V", "")]
+	public MultiExchange(Dova.JDK.java.net.http.HttpRequest arg0, Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg1, Dova.JDK.jdk.@internal.net.http.HttpClientImpl arg2, Dova.JDK.java.net.http.HttpResponse.BodyHandler arg3, Dova.JDK.java.net.http.HttpResponse.PushPromiseHandler arg4, Dova.JDK.java.security.AccessControlContext arg5) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljdk/internal/net/http/MultiExchange;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("()Ljava/net/http/HttpClient$Version;", "")]
+	public Dova.JDK.java.net.http.HttpClient.Version version()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpClient.Version>(ret);
+	}
+
+	[JniSignatureAttribute("(Z)Z", "public")]
+	public bool cancel(bool arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/io/IOException;)V", "public")]
+	public void cancel(Dova.JDK.java.io.IOException arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+	}
+
+	[JniSignatureAttribute("()Ljava/util/concurrent/CompletableFuture;", "private")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture responseAsyncImpl()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljdk/internal/net/http/Exchange;", "synchronized")]
+	public Dova.JDK.jdk.@internal.net.http.Exchange getExchange()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Exchange>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljdk/internal/net/http/HttpClientImpl;", "")]
+	public Dova.JDK.jdk.@internal.net.http.HttpClientImpl client()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpClientImpl>(ret);
+	}
+
+	[JniSignatureAttribute("()Ljava/util/Optional;", "public")]
+	public Dova.JDK.java.util.Optional remainingConnectTimeout()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Optional>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/util/concurrent/Executor;)Ljava/util/concurrent/CompletableFuture;", "public")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture responseAsync(Dova.JDK.java.util.concurrent.Executor arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("()V", "private")]
+	public void cancelTimer()
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
+	}
+
+	[JniSignatureAttribute("()Z", "")]
+	public bool requestCancelled()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[9]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()Z", "private static")]
+	public static bool disableRetryConnect()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[10]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("()Z", "private static")]
+	public static bool retryPostValue()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[11]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Throwable;)Z", "private")]
+	public bool retryOnFailure(Dova.JDK.java.lang.Throwable arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/net/http/HttpRequest;)Z", "private static")]
+	public static bool canRetryRequest(Dova.JDK.java.net.http.HttpRequest arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[13], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Throwable;)Ljava/lang/Throwable;", "private")]
+	public Dova.JDK.java.lang.Throwable retryCause(Dova.JDK.java.lang.Throwable arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/io/IOException;)Ljava/net/http/HttpTimeoutException;", "private")]
+	public Dova.JDK.java.net.http.HttpTimeoutException toTimeoutException(Dova.JDK.java.io.IOException arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpTimeoutException>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/Exchange;)V", "private synchronized")]
+	public void setExchange(Dova.JDK.jdk.@internal.net.http.Exchange arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/Response;)Z", "private static")]
+	public static bool bodyNotPermitted(Dova.JDK.jdk.@internal.net.http.Response arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[17], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/Response;)Z", "private")]
+	public bool bodyIsPresent(Dova.JDK.jdk.@internal.net.http.Response arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[18], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/Response;Ljdk/internal/net/http/Exchange;)Ljava/util/concurrent/CompletableFuture;", "private")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture handleNoBody(Dova.JDK.jdk.@internal.net.http.Response arg0, Dova.JDK.jdk.@internal.net.http.Exchange arg1)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[19], arg0, arg1);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;", "private")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture whenCancelled(Dova.JDK.java.lang.Throwable arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[20], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/util/concurrent/CompletableFuture;)Ljava/util/concurrent/CompletableFuture;", "private")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture responseAsync0(Dova.JDK.java.util.concurrent.CompletableFuture arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[21], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpRequestImpl;)V", "private")]
+	public void requestFilters(Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[22], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/lang/Throwable;)Ljava/util/concurrent/CompletableFuture;", "private")]
+	public Dova.JDK.java.util.concurrent.CompletableFuture getExceptionalCF(Dova.JDK.java.lang.Throwable arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[23], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/Response;)Ljdk/internal/net/http/HttpRequestImpl;", "private")]
+	public Dova.JDK.jdk.@internal.net.http.HttpRequestImpl responseFilters(Dova.JDK.jdk.@internal.net.http.Response arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[24], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpRequestImpl>(ret);
+	}
+
+	[JniSignatureAttribute("(Ljava/net/http/HttpRequest;)Z", "private static")]
+	public static bool isIdempotentRequest(Dova.JDK.java.net.http.HttpRequest arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[25], arg0);
+		return ret;
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange$ConnectTimeoutTracker;", "private static final")]
+	public partial class ConnectTimeoutTracker
+		: Dova.JDK.java.lang.Object
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ConnectTimeoutTracker()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/MultiExchange$ConnectTimeoutTracker;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "max", "Ljava/time/Duration;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "startTime", "Ljava/util/concurrent/atomic/AtomicLong;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ConnectTimeoutTracker", "(Ljava/time/Duration;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getRemaining", "()Ljava/time/Duration;"));
+		}
+
+		[JniSignatureAttribute("Ljava/time/Duration;", "final")]
+		public Dova.JDK.java.time.Duration max_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.time.Duration>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/util/concurrent/atomic/AtomicLong;", "final")]
+		public Dova.JDK.java.util.concurrent.atomic.AtomicLong startTime_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.atomic.AtomicLong>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Z", "static final")]
+		public static bool assertionsDisabled_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ConnectTimeoutTracker(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/time/Duration;)V", "")]
+		public ConnectTimeoutTracker(Dova.JDK.java.time.Duration arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/MultiExchange$ConnectTimeoutTracker;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()V", "")]
+		public void reset()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		}
+
+		[JniSignatureAttribute("()Ljava/time/Duration;", "")]
+		public Dova.JDK.java.time.Duration getRemaining()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.time.Duration>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange$CancelableRef;", "static final")]
+	public partial class CancelableRef
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.jdk.@internal.net.http.common.Cancelable
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static CancelableRef()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/MultiExchange$CancelableRef;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cancelableRef", "Ljava/lang/ref/WeakReference;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CancelableRef", "(Ljdk/internal/net/http/common/Cancelable;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancel", "(Z)Z"));
+		}
+
+		[JniSignatureAttribute("Ljava/lang/ref/WeakReference;", "private final")]
+		public Dova.JDK.java.lang.@ref.WeakReference cancelableRef_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.@ref.WeakReference>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public CancelableRef(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/common/Cancelable;)V", "")]
+		public CancelableRef(Dova.JDK.jdk.@internal.net.http.common.Cancelable arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/MultiExchange$CancelableRef;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Z)Z", "public")]
+		public bool cancel(bool arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			return ret;
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange$NullSubscription;", "static")]
+	public partial class NullSubscription
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.java.util.concurrent.Flow.Subscription
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static NullSubscription()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/MultiExchange$NullSubscription;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NullSubscription", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancel", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "request", "(J)V"));
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public NullSubscription(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("()V", "")]
+		public NullSubscription() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/MultiExchange$NullSubscription;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()V", "public")]
+		public void cancel()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		}
+
+		[JniSignatureAttribute("(J)V", "public")]
+		public void request(long arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+	}
+}

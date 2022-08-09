@@ -1,0 +1,197 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.jdk.@internal.misc;
+
+[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public final")]
+public partial class FileSystemOption
+	: Dova.JDK.java.lang.Object
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static FileSystemOption()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/misc/FileSystemOption;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INTERRUPTIBLE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_READ", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_WRITE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_DELETE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_TREE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DIRECT", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_HIGH", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_MEDIUM", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_LOW", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "internalOption", "Lsun/nio/fs/ExtendedOptions$InternalOption;"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FileSystemOption", "(Lsun/nio/fs/ExtendedOptions$InternalOption;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/OpenOption;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/CopyOption;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;Ljava/lang/Object;)V"));
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption INTERRUPTIBLE_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption NOSHARE_READ_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption NOSHARE_WRITE_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption NOSHARE_DELETE_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption FILE_TREE_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption DIRECT_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption SENSITIVITY_HIGH_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption SENSITIVITY_MEDIUM_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
+	public static Dova.JDK.jdk.@internal.misc.FileSystemOption SENSITIVITY_LOW_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.FileSystemOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Lsun/nio/fs/ExtendedOptions$InternalOption;", "private final")]
+	public Dova.JDK.sun.nio.fs.ExtendedOptions.InternalOption internalOption_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
+			return DovaInterfaceFactory.Get<Dova.JDK.sun.nio.fs.ExtendedOptions.InternalOption>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public FileSystemOption(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Lsun/nio/fs/ExtendedOptions$InternalOption;)V", "private")]
+	public FileSystemOption(Dova.JDK.sun.nio.fs.ExtendedOptions.InternalOption arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljdk/internal/misc/FileSystemOption;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("(Ljava/nio/file/WatchEvent$Modifier;)V", "public")]
+	public void register(Dova.JDK.java.nio.file.WatchEvent.Modifier arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/nio/file/OpenOption;)V", "public")]
+	public void register(Dova.JDK.java.nio.file.OpenOption arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/nio/file/CopyOption;)V", "public")]
+	public void register(Dova.JDK.java.nio.file.CopyOption arg0)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+	}
+
+	[JniSignatureAttribute("(Ljava/nio/file/WatchEvent$Modifier;Ljava/lang/Object;)V", "public")]
+	public void register(Dova.JDK.java.nio.file.WatchEvent.Modifier arg0, Dova.JDK.java.lang.Object arg1)
+	{
+		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+	}
+}

@@ -1,0 +1,985 @@
+/*******************************************************************
+ *
+ * This file was automatically generated with:
+ * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ *
+ * For more information please visit:
+ * https://github.com/DovaOfficial
+ *
+ ********************************************************************/
+
+using Dova.Common;
+using Dova.Common.InterfaceFactory;
+
+using CSharpSystem = System;
+
+namespace Dova.JDK.jdk.@internal.net.http;
+
+[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent;", "")]
+public partial class ResponseContent
+	: Dova.JDK.java.lang.Object
+{
+	public new static CSharpSystem.IntPtr ClassPtr { get; }
+	public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+	private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+	static ResponseContent()
+	{
+		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent;");
+		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pusher", "Ljava/net/http/HttpResponse$BodySubscriber;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "contentLength", "J"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "headers", "Ljava/net/http/HttpHeaders;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "onFinished", "Ljava/lang/Runnable;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "dbgTag", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LF", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CR", "I"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "chunkedContent", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "chunkedContentInitialized", "Z"));
+		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_CHUNK_HEADER_SIZE", "I"));
+		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ResponseContent", "(Ljdk/internal/net/http/HttpConnection;JLjava/net/http/HttpHeaders;Ljava/net/http/HttpResponse$BodySubscriber;Ljava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBodyParser", "(Ljava/util/function/Consumer;)Ljdk/internal/net/http/ResponseContent$BodyParser;"));
+		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "contentChunked", "()Z"));
+	}
+
+	[JniSignatureAttribute("Ljava/net/http/HttpResponse$BodySubscriber;", "final")]
+	public Dova.JDK.java.net.http.HttpResponse.BodySubscriber pusher_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpResponse.BodySubscriber>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("J", "final")]
+	public long contentLength_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[1]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+	}
+
+	[JniSignatureAttribute("Ljava/net/http/HttpHeaders;", "final")]
+	public Dova.JDK.java.net.http.HttpHeaders headers_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpHeaders>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/Runnable;", "private final")]
+	public Dova.JDK.java.lang.Runnable onFinished_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Runnable>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("Ljava/lang/String;", "private final")]
+	public Dova.JDK.java.lang.String dbgTag_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+	}
+
+	[JniSignatureAttribute("I", "static final")]
+	public static int LF_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+	}
+
+	[JniSignatureAttribute("I", "static final")]
+	public static int CR_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+	}
+
+	[JniSignatureAttribute("Z", "private")]
+	public bool chunkedContent_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+	}
+
+	[JniSignatureAttribute("Z", "private")]
+	public bool chunkedContentInitialized_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+	}
+
+	[JniSignatureAttribute("I", "static final")]
+	public static int MAX_CHUNK_HEADER_SIZE_Property
+	{
+		get
+		{
+			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
+			return ret;
+		}
+		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+	}
+
+	[JniSignatureAttribute("(System.IntPtr)V", "public")]
+	public ResponseContent(IntPtr currentRefPtr) : base(currentRefPtr)
+	{
+	}
+
+	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;JLjava/net/http/HttpHeaders;Ljava/net/http/HttpResponse$BodySubscriber;Ljava/lang/Runnable;)V", "")]
+	public ResponseContent(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, long arg1, Dova.JDK.java.net.http.HttpHeaders arg2, Dova.JDK.java.net.http.HttpResponse.BodySubscriber arg3, Dova.JDK.java.lang.Runnable arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	{
+	}
+
+	public override string GetJavaClassSignature() => "Ljdk/internal/net/http/ResponseContent;";
+	public override IntPtr GetJavaClassRaw() => ClassPtr;
+	public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+	[JniSignatureAttribute("(Ljava/util/function/Consumer;)Ljdk/internal/net/http/ResponseContent$BodyParser;", "")]
+	public Dova.JDK.jdk.@internal.net.http.ResponseContent.BodyParser getBodyParser(Dova.JDK.java.util.function.Consumer arg0)
+	{
+		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.BodyParser>(ret);
+	}
+
+	[JniSignatureAttribute("()Z", "")]
+	public bool contentChunked()
+	{
+		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+		return ret;
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkedBodyParser;", "")]
+	public partial class ChunkedBodyParser
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.jdk.@internal.net.http.ResponseContent.BodyParser
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ChunkedBodyParser()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent$ChunkedBodyParser;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "READMORE", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "onComplete", "Ljava/util/function/Consumer;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "dbgTag", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "closedExceptionally", "Ljava/lang/Throwable;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "partialChunklen", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "chunklen", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "bytesremaining", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cr", "Z"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "chunkext", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "digits", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "bytesToConsume", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "sub", "Ljdk/internal/net/http/AbstractSubscription;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/ResponseContent;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ChunkedBodyParser", "(Ljdk/internal/net/http/ResponseContent;Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toDigit", "(I)I"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "currentStateMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "tryConsumeBytes", "(Ljava/nio/ByteBuffer;)I"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "tryPushOneHunk", "(Ljava/nio/ByteBuffer;Ljava/util/List;)Z"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "debugBuffer", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "tryReadChunkLen", "(Ljava/nio/ByteBuffer;)I"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "tryReadOneHunk", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"));
+		}
+
+		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "final")]
+		public Dova.JDK.java.nio.ByteBuffer READMORE_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.nio.ByteBuffer>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/util/function/Consumer;", "final")]
+		public Dova.JDK.java.util.function.Consumer onComplete_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.Consumer>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.common.Logger debug_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "final")]
+		public Dova.JDK.java.lang.String dbgTag_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Throwable;", "volatile")]
+		public Dova.JDK.java.lang.Throwable closedExceptionally_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int partialChunklen_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int chunklen_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int bytesremaining_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+		}
+
+		[JniSignatureAttribute("Z", "volatile")]
+		public bool cr_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int chunkext_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int digits_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int bytesToConsume_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkState;", "volatile")]
+		public Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState state_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/AbstractSubscription;", "volatile")]
+		public Dova.JDK.jdk.@internal.net.http.AbstractSubscription sub_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AbstractSubscription>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Z", "static final")]
+		public static bool assertionsDisabled_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[14]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[14], value);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.ResponseContent this0_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ChunkedBodyParser(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/ResponseContent;Ljava/util/function/Consumer;)V", "")]
+		public ChunkedBodyParser(Dova.JDK.jdk.@internal.net.http.ResponseContent arg0, Dova.JDK.java.util.function.Consumer arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/ResponseContent$ChunkedBodyParser;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "public")]
+		public void accept(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)V", "public volatile")]
+		public void accept(Dova.JDK.java.lang.Object arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+
+		[JniSignatureAttribute("(I)I", "private")]
+		public int toDigit(int arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			return ret;
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+		public Dova.JDK.java.lang.String currentStateMessage()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String dbgString()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/AbstractSubscription;)V", "public")]
+		public void onSubscribe(Dova.JDK.jdk.@internal.net.http.AbstractSubscription arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)I", "private")]
+		public int tryConsumeBytes(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;Ljava/util/List;)Z", "private")]
+		public bool tryPushOneHunk(Dova.JDK.java.nio.ByteBuffer arg0, Dova.JDK.java.util.List arg1)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "private")]
+		public void debugBuffer(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)I", "private")]
+		public int tryReadChunkLen(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+			return ret;
+		}
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;", "")]
+		public Dova.JDK.java.nio.ByteBuffer tryReadOneHunk(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.nio.ByteBuffer>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$UnknownLengthBodyParser;", "")]
+	public partial class UnknownLengthBodyParser
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.jdk.@internal.net.http.ResponseContent.BodyParser
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static UnknownLengthBodyParser()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent$UnknownLengthBodyParser;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "onComplete", "Ljava/util/function/Consumer;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "dbgTag", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "closedExceptionally", "Ljava/lang/Throwable;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "sub", "Ljdk/internal/net/http/AbstractSubscription;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "breceived", "I"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/ResponseContent;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "UnknownLengthBodyParser", "(Ljdk/internal/net/http/ResponseContent;Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "complete", "()V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "currentStateMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
+		}
+
+		[JniSignatureAttribute("Ljava/util/function/Consumer;", "final")]
+		public Dova.JDK.java.util.function.Consumer onComplete_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.Consumer>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.common.Logger debug_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "final")]
+		public Dova.JDK.java.lang.String dbgTag_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Throwable;", "volatile")]
+		public Dova.JDK.java.lang.Throwable closedExceptionally_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/AbstractSubscription;", "volatile")]
+		public Dova.JDK.jdk.@internal.net.http.AbstractSubscription sub_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AbstractSubscription>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("I", "volatile")]
+		public int breceived_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		}
+
+		[JniSignatureAttribute("Z", "static final")]
+		public static bool assertionsDisabled_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[6]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[6], value);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.ResponseContent this0_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public UnknownLengthBodyParser(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/ResponseContent;Ljava/util/function/Consumer;)V", "")]
+		public UnknownLengthBodyParser(Dova.JDK.jdk.@internal.net.http.ResponseContent arg0, Dova.JDK.java.util.function.Consumer arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/ResponseContent$UnknownLengthBodyParser;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "public")]
+		public void accept(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)V", "public volatile")]
+		public void accept(Dova.JDK.java.lang.Object arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+
+		[JniSignatureAttribute("()V", "public")]
+		public void complete()
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+		public Dova.JDK.java.lang.String currentStateMessage()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String dbgString()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/AbstractSubscription;)V", "public")]
+		public void onSubscribe(Dova.JDK.jdk.@internal.net.http.AbstractSubscription arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$FixedLengthBodyParser;", "")]
+	public partial class FixedLengthBodyParser
+		: Dova.JDK.java.lang.Object
+		, Dova.JDK.jdk.@internal.net.http.ResponseContent.BodyParser
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static FixedLengthBodyParser()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent$FixedLengthBodyParser;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "contentLength", "J"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "onComplete", "Ljava/util/function/Consumer;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "dbgTag", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "remaining", "J"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "closedExceptionally", "Ljava/lang/Throwable;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "sub", "Ljdk/internal/net/http/AbstractSubscription;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/ResponseContent;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FixedLengthBodyParser", "(Ljdk/internal/net/http/ResponseContent;JLjava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "currentStateMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
+		}
+
+		[JniSignatureAttribute("J", "final")]
+		public long contentLength_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
+		}
+
+		[JniSignatureAttribute("Ljava/util/function/Consumer;", "final")]
+		public Dova.JDK.java.util.function.Consumer onComplete_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.Consumer>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.common.Logger debug_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/String;", "final")]
+		public Dova.JDK.java.lang.String dbgTag_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("J", "volatile")]
+		public long remaining_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+		}
+
+		[JniSignatureAttribute("Ljava/lang/Throwable;", "volatile")]
+		public Dova.JDK.java.lang.Throwable closedExceptionally_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/AbstractSubscription;", "volatile")]
+		public Dova.JDK.jdk.@internal.net.http.AbstractSubscription sub_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AbstractSubscription>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Z", "static final")]
+		public static bool assertionsDisabled_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[7]);
+				return ret;
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[7], value);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent;", "final")]
+		public Dova.JDK.jdk.@internal.net.http.ResponseContent this0_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public FixedLengthBodyParser(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/ResponseContent;JLjava/util/function/Consumer;)V", "")]
+		public FixedLengthBodyParser(Dova.JDK.jdk.@internal.net.http.ResponseContent arg0, long arg1, Dova.JDK.java.util.function.Consumer arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/ResponseContent$FixedLengthBodyParser;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "public")]
+		public void accept(Dova.JDK.java.nio.ByteBuffer arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/Object;)V", "public volatile")]
+		public void accept(Dova.JDK.java.lang.Object arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
+		public Dova.JDK.java.lang.String currentStateMessage()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "")]
+		public Dova.JDK.java.lang.String dbgString()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/AbstractSubscription;)V", "public")]
+		public void onSubscribe(Dova.JDK.jdk.@internal.net.http.AbstractSubscription arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkState;", "static final")]
+	public partial class ChunkState
+		: Dova.JDK.java.lang.Enum
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> FieldPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> ConstructorPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static ChunkState()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent$ChunkState;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "READING_LENGTH", "Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "READING_DATA", "Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DONE", "Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ChunkState", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/net/http/ResponseContent$ChunkState;"));
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkState;", "public static final")]
+		public static Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState READING_LENGTH_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkState;", "public static final")]
+		public static Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState READING_DATA_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$ChunkState;", "public static final")]
+		public static Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState DONE_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("[Ljdk/internal/net/http/ResponseContent$ChunkState;", "private static final")]
+		public static JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState> VALUES_Property
+		{
+			get
+			{
+				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>>(ret);
+			}
+			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
+
+		[JniSignatureAttribute("(System.IntPtr)V", "public")]
+		public ChunkState(IntPtr currentRefPtr) : base(currentRefPtr)
+		{
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
+		public ChunkState(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		{
+		}
+
+		public override string GetJavaClassSignature() => "Ljdk/internal/net/http/ResponseContent$ChunkState;";
+		public override IntPtr GetJavaClassRaw() => ClassPtr;
+		public override IntPtr GetJavaClassRefRaw() => ClassRefPtr;
+
+		[JniSignatureAttribute("()[Ljdk/internal/net/http/ResponseContent$ChunkState;", "public static")]
+		public static JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState> values()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljava/lang/String;)Ljdk/internal/net/http/ResponseContent$ChunkState;", "public static")]
+		public static Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState valueOf(Dova.JDK.java.lang.String arg0)
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>(ret);
+		}
+
+		[JniSignatureAttribute("()[Ljdk/internal/net/http/ResponseContent$ChunkState;", "private static")]
+		public static JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState> _values()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.@internal.net.http.ResponseContent.ChunkState>>(ret);
+		}
+	}
+
+	[JniSignatureAttribute("Ljdk/internal/net/http/ResponseContent$BodyParser;", "abstract static interface")]
+	public partial interface BodyParser
+		: IJavaObject
+		, Dova.JDK.java.util.function.Consumer
+	{
+		public new static CSharpSystem.IntPtr ClassPtr { get; }
+		public new static CSharpSystem.IntPtr ClassRefPtr { get; }
+
+		private new static CSharpSystem.Collections.Generic.IList<IntPtr> MethodPtrs { get; } = new CSharpSystem.Collections.Generic.List<IntPtr>();
+
+		static BodyParser()
+		{
+			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/ResponseContent$BodyParser;");
+			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "currentStateMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
+		}
+
+		[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
+		Dova.JDK.java.lang.String currentStateMessage()
+		{
+			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
+		}
+
+		[JniSignatureAttribute("(Ljdk/internal/net/http/AbstractSubscription;)V", "public abstract")]
+		void onSubscribe(Dova.JDK.jdk.@internal.net.http.AbstractSubscription arg0)
+		{
+			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		}
+	}
+}

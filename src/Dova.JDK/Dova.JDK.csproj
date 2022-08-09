@@ -6,4 +6,10 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <Reference Include="Dova">
+        <HintPath>..\..\..\Dova\src\Dova\bin\Debug\net6.0\Dova.dll</HintPath>
+      </Reference>
+    </ItemGroup>
+
 </Project>
