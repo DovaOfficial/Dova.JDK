@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,15 +27,15 @@ public partial interface ContentModelValidator
 
 	static ContentModelValidator()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xerces/internal/impl/dtd/models/ContentModelValidator;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "validate", "([Lcom/sun/org/apache/xerces/internal/xni/QName;II)I"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xerces/internal/impl/dtd/models/ContentModelValidator;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "([Lcom/sun/org/apache/xerces/internal/xni/QName;II)I"));
 	}
 
 	[JniSignatureAttribute("([Lcom/sun/org/apache/xerces/internal/xni/QName;II)I", "public abstract")]
 	int validate(JavaArray<Dova.JDK.com.sun.org.apache.xerces.@internal.xni.QName> arg0, int arg1, int arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		return ret;
 	}
 }

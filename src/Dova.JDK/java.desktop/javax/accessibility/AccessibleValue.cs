@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,39 +27,39 @@ public partial interface AccessibleValue
 
 	static AccessibleValue()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/accessibility/AccessibleValue;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCurrentAccessibleValue", "()Ljava/lang/Number;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setCurrentAccessibleValue", "(Ljava/lang/Number;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMinimumAccessibleValue", "()Ljava/lang/Number;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMaximumAccessibleValue", "()Ljava/lang/Number;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/accessibility/AccessibleValue;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentAccessibleValue", "()Ljava/lang/Number;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurrentAccessibleValue", "(Ljava/lang/Number;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMinimumAccessibleValue", "()Ljava/lang/Number;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaximumAccessibleValue", "()Ljava/lang/Number;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Number;", "public abstract")]
 	Dova.JDK.java.lang.Number getCurrentAccessibleValue()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Number>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Number;)Z", "public abstract")]
 	bool setCurrentAccessibleValue(Dova.JDK.java.lang.Number arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Number;", "public abstract")]
 	Dova.JDK.java.lang.Number getMinimumAccessibleValue()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Number>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Number;", "public abstract")]
 	Dova.JDK.java.lang.Number getMaximumAccessibleValue()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Number>(ret);
 	}
 }

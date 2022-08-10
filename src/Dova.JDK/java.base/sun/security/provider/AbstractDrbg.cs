@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,52 +29,52 @@ public partial class AbstractDrbg
 
 	static AbstractDrbg()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/AbstractDrbg;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "instantiated", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "reseedCounter", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_STRENGTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "mechName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "highestSupportedSecurityStrength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "supportPredictionResistance", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "supportReseeding", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "minLength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "maxLength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "maxPersonalizationStringLength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "maxAdditionalInputLength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "maxNumberOfBytesPerRequest", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "reseedInterval", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "algorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "securityStrength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "requestedInstantiationSecurityStrength", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "personalizationString", "[B"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "predictionResistanceFlag", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "usedf", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nonce", "[B"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "requestedNonce", "[B"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "requestedAlgorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "es", "Lsun/security/provider/EntropySource;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "defaultES", "Lsun/security/provider/EntropySource;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractDrbg", "(Ljava/security/SecureRandomParameters;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractDrbg", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGetParameters", "()Ljava/security/SecureRandomParameters;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "instantiateIfNecessary", "([B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEntropyInput", "(Z)[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEntropyInput", "(IIIZ)[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reseedAlgorithm", "([B[B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateAlgorithm", "([B[B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "chooseAlgorithmAndStrength", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initEngine", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "instantiateAlgorithm", "([B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getStandardStrength", "(I)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "configure", "(Ljava/security/SecureRandomParameters;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineSetSeed", "([B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineNextBytes", "([B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineNextBytes", "([BLjava/security/SecureRandomParameters;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateSeed", "(I)[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineReseed", "(Ljava/security/SecureRandomParameters;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/AbstractDrbg;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instantiated", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reseedCounter", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_STRENGTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mechName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highestSupportedSecurityStrength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "supportPredictionResistance", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "supportReseeding", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxPersonalizationStringLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxAdditionalInputLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxNumberOfBytesPerRequest", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reseedInterval", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "algorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "securityStrength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestedInstantiationSecurityStrength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "personalizationString", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predictionResistanceFlag", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "usedf", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nonce", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestedNonce", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestedAlgorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "es", "Lsun/security/provider/EntropySource;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultES", "Lsun/security/provider/EntropySource;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractDrbg", "(Ljava/security/SecureRandomParameters;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractDrbg", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetParameters", "()Ljava/security/SecureRandomParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instantiateIfNecessary", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntropyInput", "(Z)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntropyInput", "(IIIZ)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reseedAlgorithm", "([B[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateAlgorithm", "([B[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "chooseAlgorithmAndStrength", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initEngine", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instantiateAlgorithm", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getStandardStrength", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "configure", "(Ljava/security/SecureRandomParameters;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineSetSeed", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineNextBytes", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineNextBytes", "([BLjava/security/SecureRandomParameters;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateSeed", "(I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineReseed", "(Ljava/security/SecureRandomParameters;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/Debug;", "protected static final")]
@@ -81,10 +82,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.Debug>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -92,10 +93,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "protected volatile")]
@@ -103,10 +104,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("I", "protected static final")]
@@ -114,10 +115,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -125,10 +126,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -136,10 +137,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -147,10 +148,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -158,10 +159,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -169,10 +170,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -180,10 +181,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -191,10 +192,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -202,10 +203,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -213,10 +214,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[12], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[12], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -224,10 +225,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[13]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[13], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[13], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -235,10 +236,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -246,10 +247,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[15]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -257,10 +258,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[16]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
 	}
 
 	[JniSignatureAttribute("[B", "protected")]
@@ -268,10 +269,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -279,10 +280,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -290,10 +291,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[19]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
 	}
 
 	[JniSignatureAttribute("[B", "protected")]
@@ -301,10 +302,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[B", "private")]
@@ -312,10 +313,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -323,10 +324,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/security/provider/EntropySource;", "private")]
@@ -334,10 +335,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.EntropySource>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/security/provider/EntropySource;", "private static final")]
@@ -345,10 +346,10 @@ public partial class AbstractDrbg
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[24]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.EntropySource>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[24], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -357,12 +358,12 @@ public partial class AbstractDrbg
 	}
 
 	[JniSignatureAttribute("(Ljava/security/SecureRandomParameters;)V", "protected")]
-	public AbstractDrbg(Dova.JDK.java.security.SecureRandomParameters arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractDrbg(Dova.JDK.java.security.SecureRandomParameters arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public AbstractDrbg() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public AbstractDrbg() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
 	{
 	}
 
@@ -373,109 +374,109 @@ public partial class AbstractDrbg
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String toString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/security/SecureRandomParameters;", "protected")]
 	public Dova.JDK.java.security.SecureRandomParameters engineGetParameters()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.SecureRandomParameters>(ret);
 	}
 
 	[JniSignatureAttribute("([B)V", "private synchronized")]
 	public void instantiateIfNecessary(JavaArray<byte> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 	}
 
 	[JniSignatureAttribute("(Z)[B", "private")]
 	public JavaArray<byte> getEntropyInput(bool arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("(IIIZ)[B", "private")]
 	public JavaArray<byte> getEntropyInput(int arg0, int arg1, int arg2, bool arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("([B[B)V", "protected")]
 	public void reseedAlgorithm(JavaArray<byte> arg0, JavaArray<byte> arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("([B[B)V", "protected abstract")]
 	public void generateAlgorithm(JavaArray<byte> arg0, JavaArray<byte> arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()V", "protected abstract")]
 	public void chooseAlgorithmAndStrength()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7]);
 	}
 
 	[JniSignatureAttribute("()V", "protected abstract")]
 	public void initEngine()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
 	}
 
 	[JniSignatureAttribute("([B)V", "protected abstract")]
 	public void instantiateAlgorithm(JavaArray<byte> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
 	}
 
 	[JniSignatureAttribute("(I)I", "protected static")]
 	public static int getStandardStrength(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[10], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[10], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/security/SecureRandomParameters;)V", "protected final")]
 	public void configure(Dova.JDK.java.security.SecureRandomParameters arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
 	}
 
 	[JniSignatureAttribute("([B)V", "public final synchronized")]
 	public void engineSetSeed(JavaArray<byte> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
 	}
 
 	[JniSignatureAttribute("([B)V", "protected final")]
 	public void engineNextBytes(JavaArray<byte> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[13], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[13], arg0);
 	}
 
 	[JniSignatureAttribute("([BLjava/security/SecureRandomParameters;)V", "protected final")]
 	public void engineNextBytes(JavaArray<byte> arg0, Dova.JDK.java.security.SecureRandomParameters arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(I)[B", "public final")]
 	public JavaArray<byte> engineGenerateSeed(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/SecureRandomParameters;)V", "public final")]
 	public void engineReseed(Dova.JDK.java.security.SecureRandomParameters arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
 	}
 
 	[JniSignatureAttribute("Lsun/security/provider/AbstractDrbg$SeederHolder;", "private static")]
@@ -491,11 +492,11 @@ public partial class AbstractDrbg
 
 		static SeederHolder()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/AbstractDrbg$SeederHolder;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "prseeder", "Lsun/security/provider/EntropySource;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "seeder", "Lsun/security/provider/EntropySource;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SeederHolder", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/AbstractDrbg$SeederHolder;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "prseeder", "Lsun/security/provider/EntropySource;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "seeder", "Lsun/security/provider/EntropySource;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SeederHolder", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/provider/EntropySource;", "static final")]
@@ -503,10 +504,10 @@ public partial class AbstractDrbg
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.EntropySource>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/provider/EntropySource;", "static final")]
@@ -514,10 +515,10 @@ public partial class AbstractDrbg
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.EntropySource>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -526,7 +527,7 @@ public partial class AbstractDrbg
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SeederHolder() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SeederHolder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -548,11 +549,11 @@ public partial class AbstractDrbg
 
 		static NonceProvider()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/AbstractDrbg$NonceProvider;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "block", "[B"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NonceProvider", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "next", "()[B"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/AbstractDrbg$NonceProvider;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "block", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonceProvider", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "next", "()[B"));
 		}
 
 		[JniSignatureAttribute("[B", "private static final")]
@@ -560,10 +561,10 @@ public partial class AbstractDrbg
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -572,7 +573,7 @@ public partial class AbstractDrbg
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NonceProvider() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NonceProvider() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -583,7 +584,7 @@ public partial class AbstractDrbg
 		[JniSignatureAttribute("()[B", "private static synchronized")]
 		public static JavaArray<byte> next()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
 	}

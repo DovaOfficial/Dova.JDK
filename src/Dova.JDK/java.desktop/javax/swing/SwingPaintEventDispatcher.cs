@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class SwingPaintEventDispatcher
 
 	static SwingPaintEventDispatcher()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/SwingPaintEventDispatcher;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SHOW_FROM_DOUBLE_BUFFER", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ERASE_BACKGROUND", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SwingPaintEventDispatcher", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "queueSurfaceDataReplacing", "(Ljava/awt/Component;Ljava/lang/Runnable;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "shouldDoNativeBackgroundErase", "(Ljava/awt/Component;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createPaintEvent", "(Ljava/awt/Component;IIII)Ljava/awt/event/PaintEvent;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/SwingPaintEventDispatcher;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHOW_FROM_DOUBLE_BUFFER", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ERASE_BACKGROUND", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SwingPaintEventDispatcher", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "queueSurfaceDataReplacing", "(Ljava/awt/Component;Ljava/lang/Runnable;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldDoNativeBackgroundErase", "(Ljava/awt/Component;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPaintEvent", "(Ljava/awt/Component;IIII)Ljava/awt/event/PaintEvent;"));
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -43,10 +44,10 @@ public partial class SwingPaintEventDispatcher
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -54,10 +55,10 @@ public partial class SwingPaintEventDispatcher
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -66,7 +67,7 @@ public partial class SwingPaintEventDispatcher
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public SwingPaintEventDispatcher() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SwingPaintEventDispatcher() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -77,21 +78,21 @@ public partial class SwingPaintEventDispatcher
 	[JniSignatureAttribute("(Ljava/awt/Component;Ljava/lang/Runnable;)Z", "public")]
 	public bool queueSurfaceDataReplacing(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.lang.Runnable arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;)Z", "public")]
 	public bool shouldDoNativeBackgroundErase(Dova.JDK.java.awt.Component arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;IIII)Ljava/awt/event/PaintEvent;", "public")]
 	public Dova.JDK.java.awt.@event.PaintEvent createPaintEvent(Dova.JDK.java.awt.Component arg0, int arg1, int arg2, int arg3, int arg4)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3, arg4);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3, arg4);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.@event.PaintEvent>(ret);
 	}
 }

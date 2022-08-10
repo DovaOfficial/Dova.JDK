@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,16 +29,16 @@ public partial class ComposedCharIter
 
 	static ComposedCharIter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/text/ComposedCharIter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DONE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "chars", "[I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "decomps", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "decompNum", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "curChar", "I"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ComposedCharIter", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "decomposition", "()Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/text/ComposedCharIter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "chars", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "decomps", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "decompNum", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curChar", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ComposedCharIter", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decomposition", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -45,10 +46,10 @@ public partial class ComposedCharIter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("[I", "private static")]
@@ -56,10 +57,10 @@ public partial class ComposedCharIter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static")]
@@ -67,10 +68,10 @@ public partial class ComposedCharIter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private static")]
@@ -78,10 +79,10 @@ public partial class ComposedCharIter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -89,10 +90,10 @@ public partial class ComposedCharIter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -101,7 +102,7 @@ public partial class ComposedCharIter
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ComposedCharIter() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ComposedCharIter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -112,14 +113,14 @@ public partial class ComposedCharIter
 	[JniSignatureAttribute("()I", "public")]
 	public int next()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String decomposition()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 }

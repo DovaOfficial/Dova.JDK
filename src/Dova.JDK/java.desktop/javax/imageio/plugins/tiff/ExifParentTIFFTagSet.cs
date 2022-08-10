@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,15 +29,15 @@ public partial class ExifParentTIFFTagSet
 
 	static ExifParentTIFFTagSet()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_EXIF_IFD_POINTER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GPS_INFO_IFD_POINTER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "tags", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ExifParentTIFFTagSet", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initTags", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_EXIF_IFD_POINTER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GPS_INFO_IFD_POINTER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tags", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExifParentTIFFTagSet", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initTags", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;", "private static")]
@@ -44,10 +45,10 @@ public partial class ExifParentTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.plugins.tiff.ExifParentTIFFTagSet>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -55,10 +56,10 @@ public partial class ExifParentTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -66,10 +67,10 @@ public partial class ExifParentTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private static")]
@@ -77,10 +78,10 @@ public partial class ExifParentTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -89,7 +90,7 @@ public partial class ExifParentTIFFTagSet
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ExifParentTIFFTagSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ExifParentTIFFTagSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -100,14 +101,14 @@ public partial class ExifParentTIFFTagSet
 	[JniSignatureAttribute("()Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet;", "public static synchronized")]
 	public static Dova.JDK.javax.imageio.plugins.tiff.ExifParentTIFFTagSet getInstance()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.plugins.tiff.ExifParentTIFFTagSet>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "private static")]
 	public static void initTags()
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1]);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1]);
 	}
 
 	[JniSignatureAttribute("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet$ExifIFDPointer;", "static")]
@@ -121,9 +122,9 @@ public partial class ExifParentTIFFTagSet
 
 		static ExifIFDPointer()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet$ExifIFDPointer;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ExifIFDPointer", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet$ExifIFDPointer;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExifIFDPointer", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -132,7 +133,7 @@ public partial class ExifParentTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ExifIFDPointer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ExifIFDPointer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -152,9 +153,9 @@ public partial class ExifParentTIFFTagSet
 
 		static GPSInfoIFDPointer()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet$GPSInfoIFDPointer;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "GPSInfoIFDPointer", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/ExifParentTIFFTagSet$GPSInfoIFDPointer;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GPSInfoIFDPointer", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -163,7 +164,7 @@ public partial class ExifParentTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GPSInfoIFDPointer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GPSInfoIFDPointer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 

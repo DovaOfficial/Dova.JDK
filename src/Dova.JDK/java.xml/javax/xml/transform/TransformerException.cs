@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,28 +29,28 @@ public partial class TransformerException
 
 	static TransformerException()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/xml/transform/TransformerException;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "locator", "Ljavax/xml/transform/SourceLocator;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "containedException", "Ljava/lang/Throwable;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/Throwable;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljava/lang/Throwable;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "(Ljava/io/PrintStream;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCause", "()Ljava/lang/Throwable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getException", "()Ljava/lang/Throwable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLocationAsString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLocationString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNonPrivDomain", "()Ljava/security/ProtectionDomain;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLocator", "()Ljavax/xml/transform/SourceLocator;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setLocator", "(Ljavax/xml/transform/SourceLocator;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMessageAndLocation", "()Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/xml/transform/TransformerException;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locator", "Ljavax/xml/transform/SourceLocator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "containedException", "Ljava/lang/Throwable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/Throwable;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljava/lang/Throwable;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransformerException", "(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "(Ljava/io/PrintStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printStackTrace", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCause", "()Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initCause", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getException", "()Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocationAsString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocationString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNonPrivDomain", "()Ljava/security/ProtectionDomain;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocator", "()Ljavax/xml/transform/SourceLocator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocator", "(Ljavax/xml/transform/SourceLocator;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessageAndLocation", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -57,10 +58,10 @@ public partial class TransformerException
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("Ljavax/xml/transform/SourceLocator;", "")]
@@ -68,10 +69,10 @@ public partial class TransformerException
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.xml.transform.SourceLocator>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Throwable;", "")]
@@ -79,10 +80,10 @@ public partial class TransformerException
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -91,27 +92,27 @@ public partial class TransformerException
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public TransformerException(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TransformerException(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Throwable;)V", "public")]
-	public TransformerException(Dova.JDK.java.lang.Throwable arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public TransformerException(Dova.JDK.java.lang.Throwable arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Throwable;)V", "public")]
-	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Throwable arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Throwable arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;)V", "public")]
-	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljavax/xml/transform/SourceLocator;Ljava/lang/Throwable;)V", "public")]
-	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1, Dova.JDK.java.lang.Throwable arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2))
+	public TransformerException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1, Dova.JDK.java.lang.Throwable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2))
 	{
 	}
 
@@ -122,80 +123,80 @@ public partial class TransformerException
 	[JniSignatureAttribute("()V", "public")]
 	public void printStackTrace()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintStream;)V", "public")]
 	public void printStackTrace(Dova.JDK.java.io.PrintStream arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "public")]
 	public void printStackTrace(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Throwable;", "public")]
 	public Dova.JDK.java.lang.Throwable getCause()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Throwable;)Ljava/lang/Throwable;", "public synchronized")]
 	public Dova.JDK.java.lang.Throwable initCause(Dova.JDK.java.lang.Throwable arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Throwable;", "public")]
 	public Dova.JDK.java.lang.Throwable getException()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getLocationAsString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "private")]
 	public Dova.JDK.java.lang.String getLocationString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/security/ProtectionDomain;", "private")]
 	public Dova.JDK.java.security.ProtectionDomain getNonPrivDomain()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.ProtectionDomain>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/xml/transform/SourceLocator;", "public")]
 	public Dova.JDK.javax.xml.transform.SourceLocator getLocator()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.xml.transform.SourceLocator>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/xml/transform/SourceLocator;)V", "public")]
 	public void setLocator(Dova.JDK.javax.xml.transform.SourceLocator arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getMessageAndLocation()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 }

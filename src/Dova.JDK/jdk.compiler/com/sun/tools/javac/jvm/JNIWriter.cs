@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,45 +29,45 @@ public partial class JNIWriter
 
 	static JNIWriter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "jniWriterKey", "Lcom/sun/tools/javac/util/Context$Key;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "fileManager", "Ljavax/tools/JavaFileManager;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "syms", "Lcom/sun/tools/javac/code/Symtab;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "log", "Lcom/sun/tools/javac/util/Log;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "verbose", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "checkAll", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "multiModuleMode", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "isWindows", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JNIWriter", "(Lcom/sun/tools/javac/util/Context;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "encode", "(Ljava/lang/CharSequence;Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isStatic", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isSynthetic", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Ljavax/tools/FileObject;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isFinal", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isNative", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/jvm/JNIWriter;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "includes", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "writeMethods", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "encodeChar", "(C)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "needsHeader", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "needsHeader", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "hasFlag", "(Lcom/sun/tools/javac/code/Symbol;I)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "lazyInit", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fileTop", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "guardBegin", "(Ljava/io/PrintWriter;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cppGuardBegin", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "writeStatics", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cppGuardEnd", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "guardEnd", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "printStaticDefines", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/util/Pair;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "jniType", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeMethod", "(Lcom/sun/tools/javac/code/Symbol;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isalnum", "(C)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isprint", "(C)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "jniWriterKey", "Lcom/sun/tools/javac/util/Context$Key;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fileManager", "Ljavax/tools/JavaFileManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "syms", "Lcom/sun/tools/javac/code/Symtab;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "log", "Lcom/sun/tools/javac/util/Log;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verbose", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "checkAll", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "multiModuleMode", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isWindows", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JNIWriter", "(Lcom/sun/tools/javac/util/Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "encode", "(Ljava/lang/CharSequence;Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isStatic", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isSynthetic", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Ljavax/tools/FileObject;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isFinal", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNative", "(Lcom/sun/tools/javac/code/Symbol;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/jvm/JNIWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "includes", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeMethods", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "encodeChar", "(C)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "needsHeader", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "needsHeader", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "hasFlag", "(Lcom/sun/tools/javac/code/Symbol;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lazyInit", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fileTop", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "guardBegin", "(Ljava/io/PrintWriter;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cppGuardBegin", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeStatics", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cppGuardEnd", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "guardEnd", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "printStaticDefines", "(Ljava/io/PrintWriter;Lcom/sun/tools/javac/util/Pair;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "jniType", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeMethod", "(Lcom/sun/tools/javac/code/Symbol;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isalnum", "(C)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isprint", "(C)Z"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context$Key;", "protected static final")]
@@ -74,10 +75,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.util.Context.Key>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/tools/JavaFileManager;", "private final")]
@@ -85,10 +86,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.tools.JavaFileManager>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/code/Types;", "")]
@@ -96,10 +97,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Types>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/code/Symtab;", "")]
@@ -107,10 +108,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Symtab>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Log;", "private final")]
@@ -118,10 +119,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.util.Log>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -129,10 +130,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -140,10 +141,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -151,10 +152,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context;", "private")]
@@ -162,10 +163,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.util.Context>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -173,10 +174,10 @@ public partial class JNIWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[9], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[9], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -185,7 +186,7 @@ public partial class JNIWriter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "private")]
-	public JNIWriter(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public JNIWriter(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -196,171 +197,171 @@ public partial class JNIWriter
 	[JniSignatureAttribute("(Ljava/lang/CharSequence;Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String encode(Dova.JDK.java.lang.CharSequence arg0, Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;)Z", "static")]
 	public static bool isStatic(Dova.JDK.com.sun.tools.javac.code.Symbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;)Z", "static")]
 	public static bool isSynthetic(Dova.JDK.com.sun.tools.javac.code.Symbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V", "public")]
 	public void write(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Ljavax/tools/FileObject;", "public")]
 	public Dova.JDK.javax.tools.FileObject write(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.tools.FileObject>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;)Z", "static")]
 	public static bool isFinal(Dova.JDK.com.sun.tools.javac.code.Symbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;)Z", "static")]
 	public static bool isNative(Dova.JDK.com.sun.tools.javac.code.Symbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/jvm/JNIWriter;", "public static")]
 	public static Dova.JDK.com.sun.tools.javac.jvm.JNIWriter instance(Dova.JDK.com.sun.tools.javac.util.Context arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "protected")]
 	public void includes(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Ljava/lang/String;)V", "protected")]
 	public void writeMethods(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg1, Dova.JDK.java.lang.String arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(C)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String encodeChar(char arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[10], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[10], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Z", "private")]
 	public bool needsHeader(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0, bool arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)Z", "public")]
 	public bool needsHeader(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;I)Z", "private static")]
 	public static bool hasFlag(Dova.JDK.com.sun.tools.javac.code.Symbol arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[13], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[13], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()V", "private")]
 	public void lazyInit()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "protected")]
 	public void fileTop(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Ljava/lang/String;)V", "protected")]
 	public void guardBegin(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "protected")]
 	public void cppGuardBegin(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V", "protected")]
 	public void writeStatics(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[18], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[18], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "protected")]
 	public void cppGuardEnd(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "protected")]
 	public void guardEnd(Dova.JDK.java.io.PrintWriter arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[20], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[20], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/javac/util/Pair;)V", "static")]
 	public static void printStaticDefines(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.javac.util.Pair arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[21], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[21], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;", "protected final")]
 	public Dova.JDK.java.lang.String jniType(Dova.JDK.com.sun.tools.javac.code.Type arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol;Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Z)Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String encodeMethod(Dova.JDK.com.sun.tools.javac.code.Symbol arg0, Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg1, bool arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[23], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[23], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(C)Z", "private static")]
 	public static bool isalnum(char arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[24], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[24], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(C)Z", "private static")]
 	public static bool isprint(char arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[25], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[25], arg0);
 		return ret;
 	}
 
@@ -377,18 +378,18 @@ public partial class JNIWriter
 
 		static EncoderType()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FIELDSTUB", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "JNI", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIGNATURE", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "EncoderType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELDSTUB", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JNI", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIGNATURE", "Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EncoderType", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static final")]
@@ -396,10 +397,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static final")]
@@ -407,10 +408,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static final")]
@@ -418,10 +419,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static final")]
@@ -429,10 +430,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static final")]
@@ -440,10 +441,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "private static final")]
@@ -451,10 +452,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -463,7 +464,7 @@ public partial class JNIWriter
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public EncoderType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public EncoderType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -474,21 +475,21 @@ public partial class JNIWriter
 		[JniSignatureAttribute("()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static")]
 		public static JavaArray<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType> values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "public static")]
 		public static Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>(ret);
 		}
 
 		[JniSignatureAttribute("()[Lcom/sun/tools/javac/jvm/JNIWriter$EncoderType;", "private static")]
 		public static JavaArray<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType> _values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.javac.jvm.JNIWriter.EncoderType>>(ret);
 		}
 	}
@@ -506,26 +507,26 @@ public partial class JNIWriter
 
 		static TypeSignature()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "elems", "Lcom/sun/tools/javac/model/JavacElements;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_VOID", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_BOOLEAN", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_BYTE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_CHAR", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_SHORT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_INT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_LONG", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_FLOAT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_DOUBLE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_ARRAY", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_CLASS", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TypeSignature", "(Lcom/sun/tools/javac/code/Types;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getJvmSignature", "(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getReturnSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getParameterSignature", "(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elems", "Lcom/sun/tools/javac/model/JavacElements;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_VOID", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_BOOLEAN", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_BYTE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_CHAR", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_SHORT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_INT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_LONG", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_FLOAT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_DOUBLE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_ARRAY", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIG_CLASS", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeSignature", "(Lcom/sun/tools/javac/code/Types;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJvmSignature", "(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReturnSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameterSignature", "(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/model/JavacElements;", "")]
@@ -533,10 +534,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.model.JavacElements>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/code/Types;", "")]
@@ -544,10 +545,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Types>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -555,10 +556,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -566,10 +567,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -577,10 +578,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -588,10 +589,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -599,10 +600,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -610,10 +611,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -621,10 +622,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -632,10 +633,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -643,10 +644,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -654,10 +655,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -665,10 +666,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -677,7 +678,7 @@ public partial class JNIWriter
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Types;)V", "public")]
-		public TypeSignature(Dova.JDK.com.sun.tools.javac.code.Types arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TypeSignature(Dova.JDK.com.sun.tools.javac.code.Types arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -688,28 +689,28 @@ public partial class JNIWriter
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;", "")]
 		public Dova.JDK.java.lang.StringBuilder getSignature(Dova.JDK.com.sun.tools.javac.code.Type arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;", "")]
 		public Dova.JDK.java.lang.StringBuilder getJvmSignature(Dova.JDK.com.sun.tools.javac.code.Type arg0, bool arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;)Ljava/lang/StringBuilder;", "")]
 		public Dova.JDK.java.lang.StringBuilder getReturnSignature(Dova.JDK.com.sun.tools.javac.code.Type arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Z)Ljava/lang/StringBuilder;", "")]
 		public Dova.JDK.java.lang.StringBuilder getParameterSignature(Dova.JDK.com.sun.tools.javac.code.Type arg0, bool arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
 
@@ -726,18 +727,18 @@ public partial class JNIWriter
 
 			static JvmTypeVisitor()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature$JvmTypeVisitor;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "useFlatname", "Z"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JvmTypeVisitor", "(Z)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getJvmPrimitiveSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setDeclaredType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature$JvmTypeVisitor;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "useFlatname", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JvmTypeVisitor", "(Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJvmPrimitiveSignature", "(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDeclaredType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)V"));
 			}
 
 			[JniSignatureAttribute("Z", "private final")]
@@ -745,10 +746,10 @@ public partial class JNIWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+				set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -757,7 +758,7 @@ public partial class JNIWriter
 			}
 
 			[JniSignatureAttribute("(Z)V", "")]
-			public JvmTypeVisitor(bool arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public JvmTypeVisitor(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -768,56 +769,56 @@ public partial class JNIWriter
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;", "public")]
 			public Dova.JDK.com.sun.tools.javac.code.Type visitArrayType(Dova.JDK.com.sun.tools.javac.code.Type.ArrayType arg0, Dova.JDK.java.lang.StringBuilder arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Type>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object visitArrayType(Dova.JDK.com.sun.tools.javac.code.Type.ArrayType arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;", "public")]
 			public Dova.JDK.com.sun.tools.javac.code.Type visitType(Dova.JDK.com.sun.tools.javac.code.Type arg0, Dova.JDK.java.lang.StringBuilder arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Type>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object visitType(Dova.JDK.com.sun.tools.javac.code.Type arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/StringBuilder;)Lcom/sun/tools/javac/code/Type;", "public")]
 			public Dova.JDK.com.sun.tools.javac.code.Type visitClassType(Dova.JDK.com.sun.tools.javac.code.Type.ClassType arg0, Dova.JDK.java.lang.StringBuilder arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.code.Type>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object visitClassType(Dova.JDK.com.sun.tools.javac.code.Type.ClassType arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;)Ljava/lang/String;", "private")]
 			public Dova.JDK.java.lang.String getJvmPrimitiveSignature(Dova.JDK.com.sun.tools.javac.code.Type arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Ljava/lang/StringBuilder;)V", "private")]
 			public void setDeclaredType(Dova.JDK.com.sun.tools.javac.code.Type arg0, Dova.JDK.java.lang.StringBuilder arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
 			}
 		}
 
@@ -833,10 +834,10 @@ public partial class JNIWriter
 
 			static SignatureException()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature$SignatureException;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SignatureException", "(Ljava/lang/String;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$TypeSignature$SignatureException;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureException", "(Ljava/lang/String;)V"));
 			}
 
 			[JniSignatureAttribute("J", "private static final")]
@@ -844,10 +845,10 @@ public partial class JNIWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+				set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -856,7 +857,7 @@ public partial class JNIWriter
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-			public SignatureException(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public SignatureException(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -880,24 +881,24 @@ public partial class JNIWriter
 
 		static SimpleTypeVisitor()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$SimpleTypeVisitor;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "DEFAULT_VALUE", "Ljava/lang/Object;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SimpleTypeVisitor", "()V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SimpleTypeVisitor", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitPackageType", "(Lcom/sun/tools/javac/code/Type$PackageType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitTypeVar", "(Lcom/sun/tools/javac/code/Type$TypeVar;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitCapturedType", "(Lcom/sun/tools/javac/code/Type$CapturedType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitForAll", "(Lcom/sun/tools/javac/code/Type$ForAll;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitUndetVar", "(Lcom/sun/tools/javac/code/Type$UndetVar;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitWildcardType", "(Lcom/sun/tools/javac/code/Type$WildcardType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitMethodType", "(Lcom/sun/tools/javac/code/Type$MethodType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitModuleType", "(Lcom/sun/tools/javac/code/Type$ModuleType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitErrorType", "(Lcom/sun/tools/javac/code/Type$ErrorType;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "defaultAction", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/JNIWriter$SimpleTypeVisitor;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "DEFAULT_VALUE", "Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SimpleTypeVisitor", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SimpleTypeVisitor", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArrayType", "(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitPackageType", "(Lcom/sun/tools/javac/code/Type$PackageType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitTypeVar", "(Lcom/sun/tools/javac/code/Type$TypeVar;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCapturedType", "(Lcom/sun/tools/javac/code/Type$CapturedType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitForAll", "(Lcom/sun/tools/javac/code/Type$ForAll;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitUndetVar", "(Lcom/sun/tools/javac/code/Type$UndetVar;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitType", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClassType", "(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitWildcardType", "(Lcom/sun/tools/javac/code/Type$WildcardType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMethodType", "(Lcom/sun/tools/javac/code/Type$MethodType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleType", "(Lcom/sun/tools/javac/code/Type$ModuleType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitErrorType", "(Lcom/sun/tools/javac/code/Type$ErrorType;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultAction", "(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "protected final")]
@@ -905,10 +906,10 @@ public partial class JNIWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -917,12 +918,12 @@ public partial class JNIWriter
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public SimpleTypeVisitor() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SimpleTypeVisitor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)V", "protected")]
-		public SimpleTypeVisitor(Dova.JDK.java.lang.Object arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public SimpleTypeVisitor(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
@@ -933,91 +934,91 @@ public partial class JNIWriter
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ArrayType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitArrayType(Dova.JDK.com.sun.tools.javac.code.Type.ArrayType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$PackageType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitPackageType(Dova.JDK.com.sun.tools.javac.code.Type.PackageType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$TypeVar;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitTypeVar(Dova.JDK.com.sun.tools.javac.code.Type.TypeVar arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$CapturedType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitCapturedType(Dova.JDK.com.sun.tools.javac.code.Type.CapturedType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ForAll;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitForAll(Dova.JDK.com.sun.tools.javac.code.Type.ForAll arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$UndetVar;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitUndetVar(Dova.JDK.com.sun.tools.javac.code.Type.UndetVar arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitType(Dova.JDK.com.sun.tools.javac.code.Type arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ClassType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitClassType(Dova.JDK.com.sun.tools.javac.code.Type.ClassType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$WildcardType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitWildcardType(Dova.JDK.com.sun.tools.javac.code.Type.WildcardType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$MethodType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitMethodType(Dova.JDK.com.sun.tools.javac.code.Type.MethodType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ModuleType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitModuleType(Dova.JDK.com.sun.tools.javac.code.Type.ModuleType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type$ErrorType;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object visitErrorType(Dova.JDK.com.sun.tools.javac.code.Type.ErrorType arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Type;Ljava/lang/Object;)Ljava/lang/Object;", "protected")]
 		public Dova.JDK.java.lang.Object defaultAction(Dova.JDK.com.sun.tools.javac.code.Type arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}

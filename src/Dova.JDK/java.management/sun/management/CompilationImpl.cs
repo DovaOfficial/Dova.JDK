@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,15 +30,15 @@ public partial class CompilationImpl
 
 	static CompilationImpl()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/management/CompilationImpl;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "jvm", "Lsun/management/VMManagement;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CompilationImpl", "(Lsun/management/VMManagement;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getObjectName", "()Ljavax/management/ObjectName;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isCompilationTimeMonitoringSupported", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTotalCompilationTime", "()J"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/CompilationImpl;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jvm", "Lsun/management/VMManagement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompilationImpl", "(Lsun/management/VMManagement;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getObjectName", "()Ljavax/management/ObjectName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompilationTimeMonitoringSupported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTotalCompilationTime", "()J"));
 	}
 
 	[JniSignatureAttribute("Lsun/management/VMManagement;", "private final")]
@@ -45,10 +46,10 @@ public partial class CompilationImpl
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.management.VMManagement>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -56,10 +57,10 @@ public partial class CompilationImpl
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -68,7 +69,7 @@ public partial class CompilationImpl
 	}
 
 	[JniSignatureAttribute("(Lsun/management/VMManagement;)V", "")]
-	public CompilationImpl(Dova.JDK.sun.management.VMManagement arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CompilationImpl(Dova.JDK.sun.management.VMManagement arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -79,28 +80,28 @@ public partial class CompilationImpl
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getName()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/management/ObjectName;", "public")]
 	public Dova.JDK.javax.management.ObjectName getObjectName()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.management.ObjectName>(ret);
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool isCompilationTimeMonitoringSupported()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()J", "public")]
 	public long getTotalCompilationTime()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return ret;
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -30,29 +31,29 @@ public partial class DefaultTableCellRenderer
 
 	static DefaultTableCellRenderer()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/table/DefaultTableCellRenderer;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SAFE_NO_FOCUS_BORDER", "Ljavax/swing/border/Border;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_NO_FOCUS_BORDER", "Ljavax/swing/border/Border;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "noFocusBorder", "Ljavax/swing/border/Border;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "unselectedForeground", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "unselectedBackground", "Ljava/awt/Color;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DefaultTableCellRenderer", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "validate", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isOpaque", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNoFocusBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "updateUI", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTableCellRendererComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "repaint", "(Ljava/awt/Rectangle;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "repaint", "(JIIII)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "repaint", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "invalidate", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setBackground", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setForeground", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "firePropertyChange", "(Ljava/lang/String;ZZ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "revalidate", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/table/DefaultTableCellRenderer;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAFE_NO_FOCUS_BORDER", "Ljavax/swing/border/Border;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_NO_FOCUS_BORDER", "Ljavax/swing/border/Border;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "noFocusBorder", "Ljavax/swing/border/Border;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unselectedForeground", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unselectedBackground", "Ljava/awt/Color;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultTableCellRenderer", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isOpaque", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNoFocusBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateUI", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTableCellRendererComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "repaint", "(Ljava/awt/Rectangle;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "repaint", "(JIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "repaint", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidate", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBackground", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setForeground", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firePropertyChange", "(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firePropertyChange", "(Ljava/lang/String;ZZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "revalidate", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/border/Border;", "private static final")]
@@ -60,10 +61,10 @@ public partial class DefaultTableCellRenderer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.border.Border>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/border/Border;", "private static final")]
@@ -71,10 +72,10 @@ public partial class DefaultTableCellRenderer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.border.Border>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/border/Border;", "protected static")]
@@ -82,10 +83,10 @@ public partial class DefaultTableCellRenderer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.border.Border>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -93,10 +94,10 @@ public partial class DefaultTableCellRenderer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -104,10 +105,10 @@ public partial class DefaultTableCellRenderer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -116,7 +117,7 @@ public partial class DefaultTableCellRenderer
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DefaultTableCellRenderer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultTableCellRenderer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -127,94 +128,94 @@ public partial class DefaultTableCellRenderer
 	[JniSignatureAttribute("()V", "public")]
 	public void validate()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;)V", "protected")]
 	public void setValue(Dova.JDK.java.lang.Object arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool isOpaque()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/border/Border;", "private")]
 	public Dova.JDK.javax.swing.border.Border getNoFocusBorder()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.border.Border>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void updateUI()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4]);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;", "public")]
 	public Dova.JDK.java.awt.Component getTableCellRendererComponent(Dova.JDK.javax.swing.JTable arg0, Dova.JDK.java.lang.Object arg1, bool arg2, bool arg3, int arg4, int arg5)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2, arg3, arg4, arg5);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2, arg3, arg4, arg5);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Component>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Rectangle;)V", "public")]
 	public void repaint(Dova.JDK.java.awt.Rectangle arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 	}
 
 	[JniSignatureAttribute("(JIIII)V", "public")]
 	public void repaint(long arg0, int arg1, int arg2, int arg3, int arg4)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3, arg4);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3, arg4);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void repaint()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void invalidate()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9]);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Color;)V", "public")]
 	public void setBackground(Dova.JDK.java.awt.Color arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Color;)V", "public")]
 	public void setForeground(Dova.JDK.java.awt.Color arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", "protected")]
 	public void firePropertyChange(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ZZ)V", "public")]
 	public void firePropertyChange(Dova.JDK.java.lang.String arg0, bool arg1, bool arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void revalidate()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/table/DefaultTableCellRenderer$UIResource;", "public static")]
@@ -229,9 +230,9 @@ public partial class DefaultTableCellRenderer
 
 		static UIResource()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/table/DefaultTableCellRenderer$UIResource;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "UIResource", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/table/DefaultTableCellRenderer$UIResource;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UIResource", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -240,7 +241,7 @@ public partial class DefaultTableCellRenderer
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public UIResource() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public UIResource() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 

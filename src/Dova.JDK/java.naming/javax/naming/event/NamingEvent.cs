@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,24 +29,24 @@ public partial class NamingEvent
 
 	static NamingEvent()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/naming/event/NamingEvent;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_ADDED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_REMOVED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_RENAMED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_CHANGED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "changeInfo", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "oldBinding", "Ljavax/naming/Binding;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "newBinding", "Ljavax/naming/Binding;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NamingEvent", "(Ljavax/naming/event/EventContext;ILjavax/naming/Binding;Ljavax/naming/Binding;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dispatch", "(Ljavax/naming/event/NamingListener;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getType", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEventContext", "()Ljavax/naming/event/EventContext;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOldBinding", "()Ljavax/naming/Binding;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNewBinding", "()Ljavax/naming/Binding;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getChangeInfo", "()Ljava/lang/Object;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/naming/event/NamingEvent;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_ADDED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_REMOVED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_RENAMED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT_CHANGED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "changeInfo", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oldBinding", "Ljavax/naming/Binding;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "newBinding", "Ljavax/naming/Binding;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamingEvent", "(Ljavax/naming/event/EventContext;ILjavax/naming/Binding;Ljavax/naming/Binding;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatch", "(Ljavax/naming/event/NamingListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEventContext", "()Ljavax/naming/event/EventContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOldBinding", "()Ljavax/naming/Binding;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNewBinding", "()Ljavax/naming/Binding;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChangeInfo", "()Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -53,10 +54,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -64,10 +65,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -75,10 +76,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -86,10 +87,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Object;", "protected")]
@@ -97,10 +98,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -108,10 +109,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Ljavax/naming/Binding;", "protected")]
@@ -119,10 +120,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.Binding>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/naming/Binding;", "protected")]
@@ -130,10 +131,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.Binding>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -141,10 +142,10 @@ public partial class NamingEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[8], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[8], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -153,7 +154,7 @@ public partial class NamingEvent
 	}
 
 	[JniSignatureAttribute("(Ljavax/naming/event/EventContext;ILjavax/naming/Binding;Ljavax/naming/Binding;Ljava/lang/Object;)V", "public")]
-	public NamingEvent(Dova.JDK.javax.naming.@event.EventContext arg0, int arg1, Dova.JDK.javax.naming.Binding arg2, Dova.JDK.javax.naming.Binding arg3, Dova.JDK.java.lang.Object arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public NamingEvent(Dova.JDK.javax.naming.@event.EventContext arg0, int arg1, Dova.JDK.javax.naming.Binding arg2, Dova.JDK.javax.naming.Binding arg3, Dova.JDK.java.lang.Object arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -164,41 +165,41 @@ public partial class NamingEvent
 	[JniSignatureAttribute("(Ljavax/naming/event/NamingListener;)V", "public")]
 	public void dispatch(Dova.JDK.javax.naming.@event.NamingListener arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("()I", "public")]
 	public int getType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljavax/naming/event/EventContext;", "public")]
 	public Dova.JDK.javax.naming.@event.EventContext getEventContext()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.@event.EventContext>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/naming/Binding;", "public")]
 	public Dova.JDK.javax.naming.Binding getOldBinding()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.Binding>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/naming/Binding;", "public")]
 	public Dova.JDK.javax.naming.Binding getNewBinding()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.Binding>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Object;", "public")]
 	public Dova.JDK.java.lang.Object getChangeInfo()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 }

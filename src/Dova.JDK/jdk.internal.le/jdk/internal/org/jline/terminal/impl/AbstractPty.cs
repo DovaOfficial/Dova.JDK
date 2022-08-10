@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,15 +30,15 @@ public partial class AbstractPty
 
 	static AbstractPty()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/org/jline/terminal/impl/AbstractPty;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "current", "Ljdk/internal/org/jline/terminal/Attributes;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractPty", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setAttr", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSlaveInput", "()Ljava/io/InputStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doSetAttr", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doGetSlaveInput", "()Ljava/io/InputStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "checkInterrupted", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/impl/AbstractPty;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "current", "Ljdk/internal/org/jline/terminal/Attributes;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractPty", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAttr", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSlaveInput", "()Ljava/io/InputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doSetAttr", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doGetSlaveInput", "()Ljava/io/InputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInterrupted", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes;", "private")]
@@ -45,10 +46,10 @@ public partial class AbstractPty
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.org.jline.terminal.Attributes>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -57,7 +58,7 @@ public partial class AbstractPty
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public AbstractPty() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AbstractPty() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -68,33 +69,33 @@ public partial class AbstractPty
 	[JniSignatureAttribute("(Ljdk/internal/org/jline/terminal/Attributes;)V", "public")]
 	public void setAttr(Dova.JDK.jdk.@internal.org.jline.terminal.Attributes arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/io/InputStream;", "public")]
 	public Dova.JDK.java.io.InputStream getSlaveInput()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/jline/terminal/Attributes;)V", "protected abstract")]
 	public void doSetAttr(Dova.JDK.jdk.@internal.org.jline.terminal.Attributes arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/io/InputStream;", "protected abstract")]
 	public Dova.JDK.java.io.InputStream doGetSlaveInput()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
 	public void checkInterrupted()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4]);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/impl/AbstractPty$PtyInputStream;", "")]
@@ -110,15 +111,15 @@ public partial class AbstractPty
 
 		static PtyInputStream()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/org/jline/terminal/impl/AbstractPty$PtyInputStream;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "in", "Ljava/io/InputStream;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "c", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/org/jline/terminal/impl/AbstractPty;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PtyInputStream", "(Ljdk/internal/org/jline/terminal/impl/AbstractPty;Ljava/io/InputStream;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "read", "(JZ)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "readBuffered", "([B)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setNonBlocking", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/impl/AbstractPty$PtyInputStream;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "in", "Ljava/io/InputStream;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/org/jline/terminal/impl/AbstractPty;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PtyInputStream", "(Ljdk/internal/org/jline/terminal/impl/AbstractPty;Ljava/io/InputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "(JZ)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readBuffered", "([B)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNonBlocking", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/InputStream;", "final")]
@@ -126,10 +127,10 @@ public partial class AbstractPty
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -137,10 +138,10 @@ public partial class AbstractPty
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/impl/AbstractPty;", "final")]
@@ -148,10 +149,10 @@ public partial class AbstractPty
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.org.jline.terminal.impl.AbstractPty>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -160,7 +161,7 @@ public partial class AbstractPty
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/terminal/impl/AbstractPty;Ljava/io/InputStream;)V", "")]
-		public PtyInputStream(Dova.JDK.jdk.@internal.org.jline.terminal.impl.AbstractPty arg0, Dova.JDK.java.io.InputStream arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public PtyInputStream(Dova.JDK.jdk.@internal.org.jline.terminal.impl.AbstractPty arg0, Dova.JDK.java.io.InputStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -171,21 +172,21 @@ public partial class AbstractPty
 		[JniSignatureAttribute("(JZ)I", "public")]
 		public int read(long arg0, bool arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 
 		[JniSignatureAttribute("([B)I", "public")]
 		public int readBuffered(JavaArray<byte> arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "private")]
 		public void setNonBlocking()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
 		}
 	}
 }

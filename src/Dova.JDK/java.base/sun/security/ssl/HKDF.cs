@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class HKDF
 
 	static HKDF()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/ssl/HKDF;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hmacObj", "Ljavax/crypto/Mac;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hmacLen", "I"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HKDF", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "extract", "([BLjavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "extract", "(Ljavax/crypto/SecretKey;Ljavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "expand", "(Ljavax/crypto/SecretKey;[BILjava/lang/String;)Ljavax/crypto/SecretKey;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/HKDF;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hmacObj", "Ljavax/crypto/Mac;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hmacLen", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HKDF", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extract", "([BLjavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extract", "(Ljavax/crypto/SecretKey;Ljavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expand", "(Ljavax/crypto/SecretKey;[BILjava/lang/String;)Ljavax/crypto/SecretKey;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/crypto/Mac;", "private final")]
@@ -43,10 +44,10 @@ public partial class HKDF
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.Mac>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private final")]
@@ -54,10 +55,10 @@ public partial class HKDF
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -66,7 +67,7 @@ public partial class HKDF
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-	public HKDF(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HKDF(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -77,21 +78,21 @@ public partial class HKDF
 	[JniSignatureAttribute("([BLjavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;", "")]
 	public Dova.JDK.javax.crypto.SecretKey extract(JavaArray<byte> arg0, Dova.JDK.javax.crypto.SecretKey arg1, Dova.JDK.java.lang.String arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/crypto/SecretKey;Ljavax/crypto/SecretKey;Ljava/lang/String;)Ljavax/crypto/SecretKey;", "")]
 	public Dova.JDK.javax.crypto.SecretKey extract(Dova.JDK.javax.crypto.SecretKey arg0, Dova.JDK.javax.crypto.SecretKey arg1, Dova.JDK.java.lang.String arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/crypto/SecretKey;[BILjava/lang/String;)Ljavax/crypto/SecretKey;", "")]
 	public Dova.JDK.javax.crypto.SecretKey expand(Dova.JDK.javax.crypto.SecretKey arg0, JavaArray<byte> arg1, int arg2, Dova.JDK.java.lang.String arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 }

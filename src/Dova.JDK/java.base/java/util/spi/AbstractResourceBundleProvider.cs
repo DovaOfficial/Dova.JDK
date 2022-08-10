@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,20 +30,20 @@ public partial class AbstractResourceBundleProvider
 
 	static AbstractResourceBundleProvider()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/spi/AbstractResourceBundleProvider;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RB_ACCESS", "Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FORMAT_CLASS", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FORMAT_PROPERTIES", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "formats", "[Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractResourceBundleProvider", "()V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractResourceBundleProvider", "([Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "loadResourceBundle", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "loadPropertyResourceBundle", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toBundleName", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "toResourceName", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBundle0", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/spi/AbstractResourceBundleProvider;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RB_ACCESS", "Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORMAT_CLASS", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORMAT_PROPERTIES", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "formats", "[Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractResourceBundleProvider", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractResourceBundleProvider", "([Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadResourceBundle", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadPropertyResourceBundle", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toBundleName", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toResourceName", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBundle0", "(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/access/JavaUtilResourceBundleAccess;", "private static final")]
@@ -50,10 +51,10 @@ public partial class AbstractResourceBundleProvider
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.access.JavaUtilResourceBundleAccess>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -61,10 +62,10 @@ public partial class AbstractResourceBundleProvider
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -72,10 +73,10 @@ public partial class AbstractResourceBundleProvider
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private final")]
@@ -83,10 +84,10 @@ public partial class AbstractResourceBundleProvider
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -95,12 +96,12 @@ public partial class AbstractResourceBundleProvider
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public AbstractResourceBundleProvider() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AbstractResourceBundleProvider() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)V", "protected transient")]
-	public AbstractResourceBundleProvider(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public AbstractResourceBundleProvider(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -111,42 +112,42 @@ public partial class AbstractResourceBundleProvider
 	[JniSignatureAttribute("(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;", "private static")]
 	public static Dova.JDK.java.util.ResourceBundle loadResourceBundle(Dova.JDK.java.lang.Module arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ResourceBundle>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;", "private static")]
 	public static Dova.JDK.java.util.ResourceBundle loadPropertyResourceBundle(Dova.JDK.java.lang.Module arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ResourceBundle>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/ResourceBundle;", "public")]
 	public Dova.JDK.java.util.ResourceBundle getBundle(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.Locale arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ResourceBundle>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/Locale;)Ljava/lang/String;", "protected")]
 	public Dova.JDK.java.lang.String toBundleName(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.Locale arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", "private static")]
 	public static Dova.JDK.java.lang.String toResourceName(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Module;Ljava/lang/String;)Ljava/util/ResourceBundle;", "private")]
 	public Dova.JDK.java.util.ResourceBundle getBundle0(Dova.JDK.java.lang.Module arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ResourceBundle>(ret);
 	}
 }

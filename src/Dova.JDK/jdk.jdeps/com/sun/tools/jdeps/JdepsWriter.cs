@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,18 +29,18 @@ public partial class JdepsWriter
 
 	static JdepsWriter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/jdeps/Analyzer$Type;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "showProfile", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "showModule", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JdepsWriter", "(Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getProfile", "(Ljava/lang/String;)Lcom/sun/tools/jdeps/Profile;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "showProfileOrModule", "(Lcom/sun/tools/jdeps/Module;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "newDotWriter", "(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleWriter", "(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toTag", "(Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/jdeps/Analyzer$Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "showProfile", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "showModule", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdepsWriter", "(Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProfile", "(Ljava/lang/String;)Lcom/sun/tools/jdeps/Profile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showProfileOrModule", "(Lcom/sun/tools/jdeps/Module;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newDotWriter", "(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleWriter", "(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toTag", "(Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/jdeps/Analyzer$Type;", "final")]
@@ -47,10 +48,10 @@ public partial class JdepsWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.Analyzer.Type>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "final")]
@@ -58,10 +59,10 @@ public partial class JdepsWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("Z", "final")]
@@ -69,10 +70,10 @@ public partial class JdepsWriter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -81,7 +82,7 @@ public partial class JdepsWriter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V", "")]
-	public JdepsWriter(Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg0, bool arg1, bool arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public JdepsWriter(Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -92,41 +93,41 @@ public partial class JdepsWriter
 	[JniSignatureAttribute("(Ljava/lang/String;)Lcom/sun/tools/jdeps/Profile;", "")]
 	public Dova.JDK.com.sun.tools.jdeps.Profile getProfile(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.Profile>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V", "abstract")]
 	public void generateOutput(Dova.JDK.java.util.Collection arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Module;)Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String showProfileOrModule(Dova.JDK.com.sun.tools.jdeps.Module arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;", "public static")]
 	public static Dova.JDK.com.sun.tools.jdeps.JdepsWriter newDotWriter(Dova.JDK.java.nio.file.Path arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)Lcom/sun/tools/jdeps/JdepsWriter;", "public static")]
 	public static Dova.JDK.com.sun.tools.jdeps.JdepsWriter newSimpleWriter(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String toTag(Dova.JDK.com.sun.tools.jdeps.Archive arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.com.sun.tools.jdeps.Archive arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
@@ -143,13 +144,13 @@ public partial class JdepsWriter
 
 		static DotFileWriter()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "showLabel", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "outputDir", "Ljava/nio/file/Path;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DotFileWriter", "(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;ZZZ)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateSummaryDotFile", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "showLabel", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "outputDir", "Ljava/nio/file/Path;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DotFileWriter", "(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;ZZZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateSummaryDotFile", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
 		}
 
 		[JniSignatureAttribute("Z", "final")]
@@ -157,10 +158,10 @@ public partial class JdepsWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Ljava/nio/file/Path;", "final")]
@@ -168,10 +169,10 @@ public partial class JdepsWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.nio.file.Path>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -180,7 +181,7 @@ public partial class JdepsWriter
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/file/Path;Lcom/sun/tools/jdeps/Analyzer$Type;ZZZ)V", "")]
-		public DotFileWriter(Dova.JDK.java.nio.file.Path arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1, bool arg2, bool arg3, bool arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public DotFileWriter(Dova.JDK.java.nio.file.Path arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1, bool arg2, bool arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -191,13 +192,13 @@ public partial class JdepsWriter
 		[JniSignatureAttribute("(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V", "")]
 		public void generateOutput(Dova.JDK.java.util.Collection arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V", "private")]
 		public void generateSummaryDotFile(Dova.JDK.java.util.Collection arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter$SummaryDotFile;", "")]
@@ -215,17 +216,17 @@ public partial class JdepsWriter
 
 			static SummaryDotFile()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter$SummaryDotFile;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/jdeps/Analyzer$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SummaryDotFile", "(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "labelBuilder", "()Lcom/sun/tools/jdeps/Analyzer$Visitor;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLabel", "(Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter$SummaryDotFile;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/jdeps/Analyzer$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SummaryDotFile", "(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "labelBuilder", "()Lcom/sun/tools/jdeps/Analyzer$Visitor;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLabel", "(Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/PrintWriter;", "private final")]
@@ -233,10 +234,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.PrintWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/jdeps/Analyzer$Type;", "private final")]
@@ -244,10 +245,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.Analyzer.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -255,10 +256,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;", "final")]
@@ -266,10 +267,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -278,7 +279,7 @@ public partial class JdepsWriter
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;)V", "")]
-			public SummaryDotFile(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter arg0, Dova.JDK.java.io.PrintWriter arg1, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public SummaryDotFile(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter arg0, Dova.JDK.java.io.PrintWriter arg1, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -289,26 +290,26 @@ public partial class JdepsWriter
 			[JniSignatureAttribute("()V", "public")]
 			public void close()
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V", "public")]
 			public void visitDependence(Dova.JDK.java.lang.String arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.tools.jdeps.Archive arg3)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3);
 			}
 
 			[JniSignatureAttribute("()Lcom/sun/tools/jdeps/Analyzer$Visitor;", "")]
 			public Dova.JDK.com.sun.tools.jdeps.Analyzer.Visitor labelBuilder()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.Analyzer.Visitor>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/jdeps/Archive;)Ljava/lang/String;", "")]
 			public Dova.JDK.java.lang.String getLabel(Dova.JDK.com.sun.tools.jdeps.Archive arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
 		}
@@ -328,14 +329,14 @@ public partial class JdepsWriter
 
 			static DotFileFormatter()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter$DotFileFormatter;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DotFileFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Archive;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter$DotFileFormatter;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DotFileFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Archive;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/PrintWriter;", "private final")]
@@ -343,10 +344,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.PrintWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -354,10 +355,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;", "final")]
@@ -365,10 +366,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -377,7 +378,7 @@ public partial class JdepsWriter
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/JdepsWriter$DotFileWriter;Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Archive;)V", "")]
-			public DotFileFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter arg0, Dova.JDK.java.io.PrintWriter arg1, Dova.JDK.com.sun.tools.jdeps.Archive arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public DotFileFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.DotFileWriter arg0, Dova.JDK.java.io.PrintWriter arg1, Dova.JDK.com.sun.tools.jdeps.Archive arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -388,13 +389,13 @@ public partial class JdepsWriter
 			[JniSignatureAttribute("()V", "public")]
 			public void close()
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V", "public")]
 			public void visitDependence(Dova.JDK.java.lang.String arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.tools.jdeps.Archive arg3)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3);
 			}
 		}
 	}
@@ -412,11 +413,11 @@ public partial class JdepsWriter
 
 		static SimpleWriter()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SimpleWriter", "(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SimpleWriter", "(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateOutput", "(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/PrintWriter;", "final")]
@@ -424,10 +425,10 @@ public partial class JdepsWriter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.PrintWriter>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -436,7 +437,7 @@ public partial class JdepsWriter
 		}
 
 		[JniSignatureAttribute("(Ljava/io/PrintWriter;Lcom/sun/tools/jdeps/Analyzer$Type;ZZ)V", "")]
-		public SimpleWriter(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1, bool arg2, bool arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public SimpleWriter(Dova.JDK.java.io.PrintWriter arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer.Type arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -447,7 +448,7 @@ public partial class JdepsWriter
 		[JniSignatureAttribute("(Ljava/util/Collection;Lcom/sun/tools/jdeps/Analyzer;)V", "")]
 		public void generateOutput(Dova.JDK.java.util.Collection arg0, Dova.JDK.com.sun.tools.jdeps.Analyzer arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter$RawOutputFormatter;", "")]
@@ -464,13 +465,13 @@ public partial class JdepsWriter
 
 			static RawOutputFormatter()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter$RawOutputFormatter;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pkg", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RawOutputFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter$RawOutputFormatter;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pkg", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RawOutputFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/PrintWriter;", "private final")]
@@ -478,10 +479,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.PrintWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -489,10 +490,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;", "final")]
@@ -500,10 +501,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -512,7 +513,7 @@ public partial class JdepsWriter
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V", "")]
-			public RawOutputFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public RawOutputFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -523,7 +524,7 @@ public partial class JdepsWriter
 			[JniSignatureAttribute("(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V", "public")]
 			public void visitDependence(Dova.JDK.java.lang.String arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.tools.jdeps.Archive arg3)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
 			}
 		}
 
@@ -541,13 +542,13 @@ public partial class JdepsWriter
 
 			static RawSummaryFormatter()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter$RawSummaryFormatter;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RawSummaryFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "printModuleDescriptor", "(Lcom/sun/tools/jdeps/Module;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter$RawSummaryFormatter;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljava/io/PrintWriter;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RawSummaryFormatter", "(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependence", "(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printModuleDescriptor", "(Lcom/sun/tools/jdeps/Module;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/PrintWriter;", "private final")]
@@ -555,10 +556,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.PrintWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;", "final")]
@@ -566,10 +567,10 @@ public partial class JdepsWriter
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -578,7 +579,7 @@ public partial class JdepsWriter
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/JdepsWriter$SimpleWriter;Ljava/io/PrintWriter;)V", "")]
-			public RawSummaryFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public RawSummaryFormatter(Dova.JDK.com.sun.tools.jdeps.JdepsWriter.SimpleWriter arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -589,13 +590,13 @@ public partial class JdepsWriter
 			[JniSignatureAttribute("(Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;Ljava/lang/String;Lcom/sun/tools/jdeps/Archive;)V", "public")]
 			public void visitDependence(Dova.JDK.java.lang.String arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.tools.jdeps.Archive arg3)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Module;)V", "public")]
 			public void printModuleDescriptor(Dova.JDK.com.sun.tools.jdeps.Module arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 	}

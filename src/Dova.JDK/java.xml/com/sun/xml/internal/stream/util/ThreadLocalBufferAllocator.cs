@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,11 +29,11 @@ public partial class ThreadLocalBufferAllocator
 
 	static ThreadLocalBufferAllocator()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/xml/internal/stream/util/ThreadLocalBufferAllocator;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TL", "Ljava/lang/ThreadLocal;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ThreadLocalBufferAllocator", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getBufferAllocator", "()Lcom/sun/xml/internal/stream/util/BufferAllocator;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/xml/internal/stream/util/ThreadLocalBufferAllocator;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TL", "Ljava/lang/ThreadLocal;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadLocalBufferAllocator", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getBufferAllocator", "()Lcom/sun/xml/internal/stream/util/BufferAllocator;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ThreadLocal;", "private static final")]
@@ -40,10 +41,10 @@ public partial class ThreadLocalBufferAllocator
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ThreadLocal>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +53,7 @@ public partial class ThreadLocalBufferAllocator
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ThreadLocalBufferAllocator() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ThreadLocalBufferAllocator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -63,7 +64,7 @@ public partial class ThreadLocalBufferAllocator
 	[JniSignatureAttribute("()Lcom/sun/xml/internal/stream/util/BufferAllocator;", "public static")]
 	public static Dova.JDK.com.sun.xml.@internal.stream.util.BufferAllocator getBufferAllocator()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.xml.@internal.stream.util.BufferAllocator>(ret);
 	}
 }

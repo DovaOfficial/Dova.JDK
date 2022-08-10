@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,13 +29,13 @@ public partial class ValueImpl
 
 	static ValueImpl()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdi/ValueImpl;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ValueImpl", "(Lcom/sun/jdi/VirtualMachine;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "prepareForAssignment", "(Lcom/sun/jdi/Value;Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "typeValueKey", "()B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "typeValueKey", "(Lcom/sun/jdi/Value;)B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "prepareForAssignmentTo", "(Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/ValueImpl;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ValueImpl", "(Lcom/sun/jdi/VirtualMachine;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "prepareForAssignment", "(Lcom/sun/jdi/Value;Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "typeValueKey", "()B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeValueKey", "(Lcom/sun/jdi/Value;)B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepareForAssignmentTo", "(Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -43,7 +44,7 @@ public partial class ValueImpl
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/VirtualMachine;)V", "")]
-	public ValueImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ValueImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -54,28 +55,28 @@ public partial class ValueImpl
 	[JniSignatureAttribute("(Lcom/sun/jdi/Value;Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;", "static")]
 	public static Dova.JDK.com.sun.tools.jdi.ValueImpl prepareForAssignment(Dova.JDK.com.sun.jdi.Value arg0, Dova.JDK.com.sun.tools.jdi.ValueContainer arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdi.ValueImpl>(ret);
 	}
 
 	[JniSignatureAttribute("()B", "abstract")]
 	public byte typeValueKey()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallByteMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallByteMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/Value;)B", "static")]
 	public static byte typeValueKey(Dova.JDK.com.sun.jdi.Value arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticByteMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticByteMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdi/ValueContainer;)Lcom/sun/tools/jdi/ValueImpl;", "abstract")]
 	public Dova.JDK.com.sun.tools.jdi.ValueImpl prepareForAssignmentTo(Dova.JDK.com.sun.tools.jdi.ValueContainer arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdi.ValueImpl>(ret);
 	}
 }

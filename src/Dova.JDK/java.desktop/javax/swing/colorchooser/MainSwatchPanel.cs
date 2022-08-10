@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,12 +28,12 @@ public partial class MainSwatchPanel
 
 	static MainSwatchPanel()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/colorchooser/MainSwatchPanel;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MainSwatchPanel", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initRawValues", "()[I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initValues", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "initColors", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/MainSwatchPanel;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MainSwatchPanel", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initRawValues", "()[I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initValues", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initColors", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -41,7 +42,7 @@ public partial class MainSwatchPanel
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public MainSwatchPanel() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MainSwatchPanel() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -52,19 +53,19 @@ public partial class MainSwatchPanel
 	[JniSignatureAttribute("()[I", "private")]
 	public JavaArray<int> initRawValues()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
 	public void initValues()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
 	public void initColors()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
 	}
 }

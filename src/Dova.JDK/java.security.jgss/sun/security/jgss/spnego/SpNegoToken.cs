@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,21 +29,21 @@ public partial class SpNegoToken
 
 	static SpNegoToken()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/jgss/spnego/SpNegoToken;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEG_TOKEN_INIT_ID", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEG_TOKEN_TARG_ID", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "tokenType", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OID", "Lsun/security/util/ObjectIdentifier;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SpNegoToken", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encode", "()[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getType", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEncoded", "()[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "checkNextField", "(II)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getTokenName", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getNegoResultType", "(I)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getNegoResultString", "(I)Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/spnego/SpNegoToken;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEG_TOKEN_INIT_ID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEG_TOKEN_TARG_ID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tokenType", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OID", "Lsun/security/util/ObjectIdentifier;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SpNegoToken", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncoded", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkNextField", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTokenName", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNegoResultType", "(I)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNegoResultString", "(I)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -50,10 +51,10 @@ public partial class SpNegoToken
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -61,10 +62,10 @@ public partial class SpNegoToken
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -72,10 +73,10 @@ public partial class SpNegoToken
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -83,10 +84,10 @@ public partial class SpNegoToken
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/ObjectIdentifier;", "public static")]
@@ -94,10 +95,10 @@ public partial class SpNegoToken
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.ObjectIdentifier>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -106,7 +107,7 @@ public partial class SpNegoToken
 	}
 
 	[JniSignatureAttribute("(I)V", "protected")]
-	public SpNegoToken(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SpNegoToken(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -117,49 +118,49 @@ public partial class SpNegoToken
 	[JniSignatureAttribute("()[B", "abstract")]
 	public JavaArray<byte> encode()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("()I", "final")]
 	public int getType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()[B", "")]
 	public JavaArray<byte> getEncoded()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("(II)I", "static")]
 	public static int checkNextField(int arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(I)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String getTokenName(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(I)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "static")]
 	public static Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult getNegoResultType(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>(ret);
 	}
 
 	[JniSignatureAttribute("(I)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String getNegoResultString(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
@@ -176,16 +177,16 @@ public partial class SpNegoToken
 
 		static NegoResult()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/jgss/spnego/SpNegoToken$NegoResult;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_COMPLETE", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_INCOMPLETE", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "REJECT", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NegoResult", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/spnego/SpNegoToken$NegoResult;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_COMPLETE", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_INCOMPLETE", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REJECT", "Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NegoResult", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "public static final")]
@@ -193,10 +194,10 @@ public partial class SpNegoToken
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "public static final")]
@@ -204,10 +205,10 @@ public partial class SpNegoToken
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "public static final")]
@@ -215,10 +216,10 @@ public partial class SpNegoToken
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "private static final")]
@@ -226,10 +227,10 @@ public partial class SpNegoToken
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -238,7 +239,7 @@ public partial class SpNegoToken
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public NegoResult(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NegoResult(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -249,21 +250,21 @@ public partial class SpNegoToken
 		[JniSignatureAttribute("()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "public static")]
 		public static JavaArray<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult> values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "public static")]
 		public static Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>(ret);
 		}
 
 		[JniSignatureAttribute("()[Lsun/security/jgss/spnego/SpNegoToken$NegoResult;", "private static")]
 		public static JavaArray<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult> _values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.jgss.spnego.SpNegoToken.NegoResult>>(ret);
 		}
 	}

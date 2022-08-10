@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,22 +29,22 @@ public partial class HyperlinkEvent
 
 	static HyperlinkEvent()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/event/HyperlinkEvent;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "u", "Ljava/net/URL;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "desc", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "sourceElement", "Ljavax/swing/text/Element;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inputEvent", "Ljava/awt/event/InputEvent;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;Ljava/awt/event/InputEvent;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getURL", "()Ljava/net/URL;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEventType", "()Ljavax/swing/event/HyperlinkEvent$EventType;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSourceElement", "()Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getInputEvent", "()Ljava/awt/event/InputEvent;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getDescription", "()Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/HyperlinkEvent;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "u", "Ljava/net/URL;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "desc", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceElement", "Ljavax/swing/text/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inputEvent", "Ljava/awt/event/InputEvent;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;Ljava/awt/event/InputEvent;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HyperlinkEvent", "(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getURL", "()Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEventType", "()Ljavax/swing/event/HyperlinkEvent$EventType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceElement", "()Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputEvent", "()Ljava/awt/event/InputEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDescription", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/event/HyperlinkEvent$EventType;", "private")]
@@ -51,10 +52,10 @@ public partial class HyperlinkEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/net/URL;", "private")]
@@ -62,10 +63,10 @@ public partial class HyperlinkEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.net.URL>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -73,10 +74,10 @@ public partial class HyperlinkEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/Element;", "private")]
@@ -84,10 +85,10 @@ public partial class HyperlinkEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/awt/event/InputEvent;", "private")]
@@ -95,10 +96,10 @@ public partial class HyperlinkEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.@event.InputEvent>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -107,22 +108,22 @@ public partial class HyperlinkEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;Ljava/awt/event/InputEvent;)V", "public")]
-	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.javax.swing.text.Element arg4, Dova.JDK.java.awt.@event.InputEvent arg5) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.javax.swing.text.Element arg4, Dova.JDK.java.awt.@event.InputEvent arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;Ljavax/swing/text/Element;)V", "public")]
-	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.javax.swing.text.Element arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.javax.swing.text.Element arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;Ljava/lang/String;)V", "public")]
-	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
+	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/event/HyperlinkEvent$EventType;Ljava/net/URL;)V", "public")]
-	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2))
+	public HyperlinkEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType arg1, Dova.JDK.java.net.URL arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2))
 	{
 	}
 
@@ -133,35 +134,35 @@ public partial class HyperlinkEvent
 	[JniSignatureAttribute("()Ljava/net/URL;", "public")]
 	public Dova.JDK.java.net.URL getURL()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.net.URL>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/event/HyperlinkEvent$EventType;", "public")]
 	public Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType getEventType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/text/Element;", "public")]
 	public Dova.JDK.javax.swing.text.Element getSourceElement()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/awt/event/InputEvent;", "public")]
 	public Dova.JDK.java.awt.@event.InputEvent getInputEvent()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.awt.@event.InputEvent>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getDescription()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
@@ -178,14 +179,14 @@ public partial class HyperlinkEvent
 
 		static EventType()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/event/HyperlinkEvent$EventType;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ENTERED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EXITED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ACTIVATED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "typeString", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "EventType", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/HyperlinkEvent$EventType;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENTERED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXITED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACTIVATED", "Ljavax/swing/event/HyperlinkEvent$EventType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeString", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventType", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/event/HyperlinkEvent$EventType;", "public static final")]
@@ -193,10 +194,10 @@ public partial class HyperlinkEvent
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/event/HyperlinkEvent$EventType;", "public static final")]
@@ -204,10 +205,10 @@ public partial class HyperlinkEvent
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/event/HyperlinkEvent$EventType;", "public static final")]
@@ -215,10 +216,10 @@ public partial class HyperlinkEvent
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.HyperlinkEvent.EventType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -226,10 +227,10 @@ public partial class HyperlinkEvent
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -238,7 +239,7 @@ public partial class HyperlinkEvent
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
-		public EventType(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EventType(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -249,7 +250,7 @@ public partial class HyperlinkEvent
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String toString()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 	}

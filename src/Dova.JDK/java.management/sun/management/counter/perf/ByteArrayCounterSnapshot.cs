@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,14 +30,14 @@ public partial class ByteArrayCounterSnapshot
 
 	static ByteArrayCounterSnapshot()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/management/counter/perf/ByteArrayCounterSnapshot;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "value", "[B"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ByteArrayCounterSnapshot", "(Ljava/lang/String;Lsun/management/counter/Units;Lsun/management/counter/Variability;II[B)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getValue", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "byteArrayValue", "()[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "byteAt", "(I)B"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/counter/perf/ByteArrayCounterSnapshot;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteArrayCounterSnapshot", "(Ljava/lang/String;Lsun/management/counter/Units;Lsun/management/counter/Variability;II[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteArrayValue", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteAt", "(I)B"));
 	}
 
 	[JniSignatureAttribute("[B", "")]
@@ -44,10 +45,10 @@ public partial class ByteArrayCounterSnapshot
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -55,10 +56,10 @@ public partial class ByteArrayCounterSnapshot
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -67,7 +68,7 @@ public partial class ByteArrayCounterSnapshot
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Lsun/management/counter/Units;Lsun/management/counter/Variability;II[B)V", "")]
-	public ByteArrayCounterSnapshot(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.management.counter.Units arg1, Dova.JDK.sun.management.counter.Variability arg2, int arg3, int arg4, JavaArray<byte> arg5) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public ByteArrayCounterSnapshot(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.management.counter.Units arg1, Dova.JDK.sun.management.counter.Variability arg2, int arg3, int arg4, JavaArray<byte> arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
@@ -78,21 +79,21 @@ public partial class ByteArrayCounterSnapshot
 	[JniSignatureAttribute("()Ljava/lang/Object;", "public")]
 	public Dova.JDK.java.lang.Object getValue()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
 	[JniSignatureAttribute("()[B", "public")]
 	public JavaArray<byte> byteArrayValue()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("(I)B", "public")]
 	public byte byteAt(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallByteMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallByteMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 }

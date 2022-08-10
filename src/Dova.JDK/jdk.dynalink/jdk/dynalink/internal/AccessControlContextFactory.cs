@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,13 +28,13 @@ public partial class AccessControlContextFactory
 
 	static AccessControlContextFactory()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/dynalink/internal/AccessControlContextFactory;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AccessControlContextFactory", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRuntimePermissions", "([Ljava/lang/String;)[Ljava/security/Permission;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "([Ljava/security/Permission;)Ljava/security/AccessControlContext;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "([Ljava/lang/String;)Ljava/security/AccessControlContext;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "()Ljava/security/AccessControlContext;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/internal/AccessControlContextFactory;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContextFactory", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRuntimePermissions", "([Ljava/lang/String;)[Ljava/security/Permission;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "([Ljava/security/Permission;)Ljava/security/AccessControlContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "([Ljava/lang/String;)Ljava/security/AccessControlContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAccessControlContext", "()Ljava/security/AccessControlContext;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +43,7 @@ public partial class AccessControlContextFactory
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public AccessControlContextFactory() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AccessControlContextFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -53,28 +54,28 @@ public partial class AccessControlContextFactory
 	[JniSignatureAttribute("([Ljava/lang/String;)[Ljava/security/Permission;", "private static transient")]
 	public static JavaArray<Dova.JDK.java.security.Permission> makeRuntimePermissions(JavaArray<Dova.JDK.java.lang.String> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.security.Permission>>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljava/security/Permission;)Ljava/security/AccessControlContext;", "public static transient")]
 	public static Dova.JDK.java.security.AccessControlContext createAccessControlContext(JavaArray<Dova.JDK.java.security.Permission> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.AccessControlContext>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)Ljava/security/AccessControlContext;", "public static transient")]
 	public static Dova.JDK.java.security.AccessControlContext createAccessControlContext(JavaArray<Dova.JDK.java.lang.String> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.AccessControlContext>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/security/AccessControlContext;", "public static")]
 	public static Dova.JDK.java.security.AccessControlContext createAccessControlContext()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.AccessControlContext>(ret);
 	}
 }

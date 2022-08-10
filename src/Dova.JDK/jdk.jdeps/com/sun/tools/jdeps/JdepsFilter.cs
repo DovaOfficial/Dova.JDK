@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -30,27 +31,27 @@ public partial class JdepsFilter
 
 	static JdepsFilter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_FILTER", "Lcom/sun/tools/jdeps/JdepsFilter;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filter", "Lcom/sun/tools/classfile/Dependency$Filter;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "findJDKInternals", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JdepsFilter", "(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matches", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matches", "(Lcom/sun/tools/jdeps/Archive;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasIncludePattern", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasTargetFilter", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "requiresFilter", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isJDKInternalPackage", "(Lcom/sun/tools/jdeps/Module;Ljava/lang/String;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_FILTER", "Lcom/sun/tools/jdeps/JdepsFilter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter", "Lcom/sun/tools/classfile/Dependency$Filter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findJDKInternals", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdepsFilter", "(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Lcom/sun/tools/jdeps/Archive;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasIncludePattern", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasTargetFilter", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requiresFilter", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isJDKInternalPackage", "(Lcom/sun/tools/jdeps/Module;Ljava/lang/String;)Z"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsFilter;", "public static final")]
@@ -58,10 +59,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/classfile/Dependency$Filter;", "private final")]
@@ -69,10 +70,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.Dependency.Filter>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/regex/Pattern;", "private final")]
@@ -80,10 +81,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -91,10 +92,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -102,10 +103,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -113,10 +114,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -124,10 +125,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("Ljava/util/regex/Pattern;", "private final")]
@@ -135,10 +136,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -146,10 +147,10 @@ public partial class JdepsFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -158,7 +159,7 @@ public partial class JdepsFilter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V", "private")]
-	public JdepsFilter(Dova.JDK.com.sun.tools.classfile.Dependency.Filter arg0, Dova.JDK.java.util.regex.Pattern arg1, bool arg2, bool arg3, bool arg4, bool arg5, Dova.JDK.java.util.regex.Pattern arg6, Dova.JDK.java.util.Set arg7) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public JdepsFilter(Dova.JDK.com.sun.tools.classfile.Dependency.Filter arg0, Dova.JDK.java.util.regex.Pattern arg1, bool arg2, bool arg3, bool arg4, bool arg5, Dova.JDK.java.util.regex.Pattern arg6, Dova.JDK.java.util.Set arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
@@ -169,63 +170,63 @@ public partial class JdepsFilter
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String toString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Z", "public")]
 	public bool matches(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Archive;)Z", "public")]
 	public bool matches(Dova.JDK.com.sun.tools.jdeps.Archive arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;)Z", "public")]
 	public bool accepts(Dova.JDK.com.sun.tools.classfile.Dependency.Location arg0, Dova.JDK.com.sun.tools.jdeps.Archive arg1, Dova.JDK.com.sun.tools.classfile.Dependency.Location arg2, Dova.JDK.com.sun.tools.jdeps.Archive arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1, arg2, arg3);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/Dependency;)Z", "public")]
 	public bool accepts(Dova.JDK.com.sun.tools.classfile.Dependency arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool hasIncludePattern()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool hasTargetFilter()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[6]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Set;", "public")]
 	public Dova.JDK.java.util.Set requiresFilter()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/jdeps/Module;Ljava/lang/String;)Z", "public")]
 	public bool isJDKInternalPackage(Dova.JDK.com.sun.tools.jdeps.Module arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
 		return ret;
 	}
 
@@ -242,27 +243,27 @@ public partial class JdepsFilter
 
 		static Builder()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter$Builder;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "regex", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "findJDKInterals", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "targetPackages", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Builder", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "regex", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "packages", "(Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(ZZ)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "build", "()Lcom/sun/tools/jdeps/JdepsFilter;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "requires", "(Ljava/lang/String;Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "includePattern", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "findJDKInternals", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "findMissingDeps", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter$Builder;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "regex", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findJDKInterals", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetPackages", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Builder", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "regex", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "(Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "filter", "(ZZ)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Lcom/sun/tools/jdeps/JdepsFilter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requires", "(Ljava/lang/String;Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "includePattern", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findJDKInternals", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findMissingDeps", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern;", "")]
@@ -270,10 +271,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern;", "")]
@@ -281,10 +282,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -292,10 +293,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -303,10 +304,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -314,10 +315,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -325,10 +326,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern;", "")]
@@ -336,10 +337,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "")]
@@ -347,10 +348,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "")]
@@ -358,10 +359,10 @@ public partial class JdepsFilter
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -370,7 +371,7 @@ public partial class JdepsFilter
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Builder() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Builder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -381,63 +382,63 @@ public partial class JdepsFilter
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder regex(Dova.JDK.java.util.regex.Pattern arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder packages(Dova.JDK.java.util.Set arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(ZZ)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder filter(bool arg0, bool arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder filter(Dova.JDK.java.util.regex.Pattern arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("()Lcom/sun/tools/jdeps/JdepsFilter;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter build()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder requires(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.Set arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder includePattern(Dova.JDK.java.util.regex.Pattern arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder findJDKInternals(bool arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 
 		[JniSignatureAttribute("(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;", "public")]
 		public Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder findMissingDeps(bool arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.jdeps.JdepsFilter.Builder>(ret);
 		}
 	}

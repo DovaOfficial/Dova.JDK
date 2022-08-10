@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class SocketExceptions
 
 	static SocketExceptions()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/net/util/SocketExceptions;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "enhancedExceptionText", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SocketExceptions", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Ljava/io/IOException;Ljava/net/SocketAddress;)Ljava/io/IOException;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/io/IOException;Ljava/lang/String;)Ljava/io/IOException;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "ofUnixDomain", "(Ljava/io/IOException;Ljava/net/UnixDomainSocketAddress;)Ljava/io/IOException;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "ofInet", "(Ljava/io/IOException;Ljava/net/InetSocketAddress;)Ljava/io/IOException;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/util/SocketExceptions;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "enhancedExceptionText", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SocketExceptions", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Ljava/io/IOException;Ljava/net/SocketAddress;)Ljava/io/IOException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/io/IOException;Ljava/lang/String;)Ljava/io/IOException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofUnixDomain", "(Ljava/io/IOException;Ljava/net/UnixDomainSocketAddress;)Ljava/io/IOException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofInet", "(Ljava/io/IOException;Ljava/net/InetSocketAddress;)Ljava/io/IOException;"));
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -43,10 +44,10 @@ public partial class SocketExceptions
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,7 +56,7 @@ public partial class SocketExceptions
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SocketExceptions() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SocketExceptions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -66,28 +67,28 @@ public partial class SocketExceptions
 	[JniSignatureAttribute("(Ljava/io/IOException;Ljava/net/SocketAddress;)Ljava/io/IOException;", "public static")]
 	public static Dova.JDK.java.io.IOException of(Dova.JDK.java.io.IOException arg0, Dova.JDK.java.net.SocketAddress arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.IOException>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/IOException;Ljava/lang/String;)Ljava/io/IOException;", "private static")]
 	public static Dova.JDK.java.io.IOException create(Dova.JDK.java.io.IOException arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.IOException>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/IOException;Ljava/net/UnixDomainSocketAddress;)Ljava/io/IOException;", "private static")]
 	public static Dova.JDK.java.io.IOException ofUnixDomain(Dova.JDK.java.io.IOException arg0, Dova.JDK.java.net.UnixDomainSocketAddress arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.IOException>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/IOException;Ljava/net/InetSocketAddress;)Ljava/io/IOException;", "private static")]
 	public static Dova.JDK.java.io.IOException ofInet(Dova.JDK.java.io.IOException arg0, Dova.JDK.java.net.InetSocketAddress arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.IOException>(ret);
 	}
 }

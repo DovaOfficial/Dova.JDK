@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,16 +29,16 @@ public partial class FixedLengthOutputStream
 
 	static FixedLengthOutputStream()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/net/httpserver/FixedLengthOutputStream;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "remaining", "J"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "eof", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "t", "Lsun/net/httpserver/ExchangeImpl;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FixedLengthOutputStream", "(Lsun/net/httpserver/ExchangeImpl;Ljava/io/OutputStream;J)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "write", "([BII)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/httpserver/FixedLengthOutputStream;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remaining", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eof", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "Lsun/net/httpserver/ExchangeImpl;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FixedLengthOutputStream", "(Lsun/net/httpserver/ExchangeImpl;Ljava/io/OutputStream;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "([BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -45,10 +46,10 @@ public partial class FixedLengthOutputStream
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -56,10 +57,10 @@ public partial class FixedLengthOutputStream
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -67,10 +68,10 @@ public partial class FixedLengthOutputStream
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("Lsun/net/httpserver/ExchangeImpl;", "")]
@@ -78,10 +79,10 @@ public partial class FixedLengthOutputStream
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.net.httpserver.ExchangeImpl>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -90,7 +91,7 @@ public partial class FixedLengthOutputStream
 	}
 
 	[JniSignatureAttribute("(Lsun/net/httpserver/ExchangeImpl;Ljava/io/OutputStream;J)V", "")]
-	public FixedLengthOutputStream(Dova.JDK.sun.net.httpserver.ExchangeImpl arg0, Dova.JDK.java.io.OutputStream arg1, long arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public FixedLengthOutputStream(Dova.JDK.sun.net.httpserver.ExchangeImpl arg0, Dova.JDK.java.io.OutputStream arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -101,18 +102,18 @@ public partial class FixedLengthOutputStream
 	[JniSignatureAttribute("([BII)V", "public")]
 	public void write(JavaArray<byte> arg0, int arg1, int arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
 	public void write(int arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void close()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
 	}
 }

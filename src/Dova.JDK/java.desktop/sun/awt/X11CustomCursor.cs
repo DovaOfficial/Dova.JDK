@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,11 +28,11 @@ public partial class X11CustomCursor
 
 	static X11CustomCursor()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11CustomCursor;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "X11CustomCursor", "(Ljava/awt/Image;Ljava/awt/Point;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createNativeCursor", "(Ljava/awt/Image;[IIIII)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createCursor", "([B[BIIIIII)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11CustomCursor;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X11CustomCursor", "(Ljava/awt/Image;Ljava/awt/Point;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNativeCursor", "(Ljava/awt/Image;[IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCursor", "([B[BIIIIII)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +41,7 @@ public partial class X11CustomCursor
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Image;Ljava/awt/Point;Ljava/lang/String;)V", "public")]
-	public X11CustomCursor(Dova.JDK.java.awt.Image arg0, Dova.JDK.java.awt.Point arg1, Dova.JDK.java.lang.String arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public X11CustomCursor(Dova.JDK.java.awt.Image arg0, Dova.JDK.java.awt.Point arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -51,12 +52,12 @@ public partial class X11CustomCursor
 	[JniSignatureAttribute("(Ljava/awt/Image;[IIIII)V", "protected")]
 	public void createNativeCursor(Dova.JDK.java.awt.Image arg0, JavaArray<int> arg1, int arg2, int arg3, int arg4, int arg5)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5);
 	}
 
 	[JniSignatureAttribute("([B[BIIIIII)V", "protected abstract")]
 	public void createCursor(JavaArray<byte> arg0, JavaArray<byte> arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 	}
 }

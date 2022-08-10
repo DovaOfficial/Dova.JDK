@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,25 +29,25 @@ public partial class OSInfo
 
 	static OSInfo()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/OSInfo;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_UNKNOWN", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_95", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_98", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_ME", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_2000", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_XP", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_2003", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_VISTA", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_7", "Lsun/awt/OSInfo$WindowsVersion;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OS_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OS_VERSION", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "windowsVersionMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "osTypeAction", "Ljava/security/PrivilegedAction;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OSInfo", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getOSTypeAction", "()Ljava/security/PrivilegedAction;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getOSType", "()Lsun/awt/OSInfo$OSType;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getWindowsVersion", "()Lsun/awt/OSInfo$WindowsVersion;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/OSInfo;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_UNKNOWN", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_95", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_98", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_ME", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_2000", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_XP", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_2003", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_VISTA", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS_7", "Lsun/awt/OSInfo$WindowsVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OS_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OS_VERSION", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "windowsVersionMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "osTypeAction", "Ljava/security/PrivilegedAction;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OSInfo", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getOSTypeAction", "()Ljava/security/PrivilegedAction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getOSType", "()Lsun/awt/OSInfo$OSType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getWindowsVersion", "()Lsun/awt/OSInfo$WindowsVersion;"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -54,10 +55,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -65,10 +66,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -76,10 +77,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -87,10 +88,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -98,10 +99,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -109,10 +110,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -120,10 +121,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -131,10 +132,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/awt/OSInfo$WindowsVersion;", "public static final")]
@@ -142,10 +143,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -153,10 +154,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -164,10 +165,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -175,10 +176,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/security/PrivilegedAction;", "private static final")]
@@ -186,10 +187,10 @@ public partial class OSInfo
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.security.PrivilegedAction>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -198,7 +199,7 @@ public partial class OSInfo
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public OSInfo() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public OSInfo() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -209,21 +210,21 @@ public partial class OSInfo
 	[JniSignatureAttribute("()Ljava/security/PrivilegedAction;", "public static")]
 	public static Dova.JDK.java.security.PrivilegedAction getOSTypeAction()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.PrivilegedAction>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/awt/OSInfo$OSType;", "public static")]
 	public static Dova.JDK.sun.awt.OSInfo.OSType getOSType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/awt/OSInfo$WindowsVersion;", "public static")]
 	public static Dova.JDK.sun.awt.OSInfo.WindowsVersion getWindowsVersion()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.WindowsVersion>(ret);
 	}
 
@@ -240,18 +241,18 @@ public partial class OSInfo
 
 		static OSType()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/OSInfo$OSType;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS", "Lsun/awt/OSInfo$OSType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LINUX", "Lsun/awt/OSInfo$OSType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MACOSX", "Lsun/awt/OSInfo$OSType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "AIX", "Lsun/awt/OSInfo$OSType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lsun/awt/OSInfo$OSType;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/awt/OSInfo$OSType;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OSType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/awt/OSInfo$OSType;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/awt/OSInfo$OSType;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/awt/OSInfo$OSType;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/OSInfo$OSType;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS", "Lsun/awt/OSInfo$OSType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINUX", "Lsun/awt/OSInfo$OSType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MACOSX", "Lsun/awt/OSInfo$OSType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AIX", "Lsun/awt/OSInfo$OSType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lsun/awt/OSInfo$OSType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/awt/OSInfo$OSType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OSType", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/awt/OSInfo$OSType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/awt/OSInfo$OSType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/awt/OSInfo$OSType;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/OSInfo$OSType;", "public static final")]
@@ -259,10 +260,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/awt/OSInfo$OSType;", "public static final")]
@@ -270,10 +271,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/awt/OSInfo$OSType;", "public static final")]
@@ -281,10 +282,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/awt/OSInfo$OSType;", "public static final")]
@@ -292,10 +293,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/awt/OSInfo$OSType;", "public static final")]
@@ -303,10 +304,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[Lsun/awt/OSInfo$OSType;", "private static final")]
@@ -314,10 +315,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.awt.OSInfo.OSType>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -326,7 +327,7 @@ public partial class OSInfo
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public OSType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OSType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -337,21 +338,21 @@ public partial class OSInfo
 		[JniSignatureAttribute("()[Lsun/awt/OSInfo$OSType;", "public static")]
 		public static JavaArray<Dova.JDK.sun.awt.OSInfo.OSType> values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.awt.OSInfo.OSType>>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/awt/OSInfo$OSType;", "public static")]
 		public static Dova.JDK.sun.awt.OSInfo.OSType valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.OSInfo.OSType>(ret);
 		}
 
 		[JniSignatureAttribute("()[Lsun/awt/OSInfo$OSType;", "private static")]
 		public static JavaArray<Dova.JDK.sun.awt.OSInfo.OSType> _values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.awt.OSInfo.OSType>>(ret);
 		}
 	}
@@ -370,18 +371,18 @@ public partial class OSInfo
 
 		static WindowsVersion()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/OSInfo$WindowsVersion;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "major", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "minor", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "WindowsVersion", "(II)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Lsun/awt/OSInfo$WindowsVersion;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMajor", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMinor", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/OSInfo$WindowsVersion;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "major", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minor", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WindowsVersion", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Lsun/awt/OSInfo$WindowsVersion;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMajor", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMinor", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -389,10 +390,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -400,10 +401,10 @@ public partial class OSInfo
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -412,7 +413,7 @@ public partial class OSInfo
 		}
 
 		[JniSignatureAttribute("(II)V", "private")]
-		public WindowsVersion(int arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public WindowsVersion(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -423,49 +424,49 @@ public partial class OSInfo
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String toString()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)I", "public volatile")]
 		public int compareTo(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lsun/awt/OSInfo$WindowsVersion;)I", "public")]
 		public int compareTo(Dova.JDK.sun.awt.OSInfo.WindowsVersion arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getMajor()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getMinor()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return ret;
 		}
 	}

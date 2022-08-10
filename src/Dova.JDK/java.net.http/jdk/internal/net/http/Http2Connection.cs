@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,105 +29,105 @@ public partial class Http2Connection
 
 	static Http2Connection()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG_LOGGER", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "debugHpack", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_TRIGGER", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_CLIENT_STREAM_ID", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_SERVER_STREAM_ID", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "finalStream", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "connection", "Ljdk/internal/net/http/HttpConnection;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "client2", "Ljdk/internal/net/http/Http2ClientImpl;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "streams", "Ljava/util/concurrent/ConcurrentMap;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nextstreamid", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nextPushStream", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lastReservedClientStreamid", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lastReservedServerStreamid", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "numReservedClientStreams", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "numReservedServerStreams", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hpackOut", "Ljdk/internal/net/http/hpack/Encoder;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hpackIn", "Ljdk/internal/net/http/hpack/Decoder;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "clientSettings", "Ljdk/internal/net/http/frame/SettingsFrame;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "serverSettings", "Ljdk/internal/net/http/frame/SettingsFrame;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "key", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "framesDecoder", "Ljdk/internal/net/http/frame/FramesDecoder;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "framesEncoder", "Ljdk/internal/net/http/frame/FramesEncoder;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "windowController", "Ljdk/internal/net/http/WindowController;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "framesController", "Ljdk/internal/net/http/Http2Connection$FramesController;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "subscriber", "Ljdk/internal/net/http/Http2Connection$Http2TubeSubscriber;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "windowUpdater", "Ljdk/internal/net/http/Http2Connection$ConnectionWindowUpdateSender;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cause", "Ljava/lang/Throwable;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "initial", "Ljava/util/function/Supplier;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_FRAME_SIZE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "count", "J"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CLIENT_PREFACE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PREFACE_BYTES", "[B"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "sendlock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/HttpConnection;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;ILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "shutdown", "(Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "key", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isActive", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createStream", "(Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "client", "()Ljdk/internal/net/http/HttpClientImpl;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "processFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reserveStream", "(Z)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getInitialSendWindowSize", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "sendConnectionPreface", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "finalStream", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setFinalStream", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "asyncReceive", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "connectFlows", "(Ljdk/internal/net/http/HttpConnection;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeHeadersImpl", "(I[Ljava/net/http/HttpHeaders;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getHeaderBuffer", "(I)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeHeaders", "(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeHeaders", "(Ljdk/internal/net/http/frame/OutgoingHeaders;Ljdk/internal/net/http/Stream;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeFrames", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "registerNewStream", "(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljdk/internal/net/http/Stream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "encodeFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "checkSSLConfig", "(Ljdk/internal/net/http/AbstractAsyncSSLConnection;)Ljava/util/concurrent/CompletableFuture;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMaxReceiveFrameSize", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "putStream", "(Ljdk/internal/net/http/Stream;I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "sendDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "maxConcurrentClientInitiatedStreams", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "maxConcurrentServerInitiatedStreams", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "keyString", "(ZLjava/net/InetSocketAddress;Ljava/lang/String;I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "sendFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "protocolError", "(ILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "protocolError", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "resetStream", "(II)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleConnectionFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "decodeHeaders", "(Ljdk/internal/net/http/frame/HeaderFrame;Ljdk/internal/net/http/hpack/DecodingCallback;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dropDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isServerInitiatedStream", "(I)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handlePushPromise", "(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/frame/PushPromiseFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ensureWindowUpdated", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createPushStream", "(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream$PushedStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleSettings", "(Ljdk/internal/net/http/frame/SettingsFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handlePing", "(Ljdk/internal/net/http/frame/PingFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleGoAway", "(Ljdk/internal/net/http/frame/GoAwayFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleWindowUpdate", "(Ljdk/internal/net/http/frame/WindowUpdateFrame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "markStream", "(II)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "decrementStreamsCount", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "closeStream", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "sendUnorderedFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMaxSendFrameSize", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createAsync", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;)Ljava/util/concurrent/CompletableFuture;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createAsync", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "offerConnection", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStream", "(I)Ljdk/internal/net/http/Stream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getRecordedCause", "()Ljava/lang/Throwable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "publisher", "()Ljdk/internal/net/http/HttpConnection$HttpPublisher;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "keyFor", "(Ljdk/internal/net/http/HttpConnection;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "keyFor", "(Ljava/net/URI;Ljava/net/InetSocketAddress;)Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG_LOGGER", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debugHpack", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_TRIGGER", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_CLIENT_STREAM_ID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_SERVER_STREAM_ID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "finalStream", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connection", "Ljdk/internal/net/http/HttpConnection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "client2", "Ljdk/internal/net/http/Http2ClientImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "streams", "Ljava/util/concurrent/ConcurrentMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextstreamid", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextPushStream", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastReservedClientStreamid", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastReservedServerStreamid", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numReservedClientStreams", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numReservedServerStreams", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hpackOut", "Ljdk/internal/net/http/hpack/Encoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hpackIn", "Ljdk/internal/net/http/hpack/Decoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientSettings", "Ljdk/internal/net/http/frame/SettingsFrame;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverSettings", "Ljdk/internal/net/http/frame/SettingsFrame;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "framesDecoder", "Ljdk/internal/net/http/frame/FramesDecoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "framesEncoder", "Ljdk/internal/net/http/frame/FramesEncoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "windowController", "Ljdk/internal/net/http/WindowController;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "framesController", "Ljdk/internal/net/http/Http2Connection$FramesController;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subscriber", "Ljdk/internal/net/http/Http2Connection$Http2TubeSubscriber;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "windowUpdater", "Ljdk/internal/net/http/Http2Connection$ConnectionWindowUpdateSender;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cause", "Ljava/lang/Throwable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initial", "Ljava/util/function/Supplier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_FRAME_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLIENT_PREFACE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREFACE_BYTES", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sendlock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/HttpConnection;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http2Connection", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;ILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shutdown", "(Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "key", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isActive", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createStream", "(Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "client", "()Ljdk/internal/net/http/HttpClientImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reserveStream", "(Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInitialSendWindowSize", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendConnectionPreface", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finalStream", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFinalStream", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asyncReceive", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectFlows", "(Ljdk/internal/net/http/HttpConnection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeHeadersImpl", "(I[Ljava/net/http/HttpHeaders;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHeaderBuffer", "(I)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeHeaders", "(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeHeaders", "(Ljdk/internal/net/http/frame/OutgoingHeaders;Ljdk/internal/net/http/Stream;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeFrames", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerNewStream", "(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljdk/internal/net/http/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkSSLConfig", "(Ljdk/internal/net/http/AbstractAsyncSSLConnection;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaxReceiveFrameSize", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putStream", "(Ljdk/internal/net/http/Stream;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maxConcurrentClientInitiatedStreams", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maxConcurrentServerInitiatedStreams", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "keyString", "(ZLjava/net/InetSocketAddress;Ljava/lang/String;I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "protocolError", "(ILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "protocolError", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resetStream", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleConnectionFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeHeaders", "(Ljdk/internal/net/http/frame/HeaderFrame;Ljdk/internal/net/http/hpack/DecodingCallback;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isServerInitiatedStream", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handlePushPromise", "(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/frame/PushPromiseFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureWindowUpdated", "(Ljdk/internal/net/http/frame/DataFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPushStream", "(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream$PushedStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleSettings", "(Ljdk/internal/net/http/frame/SettingsFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handlePing", "(Ljdk/internal/net/http/frame/PingFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleGoAway", "(Ljdk/internal/net/http/frame/GoAwayFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleWindowUpdate", "(Ljdk/internal/net/http/frame/WindowUpdateFrame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markStream", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decrementStreamsCount", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "closeStream", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendUnorderedFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaxSendFrameSize", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAsync", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAsync", "(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "offerConnection", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStream", "(I)Ljdk/internal/net/http/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRecordedCause", "()Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "publisher", "()Ljdk/internal/net/http/HttpConnection$HttpPublisher;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "keyFor", "(Ljdk/internal/net/http/HttpConnection;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "keyFor", "(Ljava/net/URI;Ljava/net/InetSocketAddress;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
@@ -134,10 +135,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "static final")]
@@ -145,10 +146,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "private final")]
@@ -156,10 +157,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "static final")]
@@ -167,10 +168,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.nio.ByteBuffer>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -178,10 +179,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -189,10 +190,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -200,10 +201,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("Z", "volatile")]
@@ -211,10 +212,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/HttpConnection;", "final")]
@@ -222,10 +223,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpConnection>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/Http2ClientImpl;", "private final")]
@@ -233,10 +234,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2ClientImpl>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/ConcurrentMap;", "private final")]
@@ -244,10 +245,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.ConcurrentMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -255,10 +256,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -266,10 +267,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[12], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[12], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -277,10 +278,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[13]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[13], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[13], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -288,10 +289,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[14]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[14], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[14], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -299,10 +300,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[15]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -310,10 +311,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[16]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/hpack/Encoder;", "private final")]
@@ -321,10 +322,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.hpack.Encoder>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/hpack/Decoder;", "private final")]
@@ -332,10 +333,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[18]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[18]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.hpack.Decoder>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[18], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[18], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/frame/SettingsFrame;", "final")]
@@ -343,10 +344,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[19]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[19]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.frame.SettingsFrame>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[19], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[19], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/frame/SettingsFrame;", "private volatile")]
@@ -354,10 +355,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.frame.SettingsFrame>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -365,10 +366,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/frame/FramesDecoder;", "private final")]
@@ -376,10 +377,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/frame/FramesEncoder;", "private final")]
@@ -387,10 +388,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.frame.FramesEncoder>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/WindowController;", "private final")]
@@ -398,10 +399,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.WindowController>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/Http2Connection$FramesController;", "private final")]
@@ -409,10 +410,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2Connection.FramesController>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/Http2Connection$Http2TubeSubscriber;", "private final")]
@@ -420,10 +421,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[26]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[26]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2Connection.Http2TubeSubscriber>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/Http2Connection$ConnectionWindowUpdateSender;", "final")]
@@ -431,10 +432,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[27]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[27]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2Connection.ConnectionWindowUpdateSender>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Throwable;", "private volatile")]
@@ -442,10 +443,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[28]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[28]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/Supplier;", "private volatile")]
@@ -453,10 +454,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.Supplier>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -464,10 +465,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
 	}
 
 	[JniSignatureAttribute("J", "")]
@@ -475,10 +476,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[31]);
+			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[31], value);
+		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[31], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -486,10 +487,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[32]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[32]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[32], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[32], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[B", "private static final")]
@@ -497,10 +498,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[33]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[33]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[33], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[33], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Object;", "private final")]
@@ -508,10 +509,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -519,10 +520,10 @@ public partial class Http2Connection
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[35]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[35], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[35], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -531,17 +532,17 @@ public partial class Http2Connection
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/HttpConnection;)V", "private")]
-	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.HttpConnection arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.HttpConnection arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)V", "private")]
-	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.Exchange arg2, Dova.JDK.java.util.function.Supplier arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.Exchange arg2, Dova.JDK.java.util.function.Supplier arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;ILjava/lang/String;)V", "private")]
-	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, int arg2, Dova.JDK.java.lang.String arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
+	public Http2Connection(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, int arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -552,380 +553,380 @@ public partial class Http2Connection
 	[JniSignatureAttribute("(Ljava/lang/Throwable;)V", "")]
 	public void shutdown(Dova.JDK.java.lang.Throwable arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public final")]
 	public Dova.JDK.java.lang.String toString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String key()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "")]
 	public void close()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
 	}
 
 	[JniSignatureAttribute("()Z", "synchronized")]
 	public bool isActive()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream;", "final")]
 	public Dova.JDK.jdk.@internal.net.http.Stream createStream(Dova.JDK.jdk.@internal.net.http.Exchange arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Stream>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljdk/internal/net/http/HttpClientImpl;", "final")]
 	public Dova.JDK.jdk.@internal.net.http.HttpClientImpl client()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpClientImpl>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)V", "")]
 	public void processFrame(Dova.JDK.jdk.@internal.net.http.frame.Http2Frame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 	}
 
 	[JniSignatureAttribute("(Z)Z", "synchronized")]
 	public bool reserveStream(bool arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()I", "final")]
 	public int getInitialSendWindowSize()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[9]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[9]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()V", "private")]
 	public void sendConnectionPreface()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10]);
 	}
 
 	[JniSignatureAttribute("()Z", "synchronized")]
 	public bool finalStream()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[11]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[11]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()V", "synchronized")]
 	public void setFinalStream()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[12]);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "final")]
 	public Dova.JDK.java.lang.String dbgString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/ByteBuffer;)V", "final")]
 	public void asyncReceive(Dova.JDK.java.nio.ByteBuffer arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;)V", "private")]
 	public void connectFlows(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 	}
 
 	[JniSignatureAttribute("(I[Ljava/net/http/HttpHeaders;)Ljava/util/List;", "private transient")]
 	public Dova.JDK.java.util.List encodeHeadersImpl(int arg0, JavaArray<Dova.JDK.java.net.http.HttpHeaders> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("(I)Ljava/nio/ByteBuffer;", "private")]
 	public Dova.JDK.java.nio.ByteBuffer getHeaderBuffer(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.nio.ByteBuffer>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljava/util/List;", "private")]
 	public Dova.JDK.java.util.List encodeHeaders(Dova.JDK.jdk.@internal.net.http.frame.OutgoingHeaders arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[18], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[18], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/OutgoingHeaders;Ljdk/internal/net/http/Stream;)Ljava/util/List;", "private")]
 	public Dova.JDK.java.util.List encodeHeaders(Dova.JDK.jdk.@internal.net.http.frame.OutgoingHeaders arg0, Dova.JDK.jdk.@internal.net.http.Stream arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[19], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[19], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;)Ljava/util/List;", "private")]
 	public Dova.JDK.java.util.List encodeFrames(Dova.JDK.java.util.List arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[20], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[20], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/OutgoingHeaders;)Ljdk/internal/net/http/Stream;", "private")]
 	public Dova.JDK.jdk.@internal.net.http.Stream registerNewStream(Dova.JDK.jdk.@internal.net.http.frame.OutgoingHeaders arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[21], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[21], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Stream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)Ljava/util/List;", "private")]
 	public Dova.JDK.java.util.List encodeFrame(Dova.JDK.jdk.@internal.net.http.frame.Http2Frame arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/AbstractAsyncSSLConnection;)Ljava/util/concurrent/CompletableFuture;", "private static")]
 	public static Dova.JDK.java.util.concurrent.CompletableFuture checkSSLConfig(Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[23], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[23], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
 	}
 
 	[JniSignatureAttribute("()I", "public")]
 	public int getMaxReceiveFrameSize()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[24]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[24]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/Stream;I)V", "")]
 	public void putStream(Dova.JDK.jdk.@internal.net.http.Stream arg0, int arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[25], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[25], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/DataFrame;)V", "")]
 	public void sendDataFrame(Dova.JDK.jdk.@internal.net.http.frame.DataFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[26], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[26], arg0);
 	}
 
 	[JniSignatureAttribute("()I", "final")]
 	public int maxConcurrentClientInitiatedStreams()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[27]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[27]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()I", "final")]
 	public int maxConcurrentServerInitiatedStreams()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[28]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[28]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(ZLjava/net/InetSocketAddress;Ljava/lang/String;I)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String keyString(bool arg0, Dova.JDK.java.net.InetSocketAddress arg1, Dova.JDK.java.lang.String arg2, int arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[29], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[29], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)V", "")]
 	public void sendFrame(Dova.JDK.jdk.@internal.net.http.frame.Http2Frame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[30], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[30], arg0);
 	}
 
 	[JniSignatureAttribute("(ILjava/lang/String;)V", "private")]
 	public void protocolError(int arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[31], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[31], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(I)V", "private")]
 	public void protocolError(int arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[32], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[32], arg0);
 	}
 
 	[JniSignatureAttribute("(II)V", "")]
 	public void resetStream(int arg0, int arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[33], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[33], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)V", "private")]
 	public void handleConnectionFrame(Dova.JDK.jdk.@internal.net.http.frame.Http2Frame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[34], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[34], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/HeaderFrame;Ljdk/internal/net/http/hpack/DecodingCallback;)V", "private")]
 	public void decodeHeaders(Dova.JDK.jdk.@internal.net.http.frame.HeaderFrame arg0, Dova.JDK.jdk.@internal.net.http.hpack.DecodingCallback arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[35], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[35], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/DataFrame;)V", "final")]
 	public void dropDataFrame(Dova.JDK.jdk.@internal.net.http.frame.DataFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[36], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[36], arg0);
 	}
 
 	[JniSignatureAttribute("(I)Z", "private static final")]
 	public static bool isServerInitiatedStream(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[37], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[37], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/frame/PushPromiseFrame;)V", "private")]
 	public void handlePushPromise(Dova.JDK.jdk.@internal.net.http.Stream arg0, Dova.JDK.jdk.@internal.net.http.frame.PushPromiseFrame arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[38], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[38], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/DataFrame;)V", "final")]
 	public void ensureWindowUpdated(Dova.JDK.jdk.@internal.net.http.frame.DataFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[39], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[39], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/Stream;Ljdk/internal/net/http/Exchange;)Ljdk/internal/net/http/Stream$PushedStream;", "")]
 	public Dova.JDK.jdk.@internal.net.http.Stream.PushedStream createPushStream(Dova.JDK.jdk.@internal.net.http.Stream arg0, Dova.JDK.jdk.@internal.net.http.Exchange arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[40], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[40], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Stream.PushedStream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/SettingsFrame;)V", "private")]
 	public void handleSettings(Dova.JDK.jdk.@internal.net.http.frame.SettingsFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[41], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[41], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/PingFrame;)V", "private")]
 	public void handlePing(Dova.JDK.jdk.@internal.net.http.frame.PingFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[42], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[42], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/GoAwayFrame;)V", "private")]
 	public void handleGoAway(Dova.JDK.jdk.@internal.net.http.frame.GoAwayFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[43], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[43], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/WindowUpdateFrame;)V", "private")]
 	public void handleWindowUpdate(Dova.JDK.jdk.@internal.net.http.frame.WindowUpdateFrame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[44], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[44], arg0);
 	}
 
 	[JniSignatureAttribute("(II)V", "private")]
 	public void markStream(int arg0, int arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[45], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[45], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(I)V", "synchronized")]
 	public void decrementStreamsCount(int arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[46], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[46], arg0);
 	}
 
 	[JniSignatureAttribute("(I)V", "")]
 	public void closeStream(int arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[47], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[47], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)V", "")]
 	public void sendUnorderedFrame(Dova.JDK.jdk.@internal.net.http.frame.Http2Frame arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[48], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[48], arg0);
 	}
 
 	[JniSignatureAttribute("()I", "public")]
 	public int getMaxSendFrameSize()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[49]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[49]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;)Ljava/util/concurrent/CompletableFuture;", "static")]
 	public static Dova.JDK.java.util.concurrent.CompletableFuture createAsync(Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.Exchange arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[50], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[50], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;Ljdk/internal/net/http/Http2ClientImpl;Ljdk/internal/net/http/Exchange;Ljava/util/function/Supplier;)Ljava/util/concurrent/CompletableFuture;", "static")]
 	public static Dova.JDK.java.util.concurrent.CompletableFuture createAsync(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0, Dova.JDK.jdk.@internal.net.http.Http2ClientImpl arg1, Dova.JDK.jdk.@internal.net.http.Exchange arg2, Dova.JDK.java.util.function.Supplier arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[51], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[51], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CompletableFuture>(ret);
 	}
 
 	[JniSignatureAttribute("()Z", "")]
 	public bool offerConnection()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[52]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[52]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(I)Ljdk/internal/net/http/Stream;", "")]
 	public Dova.JDK.jdk.@internal.net.http.Stream getStream(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[53], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[53], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Stream>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Throwable;", "")]
 	public Dova.JDK.java.lang.Throwable getRecordedCause()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[54]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[54]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljdk/internal/net/http/HttpConnection$HttpPublisher;", "private")]
 	public Dova.JDK.jdk.@internal.net.http.HttpConnection.HttpPublisher publisher()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[55]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[55]);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpConnection.HttpPublisher>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/HttpConnection;)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String keyFor(Dova.JDK.jdk.@internal.net.http.HttpConnection arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[56], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[56], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URI;Ljava/net/InetSocketAddress;)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String keyFor(Dova.JDK.java.net.URI arg0, Dova.JDK.java.net.InetSocketAddress arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[57], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[57], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
@@ -942,15 +943,15 @@ public partial class Http2Connection
 
 		static FramesController()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$FramesController;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "prefaceSent", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pending", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/Http2Connection;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FramesController", "(Ljdk/internal/net/http/Http2Connection;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "processReceivedData", "(Ljdk/internal/net/http/frame/FramesDecoder;Ljava/nio/ByteBuffer;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "markPrefaceSent", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$FramesController;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prefaceSent", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pending", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/Http2Connection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FramesController", "(Ljdk/internal/net/http/Http2Connection;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processReceivedData", "(Ljdk/internal/net/http/frame/FramesDecoder;Ljava/nio/ByteBuffer;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markPrefaceSent", "()V"));
 		}
 
 		[JniSignatureAttribute("Z", "volatile")]
@@ -958,10 +959,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "volatile")]
@@ -969,10 +970,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -980,10 +981,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/Http2Connection;", "final")]
@@ -991,10 +992,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2Connection>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1003,7 +1004,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/Http2Connection;)V", "private")]
-		public FramesController(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public FramesController(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1014,14 +1015,14 @@ public partial class Http2Connection
 		[JniSignatureAttribute("(Ljdk/internal/net/http/frame/FramesDecoder;Ljava/nio/ByteBuffer;)Z", "")]
 		public bool processReceivedData(Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder arg0, Dova.JDK.java.nio.ByteBuffer arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "")]
 		public void markPrefaceSent()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
 		}
 	}
 
@@ -1039,26 +1040,26 @@ public partial class Http2Connection
 
 		static Http2TubeSubscriber()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$Http2TubeSubscriber;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "subscription", "Ljava/util/concurrent/Flow$Subscription;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "dropped", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "error", "Ljava/lang/Throwable;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "queue", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "client", "Ljdk/internal/net/http/HttpClientImpl;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/Http2Connection;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Http2TubeSubscriber", "(Ljdk/internal/net/http/Http2Connection;Ljdk/internal/net/http/HttpClientImpl;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "processQueue", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "runOrSchedule", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onError", "(Ljava/lang/Throwable;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onComplete", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dropSubscription", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$Http2TubeSubscriber;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subscription", "Ljava/util/concurrent/Flow$Subscription;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dropped", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "error", "Ljava/lang/Throwable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "queue", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "client", "Ljdk/internal/net/http/HttpClientImpl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/Http2Connection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http2TubeSubscriber", "(Ljdk/internal/net/http/Http2Connection;Ljdk/internal/net/http/HttpClientImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processQueue", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runOrSchedule", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onError", "(Ljava/lang/Throwable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onComplete", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropSubscription", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/Flow$Subscription;", "private volatile")]
@@ -1066,10 +1067,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.Flow.Subscription>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "private volatile")]
@@ -1077,10 +1078,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("Z", "private volatile")]
@@ -1088,10 +1089,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Throwable;", "private volatile")]
@@ -1099,10 +1100,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/ConcurrentLinkedQueue;", "private final")]
@@ -1110,10 +1111,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.ConcurrentLinkedQueue>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SequentialScheduler;", "private final")]
@@ -1121,10 +1122,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SequentialScheduler>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/HttpClientImpl;", "private final")]
@@ -1132,10 +1133,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.HttpClientImpl>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -1143,10 +1144,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[7], value);
+			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[7], value);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/Http2Connection;", "final")]
@@ -1154,10 +1155,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.Http2Connection>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1166,7 +1167,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/Http2Connection;Ljdk/internal/net/http/HttpClientImpl;)V", "")]
-		public Http2TubeSubscriber(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0, Dova.JDK.jdk.@internal.net.http.HttpClientImpl arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Http2TubeSubscriber(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0, Dova.JDK.jdk.@internal.net.http.HttpClientImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1177,49 +1178,49 @@ public partial class Http2Connection
 		[JniSignatureAttribute("()V", "final")]
 		public void processQueue()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("()V", "private final")]
 		public void runOrSchedule()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)V", "public volatile")]
 		public void onNext(Dova.JDK.java.lang.Object arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/List;)V", "public")]
 		public void onNext(Dova.JDK.java.util.List arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Throwable;)V", "public")]
 		public void onError(Dova.JDK.java.lang.Throwable arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void onComplete()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5]);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/Flow$Subscription;)V", "public")]
 		public void onSubscribe(Dova.JDK.java.util.concurrent.Flow.Subscription arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void dropSubscription()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7]);
 		}
 	}
 
@@ -1236,11 +1237,11 @@ public partial class Http2Connection
 
 		static ConnectionWindowUpdateSender()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ConnectionWindowUpdateSender;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "initialWindowSize", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ConnectionWindowUpdateSender", "(Ljdk/internal/net/http/Http2Connection;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStreamId", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ConnectionWindowUpdateSender;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialWindowSize", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConnectionWindowUpdateSender", "(Ljdk/internal/net/http/Http2Connection;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStreamId", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -1248,10 +1249,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1260,7 +1261,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/Http2Connection;I)V", "public")]
-		public ConnectionWindowUpdateSender(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ConnectionWindowUpdateSender(Dova.JDK.jdk.@internal.net.http.Http2Connection arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1271,7 +1272,7 @@ public partial class Http2Connection
 		[JniSignatureAttribute("()I", "")]
 		public int getStreamId()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 	}
@@ -1290,14 +1291,14 @@ public partial class Http2Connection
 
 		static ValidatingHeadersConsumer()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ValidatingHeadersConsumer;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PSEUDO_HEADERS", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pseudoHeadersEnded", "Z"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ValidatingHeadersConsumer", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onDecoded", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "newException", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/UncheckedIOException;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ValidatingHeadersConsumer;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PSEUDO_HEADERS", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pseudoHeadersEnded", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ValidatingHeadersConsumer", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onDecoded", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newException", "(Ljava/lang/String;Ljava/lang/String;)Ljava/io/UncheckedIOException;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "private static final")]
@@ -1305,10 +1306,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -1316,10 +1317,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1328,7 +1329,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ValidatingHeadersConsumer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ValidatingHeadersConsumer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1339,19 +1340,19 @@ public partial class Http2Connection
 		[JniSignatureAttribute("()V", "")]
 		public void reset()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V", "public")]
 		public void onDecoded(Dova.JDK.java.lang.CharSequence arg0, Dova.JDK.java.lang.CharSequence arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)Ljava/io/UncheckedIOException;", "private")]
 		public Dova.JDK.java.io.UncheckedIOException newException(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.UncheckedIOException>(ret);
 		}
 	}
@@ -1369,12 +1370,12 @@ public partial class Http2Connection
 
 		static HeaderDecoder()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$HeaderDecoder;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "headersBuilder", "Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HeaderDecoder", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "headers", "()Ljava/net/http/HttpHeaders;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onDecoded", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$HeaderDecoder;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "headersBuilder", "Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HeaderDecoder", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "headers", "()Ljava/net/http/HttpHeaders;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onDecoded", "(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/HttpHeadersBuilder;", "")]
@@ -1382,10 +1383,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.HttpHeadersBuilder>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1394,7 +1395,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public HeaderDecoder() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HeaderDecoder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1405,14 +1406,14 @@ public partial class Http2Connection
 		[JniSignatureAttribute("()Ljava/net/http/HttpHeaders;", "")]
 		public Dova.JDK.java.net.http.HttpHeaders headers()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.net.http.HttpHeaders>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V", "public")]
 		public void onDecoded(Dova.JDK.java.lang.CharSequence arg0, Dova.JDK.java.lang.CharSequence arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 	}
 
@@ -1429,12 +1430,12 @@ public partial class Http2Connection
 
 		static ALPNException()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ALPNException;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "connection", "Ljdk/internal/net/http/AbstractAsyncSSLConnection;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ALPNException", "(Ljava/lang/String;Ljdk/internal/net/http/AbstractAsyncSSLConnection;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getConnection", "()Ljdk/internal/net/http/AbstractAsyncSSLConnection;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http2Connection$ALPNException;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connection", "Ljdk/internal/net/http/AbstractAsyncSSLConnection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ALPNException", "(Ljava/lang/String;Ljdk/internal/net/http/AbstractAsyncSSLConnection;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConnection", "()Ljdk/internal/net/http/AbstractAsyncSSLConnection;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1442,10 +1443,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/AbstractAsyncSSLConnection;", "final transient")]
@@ -1453,10 +1454,10 @@ public partial class Http2Connection
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1465,7 +1466,7 @@ public partial class Http2Connection
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/net/http/AbstractAsyncSSLConnection;)V", "")]
-		public ALPNException(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ALPNException(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1476,7 +1477,7 @@ public partial class Http2Connection
 		[JniSignatureAttribute("()Ljdk/internal/net/http/AbstractAsyncSSLConnection;", "")]
 		public Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection getConnection()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.AbstractAsyncSSLConnection>(ret);
 		}
 	}

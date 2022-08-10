@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,17 +30,17 @@ public partial class StandardNamespace
 
 	static StandardNamespace()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/dynalink/StandardNamespace;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTY", "Ljdk/dynalink/StandardNamespace;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ELEMENT", "Ljdk/dynalink/StandardNamespace;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD", "Ljdk/dynalink/StandardNamespace;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/dynalink/StandardNamespace;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StandardNamespace", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/dynalink/StandardNamespace;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/dynalink/StandardNamespace;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "findFirst", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/StandardNamespace;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/dynalink/StandardNamespace;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/StandardNamespace;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTY", "Ljdk/dynalink/StandardNamespace;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ELEMENT", "Ljdk/dynalink/StandardNamespace;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD", "Ljdk/dynalink/StandardNamespace;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/dynalink/StandardNamespace;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StandardNamespace", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/dynalink/StandardNamespace;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/dynalink/StandardNamespace;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findFirst", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/StandardNamespace;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/dynalink/StandardNamespace;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/StandardNamespace;", "public static final")]
@@ -47,10 +48,10 @@ public partial class StandardNamespace
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.StandardNamespace>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/StandardNamespace;", "public static final")]
@@ -58,10 +59,10 @@ public partial class StandardNamespace
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.StandardNamespace>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/StandardNamespace;", "public static final")]
@@ -69,10 +70,10 @@ public partial class StandardNamespace
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.StandardNamespace>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[Ljdk/dynalink/StandardNamespace;", "private static final")]
@@ -80,10 +81,10 @@ public partial class StandardNamespace
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.dynalink.StandardNamespace>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -92,7 +93,7 @@ public partial class StandardNamespace
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public StandardNamespace(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public StandardNamespace(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -103,28 +104,28 @@ public partial class StandardNamespace
 	[JniSignatureAttribute("()[Ljdk/dynalink/StandardNamespace;", "public static")]
 	public static JavaArray<Dova.JDK.jdk.dynalink.StandardNamespace> values()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.dynalink.StandardNamespace>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljdk/dynalink/StandardNamespace;", "public static")]
 	public static Dova.JDK.jdk.dynalink.StandardNamespace valueOf(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.StandardNamespace>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/dynalink/Operation;)Ljdk/dynalink/StandardNamespace;", "public static")]
 	public static Dova.JDK.jdk.dynalink.StandardNamespace findFirst(Dova.JDK.jdk.dynalink.Operation arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.StandardNamespace>(ret);
 	}
 
 	[JniSignatureAttribute("()[Ljdk/dynalink/StandardNamespace;", "private static")]
 	public static JavaArray<Dova.JDK.jdk.dynalink.StandardNamespace> _values()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.jdk.dynalink.StandardNamespace>>(ret);
 	}
 }

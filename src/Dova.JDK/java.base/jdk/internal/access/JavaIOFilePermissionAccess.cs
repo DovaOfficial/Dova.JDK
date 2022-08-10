@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,23 +27,23 @@ public partial interface JavaIOFilePermissionAccess
 
 	static JavaIOFilePermissionAccess()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/access/JavaIOFilePermissionAccess;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "newPermUsingAltPath", "(Ljava/io/FilePermission;)Ljava/io/FilePermission;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "newPermPlusAltPath", "(Ljava/io/FilePermission;)Ljava/io/FilePermission;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/JavaIOFilePermissionAccess;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newPermUsingAltPath", "(Ljava/io/FilePermission;)Ljava/io/FilePermission;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newPermPlusAltPath", "(Ljava/io/FilePermission;)Ljava/io/FilePermission;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/io/FilePermission;)Ljava/io/FilePermission;", "public abstract")]
 	Dova.JDK.java.io.FilePermission newPermUsingAltPath(Dova.JDK.java.io.FilePermission arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.FilePermission>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/FilePermission;)Ljava/io/FilePermission;", "public abstract")]
 	Dova.JDK.java.io.FilePermission newPermPlusAltPath(Dova.JDK.java.io.FilePermission arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.FilePermission>(ret);
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class Annotation
 
 	static Annotation()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type_index", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "num_element_value_pairs", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "element_value_pairs", "[Lcom/sun/tools/classfile/Annotation$element_value_pair;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Annotation", "(Lcom/sun/tools/classfile/ClassReader;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Annotation", "(Lcom/sun/tools/classfile/ConstantPool;I[Lcom/sun/tools/classfile/Annotation$element_value_pair;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type_index", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "num_element_value_pairs", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "element_value_pairs", "[Lcom/sun/tools/classfile/Annotation$element_value_pair;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Annotation", "(Lcom/sun/tools/classfile/ClassReader;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Annotation", "(Lcom/sun/tools/classfile/ConstantPool;I[Lcom/sun/tools/classfile/Annotation$element_value_pair;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
 	}
 
 	[JniSignatureAttribute("I", "public final")]
@@ -43,10 +44,10 @@ public partial class Annotation
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("I", "public final")]
@@ -54,10 +55,10 @@ public partial class Annotation
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/tools/classfile/Annotation$element_value_pair;", "public final")]
@@ -65,10 +66,10 @@ public partial class Annotation
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value_pair>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -77,12 +78,12 @@ public partial class Annotation
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)V", "")]
-	public Annotation(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Annotation(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ConstantPool;I[Lcom/sun/tools/classfile/Annotation$element_value_pair;)V", "public")]
-	public Annotation(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, int arg1, JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value_pair> arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public Annotation(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, int arg1, JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value_pair> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
@@ -93,7 +94,7 @@ public partial class Annotation
 	[JniSignatureAttribute("()I", "public")]
 	public int length()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return ret;
 	}
 
@@ -110,13 +111,13 @@ public partial class Annotation
 
 		static element_value_pair()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value_pair;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "element_name_index", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "value", "Lcom/sun/tools/classfile/Annotation$element_value;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "element_value_pair", "(Lcom/sun/tools/classfile/ClassReader;)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "element_value_pair", "(ILcom/sun/tools/classfile/Annotation$element_value;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value_pair;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "element_name_index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Lcom/sun/tools/classfile/Annotation$element_value;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "element_value_pair", "(Lcom/sun/tools/classfile/ClassReader;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "element_value_pair", "(ILcom/sun/tools/classfile/Annotation$element_value;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -124,10 +125,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/classfile/Annotation$element_value;", "public final")]
@@ -135,10 +136,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.Annotation.element_value>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -147,12 +148,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)V", "")]
-		public element_value_pair(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public element_value_pair(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/Annotation$element_value;)V", "public")]
-		public element_value_pair(int arg0, Dova.JDK.com.sun.tools.classfile.Annotation.element_value arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public element_value_pair(int arg0, Dova.JDK.com.sun.tools.classfile.Annotation.element_value arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -163,7 +164,7 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 	}
@@ -181,14 +182,14 @@ public partial class Annotation
 
 		static Array_element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Array_element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "num_values", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "values", "[Lcom/sun/tools/classfile/Annotation$element_value;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Array_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Array_element_value", "([Lcom/sun/tools/classfile/Annotation$element_value;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Array_element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "num_values", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "[Lcom/sun/tools/classfile/Annotation$element_value;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Array_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Array_element_value", "([Lcom/sun/tools/classfile/Annotation$element_value;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -196,10 +197,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/Annotation$element_value;", "public final")]
@@ -207,10 +208,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -219,12 +220,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;I)V", "")]
-		public Array_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Array_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("([Lcom/sun/tools/classfile/Annotation$element_value;I)V", "public")]
-		public Array_element_value(JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value> arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public Array_element_value(JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation.element_value> arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -235,14 +236,14 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -260,13 +261,13 @@ public partial class Annotation
 
 		static Annotation_element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Annotation_element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "annotation_value", "Lcom/sun/tools/classfile/Annotation;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Annotation_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Annotation_element_value", "(Lcom/sun/tools/classfile/Annotation;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Annotation_element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotation_value", "Lcom/sun/tools/classfile/Annotation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Annotation_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Annotation_element_value", "(Lcom/sun/tools/classfile/Annotation;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/classfile/Annotation;", "public final")]
@@ -274,10 +275,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.Annotation>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -286,12 +287,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;I)V", "")]
-		public Annotation_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Annotation_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation;I)V", "public")]
-		public Annotation_element_value(Dova.JDK.com.sun.tools.classfile.Annotation arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public Annotation_element_value(Dova.JDK.com.sun.tools.classfile.Annotation arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -302,14 +303,14 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -327,13 +328,13 @@ public partial class Annotation
 
 		static Class_element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Class_element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "class_info_index", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Class_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Class_element_value", "(II)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Class_element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "class_info_index", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Class_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Class_element_value", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -341,10 +342,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -353,12 +354,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;I)V", "")]
-		public Class_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Class_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(II)V", "public")]
-		public Class_element_value(int arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public Class_element_value(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -369,14 +370,14 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -394,14 +395,14 @@ public partial class Annotation
 
 		static Enum_element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Enum_element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type_name_index", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "const_name_index", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Enum_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Enum_element_value", "(III)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Enum_element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type_name_index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "const_name_index", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Enum_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Enum_element_value", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -409,10 +410,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -420,10 +421,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -432,12 +433,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;I)V", "")]
-		public Enum_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Enum_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(III)V", "public")]
-		public Enum_element_value(int arg0, int arg1, int arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public Enum_element_value(int arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 
@@ -448,14 +449,14 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -473,13 +474,13 @@ public partial class Annotation
 
 		static Primitive_element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Primitive_element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "const_value_index", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Primitive_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Primitive_element_value", "(II)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$Primitive_element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "const_value_index", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Primitive_element_value", "(Lcom/sun/tools/classfile/ClassReader;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Primitive_element_value", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -487,10 +488,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -499,12 +500,12 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;I)V", "")]
-		public Primitive_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Primitive_element_value(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(II)V", "public")]
-		public Primitive_element_value(int arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public Primitive_element_value(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -515,14 +516,14 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -540,13 +541,13 @@ public partial class Annotation
 
 		static element_value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "element_value", "(I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/Annotation$element_value;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "element_value", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/Annotation$element_value;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -554,10 +555,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -566,7 +567,7 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(I)V", "protected")]
-		public element_value(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public element_value(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -577,21 +578,21 @@ public partial class Annotation
 		[JniSignatureAttribute("()I", "public abstract")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/Annotation$element_value;", "public static")]
 		public static Dova.JDK.com.sun.tools.classfile.Annotation.element_value read(Dova.JDK.com.sun.tools.classfile.ClassReader arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.Annotation.element_value>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$element_value$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Annotation.element_value.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
@@ -606,47 +607,47 @@ public partial class Annotation
 
 			static Visitor()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value$Visitor;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitAnnotation", "(Lcom/sun/tools/classfile/Annotation$Annotation_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitEnum", "(Lcom/sun/tools/classfile/Annotation$Enum_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitArray", "(Lcom/sun/tools/classfile/Annotation$Array_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitClass", "(Lcom/sun/tools/classfile/Annotation$Class_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visitPrimitive", "(Lcom/sun/tools/classfile/Annotation$Primitive_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$element_value$Visitor;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitAnnotation", "(Lcom/sun/tools/classfile/Annotation$Annotation_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnum", "(Lcom/sun/tools/classfile/Annotation$Enum_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArray", "(Lcom/sun/tools/classfile/Annotation$Array_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClass", "(Lcom/sun/tools/classfile/Annotation$Class_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitPrimitive", "(Lcom/sun/tools/classfile/Annotation$Primitive_element_value;Ljava/lang/Object;)Ljava/lang/Object;"));
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$Annotation_element_value;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visitAnnotation(Dova.JDK.com.sun.tools.classfile.Annotation.Annotation_element_value arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$Enum_element_value;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visitEnum(Dova.JDK.com.sun.tools.classfile.Annotation.Enum_element_value arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$Array_element_value;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visitArray(Dova.JDK.com.sun.tools.classfile.Annotation.Array_element_value arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$Class_element_value;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visitClass(Dova.JDK.com.sun.tools.classfile.Annotation.Class_element_value arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/Annotation$Primitive_element_value;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visitPrimitive(Dova.JDK.com.sun.tools.classfile.Annotation.Primitive_element_value arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 		}
@@ -664,10 +665,10 @@ public partial class Annotation
 
 		static InvalidAnnotation()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$InvalidAnnotation;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "InvalidAnnotation", "(Ljava/lang/String;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/Annotation$InvalidAnnotation;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvalidAnnotation", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -675,10 +676,10 @@ public partial class Annotation
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -687,7 +688,7 @@ public partial class Annotation
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-		public InvalidAnnotation(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public InvalidAnnotation(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

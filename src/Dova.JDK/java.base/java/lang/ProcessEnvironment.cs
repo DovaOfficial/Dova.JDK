@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,23 +29,23 @@ public partial class ProcessEnvironment
 
 	static ProcessEnvironment()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theEnvironment", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theUnmodifiableEnvironment", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_NAME_LENGTH", "I"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ProcessEnvironment", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getenv", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getenv", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "environment", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "toEnvironmentBlock", "(Ljava/util/Map;[I)[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "environ", "()[[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "emptyEnvironment", "(I)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "validateVariable", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "validateValue", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "arrayCompare", "([B[B)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "arrayEquals", "([B[B)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "arrayHash", "([B)I"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theEnvironment", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theUnmodifiableEnvironment", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_NAME_LENGTH", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProcessEnvironment", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getenv", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getenv", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "environment", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toEnvironmentBlock", "(Ljava/util/Map;[I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "environ", "()[[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "emptyEnvironment", "(I)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "validateVariable", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "validateValue", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "arrayCompare", "([B[B)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "arrayEquals", "([B[B)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "arrayHash", "([B)I"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/HashMap;", "private static final")]
@@ -52,10 +53,10 @@ public partial class ProcessEnvironment
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -63,10 +64,10 @@ public partial class ProcessEnvironment
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -74,10 +75,10 @@ public partial class ProcessEnvironment
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -86,7 +87,7 @@ public partial class ProcessEnvironment
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ProcessEnvironment() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ProcessEnvironment() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -97,75 +98,75 @@ public partial class ProcessEnvironment
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/String;", "static")]
 	public static Dova.JDK.java.lang.String getenv(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Map;", "static")]
 	public static Dova.JDK.java.util.Map getenv()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Map;", "static")]
 	public static Dova.JDK.java.util.Map environment()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Map;[I)[B", "static")]
 	public static JavaArray<byte> toEnvironmentBlock(Dova.JDK.java.util.Map arg0, JavaArray<int> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("()[[B", "private static native")]
 	public static JavaArray<JavaArray<byte>> environ()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<JavaArray<JavaArray<byte>>>(ret);
 	}
 
 	[JniSignatureAttribute("(I)Ljava/util/Map;", "static")]
 	public static Dova.JDK.java.util.Map emptyEnvironment(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "private static")]
 	public static void validateVariable(Dova.JDK.java.lang.String arg0)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "private static")]
 	public static void validateValue(Dova.JDK.java.lang.String arg0)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[7], arg0);
 	}
 
 	[JniSignatureAttribute("([B[B)I", "private static")]
 	public static int arrayCompare(JavaArray<byte> arg0, JavaArray<byte> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("([B[B)Z", "private static")]
 	public static bool arrayEquals(JavaArray<byte> arg0, JavaArray<byte> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("([B)I", "private static")]
 	public static int arrayHash(JavaArray<byte> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[10], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[10], arg0);
 		return ret;
 	}
 
@@ -182,26 +183,26 @@ public partial class ProcessEnvironment
 
 		static StringEnvironment()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEnvironment;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "m", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StringEnvironment", "(Ljava/util/Map;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove_0", "(Ljava/lang/Object;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get_0", "(Ljava/lang/Object;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "toString", "(Ljava/lang/ProcessEnvironment$Value;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "values", "()Ljava/util/Collection;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "entrySet", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "containsKey", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "keySet", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "containsValue", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toEnvironmentBlock", "([I)[B"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEnvironment;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringEnvironment", "(Ljava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove_0", "(Ljava/lang/Object;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_0", "(Ljava/lang/Object;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toString", "(Ljava/lang/ProcessEnvironment$Value;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "values", "()Ljava/util/Collection;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entrySet", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsKey", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keySet", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsValue", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toEnvironmentBlock", "([I)[B"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -209,10 +210,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -221,7 +222,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map;)V", "public")]
-		public StringEnvironment(Dova.JDK.java.util.Map arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringEnvironment(Dova.JDK.java.util.Map arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -232,111 +233,111 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String remove_0(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object remove_1(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String get_0(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object get_1(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String put(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object put(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ProcessEnvironment$Value;)Ljava/lang/String;", "private static")]
 		public static Dova.JDK.java.lang.String toString(Dova.JDK.java.lang.ProcessEnvironment.Value arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Collection;", "public")]
 		public Dova.JDK.java.util.Collection values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Collection>(ret);
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void clear()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8]);
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
 		public bool isEmpty()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[9]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[9]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int size()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[10]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[10]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set entrySet()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool containsKey(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set keySet()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool containsValue(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("([I)[B", "public")]
 		public JavaArray<byte> toEnvironmentBlock(JavaArray<int> arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
 	}
@@ -354,16 +355,16 @@ public partial class ProcessEnvironment
 
 		static Variable()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$Variable;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Variable", "(Ljava/lang/String;[B)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/ProcessEnvironment$Variable;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "([B)Ljava/lang/ProcessEnvironment$Variable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Variable;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$Variable;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Variable", "(Ljava/lang/String;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/ProcessEnvironment$Variable;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "([B)Ljava/lang/ProcessEnvironment$Variable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Variable;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -372,7 +373,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;[B)V", "protected")]
-		public Variable(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Variable(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -383,49 +384,49 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)I", "public volatile")]
 		public int compareTo(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ProcessEnvironment$Variable;)I", "public")]
 		public int compareTo(Dova.JDK.java.lang.ProcessEnvironment.Variable arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("([B)Ljava/lang/ProcessEnvironment$Variable;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Variable valueOf(JavaArray<byte> arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Variable>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Variable valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Variable>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Variable;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Variable valueOfQueryOnly(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Variable>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Variable;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Variable valueOfQueryOnly(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Variable>(ret);
 		}
 	}
@@ -443,16 +444,16 @@ public partial class ProcessEnvironment
 
 		static Value()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$Value;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Value", "(Ljava/lang/String;[B)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/ProcessEnvironment$Value;)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "([B)Ljava/lang/ProcessEnvironment$Value;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Value;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$Value;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Value", "(Ljava/lang/String;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/ProcessEnvironment$Value;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "([B)Ljava/lang/ProcessEnvironment$Value;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOfQueryOnly", "(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Value;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -461,7 +462,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;[B)V", "protected")]
-		public Value(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Value(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -472,49 +473,49 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)I", "public volatile")]
 		public int compareTo(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ProcessEnvironment$Value;)I", "public")]
 		public int compareTo(Dova.JDK.java.lang.ProcessEnvironment.Value arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("([B)Ljava/lang/ProcessEnvironment$Value;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Value valueOf(JavaArray<byte> arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Value>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Value valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Value>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/ProcessEnvironment$Value;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Value valueOfQueryOnly(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Value>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/ProcessEnvironment$Value;", "public static")]
 		public static Dova.JDK.java.lang.ProcessEnvironment.Value valueOfQueryOnly(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessEnvironment.Value>(ret);
 		}
 	}
@@ -532,16 +533,16 @@ public partial class ProcessEnvironment
 
 		static StringKeySet()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringKeySet;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StringKeySet", "(Ljava/util/Set;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringKeySet;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringKeySet", "(Ljava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -549,10 +550,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -561,7 +562,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Set;)V", "public")]
-		public StringKeySet(Dova.JDK.java.util.Set arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringKeySet(Dova.JDK.java.util.Set arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -572,41 +573,41 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool remove(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void clear()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1]);
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
 		public bool isEmpty()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int size()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Iterator;", "public")]
 		public Dova.JDK.java.util.Iterator iterator()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool contains(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 			return ret;
 		}
 	}
@@ -624,18 +625,18 @@ public partial class ProcessEnvironment
 
 		static StringValues()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringValues;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "c", "Ljava/util/Collection;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StringValues", "(Ljava/util/Collection;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringValues;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c", "Ljava/util/Collection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringValues", "(Ljava/util/Collection;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Collection;", "private final")]
@@ -643,10 +644,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Collection>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -655,7 +656,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Collection;)V", "public")]
-		public StringValues(Dova.JDK.java.util.Collection arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringValues(Dova.JDK.java.util.Collection arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -666,55 +667,55 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool remove(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void clear()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
 		public bool isEmpty()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int size()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Iterator;", "public")]
 		public Dova.JDK.java.util.Iterator iterator()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool contains(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 			return ret;
 		}
 	}
@@ -732,19 +733,19 @@ public partial class ProcessEnvironment
 
 		static StringEntrySet()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEntrySet;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StringEntrySet", "(Ljava/util/Set;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "vvEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEntrySet;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringEntrySet", "(Ljava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "vvEntry", "(Ljava/lang/Object;)Ljava/util/Map$Entry;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -752,10 +753,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -764,7 +765,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Set;)V", "public")]
-		public StringEntrySet(Dova.JDK.java.util.Set arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringEntrySet(Dova.JDK.java.util.Set arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -775,62 +776,62 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool remove(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "public")]
 		public void clear()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3]);
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
 		public bool isEmpty()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int size()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Iterator;", "public")]
 		public Dova.JDK.java.util.Iterator iterator()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Iterator>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool contains(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/util/Map$Entry;", "private static")]
 		public static Dova.JDK.java.util.Map.Entry vvEntry(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map.Entry>(ret);
 		}
 	}
@@ -849,19 +850,19 @@ public partial class ProcessEnvironment
 
 		static StringEntry()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEntry;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "e", "Ljava/util/Map$Entry;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StringEntry", "(Ljava/util/Map$Entry;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getValue_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getValue_1", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getKey_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getKey_1", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/String;)Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$StringEntry;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "e", "Ljava/util/Map$Entry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringEntry", "(Ljava/util/Map$Entry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue_1", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKey_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKey_1", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/lang/String;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map$Entry;", "private final")]
@@ -869,10 +870,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map.Entry>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -881,7 +882,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map$Entry;)V", "public")]
-		public StringEntry(Dova.JDK.java.util.Map.Entry arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringEntry(Dova.JDK.java.util.Map.Entry arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -892,63 +893,63 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String toString()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object getValue_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String getValue_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object getKey_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String getKey_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object setValue(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String setValue(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 	}
@@ -966,15 +967,15 @@ public partial class ProcessEnvironment
 
 		static ExternalData()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessEnvironment$ExternalData;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "str", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "bytes", "[B"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ExternalData", "(Ljava/lang/String;[B)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBytes", "()[B"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessEnvironment$ExternalData;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "str", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExternalData", "(Ljava/lang/String;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBytes", "()[B"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "protected final")]
@@ -982,10 +983,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[B", "protected final")]
@@ -993,10 +994,10 @@ public partial class ProcessEnvironment
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1005,7 +1006,7 @@ public partial class ProcessEnvironment
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;[B)V", "protected")]
-		public ExternalData(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ExternalData(Dova.JDK.java.lang.String arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1016,28 +1017,28 @@ public partial class ProcessEnvironment
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String toString()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()[B", "public")]
 		public JavaArray<byte> getBytes()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
 	}

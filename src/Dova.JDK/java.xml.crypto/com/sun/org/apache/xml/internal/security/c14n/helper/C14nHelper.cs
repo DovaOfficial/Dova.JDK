@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,13 +28,13 @@ public partial class C14nHelper
 
 	static C14nHelper()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/security/c14n/helper/C14nHelper;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "C14nHelper", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsRelative", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsRelative", "(Lorg/w3c/dom/Attr;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsAbsolute", "(Lorg/w3c/dom/Attr;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsAbsolute", "(Ljava/lang/String;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/security/c14n/helper/C14nHelper;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C14nHelper", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsRelative", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsRelative", "(Lorg/w3c/dom/Attr;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsAbsolute", "(Lorg/w3c/dom/Attr;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "namespaceIsAbsolute", "(Ljava/lang/String;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +43,7 @@ public partial class C14nHelper
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public C14nHelper() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public C14nHelper() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -53,28 +54,28 @@ public partial class C14nHelper
 	[JniSignatureAttribute("(Ljava/lang/String;)Z", "public static")]
 	public static bool namespaceIsRelative(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lorg/w3c/dom/Attr;)Z", "public static")]
 	public static bool namespaceIsRelative(Dova.JDK.org.w3c.dom.Attr arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lorg/w3c/dom/Attr;)Z", "public static")]
 	public static bool namespaceIsAbsolute(Dova.JDK.org.w3c.dom.Attr arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Z", "public static")]
 	public static bool namespaceIsAbsolute(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 		return ret;
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,12 +29,12 @@ public partial class ModuleHashesBuilder
 
 	static ModuleHashesBuilder()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "configuration", "Ljava/lang/module/Configuration;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hashModuleCandidates", "Ljava/util/Set;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ModuleHashesBuilder", "(Ljava/lang/module/Configuration;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "computeHashes", "(Ljava/util/Set;)Ljava/util/Map;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configuration", "Ljava/lang/module/Configuration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hashModuleCandidates", "Ljava/util/Set;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleHashesBuilder", "(Ljava/lang/module/Configuration;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeHashes", "(Ljava/util/Set;)Ljava/util/Map;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/module/Configuration;", "private final")]
@@ -41,10 +42,10 @@ public partial class ModuleHashesBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.module.Configuration>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -52,10 +53,10 @@ public partial class ModuleHashesBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -64,7 +65,7 @@ public partial class ModuleHashesBuilder
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/module/Configuration;Ljava/util/Set;)V", "public")]
-	public ModuleHashesBuilder(Dova.JDK.java.lang.module.Configuration arg0, Dova.JDK.java.util.Set arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ModuleHashesBuilder(Dova.JDK.java.lang.module.Configuration arg0, Dova.JDK.java.util.Set arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -75,7 +76,7 @@ public partial class ModuleHashesBuilder
 	[JniSignatureAttribute("(Ljava/util/Set;)Ljava/util/Map;", "public")]
 	public Dova.JDK.java.util.Map computeHashes(Dova.JDK.java.util.Set arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
@@ -92,22 +93,22 @@ public partial class ModuleHashesBuilder
 
 		static Graph()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$Graph;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nodes", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Graph", "(Ljava/util/Set;Ljava/util/Map;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reverse", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dfs", "(Ljava/util/Set;)Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "dfs", "(Ljava/lang/Object;)Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ordered", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "nodes", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "transpose", "()Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "orderedNodes", "()Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "adjacentNodes", "(Ljava/lang/Object;)Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "printGraph", "(Ljava/io/PrintStream;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "edges", "()Ljava/util/Map;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$Graph;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nodes", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Graph", "(Ljava/util/Set;Ljava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reverse", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dfs", "(Ljava/util/Set;)Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dfs", "(Ljava/lang/Object;)Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ordered", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nodes", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transpose", "()Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "orderedNodes", "()Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjacentNodes", "(Ljava/lang/Object;)Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printGraph", "(Ljava/io/PrintStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "edges", "()Ljava/util/Map;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -115,10 +116,10 @@ public partial class ModuleHashesBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -126,10 +127,10 @@ public partial class ModuleHashesBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -138,7 +139,7 @@ public partial class ModuleHashesBuilder
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Set;Ljava/util/Map;)V", "public")]
-		public Graph(Dova.JDK.java.util.Set arg0, Dova.JDK.java.util.Map arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Graph(Dova.JDK.java.util.Set arg0, Dova.JDK.java.util.Map arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -149,74 +150,74 @@ public partial class ModuleHashesBuilder
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool contains(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/Consumer;)V", "public")]
 		public void reverse(Dova.JDK.java.util.function.Consumer arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Set;)Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set dfs(Dova.JDK.java.util.Set arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set dfs(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/Consumer;)V", "public")]
 		public void ordered(Dova.JDK.java.util.function.Consumer arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set nodes()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljdk/internal/module/ModuleHashesBuilder$Graph;", "public")]
 		public Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph transpose()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/Stream;", "public")]
 		public Dova.JDK.java.util.stream.Stream orderedNodes()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.Stream>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/util/Set;", "public")]
 		public Dova.JDK.java.util.Set adjacentNodes(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/io/PrintStream;)V", "public")]
 		public void printGraph(Dova.JDK.java.io.PrintStream arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Map;", "public")]
 		public Dova.JDK.java.util.Map edges()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
 
@@ -233,14 +234,14 @@ public partial class ModuleHashesBuilder
 
 			static Builder()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$Graph$Builder;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nodes", "Ljava/util/Set;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Builder", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addEdge", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addNode", "(Ljava/lang/Object;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$Graph$Builder;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nodes", "Ljava/util/Set;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "edges", "Ljava/util/Map;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Builder", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addEdge", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addNode", "(Ljava/lang/Object;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/Set;", "final")]
@@ -248,10 +249,10 @@ public partial class ModuleHashesBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/util/Map;", "final")]
@@ -259,10 +260,10 @@ public partial class ModuleHashesBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -271,7 +272,7 @@ public partial class ModuleHashesBuilder
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public Builder() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public Builder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -282,20 +283,20 @@ public partial class ModuleHashesBuilder
 			[JniSignatureAttribute("()Ljdk/internal/module/ModuleHashesBuilder$Graph;", "public")]
 			public Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph build()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Object;)V", "public")]
 			public void addEdge(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/Object;)V", "public")]
 			public void addNode(Dova.JDK.java.lang.Object arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 	}
@@ -313,16 +314,16 @@ public partial class ModuleHashesBuilder
 
 		static TopoSorter()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$TopoSorter;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "result", "Ljava/util/Deque;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "graph", "Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TopoSorter", "(Ljdk/internal/module/ModuleHashesBuilder$Graph;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "sort", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "reverse", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit", "(Ljava/lang/Object;Ljava/util/Set;Ljava/util/Deque;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "children", "(Ljava/lang/Object;)Ljava/util/Set;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ordered", "(Ljava/util/function/Consumer;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleHashesBuilder$TopoSorter;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "result", "Ljava/util/Deque;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "graph", "Ljdk/internal/module/ModuleHashesBuilder$Graph;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TopoSorter", "(Ljdk/internal/module/ModuleHashesBuilder$Graph;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sort", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reverse", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit", "(Ljava/lang/Object;Ljava/util/Set;Ljava/util/Deque;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "children", "(Ljava/lang/Object;)Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ordered", "(Ljava/util/function/Consumer;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Deque;", "final")]
@@ -330,10 +331,10 @@ public partial class ModuleHashesBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Deque>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/module/ModuleHashesBuilder$Graph;", "final")]
@@ -341,10 +342,10 @@ public partial class ModuleHashesBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -353,7 +354,7 @@ public partial class ModuleHashesBuilder
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/module/ModuleHashesBuilder$Graph;)V", "")]
-		public TopoSorter(Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TopoSorter(Dova.JDK.jdk.@internal.module.ModuleHashesBuilder.Graph arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -364,32 +365,32 @@ public partial class ModuleHashesBuilder
 		[JniSignatureAttribute("()V", "private")]
 		public void sort()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/Consumer;)V", "public")]
 		public void reverse(Dova.JDK.java.util.function.Consumer arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;Ljava/util/Set;Ljava/util/Deque;)V", "private")]
 		public void visit(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.util.Set arg1, Dova.JDK.java.util.Deque arg2)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Ljava/util/Set;", "private")]
 		public Dova.JDK.java.util.Set children(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/Consumer;)V", "public")]
 		public void ordered(Dova.JDK.java.util.function.Consumer arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		}
 	}
 }

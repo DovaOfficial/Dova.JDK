@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class TableStringConverter
 
 	static TableStringConverter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/table/TableStringConverter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TableStringConverter", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "(Ljavax/swing/table/TableModel;II)Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/table/TableStringConverter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TableStringConverter", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Ljavax/swing/table/TableModel;II)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class TableStringConverter
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public TableStringConverter() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TableStringConverter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class TableStringConverter
 	[JniSignatureAttribute("(Ljavax/swing/table/TableModel;II)Ljava/lang/String;", "public abstract")]
 	public Dova.JDK.java.lang.String toString(Dova.JDK.javax.swing.table.TableModel arg0, int arg1, int arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 }

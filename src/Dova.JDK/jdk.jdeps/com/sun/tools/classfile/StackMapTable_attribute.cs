@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,15 +29,15 @@ public partial class StackMapTable_attribute
 
 	static StackMapTable_attribute()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "number_of_entries", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "entries", "[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(I[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(Lcom/sun/tools/classfile/ConstantPool;[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(Lcom/sun/tools/classfile/ClassReader;II)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "length", "([Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Attribute$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "number_of_entries", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entries", "[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(I[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(Lcom/sun/tools/classfile/ConstantPool;[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StackMapTable_attribute", "(Lcom/sun/tools/classfile/ClassReader;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "length", "([Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Attribute$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("I", "public final")]
@@ -44,10 +45,10 @@ public partial class StackMapTable_attribute
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;", "public final")]
@@ -55,10 +56,10 @@ public partial class StackMapTable_attribute
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -67,17 +68,17 @@ public partial class StackMapTable_attribute
 	}
 
 	[JniSignatureAttribute("(I[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V", "public")]
-	public StackMapTable_attribute(int arg0, JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame> arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public StackMapTable_attribute(int arg0, JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ConstantPool;[Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V", "public")]
-	public StackMapTable_attribute(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame> arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public StackMapTable_attribute(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;II)V", "")]
-	public StackMapTable_attribute(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1, int arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public StackMapTable_attribute(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
@@ -88,14 +89,14 @@ public partial class StackMapTable_attribute
 	[JniSignatureAttribute("([Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)I", "static")]
 	public static int length(JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/Attribute$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 	public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.Attribute.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
@@ -112,14 +113,14 @@ public partial class StackMapTable_attribute
 
 		static stack_map_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "frame_type", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "stack_map_frame", "(I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frame_type", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stack_map_frame", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -127,10 +128,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -139,7 +140,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(I)V", "protected")]
-		public stack_map_frame(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public stack_map_frame(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -150,28 +151,28 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;", "static")]
 		public static Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame read(Dova.JDK.com.sun.tools.classfile.ClassReader arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame>(ret);
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public abstract")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return ret;
 		}
 
@@ -186,63 +187,63 @@ public partial class StackMapTable_attribute
 
 			static Visitor()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_full_frame(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.full_frame arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_same_locals_1_stack_item_frame_extended(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.same_locals_1_stack_item_frame_extended arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_chop_frame(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.chop_frame arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_same_frame_extended(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.same_frame_extended arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_append_frame(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.append_frame arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_same_frame(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.same_frame arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Object;)Ljava/lang/Object;", "public abstract")]
 			Dova.JDK.java.lang.Object visit_same_locals_1_stack_item_frame(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.same_locals_1_stack_item_frame arg0, Dova.JDK.java.lang.Object arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 		}
@@ -261,11 +262,11 @@ public partial class StackMapTable_attribute
 
 		static Uninitialized_variable_info()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$Uninitialized_variable_info;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Uninitialized_variable_info", "(Lcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$Uninitialized_variable_info;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Uninitialized_variable_info", "(Lcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -273,10 +274,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -285,7 +286,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)V", "")]
-		public Uninitialized_variable_info(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Uninitialized_variable_info(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -296,7 +297,7 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 	}
@@ -314,11 +315,11 @@ public partial class StackMapTable_attribute
 
 		static Object_variable_info()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$Object_variable_info;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "cpool_index", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Object_variable_info", "(Lcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$Object_variable_info;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cpool_index", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Object_variable_info", "(Lcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -326,10 +327,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -338,7 +339,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)V", "")]
-		public Object_variable_info(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Object_variable_info(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -349,7 +350,7 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 	}
@@ -367,21 +368,21 @@ public partial class StackMapTable_attribute
 
 		static verification_type_info()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Top", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Integer", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Float", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Long", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Double", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Null", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_UninitializedThis", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Object", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Uninitialized", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "verification_type_info", "(I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Top", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Integer", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Float", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Long", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Double", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Null", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_UninitializedThis", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Object", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITEM_Uninitialized", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verification_type_info", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -389,10 +390,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -400,10 +401,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -411,10 +412,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -422,10 +423,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -433,10 +434,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -444,10 +445,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -455,10 +456,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -466,10 +467,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -477,10 +478,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -488,10 +489,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -500,7 +501,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(I)V", "protected")]
-		public verification_type_info(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public verification_type_info(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -511,14 +512,14 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "static")]
 		public static Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info read(Dova.JDK.com.sun.tools.classfile.ClassReader arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>(ret);
 		}
 	}
@@ -536,17 +537,17 @@ public partial class StackMapTable_attribute
 
 		static full_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "number_of_locals", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "locals", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "number_of_stack_items", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "full_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "number_of_locals", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locals", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "number_of_stack_items", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "full_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -554,10 +555,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -565,10 +566,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "public final")]
@@ -576,10 +577,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -587,10 +588,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "public final")]
@@ -598,10 +599,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -610,7 +611,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public full_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public full_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -621,21 +622,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -653,14 +654,14 @@ public partial class StackMapTable_attribute
 
 		static append_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "locals", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "append_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locals", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -668,10 +669,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "public final")]
@@ -679,10 +680,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -691,7 +692,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public append_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public append_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -702,21 +703,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -734,13 +735,13 @@ public partial class StackMapTable_attribute
 
 		static same_frame_extended()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "same_frame_extended", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "same_frame_extended", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -748,10 +749,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -760,7 +761,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public same_frame_extended(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public same_frame_extended(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -771,21 +772,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -803,13 +804,13 @@ public partial class StackMapTable_attribute
 
 		static chop_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "chop_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "chop_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -817,10 +818,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -829,7 +830,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public chop_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public chop_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -840,21 +841,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -872,14 +873,14 @@ public partial class StackMapTable_attribute
 
 		static same_locals_1_stack_item_frame_extended()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "same_locals_1_stack_item_frame_extended", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset_delta", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "same_locals_1_stack_item_frame_extended", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -887,10 +888,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "public final")]
@@ -898,10 +899,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -910,7 +911,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public same_locals_1_stack_item_frame_extended(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public same_locals_1_stack_item_frame_extended(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -921,21 +922,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -953,13 +954,13 @@ public partial class StackMapTable_attribute
 
 		static same_locals_1_stack_item_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "same_locals_1_stack_item_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stack", "[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "same_locals_1_stack_item_frame", "(ILcom/sun/tools/classfile/ClassReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;", "public final")]
@@ -967,10 +968,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.verification_type_info>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -979,7 +980,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(ILcom/sun/tools/classfile/ClassReader;)V", "")]
-		public same_locals_1_stack_item_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public same_locals_1_stack_item_frame(int arg0, Dova.JDK.com.sun.tools.classfile.ClassReader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -990,21 +991,21 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("()I", "public")]
 		public int length()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 	}
@@ -1021,11 +1022,11 @@ public partial class StackMapTable_attribute
 
 		static same_frame()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "same_frame", "(I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "same_frame", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDelta", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1034,7 +1035,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public same_frame(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public same_frame(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1045,14 +1046,14 @@ public partial class StackMapTable_attribute
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame$Visitor;Ljava/lang/Object;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object accept(Dova.JDK.com.sun.tools.classfile.StackMapTable_attribute.stack_map_frame.Visitor arg0, Dova.JDK.java.lang.Object arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getOffsetDelta()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 	}
@@ -1069,10 +1070,10 @@ public partial class StackMapTable_attribute
 
 		static InvalidStackMap()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$InvalidStackMap;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "InvalidStackMap", "(Ljava/lang/String;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/StackMapTable_attribute$InvalidStackMap;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvalidStackMap", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1080,10 +1081,10 @@ public partial class StackMapTable_attribute
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1092,7 +1093,7 @@ public partial class StackMapTable_attribute
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-		public InvalidStackMap(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public InvalidStackMap(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

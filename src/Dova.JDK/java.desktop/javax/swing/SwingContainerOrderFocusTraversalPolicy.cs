@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class SwingContainerOrderFocusTraversalPolicy
 
 	static SwingContainerOrderFocusTraversalPolicy()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/SwingContainerOrderFocusTraversalPolicy;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SwingContainerOrderFocusTraversalPolicy", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/awt/Component;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/SwingContainerOrderFocusTraversalPolicy;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SwingContainerOrderFocusTraversalPolicy", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/awt/Component;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class SwingContainerOrderFocusTraversalPolicy
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public SwingContainerOrderFocusTraversalPolicy() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SwingContainerOrderFocusTraversalPolicy() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class SwingContainerOrderFocusTraversalPolicy
 	[JniSignatureAttribute("(Ljava/awt/Component;)Z", "public")]
 	public bool accept(Dova.JDK.java.awt.Component arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 }

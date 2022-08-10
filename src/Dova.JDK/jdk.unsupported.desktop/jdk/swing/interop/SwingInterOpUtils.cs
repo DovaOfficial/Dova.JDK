@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class SwingInterOpUtils
 
 	static SwingInterOpUtils()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/swing/interop/SwingInterOpUtils;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAB_EVENT_MASK", "I"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SwingInterOpUtils", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isUngrabEvent", "(Ljava/awt/AWTEvent;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "postEvent", "(Ljava/lang/Object;Ljava/awt/AWTEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "grab", "(Ljava/awt/Toolkit;Ljava/awt/Window;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "ungrab", "(Ljava/awt/Toolkit;Ljava/awt/Window;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/SwingInterOpUtils;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAB_EVENT_MASK", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SwingInterOpUtils", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isUngrabEvent", "(Ljava/awt/AWTEvent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "postEvent", "(Ljava/lang/Object;Ljava/awt/AWTEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "grab", "(Ljava/awt/Toolkit;Ljava/awt/Window;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ungrab", "(Ljava/awt/Toolkit;Ljava/awt/Window;)V"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -43,10 +44,10 @@ public partial class SwingInterOpUtils
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,7 +56,7 @@ public partial class SwingInterOpUtils
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public SwingInterOpUtils() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SwingInterOpUtils() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -66,25 +67,25 @@ public partial class SwingInterOpUtils
 	[JniSignatureAttribute("(Ljava/awt/AWTEvent;)Z", "public static")]
 	public static bool isUngrabEvent(Dova.JDK.java.awt.AWTEvent arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/awt/AWTEvent;)V", "public static")]
 	public static void postEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.awt.AWTEvent arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Toolkit;Ljava/awt/Window;)V", "public static")]
 	public static void grab(Dova.JDK.java.awt.Toolkit arg0, Dova.JDK.java.awt.Window arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Toolkit;Ljava/awt/Window;)V", "public static")]
 	public static void ungrab(Dova.JDK.java.awt.Toolkit arg0, Dova.JDK.java.awt.Window arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,15 +28,15 @@ public partial interface DOMImplementationCSS
 
 	static DOMImplementationCSS()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lorg/w3c/dom/css/DOMImplementationCSS;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createCSSStyleSheet", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleSheet;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/css/DOMImplementationCSS;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCSSStyleSheet", "(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleSheet;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)Lorg/w3c/dom/css/CSSStyleSheet;", "public abstract")]
 	Dova.JDK.org.w3c.dom.css.CSSStyleSheet createCSSStyleSheet(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.css.CSSStyleSheet>(ret);
 	}
 }

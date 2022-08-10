@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class SystemProps
 
 	static SystemProps()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/util/SystemProps;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SystemProps", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "put", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "putIfAbsent", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initProperties", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "fillI18nProps", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/util/SystemProps;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SystemProps", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "put", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putIfAbsent", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initProperties", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fillI18nProps", "(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -43,10 +44,10 @@ public partial class SystemProps
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,7 +56,7 @@ public partial class SystemProps
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SystemProps() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SystemProps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -66,26 +67,26 @@ public partial class SystemProps
 	[JniSignatureAttribute("(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V", "private static")]
 	public static void put(Dova.JDK.java.util.HashMap arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;)V", "private static")]
 	public static void putIfAbsent(Dova.JDK.java.util.HashMap arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Map;", "public static")]
 	public static Dova.JDK.java.util.Map initProperties()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/HashMap;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "private static")]
 	public static void fillI18nProps(Dova.JDK.java.util.HashMap arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1, arg2, arg3);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1, arg2, arg3);
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/util/SystemProps$Raw;", "public static")]
@@ -101,54 +102,54 @@ public partial class SystemProps
 
 		static Raw()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/util/SystemProps$Raw;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_display_country_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_display_language_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_display_script_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_display_variant_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_file_encoding_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_file_separator_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_format_country_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_format_language_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_format_script_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_format_variant_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_nonProxyHosts_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_proxyHost_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_proxyPort_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_http_nonProxyHosts_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_http_proxyHost_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_http_proxyPort_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_https_proxyHost_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_https_proxyPort_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_java_io_tmpdir_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_line_separator_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_os_arch_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_os_name_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_os_version_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_path_separator_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_socksNonProxyHosts_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_socksProxyHost_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_socksProxyPort_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_arch_abi_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_arch_data_model_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_cpu_endian_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_cpu_isalist_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_io_unicode_encoding_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_jnu_encoding_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_os_patch_level_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_stderr_encoding_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_stdout_encoding_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_user_dir_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_user_home_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "_user_name_NDX", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FIXED_LENGTH", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "platformProps", "[Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Raw", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cmdProperties", "()Ljava/util/HashMap;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "propDefault", "(I)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "platformProperties", "()[Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "vmProperties", "()[Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/util/SystemProps$Raw;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_display_country_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_display_language_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_display_script_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_display_variant_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_file_encoding_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_file_separator_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_format_country_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_format_language_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_format_script_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_format_variant_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_nonProxyHosts_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_proxyHost_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_ftp_proxyPort_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_http_nonProxyHosts_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_http_proxyHost_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_http_proxyPort_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_https_proxyHost_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_https_proxyPort_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_java_io_tmpdir_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_line_separator_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_os_arch_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_os_name_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_os_version_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_path_separator_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_socksNonProxyHosts_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_socksProxyHost_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_socksProxyPort_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_arch_abi_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_arch_data_model_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_cpu_endian_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_cpu_isalist_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_io_unicode_encoding_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_jnu_encoding_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_os_patch_level_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_stderr_encoding_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_sun_stdout_encoding_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_user_dir_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_user_home_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_user_name_NDX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIXED_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "platformProps", "[Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Raw", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cmdProperties", "()Ljava/util/HashMap;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "propDefault", "(I)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "platformProperties", "()[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "vmProperties", "()[Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -156,10 +157,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -167,10 +168,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -178,10 +179,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -189,10 +190,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -200,10 +201,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -211,10 +212,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -222,10 +223,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -233,10 +234,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -244,10 +245,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -255,10 +256,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -266,10 +267,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -277,10 +278,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -288,10 +289,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -299,10 +300,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -310,10 +311,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -321,10 +322,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -332,10 +333,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -343,10 +344,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -354,10 +355,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -365,10 +366,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[19]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[19]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -376,10 +377,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[20]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[20]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -387,10 +388,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[21]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[21]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -398,10 +399,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[22]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[22]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -409,10 +410,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[23]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[23]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -420,10 +421,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[24]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[24]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -431,10 +432,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[25]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[25]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -442,10 +443,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[26]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[26]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -453,10 +454,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[27]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[27]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -464,10 +465,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[28]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[28]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -475,10 +476,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[29]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[29]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -486,10 +487,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -497,10 +498,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[31]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[31]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -508,10 +509,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[32]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[32]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -519,10 +520,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[33]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[33]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -530,10 +531,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[34]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[34]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -541,10 +542,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[35]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[35]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -552,10 +553,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[36]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[36]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -563,10 +564,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[37]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[37]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -574,10 +575,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[38]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[38]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -585,10 +586,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[39]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[39]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/String;", "private final")]
@@ -596,10 +597,10 @@ public partial class SystemProps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[40]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[40]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -608,7 +609,7 @@ public partial class SystemProps
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Raw() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Raw() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -619,28 +620,28 @@ public partial class SystemProps
 		[JniSignatureAttribute("()Ljava/util/HashMap;", "private")]
 		public Dova.JDK.java.util.HashMap cmdProperties()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashMap>(ret);
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/String;", "")]
 		public Dova.JDK.java.lang.String propDefault(int arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()[Ljava/lang/String;", "private static native")]
 		public static JavaArray<Dova.JDK.java.lang.String> platformProperties()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
 
 		[JniSignatureAttribute("()[Ljava/lang/String;", "private static native")]
 		public static JavaArray<Dova.JDK.java.lang.String> vmProperties()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
 	}

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,12 +29,12 @@ public partial class ThreadControllerWrapper
 
 	static ThreadControllerWrapper()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "m_tpool", "Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper$ThreadController;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ThreadControllerWrapper", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "waitThread", "(Ljava/lang/Thread;Ljava/lang/Runnable;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "runThread", "(Ljava/lang/Runnable;I)Ljava/lang/Thread;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "m_tpool", "Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper$ThreadController;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadControllerWrapper", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitThread", "(Ljava/lang/Thread;Ljava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "runThread", "(Ljava/lang/Runnable;I)Ljava/lang/Thread;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper$ThreadController;", "private static")]
@@ -41,10 +42,10 @@ public partial class ThreadControllerWrapper
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xml.@internal.utils.ThreadControllerWrapper.ThreadController>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -53,7 +54,7 @@ public partial class ThreadControllerWrapper
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ThreadControllerWrapper() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ThreadControllerWrapper() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -64,13 +65,13 @@ public partial class ThreadControllerWrapper
 	[JniSignatureAttribute("(Ljava/lang/Thread;Ljava/lang/Runnable;)V", "public static")]
 	public static void waitThread(Dova.JDK.java.lang.Thread arg0, Dova.JDK.java.lang.Runnable arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Runnable;I)Ljava/lang/Thread;", "public static")]
 	public static Dova.JDK.java.lang.Thread runThread(Dova.JDK.java.lang.Runnable arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Thread>(ret);
 	}
 
@@ -86,11 +87,11 @@ public partial class ThreadControllerWrapper
 
 		static ThreadController()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper$ThreadController;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ThreadController", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/lang/Runnable;I)Ljava/lang/Thread;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "waitThread", "(Ljava/lang/Thread;Ljava/lang/Runnable;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xml/internal/utils/ThreadControllerWrapper$ThreadController;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadController", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/lang/Runnable;I)Ljava/lang/Thread;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "waitThread", "(Ljava/lang/Thread;Ljava/lang/Runnable;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -99,7 +100,7 @@ public partial class ThreadControllerWrapper
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ThreadController() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ThreadController() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -110,14 +111,14 @@ public partial class ThreadControllerWrapper
 		[JniSignatureAttribute("(Ljava/lang/Runnable;I)Ljava/lang/Thread;", "public")]
 		public Dova.JDK.java.lang.Thread run(Dova.JDK.java.lang.Runnable arg0, int arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Thread>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Thread;Ljava/lang/Runnable;)V", "public")]
 		public void waitThread(Dova.JDK.java.lang.Thread arg0, Dova.JDK.java.lang.Runnable arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 	}
 }

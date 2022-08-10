@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,81 +27,81 @@ public partial interface XSConstants
 
 	static XSConstants()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/org/apache/xerces/internal/xs/XSConstants;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_DECLARATION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ELEMENT_DECLARATION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_DEFINITION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_USE", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_GROUP", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MODEL_GROUP_DEFINITION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MODEL_GROUP", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PARTICLE", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "IDENTITY_CONSTRAINT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NOTATION_DECLARATION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FACET", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MULTIVALUE_FACET", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_NONE", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_EXTENSION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_RESTRICTION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_SUBSTITUTION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_UNION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_LIST", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_EXTENSION_RESTRICTION_SUBSTITION", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_ALL", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_ABSENT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_GLOBAL", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_LOCAL", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "VC_NONE", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "VC_DEFAULT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "VC_FIXED", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ANYSIMPLETYPE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "STRING_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "BOOLEAN_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DECIMAL_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FLOAT_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DOUBLE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DURATION_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DATETIME_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TIME_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DATE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GYEARMONTH_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GYEAR_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GMONTHDAY_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GDAY_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GMONTH_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "HEXBINARY_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "BASE64BINARY_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ANYURI_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "QNAME_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NOTATION_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NORMALIZEDSTRING_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TOKEN_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LANGUAGE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NMTOKEN_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NAME_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NCNAME_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ID_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "IDREF_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ENTITY_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INTEGER_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NONPOSITIVEINTEGER_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEGATIVEINTEGER_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LONG_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INT_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SHORT_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "BYTE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NONNEGATIVEINTEGER_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDLONG_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDINT_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDSHORT_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDBYTE_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "POSITIVEINTEGER_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LISTOFUNION_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "LIST_DT", "S"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNAVAILABLE_DT", "S"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xerces/internal/xs/XSConstants;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_DECLARATION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ELEMENT_DECLARATION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_DEFINITION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_USE", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ATTRIBUTE_GROUP", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODEL_GROUP_DEFINITION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODEL_GROUP", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARTICLE", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IDENTITY_CONSTRAINT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOTATION_DECLARATION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FACET", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MULTIVALUE_FACET", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_NONE", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_EXTENSION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_RESTRICTION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_SUBSTITUTION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_UNION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_LIST", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_EXTENSION_RESTRICTION_SUBSTITION", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DERIVATION_ALL", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_ABSENT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_GLOBAL", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE_LOCAL", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VC_NONE", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VC_DEFAULT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VC_FIXED", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANYSIMPLETYPE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOOLEAN_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DECIMAL_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FLOAT_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOUBLE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DURATION_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATETIME_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TIME_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GYEARMONTH_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GYEAR_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GMONTHDAY_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GDAY_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GMONTH_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEXBINARY_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BASE64BINARY_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANYURI_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "QNAME_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOTATION_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NORMALIZEDSTRING_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOKEN_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LANGUAGE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NMTOKEN_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAME_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NCNAME_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ID_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IDREF_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENTITY_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTEGER_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONPOSITIVEINTEGER_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEGATIVEINTEGER_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LONG_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INT_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORT_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BYTE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONNEGATIVEINTEGER_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDLONG_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDINT_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDSHORT_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSIGNEDBYTE_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POSITIVEINTEGER_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LISTOFUNION_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIST_DT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNAVAILABLE_DT", "S"));
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -108,10 +109,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -119,10 +120,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -130,10 +131,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -141,10 +142,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -152,10 +153,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -163,10 +164,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -174,10 +175,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -185,10 +186,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[7], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[7], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -196,10 +197,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[8], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[8], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -207,10 +208,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[9], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[9], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -218,10 +219,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[10], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[10], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -229,10 +230,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[11], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[11], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -240,10 +241,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[12], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[12], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -251,10 +252,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[13]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[13], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[13], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -262,10 +263,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[14]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[14], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[14], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -273,10 +274,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[15]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[15], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[15], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -284,10 +285,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[16]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[16], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[16], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -295,10 +296,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[17]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[17], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[17], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -306,10 +307,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[18]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[18], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[18], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -317,10 +318,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[19]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[19], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[19], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -328,10 +329,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[20]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[20], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[20], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -339,10 +340,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[21]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[21], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[21], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -350,10 +351,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[22]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[22], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[22], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -361,10 +362,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[23]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[23], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[23], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -372,10 +373,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[24]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[24]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[24], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[24], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -383,10 +384,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[25]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[25], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[25], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -394,10 +395,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[26]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[26]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[26], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[26], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -405,10 +406,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[27]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[27]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[27], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[27], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -416,10 +417,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[28]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[28]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[28], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[28], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -427,10 +428,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[29]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[29], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[29], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -438,10 +439,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[30]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[30], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[30], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -449,10 +450,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[31]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[31], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[31], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -460,10 +461,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[32]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[32], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[32], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -471,10 +472,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[33]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[33], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[33], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -482,10 +483,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[34]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[34]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[34], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[34], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -493,10 +494,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[35]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[35], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[35], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -504,10 +505,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[36]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[36], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[36], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -515,10 +516,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[37]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[37], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[37], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -526,10 +527,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[38]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[38], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[38], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -537,10 +538,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[39]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[39], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[39], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -548,10 +549,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[40]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[40]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[40], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[40], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -559,10 +560,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[41]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[41], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[41], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -570,10 +571,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[42]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[42], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[42], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -581,10 +582,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[43]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[43], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[43], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -592,10 +593,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[44]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[44]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[44], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[44], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -603,10 +604,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[45]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[45], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[45], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -614,10 +615,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[46]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[46]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[46], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[46], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -625,10 +626,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[47]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[47]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[47], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[47], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -636,10 +637,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[48]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[48]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[48], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[48], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -647,10 +648,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[49]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[49]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[49], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[49], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -658,10 +659,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[50]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[50]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[50], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[50], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -669,10 +670,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[51]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[51]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[51], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[51], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -680,10 +681,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[52]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[52]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[52], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[52], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -691,10 +692,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[53]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[53]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[53], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[53], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -702,10 +703,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[54]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[54]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[54], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[54], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -713,10 +714,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[55]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[55]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[55], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[55], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -724,10 +725,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[56]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[56]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[56], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[56], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -735,10 +736,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[57]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[57]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[57], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[57], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -746,10 +747,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[58]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[58]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[58], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[58], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -757,10 +758,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[59]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[59]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[59], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[59], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -768,10 +769,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[60]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[60]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[60], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[60], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -779,10 +780,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[61]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[61]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[61], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[61], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -790,10 +791,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[62]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[62]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[62], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[62], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -801,10 +802,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[63]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[63]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[63], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[63], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -812,10 +813,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[64]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[64]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[64], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[64], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -823,10 +824,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[65]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[65]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[65], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[65], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -834,10 +835,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[66]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[66]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[66], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[66], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -845,10 +846,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[67]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[67]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[67], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[67], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -856,10 +857,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[68]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[68]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[68], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[68], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -867,10 +868,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[69]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[69]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[69], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[69], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -878,10 +879,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[70]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[70]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[70], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[70], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -889,10 +890,10 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[71]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[71]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[71], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[71], value);
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -900,9 +901,9 @@ public partial interface XSConstants
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[72]);
+			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[72]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[72], value);
+		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[72], value);
 	}
 }

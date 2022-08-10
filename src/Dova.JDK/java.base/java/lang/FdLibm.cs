@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class FdLibm
 
 	static FdLibm()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/FdLibm;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INFINITY", "D"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FdLibm", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "__LO", "(DI)D"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "__LO", "(D)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "__HI", "(D)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "__HI", "(DI)D"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/FdLibm;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INFINITY", "D"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FdLibm", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "__LO", "(DI)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "__LO", "(D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "__HI", "(D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "__HI", "(DI)D"));
 	}
 
 	[JniSignatureAttribute("D", "private static final")]
@@ -43,10 +44,10 @@ public partial class FdLibm
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,7 +56,7 @@ public partial class FdLibm
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public FdLibm() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public FdLibm() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -66,28 +67,28 @@ public partial class FdLibm
 	[JniSignatureAttribute("(DI)D", "private static")]
 	public static double __LO(double arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(D)I", "private static")]
 	public static int __LO(double arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(D)I", "private static")]
 	public static int __HI(double arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(DI)D", "private static")]
 	public static double __HI(double arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return ret;
 	}
 
@@ -104,24 +105,24 @@ public partial class FdLibm
 
 		static Exp()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/FdLibm$Exp;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "one", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "half", "[D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "huge", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "twom1000", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "o_threshold", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "u_threshold", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ln2HI", "[D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ln2LO", "[D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "invln2", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "P1", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "P2", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "P3", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "P4", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "P5", "D"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Exp", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(D)D"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/FdLibm$Exp;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "one", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "half", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "huge", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "twom1000", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "o_threshold", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "u_threshold", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ln2HI", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ln2LO", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "invln2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P1", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P3", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P4", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P5", "D"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Exp", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(D)D"));
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -129,10 +130,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("[D", "private static final")]
@@ -140,10 +141,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<double>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -151,10 +152,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -162,10 +163,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -173,10 +174,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -184,10 +185,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("[D", "private static final")]
@@ -195,10 +196,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<JavaArray<double>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[D", "private static final")]
@@ -206,10 +207,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<JavaArray<double>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -217,10 +218,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[8], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[8], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -228,10 +229,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[9], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[9], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -239,10 +240,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[10]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[10], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[10], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -250,10 +251,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[11]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[11], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[11], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -261,10 +262,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[12]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[12]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[12], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[12], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -272,10 +273,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[13]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[13]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[13], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[13], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -284,7 +285,7 @@ public partial class FdLibm
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Exp() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Exp() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -295,7 +296,7 @@ public partial class FdLibm
 		[JniSignatureAttribute("(D)D", "public static")]
 		public static double compute(double arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 	}
@@ -312,10 +313,10 @@ public partial class FdLibm
 
 		static Pow()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/FdLibm$Pow;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Pow", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(DD)D"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/FdLibm$Pow;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Pow", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(DD)D"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -324,7 +325,7 @@ public partial class FdLibm
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Pow() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Pow() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -335,7 +336,7 @@ public partial class FdLibm
 		[JniSignatureAttribute("(DD)D", "public static")]
 		public static double compute(double arg0, double arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 	}
@@ -353,13 +354,13 @@ public partial class FdLibm
 
 		static Hypot()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/FdLibm$Hypot;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TWO_MINUS_600", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TWO_PLUS_600", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Hypot", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(DD)D"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/FdLibm$Hypot;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TWO_MINUS_600", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TWO_PLUS_600", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Hypot", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(DD)D"));
 		}
 
 		[JniSignatureAttribute("D", "public static final")]
@@ -367,10 +368,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("D", "public static final")]
@@ -378,10 +379,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -389,10 +390,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -401,7 +402,7 @@ public partial class FdLibm
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Hypot() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Hypot() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -412,7 +413,7 @@ public partial class FdLibm
 		[JniSignatureAttribute("(DD)D", "public static")]
 		public static double compute(double arg0, double arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 	}
@@ -430,17 +431,17 @@ public partial class FdLibm
 
 		static Cbrt()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/FdLibm$Cbrt;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "B1", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "B2", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "C", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "D", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "E", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "F", "D"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "G", "D"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Cbrt", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(D)D"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/FdLibm$Cbrt;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "B1", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "B2", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "C", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "D", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "E", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "F", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "G", "D"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Cbrt", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compute", "(D)D"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -448,10 +449,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -459,10 +460,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -470,10 +471,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -481,10 +482,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -492,10 +493,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -503,10 +504,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("D", "private static final")]
@@ -514,10 +515,10 @@ public partial class FdLibm
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[6], value);
+			set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[6], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -526,7 +527,7 @@ public partial class FdLibm
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Cbrt() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Cbrt() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -537,7 +538,7 @@ public partial class FdLibm
 		[JniSignatureAttribute("(D)D", "public static")]
 		public static double compute(double arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallStaticDoubleMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 			return ret;
 		}
 	}

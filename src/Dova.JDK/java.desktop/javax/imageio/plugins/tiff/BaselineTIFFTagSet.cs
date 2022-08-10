@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,156 +29,156 @@ public partial class BaselineTIFFTagSet
 
 	static BaselineTIFFTagSet()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_NEW_SUBFILE_TYPE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_REDUCED_RESOLUTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_SINGLE_PAGE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_TRANSPARENCY", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SUBFILE_TYPE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_FULL_RESOLUTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_REDUCED_RESOLUTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_SINGLE_PAGE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_WIDTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_LENGTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_BITS_PER_SAMPLE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COMPRESSION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_NONE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_RLE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_T_4", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_T_6", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_LZW", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_OLD_JPEG", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_JPEG", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_ZLIB", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_PACKBITS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_DEFLATE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PHOTOMETRIC_INTERPRETATION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_RGB", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_CMYK", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_Y_CB_CR", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_CIELAB", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_ICCLAB", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_THRESHHOLDING", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_NONE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_ORDERED_DITHER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_RANDOMIZED_DITHER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_CELL_WIDTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_CELL_LENGTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FILL_ORDER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FILL_ORDER_LEFT_TO_RIGHT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "FILL_ORDER_RIGHT_TO_LEFT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DOCUMENT_NAME", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_DESCRIPTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MAKE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MODEL", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_STRIP_OFFSETS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ORIENTATION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SAMPLES_PER_PIXEL", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ROWS_PER_STRIP", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_STRIP_BYTE_COUNTS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MIN_SAMPLE_VALUE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MAX_SAMPLE_VALUE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_X_RESOLUTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_RESOLUTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PLANAR_CONFIGURATION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PLANAR_CONFIGURATION_CHUNKY", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PLANAR_CONFIGURATION_PLANAR", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PAGE_NAME", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_X_POSITION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_POSITION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FREE_OFFSETS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FREE_BYTE_COUNTS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GRAY_RESPONSE_UNIT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_TENTHS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_HUNDREDTHS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_THOUSANDTHS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GRAY_RESPONSE_CURVE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_T4_OPTIONS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_2D_CODING", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_UNCOMPRESSED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_EOL_BYTE_ALIGNED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_T6_OPTIONS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "T6_OPTIONS_UNCOMPRESSED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_RESOLUTION_UNIT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_NONE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_INCH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_CENTIMETER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PAGE_NUMBER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TRANSFER_FUNCTION", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SOFTWARE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DATE_TIME", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ARTIST", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_HOST_COMPUTER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PREDICTOR", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PREDICTOR_NONE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PREDICTOR_HORIZONTAL_DIFFERENCING", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_WHITE_POINT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PRIMARY_CHROMATICITES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COLOR_MAP", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_HALFTONE_HINTS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_WIDTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_LENGTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_OFFSETS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_BYTE_COUNTS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_INK_SET", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INK_SET_CMYK", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INK_SET_NOT_CMYK", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_INK_NAMES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_NUMBER_OF_INKS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DOT_RANGE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TARGET_PRINTER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_EXTRA_SAMPLES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_UNSPECIFIED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_ASSOCIATED_ALPHA", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_UNASSOCIATED_ALPHA", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SAMPLE_FORMAT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_UNSIGNED_INTEGER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_SIGNED_INTEGER", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_FLOATING_POINT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_UNDEFINED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_S_MIN_SAMPLE_VALUE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_S_MAX_SAMPLE_VALUE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TRANSFER_RANGE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_TABLES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_PROC", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG_PROC_BASELINE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG_PROC_LOSSLESS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_INTERCHANGE_FORMAT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_INTERCHANGE_FORMAT_LENGTH", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_RESTART_INTERVAL", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_LOSSLESS_PREDICTORS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_POINT_TRANSFORMS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_Q_TABLES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_DC_TABLES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_AC_TABLES", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_COEFFICIENTS", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_SUBSAMPLING", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_POSITIONING", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "Y_CB_CR_POSITIONING_CENTERED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "Y_CB_CR_POSITIONING_COSITED", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_REFERENCE_BLACK_WHITE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COPYRIGHT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ICC_PROFILE", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "tags", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "BaselineTIFFTagSet", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initTags", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_NEW_SUBFILE_TYPE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_REDUCED_RESOLUTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_SINGLE_PAGE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW_SUBFILE_TYPE_TRANSPARENCY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SUBFILE_TYPE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_FULL_RESOLUTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_REDUCED_RESOLUTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBFILE_TYPE_SINGLE_PAGE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_WIDTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_LENGTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_BITS_PER_SAMPLE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COMPRESSION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_NONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_RLE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_T_4", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_CCITT_T_6", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_LZW", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_OLD_JPEG", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_JPEG", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_ZLIB", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_PACKBITS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_DEFLATE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PHOTOMETRIC_INTERPRETATION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_WHITE_IS_ZERO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_BLACK_IS_ZERO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_RGB", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_PALETTE_COLOR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_TRANSPARENCY_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_CMYK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_Y_CB_CR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_CIELAB", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PHOTOMETRIC_INTERPRETATION_ICCLAB", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_THRESHHOLDING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_NONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_ORDERED_DITHER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THRESHHOLDING_RANDOMIZED_DITHER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_CELL_WIDTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_CELL_LENGTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FILL_ORDER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILL_ORDER_LEFT_TO_RIGHT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILL_ORDER_RIGHT_TO_LEFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DOCUMENT_NAME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_IMAGE_DESCRIPTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MAKE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MODEL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_STRIP_OFFSETS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ORIENTATION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_TOP_COLUMN_0_LEFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_TOP_COLUMN_0_RIGHT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_BOTTOM_COLUMN_0_RIGHT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_BOTTOM_COLUMN_0_LEFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_LEFT_COLUMN_0_TOP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_RIGHT_COLUMN_0_TOP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_RIGHT_COLUMN_0_BOTTOM", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ORIENTATION_ROW_0_LEFT_COLUMN_0_BOTTOM", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SAMPLES_PER_PIXEL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ROWS_PER_STRIP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_STRIP_BYTE_COUNTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MIN_SAMPLE_VALUE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MAX_SAMPLE_VALUE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_X_RESOLUTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_RESOLUTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PLANAR_CONFIGURATION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLANAR_CONFIGURATION_CHUNKY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLANAR_CONFIGURATION_PLANAR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PAGE_NAME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_X_POSITION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_POSITION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FREE_OFFSETS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_FREE_BYTE_COUNTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GRAY_RESPONSE_UNIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_TENTHS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_HUNDREDTHS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_THOUSANDTHS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_TEN_THOUSANDTHS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRAY_RESPONSE_UNIT_HUNDRED_THOUSANDTHS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GRAY_RESPONSE_CURVE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_T4_OPTIONS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_2D_CODING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_UNCOMPRESSED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "T4_OPTIONS_EOL_BYTE_ALIGNED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_T6_OPTIONS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "T6_OPTIONS_UNCOMPRESSED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_RESOLUTION_UNIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_NONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_INCH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLUTION_UNIT_CENTIMETER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PAGE_NUMBER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TRANSFER_FUNCTION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SOFTWARE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DATE_TIME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ARTIST", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_HOST_COMPUTER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PREDICTOR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREDICTOR_NONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREDICTOR_HORIZONTAL_DIFFERENCING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_WHITE_POINT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_PRIMARY_CHROMATICITES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COLOR_MAP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_HALFTONE_HINTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_WIDTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_LENGTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_OFFSETS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TILE_BYTE_COUNTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_INK_SET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INK_SET_CMYK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INK_SET_NOT_CMYK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_INK_NAMES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_NUMBER_OF_INKS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DOT_RANGE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TARGET_PRINTER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_EXTRA_SAMPLES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_UNSPECIFIED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_ASSOCIATED_ALPHA", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTRA_SAMPLES_UNASSOCIATED_ALPHA", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_SAMPLE_FORMAT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_UNSIGNED_INTEGER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_SIGNED_INTEGER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_FLOATING_POINT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAMPLE_FORMAT_UNDEFINED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_S_MIN_SAMPLE_VALUE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_S_MAX_SAMPLE_VALUE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_TRANSFER_RANGE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_TABLES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_PROC", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG_PROC_BASELINE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG_PROC_LOSSLESS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_INTERCHANGE_FORMAT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_INTERCHANGE_FORMAT_LENGTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_RESTART_INTERVAL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_LOSSLESS_PREDICTORS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_POINT_TRANSFORMS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_Q_TABLES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_DC_TABLES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_JPEG_AC_TABLES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_COEFFICIENTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_SUBSAMPLING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_Y_CB_CR_POSITIONING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "Y_CB_CR_POSITIONING_CENTERED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "Y_CB_CR_POSITIONING_COSITED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_REFERENCE_BLACK_WHITE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_COPYRIGHT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_ICC_PROFILE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tags", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaselineTIFFTagSet", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initTags", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;", "private static")]
@@ -185,10 +186,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.plugins.tiff.BaselineTIFFTagSet>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -196,10 +197,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -207,10 +208,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -218,10 +219,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -229,10 +230,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -240,10 +241,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -251,10 +252,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -262,10 +263,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -273,10 +274,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -284,10 +285,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -295,10 +296,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -306,10 +307,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -317,10 +318,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -328,10 +329,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -339,10 +340,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -350,10 +351,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -361,10 +362,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -372,10 +373,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -383,10 +384,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -394,10 +395,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[19]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -405,10 +406,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[20]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -416,10 +417,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[21]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -427,10 +428,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[22]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -438,10 +439,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[23]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -449,10 +450,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[24]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[24]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -460,10 +461,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[25]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -471,10 +472,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[26]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[26]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -482,10 +483,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[27]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[27]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -493,10 +494,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[28]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[28]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -504,10 +505,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[29]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -515,10 +516,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -526,10 +527,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[31]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -537,10 +538,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[32]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -548,10 +549,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[33]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -559,10 +560,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[34]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[34]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -570,10 +571,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[35]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -581,10 +582,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[36]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -592,10 +593,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[37]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -603,10 +604,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[38]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -614,10 +615,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[39]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -625,10 +626,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[40]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[40]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[40], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[40], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -636,10 +637,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[41]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[41], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[41], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -647,10 +648,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[42]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[42], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[42], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -658,10 +659,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[43]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[43], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[43], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -669,10 +670,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[44]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[44]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[44], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[44], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -680,10 +681,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[45]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[45], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[45], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -691,10 +692,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[46]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[46]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[46], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[46], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -702,10 +703,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[47]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[47]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[47], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[47], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -713,10 +714,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[48]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[48]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[48], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[48], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -724,10 +725,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[49]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[49]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[49], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[49], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -735,10 +736,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[50]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[50]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[50], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[50], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -746,10 +747,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[51]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[51]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[51], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[51], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -757,10 +758,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[52]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[52]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[52], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[52], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -768,10 +769,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[53]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[53]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[53], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[53], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -779,10 +780,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[54]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[54]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[54], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[54], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -790,10 +791,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[55]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[55]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[55], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[55], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -801,10 +802,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[56]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[56]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[56], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[56], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -812,10 +813,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[57]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[57]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[57], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[57], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -823,10 +824,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[58]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[58]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[58], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[58], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -834,10 +835,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[59]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[59]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[59], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[59], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -845,10 +846,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[60]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[60]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[60], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[60], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -856,10 +857,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[61]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[61]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[61], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[61], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -867,10 +868,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[62]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[62]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[62], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[62], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -878,10 +879,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[63]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[63]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[63], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[63], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -889,10 +890,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[64]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[64]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[64], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[64], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -900,10 +901,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[65]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[65]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[65], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[65], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -911,10 +912,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[66]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[66]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[66], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[66], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -922,10 +923,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[67]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[67]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[67], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[67], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -933,10 +934,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[68]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[68]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[68], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[68], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -944,10 +945,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[69]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[69]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[69], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[69], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -955,10 +956,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[70]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[70]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[70], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[70], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -966,10 +967,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[71]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[71]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[71], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[71], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -977,10 +978,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[72]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[72]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[72], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[72], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -988,10 +989,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[73]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[73]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[73], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[73], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -999,10 +1000,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[74]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[74]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[74], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[74], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1010,10 +1011,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[75]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[75]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[75], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[75], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1021,10 +1022,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[76]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[76]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[76], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[76], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1032,10 +1033,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[77]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[77]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[77], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[77], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1043,10 +1044,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[78]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[78]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[78], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[78], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1054,10 +1055,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[79]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[79]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[79], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[79], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1065,10 +1066,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[80]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[80]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[80], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[80], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1076,10 +1077,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[81]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[81]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[81], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[81], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1087,10 +1088,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[82]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[82]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[82], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[82], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1098,10 +1099,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[83]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[83]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[83], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[83], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1109,10 +1110,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[84]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[84]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[84], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[84], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1120,10 +1121,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[85]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[85]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[85], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[85], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1131,10 +1132,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[86]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[86]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[86], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[86], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1142,10 +1143,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[87]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[87]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[87], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[87], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1153,10 +1154,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[88]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[88]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[88], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[88], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1164,10 +1165,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[89]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[89]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[89], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[89], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1175,10 +1176,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[90]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[90]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[90], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[90], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1186,10 +1187,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[91]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[91]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[91], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[91], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1197,10 +1198,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[92]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[92]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[92], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[92], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1208,10 +1209,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[93]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[93]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[93], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[93], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1219,10 +1220,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[94]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[94]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[94], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[94], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1230,10 +1231,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[95]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[95]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[95], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[95], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1241,10 +1242,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[96]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[96]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[96], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[96], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1252,10 +1253,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[97]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[97]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[97], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[97], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1263,10 +1264,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[98]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[98]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[98], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[98], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1274,10 +1275,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[99]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[99]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[99], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[99], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1285,10 +1286,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[100]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[100]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[100], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[100], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1296,10 +1297,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[101]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[101]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[101], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[101], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1307,10 +1308,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[102]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[102]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[102], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[102], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1318,10 +1319,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[103]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[103]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[103], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[103], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1329,10 +1330,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[104]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[104]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[104], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[104], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1340,10 +1341,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[105]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[105]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[105], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[105], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1351,10 +1352,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[106]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[106]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[106], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[106], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1362,10 +1363,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[107]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[107]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[107], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[107], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1373,10 +1374,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[108]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[108]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[108], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[108], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1384,10 +1385,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[109]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[109]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[109], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[109], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1395,10 +1396,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[110]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[110]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[110], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[110], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1406,10 +1407,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[111]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[111]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[111], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[111], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1417,10 +1418,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[112]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[112]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[112], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[112], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1428,10 +1429,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[113]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[113]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[113], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[113], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1439,10 +1440,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[114]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[114]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[114], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[114], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1450,10 +1451,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[115]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[115]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[115], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[115], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1461,10 +1462,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[116]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[116]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[116], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[116], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1472,10 +1473,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[117]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[117]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[117], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[117], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1483,10 +1484,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[118]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[118]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[118], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[118], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1494,10 +1495,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[119]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[119]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[119], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[119], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1505,10 +1506,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[120]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[120]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[120], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[120], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1516,10 +1517,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[121]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[121]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[121], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[121], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1527,10 +1528,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[122]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[122]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[122], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[122], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1538,10 +1539,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[123]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[123]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[123], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[123], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1549,10 +1550,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[124]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[124]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[124], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[124], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1560,10 +1561,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[125]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[125]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[125], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[125], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1571,10 +1572,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[126]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[126]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[126], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[126], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1582,10 +1583,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[127]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[127]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[127], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[127], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1593,10 +1594,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[128]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[128]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[128], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[128], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1604,10 +1605,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[129]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[129]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[129], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[129], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1615,10 +1616,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[130]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[130]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[130], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[130], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1626,10 +1627,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[131]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[131]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[131], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[131], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1637,10 +1638,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[132]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[132]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[132], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[132], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1648,10 +1649,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[133]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[133]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[133], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[133], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1659,10 +1660,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[134]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[134]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[134], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[134], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1670,10 +1671,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[135]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[135]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[135], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[135], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1681,10 +1682,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[136]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[136]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[136], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[136], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1692,10 +1693,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[137]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[137]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[137], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[137], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1703,10 +1704,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[138]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[138]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[138], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[138], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1714,10 +1715,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[139]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[139]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[139], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[139], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1725,10 +1726,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[140]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[140]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[140], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[140], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1736,10 +1737,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[141]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[141]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[141], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[141], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1747,10 +1748,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[142]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[142]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[142], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[142], value);
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1758,10 +1759,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[143]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[143]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[143], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[143], value);
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private static")]
@@ -1769,10 +1770,10 @@ public partial class BaselineTIFFTagSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[144]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[144]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[144], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[144], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1781,7 +1782,7 @@ public partial class BaselineTIFFTagSet
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public BaselineTIFFTagSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BaselineTIFFTagSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -1792,14 +1793,14 @@ public partial class BaselineTIFFTagSet
 	[JniSignatureAttribute("()Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet;", "public static synchronized")]
 	public static Dova.JDK.javax.imageio.plugins.tiff.BaselineTIFFTagSet getInstance()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.imageio.plugins.tiff.BaselineTIFFTagSet>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "private static")]
 	public static void initTags()
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1]);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1]);
 	}
 
 	[JniSignatureAttribute("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Artist;", "static")]
@@ -1813,9 +1814,9 @@ public partial class BaselineTIFFTagSet
 
 		static Artist()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Artist;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Artist", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Artist;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Artist", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1824,7 +1825,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Artist() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Artist() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1844,9 +1845,9 @@ public partial class BaselineTIFFTagSet
 
 		static BitsPerSample()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$BitsPerSample;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "BitsPerSample", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$BitsPerSample;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BitsPerSample", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1855,7 +1856,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public BitsPerSample() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BitsPerSample() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1875,9 +1876,9 @@ public partial class BaselineTIFFTagSet
 
 		static CellLength()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$CellLength;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CellLength", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$CellLength;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CellLength", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1886,7 +1887,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public CellLength() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CellLength() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1906,9 +1907,9 @@ public partial class BaselineTIFFTagSet
 
 		static CellWidth()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$CellWidth;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CellWidth", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$CellWidth;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CellWidth", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1917,7 +1918,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public CellWidth() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CellWidth() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1937,9 +1938,9 @@ public partial class BaselineTIFFTagSet
 
 		static ColorMap()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ColorMap;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ColorMap", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ColorMap;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ColorMap", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1948,7 +1949,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ColorMap() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ColorMap() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1968,9 +1969,9 @@ public partial class BaselineTIFFTagSet
 
 		static Compression()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Compression;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Compression", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Compression;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Compression", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1979,7 +1980,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Compression() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Compression() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1999,9 +2000,9 @@ public partial class BaselineTIFFTagSet
 
 		static Copyright()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Copyright;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Copyright", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Copyright;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Copyright", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2010,7 +2011,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Copyright() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Copyright() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2030,9 +2031,9 @@ public partial class BaselineTIFFTagSet
 
 		static DateTime()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DateTime;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DateTime", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DateTime;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DateTime", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2041,7 +2042,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DateTime() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DateTime() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2061,9 +2062,9 @@ public partial class BaselineTIFFTagSet
 
 		static DocumentName()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DocumentName;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DocumentName", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DocumentName;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DocumentName", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2072,7 +2073,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DocumentName() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DocumentName() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2092,9 +2093,9 @@ public partial class BaselineTIFFTagSet
 
 		static DotRange()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DotRange;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DotRange", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$DotRange;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DotRange", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2103,7 +2104,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DotRange() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DotRange() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2123,9 +2124,9 @@ public partial class BaselineTIFFTagSet
 
 		static ExtraSamples()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ExtraSamples;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ExtraSamples", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ExtraSamples;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtraSamples", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2134,7 +2135,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ExtraSamples() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ExtraSamples() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2154,9 +2155,9 @@ public partial class BaselineTIFFTagSet
 
 		static FillOrder()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FillOrder;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FillOrder", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FillOrder;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FillOrder", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2165,7 +2166,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public FillOrder() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FillOrder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2185,9 +2186,9 @@ public partial class BaselineTIFFTagSet
 
 		static FreeByteCounts()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FreeByteCounts;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FreeByteCounts", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FreeByteCounts;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FreeByteCounts", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2196,7 +2197,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public FreeByteCounts() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FreeByteCounts() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2216,9 +2217,9 @@ public partial class BaselineTIFFTagSet
 
 		static FreeOffsets()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FreeOffsets;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FreeOffsets", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$FreeOffsets;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FreeOffsets", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2227,7 +2228,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public FreeOffsets() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FreeOffsets() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2247,9 +2248,9 @@ public partial class BaselineTIFFTagSet
 
 		static GrayResponseCurve()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$GrayResponseCurve;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "GrayResponseCurve", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$GrayResponseCurve;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GrayResponseCurve", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2258,7 +2259,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GrayResponseCurve() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GrayResponseCurve() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2278,9 +2279,9 @@ public partial class BaselineTIFFTagSet
 
 		static GrayResponseUnit()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$GrayResponseUnit;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "GrayResponseUnit", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$GrayResponseUnit;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GrayResponseUnit", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2289,7 +2290,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GrayResponseUnit() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GrayResponseUnit() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2309,9 +2310,9 @@ public partial class BaselineTIFFTagSet
 
 		static HalftoneHints()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$HalftoneHints;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HalftoneHints", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$HalftoneHints;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HalftoneHints", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2320,7 +2321,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public HalftoneHints() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HalftoneHints() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2340,9 +2341,9 @@ public partial class BaselineTIFFTagSet
 
 		static HostComputer()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$HostComputer;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HostComputer", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$HostComputer;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HostComputer", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2351,7 +2352,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public HostComputer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HostComputer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2371,9 +2372,9 @@ public partial class BaselineTIFFTagSet
 
 		static ImageDescription()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageDescription;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageDescription", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageDescription;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageDescription", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2382,7 +2383,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ImageDescription() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ImageDescription() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2402,9 +2403,9 @@ public partial class BaselineTIFFTagSet
 
 		static ICCProfile()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ICCProfile;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ICCProfile", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ICCProfile;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ICCProfile", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2413,7 +2414,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ICCProfile() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ICCProfile() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2433,9 +2434,9 @@ public partial class BaselineTIFFTagSet
 
 		static ImageLength()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageLength;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageLength", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageLength;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageLength", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2444,7 +2445,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ImageLength() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ImageLength() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2464,9 +2465,9 @@ public partial class BaselineTIFFTagSet
 
 		static ImageWidth()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageWidth;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ImageWidth", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ImageWidth;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageWidth", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2475,7 +2476,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ImageWidth() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ImageWidth() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2495,9 +2496,9 @@ public partial class BaselineTIFFTagSet
 
 		static InkNames()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$InkNames;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "InkNames", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$InkNames;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InkNames", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2506,7 +2507,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public InkNames() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InkNames() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2526,9 +2527,9 @@ public partial class BaselineTIFFTagSet
 
 		static InkSet()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$InkSet;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "InkSet", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$InkSet;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InkSet", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2537,7 +2538,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public InkSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InkSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2557,9 +2558,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGACTables()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGACTables;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGACTables", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGACTables;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGACTables", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2568,7 +2569,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGACTables() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGACTables() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2588,9 +2589,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGDCTables()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGDCTables;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGDCTables", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGDCTables;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGDCTables", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2599,7 +2600,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGDCTables() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGDCTables() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2619,9 +2620,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGInterchangeFormat()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGInterchangeFormat;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGInterchangeFormat", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGInterchangeFormat;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGInterchangeFormat", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2630,7 +2631,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGInterchangeFormat() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGInterchangeFormat() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2650,9 +2651,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGInterchangeFormatLength()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGInterchangeFormatLength;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGInterchangeFormatLength", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGInterchangeFormatLength;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGInterchangeFormatLength", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2661,7 +2662,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGInterchangeFormatLength() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGInterchangeFormatLength() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2681,9 +2682,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGLosslessPredictors()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGLosslessPredictors;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGLosslessPredictors", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGLosslessPredictors;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGLosslessPredictors", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2692,7 +2693,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGLosslessPredictors() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGLosslessPredictors() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2712,9 +2713,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGPointTransforms()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGPointTransforms;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGPointTransforms", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGPointTransforms;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGPointTransforms", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2723,7 +2724,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGPointTransforms() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGPointTransforms() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2743,9 +2744,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGProc()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGProc;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGProc", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGProc;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGProc", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2754,7 +2755,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGProc() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGProc() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2774,9 +2775,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGQTables()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGQTables;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGQTables", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGQTables;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGQTables", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2785,7 +2786,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGQTables() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGQTables() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2805,9 +2806,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGRestartInterval()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGRestartInterval;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGRestartInterval", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGRestartInterval;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGRestartInterval", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2816,7 +2817,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGRestartInterval() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGRestartInterval() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2836,9 +2837,9 @@ public partial class BaselineTIFFTagSet
 
 		static JPEGTables()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGTables;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "JPEGTables", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$JPEGTables;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JPEGTables", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2847,7 +2848,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public JPEGTables() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public JPEGTables() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2867,9 +2868,9 @@ public partial class BaselineTIFFTagSet
 
 		static Make()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Make;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Make", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Make;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Make", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2878,7 +2879,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Make() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Make() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2898,9 +2899,9 @@ public partial class BaselineTIFFTagSet
 
 		static MaxSampleValue()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$MaxSampleValue;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MaxSampleValue", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$MaxSampleValue;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MaxSampleValue", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2909,7 +2910,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public MaxSampleValue() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public MaxSampleValue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2929,9 +2930,9 @@ public partial class BaselineTIFFTagSet
 
 		static MinSampleValue()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$MinSampleValue;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MinSampleValue", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$MinSampleValue;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MinSampleValue", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2940,7 +2941,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public MinSampleValue() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public MinSampleValue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2960,9 +2961,9 @@ public partial class BaselineTIFFTagSet
 
 		static Model()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Model;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Model", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Model;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Model", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2971,7 +2972,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Model() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Model() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2991,9 +2992,9 @@ public partial class BaselineTIFFTagSet
 
 		static NewSubfileType()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$NewSubfileType;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NewSubfileType", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$NewSubfileType;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NewSubfileType", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3002,7 +3003,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public NewSubfileType() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NewSubfileType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3022,9 +3023,9 @@ public partial class BaselineTIFFTagSet
 
 		static NumberOfInks()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$NumberOfInks;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NumberOfInks", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$NumberOfInks;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NumberOfInks", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3033,7 +3034,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public NumberOfInks() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NumberOfInks() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3053,9 +3054,9 @@ public partial class BaselineTIFFTagSet
 
 		static Orientation()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Orientation;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Orientation", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Orientation;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Orientation", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3064,7 +3065,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Orientation() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Orientation() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3084,9 +3085,9 @@ public partial class BaselineTIFFTagSet
 
 		static PageName()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PageName;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PageName", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PageName;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PageName", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3095,7 +3096,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PageName() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PageName() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3115,9 +3116,9 @@ public partial class BaselineTIFFTagSet
 
 		static PageNumber()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PageNumber;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PageNumber", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PageNumber;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PageNumber", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3126,7 +3127,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PageNumber() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PageNumber() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3146,9 +3147,9 @@ public partial class BaselineTIFFTagSet
 
 		static PhotometricInterpretation()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PhotometricInterpretation;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PhotometricInterpretation", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PhotometricInterpretation;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PhotometricInterpretation", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3157,7 +3158,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PhotometricInterpretation() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PhotometricInterpretation() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3177,9 +3178,9 @@ public partial class BaselineTIFFTagSet
 
 		static PlanarConfiguration()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PlanarConfiguration;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PlanarConfiguration", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PlanarConfiguration;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PlanarConfiguration", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3188,7 +3189,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PlanarConfiguration() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PlanarConfiguration() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3208,9 +3209,9 @@ public partial class BaselineTIFFTagSet
 
 		static Predictor()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Predictor;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Predictor", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Predictor;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Predictor", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3219,7 +3220,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Predictor() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Predictor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3239,9 +3240,9 @@ public partial class BaselineTIFFTagSet
 
 		static PrimaryChromaticities()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PrimaryChromaticities;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PrimaryChromaticities", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$PrimaryChromaticities;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrimaryChromaticities", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3250,7 +3251,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PrimaryChromaticities() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrimaryChromaticities() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3270,9 +3271,9 @@ public partial class BaselineTIFFTagSet
 
 		static ReferenceBlackWhite()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ReferenceBlackWhite;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ReferenceBlackWhite", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ReferenceBlackWhite;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceBlackWhite", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3281,7 +3282,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ReferenceBlackWhite() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ReferenceBlackWhite() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3301,9 +3302,9 @@ public partial class BaselineTIFFTagSet
 
 		static ResolutionUnit()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ResolutionUnit;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ResolutionUnit", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$ResolutionUnit;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResolutionUnit", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3312,7 +3313,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ResolutionUnit() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ResolutionUnit() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3332,9 +3333,9 @@ public partial class BaselineTIFFTagSet
 
 		static RowsPerStrip()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$RowsPerStrip;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RowsPerStrip", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$RowsPerStrip;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RowsPerStrip", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3343,7 +3344,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public RowsPerStrip() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RowsPerStrip() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3363,9 +3364,9 @@ public partial class BaselineTIFFTagSet
 
 		static SampleFormat()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SampleFormat;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SampleFormat", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SampleFormat;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SampleFormat", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3374,7 +3375,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SampleFormat() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SampleFormat() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3394,9 +3395,9 @@ public partial class BaselineTIFFTagSet
 
 		static SamplesPerPixel()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SamplesPerPixel;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SamplesPerPixel", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SamplesPerPixel;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SamplesPerPixel", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3405,7 +3406,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SamplesPerPixel() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SamplesPerPixel() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3425,9 +3426,9 @@ public partial class BaselineTIFFTagSet
 
 		static SMaxSampleValue()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SMaxSampleValue;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SMaxSampleValue", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SMaxSampleValue;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SMaxSampleValue", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3436,7 +3437,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SMaxSampleValue() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SMaxSampleValue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3456,9 +3457,9 @@ public partial class BaselineTIFFTagSet
 
 		static SMinSampleValue()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SMinSampleValue;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SMinSampleValue", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SMinSampleValue;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SMinSampleValue", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3467,7 +3468,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SMinSampleValue() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SMinSampleValue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3487,9 +3488,9 @@ public partial class BaselineTIFFTagSet
 
 		static Software()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Software;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Software", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Software;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Software", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3498,7 +3499,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Software() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Software() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3518,9 +3519,9 @@ public partial class BaselineTIFFTagSet
 
 		static StripByteCounts()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$StripByteCounts;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StripByteCounts", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$StripByteCounts;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StripByteCounts", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3529,7 +3530,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public StripByteCounts() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StripByteCounts() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3549,9 +3550,9 @@ public partial class BaselineTIFFTagSet
 
 		static StripOffsets()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$StripOffsets;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StripOffsets", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$StripOffsets;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StripOffsets", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3560,7 +3561,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public StripOffsets() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StripOffsets() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3580,9 +3581,9 @@ public partial class BaselineTIFFTagSet
 
 		static SubfileType()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SubfileType;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SubfileType", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$SubfileType;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SubfileType", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3591,7 +3592,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SubfileType() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SubfileType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3611,9 +3612,9 @@ public partial class BaselineTIFFTagSet
 
 		static T4Options()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$T4Options;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "T4Options", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$T4Options;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "T4Options", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3622,7 +3623,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public T4Options() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public T4Options() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3642,9 +3643,9 @@ public partial class BaselineTIFFTagSet
 
 		static T6Options()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$T6Options;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "T6Options", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$T6Options;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "T6Options", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3653,7 +3654,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public T6Options() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public T6Options() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3673,9 +3674,9 @@ public partial class BaselineTIFFTagSet
 
 		static TargetPrinter()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TargetPrinter;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TargetPrinter", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TargetPrinter;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TargetPrinter", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3684,7 +3685,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TargetPrinter() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TargetPrinter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3704,9 +3705,9 @@ public partial class BaselineTIFFTagSet
 
 		static Threshholding()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Threshholding;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Threshholding", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$Threshholding;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Threshholding", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3715,7 +3716,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Threshholding() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Threshholding() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3735,9 +3736,9 @@ public partial class BaselineTIFFTagSet
 
 		static TileByteCounts()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileByteCounts;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TileByteCounts", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileByteCounts;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TileByteCounts", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3746,7 +3747,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TileByteCounts() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TileByteCounts() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3766,9 +3767,9 @@ public partial class BaselineTIFFTagSet
 
 		static TileOffsets()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileOffsets;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TileOffsets", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileOffsets;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TileOffsets", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3777,7 +3778,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TileOffsets() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TileOffsets() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3797,9 +3798,9 @@ public partial class BaselineTIFFTagSet
 
 		static TileLength()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileLength;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TileLength", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileLength;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TileLength", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3808,7 +3809,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TileLength() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TileLength() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3828,9 +3829,9 @@ public partial class BaselineTIFFTagSet
 
 		static TileWidth()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileWidth;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TileWidth", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TileWidth;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TileWidth", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3839,7 +3840,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TileWidth() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TileWidth() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3859,9 +3860,9 @@ public partial class BaselineTIFFTagSet
 
 		static TransferFunction()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TransferFunction;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransferFunction", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TransferFunction;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransferFunction", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3870,7 +3871,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TransferFunction() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TransferFunction() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3890,9 +3891,9 @@ public partial class BaselineTIFFTagSet
 
 		static TransferRange()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TransferRange;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransferRange", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$TransferRange;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransferRange", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3901,7 +3902,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TransferRange() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TransferRange() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3921,9 +3922,9 @@ public partial class BaselineTIFFTagSet
 
 		static WhitePoint()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$WhitePoint;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "WhitePoint", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$WhitePoint;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WhitePoint", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3932,7 +3933,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public WhitePoint() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public WhitePoint() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3952,9 +3953,9 @@ public partial class BaselineTIFFTagSet
 
 		static XPosition()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$XPosition;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XPosition", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$XPosition;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XPosition", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3963,7 +3964,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public XPosition() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XPosition() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3983,9 +3984,9 @@ public partial class BaselineTIFFTagSet
 
 		static XResolution()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$XResolution;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XResolution", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$XResolution;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XResolution", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3994,7 +3995,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public XResolution() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XResolution() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4014,9 +4015,9 @@ public partial class BaselineTIFFTagSet
 
 		static YCbCrCoefficients()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrCoefficients;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "YCbCrCoefficients", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrCoefficients;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "YCbCrCoefficients", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4025,7 +4026,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public YCbCrCoefficients() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public YCbCrCoefficients() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4045,9 +4046,9 @@ public partial class BaselineTIFFTagSet
 
 		static YCbCrPositioning()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrPositioning;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "YCbCrPositioning", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrPositioning;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "YCbCrPositioning", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4056,7 +4057,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public YCbCrPositioning() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public YCbCrPositioning() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4076,9 +4077,9 @@ public partial class BaselineTIFFTagSet
 
 		static YCbCrSubSampling()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrSubSampling;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "YCbCrSubSampling", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YCbCrSubSampling;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "YCbCrSubSampling", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4087,7 +4088,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public YCbCrSubSampling() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public YCbCrSubSampling() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4107,9 +4108,9 @@ public partial class BaselineTIFFTagSet
 
 		static YPosition()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YPosition;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "YPosition", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YPosition;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "YPosition", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4118,7 +4119,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public YPosition() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public YPosition() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4138,9 +4139,9 @@ public partial class BaselineTIFFTagSet
 
 		static YResolution()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YResolution;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "YResolution", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/BaselineTIFFTagSet$YResolution;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "YResolution", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4149,7 +4150,7 @@ public partial class BaselineTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public YResolution() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public YResolution() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,14 +27,14 @@ public partial interface Unreferenced
 
 	static Unreferenced()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/rmi/server/Unreferenced;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "unreferenced", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/rmi/server/Unreferenced;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unreferenced", "()V"));
 	}
 
 	[JniSignatureAttribute("()V", "public abstract")]
 	void unreferenced()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 	}
 }

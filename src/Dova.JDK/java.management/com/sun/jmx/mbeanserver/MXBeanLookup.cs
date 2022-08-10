@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,21 +29,21 @@ public partial class MXBeanLookup
 
 	static MXBeanLookup()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/MXBeanLookup;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "currentLookup", "Ljava/lang/ThreadLocal;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "mbsc", "Ljavax/management/MBeanServerConnection;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "mxbeanToObjectName", "Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "objectNameToProxy", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "mbscToLookup", "Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MXBeanLookup", "(Ljavax/management/MBeanServerConnection;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "mxbeanToObjectName", "(Ljava/lang/Object;)Ljavax/management/ObjectName;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "objectNameToMXBean", "(Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "removeReference", "(Ljavax/management/ObjectName;Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "lookupFor", "(Ljavax/management/MBeanServerConnection;)Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "setLookup", "(Lcom/sun/jmx/mbeanserver/MXBeanLookup;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addReference", "(Ljavax/management/ObjectName;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getLookup", "()Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/MXBeanLookup;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "currentLookup", "Ljava/lang/ThreadLocal;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mbsc", "Ljavax/management/MBeanServerConnection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mxbeanToObjectName", "Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectNameToProxy", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "mbscToLookup", "Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MXBeanLookup", "(Ljavax/management/MBeanServerConnection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mxbeanToObjectName", "(Ljava/lang/Object;)Ljavax/management/ObjectName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "objectNameToMXBean", "(Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeReference", "(Ljavax/management/ObjectName;Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupFor", "(Ljavax/management/MBeanServerConnection;)Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setLookup", "(Lcom/sun/jmx/mbeanserver/MXBeanLookup;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addReference", "(Ljavax/management/ObjectName;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLookup", "()Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ThreadLocal;", "private static final")]
@@ -50,10 +51,10 @@ public partial class MXBeanLookup
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ThreadLocal>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/management/MBeanServerConnection;", "private final")]
@@ -61,10 +62,10 @@ public partial class MXBeanLookup
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.management.MBeanServerConnection>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;", "private final")]
@@ -72,10 +73,10 @@ public partial class MXBeanLookup
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jmx.mbeanserver.WeakIdentityHashMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -83,10 +84,10 @@ public partial class MXBeanLookup
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jmx/mbeanserver/WeakIdentityHashMap;", "private static final")]
@@ -94,10 +95,10 @@ public partial class MXBeanLookup
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jmx.mbeanserver.WeakIdentityHashMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -106,7 +107,7 @@ public partial class MXBeanLookup
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/MBeanServerConnection;)V", "private")]
-	public MXBeanLookup(Dova.JDK.javax.management.MBeanServerConnection arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MXBeanLookup(Dova.JDK.javax.management.MBeanServerConnection arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -117,47 +118,47 @@ public partial class MXBeanLookup
 	[JniSignatureAttribute("(Ljava/lang/Object;)Ljavax/management/ObjectName;", "synchronized")]
 	public Dova.JDK.javax.management.ObjectName mxbeanToObjectName(Dova.JDK.java.lang.Object arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.management.ObjectName>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/ObjectName;Ljava/lang/Class;)Ljava/lang/Object;", "synchronized")]
 	public Dova.JDK.java.lang.Object objectNameToMXBean(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.java.lang.Class arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/ObjectName;Ljava/lang/Object;)Z", "synchronized")]
 	public bool removeReference(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/MBeanServerConnection;)Lcom/sun/jmx/mbeanserver/MXBeanLookup;", "static")]
 	public static Dova.JDK.com.sun.jmx.mbeanserver.MXBeanLookup lookupFor(Dova.JDK.javax.management.MBeanServerConnection arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jmx.mbeanserver.MXBeanLookup>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jmx/mbeanserver/MXBeanLookup;)V", "static")]
 	public static void setLookup(Dova.JDK.com.sun.jmx.mbeanserver.MXBeanLookup arg0)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/ObjectName;Ljava/lang/Object;)V", "synchronized")]
 	public void addReference(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/jmx/mbeanserver/MXBeanLookup;", "static")]
 	public static Dova.JDK.com.sun.jmx.mbeanserver.MXBeanLookup getLookup()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jmx.mbeanserver.MXBeanLookup>(ret);
 	}
 }

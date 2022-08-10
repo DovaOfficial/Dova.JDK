@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,13 +28,13 @@ public partial class InputVerifier
 
 	static InputVerifier()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/InputVerifier;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "InputVerifier", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "verify", "(Ljavax/swing/JComponent;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "shouldYieldFocus", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "shouldYieldFocus", "(Ljavax/swing/JComponent;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "verifyTarget", "(Ljavax/swing/JComponent;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/InputVerifier;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InputVerifier", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verify", "(Ljavax/swing/JComponent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldYieldFocus", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldYieldFocus", "(Ljavax/swing/JComponent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifyTarget", "(Ljavax/swing/JComponent;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +43,7 @@ public partial class InputVerifier
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public InputVerifier() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public InputVerifier() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -53,28 +54,28 @@ public partial class InputVerifier
 	[JniSignatureAttribute("(Ljavax/swing/JComponent;)Z", "public abstract")]
 	public bool verify(Dova.JDK.javax.swing.JComponent arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JComponent;Ljavax/swing/JComponent;)Z", "public")]
 	public bool shouldYieldFocus(Dova.JDK.javax.swing.JComponent arg0, Dova.JDK.javax.swing.JComponent arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JComponent;)Z", "public")]
 	public bool shouldYieldFocus(Dova.JDK.javax.swing.JComponent arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JComponent;)Z", "public")]
 	public bool verifyTarget(Dova.JDK.javax.swing.JComponent arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		return ret;
 	}
 }

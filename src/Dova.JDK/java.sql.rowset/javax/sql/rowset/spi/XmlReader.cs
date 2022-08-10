@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,14 +28,14 @@ public partial interface XmlReader
 
 	static XmlReader()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/sql/rowset/spi/XmlReader;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "readXML", "(Ljavax/sql/rowset/WebRowSet;Ljava/io/Reader;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/rowset/spi/XmlReader;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readXML", "(Ljavax/sql/rowset/WebRowSet;Ljava/io/Reader;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/rowset/WebRowSet;Ljava/io/Reader;)V", "public abstract")]
 	void readXML(Dova.JDK.javax.sql.rowset.WebRowSet arg0, Dova.JDK.java.io.Reader arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 	}
 }

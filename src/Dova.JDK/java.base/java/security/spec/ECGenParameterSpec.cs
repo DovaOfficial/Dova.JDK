@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,9 +27,9 @@ public partial class ECGenParameterSpec
 
 	static ECGenParameterSpec()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/security/spec/ECGenParameterSpec;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ECGenParameterSpec", "(Ljava/lang/String;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/spec/ECGenParameterSpec;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECGenParameterSpec", "(Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -37,7 +38,7 @@ public partial class ECGenParameterSpec
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public ECGenParameterSpec(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ECGenParameterSpec(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,11 +29,11 @@ public partial class ErroneousSnippet
 
 	static ErroneousSnippet()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/jshell/ErroneousSnippet;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "probableKind", "Ljdk/jshell/Snippet$Kind;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ErroneousSnippet", "(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "probableKind", "()Ljdk/jshell/Snippet$Kind;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/ErroneousSnippet;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "probableKind", "Ljdk/jshell/Snippet$Kind;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ErroneousSnippet", "(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "probableKind", "()Ljdk/jshell/Snippet$Kind;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/Snippet$Kind;", "private final")]
@@ -40,10 +41,10 @@ public partial class ErroneousSnippet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.jshell.Snippet.Kind>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +53,7 @@ public partial class ErroneousSnippet
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V", "")]
-	public ErroneousSnippet(Dova.JDK.jdk.jshell.Key.ErroneousKey arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.jdk.jshell.Wrap arg2, Dova.JDK.jdk.jshell.Snippet.Kind arg3, Dova.JDK.jdk.jshell.Snippet.SubKind arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public ErroneousSnippet(Dova.JDK.jdk.jshell.Key.ErroneousKey arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.jdk.jshell.Wrap arg2, Dova.JDK.jdk.jshell.Snippet.Kind arg3, Dova.JDK.jdk.jshell.Snippet.SubKind arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -63,7 +64,7 @@ public partial class ErroneousSnippet
 	[JniSignatureAttribute("()Ljdk/jshell/Snippet$Kind;", "public")]
 	public Dova.JDK.jdk.jshell.Snippet.Kind probableKind()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jshell.Snippet.Kind>(ret);
 	}
 }

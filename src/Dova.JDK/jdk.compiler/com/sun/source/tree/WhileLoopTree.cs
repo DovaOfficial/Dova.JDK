@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,23 +28,23 @@ public partial interface WhileLoopTree
 
 	static WhileLoopTree()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/source/tree/WhileLoopTree;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStatement", "()Lcom/sun/source/tree/StatementTree;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCondition", "()Lcom/sun/source/tree/ExpressionTree;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/source/tree/WhileLoopTree;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStatement", "()Lcom/sun/source/tree/StatementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCondition", "()Lcom/sun/source/tree/ExpressionTree;"));
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/source/tree/StatementTree;", "public abstract")]
 	Dova.JDK.com.sun.source.tree.StatementTree getStatement()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.tree.StatementTree>(ret);
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/source/tree/ExpressionTree;", "public abstract")]
 	Dova.JDK.com.sun.source.tree.ExpressionTree getCondition()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.tree.ExpressionTree>(ret);
 	}
 }

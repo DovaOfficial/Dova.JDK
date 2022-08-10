@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,12 +30,12 @@ public partial class X11SurfaceDataProxy
 
 	static X11SurfaceDataProxy()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "x11gc", "Lsun/awt/X11GraphicsConfig;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "X11SurfaceDataProxy", "(Lsun/awt/X11GraphicsConfig;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "validateSurfaceData", "(Lsun/java2d/SurfaceData;Lsun/java2d/SurfaceData;II)Lsun/java2d/SurfaceData;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createProxy", "(Lsun/java2d/SurfaceData;Lsun/awt/X11GraphicsConfig;)Lsun/java2d/SurfaceDataProxy;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x11gc", "Lsun/awt/X11GraphicsConfig;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X11SurfaceDataProxy", "(Lsun/awt/X11GraphicsConfig;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateSurfaceData", "(Lsun/java2d/SurfaceData;Lsun/java2d/SurfaceData;II)Lsun/java2d/SurfaceData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createProxy", "(Lsun/java2d/SurfaceData;Lsun/awt/X11GraphicsConfig;)Lsun/java2d/SurfaceDataProxy;"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/X11GraphicsConfig;", "")]
@@ -42,10 +43,10 @@ public partial class X11SurfaceDataProxy
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11GraphicsConfig>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -54,7 +55,7 @@ public partial class X11SurfaceDataProxy
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/X11GraphicsConfig;)V", "public")]
-	public X11SurfaceDataProxy(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public X11SurfaceDataProxy(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -65,14 +66,14 @@ public partial class X11SurfaceDataProxy
 	[JniSignatureAttribute("(Lsun/java2d/SurfaceData;Lsun/java2d/SurfaceData;II)Lsun/java2d/SurfaceData;", "public")]
 	public Dova.JDK.sun.java2d.SurfaceData validateSurfaceData(Dova.JDK.sun.java2d.SurfaceData arg0, Dova.JDK.sun.java2d.SurfaceData arg1, int arg2, int arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.java2d.SurfaceData>(ret);
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/SurfaceData;Lsun/awt/X11GraphicsConfig;)Lsun/java2d/SurfaceDataProxy;", "public static")]
 	public static Dova.JDK.sun.java2d.SurfaceDataProxy createProxy(Dova.JDK.sun.java2d.SurfaceData arg0, Dova.JDK.sun.awt.X11GraphicsConfig arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.java2d.SurfaceDataProxy>(ret);
 	}
 
@@ -88,11 +89,11 @@ public partial class X11SurfaceDataProxy
 
 		static Opaque()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy$Opaque;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Opaque", "(Lsun/awt/X11GraphicsConfig;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isSupportedOperation", "(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy$Opaque;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Opaque", "(Lsun/awt/X11GraphicsConfig;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSupportedOperation", "(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -101,7 +102,7 @@ public partial class X11SurfaceDataProxy
 		}
 
 		[JniSignatureAttribute("(Lsun/awt/X11GraphicsConfig;)V", "public")]
-		public Opaque(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Opaque(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -112,14 +113,14 @@ public partial class X11SurfaceDataProxy
 		[JniSignatureAttribute("(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z", "public")]
 		public bool isSupportedOperation(Dova.JDK.sun.java2d.SurfaceData arg0, int arg1, Dova.JDK.sun.java2d.loops.CompositeType arg2, Dova.JDK.java.awt.Color arg3)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getTransparency()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 	}
@@ -136,11 +137,11 @@ public partial class X11SurfaceDataProxy
 
 		static Bitmask()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy$Bitmask;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Bitmask", "(Lsun/awt/X11GraphicsConfig;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isSupportedOperation", "(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/x11/X11SurfaceDataProxy$Bitmask;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Bitmask", "(Lsun/awt/X11GraphicsConfig;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSupportedOperation", "(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -149,7 +150,7 @@ public partial class X11SurfaceDataProxy
 		}
 
 		[JniSignatureAttribute("(Lsun/awt/X11GraphicsConfig;)V", "public")]
-		public Bitmask(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Bitmask(Dova.JDK.sun.awt.X11GraphicsConfig arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -160,14 +161,14 @@ public partial class X11SurfaceDataProxy
 		[JniSignatureAttribute("(Lsun/java2d/SurfaceData;ILsun/java2d/loops/CompositeType;Ljava/awt/Color;)Z", "public")]
 		public bool isSupportedOperation(Dova.JDK.sun.java2d.SurfaceData arg0, int arg1, Dova.JDK.sun.java2d.loops.CompositeType arg2, Dova.JDK.java.awt.Color arg3)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getTransparency()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 	}

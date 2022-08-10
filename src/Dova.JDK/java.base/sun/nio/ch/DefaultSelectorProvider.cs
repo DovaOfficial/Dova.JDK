@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,11 +29,11 @@ public partial class DefaultSelectorProvider
 
 	static DefaultSelectorProvider()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/nio/ch/DefaultSelectorProvider;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Lsun/nio/ch/SelectorProviderImpl;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DefaultSelectorProvider", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "get", "()Lsun/nio/ch/SelectorProviderImpl;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/DefaultSelectorProvider;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Lsun/nio/ch/SelectorProviderImpl;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultSelectorProvider", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "()Lsun/nio/ch/SelectorProviderImpl;"));
 	}
 
 	[JniSignatureAttribute("Lsun/nio/ch/SelectorProviderImpl;", "private static final")]
@@ -40,10 +41,10 @@ public partial class DefaultSelectorProvider
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.nio.ch.SelectorProviderImpl>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +53,7 @@ public partial class DefaultSelectorProvider
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DefaultSelectorProvider() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultSelectorProvider() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -63,7 +64,7 @@ public partial class DefaultSelectorProvider
 	[JniSignatureAttribute("()Lsun/nio/ch/SelectorProviderImpl;", "public static")]
 	public static Dova.JDK.sun.nio.ch.SelectorProviderImpl get()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.nio.ch.SelectorProviderImpl>(ret);
 	}
 }

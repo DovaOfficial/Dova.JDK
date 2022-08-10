@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class OperationTrackers
 
 	static OperationTrackers()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OperationTrackers", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getTracker", "(Ljava/net/http/HttpClient;)Ljdk/internal/net/http/common/OperationTrackers$Tracker;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OperationTrackers", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTracker", "(Ljava/net/http/HttpClient;)Ljdk/internal/net/http/common/OperationTrackers$Tracker;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class OperationTrackers
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public OperationTrackers() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public OperationTrackers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class OperationTrackers
 	[JniSignatureAttribute("(Ljava/net/http/HttpClient;)Ljdk/internal/net/http/common/OperationTrackers$Tracker;", "public static")]
 	public static Dova.JDK.jdk.@internal.net.http.common.OperationTrackers.Tracker getTracker(Dova.JDK.java.net.http.HttpClient arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.OperationTrackers.Tracker>(ret);
 	}
 
@@ -65,15 +66,15 @@ public partial class OperationTrackers
 
 		static Trackable()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers$Trackable;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOperationsTracker", "()Ljdk/internal/net/http/common/OperationTrackers$Tracker;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers$Trackable;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOperationsTracker", "()Ljdk/internal/net/http/common/OperationTrackers$Tracker;"));
 		}
 
 		[JniSignatureAttribute("()Ljdk/internal/net/http/common/OperationTrackers$Tracker;", "public abstract")]
 		Dova.JDK.jdk.@internal.net.http.common.OperationTrackers.Tracker getOperationsTracker()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.OperationTrackers.Tracker>(ret);
 		}
 	}
@@ -89,55 +90,55 @@ public partial class OperationTrackers
 
 		static Tracker()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers$Tracker;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOutstandingOperations", "()J"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOutstandingHttpOperations", "()J"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOutstandingHttp2Streams", "()J"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOutstandingWebSocketOperations", "()J"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isFacadeReferenced", "()Z"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/OperationTrackers$Tracker;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutstandingOperations", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutstandingHttpOperations", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutstandingHttp2Streams", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutstandingWebSocketOperations", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isFacadeReferenced", "()Z"));
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
 		Dova.JDK.java.lang.String getName()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]
 		long getOutstandingOperations()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]
 		long getOutstandingHttpOperations()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]
 		long getOutstandingHttp2Streams()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]
 		long getOutstandingWebSocketOperations()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]
 		bool isFacadeReferenced()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return ret;
 		}
 	}

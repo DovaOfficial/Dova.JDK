@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,18 +29,18 @@ public partial class SliceOps
 
 	static SliceOps()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/SliceOps;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SliceOps", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "flags", "(J)I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/LongStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/IntStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/DoubleStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "calcSliceFence", "(JJ)J"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "calcSize", "(JJJ)J"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "sliceSpliterator", "(Ljava/util/stream/StreamShape;Ljava/util/Spliterator;JJ)Ljava/util/Spliterator;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/SliceOps;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceOps", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "flags", "(J)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/LongStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/IntStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/DoubleStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "calcSliceFence", "(JJ)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "calcSize", "(JJJ)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "sliceSpliterator", "(Ljava/util/stream/StreamShape;Ljava/util/Spliterator;JJ)Ljava/util/Spliterator;"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -47,10 +48,10 @@ public partial class SliceOps
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -59,7 +60,7 @@ public partial class SliceOps
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SliceOps() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SliceOps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -70,56 +71,56 @@ public partial class SliceOps
 	[JniSignatureAttribute("(J)I", "private static")]
 	public static int flags(long arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/LongStream;", "public static")]
 	public static Dova.JDK.java.util.stream.LongStream makeLong(Dova.JDK.java.util.stream.AbstractPipeline arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.LongStream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/IntStream;", "public static")]
 	public static Dova.JDK.java.util.stream.IntStream makeInt(Dova.JDK.java.util.stream.AbstractPipeline arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.IntStream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/Stream;", "public static")]
 	public static Dova.JDK.java.util.stream.Stream makeRef(Dova.JDK.java.util.stream.AbstractPipeline arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.Stream>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;JJ)Ljava/util/stream/DoubleStream;", "public static")]
 	public static Dova.JDK.java.util.stream.DoubleStream makeDouble(Dova.JDK.java.util.stream.AbstractPipeline arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.DoubleStream>(ret);
 	}
 
 	[JniSignatureAttribute("(JJ)J", "private static")]
 	public static long calcSliceFence(long arg0, long arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticLongMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticLongMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(JJJ)J", "private static")]
 	public static long calcSize(long arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticLongMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticLongMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1, arg2);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/StreamShape;Ljava/util/Spliterator;JJ)Ljava/util/Spliterator;", "private static")]
 	public static Dova.JDK.java.util.Spliterator sliceSpliterator(Dova.JDK.java.util.stream.StreamShape arg0, Dova.JDK.java.util.Spliterator arg1, long arg2, long arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Spliterator>(ret);
 	}
 
@@ -136,27 +137,27 @@ public partial class SliceOps
 
 		static SliceTask()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/SliceOps$SliceTask;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "generator", "Ljava/util/function/IntFunction;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "targetOffset", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "targetSize", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "thisNodeSize", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SliceTask", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;JJ)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SliceTask", "(Ljava/util/stream/SliceOps$SliceTask;Ljava/util/Spliterator;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "cancel", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/SliceOps$SliceTask;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_1", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doTruncate", "(Ljava/util/stream/Node;)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isLeftCompleted", "(J)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "completedSize", "(J)J"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/SliceOps$SliceTask;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "generator", "Ljava/util/function/IntFunction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetOffset", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetSize", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thisNodeSize", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceTask", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;JJ)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceTask", "(Ljava/util/stream/SliceOps$SliceTask;Ljava/util/Spliterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cancel", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/SliceOps$SliceTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_1", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doTruncate", "(Ljava/util/stream/Node;)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLeftCompleted", "(J)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "completedSize", "(J)J"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/AbstractPipeline;", "private final")]
@@ -164,10 +165,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.AbstractPipeline>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/IntFunction;", "private final")]
@@ -175,10 +176,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.IntFunction>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -186,10 +187,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -197,10 +198,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("J", "private")]
@@ -208,10 +209,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("Z", "private volatile")]
@@ -219,10 +220,10 @@ public partial class SliceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -231,12 +232,12 @@ public partial class SliceOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;JJ)V", "")]
-		public SliceTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3, long arg4, long arg5) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+		public SliceTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3, long arg4, long arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/SliceOps$SliceTask;Ljava/util/Spliterator;)V", "")]
-		public SliceTask(Dova.JDK.java.util.stream.SliceOps.SliceTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public SliceTask(Dova.JDK.java.util.stream.SliceOps.SliceTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -247,75 +248,75 @@ public partial class SliceOps
 		[JniSignatureAttribute("()V", "protected")]
 		public void cancel()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;)V", "public final")]
 		public void onCompletion(Dova.JDK.java.util.concurrent.CountedCompleter arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;)Ljava/util/stream/SliceOps$SliceTask;", "protected")]
 		public Dova.JDK.java.util.stream.SliceOps.SliceTask makeChild_0(Dova.JDK.java.util.Spliterator arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.SliceOps.SliceTask>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;", "protected volatile")]
 		public Dova.JDK.java.util.stream.AbstractTask makeChild_1(Dova.JDK.java.util.Spliterator arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.AbstractTask>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "protected volatile")]
 		public Dova.JDK.java.lang.Object doLeaf_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/Node;", "protected final")]
 		public Dova.JDK.java.util.stream.Node doLeaf_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.Node>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "protected volatile")]
 		public Dova.JDK.java.lang.Object getEmptyResult_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/Node;", "protected final")]
 		public Dova.JDK.java.util.stream.Node getEmptyResult_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.Node>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/Node;)Ljava/util/stream/Node;", "private")]
 		public Dova.JDK.java.util.stream.Node doTruncate(Dova.JDK.java.util.stream.Node arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.Node>(ret);
 		}
 
 		[JniSignatureAttribute("(J)Z", "private")]
 		public bool isLeftCompleted(long arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(J)J", "private")]
 		public long completedSize(long arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+			var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
 			return ret;
 		}
 	}

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,15 +27,15 @@ public partial interface DestSurfaceProvider
 
 	static DestSurfaceProvider()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/java2d/DestSurfaceProvider;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getDestSurface", "()Lsun/java2d/Surface;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/DestSurfaceProvider;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDestSurface", "()Lsun/java2d/Surface;"));
 	}
 
 	[JniSignatureAttribute("()Lsun/java2d/Surface;", "public abstract")]
 	Dova.JDK.sun.java2d.Surface getDestSurface()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.java2d.Surface>(ret);
 	}
 }

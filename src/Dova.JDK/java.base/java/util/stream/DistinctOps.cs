@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class DistinctOps
 
 	static DistinctOps()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/DistinctOps;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DistinctOps", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/AbstractPipeline;)Ljava/util/stream/ReferencePipeline;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/DistinctOps;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DistinctOps", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/AbstractPipeline;)Ljava/util/stream/ReferencePipeline;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class DistinctOps
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DistinctOps() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DistinctOps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class DistinctOps
 	[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;)Ljava/util/stream/ReferencePipeline;", "static")]
 	public static Dova.JDK.java.util.stream.ReferencePipeline makeRef(Dova.JDK.java.util.stream.AbstractPipeline arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.ReferencePipeline>(ret);
 	}
 }

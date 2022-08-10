@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,23 +27,23 @@ public partial interface AnnotationMirror
 
 	static AnnotationMirror()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/lang/model/element/AnnotationMirror;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getAnnotationType", "()Ljavax/lang/model/type/DeclaredType;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getElementValues", "()Ljava/util/Map;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/lang/model/element/AnnotationMirror;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotationType", "()Ljavax/lang/model/type/DeclaredType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElementValues", "()Ljava/util/Map;"));
 	}
 
 	[JniSignatureAttribute("()Ljavax/lang/model/type/DeclaredType;", "public abstract")]
 	Dova.JDK.javax.lang.model.type.DeclaredType getAnnotationType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.type.DeclaredType>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Map;", "public abstract")]
 	Dova.JDK.java.util.Map getElementValues()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 }

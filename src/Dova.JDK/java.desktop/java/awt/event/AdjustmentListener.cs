@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,14 +28,14 @@ public partial interface AdjustmentListener
 
 	static AdjustmentListener()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/event/AdjustmentListener;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/event/AdjustmentListener;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/event/AdjustmentEvent;)V", "public abstract")]
 	void adjustmentValueChanged(Dova.JDK.java.awt.@event.AdjustmentEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,28 +28,28 @@ public partial class AbstractDelegateHttpsURLConnection
 
 	static AbstractDelegateHttpsURLConnection()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/net/www/protocol/https/AbstractDelegateHttpsURLConnection;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractDelegateHttpsURLConnection", "(Ljava/net/URL;Lsun/net/www/protocol/http/Handler;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractDelegateHttpsURLConnection", "(Ljava/net/URL;Ljava/net/Proxy;Lsun/net/www/protocol/http/Handler;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "connect", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isConnected", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setConnected", "(Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSSLSession", "()Ljavax/net/ssl/SSLSession;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setNewClient", "(Ljava/net/URL;Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setNewClient", "(Ljava/net/URL;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setProxiedClient", "(Ljava/net/URL;Ljava/lang/String;IZ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setProxiedClient", "(Ljava/net/URL;Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "proxiedConnect", "(Ljava/net/URL;Ljava/lang/String;IZ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getServerCertificates", "()[Ljava/security/cert/Certificate;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNewHttpClient", "(Ljava/net/URL;Ljava/net/Proxy;I)Lsun/net/www/http/HttpClient;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNewHttpClient", "(Ljava/net/URL;Ljava/net/Proxy;IZ)Lsun/net/www/http/HttpClient;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLocalCertificates", "()[Ljava/security/cert/Certificate;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getPeerPrincipal", "()Ljava/security/Principal;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLocalPrincipal", "()Ljava/security/Principal;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCipherSuite", "()Ljava/lang/String;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/protocol/https/AbstractDelegateHttpsURLConnection;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractDelegateHttpsURLConnection", "(Ljava/net/URL;Lsun/net/www/protocol/http/Handler;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractDelegateHttpsURLConnection", "(Ljava/net/URL;Ljava/net/Proxy;Lsun/net/www/protocol/http/Handler;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connect", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isConnected", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setConnected", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSSLSession", "()Ljavax/net/ssl/SSLSession;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNewClient", "(Ljava/net/URL;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNewClient", "(Ljava/net/URL;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHostnameVerifier", "()Ljavax/net/ssl/HostnameVerifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProxiedClient", "(Ljava/net/URL;Ljava/lang/String;IZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProxiedClient", "(Ljava/net/URL;Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "proxiedConnect", "(Ljava/net/URL;Ljava/lang/String;IZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerCertificates", "()[Ljava/security/cert/Certificate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNewHttpClient", "(Ljava/net/URL;Ljava/net/Proxy;I)Lsun/net/www/http/HttpClient;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNewHttpClient", "(Ljava/net/URL;Ljava/net/Proxy;IZ)Lsun/net/www/http/HttpClient;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocalCertificates", "()[Ljava/security/cert/Certificate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPeerPrincipal", "()Ljava/security/Principal;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocalPrincipal", "()Ljava/security/Principal;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCipherSuite", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -57,12 +58,12 @@ public partial class AbstractDelegateHttpsURLConnection
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Lsun/net/www/protocol/http/Handler;)V", "protected")]
-	public AbstractDelegateHttpsURLConnection(Dova.JDK.java.net.URL arg0, Dova.JDK.sun.net.www.protocol.http.Handler arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public AbstractDelegateHttpsURLConnection(Dova.JDK.java.net.URL arg0, Dova.JDK.sun.net.www.protocol.http.Handler arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/net/Proxy;Lsun/net/www/protocol/http/Handler;)V", "protected")]
-	public AbstractDelegateHttpsURLConnection(Dova.JDK.java.net.URL arg0, Dova.JDK.java.net.Proxy arg1, Dova.JDK.sun.net.www.protocol.http.Handler arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public AbstractDelegateHttpsURLConnection(Dova.JDK.java.net.URL arg0, Dova.JDK.java.net.Proxy arg1, Dova.JDK.sun.net.www.protocol.http.Handler arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
@@ -73,119 +74,119 @@ public partial class AbstractDelegateHttpsURLConnection
 	[JniSignatureAttribute("()V", "public")]
 	public void connect()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool isConnected()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Z)V", "public")]
 	public void setConnected(bool arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljavax/net/ssl/SSLSession;", "")]
 	public Dova.JDK.javax.net.ssl.SSLSession getSSLSession()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.net.ssl.SSLSession>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Z)V", "public")]
 	public void setNewClient(Dova.JDK.java.net.URL arg0, bool arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;)V", "public")]
 	public void setNewClient(Dova.JDK.java.net.URL arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljavax/net/ssl/SSLSocketFactory;", "protected abstract")]
 	public Dova.JDK.javax.net.ssl.SSLSocketFactory getSSLSocketFactory()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.net.ssl.SSLSocketFactory>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/net/ssl/HostnameVerifier;", "protected abstract")]
 	public Dova.JDK.javax.net.ssl.HostnameVerifier getHostnameVerifier()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.net.ssl.HostnameVerifier>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/lang/String;IZ)V", "public")]
 	public void setProxiedClient(Dova.JDK.java.net.URL arg0, Dova.JDK.java.lang.String arg1, int arg2, bool arg3)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1, arg2, arg3);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1, arg2, arg3);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/lang/String;I)V", "public")]
 	public void setProxiedClient(Dova.JDK.java.net.URL arg0, Dova.JDK.java.lang.String arg1, int arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/lang/String;IZ)V", "protected")]
 	public void proxiedConnect(Dova.JDK.java.net.URL arg0, Dova.JDK.java.lang.String arg1, int arg2, bool arg3)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0, arg1, arg2, arg3);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0, arg1, arg2, arg3);
 	}
 
 	[JniSignatureAttribute("()[Ljava/security/cert/Certificate;", "public")]
 	public JavaArray<Dova.JDK.java.security.cert.Certificate> getServerCertificates()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.security.cert.Certificate>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/net/Proxy;I)Lsun/net/www/http/HttpClient;", "protected")]
 	public Dova.JDK.sun.net.www.http.HttpClient getNewHttpClient(Dova.JDK.java.net.URL arg0, Dova.JDK.java.net.Proxy arg1, int arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.HttpClient>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Ljava/net/Proxy;IZ)Lsun/net/www/http/HttpClient;", "protected")]
 	public Dova.JDK.sun.net.www.http.HttpClient getNewHttpClient(Dova.JDK.java.net.URL arg0, Dova.JDK.java.net.Proxy arg1, int arg2, bool arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.HttpClient>(ret);
 	}
 
 	[JniSignatureAttribute("()[Ljava/security/cert/Certificate;", "public")]
 	public JavaArray<Dova.JDK.java.security.cert.Certificate> getLocalCertificates()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[14]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[14]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.security.cert.Certificate>>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/security/Principal;", "")]
 	public Dova.JDK.java.security.Principal getPeerPrincipal()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.Principal>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/security/Principal;", "")]
 	public Dova.JDK.java.security.Principal getLocalPrincipal()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.Principal>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getCipherSuite()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 }

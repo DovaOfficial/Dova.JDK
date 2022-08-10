@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class WindowsKeybindings
 
 	static WindowsKeybindings()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/swing/plaf/WindowsKeybindings;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "WindowsKeybindings", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "installKeybindings", "(Ljavax/swing/UIDefaults;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/plaf/WindowsKeybindings;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WindowsKeybindings", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "installKeybindings", "(Ljavax/swing/UIDefaults;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class WindowsKeybindings
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public WindowsKeybindings() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public WindowsKeybindings() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,6 +51,6 @@ public partial class WindowsKeybindings
 	[JniSignatureAttribute("(Ljavax/swing/UIDefaults;)V", "public static")]
 	public static void installKeybindings(Dova.JDK.javax.swing.UIDefaults arg0)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 	}
 }

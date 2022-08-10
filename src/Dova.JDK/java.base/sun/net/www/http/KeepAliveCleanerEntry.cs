@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,15 +29,15 @@ public partial class KeepAliveCleanerEntry
 
 	static KeepAliveCleanerEntry()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/net/www/http/KeepAliveCleanerEntry;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "kas", "Lsun/net/www/http/KeepAliveStream;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hc", "Lsun/net/www/http/HttpClient;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "KeepAliveCleanerEntry", "(Lsun/net/www/http/KeepAliveStream;Lsun/net/www/http/HttpClient;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getKeepAliveStream", "()Lsun/net/www/http/KeepAliveStream;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getHttpClient", "()Lsun/net/www/http/HttpClient;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setQueuedForCleanup", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getQueuedForCleanup", "()Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/http/KeepAliveCleanerEntry;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "kas", "Lsun/net/www/http/KeepAliveStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hc", "Lsun/net/www/http/HttpClient;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeepAliveCleanerEntry", "(Lsun/net/www/http/KeepAliveStream;Lsun/net/www/http/HttpClient;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeepAliveStream", "()Lsun/net/www/http/KeepAliveStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHttpClient", "()Lsun/net/www/http/HttpClient;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setQueuedForCleanup", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getQueuedForCleanup", "()Z"));
 	}
 
 	[JniSignatureAttribute("Lsun/net/www/http/KeepAliveStream;", "")]
@@ -44,10 +45,10 @@ public partial class KeepAliveCleanerEntry
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.KeepAliveStream>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/net/www/http/HttpClient;", "")]
@@ -55,10 +56,10 @@ public partial class KeepAliveCleanerEntry
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.HttpClient>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -67,7 +68,7 @@ public partial class KeepAliveCleanerEntry
 	}
 
 	[JniSignatureAttribute("(Lsun/net/www/http/KeepAliveStream;Lsun/net/www/http/HttpClient;)V", "public")]
-	public KeepAliveCleanerEntry(Dova.JDK.sun.net.www.http.KeepAliveStream arg0, Dova.JDK.sun.net.www.http.HttpClient arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public KeepAliveCleanerEntry(Dova.JDK.sun.net.www.http.KeepAliveStream arg0, Dova.JDK.sun.net.www.http.HttpClient arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -78,27 +79,27 @@ public partial class KeepAliveCleanerEntry
 	[JniSignatureAttribute("()Lsun/net/www/http/KeepAliveStream;", "protected")]
 	public Dova.JDK.sun.net.www.http.KeepAliveStream getKeepAliveStream()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.KeepAliveStream>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/net/www/http/HttpClient;", "protected")]
 	public Dova.JDK.sun.net.www.http.HttpClient getHttpClient()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.net.www.http.HttpClient>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
 	public void setQueuedForCleanup()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
 	}
 
 	[JniSignatureAttribute("()Z", "protected")]
 	public bool getQueuedForCleanup()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return ret;
 	}
 }

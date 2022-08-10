@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,14 +27,14 @@ public partial interface ExceptionListener
 
 	static ExceptionListener()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/beans/ExceptionListener;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "exceptionThrown", "(Ljava/lang/Exception;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/ExceptionListener;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exceptionThrown", "(Ljava/lang/Exception;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Exception;)V", "public abstract")]
 	void exceptionThrown(Dova.JDK.java.lang.Exception arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,12 +29,12 @@ public partial class FileInputStreamPool
 
 	static FileInputStreamPool()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "pool", "Ljava/util/concurrent/ConcurrentMap;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "refQueue", "Ljava/lang/ref/ReferenceQueue;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FileInputStreamPool", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInputStream", "(Ljava/io/File;)Ljava/io/InputStream;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "pool", "Ljava/util/concurrent/ConcurrentMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "refQueue", "Ljava/lang/ref/ReferenceQueue;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FileInputStreamPool", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInputStream", "(Ljava/io/File;)Ljava/io/InputStream;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/ConcurrentMap;", "private static final")]
@@ -41,10 +42,10 @@ public partial class FileInputStreamPool
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.ConcurrentMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ref/ReferenceQueue;", "private static final")]
@@ -52,10 +53,10 @@ public partial class FileInputStreamPool
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.@ref.ReferenceQueue>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -64,7 +65,7 @@ public partial class FileInputStreamPool
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public FileInputStreamPool() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public FileInputStreamPool() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -75,7 +76,7 @@ public partial class FileInputStreamPool
 	[JniSignatureAttribute("(Ljava/io/File;)Ljava/io/InputStream;", "static")]
 	public static Dova.JDK.java.io.InputStream getInputStream(Dova.JDK.java.io.File arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 	}
 
@@ -91,10 +92,10 @@ public partial class FileInputStreamPool
 
 		static StreamRef()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool$StreamRef;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "file", "Ljava/io/File;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StreamRef", "(Ljava/io/File;Lsun/security/provider/FileInputStreamPool$UnclosableInputStream;Ljava/lang/ref/ReferenceQueue;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool$StreamRef;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file", "Ljava/io/File;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StreamRef", "(Ljava/io/File;Lsun/security/provider/FileInputStreamPool$UnclosableInputStream;Ljava/lang/ref/ReferenceQueue;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/File;", "final")]
@@ -102,10 +103,10 @@ public partial class FileInputStreamPool
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -114,7 +115,7 @@ public partial class FileInputStreamPool
 		}
 
 		[JniSignatureAttribute("(Ljava/io/File;Lsun/security/provider/FileInputStreamPool$UnclosableInputStream;Ljava/lang/ref/ReferenceQueue;)V", "")]
-		public StreamRef(Dova.JDK.java.io.File arg0, Dova.JDK.sun.security.provider.FileInputStreamPool.UnclosableInputStream arg1, Dova.JDK.java.lang.@ref.ReferenceQueue arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public StreamRef(Dova.JDK.java.io.File arg0, Dova.JDK.sun.security.provider.FileInputStreamPool.UnclosableInputStream arg1, Dova.JDK.java.lang.@ref.ReferenceQueue arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -135,11 +136,11 @@ public partial class FileInputStreamPool
 
 		static UnclosableInputStream()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool$UnclosableInputStream;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "UnclosableInputStream", "(Ljava/io/InputStream;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getWrappedStream", "()Ljava/io/InputStream;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/FileInputStreamPool$UnclosableInputStream;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnclosableInputStream", "(Ljava/io/InputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWrappedStream", "()Ljava/io/InputStream;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -148,7 +149,7 @@ public partial class FileInputStreamPool
 		}
 
 		[JniSignatureAttribute("(Ljava/io/InputStream;)V", "")]
-		public UnclosableInputStream(Dova.JDK.java.io.InputStream arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnclosableInputStream(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -159,13 +160,13 @@ public partial class FileInputStreamPool
 		[JniSignatureAttribute("()V", "public")]
 		public void close()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("()Ljava/io/InputStream;", "")]
 		public Dova.JDK.java.io.InputStream getWrappedStream()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 		}
 	}

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class HostEvent
 
 	static HostEvent()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/jvmstat/monitor/event/HostEvent;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HostEvent", "(Lsun/jvmstat/monitor/MonitoredHost;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMonitoredHost", "()Lsun/jvmstat/monitor/MonitoredHost;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/monitor/event/HostEvent;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HostEvent", "(Lsun/jvmstat/monitor/MonitoredHost;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMonitoredHost", "()Lsun/jvmstat/monitor/MonitoredHost;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class HostEvent
 	}
 
 	[JniSignatureAttribute("(Lsun/jvmstat/monitor/MonitoredHost;)V", "public")]
-	public HostEvent(Dova.JDK.sun.jvmstat.monitor.MonitoredHost arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HostEvent(Dova.JDK.sun.jvmstat.monitor.MonitoredHost arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class HostEvent
 	[JniSignatureAttribute("()Lsun/jvmstat/monitor/MonitoredHost;", "public")]
 	public Dova.JDK.sun.jvmstat.monitor.MonitoredHost getMonitoredHost()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.jvmstat.monitor.MonitoredHost>(ret);
 	}
 }

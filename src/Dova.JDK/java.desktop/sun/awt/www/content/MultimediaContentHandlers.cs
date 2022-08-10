@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,10 +29,10 @@ public partial class MultimediaContentHandlers
 
 	static MultimediaContentHandlers()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/www/content/MultimediaContentHandlers;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MultimediaContentHandlers", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/www/content/MultimediaContentHandlers;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MultimediaContentHandlers", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createContentHandler", "(Ljava/lang/String;)Ljava/net/ContentHandler;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +41,7 @@ public partial class MultimediaContentHandlers
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public MultimediaContentHandlers() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MultimediaContentHandlers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -51,7 +52,7 @@ public partial class MultimediaContentHandlers
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/net/ContentHandler;", "public")]
 	public Dova.JDK.java.net.ContentHandler createContentHandler(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.net.ContentHandler>(ret);
 	}
 }

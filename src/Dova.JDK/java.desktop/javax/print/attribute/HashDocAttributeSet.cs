@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,13 +30,13 @@ public partial class HashDocAttributeSet
 
 	static HashDocAttributeSet()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/print/attribute/HashDocAttributeSet;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "(Ljavax/print/attribute/DocAttributeSet;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "([Ljavax/print/attribute/DocAttribute;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "(Ljavax/print/attribute/DocAttribute;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/HashDocAttributeSet;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "(Ljavax/print/attribute/DocAttributeSet;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "([Ljavax/print/attribute/DocAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "(Ljavax/print/attribute/DocAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashDocAttributeSet", "()V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -43,10 +44,10 @@ public partial class HashDocAttributeSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,22 +56,22 @@ public partial class HashDocAttributeSet
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/DocAttributeSet;)V", "public")]
-	public HashDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HashDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljavax/print/attribute/DocAttribute;)V", "public")]
-	public HashDocAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.DocAttribute> arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public HashDocAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.DocAttribute> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/DocAttribute;)V", "public")]
-	public HashDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttribute arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+	public HashDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttribute arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HashDocAttributeSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
+	public HashDocAttributeSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
 	{
 	}
 

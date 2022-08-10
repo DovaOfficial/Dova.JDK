@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,39 +29,39 @@ public partial class ProcessBuilder
 
 	static ProcessBuilder()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "command", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "directory", "Ljava/io/File;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "environment", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "redirectErrorStream", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "redirects", "[Ljava/lang/ProcessBuilder$Redirect;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ProcessBuilder", "(Ljava/util/List;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ProcessBuilder", "([Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "([Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/Process;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "()Ljava/lang/Process;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "directory", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "directory", "()Ljava/io/File;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "environment", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "environment", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "command", "(Ljava/util/List;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "command", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectError", "()Ljava/lang/ProcessBuilder$Redirect;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectError", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectError", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectErrorStream", "(Z)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectErrorStream", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "()Ljava/lang/ProcessBuilder$Redirect;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirects", "()[Ljava/lang/ProcessBuilder$Redirect;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "()Ljava/lang/ProcessBuilder$Redirect;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "inheritIO", "()Ljava/lang/ProcessBuilder;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "startPipeline", "(Ljava/util/List;)Ljava/util/List;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "command", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "directory", "Ljava/io/File;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "environment", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "redirectErrorStream", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "redirects", "[Ljava/lang/ProcessBuilder$Redirect;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProcessBuilder", "(Ljava/util/List;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProcessBuilder", "([Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "([Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/Process;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "()Ljava/lang/Process;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "directory", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "directory", "()Ljava/io/File;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "environment", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "environment", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "command", "(Ljava/util/List;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "command", "([Ljava/lang/String;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "command", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectError", "()Ljava/lang/ProcessBuilder$Redirect;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectError", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectError", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectErrorStream", "(Z)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectErrorStream", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectOutput", "()Ljava/lang/ProcessBuilder$Redirect;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirects", "()[Ljava/lang/ProcessBuilder$Redirect;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "(Ljava/io/File;)Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redirectInput", "()Ljava/lang/ProcessBuilder$Redirect;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "inheritIO", "()Ljava/lang/ProcessBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "startPipeline", "(Ljava/util/List;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private")]
@@ -68,10 +69,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/io/File;", "private")]
@@ -79,10 +80,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -90,10 +91,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -101,10 +102,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/ProcessBuilder$Redirect;", "private")]
@@ -112,10 +113,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -123,10 +124,10 @@ public partial class ProcessBuilder
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -135,12 +136,12 @@ public partial class ProcessBuilder
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;)V", "public")]
-	public ProcessBuilder(Dova.JDK.java.util.List arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ProcessBuilder(Dova.JDK.java.util.List arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)V", "public transient")]
-	public ProcessBuilder(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public ProcessBuilder(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -151,161 +152,161 @@ public partial class ProcessBuilder
 	[JniSignatureAttribute("([Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/Process;", "private")]
 	public Dova.JDK.java.lang.Process start(JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Process>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/Process;", "public")]
 	public Dova.JDK.java.lang.Process start()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Process>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder directory(Dova.JDK.java.io.File arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/io/File;", "public")]
 	public Dova.JDK.java.io.File directory()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Map;", "public")]
 	public Dova.JDK.java.util.Map environment()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", "")]
 	public Dova.JDK.java.lang.ProcessBuilder environment(JavaArray<Dova.JDK.java.lang.String> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder command(Dova.JDK.java.util.List arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)Ljava/lang/ProcessBuilder;", "public transient")]
 	public Dova.JDK.java.lang.ProcessBuilder command(JavaArray<Dova.JDK.java.lang.String> arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/List;", "public")]
 	public Dova.JDK.java.util.List command()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/ProcessBuilder$Redirect;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder.Redirect redirectError()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectError(Dova.JDK.java.io.File arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectError(Dova.JDK.java.lang.ProcessBuilder.Redirect arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Z)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectErrorStream(bool arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool redirectErrorStream()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[13]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[13]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectOutput(Dova.JDK.java.io.File arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectOutput(Dova.JDK.java.lang.ProcessBuilder.Redirect arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/ProcessBuilder$Redirect;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder.Redirect redirectOutput()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[16]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 	}
 
 	[JniSignatureAttribute("()[Ljava/lang/ProcessBuilder$Redirect;", "private")]
 	public JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect> redirects()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[17]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ProcessBuilder$Redirect;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectInput(Dova.JDK.java.lang.ProcessBuilder.Redirect arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[18], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[18], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder redirectInput(Dova.JDK.java.io.File arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/ProcessBuilder$Redirect;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder.Redirect redirectInput()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[20]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[20]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/ProcessBuilder;", "public")]
 	public Dova.JDK.java.lang.ProcessBuilder inheritIO()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[21]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[21]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;)Ljava/util/List;", "public static")]
 	public static Dova.JDK.java.util.List startPipeline(Dova.JDK.java.util.List arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[22], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[22], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
@@ -322,22 +323,22 @@ public partial class ProcessBuilder
 
 		static Redirect()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder$Redirect;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NULL_FILE", "Ljava/io/File;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PIPE", "Ljava/lang/ProcessBuilder$Redirect;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INHERIT", "Ljava/lang/ProcessBuilder$Redirect;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DISCARD", "Ljava/lang/ProcessBuilder$Redirect;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Redirect", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Ljava/lang/ProcessBuilder$Redirect$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "append", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "to", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "from", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "file", "()Ljava/io/File;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "appendTo", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder$Redirect;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NULL_FILE", "Ljava/io/File;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PIPE", "Ljava/lang/ProcessBuilder$Redirect;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INHERIT", "Ljava/lang/ProcessBuilder$Redirect;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DISCARD", "Ljava/lang/ProcessBuilder$Redirect;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Redirect", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Ljava/lang/ProcessBuilder$Redirect$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "to", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "from", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "file", "()Ljava/io/File;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "appendTo", "(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/File;", "private static final")]
@@ -345,10 +346,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect;", "public static final")]
@@ -356,10 +357,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect;", "public static final")]
@@ -367,10 +368,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect;", "public static final")]
@@ -378,10 +379,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -389,10 +390,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -401,7 +402,7 @@ public partial class ProcessBuilder
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Redirect() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Redirect() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -412,56 +413,56 @@ public partial class ProcessBuilder
 		[JniSignatureAttribute("()Ljava/lang/ProcessBuilder$Redirect$Type;", "public abstract")]
 		public Dova.JDK.java.lang.ProcessBuilder.Redirect.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)Z", "public")]
 		public bool equals(Dova.JDK.java.lang.Object arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Z", "")]
 		public bool append()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int hashCode()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", "public static")]
 		public static Dova.JDK.java.lang.ProcessBuilder.Redirect to(Dova.JDK.java.io.File arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", "public static")]
 		public static Dova.JDK.java.lang.ProcessBuilder.Redirect from(Dova.JDK.java.io.File arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/io/File;", "public")]
 		public Dova.JDK.java.io.File file()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.File>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/io/File;)Ljava/lang/ProcessBuilder$Redirect;", "public static")]
 		public static Dova.JDK.java.lang.ProcessBuilder.Redirect appendTo(Dova.JDK.java.io.File arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect>(ret);
 		}
 
@@ -478,18 +479,18 @@ public partial class ProcessBuilder
 
 			static Type()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder$Redirect$Type;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PIPE", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INHERIT", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "READ", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WRITE", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "APPEND", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Type", "(Ljava/lang/String;I)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessBuilder$Redirect$Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder$Redirect$Type;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PIPE", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INHERIT", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READ", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WRITE", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APPEND", "Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Type", "(Ljava/lang/String;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/lang/ProcessBuilder$Redirect$Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/lang/ProcessBuilder$Redirect$Type;"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect$Type;", "public static final")]
@@ -497,10 +498,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect$Type;", "public static final")]
@@ -508,10 +509,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect$Type;", "public static final")]
@@ -519,10 +520,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect$Type;", "public static final")]
@@ -530,10 +531,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Ljava/lang/ProcessBuilder$Redirect$Type;", "public static final")]
@@ -541,10 +542,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("[Ljava/lang/ProcessBuilder$Redirect$Type;", "private static final")]
@@ -552,10 +553,10 @@ public partial class ProcessBuilder
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -564,7 +565,7 @@ public partial class ProcessBuilder
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-			public Type(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Type(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -575,21 +576,21 @@ public partial class ProcessBuilder
 			[JniSignatureAttribute("()[Ljava/lang/ProcessBuilder$Redirect$Type;", "public static")]
 			public static JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type> values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/ProcessBuilder$Redirect$Type;", "public static")]
 			public static Dova.JDK.java.lang.ProcessBuilder.Redirect.Type valueOf(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 			}
 
 			[JniSignatureAttribute("()[Ljava/lang/ProcessBuilder$Redirect$Type;", "private static")]
 			public static JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type> _values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>>(ret);
 			}
 		}
@@ -608,13 +609,13 @@ public partial class ProcessBuilder
 
 		static RedirectPipeImpl()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder$RedirectPipeImpl;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "fd", "Ljava/io/FileDescriptor;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RedirectPipeImpl", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Ljava/lang/ProcessBuilder$Redirect$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getFd", "()Ljava/io/FileDescriptor;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder$RedirectPipeImpl;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fd", "Ljava/io/FileDescriptor;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RedirectPipeImpl", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Ljava/lang/ProcessBuilder$Redirect$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFd", "()Ljava/io/FileDescriptor;"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/FileDescriptor;", "final")]
@@ -622,10 +623,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.FileDescriptor>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -634,7 +635,7 @@ public partial class ProcessBuilder
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public RedirectPipeImpl() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RedirectPipeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -645,21 +646,21 @@ public partial class ProcessBuilder
 		[JniSignatureAttribute("()Ljava/lang/ProcessBuilder$Redirect$Type;", "public")]
 		public Dova.JDK.java.lang.ProcessBuilder.Redirect.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.Redirect.Type>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String toString()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/io/FileDescriptor;", "")]
 		public Dova.JDK.java.io.FileDescriptor getFd()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.FileDescriptor>(ret);
 		}
 	}
@@ -677,11 +678,11 @@ public partial class ProcessBuilder
 
 		static NullOutputStream()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder$NullOutputStream;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/lang/ProcessBuilder$NullOutputStream;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NullOutputStream", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder$NullOutputStream;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/lang/ProcessBuilder$NullOutputStream;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NullOutputStream", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ProcessBuilder$NullOutputStream;", "static final")]
@@ -689,10 +690,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.NullOutputStream>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -701,7 +702,7 @@ public partial class ProcessBuilder
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NullOutputStream() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NullOutputStream() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -712,7 +713,7 @@ public partial class ProcessBuilder
 		[JniSignatureAttribute("(I)V", "public")]
 		public void write(int arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		}
 	}
 
@@ -729,12 +730,12 @@ public partial class ProcessBuilder
 
 		static NullInputStream()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/ProcessBuilder$NullInputStream;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/lang/ProcessBuilder$NullInputStream;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "NullInputStream", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "read", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "available", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ProcessBuilder$NullInputStream;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/lang/ProcessBuilder$NullInputStream;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NullInputStream", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "available", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ProcessBuilder$NullInputStream;", "static final")]
@@ -742,10 +743,10 @@ public partial class ProcessBuilder
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ProcessBuilder.NullInputStream>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -754,7 +755,7 @@ public partial class ProcessBuilder
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NullInputStream() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NullInputStream() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -765,14 +766,14 @@ public partial class ProcessBuilder
 		[JniSignatureAttribute("()I", "public")]
 		public int read()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int available()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 	}

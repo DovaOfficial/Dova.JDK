@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,26 +28,26 @@ public partial class ReduceOps
 
 	static ReduceOps()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ReduceOps", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(JLjava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(ILjava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/Collector;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeRefCounting", "()Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(DLjava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeIntCounting", "()Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeLongCounting", "()Ljava/util/stream/TerminalOp;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "makeDoubleCounting", "()Ljava/util/stream/TerminalOp;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReduceOps", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(JLjava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeLong", "(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(ILjava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeInt", "(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/stream/Collector;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRef", "(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeRefCounting", "()Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(Ljava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDouble", "(DLjava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeIntCounting", "()Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeLongCounting", "()Ljava/util/stream/TerminalOp;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDoubleCounting", "()Ljava/util/stream/TerminalOp;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,7 +56,7 @@ public partial class ReduceOps
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ReduceOps() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ReduceOps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -66,119 +67,119 @@ public partial class ReduceOps
 	[JniSignatureAttribute("(JLjava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeLong(long arg0, Dova.JDK.java.util.function.LongBinaryOperator arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/LongBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeLong(Dova.JDK.java.util.function.LongBinaryOperator arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Supplier;Ljava/util/function/ObjLongConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeLong(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.ObjLongConsumer arg1, Dova.JDK.java.util.function.BinaryOperator arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(ILjava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeInt(int arg0, Dova.JDK.java.util.function.IntBinaryOperator arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/IntBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeInt(Dova.JDK.java.util.function.IntBinaryOperator arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Supplier;Ljava/util/function/ObjIntConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeInt(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.ObjIntConsumer arg1, Dova.JDK.java.util.function.BinaryOperator arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/stream/Collector;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeRef(Dova.JDK.java.util.stream.Collector arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeRef(Dova.JDK.java.util.function.BinaryOperator arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/util/function/BiFunction;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeRef(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.util.function.BiFunction arg1, Dova.JDK.java.util.function.BinaryOperator arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Supplier;Ljava/util/function/BiConsumer;Ljava/util/function/BiConsumer;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeRef(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.BiConsumer arg1, Dova.JDK.java.util.function.BiConsumer arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeRefCounting()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[10]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[10]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Supplier;Ljava/util/function/ObjDoubleConsumer;Ljava/util/function/BinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeDouble(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.ObjDoubleConsumer arg1, Dova.JDK.java.util.function.BinaryOperator arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[11], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[11], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeDouble(Dova.JDK.java.util.function.DoubleBinaryOperator arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[12], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[12], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("(DLjava/util/function/DoubleBinaryOperator;)Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeDouble(double arg0, Dova.JDK.java.util.function.DoubleBinaryOperator arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[13], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[13], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeIntCounting()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[14]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[14]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeLongCounting()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[15]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[15]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/stream/TerminalOp;", "public static")]
 	public static Dova.JDK.java.util.stream.TerminalOp makeDoubleCounting()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[16]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[16]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.TerminalOp>(ret);
 	}
 
@@ -195,16 +196,16 @@ public partial class ReduceOps
 
 		static ReduceTask()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$ReduceTask;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/ReduceOps$ReduceOp;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ReduceTask", "(Ljava/util/stream/ReduceOps$ReduceOp;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ReduceTask", "(Ljava/util/stream/ReduceOps$ReduceTask;Ljava/util/Spliterator;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/ReduceOps$ReduceTask;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/ReduceOps$AccumulatingSink;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$ReduceTask;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/ReduceOps$ReduceOp;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReduceTask", "(Ljava/util/stream/ReduceOps$ReduceOp;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReduceTask", "(Ljava/util/stream/ReduceOps$ReduceTask;Ljava/util/Spliterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/ReduceOps$ReduceTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/ReduceOps$AccumulatingSink;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/ReduceOps$ReduceOp;", "private final")]
@@ -212,10 +213,10 @@ public partial class ReduceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.ReduceOps.ReduceOp>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -224,12 +225,12 @@ public partial class ReduceOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$ReduceOp;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)V", "")]
-		public ReduceTask(Dova.JDK.java.util.stream.ReduceOps.ReduceOp arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ReduceTask(Dova.JDK.java.util.stream.ReduceOps.ReduceOp arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$ReduceTask;Ljava/util/Spliterator;)V", "")]
-		public ReduceTask(Dova.JDK.java.util.stream.ReduceOps.ReduceTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public ReduceTask(Dova.JDK.java.util.stream.ReduceOps.ReduceTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -240,34 +241,34 @@ public partial class ReduceOps
 		[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;)V", "public")]
 		public void onCompletion(Dova.JDK.java.util.concurrent.CountedCompleter arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;", "protected volatile")]
 		public Dova.JDK.java.util.stream.AbstractTask makeChild_0(Dova.JDK.java.util.Spliterator arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.AbstractTask>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;)Ljava/util/stream/ReduceOps$ReduceTask;", "protected")]
 		public Dova.JDK.java.util.stream.ReduceOps.ReduceTask makeChild_1(Dova.JDK.java.util.Spliterator arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.ReduceOps.ReduceTask>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "protected volatile")]
 		public Dova.JDK.java.lang.Object doLeaf_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/ReduceOps$AccumulatingSink;", "protected")]
 		public Dova.JDK.java.lang.Object doLeaf_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -286,14 +287,14 @@ public partial class ReduceOps
 
 		static ReduceOp()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$ReduceOp;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inputShape", "Ljava/util/stream/StreamShape;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ReduceOp", "(Ljava/util/stream/StreamShape;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "inputShape", "()Ljava/util/stream/StreamShape;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "evaluateParallel", "(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "evaluateSequential", "(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "makeSink", "()Ljava/util/stream/ReduceOps$AccumulatingSink;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$ReduceOp;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inputShape", "Ljava/util/stream/StreamShape;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReduceOp", "(Ljava/util/stream/StreamShape;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "inputShape", "()Ljava/util/stream/StreamShape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "evaluateParallel", "(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "evaluateSequential", "(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSink", "()Ljava/util/stream/ReduceOps$AccumulatingSink;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/StreamShape;", "private final")]
@@ -301,10 +302,10 @@ public partial class ReduceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.StreamShape>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -313,7 +314,7 @@ public partial class ReduceOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/StreamShape;)V", "")]
-		public ReduceOp(Dova.JDK.java.util.stream.StreamShape arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ReduceOp(Dova.JDK.java.util.stream.StreamShape arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -324,28 +325,28 @@ public partial class ReduceOps
 		[JniSignatureAttribute("()Ljava/util/stream/StreamShape;", "public")]
 		public Dova.JDK.java.util.stream.StreamShape inputShape()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.stream.StreamShape>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object evaluateParallel(Dova.JDK.java.util.stream.PipelineHelper arg0, Dova.JDK.java.util.Spliterator arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;)Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object evaluateSequential(Dova.JDK.java.util.stream.PipelineHelper arg0, Dova.JDK.java.util.Spliterator arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/ReduceOps$AccumulatingSink;", "public abstract")]
 		public Dova.JDK.java.lang.Object makeSink()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -363,11 +364,11 @@ public partial class ReduceOps
 
 		static Box()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$Box;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "state", "Ljava/lang/Object;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Box", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$Box;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Box", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "")]
@@ -375,10 +376,10 @@ public partial class ReduceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -387,7 +388,7 @@ public partial class ReduceOps
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Box() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Box() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -398,7 +399,7 @@ public partial class ReduceOps
 		[JniSignatureAttribute("()Ljava/lang/Object;", "public")]
 		public Dova.JDK.java.lang.Object get()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 	}
@@ -415,15 +416,15 @@ public partial class ReduceOps
 
 		static AccumulatingSink()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$AccumulatingSink;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$AccumulatingSink;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public abstract")]
 		void combine(Dova.JDK.java.lang.Object arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 		}
 	}
 
@@ -441,15 +442,15 @@ public partial class ReduceOps
 
 		static CountingSink()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "count", "J"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CountingSink", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get_1", "()Ljava/lang/Long;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "begin", "(J)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$CountingSink;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CountingSink", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_1", "()Ljava/lang/Long;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "begin", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$CountingSink;)V"));
 		}
 
 		[JniSignatureAttribute("J", "")]
@@ -457,10 +458,10 @@ public partial class ReduceOps
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -469,7 +470,7 @@ public partial class ReduceOps
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public CountingSink() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CountingSink() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -480,33 +481,33 @@ public partial class ReduceOps
 		[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 		public Dova.JDK.java.lang.Object get_0()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Long;", "public")]
 		public Dova.JDK.java.lang.Long get_1()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Long>(ret);
 		}
 
 		[JniSignatureAttribute("(J)V", "public")]
 		public void begin(long arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public volatile")]
 		public void combine(Dova.JDK.java.util.stream.ReduceOps.AccumulatingSink arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$CountingSink;)V", "public")]
 		public void combine(Dova.JDK.java.util.stream.ReduceOps.CountingSink arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/ReduceOps$CountingSink$OfDouble;", "static final")]
@@ -522,12 +523,12 @@ public partial class ReduceOps
 
 			static OfDouble()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfDouble;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OfDouble", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(D)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfDouble;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfDouble", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(D)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -536,7 +537,7 @@ public partial class ReduceOps
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public OfDouble() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public OfDouble() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -547,20 +548,20 @@ public partial class ReduceOps
 			[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object get()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(D)V", "public")]
 			public void accept(double arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public volatile")]
 			public void combine(Dova.JDK.java.util.stream.ReduceOps.AccumulatingSink arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -577,12 +578,12 @@ public partial class ReduceOps
 
 			static OfLong()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfLong;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OfLong", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(J)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfLong;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfLong", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(J)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -591,7 +592,7 @@ public partial class ReduceOps
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public OfLong() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public OfLong() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -602,20 +603,20 @@ public partial class ReduceOps
 			[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object get()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(J)V", "public")]
 			public void accept(long arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public volatile")]
 			public void combine(Dova.JDK.java.util.stream.ReduceOps.AccumulatingSink arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -632,12 +633,12 @@ public partial class ReduceOps
 
 			static OfInt()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfInt;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OfInt", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(I)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfInt;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfInt", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -646,7 +647,7 @@ public partial class ReduceOps
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public OfInt() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public OfInt() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -657,20 +658,20 @@ public partial class ReduceOps
 			[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object get()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(I)V", "public")]
 			public void accept(int arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public volatile")]
 			public void combine(Dova.JDK.java.util.stream.ReduceOps.AccumulatingSink arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -686,12 +687,12 @@ public partial class ReduceOps
 
 			static OfRef()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfRef;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OfRef", "()V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/ReduceOps$CountingSink$OfRef;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfRef", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "combine", "(Ljava/util/stream/ReduceOps$AccumulatingSink;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -700,7 +701,7 @@ public partial class ReduceOps
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public OfRef() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public OfRef() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -711,20 +712,20 @@ public partial class ReduceOps
 			[JniSignatureAttribute("()Ljava/lang/Object;", "public volatile")]
 			public Dova.JDK.java.lang.Object get()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/Object;)V", "public")]
 			public void accept(Dova.JDK.java.lang.Object arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljava/util/stream/ReduceOps$AccumulatingSink;)V", "public volatile")]
 			public void combine(Dova.JDK.java.util.stream.ReduceOps.AccumulatingSink arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 	}

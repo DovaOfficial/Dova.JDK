@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,12 +29,12 @@ public partial class TimedWindowEvent
 
 	static TimedWindowEvent()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/TimedWindowEvent;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "time", "J"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TimedWindowEvent", "(Ljava/awt/Window;ILjava/awt/Window;J)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TimedWindowEvent", "(Ljava/awt/Window;ILjava/awt/Window;IIJ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getWhen", "()J"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/TimedWindowEvent;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "time", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TimedWindowEvent", "(Ljava/awt/Window;ILjava/awt/Window;J)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TimedWindowEvent", "(Ljava/awt/Window;ILjava/awt/Window;IIJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWhen", "()J"));
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -41,10 +42,10 @@ public partial class TimedWindowEvent
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -53,12 +54,12 @@ public partial class TimedWindowEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Window;ILjava/awt/Window;J)V", "public")]
-	public TimedWindowEvent(Dova.JDK.java.awt.Window arg0, int arg1, Dova.JDK.java.awt.Window arg2, long arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public TimedWindowEvent(Dova.JDK.java.awt.Window arg0, int arg1, Dova.JDK.java.awt.Window arg2, long arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Window;ILjava/awt/Window;IIJ)V", "public")]
-	public TimedWindowEvent(Dova.JDK.java.awt.Window arg0, int arg1, Dova.JDK.java.awt.Window arg2, int arg3, int arg4, long arg5) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+	public TimedWindowEvent(Dova.JDK.java.awt.Window arg0, int arg1, Dova.JDK.java.awt.Window arg2, int arg3, int arg4, long arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
@@ -69,7 +70,7 @@ public partial class TimedWindowEvent
 	[JniSignatureAttribute("()J", "public")]
 	public long getWhen()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return ret;
 	}
 }

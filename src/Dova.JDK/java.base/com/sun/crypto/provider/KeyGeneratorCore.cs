@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,17 +29,17 @@ public partial class KeyGeneratorCore
 
 	static KeyGeneratorCore()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "defaultKeySize", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "keySize", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "random", "Ljava/security/SecureRandom;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "KeyGeneratorCore", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implInit", "(ILjava/security/SecureRandom;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implInit", "(Ljava/security/SecureRandom;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implGenerateKey", "()Ljavax/crypto/SecretKey;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultKeySize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keySize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "random", "Ljava/security/SecureRandom;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyGeneratorCore", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implInit", "(ILjava/security/SecureRandom;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implInit", "(Ljava/security/SecureRandom;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implGenerateKey", "()Ljavax/crypto/SecretKey;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -46,10 +47,10 @@ public partial class KeyGeneratorCore
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private final")]
@@ -57,10 +58,10 @@ public partial class KeyGeneratorCore
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -68,10 +69,10 @@ public partial class KeyGeneratorCore
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("Ljava/security/SecureRandom;", "private")]
@@ -79,10 +80,10 @@ public partial class KeyGeneratorCore
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.security.SecureRandom>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -91,7 +92,7 @@ public partial class KeyGeneratorCore
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "")]
-	public KeyGeneratorCore(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public KeyGeneratorCore(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -102,25 +103,25 @@ public partial class KeyGeneratorCore
 	[JniSignatureAttribute("(ILjava/security/SecureRandom;)V", "")]
 	public void implInit(int arg0, Dova.JDK.java.security.SecureRandom arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", "")]
 	public void implInit(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0, Dova.JDK.java.security.SecureRandom arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/SecureRandom;)V", "")]
 	public void implInit(Dova.JDK.java.security.SecureRandom arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljavax/crypto/SecretKey;", "")]
 	public Dova.JDK.javax.crypto.SecretKey implGenerateKey()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 
@@ -137,14 +138,14 @@ public partial class KeyGeneratorCore
 
 		static ChaCha20KeyGenerator()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$ChaCha20KeyGenerator;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ChaCha20KeyGenerator", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$ChaCha20KeyGenerator;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ChaCha20KeyGenerator", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/crypto/provider/KeyGeneratorCore;", "private final")]
@@ -152,10 +153,10 @@ public partial class KeyGeneratorCore
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.crypto.provider.KeyGeneratorCore>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -164,7 +165,7 @@ public partial class KeyGeneratorCore
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ChaCha20KeyGenerator() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ChaCha20KeyGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -175,25 +176,25 @@ public partial class KeyGeneratorCore
 		[JniSignatureAttribute("(ILjava/security/SecureRandom;)V", "protected")]
 		public void engineInit(int arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.SecureRandom arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljavax/crypto/SecretKey;", "protected")]
 		public Dova.JDK.javax.crypto.SecretKey engineGenerateKey()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 		}
 	}
@@ -211,14 +212,14 @@ public partial class KeyGeneratorCore
 
 		static ARCFOURKeyGenerator()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$ARCFOURKeyGenerator;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ARCFOURKeyGenerator", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$ARCFOURKeyGenerator;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ARCFOURKeyGenerator", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/crypto/provider/KeyGeneratorCore;", "private final")]
@@ -226,10 +227,10 @@ public partial class KeyGeneratorCore
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.crypto.provider.KeyGeneratorCore>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -238,7 +239,7 @@ public partial class KeyGeneratorCore
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ARCFOURKeyGenerator() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ARCFOURKeyGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -249,25 +250,25 @@ public partial class KeyGeneratorCore
 		[JniSignatureAttribute("(ILjava/security/SecureRandom;)V", "protected")]
 		public void engineInit(int arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.SecureRandom arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljavax/crypto/SecretKey;", "protected")]
 		public Dova.JDK.javax.crypto.SecretKey engineGenerateKey()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 		}
 	}
@@ -285,14 +286,14 @@ public partial class KeyGeneratorCore
 
 		static RC2KeyGenerator()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$RC2KeyGenerator;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RC2KeyGenerator", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$RC2KeyGenerator;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RC2KeyGenerator", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/crypto/provider/KeyGeneratorCore;", "private final")]
@@ -300,10 +301,10 @@ public partial class KeyGeneratorCore
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.crypto.provider.KeyGeneratorCore>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -312,7 +313,7 @@ public partial class KeyGeneratorCore
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public RC2KeyGenerator() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RC2KeyGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -323,25 +324,25 @@ public partial class KeyGeneratorCore
 		[JniSignatureAttribute("(ILjava/security/SecureRandom;)V", "protected")]
 		public void engineInit(int arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.SecureRandom arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljavax/crypto/SecretKey;", "protected")]
 		public Dova.JDK.javax.crypto.SecretKey engineGenerateKey()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 		}
 	}
@@ -359,14 +360,14 @@ public partial class KeyGeneratorCore
 
 		static HmacKG()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HmacKG", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "core", "Lcom/sun/crypto/provider/KeyGeneratorCore;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HmacKG", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(ILjava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "(Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateKey", "()Ljavax/crypto/SecretKey;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/crypto/provider/KeyGeneratorCore;", "private final")]
@@ -374,10 +375,10 @@ public partial class KeyGeneratorCore
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.crypto.provider.KeyGeneratorCore>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -386,7 +387,7 @@ public partial class KeyGeneratorCore
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "protected")]
-		public HmacKG(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public HmacKG(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -397,25 +398,25 @@ public partial class KeyGeneratorCore
 		[JniSignatureAttribute("(ILjava/security/SecureRandom;)V", "protected")]
 		public void engineInit(int arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/spec/AlgorithmParameterSpec;Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.spec.AlgorithmParameterSpec arg0, Dova.JDK.java.security.SecureRandom arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/security/SecureRandom;)V", "protected")]
 		public void engineInit(Dova.JDK.java.security.SecureRandom arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		}
 
 		[JniSignatureAttribute("()Ljavax/crypto/SecretKey;", "protected")]
 		public Dova.JDK.javax.crypto.SecretKey engineGenerateKey()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 		}
 
@@ -430,9 +431,9 @@ public partial class KeyGeneratorCore
 
 			static SHA3_512()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_512;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_512", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_512;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA3_512", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -441,7 +442,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA3_512() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA3_512() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -461,9 +462,9 @@ public partial class KeyGeneratorCore
 
 			static SHA3_384()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_384;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_384", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_384;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA3_384", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -472,7 +473,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA3_384() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA3_384() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -492,9 +493,9 @@ public partial class KeyGeneratorCore
 
 			static SHA3_256()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_256;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_256", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_256;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA3_256", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -503,7 +504,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA3_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA3_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -523,9 +524,9 @@ public partial class KeyGeneratorCore
 
 			static SHA3_224()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_224;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA3_224", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA3_224;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA3_224", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -534,7 +535,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA3_224() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA3_224() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -554,9 +555,9 @@ public partial class KeyGeneratorCore
 
 			static SHA512_256()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512_256;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512_256", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512_256;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA512_256", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -565,7 +566,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA512_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA512_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -585,9 +586,9 @@ public partial class KeyGeneratorCore
 
 			static SHA512_224()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512_224;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512_224", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512_224;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA512_224", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -596,7 +597,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA512_224() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA512_224() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -616,9 +617,9 @@ public partial class KeyGeneratorCore
 
 			static SHA512()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA512", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA512;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA512", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -627,7 +628,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA512() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA512() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -647,9 +648,9 @@ public partial class KeyGeneratorCore
 
 			static SHA384()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA384;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA384", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA384;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA384", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -658,7 +659,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA384() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA384() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -678,9 +679,9 @@ public partial class KeyGeneratorCore
 
 			static SHA256()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA256;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA256", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA256;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA256", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -689,7 +690,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -709,9 +710,9 @@ public partial class KeyGeneratorCore
 
 			static SHA224()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA224;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SHA224", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/KeyGeneratorCore$HmacKG$SHA224;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA224", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -720,7 +721,7 @@ public partial class KeyGeneratorCore
 			}
 
 			[JniSignatureAttribute("()V", "public")]
-			public SHA224() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public SHA224() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 			{
 			}
 

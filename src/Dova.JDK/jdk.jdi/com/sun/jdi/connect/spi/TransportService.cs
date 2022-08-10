@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,17 +28,17 @@ public partial class TransportService
 
 	static TransportService()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TransportService", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;JJ)Lcom/sun/jdi/connect/spi/Connection;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "attach", "(Ljava/lang/String;JJ)Lcom/sun/jdi/connect/spi/Connection;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "description", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "capabilities", "()Lcom/sun/jdi/connect/spi/TransportService$Capabilities;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "startListening", "(Ljava/lang/String;)Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "startListening", "()Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "stopListening", "(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransportService", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;JJ)Lcom/sun/jdi/connect/spi/Connection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "attach", "(Ljava/lang/String;JJ)Lcom/sun/jdi/connect/spi/Connection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "description", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "capabilities", "()Lcom/sun/jdi/connect/spi/TransportService$Capabilities;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startListening", "(Ljava/lang/String;)Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startListening", "()Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopListening", "(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -46,7 +47,7 @@ public partial class TransportService
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public TransportService() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TransportService() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -57,56 +58,56 @@ public partial class TransportService
 	[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
 	public Dova.JDK.java.lang.String name()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;JJ)Lcom/sun/jdi/connect/spi/Connection;", "public abstract")]
 	public Dova.JDK.com.sun.jdi.connect.spi.Connection accept(Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jdi.connect.spi.Connection>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;JJ)Lcom/sun/jdi/connect/spi/Connection;", "public abstract")]
 	public Dova.JDK.com.sun.jdi.connect.spi.Connection attach(Dova.JDK.java.lang.String arg0, long arg1, long arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jdi.connect.spi.Connection>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
 	public Dova.JDK.java.lang.String description()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/jdi/connect/spi/TransportService$Capabilities;", "public abstract")]
 	public Dova.JDK.com.sun.jdi.connect.spi.TransportService.Capabilities capabilities()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jdi.connect.spi.TransportService.Capabilities>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Lcom/sun/jdi/connect/spi/TransportService$ListenKey;", "public abstract")]
 	public Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey startListening(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey>(ret);
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/jdi/connect/spi/TransportService$ListenKey;", "public abstract")]
 	public Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey startListening()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/connect/spi/TransportService$ListenKey;)V", "public abstract")]
 	public void stopListening(Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jdi/connect/spi/TransportService$ListenKey;", "public abstract static")]
@@ -121,10 +122,10 @@ public partial class TransportService
 
 		static ListenKey()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService$ListenKey;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ListenKey", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "address", "()Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService$ListenKey;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ListenKey", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "address", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -133,7 +134,7 @@ public partial class TransportService
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ListenKey() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ListenKey() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -144,7 +145,7 @@ public partial class TransportService
 		[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
 		public Dova.JDK.java.lang.String address()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 	}
@@ -161,13 +162,13 @@ public partial class TransportService
 
 		static Capabilities()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService$Capabilities;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Capabilities", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "supportsAcceptTimeout", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "supportsHandshakeTimeout", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "supportsAttachTimeout", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "supportsMultipleConnections", "()Z"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jdi/connect/spi/TransportService$Capabilities;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Capabilities", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsAcceptTimeout", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsHandshakeTimeout", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsAttachTimeout", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsMultipleConnections", "()Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -176,7 +177,7 @@ public partial class TransportService
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Capabilities() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Capabilities() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -187,28 +188,28 @@ public partial class TransportService
 		[JniSignatureAttribute("()Z", "public abstract")]
 		public bool supportsAcceptTimeout()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]
 		public bool supportsHandshakeTimeout()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]
 		public bool supportsAttachTimeout()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]
 		public bool supportsMultipleConnections()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return ret;
 		}
 	}

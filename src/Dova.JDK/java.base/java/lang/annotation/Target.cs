@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,15 +28,15 @@ public partial interface Target
 
 	static Target()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/annotation/Target;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "value", "()[Ljava/lang/annotation/ElementType;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/annotation/Target;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "value", "()[Ljava/lang/annotation/ElementType;"));
 	}
 
 	[JniSignatureAttribute("()[Ljava/lang/annotation/ElementType;", "public abstract")]
 	JavaArray<Dova.JDK.java.lang.annotation.ElementType> value()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.annotation.ElementType>>(ret);
 	}
 }

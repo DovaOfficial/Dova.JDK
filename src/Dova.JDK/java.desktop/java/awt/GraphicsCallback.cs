@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,9 +27,9 @@ public partial class GraphicsCallback
 
 	static GraphicsCallback()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "GraphicsCallback", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GraphicsCallback", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -37,7 +38,7 @@ public partial class GraphicsCallback
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public GraphicsCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public GraphicsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -58,12 +59,12 @@ public partial class GraphicsCallback
 
 		static PrintHeavyweightComponentsCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PrintHeavyweightComponentsCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintHeavyweightComponentsCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;", "private static")]
@@ -71,10 +72,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintHeavyweightComponentsCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -83,7 +84,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PrintHeavyweightComponentsCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -94,13 +95,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PrintHeavyweightComponentsCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PrintHeavyweightComponentsCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintHeavyweightComponentsCallback>(ret);
 		}
 	}
@@ -118,12 +119,12 @@ public partial class GraphicsCallback
 
 		static PaintHeavyweightComponentsCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PaintHeavyweightComponentsCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintHeavyweightComponentsCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;", "private static")]
@@ -131,10 +132,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintHeavyweightComponentsCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -143,7 +144,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PaintHeavyweightComponentsCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PaintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -154,13 +155,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PaintHeavyweightComponentsCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PaintHeavyweightComponentsCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintHeavyweightComponentsCallback>(ret);
 		}
 	}
@@ -178,12 +179,12 @@ public partial class GraphicsCallback
 
 		static PeerPrintCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PeerPrintCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PeerPrintCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PeerPrintCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PeerPrintCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PeerPrintCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PeerPrintCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PeerPrintCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PeerPrintCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PeerPrintCallback;", "private static")]
@@ -191,10 +192,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PeerPrintCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -203,7 +204,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PeerPrintCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PeerPrintCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -214,13 +215,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PeerPrintCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PeerPrintCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PeerPrintCallback>(ret);
 		}
 	}
@@ -238,12 +239,12 @@ public partial class GraphicsCallback
 
 		static PeerPaintCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PeerPaintCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PeerPaintCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PeerPaintCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PeerPaintCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PeerPaintCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PeerPaintCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PeerPaintCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PeerPaintCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PeerPaintCallback;", "private static")]
@@ -251,10 +252,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PeerPaintCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -263,7 +264,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PeerPaintCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PeerPaintCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -274,13 +275,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PeerPaintCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PeerPaintCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PeerPaintCallback>(ret);
 		}
 	}
@@ -298,12 +299,12 @@ public partial class GraphicsCallback
 
 		static PrintAllCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintAllCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintAllCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PrintAllCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintAllCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintAllCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintAllCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintAllCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintAllCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PrintAllCallback;", "private static")]
@@ -311,10 +312,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintAllCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -323,7 +324,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PrintAllCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrintAllCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -334,13 +335,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PrintAllCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PrintAllCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintAllCallback>(ret);
 		}
 	}
@@ -358,12 +359,12 @@ public partial class GraphicsCallback
 
 		static PaintAllCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintAllCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintAllCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PaintAllCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintAllCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintAllCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintAllCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintAllCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintAllCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PaintAllCallback;", "private static")]
@@ -371,10 +372,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintAllCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -383,7 +384,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PaintAllCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PaintAllCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -394,13 +395,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PaintAllCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PaintAllCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintAllCallback>(ret);
 		}
 	}
@@ -418,12 +419,12 @@ public partial class GraphicsCallback
 
 		static PrintCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PrintCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PrintCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PrintCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PrintCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PrintCallback;", "private static")]
@@ -431,10 +432,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -443,7 +444,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PrintCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrintCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -454,13 +455,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PrintCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PrintCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PrintCallback>(ret);
 		}
 	}
@@ -478,12 +479,12 @@ public partial class GraphicsCallback
 
 		static PaintCallback()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintCallback;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintCallback;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PaintCallback", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintCallback;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GraphicsCallback$PaintCallback;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljava/awt/GraphicsCallback$PaintCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintCallback", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljava/awt/GraphicsCallback$PaintCallback;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/GraphicsCallback$PaintCallback;", "private static")]
@@ -491,10 +492,10 @@ public partial class GraphicsCallback
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintCallback>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -503,7 +504,7 @@ public partial class GraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PaintCallback() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PaintCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -514,13 +515,13 @@ public partial class GraphicsCallback
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Graphics;)V", "public")]
 		public void run(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.Graphics arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/GraphicsCallback$PaintCallback;", "static")]
 		public static Dova.JDK.java.awt.GraphicsCallback.PaintCallback getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.GraphicsCallback.PaintCallback>(ret);
 		}
 	}

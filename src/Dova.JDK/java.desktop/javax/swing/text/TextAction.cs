@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,12 +28,12 @@ public partial class TextAction
 
 	static TextAction()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/TextAction;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TextAction", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "augmentList", "([Ljavax/swing/Action;[Ljavax/swing/Action;)[Ljavax/swing/Action;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getFocusedComponent", "()Ljavax/swing/text/JTextComponent;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTextComponent", "(Ljava/awt/event/ActionEvent;)Ljavax/swing/text/JTextComponent;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/TextAction;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TextAction", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "augmentList", "([Ljavax/swing/Action;[Ljavax/swing/Action;)[Ljavax/swing/Action;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFocusedComponent", "()Ljavax/swing/text/JTextComponent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextComponent", "(Ljava/awt/event/ActionEvent;)Ljavax/swing/text/JTextComponent;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -41,7 +42,7 @@ public partial class TextAction
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public TextAction(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TextAction(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -52,21 +53,21 @@ public partial class TextAction
 	[JniSignatureAttribute("([Ljavax/swing/Action;[Ljavax/swing/Action;)[Ljavax/swing/Action;", "public static final")]
 	public static JavaArray<Dova.JDK.javax.swing.Action> augmentList(JavaArray<Dova.JDK.javax.swing.Action> arg0, JavaArray<Dova.JDK.javax.swing.Action> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.swing.Action>>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/text/JTextComponent;", "protected final")]
 	public Dova.JDK.javax.swing.text.JTextComponent getFocusedComponent()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.JTextComponent>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/event/ActionEvent;)Ljavax/swing/text/JTextComponent;", "protected final")]
 	public Dova.JDK.javax.swing.text.JTextComponent getTextComponent(Dova.JDK.java.awt.@event.ActionEvent arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.JTextComponent>(ret);
 	}
 }

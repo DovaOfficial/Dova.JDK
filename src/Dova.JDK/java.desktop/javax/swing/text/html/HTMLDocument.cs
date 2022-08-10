@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,87 +29,87 @@ public partial class HTMLDocument
 
 	static HTMLDocument()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "frameDocument", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "preservesUnknownTags", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "radioButtonGroupsMap", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TokenThreshold", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MaxThreshold", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "StepThreshold", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "AdditionalComments", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "StyleType", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "base", "Ljava/net/URL;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hasBaseTag", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "baseTarget", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "parser", "Ljavax/swing/text/html/HTMLEditorKit$Parser;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "contentAttributeSet", "Ljavax/swing/text/AttributeSet;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MAP_PROPERTY", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NEWLINE", "[C"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "insertInBody", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "I18NProperty", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "(Ljavax/swing/text/AbstractDocument$Content;Ljavax/swing/text/html/StyleSheet;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "(Ljavax/swing/text/html/StyleSheet;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insert", "(I[Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "replace", "(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/Element;IIIIZZ)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getIterator", "(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "create", "([Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMap", "(Ljava/lang/String;)Ljavax/swing/text/html/Map;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBase", "()Ljava/net/URL;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljava/lang/String;)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;Z)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setParser", "(Ljavax/swing/text/html/HTMLEditorKit$Parser;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setBase", "(Ljava/net/URL;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getReader", "(I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getReader", "(IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getReader", "(IIILjavax/swing/text/html/HTML$Tag;Z)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setFrameDocumentState", "(Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "processHTMLFrameHyperlinkEvent", "(Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setTokenThreshold", "(I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertHTML", "(Ljavax/swing/text/Element;ILjava/lang/String;Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "access$000", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "access$100", "(Ljavax/swing/text/html/HTMLDocument;)Ljavax/swing/text/AbstractDocument$Content;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "access$200", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "access$300", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/event/DocumentEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getParser", "()Ljavax/swing/text/html/HTMLEditorKit$Parser;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertUpdate", "(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "updateFrame", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getBaseTarget", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "hasBaseTag", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "updateFrameSet", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "findFrame", "(Ljava/lang/String;)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "installParserIfNecessary", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setOuterHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "verifyParser", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "removeElementsAtEnd", "(Ljavax/swing/text/Element;IIII)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTokenThreshold", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setPreservesUnknownTags", "(Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getPreservesUnknownTags", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addMap", "(Ljavax/swing/text/html/Map;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "removeMap", "(Ljavax/swing/text/html/Map;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMaps", "()Ljava/util/Enumeration;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setDefaultStyleSheetType", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getDefaultStyleSheetType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setInnerHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertAfterStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertBeforeEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertBeforeStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertAfterEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "obtainLock", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "releaseLock", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setParagraphAttributes", "(IILjavax/swing/text/AttributeSet;Z)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "removeElements", "(Ljavax/swing/text/Element;II)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "removeElements", "(Ljavax/swing/text/Element;IIII)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStyleSheet", "()Ljavax/swing/text/html/StyleSheet;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isFrameDocument", "()Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "matchNameAttribute", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/html/HTML$Tag;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createDefaultRoot", "()Ljavax/swing/text/AbstractDocument$AbstractElement;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createBranchElement", "(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createLeafElement", "(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fireUndoableEditUpdate", "(Ljavax/swing/event/UndoableEditEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fireChangedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameDocument", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "preservesUnknownTags", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "radioButtonGroupsMap", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TokenThreshold", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MaxThreshold", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "StepThreshold", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AdditionalComments", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "StyleType", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "base", "Ljava/net/URL;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasBaseTag", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseTarget", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parser", "Ljavax/swing/text/html/HTMLEditorKit$Parser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "contentAttributeSet", "Ljavax/swing/text/AttributeSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAP_PROPERTY", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEWLINE", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insertInBody", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "I18NProperty", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "(Ljavax/swing/text/AbstractDocument$Content;Ljavax/swing/text/html/StyleSheet;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "(Ljavax/swing/text/html/StyleSheet;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLDocument", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insert", "(I[Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "replace", "(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/Element;IIIIZZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIterator", "(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "([Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMap", "(Ljava/lang/String;)Ljavax/swing/text/html/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBase", "()Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljava/lang/String;)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;Z)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParser", "(Ljavax/swing/text/html/HTMLEditorKit$Parser;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBase", "(Ljava/net/URL;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReader", "(I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReader", "(IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReader", "(IIILjavax/swing/text/html/HTML$Tag;Z)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFrameDocumentState", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processHTMLFrameHyperlinkEvent", "(Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTokenThreshold", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertHTML", "(Ljavax/swing/text/Element;ILjava/lang/String;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$000", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$100", "(Ljavax/swing/text/html/HTMLDocument;)Ljavax/swing/text/AbstractDocument$Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$200", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$300", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/event/DocumentEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParser", "()Ljavax/swing/text/html/HTMLEditorKit$Parser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertUpdate", "(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateFrame", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseTarget", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasBaseTag", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateFrameSet", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findFrame", "(Ljava/lang/String;)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installParserIfNecessary", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOuterHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifyParser", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeElementsAtEnd", "(Ljavax/swing/text/Element;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTokenThreshold", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPreservesUnknownTags", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPreservesUnknownTags", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addMap", "(Ljavax/swing/text/html/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeMap", "(Ljavax/swing/text/html/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaps", "()Ljava/util/Enumeration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDefaultStyleSheetType", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultStyleSheetType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInnerHTML", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAfterStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertBeforeEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertBeforeStart", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAfterEnd", "(Ljavax/swing/text/Element;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "obtainLock", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseLock", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParagraphAttributes", "(IILjavax/swing/text/AttributeSet;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeElements", "(Ljavax/swing/text/Element;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeElements", "(Ljavax/swing/text/Element;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStyleSheet", "()Ljavax/swing/text/html/StyleSheet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isFrameDocument", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "matchNameAttribute", "(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/html/HTML$Tag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDefaultRoot", "()Ljavax/swing/text/AbstractDocument$AbstractElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBranchElement", "(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLeafElement", "(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireUndoableEditUpdate", "(Ljavax/swing/event/UndoableEditEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireChangedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -116,10 +117,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -127,10 +128,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("Ljava/util/HashMap;", "private")]
@@ -138,10 +139,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashMap>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -149,10 +150,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -160,10 +161,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -171,10 +172,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -182,10 +183,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -193,10 +194,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/net/URL;", "")]
@@ -204,10 +205,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.net.URL>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -215,10 +216,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -226,10 +227,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/html/HTMLEditorKit$Parser;", "private")]
@@ -237,10 +238,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLEditorKit.Parser>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/AttributeSet;", "private static")]
@@ -248,10 +249,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static")]
@@ -259,10 +260,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("[C", "private static")]
@@ -270,10 +271,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<JavaArray<char>>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -281,10 +282,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -292,10 +293,10 @@ public partial class HTMLDocument
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -304,17 +305,17 @@ public partial class HTMLDocument
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/AbstractDocument$Content;Ljavax/swing/text/html/StyleSheet;)V", "public")]
-	public HTMLDocument(Dova.JDK.javax.swing.text.AbstractDocument.Content arg0, Dova.JDK.javax.swing.text.html.StyleSheet arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public HTMLDocument(Dova.JDK.javax.swing.text.AbstractDocument.Content arg0, Dova.JDK.javax.swing.text.html.StyleSheet arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/StyleSheet;)V", "public")]
-	public HTMLDocument(Dova.JDK.javax.swing.text.html.StyleSheet arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public HTMLDocument(Dova.JDK.javax.swing.text.html.StyleSheet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HTMLDocument() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2]))
+	public HTMLDocument() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2]))
 	{
 	}
 
@@ -325,379 +326,379 @@ public partial class HTMLDocument
 	[JniSignatureAttribute("(I[Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V", "protected")]
 	public void insert(int arg0, JavaArray<Dova.JDK.javax.swing.text.DefaultStyledDocument.ElementSpec> arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/Element;IIIIZZ)V", "private")]
 	public void replace(Dova.JDK.javax.swing.text.AbstractDocument.DefaultDocumentEvent arg0, Dova.JDK.javax.swing.text.Element arg1, int arg2, int arg3, int arg4, int arg5, bool arg6, bool arg7)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLDocument$Iterator;", "public")]
 	public Dova.JDK.javax.swing.text.html.HTMLDocument.Iterator getIterator(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.Iterator>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljavax/swing/text/DefaultStyledDocument$ElementSpec;)V", "protected")]
 	public void create(JavaArray<Dova.JDK.javax.swing.text.DefaultStyledDocument.ElementSpec> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljavax/swing/text/html/Map;", "")]
 	public Dova.JDK.javax.swing.text.html.Map getMap(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.Map>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/net/URL;", "public")]
 	public Dova.JDK.java.net.URL getBase()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.net.URL>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljavax/swing/text/Element;", "public")]
 	public Dova.JDK.javax.swing.text.Element getElement(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;Z)Ljavax/swing/text/Element;", "private")]
 	public Dova.JDK.javax.swing.text.Element getElement(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2, bool arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/Object;Ljava/lang/Object;)Ljavax/swing/text/Element;", "public")]
 	public Dova.JDK.javax.swing.text.Element getElement(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLEditorKit$Parser;)V", "public")]
 	public void setParser(Dova.JDK.javax.swing.text.html.HTMLEditorKit.Parser arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;)V", "public")]
 	public void setBase(Dova.JDK.java.net.URL arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10], arg0);
 	}
 
 	[JniSignatureAttribute("(I)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;", "public")]
 	public Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback getReader(int arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[11], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback>(ret);
 	}
 
 	[JniSignatureAttribute("(IIILjavax/swing/text/html/HTML$Tag;)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;", "public")]
 	public Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback getReader(int arg0, int arg1, int arg2, Dova.JDK.javax.swing.text.html.HTML.Tag arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[12], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback>(ret);
 	}
 
 	[JniSignatureAttribute("(IIILjavax/swing/text/html/HTML$Tag;Z)Ljavax/swing/text/html/HTMLEditorKit$ParserCallback;", "")]
 	public Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback getReader(int arg0, int arg1, int arg2, Dova.JDK.javax.swing.text.html.HTML.Tag arg3, bool arg4)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2, arg3, arg4);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0, arg1, arg2, arg3, arg4);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLEditorKit.ParserCallback>(ret);
 	}
 
 	[JniSignatureAttribute("(Z)V", "")]
 	public void setFrameDocumentState(bool arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLFrameHyperlinkEvent;)V", "public")]
 	public void processHTMLFrameHyperlinkEvent(Dova.JDK.javax.swing.text.html.HTMLFrameHyperlinkEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
 	public void setTokenThreshold(int arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;ILjava/lang/String;Z)V", "private")]
 	public void insertHTML(Dova.JDK.javax.swing.text.Element arg0, int arg1, Dova.JDK.java.lang.String arg2, bool arg3)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0, arg1, arg2, arg3);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0, arg1, arg2, arg3);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V", "static")]
 	public static void access_000(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.AbstractDocument.DefaultDocumentEvent arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[18], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[18], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;)Ljavax/swing/text/AbstractDocument$Content;", "static")]
 	public static Dova.JDK.javax.swing.text.AbstractDocument.Content access_100(Dova.JDK.javax.swing.text.html.HTMLDocument arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[19], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[19], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AbstractDocument.Content>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;)V", "static")]
 	public static void access_200(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.AbstractDocument.DefaultDocumentEvent arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[20], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[20], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/event/DocumentEvent;)V", "static")]
 	public static void access_300(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.@event.DocumentEvent arg1)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[21], arg0, arg1);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[21], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/text/html/HTMLEditorKit$Parser;", "public")]
 	public Dova.JDK.javax.swing.text.html.HTMLEditorKit.Parser getParser()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[22]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLEditorKit.Parser>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/AbstractDocument$DefaultDocumentEvent;Ljavax/swing/text/AttributeSet;)V", "protected")]
 	public void insertUpdate(Dova.JDK.javax.swing.text.AbstractDocument.DefaultDocumentEvent arg0, Dova.JDK.javax.swing.text.AttributeSet arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[23], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[23], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "private")]
 	public void updateFrame(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[24], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[24], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String getBaseTarget()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[25]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[25]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Z", "")]
 	public bool hasBaseTag()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[26]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[26]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "private")]
 	public void updateFrameSet(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[27], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[27], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljavax/swing/text/Element;", "private")]
 	public Dova.JDK.javax.swing.text.Element findFrame(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[28], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[28], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "private")]
 	public void installParserIfNecessary()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[29]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[29]);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void setOuterHTML(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[30], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[30], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()V", "private")]
 	public void verifyParser()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[31]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[31]);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;IIII)V", "private")]
 	public void removeElementsAtEnd(Dova.JDK.javax.swing.text.Element arg0, int arg1, int arg2, int arg3, int arg4)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[32], arg0, arg1, arg2, arg3, arg4);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[32], arg0, arg1, arg2, arg3, arg4);
 	}
 
 	[JniSignatureAttribute("()I", "public")]
 	public int getTokenThreshold()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[33]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[33]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Z)V", "public")]
 	public void setPreservesUnknownTags(bool arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[34], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[34], arg0);
 	}
 
 	[JniSignatureAttribute("()Z", "public")]
 	public bool getPreservesUnknownTags()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[35]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[35]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/Map;)V", "")]
 	public void addMap(Dova.JDK.javax.swing.text.html.Map arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[36], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[36], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/Map;)V", "")]
 	public void removeMap(Dova.JDK.javax.swing.text.html.Map arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[37], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[37], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/Enumeration;", "")]
 	public Dova.JDK.java.util.Enumeration getMaps()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[38]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[38]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Enumeration>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
 	public void setDefaultStyleSheetType(Dova.JDK.java.lang.String arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[39], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[39], arg0);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "")]
 	public Dova.JDK.java.lang.String getDefaultStyleSheetType()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[40]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[40]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void setInnerHTML(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[41], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[41], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void insertAfterStart(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[42], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[42], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void insertBeforeEnd(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[43], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[43], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void insertBeforeStart(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[44], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[44], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljava/lang/String;)V", "public")]
 	public void insertAfterEnd(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.java.lang.String arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[45], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[45], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("()V", "")]
 	public void obtainLock()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[46]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[46]);
 	}
 
 	[JniSignatureAttribute("()V", "")]
 	public void releaseLock()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[47]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[47]);
 	}
 
 	[JniSignatureAttribute("(IILjavax/swing/text/AttributeSet;Z)V", "public")]
 	public void setParagraphAttributes(int arg0, int arg1, Dova.JDK.javax.swing.text.AttributeSet arg2, bool arg3)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[48], arg0, arg1, arg2, arg3);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[48], arg0, arg1, arg2, arg3);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;II)V", "private")]
 	public void removeElements(Dova.JDK.javax.swing.text.Element arg0, int arg1, int arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[49], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[49], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;IIII)V", "private")]
 	public void removeElements(Dova.JDK.javax.swing.text.Element arg0, int arg1, int arg2, int arg3, int arg4)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[50], arg0, arg1, arg2, arg3, arg4);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[50], arg0, arg1, arg2, arg3, arg4);
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/text/html/StyleSheet;", "public")]
 	public Dova.JDK.javax.swing.text.html.StyleSheet getStyleSheet()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[51]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[51]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.StyleSheet>(ret);
 	}
 
 	[JniSignatureAttribute("()Z", "")]
 	public bool isFrameDocument()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[52]);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[52]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/AttributeSet;Ljavax/swing/text/html/HTML$Tag;)Z", "static")]
 	public static bool matchNameAttribute(Dova.JDK.javax.swing.text.AttributeSet arg0, Dova.JDK.javax.swing.text.html.HTML.Tag arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[53], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[53], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Ljavax/swing/text/AbstractDocument$AbstractElement;", "protected")]
 	public Dova.JDK.javax.swing.text.AbstractDocument.AbstractElement createDefaultRoot()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[54]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[54]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AbstractDocument.AbstractElement>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)Ljavax/swing/text/Element;", "protected")]
 	public Dova.JDK.javax.swing.text.Element createBranchElement(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.javax.swing.text.AttributeSet arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[55], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[55], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)Ljavax/swing/text/Element;", "protected")]
 	public Dova.JDK.javax.swing.text.Element createLeafElement(Dova.JDK.javax.swing.text.Element arg0, Dova.JDK.javax.swing.text.AttributeSet arg1, int arg2, int arg3)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[56], arg0, arg1, arg2, arg3);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[56], arg0, arg1, arg2, arg3);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/UndoableEditEvent;)V", "protected")]
 	public void fireUndoableEditUpdate(Dova.JDK.javax.swing.@event.UndoableEditEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[57], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[57], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/DocumentEvent;)V", "protected")]
 	public void fireChangedUpdate(Dova.JDK.javax.swing.@event.DocumentEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[58], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[58], arg0);
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "public")]
@@ -713,79 +714,79 @@ public partial class HTMLDocument
 
 		static HTMLReader()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "receivedEndHTML", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "flushCount", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "insertAfterImplied", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "wantsTrailingNewline", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "threshold", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inParagraph", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "impliedP", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inPre", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inTextArea", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "textAreaDocument", "Ljavax/swing/text/html/TextAreaDocument;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inTitle", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lastWasNewline", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "emptyAnchor", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "midInsert", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inBody", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "insertTag", "Ljavax/swing/text/html/HTML$Tag;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "insertInsertTag", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "foundInsertTag", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "insertTagDepthDelta", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "popDepth", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pushDepth", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lastMap", "Ljavax/swing/text/html/Map;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inStyle", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "defaultStyle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "styles", "Ljava/util/Vector;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inHead", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "isStyleCSS", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "emptyDocument", "Z"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "styleAttributes", "Ljavax/swing/text/AttributeSet;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "option", "Ljavax/swing/text/html/Option;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "parseBuffer", "Ljava/util/Vector;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "charAttr", "Ljavax/swing/text/MutableAttributeSet;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "charAttrStack", "Ljava/util/Stack;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "tagMap", "Ljava/util/Hashtable;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "inBlock", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "nextTagAfterPImplied", "Ljavax/swing/text/html/HTML$Tag;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;ZZZ)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "flushBuffer", "(Z)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addContent", "([CIIZ)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addContent", "([CII)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleComment", "([CI)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleStartTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleEndTag", "(Ljavax/swing/text/html/HTML$Tag;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleSimpleTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleEndOfLineString", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "foundInsertTag", "(Z)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "generateEndsSpecsForMidInsert", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "heightToElementWithName", "(Ljava/lang/Object;I)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "depthTo", "(I)I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getPathTo", "(I)[Ljavax/swing/text/Element;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "adjustEndElement", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "textAreaContent", "([C)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "preContent", "([C)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addExternalComment", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addSpecialElement", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "blockClose", "(Ljavax/swing/text/html/HTML$Tag;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "blockOpen", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "canInsertTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/AttributeSet;Z)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "pushCharacterStyle", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "popCharacterStyle", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "adjustEndSpecsForPartialInsert", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isInsertTag", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "registerTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addCSSRules", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "linkCSSStyleSheet", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleText", "([CI)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "receivedEndHTML", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flushCount", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insertAfterImplied", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wantsTrailingNewline", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "threshold", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inParagraph", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "impliedP", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inPre", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inTextArea", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "textAreaDocument", "Ljavax/swing/text/html/TextAreaDocument;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inTitle", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastWasNewline", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "emptyAnchor", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "midInsert", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inBody", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insertTag", "Ljavax/swing/text/html/HTML$Tag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insertInsertTag", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "foundInsertTag", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insertTagDepthDelta", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popDepth", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pushDepth", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastMap", "Ljavax/swing/text/html/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inStyle", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultStyle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "styles", "Ljava/util/Vector;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inHead", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isStyleCSS", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "emptyDocument", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "styleAttributes", "Ljavax/swing/text/AttributeSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "option", "Ljavax/swing/text/html/Option;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parseBuffer", "Ljava/util/Vector;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "charAttr", "Ljavax/swing/text/MutableAttributeSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "charAttrStack", "Ljava/util/Stack;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tagMap", "Ljava/util/Hashtable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inBlock", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextTagAfterPImplied", "Ljavax/swing/text/html/HTML$Tag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;ZZZ)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HTMLReader", "(Ljavax/swing/text/html/HTMLDocument;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flushBuffer", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContent", "([CIIZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContent", "([CII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleComment", "([CI)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleStartTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleEndTag", "(Ljavax/swing/text/html/HTML$Tag;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleSimpleTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleEndOfLineString", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "foundInsertTag", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateEndsSpecsForMidInsert", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "heightToElementWithName", "(Ljava/lang/Object;I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "depthTo", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPathTo", "(I)[Ljavax/swing/text/Element;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjustEndElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "textAreaContent", "([C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "preContent", "([C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addExternalComment", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addSpecialElement", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "blockClose", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "blockOpen", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canInsertTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/AttributeSet;Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushCharacterStyle", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "popCharacterStyle", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjustEndSpecsForPartialInsert", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInsertTag", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerTag", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addCSSRules", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "linkCSSStyleSheet", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleText", "([CI)V"));
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -793,10 +794,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -804,10 +805,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -815,10 +816,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -826,10 +827,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -837,10 +838,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -848,10 +849,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -859,10 +860,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -870,10 +871,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -881,10 +882,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -892,10 +893,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/TextAreaDocument;", "")]
@@ -903,10 +904,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.TextAreaDocument>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -914,10 +915,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[11]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -925,10 +926,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[12]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[12]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -936,10 +937,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[13]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[13]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -947,10 +948,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[14]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[14]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -958,10 +959,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTML$Tag;", "")]
@@ -969,10 +970,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTML.Tag>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -980,10 +981,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[17]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[17]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[17], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[17], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -991,10 +992,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1002,10 +1003,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[19]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[19]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1013,10 +1014,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[20]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[20]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1024,10 +1025,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[21]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[21]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[21], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[21], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/Map;", "")]
@@ -1035,10 +1036,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.Map>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -1046,10 +1047,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[23]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[23]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "")]
@@ -1057,10 +1058,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Vector;", "")]
@@ -1068,10 +1069,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -1079,10 +1080,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[26]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[26]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[26], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[26], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -1090,10 +1091,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[27]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[27]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[27], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[27], value);
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -1101,10 +1102,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[28]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[28]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[28], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[28], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/AttributeSet;", "")]
@@ -1112,10 +1113,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/Option;", "")]
@@ -1123,10 +1124,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[30]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[30]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.Option>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Vector;", "protected")]
@@ -1134,10 +1135,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[31]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[31]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/MutableAttributeSet;", "protected")]
@@ -1145,10 +1146,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[32]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[32]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.MutableAttributeSet>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[32], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[32], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Stack;", "")]
@@ -1156,10 +1157,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[33]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[33]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Stack>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[33], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[33], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/util/Hashtable;", "")]
@@ -1167,10 +1168,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Hashtable>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1178,10 +1179,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[35]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[35]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[35], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[35], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTML$Tag;", "private")]
@@ -1189,10 +1190,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[36]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[36]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTML.Tag>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument;", "final")]
@@ -1200,10 +1201,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[37]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[37]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1212,17 +1213,17 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;ZZZ)V", "")]
-		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1, int arg2, int arg3, Dova.JDK.javax.swing.text.html.HTML.Tag arg4, bool arg5, bool arg6, bool arg7) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1, int arg2, int arg3, Dova.JDK.javax.swing.text.html.HTML.Tag arg4, bool arg5, bool arg6, bool arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;IIILjavax/swing/text/html/HTML$Tag;)V", "public")]
-		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1, int arg2, int arg3, Dova.JDK.javax.swing.text.html.HTML.Tag arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1, int arg2, int arg3, Dova.JDK.javax.swing.text.html.HTML.Tag arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;I)V", "public")]
-		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+		public HTMLReader(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
 		{
 		}
 
@@ -1233,186 +1234,186 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("()V", "public")]
 		public void flush()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("(Z)V", "")]
 		public void flushBuffer(bool arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		}
 
 		[JniSignatureAttribute("([CIIZ)V", "protected")]
 		public void addContent(JavaArray<char> arg0, int arg1, int arg2, bool arg3)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2, arg3);
 		}
 
 		[JniSignatureAttribute("([CII)V", "protected")]
 		public void addContent(JavaArray<char> arg0, int arg1, int arg2)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1, arg2);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0, arg1, arg2);
 		}
 
 		[JniSignatureAttribute("([CI)V", "public")]
 		public void handleComment(JavaArray<char> arg0, int arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", "public")]
 		public void handleStartTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1, int arg2)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1, arg2);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;I)V", "public")]
 		public void handleEndTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, int arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;I)V", "public")]
 		public void handleSimpleTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1, int arg2)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1, arg2);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
 		public void handleEndOfLineString(Dova.JDK.java.lang.String arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[8], arg0);
 		}
 
 		[JniSignatureAttribute("(Z)V", "private")]
 		public void foundInsertTag(bool arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[9], arg0);
 		}
 
 		[JniSignatureAttribute("()V", "private")]
 		public void generateEndsSpecsForMidInsert()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[10]);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;I)I", "private")]
 		public int heightToElementWithName(Dova.JDK.java.lang.Object arg0, int arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[11], arg0, arg1);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(I)I", "private")]
 		public int depthTo(int arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[12], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(I)[Ljavax/swing/text/Element;", "private")]
 		public JavaArray<Dova.JDK.javax.swing.text.Element> getPathTo(int arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[13], arg0);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.swing.text.Element>>(ret);
 		}
 
 		[JniSignatureAttribute("()V", "private")]
 		public void adjustEndElement()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[14]);
 		}
 
 		[JniSignatureAttribute("([C)V", "protected")]
 		public void textAreaContent(JavaArray<char> arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[15], arg0);
 		}
 
 		[JniSignatureAttribute("([C)V", "protected")]
 		public void preContent(JavaArray<char> arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[16], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
 		public void addExternalComment(Dova.JDK.java.lang.String arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[17], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "protected")]
 		public void addSpecialElement(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[18], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[18], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "protected")]
 		public void blockClose(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[19], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "protected")]
 		public void blockOpen(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[20], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[20], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/AttributeSet;Z)Z", "private")]
 		public bool canInsertTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.AttributeSet arg1, bool arg2)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[21], arg0, arg1, arg2);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[21], arg0, arg1, arg2);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
 		public void pushCharacterStyle()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[22]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[22]);
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
 		public void popCharacterStyle()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[23]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[23]);
 		}
 
 		[JniSignatureAttribute("()V", "private")]
 		public void adjustEndSpecsForPartialInsert()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[24]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[24]);
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "private")]
 		public bool isInsertTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[25], arg0);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[25], arg0);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;)V", "protected")]
 		public void registerTag(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader.TagAction arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[26], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[26], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
 		public void addCSSRules(Dova.JDK.java.lang.String arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[27], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[27], arg0);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
 		public void linkCSSStyleSheet(Dova.JDK.java.lang.String arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[28], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[28], arg0);
 		}
 
 		[JniSignatureAttribute("([CI)V", "public")]
 		public void handleText(JavaArray<char> arg0, int arg1)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[29], arg0, arg1);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[29], arg0, arg1);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;", "public")]
@@ -1427,11 +1428,11 @@ public partial class HTMLDocument
 
 			static TagAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TagAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$TagAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TagAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1440,7 +1441,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public TagAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public TagAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1451,13 +1452,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1474,12 +1475,12 @@ public partial class HTMLDocument
 
 			static BlockAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$BlockAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "BlockAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$BlockAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BlockAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1487,10 +1488,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1499,7 +1500,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public BlockAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public BlockAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1510,13 +1511,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1533,12 +1534,12 @@ public partial class HTMLDocument
 
 			static ParagraphAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ParagraphAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ParagraphAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ParagraphAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ParagraphAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1546,10 +1547,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1558,7 +1559,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public ParagraphAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ParagraphAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1569,13 +1570,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1592,12 +1593,12 @@ public partial class HTMLDocument
 
 			static CharacterAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$CharacterAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CharacterAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$CharacterAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CharacterAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1605,10 +1606,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1617,7 +1618,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public CharacterAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public CharacterAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1628,13 +1629,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1651,11 +1652,11 @@ public partial class HTMLDocument
 
 			static SpecialAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$SpecialAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SpecialAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$SpecialAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SpecialAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1663,10 +1664,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1675,7 +1676,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public SpecialAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public SpecialAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1686,7 +1687,7 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 		}
 
@@ -1703,15 +1704,15 @@ public partial class HTMLDocument
 
 			static FormAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$FormAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "selectModel", "Ljava/lang/Object;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "optionCount", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FormAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setModel", "(Ljava/lang/String;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$FormAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selectModel", "Ljava/lang/Object;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "optionCount", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FormAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setModel", "(Ljava/lang/String;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/Object;", "")]
@@ -1719,10 +1720,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("I", "")]
@@ -1730,10 +1731,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1741,10 +1742,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1753,7 +1754,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public FormAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public FormAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1764,19 +1765,19 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Ljavax/swing/text/MutableAttributeSet;)V", "")]
 			public void setModel(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 			}
 		}
 
@@ -1793,13 +1794,13 @@ public partial class HTMLDocument
 
 			static HiddenAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$HiddenAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HiddenAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$HiddenAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HiddenAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1807,10 +1808,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1819,7 +1820,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public HiddenAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public HiddenAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1830,20 +1831,20 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "")]
 			public bool isEmpty(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -1860,12 +1861,12 @@ public partial class HTMLDocument
 
 			static ConvertAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ConvertAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ConvertAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ConvertAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConvertAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1873,10 +1874,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1885,7 +1886,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public ConvertAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ConvertAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1896,13 +1897,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1919,12 +1920,12 @@ public partial class HTMLDocument
 
 			static AnchorAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$AnchorAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AnchorAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$AnchorAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnchorAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1932,10 +1933,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1944,7 +1945,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public AnchorAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public AnchorAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1955,13 +1956,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -1978,12 +1979,12 @@ public partial class HTMLDocument
 
 			static AreaAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$AreaAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AreaAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$AreaAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AreaAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -1991,10 +1992,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2003,7 +2004,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public AreaAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public AreaAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2014,13 +2015,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -2037,11 +2038,11 @@ public partial class HTMLDocument
 
 			static BaseAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$BaseAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "BaseAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$BaseAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaseAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2049,10 +2050,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2061,7 +2062,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public BaseAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public BaseAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2072,7 +2073,7 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 		}
 
@@ -2089,12 +2090,12 @@ public partial class HTMLDocument
 
 			static FormTagAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$FormTagAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FormTagAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$FormTagAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FormTagAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2102,10 +2103,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2114,7 +2115,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "private")]
-			public FormTagAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public FormTagAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2125,13 +2126,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -2148,14 +2149,14 @@ public partial class HTMLDocument
 
 			static HeadAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$HeadAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HeadAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleLink", "(Ljavax/swing/text/AttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$HeadAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HeadAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleLink", "(Ljavax/swing/text/AttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2163,10 +2164,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2175,7 +2176,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public HeadAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public HeadAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2186,26 +2187,26 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "")]
 			public bool isEmpty(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/AttributeSet;)V", "private")]
 			public void handleLink(Dova.JDK.javax.swing.text.AttributeSet arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			}
 		}
 
@@ -2222,11 +2223,11 @@ public partial class HTMLDocument
 
 			static IsindexAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$IsindexAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "IsindexAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$IsindexAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IsindexAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2234,10 +2235,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2246,7 +2247,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public IsindexAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public IsindexAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2257,7 +2258,7 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 		}
 
@@ -2274,11 +2275,11 @@ public partial class HTMLDocument
 
 			static LinkAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$LinkAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "LinkAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$LinkAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LinkAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2286,10 +2287,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2298,7 +2299,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public LinkAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public LinkAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2309,7 +2310,7 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 		}
 
@@ -2326,12 +2327,12 @@ public partial class HTMLDocument
 
 			static MapAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$MapAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MapAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$MapAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MapAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2339,10 +2340,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2351,7 +2352,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public MapAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public MapAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2362,13 +2363,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -2385,12 +2386,12 @@ public partial class HTMLDocument
 
 			static MetaAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$MetaAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "MetaAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$MetaAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MetaAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2398,10 +2399,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2410,7 +2411,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public MetaAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public MetaAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2421,14 +2422,14 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "")]
 			public bool isEmpty(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 		}
 
@@ -2445,13 +2446,13 @@ public partial class HTMLDocument
 
 			static ObjectAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ObjectAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ObjectAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addParameter", "(Ljavax/swing/text/AttributeSet;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$ObjectAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addParameter", "(Ljavax/swing/text/AttributeSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2459,10 +2460,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2471,7 +2472,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public ObjectAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ObjectAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2482,19 +2483,19 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/AttributeSet;)V", "")]
 			public void addParameter(Dova.JDK.javax.swing.text.AttributeSet arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -2511,12 +2512,12 @@ public partial class HTMLDocument
 
 			static PreAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$PreAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PreAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$PreAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PreAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2524,10 +2525,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2536,7 +2537,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "public")]
-			public PreAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public PreAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2547,13 +2548,13 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			}
 		}
 
@@ -2570,13 +2571,13 @@ public partial class HTMLDocument
 
 			static StyleAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$StyleAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StyleAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$StyleAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StyleAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2584,10 +2585,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2596,7 +2597,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public StyleAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public StyleAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2607,20 +2608,20 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "")]
 			public bool isEmpty(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 
@@ -2637,13 +2638,13 @@ public partial class HTMLDocument
 
 			static TitleAction()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$TitleAction;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TitleAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$HTMLReader$TitleAction;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljavax/swing/text/html/HTMLDocument$HTMLReader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TitleAction", "(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "(Ljavax/swing/text/html/HTML$Tag;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljavax/swing/text/html/HTML$Tag;)V"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument$HTMLReader;", "final")]
@@ -2651,10 +2652,10 @@ public partial class HTMLDocument
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2663,7 +2664,7 @@ public partial class HTMLDocument
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument$HTMLReader;)V", "")]
-			public TitleAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public TitleAction(Dova.JDK.javax.swing.text.html.HTMLDocument.HTMLReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -2674,20 +2675,20 @@ public partial class HTMLDocument
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)Z", "")]
 			public bool isEmpty(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/MutableAttributeSet;)V", "public")]
 			public void start(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.MutableAttributeSet arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;)V", "public")]
 			public void end(Dova.JDK.javax.swing.text.html.HTML.Tag arg0)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			}
 		}
 	}
@@ -2705,20 +2706,20 @@ public partial class HTMLDocument
 
 		static LeafIterator()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$LeafIterator;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "endOffset", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "tag", "Ljavax/swing/text/html/HTML$Tag;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "pos", "Ljavax/swing/text/ElementIterator;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "LeafIterator", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/Document;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/swing/text/AttributeSet;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isValid", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTag", "()Ljavax/swing/text/html/HTML$Tag;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStartOffset", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "nextLeaf", "(Ljavax/swing/text/ElementIterator;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setEndOffset", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEndOffset", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$LeafIterator;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endOffset", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "Ljavax/swing/text/html/HTML$Tag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pos", "Ljavax/swing/text/ElementIterator;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LeafIterator", "(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/Document;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/swing/text/AttributeSet;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isValid", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTag", "()Ljavax/swing/text/html/HTML$Tag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStartOffset", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextLeaf", "(Ljavax/swing/text/ElementIterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEndOffset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEndOffset", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -2726,10 +2727,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTML$Tag;", "private")]
@@ -2737,10 +2738,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTML.Tag>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/ElementIterator;", "private")]
@@ -2748,10 +2749,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.ElementIterator>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2760,7 +2761,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTML$Tag;Ljavax/swing/text/Document;)V", "")]
-		public LeafIterator(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.Document arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LeafIterator(Dova.JDK.javax.swing.text.html.HTML.Tag arg0, Dova.JDK.javax.swing.text.Document arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -2771,53 +2772,53 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("()V", "public")]
 		public void next()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/AttributeSet;", "public")]
 		public Dova.JDK.javax.swing.text.AttributeSet getAttributes()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
 		public bool isValid()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/html/HTML$Tag;", "public")]
 		public Dova.JDK.javax.swing.text.html.HTML.Tag getTag()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTML.Tag>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getStartOffset()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/ElementIterator;)V", "")]
 		public void nextLeaf(Dova.JDK.javax.swing.text.ElementIterator arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 		}
 
 		[JniSignatureAttribute("()V", "")]
 		public void setEndOffset()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[6]);
 		}
 
 		[JniSignatureAttribute("()I", "public")]
 		public int getEndOffset()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[7]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[7]);
 			return ret;
 		}
 	}
@@ -2835,12 +2836,12 @@ public partial class HTMLDocument
 
 		static RunElement()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$RunElement;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RunElement", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getResolveParent", "()Ljavax/swing/text/AttributeSet;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$RunElement;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RunElement", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolveParent", "()Ljavax/swing/text/AttributeSet;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument;", "final")]
@@ -2848,10 +2849,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2860,7 +2861,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;II)V", "public")]
-		public RunElement(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.Element arg1, Dova.JDK.javax.swing.text.AttributeSet arg2, int arg3, int arg4) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public RunElement(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.Element arg1, Dova.JDK.javax.swing.text.AttributeSet arg2, int arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -2871,14 +2872,14 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String getName()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/AttributeSet;", "public")]
 		public Dova.JDK.javax.swing.text.AttributeSet getResolveParent()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 		}
 	}
@@ -2896,12 +2897,12 @@ public partial class HTMLDocument
 
 		static BlockElement()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$BlockElement;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "BlockElement", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getResolveParent", "()Ljavax/swing/text/AttributeSet;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$BlockElement;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/html/HTMLDocument;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BlockElement", "(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolveParent", "()Ljavax/swing/text/AttributeSet;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/html/HTMLDocument;", "final")]
@@ -2909,10 +2910,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTMLDocument>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2921,7 +2922,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/html/HTMLDocument;Ljavax/swing/text/Element;Ljavax/swing/text/AttributeSet;)V", "public")]
-		public BlockElement(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.Element arg1, Dova.JDK.javax.swing.text.AttributeSet arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public BlockElement(Dova.JDK.javax.swing.text.html.HTMLDocument arg0, Dova.JDK.javax.swing.text.Element arg1, Dova.JDK.javax.swing.text.AttributeSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -2932,14 +2933,14 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String getName()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/AttributeSet;", "public")]
 		public Dova.JDK.javax.swing.text.AttributeSet getResolveParent()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 		}
 	}
@@ -2957,11 +2958,11 @@ public partial class HTMLDocument
 
 		static FixedLengthDocument()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$FixedLengthDocument;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "maxLength", "I"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FixedLengthDocument", "(I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$FixedLengthDocument;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxLength", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FixedLengthDocument", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertString", "(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -2969,10 +2970,10 @@ public partial class HTMLDocument
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2981,7 +2982,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("(I)V", "public")]
-		public FixedLengthDocument(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public FixedLengthDocument(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2992,7 +2993,7 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("(ILjava/lang/String;Ljavax/swing/text/AttributeSet;)V", "public")]
 		public void insertString(int arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.javax.swing.text.AttributeSet arg2)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		}
 	}
 
@@ -3007,9 +3008,9 @@ public partial class HTMLDocument
 
 		static TaggedAttributeSet()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$TaggedAttributeSet;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "TaggedAttributeSet", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$TaggedAttributeSet;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TaggedAttributeSet", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3018,7 +3019,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public TaggedAttributeSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TaggedAttributeSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3039,15 +3040,15 @@ public partial class HTMLDocument
 
 		static Iterator()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$Iterator;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Iterator", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "next", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/swing/text/AttributeSet;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isValid", "()Z"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getTag", "()Ljavax/swing/text/html/HTML$Tag;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getStartOffset", "()I"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getEndOffset", "()I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/HTMLDocument$Iterator;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Iterator", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/swing/text/AttributeSet;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isValid", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTag", "()Ljavax/swing/text/html/HTML$Tag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStartOffset", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEndOffset", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3056,7 +3057,7 @@ public partial class HTMLDocument
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public Iterator() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Iterator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3067,41 +3068,41 @@ public partial class HTMLDocument
 		[JniSignatureAttribute("()V", "public abstract")]
 		public void next()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/AttributeSet;", "public abstract")]
 		public Dova.JDK.javax.swing.text.AttributeSet getAttributes()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]
 		public bool isValid()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/text/html/HTML$Tag;", "public abstract")]
 		public Dova.JDK.javax.swing.text.html.HTML.Tag getTag()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.html.HTML.Tag>(ret);
 		}
 
 		[JniSignatureAttribute("()I", "public abstract")]
 		public int getStartOffset()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
 			return ret;
 		}
 
 		[JniSignatureAttribute("()I", "public abstract")]
 		public int getEndOffset()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return ret;
 		}
 	}

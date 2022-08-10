@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,19 +28,19 @@ public partial class StreamPrintServiceFactory
 
 	static StreamPrintServiceFactory()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/print/StreamPrintServiceFactory;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "StreamPrintServiceFactory", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getServices", "()Ljavax/print/StreamPrintServiceFactory$Services;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getOutputFormat", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getListOfFactories", "()Ljava/util/ArrayList;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initListOfFactories", "()Ljava/util/ArrayList;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getAllFactories", "()Ljava/util/ArrayList;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "isMember", "(Ljavax/print/DocFlavor;[Ljavax/print/DocFlavor;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "lookupStreamPrintServiceFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getPrintService", "(Ljava/io/OutputStream;)Ljavax/print/StreamPrintService;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSupportedDocFlavors", "()[Ljavax/print/DocFlavor;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)Ljava/util/ArrayList;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/StreamPrintServiceFactory;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StreamPrintServiceFactory", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getServices", "()Ljavax/print/StreamPrintServiceFactory$Services;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutputFormat", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getListOfFactories", "()Ljava/util/ArrayList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initListOfFactories", "()Ljava/util/ArrayList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAllFactories", "()Ljava/util/ArrayList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isMember", "(Ljavax/print/DocFlavor;[Ljavax/print/DocFlavor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupStreamPrintServiceFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintService", "(Ljava/io/OutputStream;)Ljavax/print/StreamPrintService;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedDocFlavors", "()[Ljavax/print/DocFlavor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFactories", "(Ljavax/print/DocFlavor;Ljava/lang/String;)Ljava/util/ArrayList;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -48,7 +49,7 @@ public partial class StreamPrintServiceFactory
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public StreamPrintServiceFactory() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public StreamPrintServiceFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -59,70 +60,70 @@ public partial class StreamPrintServiceFactory
 	[JniSignatureAttribute("()Ljavax/print/StreamPrintServiceFactory$Services;", "private static")]
 	public static Dova.JDK.javax.print.StreamPrintServiceFactory.Services getServices()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.print.StreamPrintServiceFactory.Services>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
 	public Dova.JDK.java.lang.String getOutputFormat()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/ArrayList;", "private static")]
 	public static Dova.JDK.java.util.ArrayList getListOfFactories()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/ArrayList;", "private static")]
 	public static Dova.JDK.java.util.ArrayList initListOfFactories()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/ArrayList;", "private static")]
 	public static Dova.JDK.java.util.ArrayList getAllFactories()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/DocFlavor;[Ljavax/print/DocFlavor;)Z", "private static")]
 	public static bool isMember(Dova.JDK.javax.print.DocFlavor arg0, JavaArray<Dova.JDK.javax.print.DocFlavor> arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/DocFlavor;Ljava/lang/String;)[Ljavax/print/StreamPrintServiceFactory;", "public static")]
 	public static JavaArray<Dova.JDK.javax.print.StreamPrintServiceFactory> lookupStreamPrintServiceFactories(Dova.JDK.javax.print.DocFlavor arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.print.StreamPrintServiceFactory>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/OutputStream;)Ljavax/print/StreamPrintService;", "public abstract")]
 	public Dova.JDK.javax.print.StreamPrintService getPrintService(Dova.JDK.java.io.OutputStream arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.print.StreamPrintService>(ret);
 	}
 
 	[JniSignatureAttribute("()[Ljavax/print/DocFlavor;", "public abstract")]
 	public JavaArray<Dova.JDK.javax.print.DocFlavor> getSupportedDocFlavors()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.print.DocFlavor>>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/DocFlavor;Ljava/lang/String;)Ljava/util/ArrayList;", "private static")]
 	public static Dova.JDK.java.util.ArrayList getFactories(Dova.JDK.javax.print.DocFlavor arg0, Dova.JDK.java.lang.String arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[9], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 	}
 
@@ -138,10 +139,10 @@ public partial class StreamPrintServiceFactory
 
 		static Services()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/print/StreamPrintServiceFactory$Services;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "listOfFactories", "Ljava/util/ArrayList;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Services", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/StreamPrintServiceFactory$Services;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listOfFactories", "Ljava/util/ArrayList;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Services", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayList;", "private")]
@@ -149,10 +150,10 @@ public partial class StreamPrintServiceFactory
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -161,7 +162,7 @@ public partial class StreamPrintServiceFactory
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Services() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Services() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 

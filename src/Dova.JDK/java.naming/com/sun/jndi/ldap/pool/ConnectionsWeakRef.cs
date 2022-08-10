@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,11 +29,11 @@ public partial class ConnectionsWeakRef
 
 	static ConnectionsWeakRef()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jndi/ldap/pool/ConnectionsWeakRef;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "conns", "Lcom/sun/jndi/ldap/pool/Connections;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ConnectionsWeakRef", "(Lcom/sun/jndi/ldap/pool/ConnectionsRef;Ljava/lang/ref/ReferenceQueue;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getConnections", "()Lcom/sun/jndi/ldap/pool/Connections;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/ldap/pool/ConnectionsWeakRef;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "conns", "Lcom/sun/jndi/ldap/pool/Connections;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConnectionsWeakRef", "(Lcom/sun/jndi/ldap/pool/ConnectionsRef;Ljava/lang/ref/ReferenceQueue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConnections", "()Lcom/sun/jndi/ldap/pool/Connections;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jndi/ldap/pool/Connections;", "private final")]
@@ -40,10 +41,10 @@ public partial class ConnectionsWeakRef
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.ldap.pool.Connections>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +53,7 @@ public partial class ConnectionsWeakRef
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jndi/ldap/pool/ConnectionsRef;Ljava/lang/ref/ReferenceQueue;)V", "")]
-	public ConnectionsWeakRef(Dova.JDK.com.sun.jndi.ldap.pool.ConnectionsRef arg0, Dova.JDK.java.lang.@ref.ReferenceQueue arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ConnectionsWeakRef(Dova.JDK.com.sun.jndi.ldap.pool.ConnectionsRef arg0, Dova.JDK.java.lang.@ref.ReferenceQueue arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -63,7 +64,7 @@ public partial class ConnectionsWeakRef
 	[JniSignatureAttribute("()Lcom/sun/jndi/ldap/pool/Connections;", "")]
 	public Dova.JDK.com.sun.jndi.ldap.pool.Connections getConnections()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.ldap.pool.Connections>(ret);
 	}
 }

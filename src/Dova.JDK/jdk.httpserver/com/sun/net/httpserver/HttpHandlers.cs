@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,11 +28,11 @@ public partial class HttpHandlers
 
 	static HttpHandlers()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/net/httpserver/HttpHandlers;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HttpHandlers", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(ILcom/sun/net/httpserver/Headers;Ljava/lang/String;)Lcom/sun/net/httpserver/HttpHandler;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "handleOrElse", "(Ljava/util/function/Predicate;Lcom/sun/net/httpserver/HttpHandler;Lcom/sun/net/httpserver/HttpHandler;)Lcom/sun/net/httpserver/HttpHandler;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/net/httpserver/HttpHandlers;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HttpHandlers", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(ILcom/sun/net/httpserver/Headers;Ljava/lang/String;)Lcom/sun/net/httpserver/HttpHandler;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "handleOrElse", "(Ljava/util/function/Predicate;Lcom/sun/net/httpserver/HttpHandler;Lcom/sun/net/httpserver/HttpHandler;)Lcom/sun/net/httpserver/HttpHandler;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +41,7 @@ public partial class HttpHandlers
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public HttpHandlers() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public HttpHandlers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -51,14 +52,14 @@ public partial class HttpHandlers
 	[JniSignatureAttribute("(ILcom/sun/net/httpserver/Headers;Ljava/lang/String;)Lcom/sun/net/httpserver/HttpHandler;", "public static")]
 	public static Dova.JDK.com.sun.net.httpserver.HttpHandler of(int arg0, Dova.JDK.com.sun.net.httpserver.Headers arg1, Dova.JDK.java.lang.String arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.HttpHandler>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Predicate;Lcom/sun/net/httpserver/HttpHandler;Lcom/sun/net/httpserver/HttpHandler;)Lcom/sun/net/httpserver/HttpHandler;", "public static")]
 	public static Dova.JDK.com.sun.net.httpserver.HttpHandler handleOrElse(Dova.JDK.java.util.function.Predicate arg0, Dova.JDK.com.sun.net.httpserver.HttpHandler arg1, Dova.JDK.com.sun.net.httpserver.HttpHandler arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.HttpHandler>(ret);
 	}
 }

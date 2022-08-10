@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class PBEKeyFactory
 
 	static PBEKeyFactory()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "validTypes", "Ljava/util/HashSet;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEKeyFactory", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGetKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineTranslateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "validTypes", "Ljava/util/HashSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEKeyFactory", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetKeySpec", "(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineTranslateKey", "(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGenerateSecret", "(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -43,10 +44,10 @@ public partial class PBEKeyFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/util/HashSet;", "private static")]
@@ -54,10 +55,10 @@ public partial class PBEKeyFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashSet>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -66,7 +67,7 @@ public partial class PBEKeyFactory
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
-	public PBEKeyFactory(Dova.JDK.java.lang.String arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public PBEKeyFactory(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -77,21 +78,21 @@ public partial class PBEKeyFactory
 	[JniSignatureAttribute("(Ljavax/crypto/SecretKey;Ljava/lang/Class;)Ljava/security/spec/KeySpec;", "protected")]
 	public Dova.JDK.java.security.spec.KeySpec engineGetKeySpec(Dova.JDK.javax.crypto.SecretKey arg0, Dova.JDK.java.lang.Class arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.spec.KeySpec>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/crypto/SecretKey;)Ljavax/crypto/SecretKey;", "protected")]
 	public Dova.JDK.javax.crypto.SecretKey engineTranslateKey(Dova.JDK.javax.crypto.SecretKey arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/spec/KeySpec;)Ljavax/crypto/SecretKey;", "protected")]
 	public Dova.JDK.javax.crypto.SecretKey engineGenerateSecret(Dova.JDK.java.security.spec.KeySpec arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.crypto.SecretKey>(ret);
 	}
 
@@ -106,9 +107,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA512AndAES_256()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA512AndAES_256;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA512AndAES_256", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA512AndAES_256;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA512AndAES_256", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -117,7 +118,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA512AndAES_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA512AndAES_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -137,9 +138,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA384AndAES_256()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA384AndAES_256;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA384AndAES_256", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA384AndAES_256;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA384AndAES_256", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -148,7 +149,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA384AndAES_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA384AndAES_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -168,9 +169,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA256AndAES_256()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA256AndAES_256;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA256AndAES_256", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA256AndAES_256;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA256AndAES_256", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -179,7 +180,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA256AndAES_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA256AndAES_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -199,9 +200,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA224AndAES_256()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA224AndAES_256;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA224AndAES_256", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA224AndAES_256;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA224AndAES_256", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -210,7 +211,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA224AndAES_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA224AndAES_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -230,9 +231,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA1AndAES_256()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA1AndAES_256;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA1AndAES_256", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA1AndAES_256;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA1AndAES_256", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -241,7 +242,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA1AndAES_256() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA1AndAES_256() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -261,9 +262,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA512AndAES_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA512AndAES_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA512AndAES_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA512AndAES_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA512AndAES_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -272,7 +273,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA512AndAES_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA512AndAES_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -292,9 +293,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA384AndAES_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA384AndAES_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA384AndAES_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA384AndAES_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA384AndAES_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -303,7 +304,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA384AndAES_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA384AndAES_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -323,9 +324,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA256AndAES_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA256AndAES_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA256AndAES_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA256AndAES_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA256AndAES_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -334,7 +335,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA256AndAES_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA256AndAES_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -354,9 +355,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA224AndAES_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA224AndAES_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA224AndAES_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA224AndAES_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA224AndAES_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -365,7 +366,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA224AndAES_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA224AndAES_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -385,9 +386,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithHmacSHA1AndAES_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA1AndAES_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA1AndAES_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithHmacSHA1AndAES_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithHmacSHA1AndAES_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -396,7 +397,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithHmacSHA1AndAES_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithHmacSHA1AndAES_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -416,9 +417,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithMD5AndTripleDES()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithMD5AndTripleDES;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithMD5AndTripleDES", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithMD5AndTripleDES;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithMD5AndTripleDES", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -427,7 +428,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithMD5AndTripleDES() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithMD5AndTripleDES() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -447,9 +448,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithSHA1AndRC4_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC4_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC4_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC4_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC4_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -458,7 +459,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithSHA1AndRC4_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithSHA1AndRC4_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -478,9 +479,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithSHA1AndRC4_40()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC4_40;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC4_40", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC4_40;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC4_40", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -489,7 +490,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithSHA1AndRC4_40() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithSHA1AndRC4_40() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -509,9 +510,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithSHA1AndRC2_128()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC2_128;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC2_128", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC2_128;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC2_128", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -520,7 +521,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithSHA1AndRC2_128() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithSHA1AndRC2_128() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -540,9 +541,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithSHA1AndRC2_40()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC2_40;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC2_40", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndRC2_40;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndRC2_40", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -551,7 +552,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithSHA1AndRC2_40() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithSHA1AndRC2_40() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -571,9 +572,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithSHA1AndDESede()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndDESede;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndDESede", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithSHA1AndDESede;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithSHA1AndDESede", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -582,7 +583,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithSHA1AndDESede() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithSHA1AndDESede() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -602,9 +603,9 @@ public partial class PBEKeyFactory
 
 		static PBEWithMD5AndDES()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithMD5AndDES;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PBEWithMD5AndDES", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/crypto/provider/PBEKeyFactory$PBEWithMD5AndDES;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PBEWithMD5AndDES", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -613,7 +614,7 @@ public partial class PBEKeyFactory
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public PBEWithMD5AndDES() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PBEWithMD5AndDES() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 

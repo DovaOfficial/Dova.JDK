@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,13 +29,13 @@ public partial class SimpleFileServer
 
 	static SimpleFileServer()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/net/httpserver/SimpleFileServer;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "MIME_TABLE", "Ljava/util/function/UnaryOperator;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "SimpleFileServer", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createFileServer", "(Ljava/net/InetSocketAddress;Ljava/nio/file/Path;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/HttpServer;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createFileHandler", "(Ljava/nio/file/Path;)Lcom/sun/net/httpserver/HttpHandler;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createOutputFilter", "(Ljava/io/OutputStream;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/Filter;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/net/httpserver/SimpleFileServer;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIME_TABLE", "Ljava/util/function/UnaryOperator;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SimpleFileServer", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFileServer", "(Ljava/net/InetSocketAddress;Ljava/nio/file/Path;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/HttpServer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFileHandler", "(Ljava/nio/file/Path;)Lcom/sun/net/httpserver/HttpHandler;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createOutputFilter", "(Ljava/io/OutputStream;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/Filter;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/UnaryOperator;", "private static final")]
@@ -42,10 +43,10 @@ public partial class SimpleFileServer
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.UnaryOperator>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -54,7 +55,7 @@ public partial class SimpleFileServer
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SimpleFileServer() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SimpleFileServer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -65,21 +66,21 @@ public partial class SimpleFileServer
 	[JniSignatureAttribute("(Ljava/net/InetSocketAddress;Ljava/nio/file/Path;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/HttpServer;", "public static")]
 	public static Dova.JDK.com.sun.net.httpserver.HttpServer createFileServer(Dova.JDK.java.net.InetSocketAddress arg0, Dova.JDK.java.nio.file.Path arg1, Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.HttpServer>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/file/Path;)Lcom/sun/net/httpserver/HttpHandler;", "public static")]
 	public static Dova.JDK.com.sun.net.httpserver.HttpHandler createFileHandler(Dova.JDK.java.nio.file.Path arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.HttpHandler>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/io/OutputStream;Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;)Lcom/sun/net/httpserver/Filter;", "public static")]
 	public static Dova.JDK.com.sun.net.httpserver.Filter createOutputFilter(Dova.JDK.java.io.OutputStream arg0, Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.Filter>(ret);
 	}
 
@@ -96,16 +97,16 @@ public partial class SimpleFileServer
 
 		static OutputLevel()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "INFO", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "VERBOSE", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OutputLevel", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INFO", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERBOSE", "Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OutputLevel", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "public static final")]
@@ -113,10 +114,10 @@ public partial class SimpleFileServer
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "public static final")]
@@ -124,10 +125,10 @@ public partial class SimpleFileServer
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "public static final")]
@@ -135,10 +136,10 @@ public partial class SimpleFileServer
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "private static final")]
@@ -146,10 +147,10 @@ public partial class SimpleFileServer
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -158,7 +159,7 @@ public partial class SimpleFileServer
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public OutputLevel(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OutputLevel(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -169,21 +170,21 @@ public partial class SimpleFileServer
 		[JniSignatureAttribute("()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "public static")]
 		public static JavaArray<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel> values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "public static")]
 		public static Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>(ret);
 		}
 
 		[JniSignatureAttribute("()[Lcom/sun/net/httpserver/SimpleFileServer$OutputLevel;", "private static")]
 		public static JavaArray<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel> _values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.net.httpserver.SimpleFileServer.OutputLevel>>(ret);
 		}
 	}

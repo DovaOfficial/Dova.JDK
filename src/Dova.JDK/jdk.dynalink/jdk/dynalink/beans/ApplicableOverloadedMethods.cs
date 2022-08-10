@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,16 +29,16 @@ public partial class ApplicableOverloadedMethods
 
 	static ApplicableOverloadedMethods()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/dynalink/beans/ApplicableOverloadedMethods;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "methods", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "varArgs", "Z"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_SUBTYPING", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_METHOD_INVOCATION_CONVERSION", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_VARIABLE_ARITY", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ApplicableOverloadedMethods", "(Ljava/util/List;Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMethods", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "findMaximallySpecificMethods", "()Ljava/util/List;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/beans/ApplicableOverloadedMethods;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methods", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "varArgs", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_SUBTYPING", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_METHOD_INVOCATION_CONVERSION", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APPLICABLE_BY_VARIABLE_ARITY", "Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ApplicableOverloadedMethods", "(Ljava/util/List;Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMethods", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findMaximallySpecificMethods", "()Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -45,10 +46,10 @@ public partial class ApplicableOverloadedMethods
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -56,10 +57,10 @@ public partial class ApplicableOverloadedMethods
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;", "static final")]
@@ -67,10 +68,10 @@ public partial class ApplicableOverloadedMethods
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.beans.ApplicableOverloadedMethods.ApplicabilityTest>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;", "static final")]
@@ -78,10 +79,10 @@ public partial class ApplicableOverloadedMethods
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.beans.ApplicableOverloadedMethods.ApplicabilityTest>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;", "static final")]
@@ -89,10 +90,10 @@ public partial class ApplicableOverloadedMethods
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.dynalink.beans.ApplicableOverloadedMethods.ApplicabilityTest>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -101,7 +102,7 @@ public partial class ApplicableOverloadedMethods
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;)V", "")]
-	public ApplicableOverloadedMethods(Dova.JDK.java.util.List arg0, Dova.JDK.java.lang.invoke.MethodType arg1, Dova.JDK.jdk.dynalink.beans.ApplicableOverloadedMethods.ApplicabilityTest arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ApplicableOverloadedMethods(Dova.JDK.java.util.List arg0, Dova.JDK.java.lang.invoke.MethodType arg1, Dova.JDK.jdk.dynalink.beans.ApplicableOverloadedMethods.ApplicabilityTest arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -112,14 +113,14 @@ public partial class ApplicableOverloadedMethods
 	[JniSignatureAttribute("()Ljava/util/List;", "")]
 	public Dova.JDK.java.util.List getMethods()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/util/List;", "")]
 	public Dova.JDK.java.util.List findMaximallySpecificMethods()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 	}
 
@@ -135,10 +136,10 @@ public partial class ApplicableOverloadedMethods
 
 		static ApplicabilityTest()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ApplicabilityTest", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "isApplicable", "(Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/SingleDynamicMethod;)Z"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/beans/ApplicableOverloadedMethods$ApplicabilityTest;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ApplicabilityTest", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isApplicable", "(Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/SingleDynamicMethod;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -147,7 +148,7 @@ public partial class ApplicableOverloadedMethods
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ApplicabilityTest() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ApplicabilityTest() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -158,7 +159,7 @@ public partial class ApplicableOverloadedMethods
 		[JniSignatureAttribute("(Ljava/lang/invoke/MethodType;Ljdk/dynalink/beans/SingleDynamicMethod;)Z", "abstract")]
 		public bool isApplicable(Dova.JDK.java.lang.invoke.MethodType arg0, Dova.JDK.jdk.dynalink.beans.SingleDynamicMethod arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 	}

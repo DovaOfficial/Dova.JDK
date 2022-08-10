@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,13 +30,13 @@ public partial class HashPrintRequestAttributeSet
 
 	static HashPrintRequestAttributeSet()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/print/attribute/HashPrintRequestAttributeSet;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "([Ljavax/print/attribute/PrintRequestAttribute;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttribute;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/HashPrintRequestAttributeSet;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "([Ljavax/print/attribute/PrintRequestAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintRequestAttributeSet", "()V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -43,10 +44,10 @@ public partial class HashPrintRequestAttributeSet
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -55,22 +56,22 @@ public partial class HashPrintRequestAttributeSet
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/PrintRequestAttributeSet;)V", "public")]
-	public HashPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HashPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljavax/print/attribute/PrintRequestAttribute;)V", "public")]
-	public HashPrintRequestAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.PrintRequestAttribute> arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public HashPrintRequestAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.PrintRequestAttribute> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/PrintRequestAttribute;)V", "public")]
-	public HashPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttribute arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+	public HashPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttribute arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HashPrintRequestAttributeSet() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
+	public HashPrintRequestAttributeSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
 	{
 	}
 

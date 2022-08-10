@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,17 +29,17 @@ public partial class OCSP
 
 	static OCSP()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/certpath/OCSP;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CONNECT_TIMEOUT", "I"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CONNECT_TIMEOUT", "I"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OCSP", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "check", "(Ljava/util/List;Ljava/net/URI;Lsun/security/provider/certpath/OCSPResponse$IssuerInfo;Ljava/security/cert/X509Certificate;Ljava/util/Date;Ljava/util/List;Ljava/lang/String;)Lsun/security/provider/certpath/OCSPResponse;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getOCSPBytes", "(Ljava/util/List;Ljava/net/URI;Ljava/util/List;)[B"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initializeTimeout", "()I"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getResponderURI", "(Lsun/security/x509/X509CertImpl;)Ljava/net/URI;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getResponderURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/OCSP;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CONNECT_TIMEOUT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONNECT_TIMEOUT", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OCSP", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "check", "(Ljava/util/List;Ljava/net/URI;Lsun/security/provider/certpath/OCSPResponse$IssuerInfo;Ljava/security/cert/X509Certificate;Ljava/util/Date;Ljava/util/List;Ljava/lang/String;)Lsun/security/provider/certpath/OCSPResponse;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getOCSPBytes", "(Ljava/util/List;Ljava/net/URI;Ljava/util/List;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initializeTimeout", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getResponderURI", "(Lsun/security/x509/X509CertImpl;)Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getResponderURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/Debug;", "private static final")]
@@ -46,10 +47,10 @@ public partial class OCSP
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.Debug>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -57,10 +58,10 @@ public partial class OCSP
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -68,10 +69,10 @@ public partial class OCSP
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -80,7 +81,7 @@ public partial class OCSP
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public OCSP() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public OCSP() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -91,35 +92,35 @@ public partial class OCSP
 	[JniSignatureAttribute("(Ljava/util/List;Ljava/net/URI;Lsun/security/provider/certpath/OCSPResponse$IssuerInfo;Ljava/security/cert/X509Certificate;Ljava/util/Date;Ljava/util/List;Ljava/lang/String;)Lsun/security/provider/certpath/OCSPResponse;", "static")]
 	public static Dova.JDK.sun.security.provider.certpath.OCSPResponse check(Dova.JDK.java.util.List arg0, Dova.JDK.java.net.URI arg1, Dova.JDK.sun.security.provider.certpath.OCSPResponse.IssuerInfo arg2, Dova.JDK.java.security.cert.X509Certificate arg3, Dova.JDK.java.util.Date arg4, Dova.JDK.java.util.List arg5, Dova.JDK.java.lang.String arg6)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSPResponse>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/List;Ljava/net/URI;Ljava/util/List;)[B", "public static")]
 	public static JavaArray<byte> getOCSPBytes(Dova.JDK.java.util.List arg0, Dova.JDK.java.net.URI arg1, Dova.JDK.java.util.List arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 	}
 
 	[JniSignatureAttribute("()I", "private static")]
 	public static int initializeTimeout()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2]);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lsun/security/x509/X509CertImpl;)Ljava/net/URI;", "static")]
 	public static Dova.JDK.java.net.URI getResponderURI(Dova.JDK.sun.security.x509.X509CertImpl arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.net.URI>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/X509Certificate;)Ljava/net/URI;", "public static")]
 	public static Dova.JDK.java.net.URI getResponderURI(Dova.JDK.java.security.cert.X509Certificate arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.net.URI>(ret);
 	}
 
@@ -134,39 +135,39 @@ public partial class OCSP
 
 		static RevocationStatus()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/certpath/OCSP$RevocationStatus;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getRevocationTime", "()Ljava/util/Date;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSingleExtensions", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getRevocationReason", "()Ljava/security/cert/CRLReason;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getCertStatus", "()Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/OCSP$RevocationStatus;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRevocationTime", "()Ljava/util/Date;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSingleExtensions", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRevocationReason", "()Ljava/security/cert/CRLReason;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertStatus", "()Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Date;", "public abstract")]
 		Dova.JDK.java.util.Date getRevocationTime()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Date>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/util/Map;", "public abstract")]
 		Dova.JDK.java.util.Map getSingleExtensions()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/security/cert/CRLReason;", "public abstract")]
 		Dova.JDK.java.security.cert.CRLReason getRevocationReason()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.security.cert.CRLReason>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public abstract")]
 		Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus getCertStatus()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>(ret);
 		}
 
@@ -183,16 +184,16 @@ public partial class OCSP
 
 			static CertStatus()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "GOOD", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "REVOKED", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CertStatus", "(Ljava/lang/String;I)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GOOD", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REVOKED", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertStatus", "(Ljava/lang/String;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;"));
 			}
 
 			[JniSignatureAttribute("Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public static final")]
@@ -200,10 +201,10 @@ public partial class OCSP
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public static final")]
@@ -211,10 +212,10 @@ public partial class OCSP
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public static final")]
@@ -222,10 +223,10 @@ public partial class OCSP
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "private static final")]
@@ -233,10 +234,10 @@ public partial class OCSP
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -245,7 +246,7 @@ public partial class OCSP
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-			public CertStatus(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public CertStatus(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -256,21 +257,21 @@ public partial class OCSP
 			[JniSignatureAttribute("()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public static")]
 			public static JavaArray<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus> values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "public static")]
 			public static Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus valueOf(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>(ret);
 			}
 
 			[JniSignatureAttribute("()[Lsun/security/provider/certpath/OCSP$RevocationStatus$CertStatus;", "private static")]
 			public static JavaArray<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus> _values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.provider.certpath.OCSP.RevocationStatus.CertStatus>>(ret);
 			}
 		}

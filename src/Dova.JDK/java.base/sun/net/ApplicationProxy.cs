@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class ApplicationProxy
 
 	static ApplicationProxy()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/net/ApplicationProxy;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ApplicationProxy", "(Ljava/net/Proxy;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/net/Proxy;)Lsun/net/ApplicationProxy;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/ApplicationProxy;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ApplicationProxy", "(Ljava/net/Proxy;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/net/Proxy;)Lsun/net/ApplicationProxy;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class ApplicationProxy
 	}
 
 	[JniSignatureAttribute("(Ljava/net/Proxy;)V", "private")]
-	public ApplicationProxy(Dova.JDK.java.net.Proxy arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ApplicationProxy(Dova.JDK.java.net.Proxy arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class ApplicationProxy
 	[JniSignatureAttribute("(Ljava/net/Proxy;)Lsun/net/ApplicationProxy;", "public static")]
 	public static Dova.JDK.sun.net.ApplicationProxy create(Dova.JDK.java.net.Proxy arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.net.ApplicationProxy>(ret);
 	}
 }

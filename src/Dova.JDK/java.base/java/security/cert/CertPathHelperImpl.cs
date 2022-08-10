@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,13 +28,13 @@ public partial class CertPathHelperImpl
 
 	static CertPathHelperImpl()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/security/cert/CertPathHelperImpl;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CertPathHelperImpl", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "initialize", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implSetPathToNames", "(Ljava/security/cert/X509CertSelector;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implSetDateAndTime", "(Ljava/security/cert/X509CRLSelector;Ljava/util/Date;J)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "implIsJdkCA", "(Ljava/security/cert/TrustAnchor;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/cert/CertPathHelperImpl;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertPathHelperImpl", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implSetPathToNames", "(Ljava/security/cert/X509CertSelector;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implSetDateAndTime", "(Ljava/security/cert/X509CRLSelector;Ljava/util/Date;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implIsJdkCA", "(Ljava/security/cert/TrustAnchor;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +43,7 @@ public partial class CertPathHelperImpl
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public CertPathHelperImpl() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CertPathHelperImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -53,25 +54,25 @@ public partial class CertPathHelperImpl
 	[JniSignatureAttribute("()V", "static synchronized")]
 	public static void initialize()
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0]);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[0]);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/X509CertSelector;Ljava/util/Set;)V", "protected")]
 	public void implSetPathToNames(Dova.JDK.java.security.cert.X509CertSelector arg0, Dova.JDK.java.util.Set arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/X509CRLSelector;Ljava/util/Date;J)V", "protected")]
 	public void implSetDateAndTime(Dova.JDK.java.security.cert.X509CRLSelector arg0, Dova.JDK.java.util.Date arg1, long arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1, arg2);
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/TrustAnchor;)Z", "protected")]
 	public bool implIsJdkCA(Dova.JDK.java.security.cert.TrustAnchor arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 		return ret;
 	}
 }

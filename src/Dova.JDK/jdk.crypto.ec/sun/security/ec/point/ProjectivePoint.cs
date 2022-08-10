@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,23 +30,23 @@ public partial class ProjectivePoint
 
 	static ProjectivePoint()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "x", "Lsun/security/util/math/IntegerModuloP;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "y", "Lsun/security/util/math/IntegerModuloP;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "z", "Lsun/security/util/math/IntegerModuloP;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ProjectivePoint", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fixed_0", "()Lsun/security/ec/point/ImmutablePoint;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fixed_1", "()Lsun/security/ec/point/ProjectivePoint$Immutable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "asAffine", "()Lsun/security/ec/point/AffinePoint;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "mutable_0", "()Lsun/security/ec/point/MutablePoint;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "mutable_1", "()Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/Point;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/ProjectivePoint;Lsun/security/ec/point/ProjectivePoint;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getZ", "()Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getX", "()Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getY", "()Lsun/security/util/math/IntegerModuloP;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x", "Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y", "Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "z", "Lsun/security/util/math/IntegerModuloP;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProjectivePoint", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_0", "()Lsun/security/ec/point/ImmutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_1", "()Lsun/security/ec/point/ProjectivePoint$Immutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asAffine", "()Lsun/security/ec/point/AffinePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_0", "()Lsun/security/ec/point/MutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_1", "()Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/Point;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/ProjectivePoint;Lsun/security/ec/point/ProjectivePoint;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZ", "()Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "()Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY", "()Lsun/security/util/math/IntegerModuloP;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/math/IntegerModuloP;", "protected final")]
@@ -53,10 +54,10 @@ public partial class ProjectivePoint
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/math/IntegerModuloP;", "protected final")]
@@ -64,10 +65,10 @@ public partial class ProjectivePoint
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/math/IntegerModuloP;", "protected final")]
@@ -75,10 +76,10 @@ public partial class ProjectivePoint
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -87,7 +88,7 @@ public partial class ProjectivePoint
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V", "protected")]
-	public ProjectivePoint(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ProjectivePoint(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -98,77 +99,77 @@ public partial class ProjectivePoint
 	[JniSignatureAttribute("()Lsun/security/util/math/IntegerFieldModuloP;", "public")]
 	public Dova.JDK.sun.security.util.math.IntegerFieldModuloP getField()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.math.IntegerFieldModuloP>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/ec/point/ImmutablePoint;", "public volatile")]
 	public Dova.JDK.sun.security.ec.point.ImmutablePoint fixed_0()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ImmutablePoint>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/ec/point/ProjectivePoint$Immutable;", "public")]
 	public Dova.JDK.sun.security.ec.point.ProjectivePoint.Immutable fixed_1()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Immutable>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/ec/point/AffinePoint;", "public")]
 	public Dova.JDK.sun.security.ec.point.AffinePoint asAffine()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.AffinePoint>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/ec/point/MutablePoint;", "public volatile")]
 	public Dova.JDK.sun.security.ec.point.MutablePoint mutable_0()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/ec/point/ProjectivePoint$Mutable;", "public")]
 	public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable mutable_1()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ec/point/Point;)Z", "public")]
 	public bool affineEquals(Dova.JDK.sun.security.ec.point.Point arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[6], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ec/point/ProjectivePoint;Lsun/security/ec/point/ProjectivePoint;)Z", "private static")]
 	public static bool affineEquals(Dova.JDK.sun.security.ec.point.ProjectivePoint arg0, Dova.JDK.sun.security.ec.point.ProjectivePoint arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()Lsun/security/util/math/IntegerModuloP;", "public")]
 	public Dova.JDK.java.lang.Object getZ()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/util/math/IntegerModuloP;", "public")]
 	public Dova.JDK.java.lang.Object getX()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
 	[JniSignatureAttribute("()Lsun/security/util/math/IntegerModuloP;", "public")]
 	public Dova.JDK.java.lang.Object getY()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[10]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
@@ -185,11 +186,11 @@ public partial class ProjectivePoint
 
 		static Immutable()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint$Immutable;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Immutable", "(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint$Immutable;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Immutable", "(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -198,7 +199,7 @@ public partial class ProjectivePoint
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V", "public")]
-		public Immutable(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Immutable(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -209,14 +210,14 @@ public partial class ProjectivePoint
 		[JniSignatureAttribute("()Lsun/security/ec/point/ImmutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.ImmutablePoint @fixed()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ImmutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/ec/point/MutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.MutablePoint mutable()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 		}
 	}
@@ -234,20 +235,20 @@ public partial class ProjectivePoint
 
 		static Mutable()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint$Mutable;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Mutable", "(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Mutable", "(Lsun/security/util/math/IntegerFieldModuloP;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Lsun/security/ec/point/ProjectivePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_0", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_1", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "conditionalSet", "(Lsun/security/ec/point/ProjectivePoint;I)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ProjectivePoint$Mutable;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mutable", "(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mutable", "(Lsun/security/util/math/IntegerFieldModuloP;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Lsun/security/ec/point/ProjectivePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_0", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_1", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet", "(Lsun/security/ec/point/ProjectivePoint;I)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -256,12 +257,12 @@ public partial class ProjectivePoint
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V", "public")]
-		public Mutable(Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Mutable(Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/IntegerFieldModuloP;)V", "public")]
-		public Mutable(Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public Mutable(Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
@@ -272,70 +273,70 @@ public partial class ProjectivePoint
 		[JniSignatureAttribute("(Lsun/security/ec/point/ProjectivePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;", "private")]
 		public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable setValue(Dova.JDK.sun.security.ec.point.ProjectivePoint arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/Point;)Lsun/security/ec/point/ProjectivePoint$Mutable;", "public")]
 		public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable setValue_0(Dova.JDK.sun.security.ec.point.Point arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/Point;)Lsun/security/ec/point/MutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.MutablePoint setValue_1(Dova.JDK.sun.security.ec.point.Point arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/MutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.MutablePoint setValue_0(Dova.JDK.sun.security.ec.point.AffinePoint arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ProjectivePoint$Mutable;", "public")]
 		public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable setValue_1(Dova.JDK.sun.security.ec.point.AffinePoint arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/ec/point/ImmutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.ImmutablePoint @fixed()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ImmutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/ec/point/MutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.MutablePoint mutable()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/ProjectivePoint$Mutable;", "public")]
 		public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable conditionalSet_0(Dova.JDK.sun.security.ec.point.Point arg0, int arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/MutablePoint;", "public volatile")]
 		public Dova.JDK.sun.security.ec.point.MutablePoint conditionalSet_1(Dova.JDK.sun.security.ec.point.Point arg0, int arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.MutablePoint>(ret);
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ec/point/ProjectivePoint;I)Lsun/security/ec/point/ProjectivePoint$Mutable;", "private")]
 		public Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable conditionalSet(Dova.JDK.sun.security.ec.point.ProjectivePoint arg0, int arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.ec.point.ProjectivePoint.Mutable>(ret);
 		}
 	}

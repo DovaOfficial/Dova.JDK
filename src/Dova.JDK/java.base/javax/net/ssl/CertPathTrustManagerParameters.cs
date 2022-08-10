@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,11 +30,11 @@ public partial class CertPathTrustManagerParameters
 
 	static CertPathTrustManagerParameters()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/net/ssl/CertPathTrustManagerParameters;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "parameters", "Ljava/security/cert/CertPathParameters;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CertPathTrustManagerParameters", "(Ljava/security/cert/CertPathParameters;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getParameters", "()Ljava/security/cert/CertPathParameters;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/net/ssl/CertPathTrustManagerParameters;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parameters", "Ljava/security/cert/CertPathParameters;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertPathTrustManagerParameters", "(Ljava/security/cert/CertPathParameters;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameters", "()Ljava/security/cert/CertPathParameters;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/cert/CertPathParameters;", "private final")]
@@ -41,10 +42,10 @@ public partial class CertPathTrustManagerParameters
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.security.cert.CertPathParameters>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -53,7 +54,7 @@ public partial class CertPathTrustManagerParameters
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/CertPathParameters;)V", "public")]
-	public CertPathTrustManagerParameters(Dova.JDK.java.security.cert.CertPathParameters arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CertPathTrustManagerParameters(Dova.JDK.java.security.cert.CertPathParameters arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -64,7 +65,7 @@ public partial class CertPathTrustManagerParameters
 	[JniSignatureAttribute("()Ljava/security/cert/CertPathParameters;", "public")]
 	public Dova.JDK.java.security.cert.CertPathParameters getParameters()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.security.cert.CertPathParameters>(ret);
 	}
 }

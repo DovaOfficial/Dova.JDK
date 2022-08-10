@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,19 +28,19 @@ public partial class XCreateWindowParams
 
 	static XCreateWindowParams()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11/XCreateWindowParams;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XCreateWindowParams", "()V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XCreateWindowParams", "([Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "init", "([Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "delete", "(Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XCreateWindowParams;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XCreateWindowParams", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XCreateWindowParams", "([Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "([Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "delete", "(Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putIfNull", "(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -48,12 +49,12 @@ public partial class XCreateWindowParams
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public XCreateWindowParams() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public XCreateWindowParams() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/Object;)V", "public")]
-	public XCreateWindowParams(JavaArray<Dova.JDK.java.lang.Object> arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public XCreateWindowParams(JavaArray<Dova.JDK.java.lang.Object> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -64,62 +65,62 @@ public partial class XCreateWindowParams
 	[JniSignatureAttribute("(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams add(Dova.JDK.java.lang.Object arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams add(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams add(Dova.JDK.java.lang.Object arg0, long arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String toString()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/Object;)V", "private")]
 	public void init(JavaArray<Dova.JDK.java.lang.Object> arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams delete(Dova.JDK.java.lang.Object arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;J)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams putIfNull(Dova.JDK.java.lang.Object arg0, long arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;I)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams putIfNull(Dova.JDK.java.lang.Object arg0, int arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Object;)Lsun/awt/X11/XCreateWindowParams;", "public")]
 	public Dova.JDK.sun.awt.X11.XCreateWindowParams putIfNull(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XCreateWindowParams>(ret);
 	}
 }

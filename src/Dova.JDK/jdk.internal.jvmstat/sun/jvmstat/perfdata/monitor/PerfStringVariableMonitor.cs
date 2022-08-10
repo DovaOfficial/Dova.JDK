@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,10 +27,10 @@ public partial class PerfStringVariableMonitor
 
 	static PerfStringVariableMonitor()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/PerfStringVariableMonitor;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PerfStringVariableMonitor", "(Ljava/lang/String;ZLjava/nio/ByteBuffer;)V"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PerfStringVariableMonitor", "(Ljava/lang/String;ZLjava/nio/ByteBuffer;I)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/PerfStringVariableMonitor;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PerfStringVariableMonitor", "(Ljava/lang/String;ZLjava/nio/ByteBuffer;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PerfStringVariableMonitor", "(Ljava/lang/String;ZLjava/nio/ByteBuffer;I)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -38,12 +39,12 @@ public partial class PerfStringVariableMonitor
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ZLjava/nio/ByteBuffer;)V", "public")]
-	public PerfStringVariableMonitor(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.nio.ByteBuffer arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public PerfStringVariableMonitor(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.nio.ByteBuffer arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ZLjava/nio/ByteBuffer;I)V", "public")]
-	public PerfStringVariableMonitor(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.nio.ByteBuffer arg2, int arg3) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public PerfStringVariableMonitor(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.nio.ByteBuffer arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 

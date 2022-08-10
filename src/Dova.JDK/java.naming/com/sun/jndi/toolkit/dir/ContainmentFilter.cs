@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,12 +30,12 @@ public partial class ContainmentFilter
 
 	static ContainmentFilter()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/jndi/toolkit/dir/ContainmentFilter;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "matchingAttrs", "Ljavax/naming/directory/Attributes;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ContainmentFilter", "(Ljavax/naming/directory/Attributes;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "contains", "(Ljavax/naming/directory/Attributes;Ljavax/naming/directory/Attributes;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "check", "(Ljavax/naming/directory/Attributes;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/toolkit/dir/ContainmentFilter;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matchingAttrs", "Ljavax/naming/directory/Attributes;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContainmentFilter", "(Ljavax/naming/directory/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "contains", "(Ljavax/naming/directory/Attributes;Ljavax/naming/directory/Attributes;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "check", "(Ljavax/naming/directory/Attributes;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljavax/naming/directory/Attributes;", "private")]
@@ -42,10 +43,10 @@ public partial class ContainmentFilter
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.naming.directory.Attributes>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -54,7 +55,7 @@ public partial class ContainmentFilter
 	}
 
 	[JniSignatureAttribute("(Ljavax/naming/directory/Attributes;)V", "public")]
-	public ContainmentFilter(Dova.JDK.javax.naming.directory.Attributes arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ContainmentFilter(Dova.JDK.javax.naming.directory.Attributes arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -65,14 +66,14 @@ public partial class ContainmentFilter
 	[JniSignatureAttribute("(Ljavax/naming/directory/Attributes;Ljavax/naming/directory/Attributes;)Z", "public static")]
 	public static bool contains(Dova.JDK.javax.naming.directory.Attributes arg0, Dova.JDK.javax.naming.directory.Attributes arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return ret;
 	}
 
 	[JniSignatureAttribute("(Ljavax/naming/directory/Attributes;)Z", "public")]
 	public bool check(Dova.JDK.javax.naming.directory.Attributes arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		return ret;
 	}
 }

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,9 +28,9 @@ public partial class ExtendedGSSCredentialImpl
 
 	static ExtendedGSSCredentialImpl()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/security/jgss/ExtendedGSSCredentialImpl;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ExtendedGSSCredentialImpl", "(Lsun/security/jgss/GSSCredentialImpl;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/security/jgss/ExtendedGSSCredentialImpl;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedGSSCredentialImpl", "(Lsun/security/jgss/GSSCredentialImpl;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -38,7 +39,7 @@ public partial class ExtendedGSSCredentialImpl
 	}
 
 	[JniSignatureAttribute("(Lsun/security/jgss/GSSCredentialImpl;)V", "public")]
-	public ExtendedGSSCredentialImpl(Dova.JDK.sun.security.jgss.GSSCredentialImpl arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ExtendedGSSCredentialImpl(Dova.JDK.sun.security.jgss.GSSCredentialImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,9 +27,9 @@ public partial class ArraysParallelSortHelpers
 
 	static ArraysParallelSortHelpers()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ArraysParallelSortHelpers", "()V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArraysParallelSortHelpers", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -37,7 +38,7 @@ public partial class ArraysParallelSortHelpers
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ArraysParallelSortHelpers() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ArraysParallelSortHelpers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -56,9 +57,9 @@ public partial class ArraysParallelSortHelpers
 
 		static FJObject()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "FJObject", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FJObject", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -67,7 +68,7 @@ public partial class ArraysParallelSortHelpers
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public FJObject() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FJObject() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -88,20 +89,20 @@ public partial class ArraysParallelSortHelpers
 
 			static Merger()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject$Merger;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "a", "[Ljava/lang/Object;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "w", "[Ljava/lang/Object;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lbase", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "lsize", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "rbase", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "rsize", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "wbase", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "gran", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "comparator", "Ljava/util/Comparator;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Merger", "(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIIIILjava/util/Comparator;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject$Merger;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "a", "[Ljava/lang/Object;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w", "[Ljava/lang/Object;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lbase", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lsize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbase", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rsize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wbase", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gran", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comparator", "Ljava/util/Comparator;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Merger", "(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIIIILjava/util/Comparator;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
 			}
 
 			[JniSignatureAttribute("J", "static final")]
@@ -109,10 +110,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+				set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 			}
 
 			[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -120,10 +121,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -131,10 +132,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -142,10 +143,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -153,10 +154,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -164,10 +165,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -175,10 +176,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -186,10 +187,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -197,10 +198,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
 			}
 
 			[JniSignatureAttribute("Ljava/util/Comparator;", "")]
@@ -208,10 +209,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Comparator>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -220,7 +221,7 @@ public partial class ArraysParallelSortHelpers
 			}
 
 			[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIIIILjava/util/Comparator;)V", "")]
-			public Merger(Dova.JDK.java.util.concurrent.CountedCompleter arg0, JavaArray<Dova.JDK.java.lang.Object> arg1, JavaArray<Dova.JDK.java.lang.Object> arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Dova.JDK.java.util.Comparator arg9) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9))
+			public Merger(Dova.JDK.java.util.concurrent.CountedCompleter arg0, JavaArray<Dova.JDK.java.lang.Object> arg1, JavaArray<Dova.JDK.java.lang.Object> arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, Dova.JDK.java.util.Comparator arg9) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9))
 			{
 			}
 
@@ -231,7 +232,7 @@ public partial class ArraysParallelSortHelpers
 			[JniSignatureAttribute("()V", "public final")]
 			public void compute()
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 			}
 		}
 
@@ -248,18 +249,18 @@ public partial class ArraysParallelSortHelpers
 
 			static Sorter()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject$Sorter;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "a", "[Ljava/lang/Object;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "w", "[Ljava/lang/Object;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "base", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "wbase", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "gran", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "comparator", "Ljava/util/Comparator;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Sorter", "(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/util/Comparator;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
+				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$FJObject$Sorter;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "a", "[Ljava/lang/Object;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w", "[Ljava/lang/Object;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "base", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wbase", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gran", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comparator", "Ljava/util/Comparator;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Sorter", "(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/util/Comparator;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
 			}
 
 			[JniSignatureAttribute("J", "static final")]
@@ -267,10 +268,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+				set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 			}
 
 			[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -278,10 +279,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -289,10 +290,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -300,10 +301,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -311,10 +312,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -322,10 +323,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -333,10 +334,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
 			}
 
 			[JniSignatureAttribute("Ljava/util/Comparator;", "")]
@@ -344,10 +345,10 @@ public partial class ArraysParallelSortHelpers
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Comparator>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -356,7 +357,7 @@ public partial class ArraysParallelSortHelpers
 			}
 
 			[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;[Ljava/lang/Object;[Ljava/lang/Object;IIIILjava/util/Comparator;)V", "")]
-			public Sorter(Dova.JDK.java.util.concurrent.CountedCompleter arg0, JavaArray<Dova.JDK.java.lang.Object> arg1, JavaArray<Dova.JDK.java.lang.Object> arg2, int arg3, int arg4, int arg5, int arg6, Dova.JDK.java.util.Comparator arg7) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+			public Sorter(Dova.JDK.java.util.concurrent.CountedCompleter arg0, JavaArray<Dova.JDK.java.lang.Object> arg1, JavaArray<Dova.JDK.java.lang.Object> arg2, int arg3, int arg4, int arg5, int arg6, Dova.JDK.java.util.Comparator arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 			{
 			}
 
@@ -367,7 +368,7 @@ public partial class ArraysParallelSortHelpers
 			[JniSignatureAttribute("()V", "public final")]
 			public void compute()
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 			}
 		}
 	}
@@ -385,13 +386,13 @@ public partial class ArraysParallelSortHelpers
 
 		static Relay()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$Relay;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "task", "Ljava/util/concurrent/CountedCompleter;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Relay", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$Relay;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "task", "Ljava/util/concurrent/CountedCompleter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Relay", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
 		}
 
 		[JniSignatureAttribute("J", "static final")]
@@ -399,10 +400,10 @@ public partial class ArraysParallelSortHelpers
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/CountedCompleter;", "final")]
@@ -410,10 +411,10 @@ public partial class ArraysParallelSortHelpers
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.CountedCompleter>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -422,7 +423,7 @@ public partial class ArraysParallelSortHelpers
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;)V", "")]
-		public Relay(Dova.JDK.java.util.concurrent.CountedCompleter arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Relay(Dova.JDK.java.util.concurrent.CountedCompleter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -433,13 +434,13 @@ public partial class ArraysParallelSortHelpers
 		[JniSignatureAttribute("()V", "public final")]
 		public void compute()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;)V", "public final")]
 		public void onCompletion(Dova.JDK.java.util.concurrent.CountedCompleter arg0)
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 		}
 	}
 
@@ -456,11 +457,11 @@ public partial class ArraysParallelSortHelpers
 
 		static EmptyCompleter()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$EmptyCompleter;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "EmptyCompleter", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/ArraysParallelSortHelpers$EmptyCompleter;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EmptyCompleter", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "()V"));
 		}
 
 		[JniSignatureAttribute("J", "static final")]
@@ -468,10 +469,10 @@ public partial class ArraysParallelSortHelpers
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -480,7 +481,7 @@ public partial class ArraysParallelSortHelpers
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/CountedCompleter;)V", "")]
-		public EmptyCompleter(Dova.JDK.java.util.concurrent.CountedCompleter arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EmptyCompleter(Dova.JDK.java.util.concurrent.CountedCompleter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -491,7 +492,7 @@ public partial class ArraysParallelSortHelpers
 		[JniSignatureAttribute("()V", "public final")]
 		public void compute()
 		{
-			DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
+			DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0]);
 		}
 	}
 }

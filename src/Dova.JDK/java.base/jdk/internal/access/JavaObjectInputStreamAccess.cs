@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,14 +27,14 @@ public partial interface JavaObjectInputStreamAccess
 
 	static JavaObjectInputStreamAccess()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/internal/access/JavaObjectInputStreamAccess;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "checkArray", "(Ljava/io/ObjectInputStream;Ljava/lang/Class;I)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/JavaObjectInputStreamAccess;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkArray", "(Ljava/io/ObjectInputStream;Ljava/lang/Class;I)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/io/ObjectInputStream;Ljava/lang/Class;I)V", "public abstract")]
 	void checkArray(Dova.JDK.java.io.ObjectInputStream arg0, Dova.JDK.java.lang.Class arg1, int arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 	}
 }

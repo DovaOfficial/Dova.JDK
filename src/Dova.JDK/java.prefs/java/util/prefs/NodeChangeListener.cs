@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,21 +28,21 @@ public partial interface NodeChangeListener
 
 	static NodeChangeListener()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/util/prefs/NodeChangeListener;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/prefs/NodeChangeListener;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "childAdded", "(Ljava/util/prefs/NodeChangeEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "childRemoved", "(Ljava/util/prefs/NodeChangeEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/util/prefs/NodeChangeEvent;)V", "public abstract")]
 	void childAdded(Dova.JDK.java.util.prefs.NodeChangeEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/prefs/NodeChangeEvent;)V", "public abstract")]
 	void childRemoved(Dova.JDK.java.util.prefs.NodeChangeEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 }

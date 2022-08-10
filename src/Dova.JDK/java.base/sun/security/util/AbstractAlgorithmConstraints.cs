@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -29,12 +30,12 @@ public partial class AbstractAlgorithmConstraints
 
 	static AbstractAlgorithmConstraints()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/AbstractAlgorithmConstraints;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "decomposer", "Lsun/security/util/AlgorithmDecomposer;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "AbstractAlgorithmConstraints", "(Lsun/security/util/AlgorithmDecomposer;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "checkAlgorithm", "(Ljava/util/Set;Ljava/lang/String;Lsun/security/util/AlgorithmDecomposer;)Z"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/AbstractAlgorithmConstraints;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decomposer", "Lsun/security/util/AlgorithmDecomposer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractAlgorithmConstraints", "(Lsun/security/util/AlgorithmDecomposer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkAlgorithm", "(Ljava/util/Set;Ljava/lang/String;Lsun/security/util/AlgorithmDecomposer;)Z"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/AlgorithmDecomposer;", "protected final")]
@@ -42,10 +43,10 @@ public partial class AbstractAlgorithmConstraints
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.AlgorithmDecomposer>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -54,7 +55,7 @@ public partial class AbstractAlgorithmConstraints
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/AlgorithmDecomposer;)V", "protected")]
-	public AbstractAlgorithmConstraints(Dova.JDK.sun.security.util.AlgorithmDecomposer arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractAlgorithmConstraints(Dova.JDK.sun.security.util.AlgorithmDecomposer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -65,14 +66,14 @@ public partial class AbstractAlgorithmConstraints
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/Set;", "static")]
 	public static Dova.JDK.java.util.Set getAlgorithms(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Set;Ljava/lang/String;Lsun/security/util/AlgorithmDecomposer;)Z", "static")]
 	public static bool checkAlgorithm(Dova.JDK.java.util.Set arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.sun.security.util.AlgorithmDecomposer arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallStaticBooleanMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 		return ret;
 	}
 }

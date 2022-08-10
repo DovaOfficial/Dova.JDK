@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class GUIInitializedMulticaster
 
 	static GUIInitializedMulticaster()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/java/accessibility/util/GUIInitializedMulticaster;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "GUIInitializedMulticaster", "(Ljava/util/EventListener;Ljava/util/EventListener;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "add", "(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "remove", "(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "guiInitialized", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "addInternal", "(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "removeInternal", "(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java/accessibility/util/GUIInitializedMulticaster;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GUIInitializedMulticaster", "(Ljava/util/EventListener;Ljava/util/EventListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "add", "(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "remove", "(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "guiInitialized", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addInternal", "(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "removeInternal", "(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -44,7 +45,7 @@ public partial class GUIInitializedMulticaster
 	}
 
 	[JniSignatureAttribute("(Ljava/util/EventListener;Ljava/util/EventListener;)V", "protected")]
-	public GUIInitializedMulticaster(Dova.JDK.java.util.EventListener arg0, Dova.JDK.java.util.EventListener arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public GUIInitializedMulticaster(Dova.JDK.java.util.EventListener arg0, Dova.JDK.java.util.EventListener arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -55,34 +56,34 @@ public partial class GUIInitializedMulticaster
 	[JniSignatureAttribute("(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;", "public static")]
 	public static Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener add(Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener arg0, Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener>(ret);
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/java/accessibility/util/GUIInitializedListener;Lcom/sun/java/accessibility/util/GUIInitializedListener;)Lcom/sun/java/accessibility/util/GUIInitializedListener;", "public static")]
 	public static Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener remove(Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener arg0, Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.accessibility.util.GUIInitializedListener>(ret);
 	}
 
 	[JniSignatureAttribute("()V", "public")]
 	public void guiInitialized()
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2]);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;", "protected static")]
 	public static Dova.JDK.java.util.EventListener addInternal(Dova.JDK.java.util.EventListener arg0, Dova.JDK.java.util.EventListener arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.EventListener>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/util/EventListener;Ljava/util/EventListener;)Ljava/util/EventListener;", "protected static")]
 	public static Dova.JDK.java.util.EventListener removeInternal(Dova.JDK.java.util.EventListener arg0, Dova.JDK.java.util.EventListener arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.util.EventListener>(ret);
 	}
 }

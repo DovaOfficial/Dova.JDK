@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,14 +29,14 @@ public partial class CCacheOutputStream
 
 	static CCacheOutputStream()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/krb5/internal/ccache/CCacheOutputStream;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CCacheOutputStream", "(Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "writeFlags", "(Lsun/security/krb5/internal/TicketFlags;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "writeTicket", "(Lsun/security/krb5/internal/Ticket;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "writeHeader", "(Lsun/security/krb5/PrincipalName;I)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addCreds", "(Lsun/security/krb5/internal/ccache/Credentials;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addConfigEntry", "(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/internal/ccache/CredentialsCache$ConfigEntry;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/krb5/internal/ccache/CCacheOutputStream;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CCacheOutputStream", "(Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeFlags", "(Lsun/security/krb5/internal/TicketFlags;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeTicket", "(Lsun/security/krb5/internal/Ticket;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeHeader", "(Lsun/security/krb5/PrincipalName;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addCreds", "(Lsun/security/krb5/internal/ccache/Credentials;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addConfigEntry", "(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/internal/ccache/CredentialsCache$ConfigEntry;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -44,7 +45,7 @@ public partial class CCacheOutputStream
 	}
 
 	[JniSignatureAttribute("(Ljava/io/OutputStream;)V", "public")]
-	public CCacheOutputStream(Dova.JDK.java.io.OutputStream arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CCacheOutputStream(Dova.JDK.java.io.OutputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -55,30 +56,30 @@ public partial class CCacheOutputStream
 	[JniSignatureAttribute("(Lsun/security/krb5/internal/TicketFlags;)V", "")]
 	public void writeFlags(Dova.JDK.sun.security.krb5.@internal.TicketFlags arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/internal/Ticket;)V", "")]
 	public void writeTicket(Dova.JDK.sun.security.krb5.@internal.Ticket arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/PrincipalName;I)V", "public")]
 	public void writeHeader(Dova.JDK.sun.security.krb5.PrincipalName arg0, int arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[2], arg0, arg1);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/internal/ccache/Credentials;)V", "public")]
 	public void addCreds(Dova.JDK.sun.security.krb5.@internal.ccache.Credentials arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/internal/ccache/CredentialsCache$ConfigEntry;)V", "public")]
 	public void addConfigEntry(Dova.JDK.sun.security.krb5.PrincipalName arg0, Dova.JDK.sun.security.krb5.@internal.ccache.CredentialsCache.ConfigEntry arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 	}
 }

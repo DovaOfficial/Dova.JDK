@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,25 +29,25 @@ public partial class ObjectFactory
 
 	static ObjectFactory()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljdk/jfr/internal/consumer/ObjectFactory;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "PRIVATE_ACCESS", "Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_PREFIX_VERSION_1", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_PREFIX_VERSION_2", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "STACK_FRAME_VERSION_1", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "STACK_FRAME_VERSION_2", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "objectContext", "Ljdk/jfr/internal/consumer/ObjectContext;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ObjectFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createObject", "(JLjava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createThreadFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createFrameFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createMethodFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createdThreadGroupFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createStackTraceFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createClassLoaderFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createClassFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "createTyped", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljava/lang/Object;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ObjectFactory;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRIVATE_ACCESS", "Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_PREFIX_VERSION_1", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_PREFIX_VERSION_2", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STACK_FRAME_VERSION_1", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STACK_FRAME_VERSION_2", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectContext", "Ljdk/jfr/internal/consumer/ObjectContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createObject", "(JLjava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createThreadFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFrameFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createMethodFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createdThreadGroupFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createStackTraceFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createClassLoaderFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createClassFactory", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTyped", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/consumer/JdkJfrConsumer;", "private static final")]
@@ -54,10 +55,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.JdkJfrConsumer>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -65,10 +66,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -76,10 +77,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -87,10 +88,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -98,10 +99,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/consumer/ObjectContext;", "private final")]
@@ -109,10 +110,10 @@ public partial class ObjectFactory
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectContext>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -121,7 +122,7 @@ public partial class ObjectFactory
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)V", "private")]
-	public ObjectFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ObjectFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -132,70 +133,70 @@ public partial class ObjectFactory
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory create(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(JLjava/lang/Object;)Ljava/lang/Object;", "")]
 	public Dova.JDK.java.lang.Object createObject(long arg0, Dova.JDK.java.lang.Object arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createThreadFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createFrameFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[3], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createMethodFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createdThreadGroupFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createStackTraceFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createClassLoaderFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[7], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/TimeConverter;)Ljdk/jfr/internal/consumer/ObjectFactory;", "private static")]
 	public static Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory createClassFactory(Dova.JDK.jdk.jfr.@internal.Type arg0, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[8], arg0, arg1);
 		return DovaInterfaceFactory.Get<Dova.JDK.jdk.jfr.@internal.consumer.ObjectFactory>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljava/lang/Object;", "abstract")]
 	public Dova.JDK.java.lang.Object createTyped(Dova.JDK.jdk.jfr.@internal.consumer.ObjectContext arg0, long arg1, JavaArray<Dova.JDK.java.lang.Object> arg2)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[9], arg0, arg1, arg2);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 	}
 }

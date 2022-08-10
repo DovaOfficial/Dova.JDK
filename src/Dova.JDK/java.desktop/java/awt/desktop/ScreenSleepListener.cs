@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,21 +28,21 @@ public partial interface ScreenSleepListener
 
 	static ScreenSleepListener()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/awt/desktop/ScreenSleepListener;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "screenAboutToSleep", "(Ljava/awt/desktop/ScreenSleepEvent;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "screenAwoke", "(Ljava/awt/desktop/ScreenSleepEvent;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/ScreenSleepListener;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "screenAboutToSleep", "(Ljava/awt/desktop/ScreenSleepEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "screenAwoke", "(Ljava/awt/desktop/ScreenSleepEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/ScreenSleepEvent;)V", "public abstract")]
 	void screenAboutToSleep(Dova.JDK.java.awt.desktop.ScreenSleepEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/ScreenSleepEvent;)V", "public abstract")]
 	void screenAwoke(Dova.JDK.java.awt.desktop.ScreenSleepEvent arg0)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 	}
 }

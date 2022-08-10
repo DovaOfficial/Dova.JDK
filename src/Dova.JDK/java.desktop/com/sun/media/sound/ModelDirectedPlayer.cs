@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,14 +27,14 @@ public partial interface ModelDirectedPlayer
 
 	static ModelDirectedPlayer()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lcom/sun/media/sound/ModelDirectedPlayer;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "play", "(I[Lcom/sun/media/sound/ModelConnectionBlock;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/ModelDirectedPlayer;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "play", "(I[Lcom/sun/media/sound/ModelConnectionBlock;)V"));
 	}
 
 	[JniSignatureAttribute("(I[Lcom/sun/media/sound/ModelConnectionBlock;)V", "public abstract")]
 	void play(int arg0, JavaArray<Dova.JDK.com.sun.media.sound.ModelConnectionBlock> arg1)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 	}
 }

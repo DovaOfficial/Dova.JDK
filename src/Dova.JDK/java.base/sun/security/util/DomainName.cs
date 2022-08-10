@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,12 +29,12 @@ public partial class DomainName
 
 	static DomainName()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "cache", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "DomainName", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getMatch", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "registeredDomain", "(Ljava/lang/String;)Lsun/security/util/RegisteredDomain;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cache", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DomainName", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMatch", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "registeredDomain", "(Ljava/lang/String;)Lsun/security/util/RegisteredDomain;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -41,10 +42,10 @@ public partial class DomainName
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -53,7 +54,7 @@ public partial class DomainName
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DomainName() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DomainName() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -64,14 +65,14 @@ public partial class DomainName
 	[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Match;", "private static")]
 	public static Dova.JDK.sun.security.util.DomainName.Match getMatch(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/RegisteredDomain;", "public static")]
 	public static Dova.JDK.sun.security.util.RegisteredDomain registeredDomain(Dova.JDK.java.lang.String arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain>(ret);
 	}
 
@@ -86,23 +87,23 @@ public partial class DomainName
 
 		static Match()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$Match;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$Match;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
 		}
 
 		[JniSignatureAttribute("()Lsun/security/util/DomainName$Rule$Type;", "public abstract")]
 		Dova.JDK.sun.security.util.DomainName.Rule.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/util/RegisteredDomain;", "public abstract")]
 		Dova.JDK.sun.security.util.RegisteredDomain registeredDomain()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain>(ret);
 		}
 	}
@@ -120,18 +121,18 @@ public partial class DomainName
 
 		static Rules()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$Rules;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "ruleSets", "Ljava/util/LinkedList;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hasExceptions", "Z"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Rules", "(Ljava/io/InputStream;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getRules", "(Ljava/lang/String;Ljava/util/zip/ZipInputStream;)Lsun/security/util/DomainName$Rules;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getRules", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getRuleSet", "(I)Lsun/security/util/DomainName$Rules$RuleSet;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getTopLevelDomain", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getPubSuffixStream", "()Ljava/io/InputStream;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "createRules", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$Rules;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ruleSets", "Ljava/util/LinkedList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasExceptions", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Rules", "(Ljava/io/InputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRules", "(Ljava/lang/String;Ljava/util/zip/ZipInputStream;)Lsun/security/util/DomainName$Rules;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRules", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRuleSet", "(I)Lsun/security/util/DomainName$Rules$RuleSet;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTopLevelDomain", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPubSuffixStream", "()Ljava/io/InputStream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createRules", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/LinkedList;", "private final")]
@@ -139,10 +140,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.LinkedList>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Z", "private final")]
@@ -150,10 +151,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -162,7 +163,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Ljava/io/InputStream;)V", "private")]
-		public Rules(Dova.JDK.java.io.InputStream arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Rules(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -173,49 +174,49 @@ public partial class DomainName
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Match;", "")]
 		public Dova.JDK.sun.security.util.DomainName.Match match(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/zip/ZipInputStream;)Lsun/security/util/DomainName$Rules;", "private static")]
 		public static Dova.JDK.sun.security.util.DomainName.Rules getRules(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.zip.ZipInputStream arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rules>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;", "static")]
 		public static Dova.JDK.sun.security.util.DomainName.Rules getRules(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rules>(ret);
 		}
 
 		[JniSignatureAttribute("(I)Lsun/security/util/DomainName$Rules$RuleSet;", "private")]
 		public Dova.JDK.sun.security.util.DomainName.Rules.RuleSet getRuleSet(int arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rules.RuleSet>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Ljava/lang/String;", "private static")]
 		public static Dova.JDK.java.lang.String getTopLevelDomain(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[4], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/io/InputStream;", "private static")]
 		public static Dova.JDK.java.io.InputStream getPubSuffixStream()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Rules;", "private static")]
 		public static Dova.JDK.sun.security.util.DomainName.Rules createRules(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[6], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rules>(ret);
 		}
 
@@ -232,22 +233,22 @@ public partial class DomainName
 
 			static RuleSet()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$Rules$RuleSet;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "numLabels", "I"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "rules", "Ljava/util/Set;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "hasExceptions", "Z"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "AUTHS", "[Lsun/security/util/RegisteredDomain$Type;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RuleSet", "(I)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "split", "(Ljava/lang/String;)Ljava/util/LinkedList;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "labels", "(Ljava/lang/String;I)I"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "numLabels", "(Ljava/lang/String;)I"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "addRule", "(ILjava/lang/String;)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matchNormal", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matchWildcard", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matchOther", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "matchException", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$Rules$RuleSet;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numLabels", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rules", "Ljava/util/Set;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasExceptions", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AUTHS", "[Lsun/security/util/RegisteredDomain$Type;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RuleSet", "(I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "split", "(Ljava/lang/String;)Ljava/util/LinkedList;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/lang/String;)Lsun/security/util/DomainName$Match;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "labels", "(Ljava/lang/String;I)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "numLabels", "(Ljava/lang/String;)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRule", "(ILjava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchNormal", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchWildcard", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchOther", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchException", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;"));
 			}
 
 			[JniSignatureAttribute("I", "private final")]
@@ -255,10 +256,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
 			}
 
 			[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -266,10 +267,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Z", "")]
@@ -277,10 +278,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 					return ret;
 				}
-				set => DovaJvm.Vm.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+				set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
 			}
 
 			[JniSignatureAttribute("[Lsun/security/util/RegisteredDomain$Type;", "private static final")]
@@ -288,10 +289,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.util.RegisteredDomain.Type>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -300,7 +301,7 @@ public partial class DomainName
 			}
 
 			[JniSignatureAttribute("(I)V", "")]
-			public RuleSet(int arg0) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public RuleSet(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -311,62 +312,62 @@ public partial class DomainName
 			[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/LinkedList;", "private static")]
 			public static Dova.JDK.java.util.LinkedList split(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.LinkedList>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Match;", "")]
 			public Dova.JDK.sun.security.util.DomainName.Match match(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;I)I", "private static")]
 			public static int labels(Dova.JDK.java.lang.String arg0, int arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
+				var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[2], arg0, arg1);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)I", "private static")]
 			public static int numLabels(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[3], arg0);
+				var ret = DovaVM.Runtime.CallStaticIntMethodA(ClassRefPtr, MethodPtrs[3], arg0);
 				return ret;
 			}
 
 			[JniSignatureAttribute("(ILjava/lang/String;)V", "")]
 			public void addRule(int arg0, Dova.JDK.java.lang.String arg1)
 			{
-				DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
+				DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[4], arg0, arg1);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;", "private")]
 			public Dova.JDK.sun.security.util.DomainName.Match matchNormal(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[5], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;", "private")]
 			public Dova.JDK.sun.security.util.DomainName.Match matchWildcard(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[6], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;", "private")]
 			public Dova.JDK.sun.security.util.DomainName.Match matchOther(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[7], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule;)Lsun/security/util/DomainName$Match;", "private")]
 			public Dova.JDK.sun.security.util.DomainName.Match matchException(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
+				var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[8], arg0, arg1);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Match>(ret);
 			}
 		}
@@ -386,15 +387,15 @@ public partial class DomainName
 
 		static OtherMatch()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$OtherMatch;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "rule", "Lsun/security/util/DomainName$Rule;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "numLabels", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "target", "Ljava/util/LinkedList;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OtherMatch", "(Lsun/security/util/DomainName$Rule;ILjava/util/LinkedList;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getSuffixes", "(I)Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$OtherMatch;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rule", "Lsun/security/util/DomainName$Rule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numLabels", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljava/util/LinkedList;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OtherMatch", "(Lsun/security/util/DomainName$Rule;ILjava/util/LinkedList;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSuffixes", "(I)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/DomainName$Rule;", "private final")]
@@ -402,10 +403,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -413,10 +414,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("Ljava/util/LinkedList;", "private final")]
@@ -424,10 +425,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.LinkedList>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -436,7 +437,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/DomainName$Rule;ILjava/util/LinkedList;)V", "")]
-		public OtherMatch(Dova.JDK.sun.security.util.DomainName.Rule arg0, int arg1, Dova.JDK.java.util.LinkedList arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public OtherMatch(Dova.JDK.sun.security.util.DomainName.Rule arg0, int arg1, Dova.JDK.java.util.LinkedList arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -447,21 +448,21 @@ public partial class DomainName
 		[JniSignatureAttribute("()Lsun/security/util/DomainName$Rule$Type;", "public")]
 		public Dova.JDK.sun.security.util.DomainName.Rule.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/util/RegisteredDomain;", "public")]
 		public Dova.JDK.sun.security.util.RegisteredDomain registeredDomain()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain>(ret);
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/String;", "private")]
 		public Dova.JDK.java.lang.String getSuffixes(int arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 	}
@@ -480,15 +481,15 @@ public partial class DomainName
 
 		static CommonMatch()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$CommonMatch;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "domain", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "publicSuffix", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "registeredDomain", "I"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "rule", "Lsun/security/util/DomainName$Rule;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "CommonMatch", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;I)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$CommonMatch;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "domain", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "publicSuffix", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "registeredDomain", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rule", "Lsun/security/util/DomainName$Rule;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CommonMatch", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/DomainName$Rule$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registeredDomain", "()Lsun/security/util/RegisteredDomain;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -496,10 +497,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -507,10 +508,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -518,10 +519,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/DomainName$Rule;", "private final")]
@@ -529,10 +530,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -541,7 +542,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule;I)V", "")]
-		public CommonMatch(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1, int arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CommonMatch(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -552,14 +553,14 @@ public partial class DomainName
 		[JniSignatureAttribute("()Lsun/security/util/DomainName$Rule$Type;", "public")]
 		public Dova.JDK.sun.security.util.DomainName.Rule.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/util/RegisteredDomain;", "public")]
 		public Dova.JDK.sun.security.util.RegisteredDomain registeredDomain()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain>(ret);
 		}
 	}
@@ -578,15 +579,15 @@ public partial class DomainName
 
 		static RegisteredDomainImpl()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$RegisteredDomainImpl;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Lsun/security/util/RegisteredDomain$Type;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "publicSuffix", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RegisteredDomainImpl", "(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/RegisteredDomain$Type;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "publicSuffix", "()Ljava/lang/String;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$RegisteredDomainImpl;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lsun/security/util/RegisteredDomain$Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "publicSuffix", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RegisteredDomainImpl", "(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "type", "()Lsun/security/util/RegisteredDomain$Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "publicSuffix", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -594,10 +595,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/RegisteredDomain$Type;", "private final")]
@@ -605,10 +606,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain.Type>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -616,10 +617,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -628,7 +629,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/lang/String;)V", "")]
-		public RegisteredDomainImpl(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.RegisteredDomain.Type arg1, Dova.JDK.java.lang.String arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public RegisteredDomainImpl(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.RegisteredDomain.Type arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -639,21 +640,21 @@ public partial class DomainName
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String name()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 
 		[JniSignatureAttribute("()Lsun/security/util/RegisteredDomain$Type;", "public")]
 		public Dova.JDK.sun.security.util.RegisteredDomain.Type type()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain.Type>(ret);
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 		public Dova.JDK.java.lang.String publicSuffix()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
 	}
@@ -670,10 +671,10 @@ public partial class DomainName
 
 		static OtherRule()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$OtherRule;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "labels", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "OtherRule", "(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/util/List;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$OtherRule;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "labels", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OtherRule", "(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/util/List;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "")]
@@ -681,10 +682,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -693,7 +694,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/RegisteredDomain$Type;Ljava/util/List;)V", "")]
-		public OtherRule(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.RegisteredDomain.Type arg1, Dova.JDK.java.util.List arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public OtherRule(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.RegisteredDomain.Type arg1, Dova.JDK.java.util.List arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -714,12 +715,12 @@ public partial class DomainName
 
 		static Rule()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$Rule;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "domain", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "type", "Lsun/security/util/DomainName$Rule$Type;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "auth", "Lsun/security/util/RegisteredDomain$Type;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Rule", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule$Type;Lsun/security/util/RegisteredDomain$Type;)V"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$Rule;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "domain", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lsun/security/util/DomainName$Rule$Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "auth", "Lsun/security/util/RegisteredDomain$Type;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Rule", "(Ljava/lang/String;Lsun/security/util/DomainName$Rule$Type;Lsun/security/util/RegisteredDomain$Type;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "")]
@@ -727,10 +728,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/DomainName$Rule$Type;", "")]
@@ -738,10 +739,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/RegisteredDomain$Type;", "")]
@@ -749,10 +750,10 @@ public partial class DomainName
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.RegisteredDomain.Type>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -761,7 +762,7 @@ public partial class DomainName
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/DomainName$Rule$Type;Lsun/security/util/RegisteredDomain$Type;)V", "")]
-		public Rule(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule.Type arg1, Dova.JDK.sun.security.util.RegisteredDomain.Type arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Rule(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.DomainName.Rule.Type arg1, Dova.JDK.sun.security.util.RegisteredDomain.Type arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -782,17 +783,17 @@ public partial class DomainName
 
 			static Type()
 			{
-				ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/util/DomainName$Rule$Type;");
-				ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION", "Lsun/security/util/DomainName$Rule$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "NORMAL", "Lsun/security/util/DomainName$Rule$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "OTHER", "Lsun/security/util/DomainName$Rule$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lsun/security/util/DomainName$Rule$Type;"));
-				FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/util/DomainName$Rule$Type;"));
-				ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "Type", "(Ljava/lang/String;I)V"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/util/DomainName$Rule$Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rule$Type;"));
-				MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/util/DomainName$Rule$Type;"));
+				ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/DomainName$Rule$Type;");
+				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION", "Lsun/security/util/DomainName$Rule$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NORMAL", "Lsun/security/util/DomainName$Rule$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OTHER", "Lsun/security/util/DomainName$Rule$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lsun/security/util/DomainName$Rule$Type;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/util/DomainName$Rule$Type;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Type", "(Ljava/lang/String;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/util/DomainName$Rule$Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/util/DomainName$Rule$Type;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/util/DomainName$Rule$Type;"));
 			}
 
 			[JniSignatureAttribute("Lsun/security/util/DomainName$Rule$Type;", "public static final")]
@@ -800,10 +801,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lsun/security/util/DomainName$Rule$Type;", "public static final")]
@@ -811,10 +812,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lsun/security/util/DomainName$Rule$Type;", "public static final")]
@@ -822,10 +823,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("Lsun/security/util/DomainName$Rule$Type;", "public static final")]
@@ -833,10 +834,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("[Lsun/security/util/DomainName$Rule$Type;", "private static final")]
@@ -844,10 +845,10 @@ public partial class DomainName
 			{
 				get
 				{
-					var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 					return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.util.DomainName.Rule.Type>>(ret);
 				}
-				set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -856,7 +857,7 @@ public partial class DomainName
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-			public Type(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Type(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -867,21 +868,21 @@ public partial class DomainName
 			[JniSignatureAttribute("()[Lsun/security/util/DomainName$Rule$Type;", "public static")]
 			public static JavaArray<Dova.JDK.sun.security.util.DomainName.Rule.Type> values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.util.DomainName.Rule.Type>>(ret);
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/util/DomainName$Rule$Type;", "public static")]
 			public static Dova.JDK.sun.security.util.DomainName.Rule.Type valueOf(Dova.JDK.java.lang.String arg0)
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.util.DomainName.Rule.Type>(ret);
 			}
 
 			[JniSignatureAttribute("()[Lsun/security/util/DomainName$Rule$Type;", "private static")]
 			public static JavaArray<Dova.JDK.sun.security.util.DomainName.Rule.Type> _values()
 			{
-				var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+				var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.util.DomainName.Rule.Type>>(ret);
 			}
 		}

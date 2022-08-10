@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,10 +28,10 @@ public partial class XErrorHandler
 
 	static XErrorHandler()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11/XErrorHandler;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XErrorHandler", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XErrorHandler;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XErrorHandler", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -39,7 +40,7 @@ public partial class XErrorHandler
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public XErrorHandler() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public XErrorHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -50,7 +51,7 @@ public partial class XErrorHandler
 	[JniSignatureAttribute("(JLsun/awt/X11/XErrorEvent;)I", "public abstract")]
 	public int handleError(long arg0, Dova.JDK.sun.awt.X11.XErrorEvent arg1)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 		return ret;
 	}
 
@@ -67,12 +68,12 @@ public partial class XErrorHandler
 
 		static VerifyChangePropertyHandler()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "VerifyChangePropertyHandler", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VerifyChangePropertyHandler", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;", "private static")]
@@ -80,10 +81,10 @@ public partial class XErrorHandler
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XErrorHandler.VerifyChangePropertyHandler>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -92,7 +93,7 @@ public partial class XErrorHandler
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public VerifyChangePropertyHandler() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public VerifyChangePropertyHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -103,14 +104,14 @@ public partial class XErrorHandler
 		[JniSignatureAttribute("()Lsun/awt/X11/XErrorHandler$VerifyChangePropertyHandler;", "public static")]
 		public static Dova.JDK.sun.awt.X11.XErrorHandler.VerifyChangePropertyHandler getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XErrorHandler.VerifyChangePropertyHandler>(ret);
 		}
 
 		[JniSignatureAttribute("(JLsun/awt/X11/XErrorEvent;)I", "public")]
 		public int handleError(long arg0, Dova.JDK.sun.awt.X11.XErrorEvent arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return ret;
 		}
 	}
@@ -128,12 +129,12 @@ public partial class XErrorHandler
 
 		static IgnoreBadWindowHandler()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "IgnoreBadWindowHandler", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IgnoreBadWindowHandler", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;", "private static")]
@@ -141,10 +142,10 @@ public partial class XErrorHandler
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XErrorHandler.IgnoreBadWindowHandler>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -153,7 +154,7 @@ public partial class XErrorHandler
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public IgnoreBadWindowHandler() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public IgnoreBadWindowHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -164,14 +165,14 @@ public partial class XErrorHandler
 		[JniSignatureAttribute("()Lsun/awt/X11/XErrorHandler$IgnoreBadWindowHandler;", "public static")]
 		public static Dova.JDK.sun.awt.X11.XErrorHandler.IgnoreBadWindowHandler getInstance()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.awt.X11.XErrorHandler.IgnoreBadWindowHandler>(ret);
 		}
 
 		[JniSignatureAttribute("(JLsun/awt/X11/XErrorEvent;)I", "public")]
 		public int handleError(long arg0, Dova.JDK.sun.awt.X11.XErrorEvent arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[1], arg0, arg1);
 			return ret;
 		}
 	}
@@ -188,10 +189,10 @@ public partial class XErrorHandler
 
 		static XBaseErrorHandler()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$XBaseErrorHandler;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "XBaseErrorHandler", "()V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XErrorHandler$XBaseErrorHandler;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XBaseErrorHandler", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleError", "(JLsun/awt/X11/XErrorEvent;)I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -200,7 +201,7 @@ public partial class XErrorHandler
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public XBaseErrorHandler() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XBaseErrorHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -211,7 +212,7 @@ public partial class XErrorHandler
 		[JniSignatureAttribute("(JLsun/awt/X11/XErrorEvent;)I", "public")]
 		public int handleError(long arg0, Dova.JDK.sun.awt.X11.XErrorEvent arg1)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
+			var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1);
 			return ret;
 		}
 	}

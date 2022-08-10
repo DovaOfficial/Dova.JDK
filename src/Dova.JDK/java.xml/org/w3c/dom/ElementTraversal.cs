@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -26,47 +27,47 @@ public partial interface ElementTraversal
 
 	static ElementTraversal()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lorg/w3c/dom/ElementTraversal;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getFirstElementChild", "()Lorg/w3c/dom/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLastElementChild", "()Lorg/w3c/dom/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getPreviousElementSibling", "()Lorg/w3c/dom/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getNextElementSibling", "()Lorg/w3c/dom/Element;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getChildElementCount", "()I"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/ElementTraversal;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFirstElementChild", "()Lorg/w3c/dom/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLastElementChild", "()Lorg/w3c/dom/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPreviousElementSibling", "()Lorg/w3c/dom/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNextElementSibling", "()Lorg/w3c/dom/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChildElementCount", "()I"));
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/Element;", "public abstract")]
 	Dova.JDK.org.w3c.dom.Element getFirstElementChild()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/Element;", "public abstract")]
 	Dova.JDK.org.w3c.dom.Element getLastElementChild()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/Element;", "public abstract")]
 	Dova.JDK.org.w3c.dom.Element getPreviousElementSibling()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[2]);
 		return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/Element;", "public abstract")]
 	Dova.JDK.org.w3c.dom.Element getNextElementSibling()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Element>(ret);
 	}
 
 	[JniSignatureAttribute("()I", "public abstract")]
 	int getChildElementCount()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
+		var ret = DovaVM.Runtime.CallIntMethodA(CurrentRefPtr, MethodPtrs[4]);
 		return ret;
 	}
 }

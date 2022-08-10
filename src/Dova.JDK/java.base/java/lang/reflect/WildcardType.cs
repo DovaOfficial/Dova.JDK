@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,23 +28,23 @@ public partial interface WildcardType
 
 	static WildcardType()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljava/lang/reflect/WildcardType;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getUpperBounds", "()[Ljava/lang/reflect/Type;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getLowerBounds", "()[Ljava/lang/reflect/Type;"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/reflect/WildcardType;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUpperBounds", "()[Ljava/lang/reflect/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLowerBounds", "()[Ljava/lang/reflect/Type;"));
 	}
 
 	[JniSignatureAttribute("()[Ljava/lang/reflect/Type;", "public abstract")]
 	JavaArray<Dova.JDK.java.lang.reflect.Type> getUpperBounds()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[0]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.reflect.Type>>(ret);
 	}
 
 	[JniSignatureAttribute("()[Ljava/lang/reflect/Type;", "public abstract")]
 	JavaArray<Dova.JDK.java.lang.reflect.Type> getLowerBounds()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.reflect.Type>>(ret);
 	}
 }

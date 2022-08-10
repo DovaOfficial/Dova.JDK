@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -28,16 +29,16 @@ public partial class PKCS11Exception
 
 	static PKCS11Exception()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "errorCode", "J"));
-		FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "errorMsg", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "PKCS11Exception", "(JLjava/lang/String;)V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(J)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getMessage", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "match", "(Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;)Z"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "getErrorCode", "()J"));
+		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorCode", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorMsg", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS11Exception", "(JLjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(J)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getErrorCode", "()J"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -45,10 +46,10 @@ public partial class PKCS11Exception
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
+			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
 	}
 
 	[JniSignatureAttribute("J", "protected")]
@@ -56,10 +57,10 @@ public partial class PKCS11Exception
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[1]);
+			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -67,10 +68,10 @@ public partial class PKCS11Exception
 	{
 		get
 		{
-			var ret = DovaJvm.Vm.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
+			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaJvm.Vm.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -79,7 +80,7 @@ public partial class PKCS11Exception
 	}
 
 	[JniSignatureAttribute("(JLjava/lang/String;)V", "public")]
-	public PKCS11Exception(long arg0, Dova.JDK.java.lang.String arg1) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PKCS11Exception(long arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -90,28 +91,28 @@ public partial class PKCS11Exception
 	[JniSignatureAttribute("(J)Ljava/lang/String;", "private static")]
 	public static Dova.JDK.java.lang.String lookup(long arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public")]
 	public Dova.JDK.java.lang.String getMessage()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
+		var ret = DovaVM.Runtime.CallObjectMethodA(CurrentRefPtr, MethodPtrs[1]);
 		return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 	}
 
 	[JniSignatureAttribute("(Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;)Z", "public")]
 	public bool match(Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV arg0)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
+		var ret = DovaVM.Runtime.CallBooleanMethodA(CurrentRefPtr, MethodPtrs[2], arg0);
 		return ret;
 	}
 
 	[JniSignatureAttribute("()J", "public")]
 	public long getErrorCode()
 	{
-		var ret = DovaJvm.Vm.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
+		var ret = DovaVM.Runtime.CallLongMethodA(CurrentRefPtr, MethodPtrs[3]);
 		return ret;
 	}
 
@@ -128,112 +129,112 @@ public partial class PKCS11Exception
 
 		static RV()
 		{
-			ClassPtr = DovaJvm.Vm.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;");
-			ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANCEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_HOST_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SLOT_ID_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_GENERAL_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ARGUMENTS_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NO_EVENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEED_TO_CREATE_THREADS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANT_LOCK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_VALUE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ACTION_PROHIBITED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_REMOVED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_AEAD_DECRYPT_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_CANCELED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_PARALLEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_CHANGED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_INDIGESTIBLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_FUNCTION_NOT_PERMITTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_WRAPPABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_UNEXTRACTABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_PARAM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OBJECT_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_ACTIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INCORRECT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_EXPIRED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_CLOSED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_COUNT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_PARALLEL_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_WRITE_SO_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCOMPLETE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_PRESENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_RECOGNIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_WRITE_PROTECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_NOT_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_PIN_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ANOTHER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TOO_MANY_TYPES", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_SEED_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_NO_RNG", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DOMAIN_PARAMS_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CURVE_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_BUFFER_TOO_SMALL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SAVED_STATE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_INFORMATION_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_STATE_UNSAVEABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_ALREADY_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_NOT_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEW_PIN_MODE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEXT_OTP", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_EXCEEDED_MAX_ITERATIONS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FIPS_SELF_TEST_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_LIBRARY_LOAD_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_TOO_WEAK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PUBLIC_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_REJECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_RESOURCE_EXCEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_CANCEL_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_VENDOR_DEFINED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetFieldId(ClassRefPtr, "value", "J"));
-			FieldPtrs.Add(DovaJvm.Vm.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "RV", "(Ljava/lang/String;IJ)V"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;");
+			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANCEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_HOST_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SLOT_ID_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_GENERAL_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ARGUMENTS_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NO_EVENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEED_TO_CREATE_THREADS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANT_LOCK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_VALUE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ACTION_PROHIBITED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_REMOVED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_AEAD_DECRYPT_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_CANCELED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_PARALLEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_CHANGED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_INDIGESTIBLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_FUNCTION_NOT_PERMITTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_WRAPPABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_UNEXTRACTABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_PARAM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OBJECT_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_ACTIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INCORRECT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_EXPIRED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_CLOSED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_COUNT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_PARALLEL_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_WRITE_SO_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCOMPLETE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_PRESENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_RECOGNIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_WRITE_PROTECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_NOT_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_PIN_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ANOTHER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TOO_MANY_TYPES", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_SEED_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_NO_RNG", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DOMAIN_PARAMS_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CURVE_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_BUFFER_TOO_SMALL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SAVED_STATE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_INFORMATION_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_STATE_UNSAVEABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_ALREADY_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_NOT_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEW_PIN_MODE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEXT_OTP", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_EXCEEDED_MAX_ITERATIONS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FIPS_SELF_TEST_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_LIBRARY_LOAD_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_TOO_WEAK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PUBLIC_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_REJECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_RESOURCE_EXCEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_CANCEL_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_VENDOR_DEFINED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RV", "(Ljava/lang/String;IJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -241,10 +242,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -252,10 +253,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -263,10 +264,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -274,10 +275,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -285,10 +286,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -296,10 +297,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -307,10 +308,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -318,10 +319,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -329,10 +330,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -340,10 +341,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -351,10 +352,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -362,10 +363,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -373,10 +374,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -384,10 +385,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -395,10 +396,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -406,10 +407,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[15]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[15]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[15], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -417,10 +418,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -428,10 +429,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[17]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[17]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[17], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -439,10 +440,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[18]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[18]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[18], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[18], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -450,10 +451,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[19]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[19]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[19], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[19], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -461,10 +462,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[20]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[20]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[20], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -472,10 +473,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[21]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[21]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[21], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -483,10 +484,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[22]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[22]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[22], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -494,10 +495,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[23]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[23]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[23], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -505,10 +506,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[24]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[24]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[24], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -516,10 +517,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[25]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[25]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[25], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -527,10 +528,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[26]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[26]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[26], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -538,10 +539,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[27]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[27]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[27], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -549,10 +550,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[28]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[28]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[28], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -560,10 +561,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[29]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[29]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[29], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -571,10 +572,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[30]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[30]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[30], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -582,10 +583,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[31]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[31]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[31], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -593,10 +594,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[32]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[32]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[32], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[32], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -604,10 +605,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[33]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[33]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[33], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[33], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -615,10 +616,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[34]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[34]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[34], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -626,10 +627,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[35]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[35]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[35], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[35], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -637,10 +638,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[36]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[36]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[36], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -648,10 +649,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[37]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[37]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[37], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -659,10 +660,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[38]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[38]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[38], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[38], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -670,10 +671,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[39]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[39]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[39], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[39], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -681,10 +682,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[40]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[40]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[40], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -692,10 +693,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[41]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[41]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[41], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[41], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -703,10 +704,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[42]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[42]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[42], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[42], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -714,10 +715,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[43]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[43]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[43], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[43], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -725,10 +726,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[44]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[44]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[44], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[44], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -736,10 +737,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[45]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[45]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[45], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[45], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -747,10 +748,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[46]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[46]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[46], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[46], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -758,10 +759,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[47]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[47]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[47], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[47], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -769,10 +770,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[48]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[48]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[48], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[48], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -780,10 +781,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[49]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[49]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[49], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[49], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -791,10 +792,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[50]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[50]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[50], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[50], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -802,10 +803,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[51]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[51]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[51], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[51], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -813,10 +814,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[52]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[52]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[52], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[52], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -824,10 +825,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[53]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[53]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[53], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[53], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -835,10 +836,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[54]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[54]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[54], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[54], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -846,10 +847,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[55]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[55]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[55], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[55], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -857,10 +858,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[56]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[56]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[56], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[56], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -868,10 +869,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[57]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[57]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[57], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[57], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -879,10 +880,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[58]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[58]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[58], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[58], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -890,10 +891,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[59]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[59]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[59], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[59], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -901,10 +902,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[60]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[60]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[60], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[60], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -912,10 +913,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[61]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[61]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[61], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[61], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -923,10 +924,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[62]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[62]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[62], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[62], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -934,10 +935,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[63]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[63]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[63], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[63], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -945,10 +946,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[64]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[64]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[64], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[64], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -956,10 +957,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[65]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[65]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[65], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[65], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -967,10 +968,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[66]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[66]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[66], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[66], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -978,10 +979,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[67]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[67]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[67], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[67], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -989,10 +990,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[68]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[68]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[68], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[68], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1000,10 +1001,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[69]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[69]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[69], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[69], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1011,10 +1012,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[70]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[70]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[70], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[70], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1022,10 +1023,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[71]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[71]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[71], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[71], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1033,10 +1034,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[72]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[72]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[72], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[72], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1044,10 +1045,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[73]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[73]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[73], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[73], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1055,10 +1056,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[74]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[74]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[74], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[74], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1066,10 +1067,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[75]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[75]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[75], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[75], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1077,10 +1078,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[76]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[76]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[76], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[76], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1088,10 +1089,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[77]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[77]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[77], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[77], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1099,10 +1100,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[78]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[78]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[78], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[78], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1110,10 +1111,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[79]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[79]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[79], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[79], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1121,10 +1122,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[80]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[80]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[80], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[80], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1132,10 +1133,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[81]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[81]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[81], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[81], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1143,10 +1144,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[82]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[82]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[82], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[82], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1154,10 +1155,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[83]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[83]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[83], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[83], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1165,10 +1166,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[84]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[84]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[84], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[84], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1176,10 +1177,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[85]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[85]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[85], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[85], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1187,10 +1188,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[86]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[86]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[86], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[86], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1198,10 +1199,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[87]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[87]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[87], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[87], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1209,10 +1210,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[88]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[88]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[88], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[88], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1220,10 +1221,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[89]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[89]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[89], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[89], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1231,10 +1232,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[90]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[90]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[90], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[90], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1242,10 +1243,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[91]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[91]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[91], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[91], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1253,10 +1254,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[92]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[92]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[92], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[92], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1264,10 +1265,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[93]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[93]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[93], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[93], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1275,10 +1276,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[94]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[94]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[94], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[94], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1286,10 +1287,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[95]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[95]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[95], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[95], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1297,10 +1298,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[96]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[96]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[96], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[96], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1308,10 +1309,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[97]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[97]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[97], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[97], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -1319,10 +1320,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[98]);
+				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[98]);
 				return ret;
 			}
-			set => DovaJvm.Vm.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[98], value);
+			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[98], value);
 		}
 
 		[JniSignatureAttribute("[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "private static final")]
@@ -1330,10 +1331,10 @@ public partial class PKCS11Exception
 		{
 			get
 			{
-				var ret = DovaJvm.Vm.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[99]);
+				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[99]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>>(ret);
 			}
-			set => DovaJvm.Vm.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[99], value.CurrentRefPtr);
+			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[99], value.CurrentRefPtr);
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1342,7 +1343,7 @@ public partial class PKCS11Exception
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;IJ)V", "private")]
-		public RV(Dova.JDK.java.lang.String arg0, int arg1, long arg2) : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public RV(Dova.JDK.java.lang.String arg0, int arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1353,21 +1354,21 @@ public partial class PKCS11Exception
 		[JniSignatureAttribute("()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static")]
 		public static JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV> values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>>(ret);
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static")]
 		public static Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV valueOf(Dova.JDK.java.lang.String arg0)
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[1], arg0);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>(ret);
 		}
 
 		[JniSignatureAttribute("()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "private static")]
 		public static JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV> _values()
 		{
-			var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
+			var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.PKCS11Exception.RV>>(ret);
 		}
 	}

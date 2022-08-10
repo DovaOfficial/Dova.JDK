@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,11 +28,11 @@ public partial class ServiceUI
 
 	static ServiceUI()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/print/ServiceUI;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "ServiceUI", "()V"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "printDialog", "(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/PrintService;"));
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetStaticMethodId(ClassRefPtr, "removeUnsupportedAttributes", "(Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/ServiceUI;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServiceUI", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "printDialog", "(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/PrintService;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "removeUnsupportedAttributes", "(Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +41,7 @@ public partial class ServiceUI
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ServiceUI() : base(DovaJvm.Vm.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ServiceUI() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -51,13 +52,13 @@ public partial class ServiceUI
 	[JniSignatureAttribute("(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/PrintService;", "public static")]
 	public static Dova.JDK.javax.print.PrintService printDialog(Dova.JDK.java.awt.GraphicsConfiguration arg0, int arg1, int arg2, JavaArray<Dova.JDK.javax.print.PrintService> arg3, Dova.JDK.javax.print.PrintService arg4, Dova.JDK.javax.print.DocFlavor arg5, Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg6)
 	{
-		var ret = DovaJvm.Vm.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+		var ret = DovaVM.Runtime.CallStaticObjectMethodA(ClassRefPtr, MethodPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6);
 		return DovaInterfaceFactory.Get<Dova.JDK.javax.print.PrintService>(ret);
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/AttributeSet;)V", "private static")]
 	public static void removeUnsupportedAttributes(Dova.JDK.javax.print.PrintService arg0, Dova.JDK.javax.print.DocFlavor arg1, Dova.JDK.javax.print.attribute.AttributeSet arg2)
 	{
-		DovaJvm.Vm.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
+		DovaVM.Runtime.CallStaticVoidMethodA(ClassRefPtr, MethodPtrs[1], arg0, arg1, arg2);
 	}
 }

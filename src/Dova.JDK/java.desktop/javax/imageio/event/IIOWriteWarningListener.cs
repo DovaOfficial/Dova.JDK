@@ -1,13 +1,14 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.09-04:27)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
  *
  ********************************************************************/
 
+using Dova.Core;
 using Dova.Common;
 using Dova.Common.InterfaceFactory;
 
@@ -27,14 +28,14 @@ public partial interface IIOWriteWarningListener
 
 	static IIOWriteWarningListener()
 	{
-		ClassPtr = DovaJvm.Vm.Runtime.FindClass("Ljavax/imageio/event/IIOWriteWarningListener;");
-		ClassRefPtr = DovaJvm.Vm.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaJvm.Vm.Runtime.GetMethodId(ClassRefPtr, "warningOccurred", "(Ljavax/imageio/ImageWriter;ILjava/lang/String;)V"));
+		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/event/IIOWriteWarningListener;");
+		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "warningOccurred", "(Ljavax/imageio/ImageWriter;ILjava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/imageio/ImageWriter;ILjava/lang/String;)V", "public abstract")]
 	void warningOccurred(Dova.JDK.javax.imageio.ImageWriter arg0, int arg1, Dova.JDK.java.lang.String arg2)
 	{
-		DovaJvm.Vm.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
+		DovaVM.Runtime.CallVoidMethodA(CurrentRefPtr, MethodPtrs[0], arg0, arg1, arg2);
 	}
 }
