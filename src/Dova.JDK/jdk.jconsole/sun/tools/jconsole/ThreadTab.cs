@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -73,7 +73,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.tools.jconsole.PlotterPanel>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lsun/tools/jconsole/TimeComboBox;", "")]
@@ -84,7 +87,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.tools.jconsole.TimeComboBox>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JTabbedPane;", "")]
@@ -95,7 +101,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JTabbedPane>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/DefaultListModel;", "")]
@@ -106,7 +115,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.DefaultListModel>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JTextField;", "")]
@@ -117,7 +129,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JTextField>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JLabel;", "")]
@@ -128,7 +143,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JLabel>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JSplitPane;", "")]
@@ -139,7 +157,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JSplitPane>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/HashMap;", "")]
@@ -150,7 +171,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashMap>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lsun/tools/jconsole/ThreadTab$ThreadOverviewPanel;", "private")]
@@ -161,7 +185,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.tools.jconsole.ThreadTab.ThreadOverviewPanel>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -172,7 +199,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -183,7 +213,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -194,7 +227,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private static final")]
@@ -205,7 +241,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private static final")]
@@ -216,7 +255,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/border/Border;", "private static final")]
@@ -227,7 +269,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.border.Border>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[J", "private")]
@@ -238,7 +283,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 			return DovaInterfaceFactory.Get<JavaArray<long>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("J", "")]
@@ -249,7 +297,10 @@ public partial class ThreadTab
 			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -365,7 +416,10 @@ public partial class ThreadTab
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.JTextArea>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/ThreadTab;", "final")]
@@ -376,7 +430,10 @@ public partial class ThreadTab
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.sun.tools.jconsole.ThreadTab>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -436,7 +493,10 @@ public partial class ThreadTab
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -447,7 +507,10 @@ public partial class ThreadTab
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "")]
@@ -458,7 +521,10 @@ public partial class ThreadTab
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

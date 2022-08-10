@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -93,7 +93,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -104,7 +107,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -115,7 +121,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -126,7 +135,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -137,7 +149,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -148,7 +163,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -159,7 +177,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private transient")]
@@ -170,7 +191,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "private transient")]
@@ -181,7 +205,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -192,7 +219,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -203,7 +233,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -214,7 +247,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -225,7 +261,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -236,7 +275,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -247,7 +289,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private volatile")]
@@ -258,7 +303,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Timer;", "private")]
@@ -269,7 +317,10 @@ public partial class Timer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Timer>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

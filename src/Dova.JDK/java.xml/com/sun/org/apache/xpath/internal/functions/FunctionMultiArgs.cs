@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -52,7 +52,10 @@ public partial class FunctionMultiArgs
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/org/apache/xpath/internal/Expression;", "")]
@@ -63,7 +66,10 @@ public partial class FunctionMultiArgs
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.org.apache.xpath.@internal.Expression>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -162,7 +168,10 @@ public partial class FunctionMultiArgs
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/org/apache/xpath/internal/functions/FunctionMultiArgs;", "final")]
@@ -173,7 +182,10 @@ public partial class FunctionMultiArgs
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xpath.@internal.functions.FunctionMultiArgs>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

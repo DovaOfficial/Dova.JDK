@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -92,7 +92,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("F", "public static final")]
@@ -103,7 +106,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("F", "public static final")]
@@ -114,7 +120,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("F", "public static final")]
@@ -125,7 +134,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("F", "public static final")]
@@ -136,7 +148,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("F", "public static final")]
@@ -147,7 +162,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticFloatField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticFloatField(ClassRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -158,7 +176,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -169,7 +190,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -180,7 +204,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -191,7 +218,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Class;", "public static final")]
@@ -202,7 +232,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Class>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("F", "private final")]
@@ -213,7 +246,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetFloatField(CurrentRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -224,7 +260,10 @@ public partial class Float
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

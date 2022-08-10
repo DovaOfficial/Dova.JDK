@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -51,7 +51,10 @@ public partial class DCTree
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -160,7 +163,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.parser.Tokens.Comment>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -171,7 +177,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -182,7 +191,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -193,7 +205,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -204,7 +219,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -215,7 +233,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -226,7 +247,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -336,7 +360,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -399,7 +426,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -476,7 +506,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/util/JCDiagnostic;", "public final")]
@@ -487,7 +520,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.util.JCDiagnostic>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -498,7 +534,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -603,7 +642,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -677,7 +719,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCIdentifier;", "public final")]
@@ -688,7 +733,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCIdentifier>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -699,7 +747,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -783,7 +834,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -853,7 +907,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -927,7 +984,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/source/doctree/AttributeTree$ValueKind;", "public final")]
@@ -938,7 +998,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.doctree.AttributeTree.ValueKind>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -949,7 +1012,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1033,7 +1099,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1103,7 +1172,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1175,7 +1247,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1186,7 +1261,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1265,7 +1343,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1276,7 +1357,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1355,7 +1439,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1366,7 +1453,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1446,7 +1536,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.doctree.DocTree.Kind>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCReference;", "public final")]
@@ -1457,7 +1550,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1468,7 +1564,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1545,7 +1644,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1615,7 +1717,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1689,7 +1794,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1700,7 +1808,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "public final")]
@@ -1711,7 +1822,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1797,7 +1911,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCText;", "public final")]
@@ -1808,7 +1925,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCText>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1885,7 +2005,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1959,7 +2082,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCIdentifier>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCReference;", "public final")]
@@ -1970,7 +2096,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -1981,7 +2110,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2065,7 +2197,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2135,7 +2270,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2205,7 +2343,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2278,7 +2419,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -2289,7 +2433,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2377,7 +2524,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/JCTree$JCExpression;", "public final")]
@@ -2388,7 +2538,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.JCTree.JCExpression>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/JCTree;", "public final")]
@@ -2399,7 +2552,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.JCTree>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/lang/model/element/Name;", "public final")]
@@ -2410,7 +2566,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -2421,7 +2580,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2493,7 +2655,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -2504,7 +2669,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2583,7 +2751,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.doctree.DocTree.Kind>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCText;", "public final")]
@@ -2594,7 +2765,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCText>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2674,7 +2848,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.source.doctree.DocTree.Kind>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/tree/DCTree$DCReference;", "public final")]
@@ -2685,7 +2862,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree.DCReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -2696,7 +2876,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2824,7 +3007,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.tools.javac.tree.DCTree>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "public final")]
@@ -2835,7 +3021,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2912,7 +3101,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2982,7 +3174,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.lang.model.element.Name>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3052,7 +3247,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3171,7 +3369,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3241,7 +3442,10 @@ public partial class DCTree
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

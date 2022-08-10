@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -45,7 +45,10 @@ public partial class ArrayPrefixHelpers
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -56,7 +59,10 @@ public partial class ArrayPrefixHelpers
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -67,7 +73,10 @@ public partial class ArrayPrefixHelpers
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -78,7 +87,10 @@ public partial class ArrayPrefixHelpers
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -135,7 +147,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/IntBinaryOperator;", "final")]
@@ -146,7 +161,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.IntBinaryOperator>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$IntCumulateTask;", "")]
@@ -157,7 +175,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.IntCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$IntCumulateTask;", "")]
@@ -168,7 +189,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.IntCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -179,7 +203,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -190,7 +217,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -201,7 +231,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -212,7 +245,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -223,7 +259,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -234,7 +273,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -245,7 +287,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -256,7 +301,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -325,7 +373,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<double>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/DoubleBinaryOperator;", "final")]
@@ -336,7 +387,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.DoubleBinaryOperator>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$DoubleCumulateTask;", "")]
@@ -347,7 +401,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.DoubleCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$DoubleCumulateTask;", "")]
@@ -358,7 +415,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.DoubleCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("D", "")]
@@ -369,7 +429,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("D", "")]
@@ -380,7 +443,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -391,7 +457,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -402,7 +471,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -413,7 +485,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -424,7 +499,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -435,7 +513,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -446,7 +527,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -515,7 +599,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<long>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/LongBinaryOperator;", "final")]
@@ -526,7 +613,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.LongBinaryOperator>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$LongCumulateTask;", "")]
@@ -537,7 +627,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.LongCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$LongCumulateTask;", "")]
@@ -548,7 +641,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.LongCumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("J", "")]
@@ -559,7 +655,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "")]
@@ -570,7 +669,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -581,7 +683,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -592,7 +697,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -603,7 +711,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -614,7 +725,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -625,7 +739,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -636,7 +753,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -705,7 +825,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/BinaryOperator;", "final")]
@@ -716,7 +839,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.function.BinaryOperator>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$CumulateTask;", "")]
@@ -727,7 +853,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.CumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/ArrayPrefixHelpers$CumulateTask;", "")]
@@ -738,7 +867,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayPrefixHelpers.CumulateTask>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "")]
@@ -749,7 +881,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "")]
@@ -760,7 +895,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -771,7 +909,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -782,7 +923,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -793,7 +937,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -804,7 +951,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -815,7 +965,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -826,7 +979,10 @@ public partial class ArrayPrefixHelpers
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -68,7 +68,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/FlowTube;", "private final")]
@@ -79,7 +82,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.FlowTube>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube$SSLSubscriberWrapper;", "private final")]
@@ -90,7 +96,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube.SSLSubscriberWrapper>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube$SSLSubscriptionWrapper;", "private final")]
@@ -101,7 +110,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube.SSLSubscriptionWrapper>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLFlowDelegate;", "private final")]
@@ -112,7 +124,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/net/ssl/SSLEngine;", "private final")]
@@ -123,7 +138,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.net.ssl.SSLEngine>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private volatile")]
@@ -134,7 +152,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/Flow$Subscription;", "private volatile")]
@@ -145,7 +166,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.Flow.Subscription>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Demand;", "private final")]
@@ -156,7 +180,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Demand>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -167,7 +194,10 @@ public partial class SSLTube
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -313,7 +343,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.Flow.Subscription>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private volatile")]
@@ -324,7 +357,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube;", "final")]
@@ -335,7 +371,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -417,7 +456,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.atomic.AtomicReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube$DelegateWrapper;", "private volatile")]
@@ -428,7 +470,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube.DelegateWrapper>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private volatile")]
@@ -439,7 +484,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/atomic/AtomicReference;", "private final")]
@@ -450,7 +498,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.atomic.AtomicReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -461,7 +512,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube;", "final")]
@@ -472,7 +526,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -600,7 +657,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLTube;", "final")]
@@ -611,7 +671,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.SSLTube>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -691,7 +754,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.FlowTube.TubeSubscriber>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "private final")]
@@ -702,7 +768,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.net.http.common.Logger>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "volatile")]
@@ -713,7 +782,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "volatile")]
@@ -724,7 +796,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "volatile")]
@@ -735,7 +810,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Throwable;", "volatile")]
@@ -746,7 +824,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Throwable>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -757,7 +838,10 @@ public partial class SSLTube
 				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

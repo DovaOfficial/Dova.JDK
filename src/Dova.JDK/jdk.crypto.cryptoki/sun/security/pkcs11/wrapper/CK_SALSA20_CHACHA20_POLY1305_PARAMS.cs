@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -45,7 +45,10 @@ public partial class CK_SALSA20_CHACHA20_POLY1305_PARAMS
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "private final")]
@@ -56,7 +59,10 @@ public partial class CK_SALSA20_CHACHA20_POLY1305_PARAMS
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -49,7 +49,10 @@ public partial class TlsMasterSecretGenerator
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lsun/security/internal/spec/TlsMasterSecretParameterSpec;", "private")]
@@ -60,7 +63,10 @@ public partial class TlsMasterSecretGenerator
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.sun.security.@internal.spec.TlsMasterSecretParameterSpec>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -71,7 +77,10 @@ public partial class TlsMasterSecretGenerator
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -149,7 +158,10 @@ public partial class TlsMasterSecretGenerator
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "private")]
@@ -160,7 +172,10 @@ public partial class TlsMasterSecretGenerator
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -171,7 +186,10 @@ public partial class TlsMasterSecretGenerator
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -182,7 +200,10 @@ public partial class TlsMasterSecretGenerator
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

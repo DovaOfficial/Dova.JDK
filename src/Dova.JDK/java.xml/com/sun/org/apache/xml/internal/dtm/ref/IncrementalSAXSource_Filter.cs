@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -102,7 +102,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xml/internal/dtm/ref/CoroutineManager;", "private")]
@@ -113,7 +116,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xml.@internal.dtm.@ref.CoroutineManager>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -124,7 +130,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -135,7 +144,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/ContentHandler;", "private")]
@@ -146,7 +158,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.ContentHandler>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/ext/LexicalHandler;", "private")]
@@ -157,7 +172,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.ext.LexicalHandler>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/DTDHandler;", "private")]
@@ -168,7 +186,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.DTDHandler>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/ErrorHandler;", "private")]
@@ -179,7 +200,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.ErrorHandler>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -190,7 +214,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -201,7 +228,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -212,7 +242,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/XMLReader;", "private")]
@@ -223,7 +256,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.XMLReader>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/xml/sax/InputSource;", "private")]
@@ -234,7 +270,10 @@ public partial class IncrementalSAXSource_Filter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.xml.sax.InputSource>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -528,7 +567,10 @@ public partial class IncrementalSAXSource_Filter
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/org/apache/xml/internal/dtm/ref/IncrementalSAXSource_Filter;", "final")]
@@ -539,7 +581,10 @@ public partial class IncrementalSAXSource_Filter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xml.@internal.dtm.@ref.IncrementalSAXSource_Filter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

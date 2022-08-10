@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -138,7 +138,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -149,7 +152,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -160,7 +166,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -171,7 +180,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -182,7 +194,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -193,7 +208,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -204,7 +222,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -215,7 +236,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -226,7 +250,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -237,7 +264,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -248,7 +278,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -259,7 +292,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -270,7 +306,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -281,7 +320,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -292,7 +334,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/util/DOMErrorHandlerWrapper;", "protected")]
@@ -303,7 +348,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.util.DOMErrorHandlerWrapper>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -314,7 +362,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -325,7 +376,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -336,7 +390,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -347,7 +404,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -358,7 +418,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/Document;", "protected")]
@@ -369,7 +432,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Document>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/dom/CoreDocumentImpl;", "protected")]
@@ -380,7 +446,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.dom.CoreDocumentImpl>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -391,7 +460,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -402,7 +474,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/DocumentType;", "protected")]
@@ -413,7 +488,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.DocumentType>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/Node;", "protected")]
@@ -424,7 +502,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[26]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Node>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/CDATASection;", "protected")]
@@ -435,7 +516,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[27]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.CDATASection>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/dom/EntityImpl;", "protected")]
@@ -446,7 +530,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[28]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.dom.EntityImpl>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -457,7 +544,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[29], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[29], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/StringBuilder;", "protected final")]
@@ -468,7 +558,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[30]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/StringBuilder;", "protected")]
@@ -479,7 +572,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[31]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.StringBuilder>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -490,7 +586,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[32], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[32], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -501,7 +600,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[33], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[33], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/dom/DeferredDocumentImpl;", "protected")]
@@ -512,7 +614,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.dom.DeferredDocumentImpl>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -523,7 +628,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[35], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[35], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -534,7 +642,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[36], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[36], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -545,7 +656,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[37], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[37], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -556,7 +670,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[38], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[38], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -567,7 +684,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[39], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[39], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/Node;", "protected")]
@@ -578,7 +698,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[40]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Node>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -589,7 +712,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[41], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[41], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -600,7 +726,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[42], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[42], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -611,7 +740,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[43], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[43], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Stack;", "protected final")]
@@ -622,7 +754,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[44]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Stack>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[44], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[44], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "protected")]
@@ -633,7 +768,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[45], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[45], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Stack;", "protected")]
@@ -644,7 +782,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[46]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Stack>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[46], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[46], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected")]
@@ -655,7 +796,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[47]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[47], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[47], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/xni/QName;", "private final")]
@@ -666,7 +810,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[48]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.xni.QName>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[48], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[48], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/xni/XMLLocator;", "private")]
@@ -677,7 +824,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[49]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.xni.XMLLocator>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[49], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[49], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/ls/LSParserFilter;", "protected")]
@@ -688,7 +838,10 @@ public partial class AbstractDOMParser
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[50]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.ls.LSParserFilter>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[50], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[50], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1008,7 +1161,10 @@ public partial class AbstractDOMParser
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/parsers/AbstractDOMParser$Abort;", "static final")]
@@ -1019,7 +1175,10 @@ public partial class AbstractDOMParser
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.org.apache.xerces.@internal.parsers.AbstractDOMParser.Abort>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -68,7 +68,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/Object;", "private final")]
@@ -79,7 +82,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -90,7 +96,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -101,7 +110,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -112,7 +124,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/Object;", "private")]
@@ -123,7 +138,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -134,7 +152,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -145,7 +166,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -156,7 +180,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "private final")]
@@ -167,7 +194,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "private final")]
@@ -178,7 +208,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -189,7 +222,10 @@ public partial class ComparableTimSort
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

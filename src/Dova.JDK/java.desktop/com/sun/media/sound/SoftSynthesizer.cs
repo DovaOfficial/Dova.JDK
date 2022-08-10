@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -133,7 +133,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -144,7 +147,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -155,7 +161,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -166,7 +175,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/midi/MidiDevice$Info;", "static final")]
@@ -177,7 +189,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.midi.MidiDevice.Info>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/sampled/SourceDataLine;", "private static")]
@@ -188,7 +203,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.SourceDataLine>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/midi/Soundbank;", "private static")]
@@ -199,7 +217,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.midi.Soundbank>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/SoftSynthesizer$WeakAudioStream;", "")]
@@ -210,7 +231,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.SoftSynthesizer.WeakAudioStream>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Object;", "final")]
@@ -221,7 +245,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "")]
@@ -232,7 +259,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "")]
@@ -243,7 +273,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -254,7 +287,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -265,7 +301,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -276,7 +315,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -287,7 +329,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "")]
@@ -298,7 +343,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/media/sound/SoftChannel;", "")]
@@ -309,7 +357,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.media.sound.SoftChannel>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/media/sound/SoftChannelProxy;", "")]
@@ -320,7 +371,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.media.sound.SoftChannelProxy>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -331,7 +385,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -342,7 +399,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -353,7 +413,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/sampled/AudioFormat;", "private")]
@@ -364,7 +427,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.AudioFormat>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/sampled/SourceDataLine;", "private")]
@@ -375,7 +441,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.SourceDataLine>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/SoftAudioPusher;", "private")]
@@ -386,7 +455,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.SoftAudioPusher>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/sampled/AudioInputStream;", "private")]
@@ -397,7 +469,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.AudioInputStream>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("F", "private")]
@@ -408,7 +483,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetFloatField(CurrentRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[25], value);
+		set
+		{
+			DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[25], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -419,7 +497,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[26]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[26], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[26], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -430,7 +511,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[27]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[27], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[27], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -441,7 +525,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[28]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/SoftResampler;", "private")]
@@ -452,7 +539,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.SoftResampler>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -463,7 +553,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[30], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[30], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -474,7 +567,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[31], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[31], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -485,7 +581,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[32], value);
+		set
+		{
+			DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[32], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -496,7 +595,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[33], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[33], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/SoftMainMixer;", "private")]
@@ -507,7 +609,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.SoftMainMixer>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/media/sound/SoftVoice;", "private")]
@@ -518,7 +623,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[35]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.com.sun.media.sound.SoftVoice>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[35], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[35], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -529,7 +637,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[36]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -540,7 +651,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[37]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -551,7 +665,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[38]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[38], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[38], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "private final")]
@@ -562,7 +679,10 @@ public partial class SoftSynthesizer
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[39]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[39], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[39], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -953,7 +1073,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.AudioInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/SoftAudioPusher;", "public")]
@@ -964,7 +1087,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.SoftAudioPusher>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/sound/sampled/AudioInputStream;", "public")]
@@ -975,7 +1101,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.AudioInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/sound/sampled/SourceDataLine;", "public")]
@@ -986,7 +1115,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.SourceDataLine>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("J", "public volatile")]
@@ -997,7 +1129,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -1008,7 +1143,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ref/WeakReference;", "private final")]
@@ -1019,7 +1157,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.@ref.WeakReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/AudioFloatConverter;", "private final")]
@@ -1030,7 +1171,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.AudioFloatConverter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[F", "private")]
@@ -1041,7 +1185,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<JavaArray<float>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1052,7 +1199,10 @@ public partial class SoftSynthesizer
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

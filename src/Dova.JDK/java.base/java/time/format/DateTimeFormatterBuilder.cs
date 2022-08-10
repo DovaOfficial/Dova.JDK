@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -101,7 +101,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.time.temporal.TemporalQuery>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder;", "private")]
@@ -112,7 +115,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder;", "private final")]
@@ -123,7 +129,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -134,7 +143,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.List>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -145,7 +157,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -156,7 +171,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "private")]
@@ -167,7 +185,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetCharField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -178,7 +199,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -189,7 +213,10 @@ public partial class DateTimeFormatterBuilder
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -590,7 +617,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.SettingsParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$SettingsParser;", "public static final")]
@@ -601,7 +631,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.SettingsParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$SettingsParser;", "public static final")]
@@ -612,7 +645,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.SettingsParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$SettingsParser;", "public static final")]
@@ -623,7 +659,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.SettingsParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[Ljava/time/format/DateTimeFormatterBuilder$SettingsParser;", "private static final")]
@@ -634,7 +673,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.time.format.DateTimeFormatterBuilder.SettingsParser>>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -757,7 +799,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.temporal.TemporalField>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -768,7 +813,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -843,7 +891,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<long>>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/temporal/TemporalField;", "final")]
@@ -854,7 +905,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.temporal.TemporalField>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -865,7 +919,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -876,7 +933,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/SignStyle;", "private final")]
@@ -887,7 +947,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.SignStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -898,7 +961,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1022,7 +1088,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.LocalDate>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1033,7 +1102,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/chrono/ChronoLocalDate;", "private final")]
@@ -1044,7 +1116,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.chrono.ChronoLocalDate>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1161,7 +1236,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("[I", "private static final")]
@@ -1172,7 +1250,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1298,7 +1379,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/math/BigDecimal;", "private final")]
@@ -1309,7 +1393,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.math.BigDecimal>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/math/BigDecimal;", "private final")]
@@ -1320,7 +1407,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.math.BigDecimal>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1448,7 +1538,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.temporal.TemporalField>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/TextStyle;", "private final")]
@@ -1459,7 +1552,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.TextStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeTextProvider;", "private final")]
@@ -1470,7 +1566,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeTextProvider>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$NumberPrinterParser;", "private volatile")]
@@ -1481,7 +1580,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.NumberPrinterParser>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1560,7 +1662,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1571,7 +1676,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1582,7 +1690,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1667,7 +1778,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$OffsetIdPrinterParser;", "static final")]
@@ -1678,7 +1792,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.OffsetIdPrinterParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$OffsetIdPrinterParser;", "static final")]
@@ -1689,7 +1806,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.OffsetIdPrinterParser>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1700,7 +1820,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1711,7 +1834,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1722,7 +1848,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1858,7 +1987,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.TextStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1947,7 +2079,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.temporal.TemporalQuery>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1958,7 +2093,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map$Entry;", "private static volatile")]
@@ -1969,7 +2107,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map.Entry>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map$Entry;", "private static volatile")]
@@ -1980,7 +2121,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map.Entry>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2072,7 +2216,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.TextStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "private")]
@@ -2083,7 +2230,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Set>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private final")]
@@ -2094,7 +2244,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2105,7 +2258,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2116,7 +2272,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2127,7 +2286,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2138,7 +2300,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -2149,7 +2314,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -2160,7 +2328,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -2171,7 +2342,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2241,7 +2415,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.TextStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2314,7 +2491,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.ConcurrentMap>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/FormatStyle;", "private final")]
@@ -2325,7 +2505,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.FormatStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/FormatStyle;", "private final")]
@@ -2336,7 +2519,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.FormatStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2413,7 +2599,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetCharField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2483,7 +2672,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2555,7 +2747,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.TextStyle>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/ConcurrentMap;", "private static final")]
@@ -2566,7 +2761,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.concurrent.ConcurrentMap>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2646,7 +2844,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.time.format.DateTimeFormatterBuilder.DateTimePrinterParser>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private final")]
@@ -2657,7 +2858,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2745,7 +2949,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetCharField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -2756,7 +2963,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2868,7 +3078,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.DateTimePrinterParser>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -2879,7 +3092,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("C", "private final")]
@@ -2890,7 +3106,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetCharField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2971,7 +3190,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Comparator;", "private static final")]
@@ -2982,7 +3204,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Comparator>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern;", "private static final")]
@@ -2993,7 +3218,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.regex.Pattern>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -3004,7 +3232,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -3015,7 +3246,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private final")]
@@ -3026,7 +3260,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3158,7 +3395,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "protected")]
@@ -3169,7 +3409,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "protected")]
@@ -3180,7 +3423,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("C", "protected")]
@@ -3191,7 +3437,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetCharField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetCharField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$PrefixTree;", "protected")]
@@ -3202,7 +3451,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.PrefixTree>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$PrefixTree;", "protected")]
@@ -3213,7 +3465,10 @@ public partial class DateTimeFormatterBuilder
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.time.format.DateTimeFormatterBuilder.PrefixTree>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -103,7 +103,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -114,7 +117,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -125,7 +131,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -136,7 +145,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -147,7 +159,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;", "private")]
@@ -158,7 +173,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/Path2D;", "private")]
@@ -169,7 +187,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.geom.Path2D>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/Rectangle2D;", "private")]
@@ -180,7 +201,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.geom.Rectangle2D>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/RoundRectangle2D;", "private")]
@@ -191,7 +215,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.geom.RoundRectangle2D>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/Ellipse2D;", "private")]
@@ -202,7 +229,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.geom.Ellipse2D>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -213,7 +243,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -224,7 +257,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -235,7 +271,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -246,7 +285,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -257,7 +299,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -268,7 +313,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -279,7 +327,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -290,7 +341,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -301,7 +355,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[18]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[18], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[18], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -312,7 +369,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[19]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[19], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[19], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -323,7 +383,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -334,7 +397,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[21]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[21], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -345,7 +411,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[22]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[22], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -356,7 +425,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[23]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[23], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -367,7 +439,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -378,7 +453,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -389,7 +467,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[26]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -400,7 +481,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[27]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -411,7 +495,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[28]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[28], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -422,7 +509,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[29]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[29], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -433,7 +523,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[30]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[30], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -444,7 +537,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[31]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[31], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -455,7 +551,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[32]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[32], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[32], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -466,7 +565,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[33]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[33], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[33], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -477,7 +579,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[34]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[34], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -488,7 +593,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[35]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[35], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[35], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -499,7 +607,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[36]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[36], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -510,7 +621,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[37]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[37], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -521,7 +635,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[38]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[38], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[38], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -532,7 +649,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[39]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[39], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[39], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -543,7 +663,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[40]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.Color>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[40], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/Object;", "private")]
@@ -554,7 +677,10 @@ public partial class ScrollBarButtonPainter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[41]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[41], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[41], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

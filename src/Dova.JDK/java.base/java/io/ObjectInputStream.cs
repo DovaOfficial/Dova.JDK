@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -126,7 +126,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Object;", "private static final")]
@@ -137,7 +140,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -148,7 +154,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/io/ObjectInputStream$BlockDataInputStream;", "private final")]
@@ -159,7 +168,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.BlockDataInputStream>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/io/ObjectInputStream$ValidationList;", "private final")]
@@ -170,7 +182,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.ValidationList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -181,7 +196,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -192,7 +210,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -203,7 +224,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/io/ObjectInputStream$HandleTable;", "private final")]
@@ -214,7 +238,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.HandleTable>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -225,7 +252,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -236,7 +266,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private final")]
@@ -247,7 +280,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -258,7 +294,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/io/SerialCallbackContext;", "private")]
@@ -269,7 +308,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.SerialCallbackContext>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/io/ObjectInputFilter;", "private")]
@@ -280,7 +322,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputFilter>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -291,7 +336,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/misc/Unsafe;", "private static final")]
@@ -302,7 +350,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<Dova.JDK.jdk.@internal.misc.Unsafe>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -313,7 +364,10 @@ public partial class ObjectInputStream
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -843,7 +897,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -854,7 +911,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -865,7 +925,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -876,7 +939,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "private final")]
@@ -887,7 +953,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "private final")]
@@ -898,7 +967,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[C", "private final")]
@@ -909,7 +981,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<JavaArray<char>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -920,7 +995,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -931,7 +1009,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -942,7 +1023,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -953,7 +1037,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/io/ObjectInputStream$PeekInputStream;", "private final")]
@@ -964,7 +1051,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.PeekInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/io/DataInputStream;", "private final")]
@@ -975,7 +1065,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.DataInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/io/ObjectInputStream;", "final")]
@@ -986,7 +1079,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1329,7 +1425,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticByteField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("B", "private static final")]
@@ -1340,7 +1439,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticByteField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("B", "private static final")]
@@ -1351,7 +1453,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticByteField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticByteField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "")]
@@ -1362,7 +1467,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/Object;", "")]
@@ -1373,7 +1481,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[Ljava/io/ObjectInputStream$HandleTable$HandleList;", "")]
@@ -1384,7 +1495,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.io.ObjectInputStream.HandleTable.HandleList>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1395,7 +1509,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1406,7 +1523,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1518,7 +1638,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("I", "private")]
@@ -1529,7 +1652,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				set
+				{
+					DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1598,7 +1724,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.ValidationList.Callback>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1662,7 +1791,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputValidation>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -1673,7 +1805,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				set
+				{
+					DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				}
 			}
 
 			[JniSignatureAttribute("Ljava/io/ObjectInputStream$ValidationList$Callback;", "")]
@@ -1684,7 +1819,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream.ValidationList.Callback>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("Ljava/security/AccessControlContext;", "final")]
@@ -1695,7 +1833,10 @@ public partial class ObjectInputStream
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.security.AccessControlContext>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1759,7 +1900,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectStreamClass>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "final")]
@@ -1770,7 +1914,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -1781,7 +1928,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.Object>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[I", "private final")]
@@ -1792,7 +1942,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/io/ObjectInputStream;", "final")]
@@ -1803,7 +1956,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.ObjectInputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1946,7 +2102,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.ClassValue>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "static final")]
@@ -1957,7 +2116,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private static final")]
@@ -1968,7 +2130,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1979,7 +2144,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2034,7 +2202,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Class>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("J", "final")]
@@ -2045,7 +2216,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "final")]
@@ -2056,7 +2230,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "final")]
@@ -2067,7 +2244,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "final")]
@@ -2078,7 +2258,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2157,7 +2340,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.System.Logger>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2212,7 +2398,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.io.InputStream>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -2223,7 +2412,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "private")]
@@ -2234,7 +2426,10 @@ public partial class ObjectInputStream
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

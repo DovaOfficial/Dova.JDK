@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -71,7 +71,10 @@ public partial class DirectAudioDevice
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -82,7 +85,10 @@ public partial class DirectAudioDevice
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -305,7 +311,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.sound.sampled.AudioFormat>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -426,7 +435,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Thread>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("[B", "private volatile")]
@@ -437,7 +449,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -448,7 +463,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -459,7 +477,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -470,7 +491,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -481,7 +505,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -492,7 +519,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -503,7 +533,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private volatile")]
@@ -514,7 +547,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -525,7 +561,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -797,7 +836,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "protected final")]
@@ -808,7 +850,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "protected")]
@@ -819,7 +864,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "protected")]
@@ -830,7 +878,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected volatile")]
@@ -841,7 +892,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected final")]
@@ -852,7 +906,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("J", "protected volatile")]
@@ -863,7 +920,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetLongField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetLongField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected volatile")]
@@ -874,7 +934,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected volatile")]
@@ -885,7 +948,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected volatile")]
@@ -896,7 +962,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected")]
@@ -907,7 +976,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "protected")]
@@ -918,7 +990,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/sound/sampled/AudioFormat;", "protected")]
@@ -929,7 +1004,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.sound.sampled.AudioFormat>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/DirectAudioDevice$DirectDL$Gain;", "private final")]
@@ -940,7 +1018,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL.Gain>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/DirectAudioDevice$DirectDL$Mute;", "private final")]
@@ -951,7 +1032,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL.Mute>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/DirectAudioDevice$DirectDL$Balance;", "private final")]
@@ -962,7 +1046,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL.Balance>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/DirectAudioDevice$DirectDL$Pan;", "private final")]
@@ -973,7 +1060,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL.Pan>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("F", "private")]
@@ -984,7 +1074,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetFloatField(CurrentRefPtr, FieldPtrs[17]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[17], value);
+			set
+			{
+				DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[17], value);
+			}
 		}
 
 		[JniSignatureAttribute("F", "private")]
@@ -995,7 +1088,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetFloatField(CurrentRefPtr, FieldPtrs[18]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[18], value);
+			set
+			{
+				DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[18], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected volatile")]
@@ -1006,7 +1102,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[19]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[19], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "protected final")]
@@ -1017,7 +1116,10 @@ public partial class DirectAudioDevice
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[20]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[20], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1140,7 +1242,10 @@ public partial class DirectAudioDevice
 					var ret = DovaVM.Runtime.GetFloatField(CurrentRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[0], value);
+				set
+				{
+					DovaVM.Runtime.SetFloatField(CurrentRefPtr, FieldPtrs[0], value);
+				}
 			}
 
 			[JniSignatureAttribute("Lcom/sun/media/sound/DirectAudioDevice$DirectDL;", "final")]
@@ -1151,7 +1256,10 @@ public partial class DirectAudioDevice
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1210,7 +1318,10 @@ public partial class DirectAudioDevice
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1263,7 +1374,10 @@ public partial class DirectAudioDevice
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1322,7 +1436,10 @@ public partial class DirectAudioDevice
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.com.sun.media.sound.DirectAudioDevice.DirectDL>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]

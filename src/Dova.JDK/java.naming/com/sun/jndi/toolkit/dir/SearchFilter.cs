@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -77,7 +77,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "")]
@@ -88,7 +91,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jndi/toolkit/dir/SearchFilter$StringFilter;", "private")]
@@ -99,7 +105,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.toolkit.dir.SearchFilter.StringFilter>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "protected static final")]
@@ -110,7 +119,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -121,7 +133,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -132,7 +147,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -143,7 +161,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -154,7 +175,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -165,7 +189,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -176,7 +203,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -187,7 +217,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -198,7 +231,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -209,7 +245,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -220,7 +259,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("C", "protected static final")]
@@ -231,7 +273,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticCharField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticCharField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -242,7 +287,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -253,7 +301,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -264,7 +315,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -275,7 +329,10 @@ public partial class SearchFilter
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -449,7 +506,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -460,7 +520,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jndi/toolkit/dir/SearchFilter;", "final")]
@@ -471,7 +534,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.toolkit.dir.SearchFilter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -533,7 +599,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.toolkit.dir.SearchFilter.StringFilter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jndi/toolkit/dir/SearchFilter;", "final")]
@@ -544,7 +613,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.toolkit.dir.SearchFilter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -609,7 +681,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -620,7 +695,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -631,7 +709,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jndi/toolkit/dir/SearchFilter;", "final")]
@@ -642,7 +723,10 @@ public partial class SearchFilter
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.jndi.toolkit.dir.SearchFilter>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

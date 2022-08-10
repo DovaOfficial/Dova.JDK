@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -270,7 +270,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -281,7 +284,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -292,7 +298,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -303,7 +312,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -314,7 +326,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -325,7 +340,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -336,7 +354,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -347,7 +368,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -358,7 +382,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -369,7 +396,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -380,7 +410,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -391,7 +424,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -402,7 +438,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -413,7 +452,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -424,7 +466,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -435,7 +480,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -446,7 +494,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -457,7 +508,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -468,7 +522,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -479,7 +536,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -490,7 +550,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -501,7 +564,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[21], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -512,7 +578,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[22], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -523,7 +592,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[23], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -534,7 +606,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[24]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[24], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -545,7 +620,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[25], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -556,7 +634,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[26]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[26], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -567,7 +648,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[27]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[27], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -578,7 +662,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[28]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[28], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -589,7 +676,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[29], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -600,7 +690,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[30], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -611,7 +704,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[31], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -622,7 +718,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[32], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -633,7 +732,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[33], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -644,7 +746,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[34]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[34], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -655,7 +760,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[35], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -666,7 +774,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[36], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -677,7 +788,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[37], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -688,7 +802,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[38], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -699,7 +816,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[39], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -710,7 +830,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[40]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[40], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[40], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -721,7 +844,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[41], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[41], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -732,7 +858,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[42], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[42], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -743,7 +872,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[43], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[43], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -754,7 +886,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[44]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[44], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[44], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -765,7 +900,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[45], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[45], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -776,7 +914,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[46]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[46], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[46], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -787,7 +928,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[47]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[47], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[47], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -798,7 +942,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[48]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[48], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[48], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -809,7 +956,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[49]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[49], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[49], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -820,7 +970,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[50]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[50], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[50], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -831,7 +984,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[51]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[51], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[51], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -842,7 +998,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[52]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[52], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[52], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -853,7 +1012,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[53]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[53], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[53], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -864,7 +1026,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[54]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[54], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[54], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -875,7 +1040,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[55]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[55], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[55], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -886,7 +1054,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[56]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[56], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[56], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -897,7 +1068,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[57]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[57], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[57], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -908,7 +1082,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[58]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[58], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[58], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -919,7 +1096,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[59]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[59], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[59], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -930,7 +1110,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[60]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[60], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[60], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -941,7 +1124,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[61]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[61], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[61], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -952,7 +1138,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[62]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[62], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[62], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -963,7 +1152,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[63]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[63], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[63], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -974,7 +1166,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[64]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[64], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[64], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -985,7 +1180,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[65]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[65], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[65], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -996,7 +1194,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[66]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[66], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[66], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1007,7 +1208,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[67]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[67], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[67], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1018,7 +1222,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[68]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[68], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[68], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1029,7 +1236,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[69]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[69], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[69], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1040,7 +1250,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[70]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[70], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[70], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1051,7 +1264,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[71]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[71], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[71], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1062,7 +1278,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[72]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[72], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[72], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1073,7 +1292,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[73]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[73], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[73], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1084,7 +1306,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[74]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[74], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[74], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1095,7 +1320,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[75]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[75], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[75], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1106,7 +1334,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[76]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[76], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[76], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1117,7 +1348,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[77]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[77], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[77], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1128,7 +1362,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[78]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[78], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[78], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1139,7 +1376,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[79]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[79], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[79], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1150,7 +1390,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[80]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[80], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[80], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1161,7 +1404,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[81]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[81], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[81], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1172,7 +1418,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[82]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[82], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[82], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1183,7 +1432,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[83]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[83], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[83], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1194,7 +1446,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[84]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[84], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[84], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1205,7 +1460,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[85]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[85], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[85], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1216,7 +1474,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[86]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[86], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[86], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1227,7 +1488,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[87]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[87], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[87], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1238,7 +1502,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[88]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[88], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[88], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1249,7 +1516,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[89]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[89], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[89], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1260,7 +1530,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[90]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[90], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[90], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1271,7 +1544,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[91]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[91], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[91], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1282,7 +1558,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[92]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[92], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[92], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1293,7 +1572,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[93]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[93], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[93], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1304,7 +1586,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[94]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[94], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[94], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1315,7 +1600,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[95]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[95], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[95], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1326,7 +1614,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[96]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[96], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[96], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1337,7 +1628,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[97]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[97], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[97], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1348,7 +1642,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[98]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[98], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[98], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1359,7 +1656,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[99]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[99], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[99], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1370,7 +1670,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[100]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[100], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[100], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1381,7 +1684,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[101]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[101], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[101], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1392,7 +1698,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[102]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[102], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[102], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1403,7 +1712,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[103]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[103], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[103], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1414,7 +1726,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[104]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[104], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[104], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1425,7 +1740,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[105]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[105], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[105], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1436,7 +1754,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[106]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[106], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[106], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1447,7 +1768,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[107]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[107], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[107], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1458,7 +1782,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[108]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[108], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[108], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1469,7 +1796,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[109]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[109], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[109], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1480,7 +1810,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[110]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[110], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[110], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1491,7 +1824,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[111]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[111], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[111], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1502,7 +1838,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[112]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[112], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[112], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1513,7 +1852,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[113]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[113], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[113], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1524,7 +1866,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[114]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[114], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[114], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1535,7 +1880,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[115]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[115], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[115], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1546,7 +1894,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[116]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[116], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[116], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1557,7 +1908,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[117]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[117], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[117], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1568,7 +1922,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[118]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[118], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[118], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1579,7 +1936,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[119]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[119], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[119], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1590,7 +1950,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[120]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[120], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[120], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1601,7 +1964,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[121]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[121], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[121], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1612,7 +1978,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[122]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[122], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[122], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1623,7 +1992,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[123]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[123], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[123], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1634,7 +2006,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[124]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[124], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[124], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1645,7 +2020,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[125]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[125], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[125], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1656,7 +2034,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[126]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[126], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[126], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1667,7 +2048,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[127]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[127], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[127], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1678,7 +2062,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[128]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[128], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[128], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1689,7 +2076,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[129]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[129], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[129], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1700,7 +2090,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[130]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[130], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[130], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1711,7 +2104,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[131]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[131], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[131], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1722,7 +2118,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[132]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[132], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[132], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1733,7 +2132,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[133]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[133], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[133], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1744,7 +2146,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[134]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[134], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[134], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1755,7 +2160,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[135]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[135], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[135], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1766,7 +2174,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[136]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[136], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[136], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1777,7 +2188,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[137]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[137], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[137], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1788,7 +2202,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[138]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[138], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[138], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1799,7 +2216,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[139]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[139], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[139], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1810,7 +2230,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[140]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[140], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[140], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1821,7 +2244,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[141]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[141], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[141], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1832,7 +2258,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[142]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[142], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[142], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1843,7 +2272,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[143]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[143], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[143], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1854,7 +2286,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[144]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[144], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[144], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1865,7 +2300,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[145]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[145], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[145], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1876,7 +2314,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[146]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[146], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[146], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1887,7 +2328,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[147]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[147], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[147], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1898,7 +2342,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[148]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[148], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[148], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1909,7 +2356,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[149]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[149], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[149], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1920,7 +2370,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[150]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[150], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[150], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1931,7 +2384,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[151]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[151], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[151], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1942,7 +2398,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[152]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[152], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[152], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1953,7 +2412,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[153]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[153], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[153], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1964,7 +2426,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[154]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[154], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[154], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1975,7 +2440,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[155]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[155], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[155], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1986,7 +2454,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[156]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[156], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[156], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -1997,7 +2468,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[157]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[157], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[157], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2008,7 +2482,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[158]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[158], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[158], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2019,7 +2496,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[159]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[159], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[159], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2030,7 +2510,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[160]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[160], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[160], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2041,7 +2524,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[161]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[161], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[161], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2052,7 +2538,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[162]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[162], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[162], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2063,7 +2552,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[163]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[163], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[163], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2074,7 +2566,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[164]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[164], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[164], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2085,7 +2580,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[165]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[165], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[165], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2096,7 +2594,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[166]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[166], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[166], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2107,7 +2608,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[167]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[167], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[167], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2118,7 +2622,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[168]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[168], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[168], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2129,7 +2636,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[169]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[169], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[169], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2140,7 +2650,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[170]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[170], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[170], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2151,7 +2664,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[171]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[171], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[171], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2162,7 +2678,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[172]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[172], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[172], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2173,7 +2692,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[173]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[173], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[173], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2184,7 +2706,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[174]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[174], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[174], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2195,7 +2720,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[175]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[175], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[175], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2206,7 +2734,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[176]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[176], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[176], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2217,7 +2748,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[177]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[177], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[177], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2228,7 +2762,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[178]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[178], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[178], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2239,7 +2776,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[179]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[179], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[179], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2250,7 +2790,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[180]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[180], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[180], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2261,7 +2804,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[181]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[181], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[181], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2272,7 +2818,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[182]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[182], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[182], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2283,7 +2832,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[183]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[183], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[183], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2294,7 +2846,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[184]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[184], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[184], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2305,7 +2860,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[185]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[185], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[185], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2316,7 +2874,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[186]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[186], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[186], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2327,7 +2888,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[187]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[187], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[187], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2338,7 +2902,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[188]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[188], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[188], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2349,7 +2916,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[189]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[189], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[189], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2360,7 +2930,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[190]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[190], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[190], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2371,7 +2944,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[191]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[191], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[191], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2382,7 +2958,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[192]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[192], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[192], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2393,7 +2972,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[193]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[193], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[193], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2404,7 +2986,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[194]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[194], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[194], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2415,7 +3000,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[195]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[195], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[195], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2426,7 +3014,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[196]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[196], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[196], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2437,7 +3028,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[197]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[197], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[197], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2448,7 +3042,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[198]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[198], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[198], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2459,7 +3056,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[199]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[199], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[199], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2470,7 +3070,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[200]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[200], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[200], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2481,7 +3084,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[201]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[201], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[201], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2492,7 +3098,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[202]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[202], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[202], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2503,7 +3112,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[203]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[203], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[203], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2514,7 +3126,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[204]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[204], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[204], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2525,7 +3140,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[205]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[205], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[205], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2536,7 +3154,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[206]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[206], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[206], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2547,7 +3168,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[207]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[207], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[207], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2558,7 +3182,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[208]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[208], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[208], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2569,7 +3196,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[209]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[209], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[209], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2580,7 +3210,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[210]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[210], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[210], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2591,7 +3224,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[211]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[211], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[211], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2602,7 +3238,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[212]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[212], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[212], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2613,7 +3252,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[213]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[213], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[213], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2624,7 +3266,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[214]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[214], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[214], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2635,7 +3280,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[215]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[215], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[215], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2646,7 +3294,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[216]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[216], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[216], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2657,7 +3308,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[217]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[217], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[217], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2668,7 +3322,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[218]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[218], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[218], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2679,7 +3336,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[219]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[219], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[219], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2690,7 +3350,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[220]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[220], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[220], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2701,7 +3364,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[221]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[221], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[221], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2712,7 +3378,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[222]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[222], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[222], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2723,7 +3392,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[223]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[223], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[223], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2734,7 +3406,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[224]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[224], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[224], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2745,7 +3420,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[225]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[225], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[225], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2756,7 +3434,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[226]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[226], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[226], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2767,7 +3448,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[227]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[227], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[227], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2778,7 +3462,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[228]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[228], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[228], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -2789,7 +3476,10 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[229]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[229], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[229], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "public static final")]
@@ -2800,6 +3490,9 @@ public partial interface ByteCodes
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[230]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[230], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[230], value.CurrentRefPtr);
+		}
 	}
 }

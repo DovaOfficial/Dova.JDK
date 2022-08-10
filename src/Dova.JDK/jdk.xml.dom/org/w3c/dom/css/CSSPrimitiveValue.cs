@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -75,7 +75,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -86,7 +89,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -97,7 +103,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -108,7 +117,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -119,7 +131,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -130,7 +145,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -141,7 +159,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -152,7 +173,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -163,7 +187,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -174,7 +201,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -185,7 +215,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -196,7 +229,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -207,7 +243,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -218,7 +257,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -229,7 +271,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -240,7 +285,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -251,7 +299,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -262,7 +313,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -273,7 +327,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -284,7 +341,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -295,7 +355,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -306,7 +369,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[21], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[21], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -317,7 +383,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[22], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[22], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -328,7 +397,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[23], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[23], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -339,7 +411,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[24]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[24], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[24], value);
+		}
 	}
 
 	[JniSignatureAttribute("S", "public static final")]
@@ -350,7 +425,10 @@ public partial interface CSSPrimitiveValue
 			var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[25], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[25], value);
+		}
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/css/Counter;", "public abstract")]

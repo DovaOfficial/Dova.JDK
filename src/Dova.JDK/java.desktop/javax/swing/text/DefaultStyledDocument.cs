@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -80,7 +80,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/DefaultStyledDocument$ElementBuffer;", "protected")]
@@ -91,7 +94,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument.ElementBuffer>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Vector;", "private transient")]
@@ -102,7 +108,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/event/ChangeListener;", "private transient")]
@@ -113,7 +122,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.ChangeListener>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/event/ChangeListener;", "private transient")]
@@ -124,7 +136,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.@event.ChangeListener>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/DefaultStyledDocument$ChangeUpdateRunnable;", "private transient")]
@@ -135,7 +150,10 @@ public partial class DefaultStyledDocument
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument.ChangeUpdateRunnable>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -419,7 +437,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "transient")]
@@ -430,7 +451,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "transient")]
@@ -441,7 +465,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "transient")]
@@ -452,7 +479,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "transient")]
@@ -463,7 +493,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Vector;", "transient")]
@@ -474,7 +507,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[5]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/util/Stack;", "transient")]
@@ -485,7 +521,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Stack>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "transient")]
@@ -496,7 +535,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "transient")]
@@ -507,7 +549,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("[Ljavax/swing/text/DefaultStyledDocument$ElementBuffer$ElemChanges;", "transient")]
@@ -518,7 +563,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 				return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.javax.swing.text.DefaultStyledDocument.ElementBuffer.ElemChanges>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "transient")]
@@ -529,7 +577,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/Element;", "transient")]
@@ -540,7 +591,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/Element;", "transient")]
@@ -551,7 +605,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "transient")]
@@ -562,7 +619,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[13]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[13], value);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "transient")]
@@ -573,7 +633,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[14]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[14], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/DefaultStyledDocument;", "final")]
@@ -584,7 +647,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -797,7 +863,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("I", "")]
@@ -808,7 +877,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[1]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				set
+				{
+					DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[1], value);
+				}
 			}
 
 			[JniSignatureAttribute("Ljava/util/Vector;", "")]
@@ -819,7 +891,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("Ljava/util/Vector;", "")]
@@ -830,7 +905,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.util.Vector>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("Z", "")]
@@ -841,7 +919,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[4]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+				set
+				{
+					DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[4], value);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -917,7 +998,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -928,7 +1012,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -939,7 +1026,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -950,7 +1040,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -961,7 +1054,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -972,7 +1068,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "public static final")]
@@ -983,7 +1082,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticShortField(ClassRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticShortField(ClassRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/AttributeSet;", "private")]
@@ -994,7 +1096,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -1005,7 +1110,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "private")]
@@ -1016,7 +1124,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetShortField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetShortField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetShortField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("S", "private")]
@@ -1027,7 +1138,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetShortField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetShortField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetShortField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -1038,7 +1152,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[11]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[11], value);
+			}
 		}
 
 		[JniSignatureAttribute("[C", "private")]
@@ -1049,7 +1166,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 				return DovaInterfaceFactory.Get<JavaArray<char>>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1169,7 +1289,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AbstractDocument.AbstractElement>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/Style;", "protected")]
@@ -1180,7 +1303,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Style>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/AttributeSet;", "protected")]
@@ -1191,7 +1317,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[2]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1253,7 +1382,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/AttributeSet;", "protected")]
@@ -1264,7 +1396,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.AttributeSet>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Z", "protected")]
@@ -1275,7 +1410,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/Element;", "protected")]
@@ -1286,7 +1424,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.Element>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1344,7 +1485,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1399,7 +1543,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/DefaultStyledDocument;", "final")]
@@ -1410,7 +1557,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1466,7 +1616,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 			}
-			set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/DefaultStyledDocument$AbstractChangeHandler$DocReference;", "private")]
@@ -1477,7 +1630,10 @@ public partial class DefaultStyledDocument
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument.AbstractChangeHandler.DocReference>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1541,7 +1697,10 @@ public partial class DefaultStyledDocument
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 					return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.text.DefaultStyledDocument.AbstractChangeHandler>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]

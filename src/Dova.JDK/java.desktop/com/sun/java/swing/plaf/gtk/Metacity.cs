@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -114,7 +114,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -125,7 +128,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "private static")]
@@ -136,7 +142,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/xml/parsers/DocumentBuilder;", "private static")]
@@ -147,7 +156,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.xml.parsers.DocumentBuilder>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/Document;", "private static")]
@@ -158,7 +170,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Document>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static")]
@@ -169,7 +184,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lorg/w3c/dom/Node;", "private")]
@@ -180,7 +198,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<Dova.JDK.org.w3c.dom.Node>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -191,7 +212,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -202,7 +226,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/awt/LayoutManager;", "private")]
@@ -213,7 +240,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.awt.LayoutManager>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/Metacity$ColorizeImageFilter;", "private")]
@@ -224,7 +254,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[10]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity.ColorizeImageFilter>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[10], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/net/URL;", "private")]
@@ -235,7 +268,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[11]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.net.URL>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[11], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/plaf/synth/SynthContext;", "private")]
@@ -246,7 +282,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<Dova.JDK.javax.swing.plaf.synth.SynthContext>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -257,7 +296,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/Metacity$ArithmeticExpressionEvaluator;", "private")]
@@ -268,7 +310,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity.ArithmeticExpressionEvaluator>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -279,7 +324,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[15]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.Map>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[15], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/Metacity$RoundRectClipShape;", "private")]
@@ -290,7 +338,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[16]);
 			return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity.RoundRectClipShape>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/HashMap;", "private")]
@@ -301,7 +352,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[17]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.HashMap>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -312,7 +366,10 @@ public partial class Metacity
 			var ret = DovaVM.Runtime.GetStaticBooleanField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticBooleanField(ClassRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -702,7 +759,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -785,7 +845,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("D", "")]
@@ -796,7 +859,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("D", "")]
@@ -807,7 +873,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/Metacity;", "final")]
@@ -818,7 +887,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[3]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -889,7 +961,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity.PeekableStringTokenizer>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/Metacity;", "final")]
@@ -900,7 +975,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[1]);
 				return DovaInterfaceFactory.Get<Dova.JDK.com.sun.java.swing.plaf.gtk.Metacity>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1007,7 +1085,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1018,7 +1099,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1029,7 +1113,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1040,7 +1127,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1051,7 +1141,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[4]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[4], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1062,7 +1155,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[5]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[5], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1073,7 +1169,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[6]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[6], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1084,7 +1183,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1095,7 +1197,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[8]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[8], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1106,7 +1211,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[9]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[9], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1117,7 +1225,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[10]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[10], value);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1299,7 +1410,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[0]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[0], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[0], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -1310,7 +1424,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[1]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[1], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[1], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -1321,7 +1438,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[2]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[2], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[2], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -1332,7 +1452,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[3]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[3], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[3], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -1343,7 +1466,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[4]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[4], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[4], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -1354,7 +1480,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetDoubleField(CurrentRefPtr, FieldPtrs[5]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[5], value);
+				set
+				{
+					DovaVM.Runtime.SetDoubleField(CurrentRefPtr, FieldPtrs[5], value);
+				}
 			}
 
 			[JniSignatureAttribute("Ljava/awt/geom/AffineTransform;", "")]
@@ -1365,7 +1494,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[6]);
 					return DovaInterfaceFactory.Get<Dova.JDK.java.awt.geom.AffineTransform>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("I", "")]
@@ -1376,7 +1508,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[7]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+				set
+				{
+					DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[7], value);
+				}
 			}
 
 			[JniSignatureAttribute("[[D", "")]
@@ -1387,7 +1522,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[8]);
 					return DovaInterfaceFactory.Get<JavaArray<JavaArray<double>>>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("[I", "")]
@@ -1398,7 +1536,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[9]);
 					return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 				}
-				set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1409,7 +1550,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[10]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[10], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[10], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1420,7 +1564,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[11]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[11], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[11], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1431,7 +1578,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[12]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[12], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[12], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1442,7 +1592,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[13]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[13], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[13], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1453,7 +1606,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[14]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[14], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[14], value);
+				}
 			}
 
 			[JniSignatureAttribute("D", "private static final")]
@@ -1464,7 +1620,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticDoubleField(ClassRefPtr, FieldPtrs[15]);
 					return ret;
 				}
-				set => DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[15], value);
+				set
+				{
+					DovaVM.Runtime.SetStaticDoubleField(ClassRefPtr, FieldPtrs[15], value);
+				}
 			}
 
 			[JniSignatureAttribute("[[D", "private static final")]
@@ -1475,7 +1634,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[16]);
 					return DovaInterfaceFactory.Get<JavaArray<JavaArray<double>>>(ret);
 				}
-				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[16], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("[I", "private static final")]
@@ -1486,7 +1648,10 @@ public partial class Metacity
 					var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[17]);
 					return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 				}
-				set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+				set
+				{
+					DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[17], value.CurrentRefPtr);
+				}
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1573,7 +1738,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[0]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[0], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private static")]
@@ -1584,7 +1752,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[1]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[1], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private static")]
@@ -1595,7 +1766,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[2]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			set
+			{
+				DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[2], value);
+			}
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -1606,7 +1780,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[3]);
 				return ret;
 			}
-			set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			set
+			{
+				DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[3], value);
+			}
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "private")]
@@ -1617,7 +1794,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[4]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.Object>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1679,7 +1859,10 @@ public partial class Metacity
 				var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[0]);
 				return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 			}
-			set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			set
+			{
+				DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+			}
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]

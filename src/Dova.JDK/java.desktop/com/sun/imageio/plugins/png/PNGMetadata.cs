@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -197,7 +197,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[0]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[0], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "protected static final")]
@@ -208,7 +211,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[1]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[1], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -219,7 +225,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[2]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[2], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "static final")]
@@ -230,7 +239,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[3]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[3], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -241,7 +253,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[4]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[4], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -252,7 +267,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[5]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[5], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -263,7 +281,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[6]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[6], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -274,7 +295,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[7]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[7], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -285,7 +309,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[8]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[8], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -296,7 +323,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[9]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[9], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -307,7 +337,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -318,7 +351,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticIntField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticIntField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -329,7 +365,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[12]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[12], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -340,7 +379,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[13]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[13], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "static final")]
@@ -351,7 +393,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[14]);
 			return DovaInterfaceFactory.Get<JavaArray<Dova.JDK.java.lang.String>>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[14], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -362,7 +407,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -373,7 +421,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -384,7 +435,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -395,7 +449,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -406,7 +463,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -417,7 +477,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -428,7 +491,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[21], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[21], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -439,7 +505,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[22], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[22], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -450,7 +519,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[23], value);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "public")]
@@ -461,7 +533,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[24]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[24], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "public")]
@@ -472,7 +547,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[25]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[25], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "public")]
@@ -483,7 +561,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[26]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[26], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -494,7 +575,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[27]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[27], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -505,7 +589,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[28]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[28], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[28], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -516,7 +603,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[29], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[29], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -527,7 +617,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[30], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[30], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -538,7 +631,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[31], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[31], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -549,7 +645,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[32], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[32], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -560,7 +659,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[33], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[33], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -571,7 +673,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[34]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[34], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[34], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -582,7 +687,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[35], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[35], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -593,7 +701,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[36], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[36], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -604,7 +715,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[37], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[37], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -615,7 +729,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[38], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[38], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -626,7 +743,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[39], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[39], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -637,7 +757,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[40]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[40], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[40], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -648,7 +771,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[41], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[41], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -659,7 +785,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[42], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[42], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -670,7 +799,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[43], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[43], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -681,7 +813,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[44]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[44], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[44], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -692,7 +827,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[45], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[45], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -703,7 +841,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[46]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[46], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[46], value);
+		}
 	}
 
 	[JniSignatureAttribute("[C", "public")]
@@ -714,7 +855,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[47]);
 			return DovaInterfaceFactory.Get<JavaArray<char>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[47], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[47], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -725,7 +869,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[48]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[48], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[48], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public")]
@@ -736,7 +883,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[49]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[49], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[49], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -747,7 +897,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[50]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[50], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[50], value);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "public")]
@@ -758,7 +911,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[51]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[51], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[51], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -769,7 +925,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[52]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[52], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[52], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -780,7 +939,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[53]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[53], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[53], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -791,7 +953,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[54]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[54], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[54], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -802,7 +967,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[55]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[55], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[55], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -813,7 +981,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[56]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[56], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[56], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -824,7 +995,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[57]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[57], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[57], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -835,7 +1009,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[58]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[58], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[58], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -846,7 +1023,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[59]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[59], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[59], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -857,7 +1037,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[60]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[60], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[60], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -868,7 +1051,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[61]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[61], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[61], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -879,7 +1065,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[62]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[62], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[62], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -890,7 +1079,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[63]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[63], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[63], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -901,7 +1093,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[64]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[64], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[64], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -912,7 +1107,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[65]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[65], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[65], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -923,7 +1121,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[66]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[66], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[66], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -934,7 +1135,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[67]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[67], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[67], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -945,7 +1149,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[68]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[68], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[68], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -956,7 +1163,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[69]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[69], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[69], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public")]
@@ -967,7 +1177,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[70]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[70], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[70], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -978,7 +1191,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[71]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[71], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[71], value);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -989,7 +1205,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[72]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[72], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[72], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -1000,7 +1219,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[73]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[73], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[73], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -1011,7 +1233,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[74]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[74], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[74], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -1022,7 +1247,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[75]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[75], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[75], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("[I", "public")]
@@ -1033,7 +1261,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[76]);
 			return DovaInterfaceFactory.Get<JavaArray<int>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[76], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[76], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -1044,7 +1275,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[77]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[77], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[77], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1055,7 +1289,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[78]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[78], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[78], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1066,7 +1303,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[79]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[79], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[79], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1077,7 +1317,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[80]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[80], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[80], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -1088,7 +1331,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[81]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[81], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[81], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1099,7 +1345,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[82]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[82], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[82], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1110,7 +1359,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[83]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[83], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[83], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1121,7 +1373,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[84]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[84], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[84], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1132,7 +1387,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[85]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[85], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[85], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1143,7 +1401,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[86]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[86], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[86], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1154,7 +1415,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[87]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[87], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[87], value);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -1165,7 +1429,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[88]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[88], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[88], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1176,7 +1443,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[89]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[89], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[89], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1187,7 +1457,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[90]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[90], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[90], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1198,7 +1471,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[91]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[91], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[91], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1209,7 +1485,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[92]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[92], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[92], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1220,7 +1499,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[93]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[93], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[93], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1231,7 +1513,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[94]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[94], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[94], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/time/ZoneOffset;", "public")]
@@ -1242,7 +1527,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[95]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.time.ZoneOffset>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[95], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[95], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -1253,7 +1541,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[96]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[96], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[96], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ListIterator;", "private")]
@@ -1264,7 +1555,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[97]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ListIterator>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[97], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[97], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -1275,7 +1569,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetStaticObjectField(ClassRefPtr, FieldPtrs[98]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.lang.String>(ret);
 		}
-		set => DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[98], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetStaticObjectField(ClassRefPtr, FieldPtrs[98], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Z", "public")]
@@ -1286,7 +1583,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetBooleanField(CurrentRefPtr, FieldPtrs[99]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[99], value);
+		set
+		{
+			DovaVM.Runtime.SetBooleanField(CurrentRefPtr, FieldPtrs[99], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1297,7 +1597,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[100]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[100], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[100], value);
+		}
 	}
 
 	[JniSignatureAttribute("[B", "public")]
@@ -1308,7 +1611,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[101]);
 			return DovaInterfaceFactory.Get<JavaArray<byte>>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[101], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[101], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1319,7 +1625,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[102]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[102], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[102], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1330,7 +1639,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[103]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[103], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[103], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1341,7 +1653,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[104]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[104], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[104], value);
+		}
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1352,7 +1667,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetIntField(CurrentRefPtr, FieldPtrs[105]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[105], value);
+		set
+		{
+			DovaVM.Runtime.SetIntField(CurrentRefPtr, FieldPtrs[105], value);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1363,7 +1681,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[106]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[106], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[106], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1374,7 +1695,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[107]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[107], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[107], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1385,7 +1709,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[108]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[108], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[108], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1396,7 +1723,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[109]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[109], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[109], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "public")]
@@ -1407,7 +1737,10 @@ public partial class PNGMetadata
 			var ret = DovaVM.Runtime.GetObjectField(CurrentRefPtr, FieldPtrs[110]);
 			return DovaInterfaceFactory.Get<Dova.JDK.java.util.ArrayList>(ret);
 		}
-		set => DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[110], value.CurrentRefPtr);
+		set
+		{
+			DovaVM.Runtime.SetObjectField(CurrentRefPtr, FieldPtrs[110], value.CurrentRefPtr);
+		}
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]

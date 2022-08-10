@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-07:37)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -1476,7 +1476,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[0]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[0], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1487,7 +1490,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1498,7 +1504,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[2]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[2], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[2], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1509,7 +1518,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[3]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[3], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[3], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1520,7 +1532,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[4]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[4], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[4], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1531,7 +1546,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[5]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[5], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[5], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1542,7 +1560,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[6]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[6], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[6], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1553,7 +1574,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[7]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[7], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[7], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1564,7 +1588,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[8]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[8], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[8], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1575,7 +1602,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[9]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[9], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[9], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1586,7 +1616,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[10]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[10], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[10], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1597,7 +1630,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[11]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[11], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1608,7 +1644,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[12]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[12], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[12], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1619,7 +1658,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[13]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[13], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[13], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1630,7 +1672,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[14]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[14], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[14], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1641,7 +1686,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[15]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[15], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[15], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1652,7 +1700,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[16]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[16], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[16], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1663,7 +1714,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[17]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[17], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[17], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1674,7 +1728,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[18]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[18], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[18], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1685,7 +1742,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[19]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[19], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[19], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1696,7 +1756,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[20]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[20], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[20], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1707,7 +1770,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[21]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[21], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[21], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1718,7 +1784,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[22]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[22], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[22], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1729,7 +1798,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[23]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[23], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[23], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1740,7 +1812,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[24]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[24], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[24], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1751,7 +1826,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[25]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[25], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[25], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1762,7 +1840,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[26]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[26], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[26], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1773,7 +1854,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[27]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[27], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[27], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1784,7 +1868,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[28]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[28], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[28], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1795,7 +1882,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[29]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[29], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[29], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1806,7 +1896,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[30]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[30], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[30], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1817,7 +1910,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[31]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[31], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[31], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1828,7 +1924,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[32]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[32], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[32], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1839,7 +1938,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[33]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[33], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[33], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1850,7 +1952,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[34]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[34], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[34], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1861,7 +1966,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[35]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[35], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[35], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1872,7 +1980,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[36]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[36], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[36], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1883,7 +1994,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[37]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[37], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[37], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1894,7 +2008,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[38]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[38], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[38], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1905,7 +2022,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[39]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[39], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[39], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1916,7 +2036,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[40]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[40], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[40], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1927,7 +2050,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[41]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[41], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[41], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1938,7 +2064,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[42]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[42], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[42], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1949,7 +2078,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[43]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[43], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[43], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1960,7 +2092,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[44]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[44], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[44], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1971,7 +2106,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[45]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[45], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[45], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1982,7 +2120,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[46]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[46], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[46], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -1993,7 +2134,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[47]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[47], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[47], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2004,7 +2148,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[48]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[48], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[48], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2015,7 +2162,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[49]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[49], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[49], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2026,7 +2176,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[50]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[50], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[50], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2037,7 +2190,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[51]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[51], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[51], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2048,7 +2204,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[52]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[52], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[52], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2059,7 +2218,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[53]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[53], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[53], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2070,7 +2232,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[54]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[54], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[54], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2081,7 +2246,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[55]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[55], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[55], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2092,7 +2260,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[56]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[56], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[56], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2103,7 +2274,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[57]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[57], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[57], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2114,7 +2288,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[58]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[58], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[58], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2125,7 +2302,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[59]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[59], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[59], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2136,7 +2316,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[60]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[60], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[60], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2147,7 +2330,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[61]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[61], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[61], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2158,7 +2344,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[62]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[62], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[62], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2169,7 +2358,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[63]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[63], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[63], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2180,7 +2372,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[64]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[64], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[64], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2191,7 +2386,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[65]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[65], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[65], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2202,7 +2400,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[66]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[66], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[66], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2213,7 +2414,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[67]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[67], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[67], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2224,7 +2428,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[68]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[68], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[68], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2235,7 +2442,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[69]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[69], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[69], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2246,7 +2456,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[70]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[70], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[70], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2257,7 +2470,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[71]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[71], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[71], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2268,7 +2484,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[72]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[72], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[72], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2279,7 +2498,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[73]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[73], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[73], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2290,7 +2512,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[74]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[74], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[74], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2301,7 +2526,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[75]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[75], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[75], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2312,7 +2540,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[76]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[76], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[76], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2323,7 +2554,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[77]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[77], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[77], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2334,7 +2568,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[78]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[78], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[78], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2345,7 +2582,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[79]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[79], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[79], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2356,7 +2596,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[80]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[80], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[80], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2367,7 +2610,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[81]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[81], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[81], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2378,7 +2624,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[82]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[82], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[82], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2389,7 +2638,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[83]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[83], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[83], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2400,7 +2652,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[84]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[84], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[84], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2411,7 +2666,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[85]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[85], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[85], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2422,7 +2680,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[86]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[86], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[86], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2433,7 +2694,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[87]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[87], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[87], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2444,7 +2708,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[88]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[88], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[88], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2455,7 +2722,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[89]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[89], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[89], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2466,7 +2736,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[90]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[90], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[90], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2477,7 +2750,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[91]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[91], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[91], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2488,7 +2764,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[92]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[92], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[92], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2499,7 +2778,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[93]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[93], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[93], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2510,7 +2792,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[94]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[94], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[94], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2521,7 +2806,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[95]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[95], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[95], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2532,7 +2820,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[96]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[96], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[96], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2543,7 +2834,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[97]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[97], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[97], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2554,7 +2848,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[98]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[98], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[98], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2565,7 +2862,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[99]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[99], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[99], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2576,7 +2876,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[100]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[100], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[100], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2587,7 +2890,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[101]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[101], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[101], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2598,7 +2904,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[102]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[102], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[102], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2609,7 +2918,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[103]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[103], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[103], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2620,7 +2932,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[104]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[104], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[104], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2631,7 +2946,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[105]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[105], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[105], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2642,7 +2960,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[106]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[106], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[106], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2653,7 +2974,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[107]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[107], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[107], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2664,7 +2988,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[108]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[108], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[108], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2675,7 +3002,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[109]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[109], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[109], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2686,7 +3016,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[110]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[110], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[110], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2697,7 +3030,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[111]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[111], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[111], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2708,7 +3044,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[112]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[112], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[112], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2719,7 +3058,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[113]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[113], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[113], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2730,7 +3072,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[114]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[114], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[114], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2741,7 +3086,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[115]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[115], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[115], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2752,7 +3100,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[116]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[116], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[116], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2763,7 +3114,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[117]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[117], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[117], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2774,7 +3128,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[118]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[118], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[118], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2785,7 +3142,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[119]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[119], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[119], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2796,7 +3156,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[120]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[120], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[120], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2807,7 +3170,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[121]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[121], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[121], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2818,7 +3184,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[122]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[122], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[122], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2829,7 +3198,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[123]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[123], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[123], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2840,7 +3212,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[124]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[124], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[124], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2851,7 +3226,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[125]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[125], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[125], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2862,7 +3240,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[126]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[126], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[126], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2873,7 +3254,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[127]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[127], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[127], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2884,7 +3268,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[128]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[128], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[128], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2895,7 +3282,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[129]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[129], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[129], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2906,7 +3296,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[130]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[130], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[130], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2917,7 +3310,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[131]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[131], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[131], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2928,7 +3324,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[132]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[132], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[132], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2939,7 +3338,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[133]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[133], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[133], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2950,7 +3352,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[134]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[134], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[134], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2961,7 +3366,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[135]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[135], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[135], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2972,7 +3380,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[136]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[136], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[136], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2983,7 +3394,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[137]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[137], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[137], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -2994,7 +3408,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[138]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[138], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[138], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3005,7 +3422,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[139]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[139], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[139], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3016,7 +3436,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[140]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[140], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[140], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3027,7 +3450,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[141]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[141], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[141], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3038,7 +3464,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[142]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[142], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[142], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3049,7 +3478,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[143]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[143], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[143], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3060,7 +3492,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[144]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[144], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[144], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3071,7 +3506,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[145]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[145], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[145], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3082,7 +3520,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[146]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[146], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[146], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3093,7 +3534,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[147]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[147], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[147], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3104,7 +3548,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[148]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[148], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[148], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3115,7 +3562,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[149]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[149], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[149], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3126,7 +3576,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[150]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[150], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[150], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3137,7 +3590,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[151]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[151], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[151], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3148,7 +3604,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[152]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[152], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[152], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3159,7 +3618,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[153]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[153], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[153], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3170,7 +3632,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[154]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[154], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[154], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3181,7 +3646,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[155]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[155], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[155], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3192,7 +3660,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[156]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[156], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[156], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3203,7 +3674,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[157]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[157], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[157], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3214,7 +3688,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[158]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[158], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[158], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3225,7 +3702,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[159]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[159], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[159], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3236,7 +3716,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[160]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[160], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[160], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3247,7 +3730,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[161]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[161], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[161], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3258,7 +3744,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[162]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[162], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[162], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3269,7 +3758,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[163]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[163], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[163], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3280,7 +3772,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[164]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[164], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[164], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3291,7 +3786,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[165]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[165], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[165], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3302,7 +3800,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[166]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[166], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[166], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3313,7 +3814,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[167]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[167], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[167], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3324,7 +3828,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[168]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[168], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[168], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3335,7 +3842,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[169]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[169], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[169], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3346,7 +3856,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[170]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[170], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[170], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3357,7 +3870,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[171]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[171], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[171], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3368,7 +3884,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[172]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[172], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[172], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3379,7 +3898,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[173]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[173], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[173], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3390,7 +3912,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[174]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[174], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[174], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3401,7 +3926,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[175]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[175], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[175], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3412,7 +3940,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[176]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[176], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[176], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3423,7 +3954,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[177]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[177], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[177], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3434,7 +3968,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[178]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[178], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[178], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3445,7 +3982,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[179]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[179], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[179], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3456,7 +3996,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[180]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[180], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[180], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3467,7 +4010,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[181]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[181], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[181], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3478,7 +4024,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[182]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[182], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[182], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3489,7 +4038,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[183]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[183], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[183], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3500,7 +4052,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[184]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[184], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[184], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3511,7 +4066,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[185]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[185], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[185], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3522,7 +4080,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[186]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[186], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[186], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3533,7 +4094,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[187]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[187], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[187], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3544,7 +4108,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[188]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[188], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[188], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3555,7 +4122,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[189]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[189], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[189], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3566,7 +4136,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[190]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[190], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[190], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3577,7 +4150,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[191]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[191], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[191], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3588,7 +4164,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[192]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[192], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[192], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3599,7 +4178,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[193]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[193], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[193], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3610,7 +4192,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[194]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[194], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[194], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3621,7 +4206,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[195]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[195], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[195], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3632,7 +4220,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[196]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[196], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[196], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3643,7 +4234,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[197]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[197], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[197], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3654,7 +4248,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[198]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[198], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[198], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3665,7 +4262,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[199]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[199], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[199], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3676,7 +4276,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[200]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[200], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[200], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3687,7 +4290,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[201]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[201], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[201], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3698,7 +4304,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[202]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[202], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[202], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3709,7 +4318,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[203]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[203], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[203], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3720,7 +4332,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[204]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[204], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[204], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3731,7 +4346,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[205]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[205], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[205], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3742,7 +4360,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[206]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[206], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[206], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3753,7 +4374,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[207]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[207], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[207], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3764,7 +4388,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[208]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[208], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[208], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3775,7 +4402,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[209]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[209], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[209], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3786,7 +4416,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[210]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[210], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[210], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3797,7 +4430,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[211]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[211], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[211], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3808,7 +4444,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[212]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[212], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[212], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3819,7 +4458,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[213]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[213], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[213], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3830,7 +4472,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[214]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[214], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[214], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3841,7 +4486,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[215]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[215], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[215], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3852,7 +4500,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[216]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[216], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[216], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3863,7 +4514,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[217]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[217], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[217], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3874,7 +4528,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[218]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[218], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[218], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3885,7 +4542,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[219]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[219], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[219], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3896,7 +4556,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[220]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[220], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[220], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3907,7 +4570,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[221]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[221], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[221], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3918,7 +4584,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[222]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[222], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[222], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3929,7 +4598,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[223]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[223], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[223], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3940,7 +4612,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[224]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[224], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[224], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3951,7 +4626,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[225]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[225], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[225], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3962,7 +4640,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[226]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[226], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[226], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3973,7 +4654,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[227]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[227], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[227], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3984,7 +4668,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[228]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[228], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[228], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -3995,7 +4682,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[229]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[229], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[229], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4006,7 +4696,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[230]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[230], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[230], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4017,7 +4710,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[231]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[231], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[231], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4028,7 +4724,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[232]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[232], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[232], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4039,7 +4738,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[233]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[233], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[233], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4050,7 +4752,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[234]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[234], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[234], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4061,7 +4766,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[235]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[235], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[235], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4072,7 +4780,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[236]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[236], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[236], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4083,7 +4794,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[237]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[237], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[237], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4094,7 +4808,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[238]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[238], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[238], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4105,7 +4822,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[239]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[239], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[239], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4116,7 +4836,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[240]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[240], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[240], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4127,7 +4850,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[241]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[241], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[241], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4138,7 +4864,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[242]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[242], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[242], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4149,7 +4878,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[243]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[243], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[243], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4160,7 +4892,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[244]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[244], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[244], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4171,7 +4906,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[245]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[245], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[245], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4182,7 +4920,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[246]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[246], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[246], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4193,7 +4934,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[247]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[247], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[247], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4204,7 +4948,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[248]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[248], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[248], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4215,7 +4962,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[249]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[249], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[249], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4226,7 +4976,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[250]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[250], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[250], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4237,7 +4990,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[251]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[251], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[251], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4248,7 +5004,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[252]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[252], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[252], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4259,7 +5018,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[253]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[253], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[253], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4270,7 +5032,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[254]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[254], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[254], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4281,7 +5046,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[255]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[255], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[255], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4292,7 +5060,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[256]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[256], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[256], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4303,7 +5074,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[257]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[257], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[257], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4314,7 +5088,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[258]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[258], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[258], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4325,7 +5102,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[259]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[259], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[259], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4336,7 +5116,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[260]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[260], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[260], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4347,7 +5130,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[261]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[261], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[261], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4358,7 +5144,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[262]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[262], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[262], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4369,7 +5158,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[263]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[263], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[263], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4380,7 +5172,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[264]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[264], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[264], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4391,7 +5186,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[265]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[265], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[265], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4402,7 +5200,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[266]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[266], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[266], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4413,7 +5214,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[267]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[267], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[267], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4424,7 +5228,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[268]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[268], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[268], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4435,7 +5242,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[269]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[269], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[269], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4446,7 +5256,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[270]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[270], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[270], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4457,7 +5270,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[271]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[271], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[271], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4468,7 +5284,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[272]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[272], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[272], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4479,7 +5298,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[273]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[273], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[273], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4490,7 +5312,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[274]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[274], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[274], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4501,7 +5326,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[275]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[275], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[275], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4512,7 +5340,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[276]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[276], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[276], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4523,7 +5354,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[277]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[277], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[277], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4534,7 +5368,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[278]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[278], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[278], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4545,7 +5382,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[279]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[279], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[279], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4556,7 +5396,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[280]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[280], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[280], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4567,7 +5410,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[281]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[281], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[281], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4578,7 +5424,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[282]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[282], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[282], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4589,7 +5438,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[283]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[283], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[283], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4600,7 +5452,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[284]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[284], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[284], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4611,7 +5466,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[285]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[285], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[285], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4622,7 +5480,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[286]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[286], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[286], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4633,7 +5494,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[287]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[287], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[287], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4644,7 +5508,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[288]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[288], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[288], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4655,7 +5522,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[289]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[289], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[289], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4666,7 +5536,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[290]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[290], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[290], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4677,7 +5550,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[291]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[291], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[291], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4688,7 +5564,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[292]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[292], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[292], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4699,7 +5578,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[293]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[293], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[293], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4710,7 +5592,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[294]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[294], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[294], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4721,7 +5606,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[295]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[295], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[295], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4732,7 +5620,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[296]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[296], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[296], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4743,7 +5634,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[297]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[297], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[297], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4754,7 +5648,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[298]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[298], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[298], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4765,7 +5662,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[299]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[299], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[299], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4776,7 +5676,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[300]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[300], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[300], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4787,7 +5690,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[301]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[301], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[301], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4798,7 +5704,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[302]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[302], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[302], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4809,7 +5718,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[303]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[303], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[303], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4820,7 +5732,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[304]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[304], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[304], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4831,7 +5746,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[305]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[305], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[305], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4842,7 +5760,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[306]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[306], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[306], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4853,7 +5774,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[307]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[307], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[307], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4864,7 +5788,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[308]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[308], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[308], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4875,7 +5802,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[309]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[309], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[309], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4886,7 +5816,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[310]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[310], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[310], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4897,7 +5830,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[311]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[311], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[311], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4908,7 +5844,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[312]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[312], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[312], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4919,7 +5858,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[313]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[313], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[313], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4930,7 +5872,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[314]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[314], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[314], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4941,7 +5886,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[315]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[315], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[315], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4952,7 +5900,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[316]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[316], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[316], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4963,7 +5914,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[317]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[317], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[317], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4974,7 +5928,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[318]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[318], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[318], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4985,7 +5942,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[319]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[319], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[319], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -4996,7 +5956,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[320]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[320], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[320], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5007,7 +5970,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[321]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[321], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[321], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5018,7 +5984,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[322]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[322], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[322], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5029,7 +5998,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[323]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[323], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[323], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5040,7 +6012,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[324]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[324], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[324], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5051,7 +6026,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[325]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[325], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[325], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5062,7 +6040,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[326]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[326], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[326], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5073,7 +6054,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[327]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[327], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[327], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5084,7 +6068,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[328]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[328], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[328], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5095,7 +6082,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[329]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[329], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[329], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5106,7 +6096,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[330]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[330], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[330], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5117,7 +6110,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[331]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[331], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[331], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5128,7 +6124,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[332]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[332], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[332], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5139,7 +6138,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[333]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[333], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[333], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5150,7 +6152,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[334]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[334], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[334], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5161,7 +6166,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[335]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[335], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[335], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5172,7 +6180,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[336]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[336], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[336], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5183,7 +6194,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[337]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[337], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[337], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5194,7 +6208,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[338]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[338], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[338], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5205,7 +6222,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[339]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[339], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[339], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5216,7 +6236,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[340]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[340], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[340], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5227,7 +6250,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[341]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[341], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[341], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5238,7 +6264,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[342]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[342], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[342], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5249,7 +6278,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[343]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[343], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[343], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5260,7 +6292,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[344]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[344], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[344], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5271,7 +6306,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[345]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[345], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[345], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5282,7 +6320,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[346]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[346], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[346], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5293,7 +6334,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[347]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[347], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[347], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5304,7 +6348,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[348]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[348], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[348], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5315,7 +6362,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[349]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[349], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[349], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5326,7 +6376,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[350]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[350], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[350], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5337,7 +6390,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[351]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[351], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[351], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5348,7 +6404,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[352]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[352], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[352], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5359,7 +6418,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[353]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[353], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[353], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5370,7 +6432,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[354]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[354], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[354], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5381,7 +6446,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[355]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[355], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[355], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5392,7 +6460,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[356]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[356], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[356], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5403,7 +6474,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[357]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[357], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[357], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5414,7 +6488,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[358]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[358], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[358], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5425,7 +6502,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[359]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[359], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[359], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5436,7 +6516,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[360]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[360], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[360], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5447,7 +6530,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[361]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[361], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[361], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5458,7 +6544,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[362]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[362], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[362], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5469,7 +6558,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[363]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[363], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[363], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5480,7 +6572,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[364]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[364], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[364], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5491,7 +6586,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[365]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[365], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[365], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5502,7 +6600,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[366]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[366], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[366], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5513,7 +6614,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[367]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[367], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[367], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5524,7 +6628,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[368]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[368], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[368], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5535,7 +6642,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[369]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[369], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[369], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5546,7 +6656,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[370]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[370], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[370], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5557,7 +6670,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[371]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[371], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[371], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5568,7 +6684,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[372]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[372], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[372], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5579,7 +6698,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[373]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[373], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[373], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5590,7 +6712,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[374]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[374], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[374], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5601,7 +6726,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[375]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[375], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[375], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5612,7 +6740,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[376]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[376], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[376], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5623,7 +6754,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[377]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[377], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[377], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5634,7 +6768,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[378]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[378], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[378], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5645,7 +6782,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[379]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[379], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[379], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5656,7 +6796,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[380]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[380], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[380], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5667,7 +6810,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[381]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[381], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[381], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5678,7 +6824,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[382]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[382], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[382], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5689,7 +6838,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[383]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[383], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[383], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5700,7 +6852,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[384]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[384], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[384], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5711,7 +6866,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[385]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[385], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[385], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5722,7 +6880,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[386]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[386], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[386], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5733,7 +6894,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[387]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[387], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[387], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5744,7 +6908,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[388]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[388], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[388], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5755,7 +6922,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[389]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[389], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[389], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5766,7 +6936,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[390]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[390], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[390], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5777,7 +6950,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[391]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[391], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[391], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5788,7 +6964,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[392]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[392], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[392], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5799,7 +6978,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[393]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[393], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[393], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5810,7 +6992,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[394]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[394], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[394], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5821,7 +7006,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[395]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[395], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[395], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5832,7 +7020,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[396]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[396], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[396], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5843,7 +7034,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[397]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[397], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[397], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5854,7 +7048,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[398]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[398], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[398], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5865,7 +7062,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[399]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[399], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[399], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5876,7 +7076,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[400]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[400], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[400], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5887,7 +7090,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[401]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[401], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[401], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5898,7 +7104,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[402]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[402], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[402], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5909,7 +7118,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[403]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[403], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[403], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5920,7 +7132,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[404]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[404], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[404], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5931,7 +7146,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[405]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[405], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[405], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5942,7 +7160,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[406]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[406], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[406], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5953,7 +7174,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[407]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[407], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[407], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5964,7 +7188,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[408]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[408], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[408], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5975,7 +7202,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[409]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[409], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[409], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5986,7 +7216,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[410]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[410], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[410], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -5997,7 +7230,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[411]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[411], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[411], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6008,7 +7244,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[412]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[412], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[412], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6019,7 +7258,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[413]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[413], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[413], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6030,7 +7272,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[414]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[414], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[414], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6041,7 +7286,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[415]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[415], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[415], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6052,7 +7300,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[416]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[416], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[416], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6063,7 +7314,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[417]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[417], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[417], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6074,7 +7328,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[418]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[418], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[418], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6085,7 +7342,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[419]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[419], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[419], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6096,7 +7356,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[420]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[420], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[420], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6107,7 +7370,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[421]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[421], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[421], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6118,7 +7384,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[422]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[422], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[422], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6129,7 +7398,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[423]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[423], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[423], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6140,7 +7412,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[424]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[424], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[424], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6151,7 +7426,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[425]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[425], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[425], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6162,7 +7440,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[426]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[426], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[426], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6173,7 +7454,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[427]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[427], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[427], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6184,7 +7468,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[428]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[428], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[428], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6195,7 +7482,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[429]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[429], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[429], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6206,7 +7496,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[430]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[430], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[430], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6217,7 +7510,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[431]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[431], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[431], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6228,7 +7524,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[432]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[432], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[432], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6239,7 +7538,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[433]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[433], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[433], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6250,7 +7552,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[434]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[434], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[434], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6261,7 +7566,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[435]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[435], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[435], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6272,7 +7580,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[436]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[436], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[436], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6283,7 +7594,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[437]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[437], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[437], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6294,7 +7608,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[438]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[438], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[438], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6305,7 +7622,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[439]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[439], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[439], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6316,7 +7636,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[440]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[440], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[440], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6327,7 +7650,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[441]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[441], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[441], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6338,7 +7664,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[442]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[442], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[442], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6349,7 +7678,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[443]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[443], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[443], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6360,7 +7692,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[444]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[444], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[444], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6371,7 +7706,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[445]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[445], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[445], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6382,7 +7720,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[446]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[446], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[446], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6393,7 +7734,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[447]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[447], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[447], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6404,7 +7748,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[448]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[448], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[448], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6415,7 +7762,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[449]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[449], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[449], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6426,7 +7776,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[450]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[450], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[450], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6437,7 +7790,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[451]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[451], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[451], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6448,7 +7804,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[452]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[452], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[452], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6459,7 +7818,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[453]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[453], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[453], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6470,7 +7832,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[454]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[454], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[454], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6481,7 +7846,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[455]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[455], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[455], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6492,7 +7860,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[456]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[456], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[456], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6503,7 +7874,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[457]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[457], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[457], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6514,7 +7888,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[458]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[458], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[458], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6525,7 +7902,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[459]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[459], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[459], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6536,7 +7916,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[460]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[460], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[460], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6547,7 +7930,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[461]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[461], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[461], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6558,7 +7944,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[462]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[462], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[462], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6569,7 +7958,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[463]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[463], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[463], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6580,7 +7972,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[464]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[464], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[464], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6591,7 +7986,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[465]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[465], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[465], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6602,7 +8000,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[466]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[466], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[466], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6613,7 +8014,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[467]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[467], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[467], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6624,7 +8028,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[468]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[468], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[468], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6635,7 +8042,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[469]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[469], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[469], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6646,7 +8056,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[470]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[470], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[470], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6657,7 +8070,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[471]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[471], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[471], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6668,7 +8084,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[472]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[472], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[472], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6679,7 +8098,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[473]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[473], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[473], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6690,7 +8112,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[474]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[474], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[474], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6701,7 +8126,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[475]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[475], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[475], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6712,7 +8140,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[476]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[476], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[476], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6723,7 +8154,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[477]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[477], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[477], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6734,7 +8168,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[478]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[478], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[478], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6745,7 +8182,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[479]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[479], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[479], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6756,7 +8196,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[480]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[480], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[480], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6767,7 +8210,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[481]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[481], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[481], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6778,7 +8224,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[482]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[482], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[482], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6789,7 +8238,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[483]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[483], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[483], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6800,7 +8252,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[484]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[484], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[484], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6811,7 +8266,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[485]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[485], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[485], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6822,7 +8280,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[486]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[486], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[486], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6833,7 +8294,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[487]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[487], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[487], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6844,7 +8308,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[488]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[488], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[488], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6855,7 +8322,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[489]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[489], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[489], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6866,7 +8336,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[490]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[490], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[490], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6877,7 +8350,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[491]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[491], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[491], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6888,7 +8364,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[492]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[492], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[492], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6899,7 +8378,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[493]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[493], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[493], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6910,7 +8392,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[494]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[494], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[494], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6921,7 +8406,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[495]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[495], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[495], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6932,7 +8420,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[496]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[496], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[496], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6943,7 +8434,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[497]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[497], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[497], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6954,7 +8448,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[498]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[498], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[498], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6965,7 +8462,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[499]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[499], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[499], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6976,7 +8476,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[500]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[500], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[500], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6987,7 +8490,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[501]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[501], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[501], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -6998,7 +8504,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[502]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[502], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[502], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7009,7 +8518,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[503]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[503], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[503], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7020,7 +8532,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[504]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[504], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[504], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7031,7 +8546,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[505]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[505], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[505], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7042,7 +8560,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[506]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[506], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[506], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7053,7 +8574,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[507]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[507], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[507], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7064,7 +8588,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[508]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[508], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[508], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7075,7 +8602,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[509]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[509], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[509], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7086,7 +8616,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[510]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[510], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[510], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7097,7 +8630,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[511]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[511], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[511], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7108,7 +8644,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[512]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[512], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[512], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7119,7 +8658,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[513]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[513], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[513], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7130,7 +8672,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[514]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[514], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[514], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7141,7 +8686,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[515]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[515], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[515], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7152,7 +8700,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[516]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[516], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[516], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7163,7 +8714,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[517]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[517], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[517], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7174,7 +8728,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[518]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[518], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[518], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7185,7 +8742,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[519]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[519], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[519], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7196,7 +8756,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[520]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[520], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[520], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7207,7 +8770,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[521]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[521], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[521], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7218,7 +8784,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[522]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[522], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[522], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7229,7 +8798,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[523]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[523], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[523], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7240,7 +8812,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[524]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[524], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[524], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7251,7 +8826,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[525]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[525], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[525], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7262,7 +8840,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[526]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[526], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[526], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7273,7 +8854,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[527]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[527], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[527], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7284,7 +8868,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[528]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[528], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[528], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7295,7 +8882,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[529]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[529], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[529], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7306,7 +8896,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[530]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[530], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[530], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7317,7 +8910,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[531]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[531], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[531], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7328,7 +8924,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[532]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[532], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[532], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7339,7 +8938,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[533]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[533], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[533], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7350,7 +8952,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[534]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[534], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[534], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7361,7 +8966,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[535]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[535], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[535], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7372,7 +8980,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[536]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[536], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[536], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7383,7 +8994,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[537]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[537], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[537], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7394,7 +9008,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[538]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[538], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[538], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7405,7 +9022,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[539]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[539], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[539], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7416,7 +9036,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[540]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[540], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[540], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7427,7 +9050,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[541]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[541], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[541], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7438,7 +9064,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[542]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[542], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[542], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7449,7 +9078,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[543]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[543], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[543], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7460,7 +9092,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[544]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[544], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[544], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7471,7 +9106,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[545]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[545], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[545], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7482,7 +9120,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[546]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[546], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[546], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7493,7 +9134,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[547]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[547], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[547], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7504,7 +9148,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[548]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[548], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[548], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7515,7 +9162,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[549]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[549], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[549], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7526,7 +9176,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[550]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[550], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[550], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7537,7 +9190,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[551]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[551], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[551], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7548,7 +9204,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[552]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[552], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[552], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7559,7 +9218,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[553]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[553], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[553], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7570,7 +9232,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[554]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[554], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[554], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7581,7 +9246,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[555]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[555], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[555], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7592,7 +9260,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[556]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[556], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[556], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7603,7 +9274,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[557]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[557], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[557], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7614,7 +9288,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[558]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[558], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[558], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7625,7 +9302,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[559]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[559], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[559], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7636,7 +9316,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[560]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[560], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[560], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7647,7 +9330,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[561]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[561], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[561], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7658,7 +9344,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[562]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[562], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[562], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7669,7 +9358,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[563]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[563], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[563], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7680,7 +9372,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[564]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[564], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[564], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7691,7 +9386,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[565]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[565], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[565], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7702,7 +9400,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[566]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[566], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[566], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7713,7 +9414,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[567]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[567], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[567], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7724,7 +9428,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[568]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[568], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[568], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7735,7 +9442,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[569]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[569], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[569], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7746,7 +9456,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[570]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[570], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[570], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7757,7 +9470,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[571]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[571], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[571], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7768,7 +9484,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[572]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[572], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[572], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7779,7 +9498,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[573]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[573], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[573], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7790,7 +9512,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[574]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[574], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[574], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7801,7 +9526,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[575]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[575], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[575], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7812,7 +9540,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[576]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[576], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[576], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7823,7 +9554,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[577]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[577], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[577], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7834,7 +9568,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[578]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[578], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[578], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7845,7 +9582,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[579]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[579], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[579], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7856,7 +9596,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[580]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[580], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[580], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7867,7 +9610,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[581]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[581], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[581], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7878,7 +9624,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[582]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[582], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[582], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7889,7 +9638,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[583]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[583], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[583], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7900,7 +9652,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[584]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[584], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[584], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7911,7 +9666,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[585]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[585], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[585], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7922,7 +9680,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[586]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[586], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[586], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7933,7 +9694,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[587]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[587], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[587], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7944,7 +9708,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[588]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[588], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[588], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7955,7 +9722,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[589]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[589], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[589], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7966,7 +9736,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[590]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[590], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[590], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7977,7 +9750,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[591]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[591], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[591], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7988,7 +9764,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[592]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[592], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[592], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -7999,7 +9778,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[593]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[593], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[593], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8010,7 +9792,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[594]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[594], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[594], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8021,7 +9806,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[595]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[595], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[595], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8032,7 +9820,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[596]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[596], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[596], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8043,7 +9834,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[597]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[597], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[597], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8054,7 +9848,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[598]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[598], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[598], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8065,7 +9862,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[599]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[599], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[599], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8076,7 +9876,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[600]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[600], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[600], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8087,7 +9890,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[601]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[601], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[601], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8098,7 +9904,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[602]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[602], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[602], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8109,7 +9918,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[603]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[603], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[603], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8120,7 +9932,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[604]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[604], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[604], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8131,7 +9946,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[605]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[605], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[605], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8142,7 +9960,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[606]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[606], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[606], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8153,7 +9974,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[607]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[607], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[607], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8164,7 +9988,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[608]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[608], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[608], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8175,7 +10002,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[609]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[609], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[609], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8186,7 +10016,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[610]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[610], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[610], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8197,7 +10030,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[611]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[611], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[611], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8208,7 +10044,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[612]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[612], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[612], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8219,7 +10058,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[613]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[613], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[613], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8230,7 +10072,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[614]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[614], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[614], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8241,7 +10086,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[615]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[615], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[615], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8252,7 +10100,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[616]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[616], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[616], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8263,7 +10114,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[617]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[617], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[617], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8274,7 +10128,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[618]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[618], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[618], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8285,7 +10142,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[619]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[619], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[619], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8296,7 +10156,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[620]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[620], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[620], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8307,7 +10170,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[621]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[621], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[621], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8318,7 +10184,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[622]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[622], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[622], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8329,7 +10198,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[623]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[623], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[623], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8340,7 +10212,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[624]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[624], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[624], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8351,7 +10226,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[625]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[625], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[625], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8362,7 +10240,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[626]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[626], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[626], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8373,7 +10254,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[627]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[627], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[627], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8384,7 +10268,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[628]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[628], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[628], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8395,7 +10282,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[629]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[629], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[629], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8406,7 +10296,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[630]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[630], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[630], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8417,7 +10310,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[631]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[631], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[631], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8428,7 +10324,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[632]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[632], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[632], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8439,7 +10338,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[633]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[633], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[633], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8450,7 +10352,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[634]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[634], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[634], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8461,7 +10366,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[635]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[635], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[635], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8472,7 +10380,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[636]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[636], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[636], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8483,7 +10394,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[637]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[637], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[637], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8494,7 +10408,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[638]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[638], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[638], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8505,7 +10422,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[639]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[639], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[639], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8516,7 +10436,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[640]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[640], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[640], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8527,7 +10450,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[641]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[641], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[641], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8538,7 +10464,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[642]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[642], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[642], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8549,7 +10478,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[643]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[643], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[643], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8560,7 +10492,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[644]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[644], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[644], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8571,7 +10506,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[645]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[645], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[645], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8582,7 +10520,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[646]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[646], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[646], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8593,7 +10534,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[647]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[647], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[647], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8604,7 +10548,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[648]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[648], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[648], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8615,7 +10562,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[649]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[649], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[649], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8626,7 +10576,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[650]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[650], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[650], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8637,7 +10590,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[651]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[651], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[651], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8648,7 +10604,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[652]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[652], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[652], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8659,7 +10618,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[653]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[653], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[653], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8670,7 +10632,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[654]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[654], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[654], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8681,7 +10646,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[655]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[655], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[655], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8692,7 +10660,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[656]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[656], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[656], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8703,7 +10674,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[657]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[657], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[657], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8714,7 +10688,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[658]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[658], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[658], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8725,7 +10702,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[659]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[659], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[659], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8736,7 +10716,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[660]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[660], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[660], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8747,7 +10730,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[661]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[661], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[661], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8758,7 +10744,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[662]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[662], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[662], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8769,7 +10758,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[663]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[663], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[663], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8780,7 +10772,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[664]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[664], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[664], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8791,7 +10786,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[665]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[665], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[665], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8802,7 +10800,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[666]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[666], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[666], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8813,7 +10814,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[667]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[667], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[667], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8824,7 +10828,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[668]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[668], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[668], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8835,7 +10842,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[669]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[669], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[669], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8846,7 +10856,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[670]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[670], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[670], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8857,7 +10870,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[671]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[671], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[671], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8868,7 +10884,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[672]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[672], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[672], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8879,7 +10898,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[673]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[673], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[673], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8890,7 +10912,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[674]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[674], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[674], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8901,7 +10926,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[675]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[675], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[675], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8912,7 +10940,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[676]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[676], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[676], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8923,7 +10954,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[677]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[677], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[677], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8934,7 +10968,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[678]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[678], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[678], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8945,7 +10982,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[679]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[679], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[679], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8956,7 +10996,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[680]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[680], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[680], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8967,7 +11010,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[681]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[681], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[681], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8978,7 +11024,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[682]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[682], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[682], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -8989,7 +11038,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[683]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[683], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[683], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9000,7 +11052,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[684]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[684], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[684], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9011,7 +11066,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[685]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[685], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[685], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9022,7 +11080,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[686]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[686], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[686], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9033,7 +11094,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[687]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[687], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[687], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9044,7 +11108,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[688]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[688], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[688], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9055,7 +11122,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[689]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[689], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[689], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9066,7 +11136,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[690]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[690], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[690], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9077,7 +11150,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[691]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[691], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[691], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9088,7 +11164,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[692]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[692], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[692], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9099,7 +11178,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[693]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[693], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[693], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9110,7 +11192,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[694]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[694], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[694], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9121,7 +11206,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[695]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[695], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[695], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9132,7 +11220,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[696]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[696], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[696], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9143,7 +11234,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[697]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[697], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[697], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9154,7 +11248,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[698]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[698], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[698], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9165,7 +11262,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[699]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[699], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[699], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9176,7 +11276,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[700]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[700], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[700], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9187,7 +11290,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[701]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[701], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[701], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9198,7 +11304,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[702]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[702], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[702], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9209,7 +11318,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[703]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[703], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[703], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9220,7 +11332,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[704]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[704], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[704], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9231,7 +11346,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[705]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[705], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[705], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9242,7 +11360,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[706]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[706], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[706], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9253,7 +11374,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[707]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[707], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[707], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9264,7 +11388,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[708]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[708], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[708], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9275,7 +11402,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[709]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[709], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[709], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9286,7 +11416,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[710]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[710], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[710], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9297,7 +11430,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[711]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[711], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[711], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9308,7 +11444,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[712]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[712], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[712], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9319,7 +11458,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[713]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[713], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[713], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9330,7 +11472,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[714]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[714], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[714], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9341,7 +11486,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[715]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[715], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[715], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9352,7 +11500,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[716]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[716], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[716], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9363,7 +11514,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[717]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[717], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[717], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9374,7 +11528,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[718]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[718], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[718], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9385,7 +11542,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[719]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[719], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[719], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9396,7 +11556,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[720]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[720], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[720], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9407,7 +11570,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[721]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[721], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[721], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9418,7 +11584,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[722]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[722], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[722], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9429,7 +11598,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[723]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[723], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[723], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9440,7 +11612,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[724]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[724], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[724], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9451,7 +11626,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[725]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[725], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[725], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9462,7 +11640,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[726]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[726], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[726], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9473,7 +11654,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[727]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[727], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[727], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9484,7 +11668,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[728]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[728], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[728], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9495,7 +11682,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[729]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[729], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[729], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9506,7 +11696,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[730]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[730], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[730], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9517,7 +11710,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[731]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[731], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[731], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9528,7 +11724,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[732]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[732], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[732], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9539,7 +11738,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[733]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[733], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[733], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9550,7 +11752,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[734]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[734], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[734], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9561,7 +11766,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[735]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[735], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[735], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9572,7 +11780,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[736]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[736], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[736], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9583,7 +11794,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[737]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[737], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[737], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9594,7 +11808,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[738]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[738], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[738], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9605,7 +11822,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[739]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[739], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[739], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9616,7 +11836,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[740]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[740], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[740], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9627,7 +11850,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[741]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[741], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[741], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9638,7 +11864,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[742]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[742], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[742], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9649,7 +11878,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[743]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[743], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[743], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9660,7 +11892,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[744]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[744], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[744], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9671,7 +11906,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[745]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[745], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[745], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9682,7 +11920,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[746]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[746], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[746], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9693,7 +11934,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[747]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[747], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[747], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9704,7 +11948,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[748]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[748], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[748], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9715,7 +11962,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[749]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[749], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[749], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9726,7 +11976,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[750]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[750], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[750], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9737,7 +11990,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[751]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[751], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[751], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9748,7 +12004,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[752]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[752], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[752], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9759,7 +12018,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[753]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[753], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[753], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9770,7 +12032,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[754]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[754], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[754], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9781,7 +12046,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[755]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[755], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[755], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9792,7 +12060,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[756]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[756], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[756], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9803,7 +12074,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[757]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[757], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[757], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9814,7 +12088,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[758]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[758], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[758], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9825,7 +12102,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[759]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[759], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[759], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9836,7 +12116,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[760]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[760], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[760], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9847,7 +12130,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[761]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[761], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[761], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9858,7 +12144,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[762]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[762], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[762], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9869,7 +12158,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[763]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[763], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[763], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9880,7 +12172,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[764]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[764], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[764], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9891,7 +12186,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[765]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[765], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[765], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9902,7 +12200,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[766]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[766], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[766], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9913,7 +12214,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[767]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[767], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[767], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9924,7 +12228,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[768]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[768], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[768], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9935,7 +12242,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[769]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[769], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[769], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9946,7 +12256,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[770]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[770], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[770], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9957,7 +12270,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[771]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[771], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[771], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9968,7 +12284,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[772]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[772], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[772], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9979,7 +12298,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[773]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[773], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[773], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -9990,7 +12312,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[774]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[774], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[774], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10001,7 +12326,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[775]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[775], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[775], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10012,7 +12340,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[776]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[776], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[776], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10023,7 +12354,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[777]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[777], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[777], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10034,7 +12368,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[778]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[778], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[778], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10045,7 +12382,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[779]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[779], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[779], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10056,7 +12396,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[780]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[780], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[780], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10067,7 +12410,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[781]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[781], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[781], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10078,7 +12424,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[782]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[782], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[782], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10089,7 +12438,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[783]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[783], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[783], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10100,7 +12452,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[784]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[784], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[784], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10111,7 +12466,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[785]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[785], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[785], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10122,7 +12480,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[786]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[786], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[786], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10133,7 +12494,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[787]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[787], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[787], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10144,7 +12508,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[788]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[788], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[788], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10155,7 +12522,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[789]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[789], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[789], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10166,7 +12536,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[790]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[790], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[790], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10177,7 +12550,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[791]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[791], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[791], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10188,7 +12564,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[792]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[792], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[792], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10199,7 +12578,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[793]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[793], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[793], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10210,7 +12592,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[794]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[794], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[794], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10221,7 +12606,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[795]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[795], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[795], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10232,7 +12620,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[796]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[796], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[796], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10243,7 +12634,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[797]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[797], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[797], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10254,7 +12648,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[798]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[798], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[798], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10265,7 +12662,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[799]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[799], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[799], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10276,7 +12676,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[800]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[800], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[800], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10287,7 +12690,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[801]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[801], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[801], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10298,7 +12704,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[802]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[802], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[802], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10309,7 +12718,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[803]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[803], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[803], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10320,7 +12732,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[804]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[804], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[804], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10331,7 +12746,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[805]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[805], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[805], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10342,7 +12760,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[806]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[806], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[806], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10353,7 +12774,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[807]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[807], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[807], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10364,7 +12788,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[808]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[808], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[808], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10375,7 +12802,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[809]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[809], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[809], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10386,7 +12816,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[810]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[810], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[810], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10397,7 +12830,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[811]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[811], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[811], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10408,7 +12844,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[812]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[812], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[812], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10419,7 +12858,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[813]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[813], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[813], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10430,7 +12872,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[814]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[814], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[814], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10441,7 +12886,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[815]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[815], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[815], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10452,7 +12900,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[816]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[816], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[816], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10463,7 +12914,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[817]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[817], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[817], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10474,7 +12928,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[818]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[818], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[818], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10485,7 +12942,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[819]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[819], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[819], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10496,7 +12956,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[820]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[820], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[820], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10507,7 +12970,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[821]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[821], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[821], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10518,7 +12984,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[822]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[822], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[822], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10529,7 +12998,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[823]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[823], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[823], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10540,7 +13012,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[824]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[824], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[824], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10551,7 +13026,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[825]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[825], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[825], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10562,7 +13040,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[826]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[826], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[826], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10573,7 +13054,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[827]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[827], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[827], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10584,7 +13068,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[828]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[828], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[828], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10595,7 +13082,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[829]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[829], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[829], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10606,7 +13096,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[830]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[830], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[830], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10617,7 +13110,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[831]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[831], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[831], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10628,7 +13124,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[832]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[832], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[832], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10639,7 +13138,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[833]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[833], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[833], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10650,7 +13152,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[834]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[834], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[834], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10661,7 +13166,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[835]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[835], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[835], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10672,7 +13180,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[836]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[836], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[836], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10683,7 +13194,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[837]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[837], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[837], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10694,7 +13208,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[838]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[838], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[838], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10705,7 +13222,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[839]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[839], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[839], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10716,7 +13236,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[840]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[840], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[840], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10727,7 +13250,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[841]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[841], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[841], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10738,7 +13264,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[842]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[842], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[842], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10749,7 +13278,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[843]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[843], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[843], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10760,7 +13292,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[844]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[844], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[844], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10771,7 +13306,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[845]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[845], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[845], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10782,7 +13320,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[846]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[846], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[846], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10793,7 +13334,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[847]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[847], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[847], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10804,7 +13348,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[848]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[848], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[848], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10815,7 +13362,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[849]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[849], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[849], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10826,7 +13376,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[850]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[850], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[850], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10837,7 +13390,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[851]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[851], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[851], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10848,7 +13404,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[852]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[852], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[852], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10859,7 +13418,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[853]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[853], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[853], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10870,7 +13432,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[854]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[854], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[854], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10881,7 +13446,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[855]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[855], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[855], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10892,7 +13460,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[856]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[856], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[856], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10903,7 +13474,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[857]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[857], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[857], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10914,7 +13488,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[858]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[858], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[858], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10925,7 +13502,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[859]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[859], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[859], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10936,7 +13516,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[860]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[860], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[860], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10947,7 +13530,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[861]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[861], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[861], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10958,7 +13544,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[862]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[862], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[862], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10969,7 +13558,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[863]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[863], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[863], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10980,7 +13572,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[864]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[864], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[864], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -10991,7 +13586,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[865]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[865], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[865], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11002,7 +13600,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[866]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[866], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[866], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11013,7 +13614,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[867]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[867], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[867], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11024,7 +13628,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[868]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[868], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[868], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11035,7 +13642,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[869]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[869], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[869], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11046,7 +13656,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[870]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[870], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[870], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11057,7 +13670,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[871]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[871], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[871], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11068,7 +13684,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[872]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[872], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[872], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11079,7 +13698,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[873]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[873], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[873], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11090,7 +13712,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[874]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[874], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[874], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11101,7 +13726,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[875]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[875], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[875], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11112,7 +13740,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[876]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[876], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[876], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11123,7 +13754,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[877]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[877], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[877], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11134,7 +13768,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[878]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[878], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[878], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11145,7 +13782,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[879]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[879], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[879], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11156,7 +13796,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[880]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[880], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[880], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11167,7 +13810,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[881]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[881], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[881], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11178,7 +13824,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[882]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[882], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[882], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11189,7 +13838,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[883]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[883], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[883], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11200,7 +13852,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[884]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[884], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[884], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11211,7 +13866,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[885]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[885], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[885], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11222,7 +13880,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[886]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[886], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[886], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11233,7 +13894,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[887]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[887], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[887], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11244,7 +13908,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[888]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[888], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[888], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11255,7 +13922,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[889]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[889], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[889], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11266,7 +13936,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[890]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[890], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[890], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11277,7 +13950,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[891]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[891], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[891], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11288,7 +13964,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[892]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[892], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[892], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11299,7 +13978,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[893]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[893], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[893], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11310,7 +13992,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[894]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[894], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[894], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11321,7 +14006,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[895]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[895], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[895], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11332,7 +14020,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[896]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[896], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[896], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11343,7 +14034,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[897]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[897], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[897], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11354,7 +14048,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[898]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[898], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[898], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11365,7 +14062,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[899]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[899], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[899], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11376,7 +14076,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[900]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[900], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[900], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11387,7 +14090,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[901]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[901], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[901], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11398,7 +14104,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[902]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[902], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[902], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11409,7 +14118,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[903]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[903], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[903], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11420,7 +14132,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[904]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[904], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[904], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11431,7 +14146,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[905]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[905], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[905], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11442,7 +14160,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[906]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[906], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[906], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11453,7 +14174,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[907]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[907], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[907], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11464,7 +14188,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[908]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[908], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[908], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11475,7 +14202,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[909]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[909], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[909], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11486,7 +14216,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[910]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[910], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[910], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11497,7 +14230,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[911]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[911], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[911], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11508,7 +14244,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[912]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[912], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[912], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11519,7 +14258,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[913]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[913], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[913], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11530,7 +14272,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[914]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[914], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[914], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11541,7 +14286,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[915]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[915], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[915], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11552,7 +14300,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[916]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[916], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[916], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11563,7 +14314,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[917]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[917], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[917], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11574,7 +14328,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[918]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[918], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[918], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11585,7 +14342,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[919]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[919], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[919], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11596,7 +14356,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[920]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[920], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[920], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11607,7 +14370,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[921]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[921], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[921], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11618,7 +14384,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[922]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[922], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[922], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11629,7 +14398,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[923]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[923], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[923], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11640,7 +14412,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[924]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[924], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[924], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11651,7 +14426,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[925]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[925], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[925], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11662,7 +14440,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[926]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[926], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[926], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11673,7 +14454,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[927]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[927], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[927], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11684,7 +14468,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[928]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[928], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[928], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11695,7 +14482,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[929]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[929], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[929], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11706,7 +14496,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[930]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[930], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[930], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11717,7 +14510,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[931]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[931], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[931], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11728,7 +14524,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[932]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[932], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[932], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11739,7 +14538,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[933]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[933], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[933], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11750,7 +14552,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[934]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[934], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[934], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11761,7 +14566,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[935]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[935], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[935], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11772,7 +14580,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[936]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[936], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[936], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11783,7 +14594,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[937]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[937], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[937], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11794,7 +14608,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[938]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[938], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[938], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11805,7 +14622,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[939]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[939], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[939], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11816,7 +14636,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[940]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[940], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[940], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11827,7 +14650,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[941]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[941], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[941], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11838,7 +14664,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[942]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[942], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[942], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11849,7 +14678,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[943]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[943], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[943], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11860,7 +14692,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[944]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[944], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[944], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11871,7 +14706,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[945]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[945], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[945], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11882,7 +14720,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[946]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[946], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[946], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11893,7 +14734,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[947]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[947], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[947], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11904,7 +14748,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[948]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[948], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[948], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11915,7 +14762,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[949]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[949], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[949], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11926,7 +14776,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[950]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[950], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[950], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11937,7 +14790,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[951]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[951], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[951], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11948,7 +14804,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[952]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[952], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[952], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11959,7 +14818,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[953]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[953], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[953], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11970,7 +14832,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[954]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[954], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[954], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11981,7 +14846,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[955]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[955], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[955], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -11992,7 +14860,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[956]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[956], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[956], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12003,7 +14874,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[957]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[957], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[957], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12014,7 +14888,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[958]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[958], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[958], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12025,7 +14902,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[959]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[959], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[959], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12036,7 +14916,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[960]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[960], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[960], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12047,7 +14930,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[961]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[961], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[961], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12058,7 +14944,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[962]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[962], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[962], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12069,7 +14958,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[963]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[963], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[963], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12080,7 +14972,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[964]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[964], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[964], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12091,7 +14986,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[965]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[965], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[965], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12102,7 +15000,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[966]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[966], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[966], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12113,7 +15014,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[967]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[967], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[967], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12124,7 +15028,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[968]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[968], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[968], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12135,7 +15042,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[969]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[969], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[969], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12146,7 +15056,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[970]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[970], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[970], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12157,7 +15070,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[971]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[971], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[971], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12168,7 +15084,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[972]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[972], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[972], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12179,7 +15098,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[973]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[973], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[973], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12190,7 +15112,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[974]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[974], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[974], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12201,7 +15126,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[975]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[975], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[975], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12212,7 +15140,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[976]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[976], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[976], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12223,7 +15154,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[977]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[977], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[977], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12234,7 +15168,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[978]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[978], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[978], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12245,7 +15182,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[979]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[979], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[979], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12256,7 +15196,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[980]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[980], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[980], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12267,7 +15210,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[981]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[981], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[981], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12278,7 +15224,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[982]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[982], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[982], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12289,7 +15238,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[983]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[983], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[983], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12300,7 +15252,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[984]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[984], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[984], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12311,7 +15266,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[985]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[985], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[985], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12322,7 +15280,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[986]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[986], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[986], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12333,7 +15294,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[987]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[987], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[987], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12344,7 +15308,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[988]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[988], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[988], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12355,7 +15322,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[989]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[989], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[989], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12366,7 +15336,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[990]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[990], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[990], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12377,7 +15350,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[991]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[991], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[991], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12388,7 +15364,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[992]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[992], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[992], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12399,7 +15378,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[993]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[993], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[993], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12410,7 +15392,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[994]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[994], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[994], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12421,7 +15406,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[995]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[995], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[995], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12432,7 +15420,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[996]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[996], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[996], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12443,7 +15434,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[997]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[997], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[997], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12454,7 +15448,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[998]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[998], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[998], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12465,7 +15462,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[999]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[999], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[999], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12476,7 +15476,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1000]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1000], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1000], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12487,7 +15490,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1001]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1001], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1001], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12498,7 +15504,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1002]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1002], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1002], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12509,7 +15518,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1003]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1003], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1003], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12520,7 +15532,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1004]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1004], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1004], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12531,7 +15546,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1005]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1005], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1005], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12542,7 +15560,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1006]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1006], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1006], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12553,7 +15574,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1007]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1007], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1007], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12564,7 +15588,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1008]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1008], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1008], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12575,7 +15602,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1009]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1009], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1009], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12586,7 +15616,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1010]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1010], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1010], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12597,7 +15630,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1011]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1011], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1011], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12608,7 +15644,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1012]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1012], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1012], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12619,7 +15658,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1013]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1013], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1013], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12630,7 +15672,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1014]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1014], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1014], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12641,7 +15686,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1015]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1015], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1015], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12652,7 +15700,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1016]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1016], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1016], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12663,7 +15714,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1017]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1017], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1017], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12674,7 +15728,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1018]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1018], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1018], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12685,7 +15742,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1019]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1019], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1019], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12696,7 +15756,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1020]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1020], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1020], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12707,7 +15770,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1021]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1021], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1021], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12718,7 +15784,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1022]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1022], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1022], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12729,7 +15798,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1023]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1023], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1023], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12740,7 +15812,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1024]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1024], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1024], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12751,7 +15826,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1025]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1025], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1025], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12762,7 +15840,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1026]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1026], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1026], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12773,7 +15854,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1027]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1027], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1027], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12784,7 +15868,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1028]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1028], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1028], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12795,7 +15882,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1029]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1029], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1029], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12806,7 +15896,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1030]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1030], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1030], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12817,7 +15910,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1031]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1031], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1031], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12828,7 +15924,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1032]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1032], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1032], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12839,7 +15938,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1033]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1033], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1033], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12850,7 +15952,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1034]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1034], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1034], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12861,7 +15966,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1035]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1035], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1035], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12872,7 +15980,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1036]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1036], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1036], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12883,7 +15994,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1037]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1037], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1037], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12894,7 +16008,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1038]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1038], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1038], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12905,7 +16022,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1039]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1039], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1039], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12916,7 +16036,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1040]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1040], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1040], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12927,7 +16050,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1041]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1041], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1041], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12938,7 +16064,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1042]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1042], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1042], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12949,7 +16078,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1043]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1043], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1043], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12960,7 +16092,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1044]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1044], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1044], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12971,7 +16106,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1045]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1045], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1045], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12982,7 +16120,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1046]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1046], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1046], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -12993,7 +16134,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1047]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1047], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1047], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13004,7 +16148,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1048]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1048], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1048], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13015,7 +16162,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1049]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1049], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1049], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13026,7 +16176,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1050]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1050], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1050], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13037,7 +16190,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1051]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1051], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1051], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13048,7 +16204,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1052]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1052], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1052], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13059,7 +16218,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1053]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1053], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1053], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13070,7 +16232,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1054]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1054], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1054], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13081,7 +16246,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1055]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1055], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1055], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13092,7 +16260,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1056]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1056], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1056], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13103,7 +16274,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1057]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1057], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1057], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13114,7 +16288,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1058]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1058], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1058], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13125,7 +16302,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1059]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1059], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1059], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13136,7 +16316,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1060]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1060], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1060], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13147,7 +16330,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1061]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1061], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1061], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13158,7 +16344,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1062]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1062], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1062], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13169,7 +16358,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1063]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1063], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1063], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13180,7 +16372,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1064]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1064], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1064], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13191,7 +16386,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1065]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1065], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1065], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13202,7 +16400,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1066]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1066], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1066], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13213,7 +16414,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1067]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1067], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1067], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13224,7 +16428,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1068]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1068], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1068], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13235,7 +16442,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1069]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1069], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1069], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13246,7 +16456,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1070]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1070], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1070], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13257,7 +16470,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1071]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1071], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1071], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13268,7 +16484,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1072]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1072], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1072], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13279,7 +16498,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1073]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1073], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1073], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13290,7 +16512,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1074]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1074], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1074], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13301,7 +16526,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1075]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1075], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1075], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13312,7 +16540,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1076]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1076], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1076], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13323,7 +16554,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1077]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1077], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1077], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13334,7 +16568,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1078]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1078], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1078], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13345,7 +16582,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1079]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1079], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1079], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13356,7 +16596,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1080]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1080], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1080], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13367,7 +16610,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1081]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1081], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1081], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13378,7 +16624,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1082]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1082], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1082], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13389,7 +16638,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1083]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1083], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1083], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13400,7 +16652,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1084]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1084], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1084], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13411,7 +16666,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1085]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1085], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1085], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13422,7 +16680,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1086]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1086], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1086], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13433,7 +16694,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1087]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1087], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1087], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13444,7 +16708,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1088]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1088], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1088], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13455,7 +16722,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1089]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1089], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1089], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13466,7 +16736,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1090]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1090], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1090], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13477,7 +16750,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1091]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1091], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1091], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13488,7 +16764,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1092]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1092], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1092], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13499,7 +16778,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1093]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1093], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1093], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13510,7 +16792,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1094]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1094], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1094], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13521,7 +16806,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1095]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1095], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1095], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13532,7 +16820,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1096]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1096], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1096], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13543,7 +16834,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1097]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1097], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1097], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13554,7 +16848,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1098]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1098], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1098], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13565,7 +16862,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1099]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1099], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1099], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13576,7 +16876,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1100]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1100], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1100], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13587,7 +16890,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1101]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1101], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1101], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13598,7 +16904,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1102]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1102], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1102], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13609,7 +16918,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1103]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1103], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1103], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13620,7 +16932,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1104]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1104], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1104], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13631,7 +16946,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1105]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1105], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1105], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13642,7 +16960,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1106]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1106], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1106], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13653,7 +16974,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1107]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1107], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1107], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13664,7 +16988,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1108]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1108], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1108], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13675,7 +17002,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1109]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1109], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1109], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13686,7 +17016,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1110]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1110], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1110], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13697,7 +17030,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1111]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1111], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1111], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13708,7 +17044,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1112]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1112], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1112], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13719,7 +17058,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1113]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1113], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1113], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13730,7 +17072,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1114]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1114], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1114], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13741,7 +17086,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1115]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1115], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1115], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13752,7 +17100,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1116]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1116], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1116], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13763,7 +17114,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1117]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1117], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1117], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13774,7 +17128,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1118]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1118], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1118], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13785,7 +17142,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1119]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1119], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1119], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13796,7 +17156,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1120]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1120], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1120], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13807,7 +17170,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1121]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1121], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1121], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13818,7 +17184,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1122]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1122], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1122], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13829,7 +17198,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1123]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1123], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1123], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13840,7 +17212,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1124]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1124], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1124], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13851,7 +17226,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1125]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1125], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1125], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13862,7 +17240,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1126]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1126], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1126], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13873,7 +17254,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1127]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1127], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1127], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13884,7 +17268,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1128]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1128], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1128], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13895,7 +17282,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1129]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1129], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1129], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13906,7 +17296,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1130]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1130], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1130], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13917,7 +17310,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1131]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1131], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1131], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13928,7 +17324,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1132]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1132], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1132], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13939,7 +17338,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1133]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1133], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1133], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13950,7 +17352,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1134]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1134], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1134], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13961,7 +17366,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1135]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1135], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1135], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13972,7 +17380,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1136]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1136], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1136], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13983,7 +17394,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1137]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1137], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1137], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -13994,7 +17408,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1138]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1138], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1138], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14005,7 +17422,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1139]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1139], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1139], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14016,7 +17436,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1140]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1140], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1140], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14027,7 +17450,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1141]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1141], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1141], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14038,7 +17464,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1142]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1142], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1142], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14049,7 +17478,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1143]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1143], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1143], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14060,7 +17492,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1144]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1144], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1144], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14071,7 +17506,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1145]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1145], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1145], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14082,7 +17520,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1146]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1146], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1146], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14093,7 +17534,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1147]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1147], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1147], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14104,7 +17548,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1148]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1148], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1148], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14115,7 +17562,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1149]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1149], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1149], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14126,7 +17576,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1150]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1150], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1150], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14137,7 +17590,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1151]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1151], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1151], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14148,7 +17604,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1152]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1152], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1152], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14159,7 +17618,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1153]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1153], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1153], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14170,7 +17632,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1154]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1154], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1154], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14181,7 +17646,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1155]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1155], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1155], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14192,7 +17660,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1156]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1156], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1156], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14203,7 +17674,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1157]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1157], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1157], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14214,7 +17688,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1158]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1158], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1158], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14225,7 +17702,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1159]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1159], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1159], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14236,7 +17716,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1160]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1160], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1160], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14247,7 +17730,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1161]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1161], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1161], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14258,7 +17744,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1162]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1162], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1162], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14269,7 +17758,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1163]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1163], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1163], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14280,7 +17772,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1164]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1164], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1164], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14291,7 +17786,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1165]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1165], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1165], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14302,7 +17800,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1166]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1166], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1166], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14313,7 +17814,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1167]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1167], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1167], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14324,7 +17828,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1168]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1168], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1168], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14335,7 +17842,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1169]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1169], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1169], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14346,7 +17856,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1170]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1170], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1170], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14357,7 +17870,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1171]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1171], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1171], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14368,7 +17884,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1172]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1172], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1172], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14379,7 +17898,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1173]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1173], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1173], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14390,7 +17912,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1174]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1174], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1174], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14401,7 +17926,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1175]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1175], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1175], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14412,7 +17940,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1176]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1176], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1176], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14423,7 +17954,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1177]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1177], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1177], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14434,7 +17968,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1178]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1178], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1178], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14445,7 +17982,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1179]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1179], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1179], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14456,7 +17996,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1180]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1180], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1180], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14467,7 +18010,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1181]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1181], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1181], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14478,7 +18024,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1182]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1182], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1182], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14489,7 +18038,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1183]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1183], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1183], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14500,7 +18052,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1184]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1184], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1184], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14511,7 +18066,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1185]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1185], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1185], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14522,7 +18080,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1186]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1186], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1186], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14533,7 +18094,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1187]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1187], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1187], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14544,7 +18108,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1188]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1188], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1188], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14555,7 +18122,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1189]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1189], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1189], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14566,7 +18136,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1190]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1190], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1190], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14577,7 +18150,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1191]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1191], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1191], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14588,7 +18164,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1192]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1192], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1192], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14599,7 +18178,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1193]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1193], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1193], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14610,7 +18192,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1194]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1194], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1194], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14621,7 +18206,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1195]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1195], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1195], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14632,7 +18220,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1196]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1196], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1196], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14643,7 +18234,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1197]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1197], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1197], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14654,7 +18248,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1198]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1198], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1198], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14665,7 +18262,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1199]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1199], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1199], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14676,7 +18276,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1200]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1200], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1200], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14687,7 +18290,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1201]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1201], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1201], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14698,7 +18304,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1202]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1202], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1202], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14709,7 +18318,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1203]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1203], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1203], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14720,7 +18332,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1204]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1204], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1204], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14731,7 +18346,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1205]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1205], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1205], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14742,7 +18360,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1206]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1206], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1206], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14753,7 +18374,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1207]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1207], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1207], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14764,7 +18388,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1208]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1208], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1208], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14775,7 +18402,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1209]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1209], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1209], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14786,7 +18416,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1210]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1210], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1210], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14797,7 +18430,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1211]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1211], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1211], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14808,7 +18444,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1212]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1212], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1212], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14819,7 +18458,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1213]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1213], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1213], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14830,7 +18472,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1214]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1214], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1214], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14841,7 +18486,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1215]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1215], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1215], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14852,7 +18500,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1216]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1216], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1216], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14863,7 +18514,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1217]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1217], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1217], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14874,7 +18528,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1218]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1218], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1218], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14885,7 +18542,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1219]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1219], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1219], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14896,7 +18556,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1220]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1220], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1220], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14907,7 +18570,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1221]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1221], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1221], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14918,7 +18584,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1222]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1222], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1222], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14929,7 +18598,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1223]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1223], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1223], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14940,7 +18612,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1224]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1224], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1224], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14951,7 +18626,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1225]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1225], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1225], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14962,7 +18640,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1226]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1226], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1226], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14973,7 +18654,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1227]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1227], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1227], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14984,7 +18668,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1228]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1228], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1228], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -14995,7 +18682,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1229]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1229], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1229], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15006,7 +18696,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1230]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1230], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1230], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15017,7 +18710,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1231]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1231], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1231], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15028,7 +18724,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1232]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1232], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1232], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15039,7 +18738,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1233]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1233], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1233], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15050,7 +18752,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1234]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1234], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1234], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15061,7 +18766,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1235]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1235], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1235], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15072,7 +18780,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1236]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1236], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1236], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15083,7 +18794,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1237]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1237], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1237], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15094,7 +18808,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1238]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1238], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1238], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15105,7 +18822,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1239]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1239], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1239], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15116,7 +18836,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1240]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1240], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1240], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15127,7 +18850,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1241]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1241], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1241], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15138,7 +18864,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1242]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1242], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1242], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15149,7 +18878,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1243]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1243], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1243], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15160,7 +18892,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1244]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1244], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1244], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15171,7 +18906,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1245]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1245], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1245], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15182,7 +18920,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1246]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1246], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1246], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15193,7 +18934,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1247]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1247], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1247], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15204,7 +18948,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1248]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1248], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1248], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15215,7 +18962,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1249]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1249], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1249], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15226,7 +18976,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1250]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1250], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1250], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15237,7 +18990,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1251]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1251], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1251], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15248,7 +19004,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1252]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1252], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1252], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15259,7 +19018,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1253]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1253], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1253], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15270,7 +19032,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1254]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1254], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1254], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15281,7 +19046,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1255]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1255], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1255], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15292,7 +19060,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1256]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1256], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1256], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15303,7 +19074,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1257]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1257], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1257], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15314,7 +19088,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1258]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1258], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1258], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15325,7 +19102,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1259]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1259], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1259], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15336,7 +19116,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1260]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1260], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1260], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15347,7 +19130,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1261]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1261], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1261], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15358,7 +19144,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1262]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1262], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1262], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15369,7 +19158,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1263]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1263], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1263], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15380,7 +19172,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1264]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1264], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1264], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15391,7 +19186,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1265]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1265], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1265], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15402,7 +19200,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1266]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1266], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1266], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15413,7 +19214,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1267]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1267], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1267], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15424,7 +19228,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1268]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1268], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1268], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15435,7 +19242,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1269]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1269], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1269], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15446,7 +19256,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1270]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1270], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1270], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15457,7 +19270,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1271]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1271], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1271], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15468,7 +19284,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1272]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1272], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1272], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15479,7 +19298,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1273]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1273], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1273], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15490,7 +19312,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1274]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1274], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1274], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15501,7 +19326,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1275]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1275], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1275], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15512,7 +19340,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1276]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1276], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1276], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15523,7 +19354,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1277]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1277], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1277], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15534,7 +19368,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1278]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1278], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1278], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15545,7 +19382,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1279]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1279], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1279], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15556,7 +19396,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1280]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1280], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1280], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15567,7 +19410,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1281]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1281], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1281], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15578,7 +19424,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1282]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1282], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1282], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15589,7 +19438,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1283]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1283], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1283], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15600,7 +19452,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1284]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1284], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1284], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15611,7 +19466,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1285]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1285], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1285], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15622,7 +19480,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1286]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1286], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1286], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15633,7 +19494,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1287]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1287], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1287], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15644,7 +19508,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1288]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1288], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1288], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15655,7 +19522,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1289]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1289], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1289], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15666,7 +19536,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1290]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1290], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1290], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15677,7 +19550,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1291]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1291], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1291], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15688,7 +19564,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1292]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1292], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1292], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15699,7 +19578,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1293]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1293], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1293], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15710,7 +19592,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1294]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1294], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1294], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15721,7 +19606,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1295]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1295], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1295], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15732,7 +19620,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1296]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1296], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1296], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15743,7 +19634,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1297]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1297], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1297], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15754,7 +19648,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1298]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1298], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1298], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15765,7 +19662,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1299]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1299], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1299], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15776,7 +19676,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1300]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1300], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1300], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15787,7 +19690,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1301]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1301], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1301], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15798,7 +19704,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1302]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1302], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1302], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15809,7 +19718,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1303]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1303], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1303], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15820,7 +19732,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1304]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1304], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1304], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15831,7 +19746,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1305]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1305], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1305], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15842,7 +19760,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1306]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1306], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1306], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15853,7 +19774,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1307]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1307], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1307], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15864,7 +19788,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1308]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1308], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1308], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15875,7 +19802,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1309]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1309], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1309], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15886,7 +19816,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1310]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1310], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1310], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15897,7 +19830,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1311]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1311], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1311], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15908,7 +19844,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1312]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1312], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1312], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15919,7 +19858,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1313]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1313], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1313], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15930,7 +19872,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1314]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1314], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1314], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15941,7 +19886,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1315]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1315], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1315], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15952,7 +19900,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1316]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1316], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1316], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15963,7 +19914,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1317]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1317], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1317], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15974,7 +19928,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1318]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1318], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1318], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15985,7 +19942,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1319]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1319], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1319], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -15996,7 +19956,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1320]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1320], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1320], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16007,7 +19970,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1321]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1321], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1321], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16018,7 +19984,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1322]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1322], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1322], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16029,7 +19998,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1323]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1323], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1323], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16040,7 +20012,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1324]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1324], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1324], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16051,7 +20026,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1325]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1325], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1325], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16062,7 +20040,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1326]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1326], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1326], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16073,7 +20054,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1327]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1327], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1327], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16084,7 +20068,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1328]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1328], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1328], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16095,7 +20082,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1329]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1329], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1329], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16106,7 +20096,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1330]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1330], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1330], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16117,7 +20110,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1331]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1331], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1331], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16128,7 +20124,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1332]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1332], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1332], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16139,7 +20138,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1333]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1333], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1333], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16150,7 +20152,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1334]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1334], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1334], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16161,7 +20166,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1335]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1335], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1335], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16172,7 +20180,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1336]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1336], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1336], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16183,7 +20194,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1337]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1337], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1337], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16194,7 +20208,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1338]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1338], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1338], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16205,7 +20222,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1339]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1339], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1339], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16216,7 +20236,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1340]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1340], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1340], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16227,7 +20250,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1341]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1341], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1341], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16238,7 +20264,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1342]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1342], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1342], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16249,7 +20278,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1343]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1343], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1343], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16260,7 +20292,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1344]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1344], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1344], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16271,7 +20306,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1345]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1345], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1345], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16282,7 +20320,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1346]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1346], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1346], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16293,7 +20334,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1347]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1347], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1347], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16304,7 +20348,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1348]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1348], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1348], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16315,7 +20362,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1349]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1349], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1349], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16326,7 +20376,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1350]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1350], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1350], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16337,7 +20390,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1351]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1351], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1351], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16348,7 +20404,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1352]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1352], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1352], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16359,7 +20418,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1353]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1353], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1353], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16370,7 +20432,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1354]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1354], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1354], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16381,7 +20446,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1355]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1355], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1355], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16392,7 +20460,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1356]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1356], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1356], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16403,7 +20474,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1357]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1357], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1357], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16414,7 +20488,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1358]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1358], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1358], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16425,7 +20502,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1359]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1359], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1359], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16436,7 +20516,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1360]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1360], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1360], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16447,7 +20530,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1361]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1361], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1361], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16458,7 +20544,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1362]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1362], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1362], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16469,7 +20558,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1363]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1363], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1363], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16480,7 +20572,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1364]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1364], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1364], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16491,7 +20586,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1365]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1365], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1365], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16502,7 +20600,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1366]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1366], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1366], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16513,7 +20614,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1367]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1367], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1367], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16524,7 +20628,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1368]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1368], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1368], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16535,7 +20642,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1369]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1369], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1369], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16546,7 +20656,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1370]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1370], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1370], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16557,7 +20670,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1371]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1371], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1371], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16568,7 +20684,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1372]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1372], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1372], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16579,7 +20698,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1373]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1373], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1373], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16590,7 +20712,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1374]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1374], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1374], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16601,7 +20726,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1375]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1375], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1375], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16612,7 +20740,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1376]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1376], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1376], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16623,7 +20754,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1377]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1377], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1377], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16634,7 +20768,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1378]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1378], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1378], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16645,7 +20782,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1379]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1379], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1379], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16656,7 +20796,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1380]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1380], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1380], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16667,7 +20810,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1381]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1381], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1381], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16678,7 +20824,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1382]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1382], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1382], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16689,7 +20838,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1383]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1383], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1383], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16700,7 +20852,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1384]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1384], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1384], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16711,7 +20866,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1385]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1385], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1385], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16722,7 +20880,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1386]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1386], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1386], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16733,7 +20894,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1387]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1387], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1387], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16744,7 +20908,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1388]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1388], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1388], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16755,7 +20922,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1389]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1389], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1389], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16766,7 +20936,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1390]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1390], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1390], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16777,7 +20950,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1391]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1391], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1391], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16788,7 +20964,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1392]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1392], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1392], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16799,7 +20978,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1393]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1393], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1393], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16810,7 +20992,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1394]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1394], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1394], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16821,7 +21006,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1395]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1395], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1395], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16832,7 +21020,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1396]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1396], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1396], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16843,7 +21034,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1397]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1397], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1397], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16854,7 +21048,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1398]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1398], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1398], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16865,7 +21062,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1399]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1399], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1399], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16876,7 +21076,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1400]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1400], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1400], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16887,7 +21090,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1401]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1401], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1401], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16898,7 +21104,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1402]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1402], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1402], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16909,7 +21118,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1403]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1403], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1403], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16920,7 +21132,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1404]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1404], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1404], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16931,7 +21146,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1405]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1405], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1405], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16942,7 +21160,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1406]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1406], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1406], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16953,7 +21174,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1407]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1407], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1407], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16964,7 +21188,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1408]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1408], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1408], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16975,7 +21202,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1409]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1409], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1409], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16986,7 +21216,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1410]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1410], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1410], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -16997,7 +21230,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1411]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1411], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1411], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17008,7 +21244,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1412]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1412], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1412], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17019,7 +21258,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1413]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1413], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1413], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17030,7 +21272,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1414]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1414], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1414], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17041,7 +21286,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1415]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1415], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1415], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17052,7 +21300,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1416]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1416], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1416], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17063,7 +21314,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1417]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1417], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1417], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17074,7 +21328,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1418]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1418], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1418], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17085,7 +21342,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1419]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1419], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1419], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17096,7 +21356,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1420]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1420], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1420], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17107,7 +21370,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1421]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1421], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1421], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17118,7 +21384,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1422]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1422], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1422], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17129,7 +21398,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1423]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1423], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1423], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17140,7 +21412,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1424]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1424], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1424], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17151,7 +21426,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1425]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1425], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1425], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17162,7 +21440,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1426]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1426], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1426], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17173,7 +21454,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1427]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1427], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1427], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17184,7 +21468,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1428]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1428], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1428], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17195,7 +21482,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1429]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1429], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1429], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17206,7 +21496,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1430]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1430], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1430], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17217,7 +21510,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1431]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1431], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1431], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17228,7 +21524,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1432]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1432], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1432], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17239,7 +21538,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1433]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1433], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1433], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17250,7 +21552,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1434]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1434], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1434], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17261,7 +21566,10 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1435]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1435], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1435], value);
+		}
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -17272,6 +21580,9 @@ public partial interface XKeySymConstants
 			var ret = DovaVM.Runtime.GetStaticLongField(ClassRefPtr, FieldPtrs[1436]);
 			return ret;
 		}
-		set => DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1436], value);
+		set
+		{
+			DovaVM.Runtime.SetStaticLongField(ClassRefPtr, FieldPtrs[1436], value);
+		}
 	}
 }
