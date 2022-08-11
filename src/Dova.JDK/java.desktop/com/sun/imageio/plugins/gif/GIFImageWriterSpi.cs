@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class GIFImageWriterSpi
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/plugins/gif/GIFImageWriterSpi;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "vendorName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "version", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "names", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "suffixes", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIMETypes", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "writerClassName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "readerSpiNames", "[Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GIFImageWriterSpi", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canEncodeImage", "(Ljavax/imageio/ImageTypeSpecifier;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDescription", "(Ljava/util/Locale;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createWriterInstance", "(Ljava/lang/Object;)Ljavax/imageio/ImageWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "vendorName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "version", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "names", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "suffixes", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIMETypes", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "writerClassName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "readerSpiNames", "[Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canEncodeImage", "(Ljavax/imageio/ImageTypeSpecifier;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDescription", "(Ljava/util/Locale;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createWriterInstance", "(Ljava/lang/Object;)Ljavax/imageio/ImageWriter;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -148,7 +148,7 @@ public partial class GIFImageWriterSpi
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public GIFImageWriterSpi() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public GIFImageWriterSpi() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

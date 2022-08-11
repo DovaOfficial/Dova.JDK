@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class TaskQueue
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/TaskQueue;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "queue", "[Ljava/util/TimerTask;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TaskQueue", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/util/TimerTask;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(I)Ljava/util/TimerTask;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMin", "()Ljava/util/TimerTask;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "heapify", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixUp", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixDown", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeMin", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "quickRemove", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rescheduleMin", "(J)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "queue", "[Ljava/util/TimerTask;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljava/util/TimerTask;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(I)Ljava/util/TimerTask;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMin", "()Ljava/util/TimerTask;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "heapify", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixUp", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixDown", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeMin", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "quickRemove", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rescheduleMin", "(J)V"));
 	}
 
 	[JniSignatureAttribute("[Ljava/util/TimerTask;", "private")]
@@ -97,7 +97,7 @@ public partial class TaskQueue
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public TaskQueue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TaskQueue() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

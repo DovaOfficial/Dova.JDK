@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class IndexWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/IndexWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainIndex", "Ljdk/javadoc/internal/doclets/toolkit/util/IndexBuilder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "splitIndex", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IndexWriter", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/DocPath;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "generate", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComment", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addHeading", "(CLjdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassInfo", "(Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addMemberDesc", "(Ljavax/lang/model/element/Element;Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTagDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addElementDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVerticalSeparator", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLinksForIndexes", "(Ljava/util/List;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateIndexFile", "(Ljava/util/List;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContents", "(CLjava/util/SortedSet;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainIndex", "Ljdk/javadoc/internal/doclets/toolkit/util/IndexBuilder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "splitIndex", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/DocPath;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "generate", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComment", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addHeading", "(CLjdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassInfo", "(Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addMemberDesc", "(Ljavax/lang/model/element/Element;Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTagDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addElementDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVerticalSeparator", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLinksForIndexes", "(Ljava/util/List;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDescription", "(Ljdk/javadoc/internal/doclets/toolkit/util/IndexItem;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "generateIndexFile", "(Ljava/util/List;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addContents", "(CLjava/util/SortedSet;Ljdk/javadoc/internal/doclets/toolkit/Content;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/toolkit/util/IndexBuilder;", "protected final")]
@@ -82,7 +82,7 @@ public partial class IndexWriter
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/DocPath;)V", "protected")]
-	public IndexWriter(Dova.JDK.jdk.javadoc.@internal.doclets.formats.html.HtmlConfiguration arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.DocPath arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public IndexWriter(Dova.JDK.jdk.javadoc.@internal.doclets.formats.html.HtmlConfiguration arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.DocPath arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

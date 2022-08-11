@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,26 +30,26 @@ public partial class DOMException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/DOMException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "code", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INDEX_SIZE_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOMSTRING_SIZE_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HIERARCHY_REQUEST_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WRONG_DOCUMENT_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_CHARACTER_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_DATA_ALLOWED_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_MODIFICATION_ALLOWED_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_FOUND_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_SUPPORTED_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INUSE_ATTRIBUTE_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_STATE_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SYNTAX_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_MODIFICATION_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAMESPACE_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_ACCESS_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VALIDATION_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_MISMATCH_ERR", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DOMException", "(SLjava/lang/String;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "code", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INDEX_SIZE_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOMSTRING_SIZE_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HIERARCHY_REQUEST_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WRONG_DOCUMENT_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_CHARACTER_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_DATA_ALLOWED_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_MODIFICATION_ALLOWED_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_FOUND_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_SUPPORTED_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INUSE_ATTRIBUTE_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_STATE_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SYNTAX_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_MODIFICATION_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAMESPACE_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_ACCESS_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VALIDATION_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_MISMATCH_ERR", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(SLjava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("S", "public")]
@@ -324,7 +324,7 @@ public partial class DOMException
 	}
 
 	[JniSignatureAttribute("(SLjava/lang/String;)V", "public")]
-	public DOMException(short arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public DOMException(short arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

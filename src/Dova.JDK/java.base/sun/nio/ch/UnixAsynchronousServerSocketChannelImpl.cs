@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,23 +32,23 @@ public partial class UnixAsynchronousServerSocketChannelImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/UnixAsynchronousServerSocketChannelImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "nd", "Lsun/nio/ch/NativeDispatcher;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "port", "Lsun/nio/ch/Port;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fdVal", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "accepting", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "updateLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptPending", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptHandler", "Ljava/nio/channels/CompletionHandler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptAttachment", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptFuture", "Lsun/nio/ch/PendingFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptAcc", "Ljava/security/AccessControlContext;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnixAsynchronousServerSocketChannelImpl", "(Lsun/nio/ch/Port;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "group", "()Lsun/nio/ch/AsynchronousChannelGroupImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implClose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onEvent", "(IZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enableAccept", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implAccept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)Ljava/util/concurrent/Future;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishAccept", "(Ljava/io/FileDescriptor;Ljava/net/InetSocketAddress;Ljava/security/AccessControlContext;)Ljava/nio/channels/AsynchronousSocketChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "nd", "Lsun/nio/ch/NativeDispatcher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "port", "Lsun/nio/ch/Port;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fdVal", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "accepting", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "updateLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptPending", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptHandler", "Ljava/nio/channels/CompletionHandler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptAttachment", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptFuture", "Lsun/nio/ch/PendingFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptAcc", "Ljava/security/AccessControlContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/nio/ch/Port;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "group", "()Lsun/nio/ch/AsynchronousChannelGroupImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implClose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onEvent", "(IZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enableAccept", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implAccept", "(Ljava/lang/Object;Ljava/nio/channels/CompletionHandler;)Ljava/util/concurrent/Future;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishAccept", "(Ljava/io/FileDescriptor;Ljava/net/InetSocketAddress;Ljava/security/AccessControlContext;)Ljava/nio/channels/AsynchronousSocketChannel;"));
 	}
 
 	[JniSignatureAttribute("Lsun/nio/ch/NativeDispatcher;", "private static final")]
@@ -197,7 +197,7 @@ public partial class UnixAsynchronousServerSocketChannelImpl
 	}
 
 	[JniSignatureAttribute("(Lsun/nio/ch/Port;)V", "")]
-	public UnixAsynchronousServerSocketChannelImpl(Dova.JDK.sun.nio.ch.Port arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public UnixAsynchronousServerSocketChannelImpl(Dova.JDK.sun.nio.ch.Port arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

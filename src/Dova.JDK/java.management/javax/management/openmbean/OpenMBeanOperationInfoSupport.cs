@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,19 +32,19 @@ public partial class OpenMBeanOperationInfoSupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/management/openmbean/OpenMBeanOperationInfoSupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnOpenType", "Ljavax/management/openmbean/OpenType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myHashCode", "Ljava/lang/Integer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myToString", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OpenMBeanOperationInfoSupport", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;I)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OpenMBeanOperationInfoSupport", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;ILjavax/management/Descriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readResolve", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "arrayCopyCast", "([Ljavax/management/MBeanParameterInfo;)[Ljavax/management/openmbean/OpenMBeanParameterInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "arrayCopyCast", "([Ljavax/management/openmbean/OpenMBeanParameterInfo;)[Ljavax/management/MBeanParameterInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnOpenType", "Ljavax/management/openmbean/OpenType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myHashCode", "Ljava/lang/Integer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myToString", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;I)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;ILjavax/management/Descriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readResolve", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReturnOpenType", "()Ljavax/management/openmbean/OpenType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "arrayCopyCast", "([Ljavax/management/MBeanParameterInfo;)[Ljavax/management/openmbean/OpenMBeanParameterInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "arrayCopyCast", "([Ljavax/management/openmbean/OpenMBeanParameterInfo;)[Ljavax/management/MBeanParameterInfo;"));
 	}
 
 	[JniSignatureAttribute("J", "static final")]
@@ -109,12 +109,12 @@ public partial class OpenMBeanOperationInfoSupport
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;I)V", "public")]
-	public OpenMBeanOperationInfoSupport(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.javax.management.openmbean.OpenMBeanParameterInfo> arg2, Dova.JDK.javax.management.openmbean.OpenType arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public OpenMBeanOperationInfoSupport(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.javax.management.openmbean.OpenMBeanParameterInfo> arg2, Dova.JDK.javax.management.openmbean.OpenType arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;[Ljavax/management/openmbean/OpenMBeanParameterInfo;Ljavax/management/openmbean/OpenType;ILjavax/management/Descriptor;)V", "public")]
-	public OpenMBeanOperationInfoSupport(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.javax.management.openmbean.OpenMBeanParameterInfo> arg2, Dova.JDK.javax.management.openmbean.OpenType arg3, int arg4, Dova.JDK.javax.management.Descriptor arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+	public OpenMBeanOperationInfoSupport(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.javax.management.openmbean.OpenMBeanParameterInfo> arg2, Dova.JDK.javax.management.openmbean.OpenType arg3, int arg4, Dova.JDK.javax.management.Descriptor arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 

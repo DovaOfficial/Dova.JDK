@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,16 +30,16 @@ public partial class BasicBorders
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BasicBorders", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getToggleButtonBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getButtonBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTextFieldBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSplitPaneDividerBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSplitPaneBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getProgressBarBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMenuBarBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInternalFrameBorder", "()Ljavax/swing/border/Border;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRadioButtonBorder", "()Ljavax/swing/border/Border;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getToggleButtonBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getButtonBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTextFieldBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSplitPaneDividerBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSplitPaneBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getProgressBarBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMenuBarBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInternalFrameBorder", "()Ljavax/swing/border/Border;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getRadioButtonBorder", "()Ljavax/swing/border/Border;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -48,7 +48,7 @@ public partial class BasicBorders
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BasicBorders() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BasicBorders() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -135,13 +135,13 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$ButtonBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shadow", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "darkShadow", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlight", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lightHighlight", "Ljava/awt/Color;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ButtonBorder", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shadow", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "darkShadow", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlight", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lightHighlight", "Ljava/awt/Color;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "protected")]
@@ -206,7 +206,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public ButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public ButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -243,8 +243,8 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$MarginBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MarginBorder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -253,7 +253,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public MarginBorder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public MarginBorder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -283,9 +283,9 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$RadioButtonBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadioButtonBorder", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -294,7 +294,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public RadioButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public RadioButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -330,9 +330,9 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$ToggleButtonBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ToggleButtonBorder", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -341,7 +341,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public ToggleButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public ToggleButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -379,11 +379,11 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$MenuBarBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shadow", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlight", "Ljava/awt/Color;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MenuBarBorder", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shadow", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlight", "Ljava/awt/Color;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "private")]
@@ -420,7 +420,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public MenuBarBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public MenuBarBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -459,12 +459,12 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$SplitPaneBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlight", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shadow", "Ljava/awt/Color;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SplitPaneBorder", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isBorderOpaque", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlight", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shadow", "Ljava/awt/Color;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isBorderOpaque", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "protected")]
@@ -501,7 +501,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public SplitPaneBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SplitPaneBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -547,12 +547,12 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$SplitPaneDividerBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlight", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shadow", "Ljava/awt/Color;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SplitPaneDividerBorder", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isBorderOpaque", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlight", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shadow", "Ljava/awt/Color;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;)Ljava/awt/Insets;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isBorderOpaque", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "")]
@@ -589,7 +589,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;)V", "")]
-		public SplitPaneDividerBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SplitPaneDividerBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -634,13 +634,13 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$FieldBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shadow", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "darkShadow", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlight", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lightHighlight", "Ljava/awt/Color;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldBorder", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shadow", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "darkShadow", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlight", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lightHighlight", "Ljava/awt/Color;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "protected")]
@@ -705,7 +705,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public FieldBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public FieldBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -741,8 +741,8 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$RolloverMarginBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RolloverMarginBorder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBorderInsets", "(Ljava/awt/Component;Ljava/awt/Insets;)Ljava/awt/Insets;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -751,7 +751,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public RolloverMarginBorder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RolloverMarginBorder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -781,8 +781,8 @@ public partial class BasicBorders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/BasicBorders$RolloverButtonBorder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RolloverButtonBorder", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBorder", "(Ljava/awt/Component;Ljava/awt/Graphics;IIII)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -791,7 +791,7 @@ public partial class BasicBorders
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;Ljava/awt/Color;)V", "public")]
-		public RolloverButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public RolloverButtonBorder(Dova.JDK.java.awt.Color arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.Color arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

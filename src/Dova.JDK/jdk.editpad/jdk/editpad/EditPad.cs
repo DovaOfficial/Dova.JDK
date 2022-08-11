@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,19 +32,19 @@ public partial class EditPad
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/editpad/EditPad;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "L10N_RB_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rb", "Ljava/util/ResourceBundle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "windowLabel", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorHandler", "Ljava/util/function/Consumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialText", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeMark", "Ljava/lang/Runnable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "saveHandler", "Ljava/util/function/Consumer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EditPad", "(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/lang/String;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResourceString", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buttons", "(Ljava/lang/Runnable;Ljavax/swing/JTextArea;)Ljavax/swing/JPanel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addButton", "(Ljavax/swing/JPanel;Ljava/lang/String;ILjava/awt/event/ActionListener;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "L10N_RB_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rb", "Ljava/util/ResourceBundle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "windowLabel", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorHandler", "Ljava/util/function/Consumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initialText", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeMark", "Ljava/lang/Runnable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "saveHandler", "Ljava/util/function/Consumer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/lang/String;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResourceString", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buttons", "(Ljava/lang/Runnable;Ljavax/swing/JTextArea;)Ljavax/swing/JPanel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addButton", "(Ljavax/swing/JPanel;Ljava/lang/String;ILjava/awt/event/ActionListener;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -151,7 +151,7 @@ public partial class EditPad
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/function/Consumer;Ljava/lang/String;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V", "")]
-	public EditPad(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.function.Consumer arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.Runnable arg3, Dova.JDK.java.util.function.Consumer arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public EditPad(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.function.Consumer arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.Runnable arg3, Dova.JDK.java.util.function.Consumer arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

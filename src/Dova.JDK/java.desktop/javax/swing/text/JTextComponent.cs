@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,142 +33,142 @@ public partial class JTextComponent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOCUS_ACCELERATOR_KEY", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "model", "Ljavax/swing/text/Document;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caret", "Ljavax/swing/text/Caret;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "navigationFilter", "Ljavax/swing/text/NavigationFilter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlighter", "Ljavax/swing/text/Highlighter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keymap", "Ljavax/swing/text/Keymap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caretEvent", "Ljavax/swing/text/JTextComponent$MutableCaretEvent;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caretColor", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selectionColor", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selectedTextColor", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "disabledTextColor", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "editable", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "margin", "Ljava/awt/Insets;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "focusAccelerator", "C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dragEnabled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dropMode", "Ljavax/swing/DropMode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dropLocation", "Ljavax/swing/text/JTextComponent$DropLocation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultTransferHandler", "Ljavax/swing/text/JTextComponent$DefaultTransferHandler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_OVERRIDDEN", "Lcom/sun/beans/util/Cache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "KEYMAP_TABLE", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inputMethodRequestsHandler", "Ljava/awt/im/InputMethodRequests;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composedTextAttribute", "Ljavax/swing/text/SimpleAttributeSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composedTextContent", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composedTextStart", "Ljavax/swing/text/Position;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composedTextEnd", "Ljavax/swing/text/Position;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "latestCommittedTextStart", "Ljavax/swing/text/Position;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "latestCommittedTextEnd", "Ljavax/swing/text/Position;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composedTextCaret", "Ljavax/swing/text/JTextComponent$ComposedTextCaret;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "originalCaret", "Ljavax/swing/text/Caret;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "checkedInputOverride", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "needToSendKeyTypedEvent", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOCUSED_COMPONENT", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_KEYMAP", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JTextComponent", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/io/Writer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "(Ljava/io/Reader;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getActions", "()[Ljavax/swing/Action;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "print", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;ZLjavax/print/PrintService;Ljavax/print/attribute/PrintRequestAttributeSet;Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "print", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "print", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copy", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paramString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "(II)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setText", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDocument", "(Ljavax/swing/text/Document;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEditable", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInputMap", "(Ljavax/swing/text/Keymap;Ljavax/swing/text/Keymap;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "viewToModel", "(Ljava/awt/Point;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeymapTable", "()Ljava/util/HashMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addKeymap", "(Ljava/lang/String;Ljavax/swing/text/Keymap;)Ljavax/swing/text/Keymap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "saveComposedText", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "restoreComposedText", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modelToView", "(I)Ljava/awt/Rectangle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modelToView2D", "(I)Ljava/awt/geom/Rectangle2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "viewToModel2D", "(Ljava/awt/geom/Point2D;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEditable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeAction", "(Ljava/lang/String;Ljavax/swing/Action;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paste", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installDefaultTransferHandlerIfNecessary", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentEventModifiers", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFocusedComponent", "()Ljavax/swing/text/JTextComponent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectionEnd", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "select", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectionStart", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCaretPosition", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moveCaretPosition", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "replaceInputMethodText", "(Ljava/awt/event/InputMethodEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInputMethodCaretPosition", "(Ljava/awt/event/InputMethodEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "composedTextExists", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldSynthensizeKeyEvents", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapCommittedTextToAction", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createComposedTextAttribute", "(ILjava/text/AttributedCharacterIterator;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "replaceSelection", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeymap", "()Ljavax/swing/text/Keymap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exchangeCaret", "(Ljavax/swing/text/Caret;Ljavax/swing/text/Caret;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCaret", "()Ljavax/swing/text/Caret;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCaret", "(Ljavax/swing/text/Caret;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addCaretListener", "(Ljavax/swing/event/CaretListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeCaretListener", "(Ljavax/swing/event/CaretListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCaretListeners", "()[Ljavax/swing/event/CaretListener;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireCaretUpdate", "(Ljavax/swing/event/CaretEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNavigationFilter", "(Ljavax/swing/text/NavigationFilter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNavigationFilter", "()Ljavax/swing/text/NavigationFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHighlighter", "()Ljavax/swing/text/Highlighter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHighlighter", "(Ljavax/swing/text/Highlighter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setKeymap", "(Ljavax/swing/text/Keymap;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "removeKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadKeymap", "(Ljavax/swing/text/Keymap;[Ljavax/swing/text/JTextComponent$KeyBinding;[Ljavax/swing/Action;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCaretColor", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCaretColor", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectionColor", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSelectionColor", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedTextColor", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSelectedTextColor", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisabledTextColor", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDisabledTextColor", "(Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFocusAccelerator", "(C)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFocusAccelerator", "()C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCaretPosition", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedText", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSelectionStart", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSelectionEnd", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "selectAll", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocument", "()Ljavax/swing/text/Document;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cut", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintable", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Ljava/awt/print/Printable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDragEnabled", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDragEnabled", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDropMode", "(Ljavax/swing/DropMode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDropMode", "()Ljavax/swing/DropMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDropLocation", "()Ljavax/swing/text/JTextComponent$DropLocation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScrollableTracksViewportWidth", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScrollableTracksViewportHeight", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMargin", "(Ljava/awt/Insets;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMargin", "()Ljava/awt/Insets;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateUI", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setUI", "(Ljavax/swing/plaf/TextUI;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUI_0", "()Ljavax/swing/plaf/TextUI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUI_1", "()Ljavax/swing/plaf/ComponentUI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getToolTipText", "(Ljava/awt/event/MouseEvent;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeNotify", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropLocationForPoint", "(Ljava/awt/Point;)Ljavax/swing/text/JTextComponent$DropLocation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDropLocation", "(Ljavax/swing/TransferHandler$DropLocation;Ljava/lang/Object;Z)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processInputMethodEvent", "(Ljava/awt/event/InputMethodEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addInputMethodListener", "(Ljava/awt/event/InputMethodListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setComponentOrientation", "(Ljava/awt/ComponentOrientation;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputMethodRequests", "()Ljava/awt/im/InputMethodRequests;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkDragEnabled", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkDropMode", "(Ljavax/swing/DropMode;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOCUS_ACCELERATOR_KEY", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "model", "Ljavax/swing/text/Document;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caret", "Ljavax/swing/text/Caret;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "navigationFilter", "Ljavax/swing/text/NavigationFilter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlighter", "Ljavax/swing/text/Highlighter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keymap", "Ljavax/swing/text/Keymap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caretEvent", "Ljavax/swing/text/JTextComponent$MutableCaretEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caretColor", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selectionColor", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selectedTextColor", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "disabledTextColor", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "editable", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "margin", "Ljava/awt/Insets;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "focusAccelerator", "C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dragEnabled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dropMode", "Ljavax/swing/DropMode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dropLocation", "Ljavax/swing/text/JTextComponent$DropLocation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultTransferHandler", "Ljavax/swing/text/JTextComponent$DefaultTransferHandler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_OVERRIDDEN", "Lcom/sun/beans/util/Cache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "KEYMAP_TABLE", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inputMethodRequestsHandler", "Ljava/awt/im/InputMethodRequests;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composedTextAttribute", "Ljavax/swing/text/SimpleAttributeSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composedTextContent", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composedTextStart", "Ljavax/swing/text/Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composedTextEnd", "Ljavax/swing/text/Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "latestCommittedTextStart", "Ljavax/swing/text/Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "latestCommittedTextEnd", "Ljavax/swing/text/Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composedTextCaret", "Ljavax/swing/text/JTextComponent$ComposedTextCaret;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "originalCaret", "Ljavax/swing/text/Caret;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "checkedInputOverride", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "needToSendKeyTypedEvent", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOCUSED_COMPONENT", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_KEYMAP", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/io/Writer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "(Ljava/io/Reader;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getActions", "()[Ljavax/swing/Action;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "print", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;ZLjavax/print/PrintService;Ljavax/print/attribute/PrintRequestAttributeSet;Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "print", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "print", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copy", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paramString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "(II)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setText", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDocument", "(Ljavax/swing/text/Document;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEditable", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInputMap", "(Ljavax/swing/text/Keymap;Ljavax/swing/text/Keymap;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "viewToModel", "(Ljava/awt/Point;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeymapTable", "()Ljava/util/HashMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addKeymap", "(Ljava/lang/String;Ljavax/swing/text/Keymap;)Ljavax/swing/text/Keymap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "saveComposedText", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "restoreComposedText", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modelToView", "(I)Ljava/awt/Rectangle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modelToView2D", "(I)Ljava/awt/geom/Rectangle2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "viewToModel2D", "(Ljava/awt/geom/Point2D;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEditable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeAction", "(Ljava/lang/String;Ljavax/swing/Action;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paste", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installDefaultTransferHandlerIfNecessary", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentEventModifiers", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFocusedComponent", "()Ljavax/swing/text/JTextComponent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectionEnd", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "select", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectionStart", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCaretPosition", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moveCaretPosition", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "replaceInputMethodText", "(Ljava/awt/event/InputMethodEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInputMethodCaretPosition", "(Ljava/awt/event/InputMethodEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "composedTextExists", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldSynthensizeKeyEvents", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapCommittedTextToAction", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createComposedTextAttribute", "(ILjava/text/AttributedCharacterIterator;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "replaceSelection", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKeymap", "()Ljavax/swing/text/Keymap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exchangeCaret", "(Ljavax/swing/text/Caret;Ljavax/swing/text/Caret;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCaret", "()Ljavax/swing/text/Caret;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCaret", "(Ljavax/swing/text/Caret;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addCaretListener", "(Ljavax/swing/event/CaretListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeCaretListener", "(Ljavax/swing/event/CaretListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCaretListeners", "()[Ljavax/swing/event/CaretListener;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireCaretUpdate", "(Ljavax/swing/event/CaretEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNavigationFilter", "(Ljavax/swing/text/NavigationFilter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNavigationFilter", "()Ljavax/swing/text/NavigationFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHighlighter", "()Ljavax/swing/text/Highlighter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHighlighter", "(Ljavax/swing/text/Highlighter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setKeymap", "(Ljavax/swing/text/Keymap;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "removeKeymap", "(Ljava/lang/String;)Ljavax/swing/text/Keymap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadKeymap", "(Ljavax/swing/text/Keymap;[Ljavax/swing/text/JTextComponent$KeyBinding;[Ljavax/swing/Action;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCaretColor", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCaretColor", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectionColor", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSelectionColor", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedTextColor", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSelectedTextColor", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisabledTextColor", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDisabledTextColor", "(Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFocusAccelerator", "(C)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFocusAccelerator", "()C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCaretPosition", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedText", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSelectionStart", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSelectionEnd", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "selectAll", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocument", "()Ljavax/swing/text/Document;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cut", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintable", "(Ljava/text/MessageFormat;Ljava/text/MessageFormat;)Ljava/awt/print/Printable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDragEnabled", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDragEnabled", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDropMode", "(Ljavax/swing/DropMode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDropMode", "()Ljavax/swing/DropMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDropLocation", "()Ljavax/swing/text/JTextComponent$DropLocation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPreferredScrollableViewportSize", "()Ljava/awt/Dimension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScrollableUnitIncrement", "(Ljava/awt/Rectangle;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScrollableBlockIncrement", "(Ljava/awt/Rectangle;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScrollableTracksViewportWidth", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScrollableTracksViewportHeight", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMargin", "(Ljava/awt/Insets;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMargin", "()Ljava/awt/Insets;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateUI", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setUI", "(Ljavax/swing/plaf/TextUI;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUI_0", "()Ljavax/swing/plaf/TextUI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUI_1", "()Ljavax/swing/plaf/ComponentUI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleContext", "()Ljavax/accessibility/AccessibleContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getToolTipText", "(Ljava/awt/event/MouseEvent;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeNotify", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropLocationForPoint", "(Ljava/awt/Point;)Ljavax/swing/text/JTextComponent$DropLocation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDropLocation", "(Ljavax/swing/TransferHandler$DropLocation;Ljava/lang/Object;Z)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processInputMethodEvent", "(Ljava/awt/event/InputMethodEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addInputMethodListener", "(Ljava/awt/event/InputMethodListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setComponentOrientation", "(Ljava/awt/ComponentOrientation;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputMethodRequests", "()Ljava/awt/im/InputMethodRequests;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkDragEnabled", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkDropMode", "(Ljavax/swing/DropMode;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -639,7 +639,7 @@ public partial class JTextComponent
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JTextComponent() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JTextComponent() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -1330,22 +1330,22 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$MutableCaretEvent;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dragActive", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dot", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mark", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MutableCaretEvent", "(Ljavax/swing/text/JTextComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMark", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDot", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fire", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseReleased", "(Ljava/awt/event/MouseEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseClicked", "(Ljava/awt/event/MouseEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseExited", "(Ljava/awt/event/MouseEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseEntered", "(Ljava/awt/event/MouseEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dragActive", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dot", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mark", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMark", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDot", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fire", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseReleased", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseClicked", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseExited", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseEntered", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -1396,7 +1396,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;)V", "")]
-		public MutableCaretEvent(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MutableCaretEvent(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1501,53 +1501,53 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$AccessibleJTextComponent;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caretPos", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oldLocationOnScreen", "Ljava/awt/Point;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessibleJTextComponent", "(Ljavax/swing/text/JTextComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "delete", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCharCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRootEditorRect", "()Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSegmentAt", "(II)Ljavax/swing/text/JTextComponent$AccessibleJTextComponent$IndexedSegment;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParagraphElementText", "(I)Ljavax/swing/text/JTextComponent$AccessibleJTextComponent$IndexedSegment;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "selectText", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRunEdge", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSequenceAtIndex", "(III)Ljavax/accessibility/AccessibleTextSequence;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTextContents", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertTextAtIndex", "(ILjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextRange", "(II)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextSequenceAt", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextSequenceAfter", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextSequenceBefore", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextBounds", "(II)Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleRole", "()Ljavax/accessibility/AccessibleRole;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleAction", "()Ljavax/accessibility/AccessibleAction;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleText", "()Ljavax/accessibility/AccessibleText;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleEditableText", "()Ljavax/accessibility/AccessibleEditableText;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "caretUpdate", "(Ljavax/swing/event/CaretEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paste", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectionEnd", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectionStart", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCaretPosition", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedText", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "replaceText", "(IILjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cut", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleActionCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleActionDescription", "(I)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doAccessibleAction", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIndexAtPoint", "(Ljava/awt/Point;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCharacterBounds", "(I)Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAtIndex", "(III)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAtIndex", "(II)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAfterIndex", "(II)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBeforeIndex", "(II)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCharacterAttribute", "(I)Ljavax/swing/text/AttributeSet;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParagraphElement", "(I)Ljavax/swing/text/Element;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAttributes", "(IILjavax/swing/text/AttributeSet;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessibleStateSet", "()Ljavax/accessibility/AccessibleStateSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caretPos", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oldLocationOnScreen", "Ljava/awt/Point;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "delete", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCharCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRootEditorRect", "()Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSegmentAt", "(II)Ljavax/swing/text/JTextComponent$AccessibleJTextComponent$IndexedSegment;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParagraphElementText", "(I)Ljavax/swing/text/JTextComponent$AccessibleJTextComponent$IndexedSegment;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "selectText", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRunEdge", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSequenceAtIndex", "(III)Ljavax/accessibility/AccessibleTextSequence;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTextContents", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertTextAtIndex", "(ILjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextRange", "(II)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextSequenceAt", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextSequenceAfter", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextSequenceBefore", "(II)Ljavax/accessibility/AccessibleTextSequence;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextBounds", "(II)Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleRole", "()Ljavax/accessibility/AccessibleRole;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleAction", "()Ljavax/accessibility/AccessibleAction;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleText", "()Ljavax/accessibility/AccessibleText;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleEditableText", "()Ljavax/accessibility/AccessibleEditableText;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "caretUpdate", "(Ljavax/swing/event/CaretEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paste", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectionEnd", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectionStart", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCaretPosition", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedText", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "replaceText", "(IILjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cut", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleActionCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleActionDescription", "(I)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doAccessibleAction", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIndexAtPoint", "(Ljava/awt/Point;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCharacterBounds", "(I)Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAtIndex", "(III)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAtIndex", "(II)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAfterIndex", "(II)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBeforeIndex", "(II)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCharacterAttribute", "(I)Ljavax/swing/text/AttributeSet;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParagraphElement", "(I)Ljavax/swing/text/Element;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAttributes", "(IILjavax/swing/text/AttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessibleStateSet", "()Ljavax/accessibility/AccessibleStateSet;"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1598,7 +1598,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;)V", "public")]
-		public AccessibleJTextComponent(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AccessibleJTextComponent(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1909,8 +1909,8 @@ public partial class JTextComponent
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$AccessibleJTextComponent$IndexedSegment;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modelOffset", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IndexedSegment", "(Ljavax/swing/text/JTextComponent$AccessibleJTextComponent;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modelOffset", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent$AccessibleJTextComponent;)V"));
 			}
 
 			[JniSignatureAttribute("I", "public")]
@@ -1933,7 +1933,7 @@ public partial class JTextComponent
 			}
 
 			[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent$AccessibleJTextComponent;)V", "private")]
-			public IndexedSegment(Dova.JDK.javax.swing.text.JTextComponent.AccessibleJTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public IndexedSegment(Dova.JDK.javax.swing.text.JTextComponent.AccessibleJTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1958,12 +1958,12 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$DropLocation;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bias", "Ljavax/swing/text/Position$Bias;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DropLocation", "(Ljava/awt/Point;ILjavax/swing/text/Position$Bias;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIndex", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBias", "()Ljavax/swing/text/Position$Bias;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bias", "Ljavax/swing/text/Position$Bias;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Point;ILjavax/swing/text/Position$Bias;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIndex", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBias", "()Ljavax/swing/text/Position$Bias;"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -2000,7 +2000,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Point;ILjavax/swing/text/Position$Bias;)V", "private")]
-		public DropLocation(Dova.JDK.java.awt.Point arg0, int arg1, Dova.JDK.javax.swing.text.Position.Bias arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public DropLocation(Dova.JDK.java.awt.Point arg0, int arg1, Dova.JDK.javax.swing.text.Position.Bias arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -2045,12 +2045,12 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$KeymapWrapper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DefaultActionKey", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keymap", "Ljavax/swing/text/Keymap;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeymapWrapper", "(Ljavax/swing/text/Keymap;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljavax/swing/KeyStroke;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keys", "()[Ljavax/swing/KeyStroke;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DefaultActionKey", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keymap", "Ljavax/swing/text/Keymap;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/Keymap;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljavax/swing/KeyStroke;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keys", "()[Ljavax/swing/KeyStroke;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "static final")]
@@ -2087,7 +2087,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/Keymap;)V", "")]
-		public KeymapWrapper(Dova.JDK.javax.swing.text.Keymap arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public KeymapWrapper(Dova.JDK.javax.swing.text.Keymap arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2132,11 +2132,11 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$KeymapActionMap;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keymap", "Ljavax/swing/text/Keymap;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeymapActionMap", "(Ljavax/swing/text/Keymap;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/lang/Object;)Ljavax/swing/Action;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keys", "()[Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keymap", "Ljavax/swing/text/Keymap;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/Keymap;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/lang/Object;)Ljavax/swing/Action;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keys", "()[Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/Keymap;", "private")]
@@ -2159,7 +2159,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/Keymap;)V", "")]
-		public KeymapActionMap(Dova.JDK.javax.swing.text.Keymap arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public KeymapActionMap(Dova.JDK.javax.swing.text.Keymap arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2205,25 +2205,25 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$DefaultKeymap;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nm", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljavax/swing/text/Keymap;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bindings", "Ljava/util/Hashtable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultAction", "Ljavax/swing/Action;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultKeymap", "(Ljava/lang/String;Ljavax/swing/text/Keymap;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDefaultAction", "(Ljavax/swing/Action;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addActionForKeyStroke", "(Ljavax/swing/KeyStroke;Ljavax/swing/Action;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultAction", "()Ljavax/swing/Action;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolveParent", "()Ljavax/swing/text/Keymap;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setResolveParent", "(Ljavax/swing/text/Keymap;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeyStrokesForAction", "(Ljavax/swing/Action;)[Ljavax/swing/KeyStroke;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLocallyDefined", "(Ljavax/swing/KeyStroke;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBoundKeyStrokes", "()[Ljavax/swing/KeyStroke;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBoundActions", "()[Ljavax/swing/Action;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeKeyStrokeBinding", "(Ljavax/swing/KeyStroke;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeBindings", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nm", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljavax/swing/text/Keymap;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bindings", "Ljava/util/Hashtable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultAction", "Ljavax/swing/Action;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljavax/swing/text/Keymap;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDefaultAction", "(Ljavax/swing/Action;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addActionForKeyStroke", "(Ljavax/swing/KeyStroke;Ljavax/swing/Action;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultAction", "()Ljavax/swing/Action;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAction", "(Ljavax/swing/KeyStroke;)Ljavax/swing/Action;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolveParent", "()Ljavax/swing/text/Keymap;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setResolveParent", "(Ljavax/swing/text/Keymap;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKeyStrokesForAction", "(Ljavax/swing/Action;)[Ljavax/swing/KeyStroke;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLocallyDefined", "(Ljavax/swing/KeyStroke;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBoundKeyStrokes", "()[Ljavax/swing/KeyStroke;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBoundActions", "()[Ljavax/swing/Action;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeKeyStrokeBinding", "(Ljavax/swing/KeyStroke;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeBindings", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "")]
@@ -2288,7 +2288,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljavax/swing/text/Keymap;)V", "")]
-		public DefaultKeymap(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.swing.text.Keymap arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public DefaultKeymap(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.swing.text.Keymap arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -2404,9 +2404,9 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$KeyBinding;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Ljavax/swing/KeyStroke;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "actionName", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyBinding", "(Ljavax/swing/KeyStroke;Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "key", "Ljavax/swing/KeyStroke;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "actionName", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/KeyStroke;Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/KeyStroke;", "public")]
@@ -2443,7 +2443,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/KeyStroke;Ljava/lang/String;)V", "public")]
-		public KeyBinding(Dova.JDK.javax.swing.KeyStroke arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public KeyBinding(Dova.JDK.javax.swing.KeyStroke arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -2467,12 +2467,12 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$DefaultTransferHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultTransferHandler", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceActions", "(Ljavax/swing/JComponent;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "importData", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Transferable;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canImport", "(Ljavax/swing/JComponent;[Ljava/awt/datatransfer/DataFlavor;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exportToClipboard", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Clipboard;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlavor", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/awt/datatransfer/DataFlavor;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceActions", "(Ljavax/swing/JComponent;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "importData", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Transferable;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canImport", "(Ljavax/swing/JComponent;[Ljava/awt/datatransfer/DataFlavor;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exportToClipboard", "(Ljavax/swing/JComponent;Ljava/awt/datatransfer/Clipboard;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlavor", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/awt/datatransfer/DataFlavor;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2481,7 +2481,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public DefaultTransferHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DefaultTransferHandler() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2540,12 +2540,12 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$ComposedTextCaret;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bg", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ComposedTextCaret", "(Ljavax/swing/text/JTextComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "install", "(Ljavax/swing/text/JTextComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "positionCaret", "(Ljava/awt/event/MouseEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paint", "(Ljava/awt/Graphics;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bg", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "install", "(Ljavax/swing/text/JTextComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "positionCaret", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paint", "(Ljava/awt/Graphics;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Color;", "")]
@@ -2582,7 +2582,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;)V", "")]
-		public ComposedTextCaret(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ComposedTextCaret(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2626,18 +2626,18 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$InputMethodRequestsHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InputMethodRequestsHandler", "(Ljavax/swing/text/JTextComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextLocation", "(Ljava/awt/font/TextHitInfo;)Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInsertPositionOffset", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCommittedText", "(II[Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCommittedTextLength", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cancelLatestCommittedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocationOffset", "(II)Ljava/awt/font/TextHitInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/text/JTextComponent;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changedUpdate", "(Ljavax/swing/event/DocumentEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextLocation", "(Ljava/awt/font/TextHitInfo;)Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInsertPositionOffset", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCommittedText", "(II[Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCommittedTextLength", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cancelLatestCommittedText", "([Ljava/text/AttributedCharacterIterator$Attribute;)Ljava/text/AttributedCharacterIterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocationOffset", "(II)Ljava/awt/font/TextHitInfo;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/JTextComponent;", "final")]
@@ -2660,7 +2660,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;)V", "")]
-		public InputMethodRequestsHandler(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public InputMethodRequestsHandler(Dova.JDK.javax.swing.text.JTextComponent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2752,10 +2752,10 @@ public partial class JTextComponent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/JTextComponent$DoSetCaretPosition;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "host", "Ljavax/swing/text/JTextComponent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "newPos", "Ljavax/swing/text/Position;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DoSetCaretPosition", "(Ljavax/swing/text/JTextComponent;Ljavax/swing/text/Position;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "host", "Ljavax/swing/text/JTextComponent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "newPos", "Ljavax/swing/text/Position;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/JTextComponent;Ljavax/swing/text/Position;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/text/JTextComponent;", "")]
@@ -2792,7 +2792,7 @@ public partial class JTextComponent
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;Ljavax/swing/text/Position;)V", "")]
-		public DoSetCaretPosition(Dova.JDK.javax.swing.text.JTextComponent arg0, Dova.JDK.javax.swing.text.Position arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public DoSetCaretPosition(Dova.JDK.javax.swing.text.JTextComponent arg0, Dova.JDK.javax.swing.text.Position arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

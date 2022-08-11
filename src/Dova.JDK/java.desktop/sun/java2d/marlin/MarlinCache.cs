@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,44 +32,44 @@ public partial class MarlinCache
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/MarlinCache;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORCE_RLE", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORCE_NO_RLE", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RLE_MIN_WIDTH", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RLE_MAX_WIDTH", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_CHUNK_ARRAY", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALPHA_MAP", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALPHA_MAP_UNSAFE", "Lsun/java2d/marlin/OffHeapArray;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bboxX0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bboxY0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bboxX1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bboxY1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAChunkIndex", "[J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAx0", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAx1", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAEnc", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAALen", "[J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAPos", "[J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAChunk", "Lsun/java2d/marlin/OffHeapArray;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowAAChunkPos", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "touchedTile", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rdrStats", "Lsun/java2d/marlin/RendererStats;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "touchedTile_ref", "Lsun/java2d/marlin/IntArrayCache$Reference;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tileMin", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tileMax", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "useRLE", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MarlinCache", "(Lsun/java2d/marlin/RendererContext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resetTileLine", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expandRowAAChunk", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startRLERow", "(III)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "touchTile", "(IIII[I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAlphaMap", "(I)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearAARow", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyAARowNoRLE", "([IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyAARowRLE_WithBlockFlags", "([I[IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "alphaSumInTile", "(I)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FORCE_RLE", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FORCE_NO_RLE", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RLE_MIN_WIDTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RLE_MAX_WIDTH", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_CHUNK_ARRAY", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALPHA_MAP", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALPHA_MAP_UNSAFE", "Lsun/java2d/marlin/OffHeapArray;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bboxX0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bboxY0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bboxX1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bboxY1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAChunkIndex", "[J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAx0", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAx1", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAEnc", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAALen", "[J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAPos", "[J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAChunk", "Lsun/java2d/marlin/OffHeapArray;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowAAChunkPos", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "touchedTile", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rdrStats", "Lsun/java2d/marlin/RendererStats;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "touchedTile_ref", "Lsun/java2d/marlin/IntArrayCache$Reference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tileMin", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tileMax", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "useRLE", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/marlin/RendererContext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resetTileLine", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expandRowAAChunk", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startRLERow", "(III)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "touchTile", "(IIII[I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAlphaMap", "(I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearAARow", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyAARowNoRLE", "([IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyAARowRLE_WithBlockFlags", "([I[IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "alphaSumInTile", "(I)I"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -428,7 +428,7 @@ public partial class MarlinCache
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/marlin/RendererContext;)V", "")]
-	public MarlinCache(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MarlinCache(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

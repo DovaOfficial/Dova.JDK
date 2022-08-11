@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,66 +32,66 @@ public partial class X11GraphicsDevice
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11GraphicsDevice;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "screen", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x11ProxyKeyMap", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "fullScreenExclusivePermission", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrandrExtSupported", "Ljava/lang/Boolean;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "topLevels", "Lsun/awt/SunDisplayChanger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "origDisplayMode", "Ljava/awt/DisplayMode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shutdownHookRegistered", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scale", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configs", "[Ljava/awt/GraphicsConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultConfig", "Ljava/awt/GraphicsConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doubleBufferVisuals", "Ljava/util/HashSet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X11GraphicsDevice", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scaleUp", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConfigurations", "()[Ljava/awt/GraphicsConfiguration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplay", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDisplayChangedListener", "(Lsun/awt/DisplayChangedListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paletteChanged", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeDisplayChangedListener", "(Lsun/awt/DisplayChangedListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scaleDown", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScreen", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initScaleFactor", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pGetBounds", "(I)Ljava/awt/Rectangle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeConfigurations", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNumConfigs", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isDBESupported", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDoubleBufferVisuals", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConfigVisualId", "(II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConfigDepth", "(II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConfigColormap", "(II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeDefaultConfiguration", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initXrandrExtension", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isXrandrExtensionSupported", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isFullScreenSupported", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enterFullScreenExclusive", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enterFullScreenExclusive", "(Ljava/awt/Window;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exitFullScreenExclusive", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exitFullScreenExclusive", "(Ljava/awt/Window;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDisplayChangeSupported", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDisplayMode", "(Ljava/awt/DisplayMode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFullScreenWindow", "(Ljava/awt/Window;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplayMode", "()Ljava/awt/DisplayMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCurrentDisplayMode", "(I)Ljava/awt/DisplayMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultDisplayMode", "()Ljava/awt/DisplayMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplayModes", "()[Ljava/awt/DisplayMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enumDisplayModes", "(ILjava/util/ArrayList;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMatchingDisplayMode", "(Ljava/awt/DisplayMode;)Ljava/awt/DisplayMode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "configDisplayMode", "(IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNativeScaleFactor", "(I)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNativeScale", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProxyKeyFor", "(Lsun/java2d/loops/SurfaceType;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDoubleBufferVisual", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "displayChanged", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIDstring", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidate", "(Lsun/awt/X11GraphicsDevice;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultConfiguration", "()Ljava/awt/GraphicsConfiguration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScaleFactor", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "screen", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x11ProxyKeyMap", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "fullScreenExclusivePermission", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrandrExtSupported", "Ljava/lang/Boolean;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "configLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "topLevels", "Lsun/awt/SunDisplayChanger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "origDisplayMode", "Ljava/awt/DisplayMode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shutdownHookRegistered", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scale", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "configs", "[Ljava/awt/GraphicsConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultConfig", "Ljava/awt/GraphicsConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doubleBufferVisuals", "Ljava/util/HashSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scaleUp", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConfigurations", "()[Ljava/awt/GraphicsConfiguration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplay", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDisplayChangedListener", "(Lsun/awt/DisplayChangedListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paletteChanged", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeDisplayChangedListener", "(Lsun/awt/DisplayChangedListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scaleDown", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScreen", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initScaleFactor", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pGetBounds", "(I)Ljava/awt/Rectangle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeConfigurations", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNumConfigs", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isDBESupported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDoubleBufferVisuals", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConfigVisualId", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConfigDepth", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConfigColormap", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeDefaultConfiguration", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initXrandrExtension", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isXrandrExtensionSupported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isFullScreenSupported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enterFullScreenExclusive", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enterFullScreenExclusive", "(Ljava/awt/Window;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exitFullScreenExclusive", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exitFullScreenExclusive", "(Ljava/awt/Window;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDisplayChangeSupported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDisplayMode", "(Ljava/awt/DisplayMode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFullScreenWindow", "(Ljava/awt/Window;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplayMode", "()Ljava/awt/DisplayMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCurrentDisplayMode", "(I)Ljava/awt/DisplayMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultDisplayMode", "()Ljava/awt/DisplayMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplayModes", "()[Ljava/awt/DisplayMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enumDisplayModes", "(ILjava/util/ArrayList;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMatchingDisplayMode", "(Ljava/awt/DisplayMode;)Ljava/awt/DisplayMode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "configDisplayMode", "(IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNativeScaleFactor", "(I)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNativeScale", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProxyKeyFor", "(Lsun/java2d/loops/SurfaceType;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDoubleBufferVisual", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "displayChanged", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIDstring", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidate", "(Lsun/awt/X11GraphicsDevice;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultConfiguration", "()Ljava/awt/GraphicsConfiguration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScaleFactor", "()I"));
 	}
 
 	[JniSignatureAttribute("I", "private volatile")]
@@ -268,7 +268,7 @@ public partial class X11GraphicsDevice
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
-	public X11GraphicsDevice(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public X11GraphicsDevice(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

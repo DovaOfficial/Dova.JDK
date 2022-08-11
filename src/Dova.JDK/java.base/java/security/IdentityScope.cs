@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class IdentityScope
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/IdentityScope;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "scope", "Ljava/security/IdentityScope;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IdentityScope", "(Ljava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IdentityScope", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IdentityScope", "(Ljava/lang/String;Ljava/security/IdentityScope;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "check", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "identities", "()Ljava/util/Enumeration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIdentity", "(Ljava/security/Principal;)Ljava/security/Identity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIdentity", "(Ljava/security/PublicKey;)Ljava/security/Identity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIdentity", "(Ljava/lang/String;)Ljava/security/Identity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addIdentity", "(Ljava/security/Identity;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initializeSystemScope", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSystemScope", "(Ljava/security/IdentityScope;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSystemScope", "()Ljava/security/IdentityScope;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeIdentity", "(Ljava/security/Identity;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "scope", "Ljava/security/IdentityScope;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/security/IdentityScope;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "check", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "identities", "()Ljava/util/Enumeration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIdentity", "(Ljava/security/Principal;)Ljava/security/Identity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIdentity", "(Ljava/security/PublicKey;)Ljava/security/Identity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIdentity", "(Ljava/lang/String;)Ljava/security/Identity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addIdentity", "(Ljava/security/Identity;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initializeSystemScope", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSystemScope", "(Ljava/security/IdentityScope;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSystemScope", "()Ljava/security/IdentityScope;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeIdentity", "(Ljava/security/Identity;)V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -84,17 +84,17 @@ public partial class IdentityScope
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public IdentityScope(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public IdentityScope(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public IdentityScope() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public IdentityScope() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/security/IdentityScope;)V", "public")]
-	public IdentityScope(Dova.JDK.java.lang.String arg0, Dova.JDK.java.security.IdentityScope arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public IdentityScope(Dova.JDK.java.lang.String arg0, Dova.JDK.java.security.IdentityScope arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,19 +30,19 @@ public partial class KeyShareExtension
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "chNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "chOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "chOnTradAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "chStringizer", "Lsun/security/ssl/SSLStringizer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "shNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "shOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "shOnLoadAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "shStringizer", "Lsun/security/ssl/SSLStringizer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hrrNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hrrOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hrrNetworkReproducer", "Lsun/security/ssl/HandshakeProducer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hrrStringizer", "Lsun/security/ssl/SSLStringizer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyShareExtension", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "chNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "chOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "chOnTradAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "chStringizer", "Lsun/security/ssl/SSLStringizer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "shNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "shOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "shOnLoadAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "shStringizer", "Lsun/security/ssl/SSLStringizer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hrrNetworkProducer", "Lsun/security/ssl/HandshakeProducer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hrrOnLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hrrNetworkReproducer", "Lsun/security/ssl/HandshakeProducer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hrrStringizer", "Lsun/security/ssl/SSLStringizer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/HandshakeProducer;", "static final")]
@@ -219,7 +219,7 @@ public partial class KeyShareExtension
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public KeyShareExtension() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public KeyShareExtension() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -242,9 +242,9 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$CHKeyShareProducer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareProducer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getShare", "(Lsun/security/ssl/ClientHandshakeContext;Lsun/security/ssl/NamedGroup;)[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getShare", "(Lsun/security/ssl/ClientHandshakeContext;Lsun/security/ssl/NamedGroup;)[B"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -253,7 +253,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CHKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CHKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -291,8 +291,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$CHKeyShareConsumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareConsumer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -301,7 +301,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CHKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CHKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -331,8 +331,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$CHKeyShareOnTradeAbsence;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareOnTradeAbsence", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "absent", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "absent", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -341,7 +341,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CHKeyShareOnTradeAbsence() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CHKeyShareOnTradeAbsence() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -371,8 +371,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$CHKeyShareStringizer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareStringizer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -381,7 +381,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CHKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CHKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -412,8 +412,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$SHKeyShareProducer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareProducer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -422,7 +422,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -453,8 +453,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$SHKeyShareConsumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareConsumer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -463,7 +463,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -493,8 +493,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$SHKeyShareAbsence;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareAbsence", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "absent", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "absent", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -503,7 +503,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHKeyShareAbsence() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHKeyShareAbsence() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -533,8 +533,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$SHKeyShareStringizer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareStringizer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -543,7 +543,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -574,8 +574,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$HRRKeyShareProducer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareProducer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -584,7 +584,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public HRRKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HRRKeyShareProducer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -615,8 +615,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$HRRKeyShareConsumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareConsumer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -625,7 +625,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public HRRKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HRRKeyShareConsumer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -655,8 +655,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$HRRKeyShareReproducer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareReproducer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -665,7 +665,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public HRRKeyShareReproducer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HRRKeyShareReproducer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -696,8 +696,8 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$HRRKeyShareStringizer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareStringizer", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -706,7 +706,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public HRRKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HRRKeyShareStringizer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -738,10 +738,10 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$HRRKeyShareSpec;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selectedGroup", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareSpec", "(Lsun/security/ssl/NamedGroup;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HRRKeyShareSpec", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selectedGroup", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/NamedGroup;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -764,12 +764,12 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/NamedGroup;)V", "")]
-		public HRRKeyShareSpec(Dova.JDK.sun.security.ssl.NamedGroup arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public HRRKeyShareSpec(Dova.JDK.sun.security.ssl.NamedGroup arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V", "private")]
-		public HRRKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public HRRKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -801,10 +801,10 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$SHKeyShareSpec;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverShare", "Lsun/security/ssl/KeyShareExtension$KeyShareEntry;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareSpec", "(Lsun/security/ssl/KeyShareExtension$KeyShareEntry;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHKeyShareSpec", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverShare", "Lsun/security/ssl/KeyShareExtension$KeyShareEntry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/KeyShareExtension$KeyShareEntry;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/KeyShareExtension$KeyShareEntry;", "final")]
@@ -827,12 +827,12 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/KeyShareExtension$KeyShareEntry;)V", "")]
-		public SHKeyShareSpec(Dova.JDK.sun.security.ssl.KeyShareExtension.KeyShareEntry arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SHKeyShareSpec(Dova.JDK.sun.security.ssl.KeyShareExtension.KeyShareEntry arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V", "private")]
-		public SHKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public SHKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -864,10 +864,10 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$CHKeyShareSpec;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientShares", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareSpec", "(Ljava/util/List;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHKeyShareSpec", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientShares", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/List;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "final")]
@@ -890,12 +890,12 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("(Ljava/util/List;)V", "private")]
-		public CHKeyShareSpec(Dova.JDK.java.util.List arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CHKeyShareSpec(Dova.JDK.java.util.List arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)V", "private")]
-		public CHKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public CHKeyShareSpec(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -926,12 +926,12 @@ public partial class KeyShareExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/KeyShareExtension$KeyShareEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedGroupId", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyExchange", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyShareEntry", "(I[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncoded", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedSize", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedGroupId", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyExchange", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncoded", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedSize", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -968,7 +968,7 @@ public partial class KeyShareExtension
 		}
 
 		[JniSignatureAttribute("(I[B)V", "private")]
-		public KeyShareEntry(int arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public KeyShareEntry(int arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

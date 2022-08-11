@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class DemultiplexInput
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/execution/DemultiplexInput;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegate", "Ljava/io/DataInputStream;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "io", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeList", "Ljava/lang/Iterable;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DemultiplexInput", "(Ljava/io/InputStream;Ljava/util/Map;Ljava/lang/Iterable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "debug", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegate", "Ljava/io/DataInputStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "io", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeList", "Ljava/lang/Iterable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/InputStream;Ljava/util/Map;Ljava/lang/Iterable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "debug", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/io/DataInputStream;", "private final")]
@@ -88,7 +88,7 @@ public partial class DemultiplexInput
 	}
 
 	[JniSignatureAttribute("(Ljava/io/InputStream;Ljava/util/Map;Ljava/lang/Iterable;)V", "")]
-	public DemultiplexInput(Dova.JDK.java.io.InputStream arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.lang.Iterable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public DemultiplexInput(Dova.JDK.java.io.InputStream arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.lang.Iterable arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

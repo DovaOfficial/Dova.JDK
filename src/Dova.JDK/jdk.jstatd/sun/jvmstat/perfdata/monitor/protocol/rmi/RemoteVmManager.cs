@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class RemoteVmManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteVmManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remoteHost", "Lsun/jvmstat/monitor/remote/RemoteHost;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "user", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RemoteVmManager", "(Lsun/jvmstat/monitor/remote/RemoteHost;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RemoteVmManager", "(Lsun/jvmstat/monitor/remote/RemoteHost;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "activeVms", "()Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "remoteHost", "Lsun/jvmstat/monitor/remote/RemoteHost;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "user", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/jvmstat/monitor/remote/RemoteHost;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/jvmstat/monitor/remote/RemoteHost;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "activeVms", "()Ljava/util/Set;"));
 	}
 
 	[JniSignatureAttribute("Lsun/jvmstat/monitor/remote/RemoteHost;", "private")]
@@ -72,12 +72,12 @@ public partial class RemoteVmManager
 	}
 
 	[JniSignatureAttribute("(Lsun/jvmstat/monitor/remote/RemoteHost;)V", "public")]
-	public RemoteVmManager(Dova.JDK.sun.jvmstat.monitor.remote.RemoteHost arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public RemoteVmManager(Dova.JDK.sun.jvmstat.monitor.remote.RemoteHost arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/jvmstat/monitor/remote/RemoteHost;Ljava/lang/String;)V", "public")]
-	public RemoteVmManager(Dova.JDK.sun.jvmstat.monitor.remote.RemoteHost arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public RemoteVmManager(Dova.JDK.sun.jvmstat.monitor.remote.RemoteHost arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

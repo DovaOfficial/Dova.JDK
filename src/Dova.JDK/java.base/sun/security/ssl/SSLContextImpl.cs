@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,56 +31,56 @@ public partial class SSLContextImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ephemeralKeyManager", "Lsun/security/ssl/EphemeralKeyManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientCache", "Lsun/security/ssl/SSLSessionContextImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverCache", "Lsun/security/ssl/SSLSessionContextImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isInitialized", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyManager", "Ljavax/net/ssl/X509ExtendedKeyManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "trustManager", "Ljavax/net/ssl/X509TrustManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "secureRandom", "Ljava/security/SecureRandom;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "helloCookieManagerBuilder", "Lsun/security/ssl/HelloCookieManager$Builder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientEnableStapling", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverEnableStapling", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientCustomizedCipherSuites", "Ljava/util/Collection;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverCustomizedCipherSuites", "Ljava/util/Collection;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statusResponseManager", "Lsun/security/ssl/StatusResponseManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "contextLock", "Ljava/util/concurrent/locks/ReentrantLock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyHashMap", "Ljava/util/HashMap;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLContextImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSecureRandom", "()Ljava/security/SecureRandom;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHelloCookieManager", "(Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/HelloCookieManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX509KeyManager", "()Ljavax/net/ssl/X509ExtendedKeyManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDefaultProtocolVesions", "(Ljava/util/List;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultProtocolVersions", "(Z)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDefaultCipherSuiteList", "(Ljava/util/List;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultCipherSuites", "(Z)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDTLS", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "chooseKeyManager", "([Ljavax/net/ssl/KeyManager;)Ljavax/net/ssl/X509ExtendedKeyManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "chooseTrustManager", "([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/X509TrustManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getApplicableCipherSuites", "(Ljava/util/Collection;Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCustomizedCipherSuites", "(Ljava/lang/String;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineCreateSSLEngine", "()Ljavax/net/ssl/SSLEngine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineCreateSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEphemeralKeyManager", "()Lsun/security/ssl/EphemeralKeyManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStatusResponseManager", "()Lsun/security/ssl/StatusResponseManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getApplicableSupportedCipherSuites", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getApplicableEnabledCipherSuites", "(Ljava/util/List;Z)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAvailableProtocols", "([Lsun/security/ssl/ProtocolVersion;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isStaplingEnabled", "(Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX509TrustManager", "()Ljavax/net/ssl/X509TrustManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ephemeralKeyManager", "Lsun/security/ssl/EphemeralKeyManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientCache", "Lsun/security/ssl/SSLSessionContextImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverCache", "Lsun/security/ssl/SSLSessionContextImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isInitialized", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyManager", "Ljavax/net/ssl/X509ExtendedKeyManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "trustManager", "Ljavax/net/ssl/X509TrustManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "secureRandom", "Ljava/security/SecureRandom;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "helloCookieManagerBuilder", "Lsun/security/ssl/HelloCookieManager$Builder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientEnableStapling", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverEnableStapling", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientCustomizedCipherSuites", "Ljava/util/Collection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverCustomizedCipherSuites", "Ljava/util/Collection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statusResponseManager", "Lsun/security/ssl/StatusResponseManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "contextLock", "Ljava/util/concurrent/locks/ReentrantLock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyHashMap", "Ljava/util/HashMap;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetClientSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSecureRandom", "()Ljava/security/SecureRandom;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetServerSessionContext", "()Ljavax/net/ssl/SSLSessionContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHelloCookieManager", "(Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/HelloCookieManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX509KeyManager", "()Ljavax/net/ssl/X509ExtendedKeyManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDefaultProtocolVesions", "(Ljava/util/List;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultProtocolVersions", "(Z)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDefaultCipherSuiteList", "(Ljava/util/List;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultCipherSuites", "(Z)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDTLS", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "chooseKeyManager", "([Ljavax/net/ssl/KeyManager;)Ljavax/net/ssl/X509ExtendedKeyManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "chooseTrustManager", "([Ljavax/net/ssl/TrustManager;)Ljavax/net/ssl/X509TrustManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getApplicableCipherSuites", "(Ljava/util/Collection;Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCustomizedCipherSuites", "(Ljava/lang/String;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineCreateSSLEngine", "()Ljavax/net/ssl/SSLEngine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineCreateSSLEngine", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetServerSocketFactory", "()Ljavax/net/ssl/SSLServerSocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEphemeralKeyManager", "()Lsun/security/ssl/EphemeralKeyManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStatusResponseManager", "()Lsun/security/ssl/StatusResponseManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getApplicableSupportedCipherSuites", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getApplicableEnabledCipherSuites", "(Ljava/util/List;Z)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAvailableProtocols", "([Lsun/security/ssl/ProtocolVersion;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isStaplingEnabled", "(Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX509TrustManager", "()Ljavax/net/ssl/X509TrustManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/EphemeralKeyManager;", "private final")]
@@ -299,7 +299,7 @@ public partial class SSLContextImpl
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public SSLContextImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SSLContextImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -557,7 +557,7 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DTLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLSContext", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -566,7 +566,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -590,17 +590,17 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$CustomizedDTLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CustomizedDTLSContext", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "customizedProtocols", "(ZLjava/util/List;)Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "customizedProtocols", "(ZLjava/util/List;)Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -679,7 +679,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public CustomizedDTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CustomizedDTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -738,11 +738,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DTLS12Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLS12Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -779,7 +779,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DTLS12Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DTLS12Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -817,11 +817,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DTLS10Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLS10Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -858,7 +858,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DTLS10Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DTLS10Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -896,20 +896,20 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$AbstractDTLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "supportedProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "supportedCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractDTLSContext", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDTLS", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetDefaultSSLParameters", "()Ljavax/net/ssl/SSLParameters;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineGetSupportedSSLParameters", "()Ljavax/net/ssl/SSLParameters;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "supportedProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "supportedCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDTLS", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetDefaultSSLParameters", "()Ljavax/net/ssl/SSLParameters;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineGetSupportedSSLParameters", "()Ljavax/net/ssl/SSLParameters;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -974,7 +974,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AbstractDTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AbstractDTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1060,9 +1060,9 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DefaultSSLContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultSSLContext", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultImpl", "()Lsun/security/ssl/SSLContextImpl;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultImpl", "()Lsun/security/ssl/SSLContextImpl;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "engineInit", "([Ljavax/net/ssl/KeyManager;[Ljavax/net/ssl/TrustManager;Ljava/security/SecureRandom;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1071,7 +1071,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DefaultSSLContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DefaultSSLContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1107,9 +1107,9 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DefaultSSLContextHolder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sslContext", "Lsun/security/ssl/SSLContextImpl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reservedException", "Ljava/lang/Exception;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultSSLContextHolder", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sslContext", "Lsun/security/ssl/SSLContextImpl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reservedException", "Ljava/lang/Exception;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/SSLContextImpl;", "private static final")]
@@ -1146,7 +1146,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public DefaultSSLContextHolder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DefaultSSLContextHolder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1170,14 +1170,14 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$DefaultManagersHolder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P11KEYSTORE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "trustManagers", "[Ljavax/net/ssl/TrustManager;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "keyManagers", "[Ljavax/net/ssl/KeyManager;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reservedException", "Ljava/lang/Exception;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultManagersHolder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTrustManagers", "()[Ljavax/net/ssl/TrustManager;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeyManagers", "()[Ljavax/net/ssl/KeyManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "P11KEYSTORE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "trustManagers", "[Ljavax/net/ssl/TrustManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "keyManagers", "[Ljavax/net/ssl/KeyManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reservedException", "Ljava/lang/Exception;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTrustManagers", "()[Ljavax/net/ssl/TrustManager;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeyManagers", "()[Ljavax/net/ssl/KeyManager;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -1256,7 +1256,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public DefaultManagersHolder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DefaultManagersHolder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1292,7 +1292,7 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$TLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLSContext", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1301,7 +1301,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1325,17 +1325,17 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$CustomizedTLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CustomizedTLSContext", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "customizedProtocols", "(ZLjava/util/List;)Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "customizedProtocols", "(ZLjava/util/List;)Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1414,7 +1414,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public CustomizedTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CustomizedTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1473,13 +1473,13 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$CustomizedSSLProtocols;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JDK_TLS_CLIENT_PROTOCOLS", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JDK_TLS_SERVER_PROTOCOLS", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "customizedClientProtocols", "Ljava/util/ArrayList;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "customizedServerProtocols", "Ljava/util/ArrayList;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CustomizedSSLProtocols", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "populate", "(Ljava/lang/String;Ljava/util/ArrayList;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JDK_TLS_CLIENT_PROTOCOLS", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JDK_TLS_SERVER_PROTOCOLS", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reservedException", "Ljava/lang/IllegalArgumentException;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "customizedClientProtocols", "Ljava/util/ArrayList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "customizedServerProtocols", "Ljava/util/ArrayList;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "populate", "(Ljava/lang/String;Ljava/util/ArrayList;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -1558,7 +1558,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CustomizedSSLProtocols() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CustomizedSSLProtocols() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1588,11 +1588,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$TLS13Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS13Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1629,7 +1629,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TLS13Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TLS13Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1667,11 +1667,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$TLS12Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS12Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1708,7 +1708,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TLS12Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TLS12Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1746,11 +1746,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$TLS11Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS11Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1787,7 +1787,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TLS11Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TLS11Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1825,11 +1825,11 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$TLS10Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS10Context", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClientDefaultCipherSuites", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1866,7 +1866,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public TLS10Context() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TLS10Context() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1904,18 +1904,18 @@ public partial class SSLContextImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLContextImpl$AbstractTLSContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "supportedProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultProtocols", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "supportedCipherSuites", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractTLSContext", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDTLS", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "supportedProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultProtocols", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "supportedCipherSuites", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serverDefaultCipherSuites", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDTLS", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "()Ljavax/net/ssl/SSLEngine;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSSLEngineImpl", "(Ljava/lang/String;I)Ljavax/net/ssl/SSLEngine;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultProtocolVersions", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServerDefaultCipherSuites", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedProtocolVersions", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -1980,7 +1980,7 @@ public partial class SSLContextImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AbstractTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AbstractTLSContext() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

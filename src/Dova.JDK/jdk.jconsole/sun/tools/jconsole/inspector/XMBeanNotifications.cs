@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,46 +32,46 @@ public partial class XMBeanNotifications
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "columnNames", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listeners", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subscribed", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentListener", "Lsun/tools/jconsole/inspector/XMBeanNotifications$XMBeanNotificationsListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOTIFICATION_RECEIVED_EVENT", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "notificationListenersList", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalFont", "Ljava/awt/Font;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "boldFont", "Ljava/awt/Font;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rowMinHeight", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userDataEditor", "Ljavax/swing/table/TableCellEditor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mouseListener", "Lsun/tools/jconsole/inspector/XMBeanNotifications$NotifMouseListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeFormater", "Ljava/text/SimpleDateFormat;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "editor", "Ljavax/swing/table/TableCellEditor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XMBeanNotifications", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unregister", "(Ljavax/management/ObjectName;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addNotificationsListener", "(Ljavax/management/NotificationListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isListenerRegistered", "(Lsun/tools/jconsole/inspector/XMBean;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReceivedNotifications", "(Lsun/tools/jconsole/inspector/XMBean;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearCurrentNotifications", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emptyTable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disableNotifications", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerListener", "(Ljavax/swing/tree/DefaultMutableTreeNode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unregisterListener", "(Ljavax/swing/tree/DefaultMutableTreeNode;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateModel", "(Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUserDataCell", "(II)Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCell;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeNotificationsListener", "(Ljavax/management/NotificationListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireNotificationReceived", "(Lsun/tools/jconsole/inspector/XMBeanNotifications$XMBeanNotificationsListener;Lsun/tools/jconsole/inspector/XMBean;Ljavax/swing/tree/DefaultMutableTreeNode;[Ljava/lang/Object;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateUserDataCell", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadNotifications", "(Lsun/tools/jconsole/inspector/XMBean;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTableEditable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setColumnEditors", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCellRenderer", "(II)Ljavax/swing/table/TableCellRenderer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepareRenderer", "(Ljavax/swing/table/TableCellRenderer;II)Ljava/awt/Component;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopCellEditing", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cancelCellEditing", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValueAt", "(Ljava/lang/Object;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCellEditable", "(II)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "columnNames", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "listeners", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subscribed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentListener", "Lsun/tools/jconsole/inspector/XMBeanNotifications$XMBeanNotificationsListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOTIFICATION_RECEIVED_EVENT", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "notificationListenersList", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalFont", "Ljava/awt/Font;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "boldFont", "Ljava/awt/Font;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rowMinHeight", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userDataEditor", "Ljavax/swing/table/TableCellEditor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mouseListener", "Lsun/tools/jconsole/inspector/XMBeanNotifications$NotifMouseListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeFormater", "Ljava/text/SimpleDateFormat;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "editor", "Ljavax/swing/table/TableCellEditor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unregister", "(Ljavax/management/ObjectName;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addNotificationsListener", "(Ljavax/management/NotificationListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isListenerRegistered", "(Lsun/tools/jconsole/inspector/XMBean;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReceivedNotifications", "(Lsun/tools/jconsole/inspector/XMBean;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearCurrentNotifications", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emptyTable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disableNotifications", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registerListener", "(Ljavax/swing/tree/DefaultMutableTreeNode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unregisterListener", "(Ljavax/swing/tree/DefaultMutableTreeNode;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateModel", "(Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUserDataCell", "(II)Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCell;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeNotificationsListener", "(Ljavax/management/NotificationListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireNotificationReceived", "(Lsun/tools/jconsole/inspector/XMBeanNotifications$XMBeanNotificationsListener;Lsun/tools/jconsole/inspector/XMBean;Ljavax/swing/tree/DefaultMutableTreeNode;[Ljava/lang/Object;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateUserDataCell", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadNotifications", "(Lsun/tools/jconsole/inspector/XMBean;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTableEditable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setColumnEditors", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCellRenderer", "(II)Ljavax/swing/table/TableCellRenderer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepareRenderer", "(Ljavax/swing/table/TableCellRenderer;II)Ljava/awt/Component;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stopCellEditing", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cancelCellEditing", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValueAt", "(Ljava/lang/Object;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCellEditable", "(II)Z"));
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -276,7 +276,7 @@ public partial class XMBeanNotifications
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public XMBeanNotifications() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public XMBeanNotifications() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -459,10 +459,10 @@ public partial class XMBeanNotifications
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCellEditor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UserDataCellEditor", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopCellEditing", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTableCellEditorComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stopCellEditing", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTableCellEditorComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZII)Ljava/awt/Component;"));
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/inspector/XMBeanNotifications;", "final")]
@@ -485,7 +485,7 @@ public partial class XMBeanNotifications
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V", "")]
-		public UserDataCellEditor(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UserDataCellEditor(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -523,9 +523,9 @@ public partial class XMBeanNotifications
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications$NotifMouseListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotifMouseListener", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/inspector/XMBeanNotifications;", "final")]
@@ -548,7 +548,7 @@ public partial class XMBeanNotifications
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XMBeanNotifications;)V", "")]
-		public NotifMouseListener(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public NotifMouseListener(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -578,22 +578,22 @@ public partial class XMBeanNotifications
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCell;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minRenderer", "Ljavax/swing/table/TableCellRenderer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxRenderer", "Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCellRenderer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minHeight", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minimized", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "init", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userData", "Ljava/lang/Object;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UserDataCell", "(Ljava/lang/Object;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Ljavax/swing/table/TableCellRenderer;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRenderer", "()Ljavax/swing/table/TableCellRenderer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHeight", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "switchState", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMaximized", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInited", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "minimize", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maximize", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minRenderer", "Ljavax/swing/table/TableCellRenderer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxRenderer", "Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCellRenderer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minHeight", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minimized", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "init", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userData", "Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Ljavax/swing/table/TableCellRenderer;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRenderer", "()Ljavax/swing/table/TableCellRenderer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHeight", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "switchState", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMaximized", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isInited", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "minimize", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maximize", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/table/TableCellRenderer;", "")]
@@ -686,7 +686,7 @@ public partial class XMBeanNotifications
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;Ljava/awt/Component;)V", "")]
-		public UserDataCell(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.awt.Component arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public UserDataCell(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.awt.Component arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -770,21 +770,21 @@ public partial class XMBeanNotifications
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications$XMBeanNotificationsListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xmbean", "Lsun/tools/jconsole/inspector/XMBean;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "node", "Ljavax/swing/tree/DefaultMutableTreeNode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "received", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "notifications", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unregistered", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "Ljava/util/ArrayList;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XMBeanNotificationsListener", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBean;Ljavax/swing/tree/DefaultMutableTreeNode;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRegistered", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljavax/swing/tree/DefaultMutableTreeNode;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unregister", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReceivedNotifications", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getData", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xmbean", "Lsun/tools/jconsole/inspector/XMBean;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "node", "Ljavax/swing/tree/DefaultMutableTreeNode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "received", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "notifications", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unregistered", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "Ljava/util/ArrayList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/tools/jconsole/inspector/XMBeanNotifications;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBean;Ljavax/swing/tree/DefaultMutableTreeNode;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRegistered", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "register", "(Ljavax/swing/tree/DefaultMutableTreeNode;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unregister", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReceivedNotifications", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getData", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleNotification", "(Ljavax/management/Notification;Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/inspector/XMBean;", "private")]
@@ -891,7 +891,7 @@ public partial class XMBeanNotifications
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBeanNotifications;Lsun/tools/jconsole/inspector/XMBean;Ljavax/swing/tree/DefaultMutableTreeNode;[Ljava/lang/String;)V", "public")]
-		public XMBeanNotificationsListener(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0, Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg1, Dova.JDK.sun.tools.jconsole.inspector.XMBean arg2, Dova.JDK.javax.swing.tree.DefaultMutableTreeNode arg3, JavaArray<Dova.JDK.java.lang.String> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public XMBeanNotificationsListener(Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg0, Dova.JDK.sun.tools.jconsole.inspector.XMBeanNotifications arg1, Dova.JDK.sun.tools.jconsole.inspector.XMBean arg2, Dova.JDK.javax.swing.tree.DefaultMutableTreeNode arg3, JavaArray<Dova.JDK.java.lang.String> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -960,10 +960,10 @@ public partial class XMBeanNotifications
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XMBeanNotifications$UserDataCellRenderer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comp", "Ljava/awt/Component;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UserDataCellRenderer", "(Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTableCellRendererComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponent", "()Ljava/awt/Component;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "comp", "Ljava/awt/Component;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTableCellRendererComponent", "(Ljavax/swing/JTable;Ljava/lang/Object;ZZII)Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponent", "()Ljava/awt/Component;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Component;", "")]
@@ -986,7 +986,7 @@ public partial class XMBeanNotifications
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Component;)V", "")]
-		public UserDataCellRenderer(Dova.JDK.java.awt.Component arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UserDataCellRenderer(Dova.JDK.java.awt.Component arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

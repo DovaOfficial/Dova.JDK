@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,11 +30,11 @@ public partial class OGLContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/opengl/OGLContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OGLContext", "(Lsun/java2d/pipe/RenderQueue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invalidateCurrentContext", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setScratchSurface", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setScratchSurface", "(Lsun/java2d/opengl/OGLGraphicsConfig;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getOGLIdString", "()Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/pipe/RenderQueue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invalidateCurrentContext", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setScratchSurface", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setScratchSurface", "(Lsun/java2d/opengl/OGLGraphicsConfig;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getOGLIdString", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -43,7 +43,7 @@ public partial class OGLContext
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/pipe/RenderQueue;)V", "")]
-	public OGLContext(Dova.JDK.sun.java2d.pipe.RenderQueue arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public OGLContext(Dova.JDK.sun.java2d.pipe.RenderQueue arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -91,15 +91,15 @@ public partial class OGLContext
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/opengl/OGLContext$OGLContextCaps;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_FBOBJECT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_DOUBLEBUFFERED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_LCD_SHADER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_BIOP_SHADER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_GRAD_SHADER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_TEXRECT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPS_EXT_TEXBARRIER", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OGLContextCaps", "(ILjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_FBOBJECT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_DOUBLEBUFFERED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_LCD_SHADER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_BIOP_SHADER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_GRAD_SHADER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_TEXRECT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPS_EXT_TEXBARRIER", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ILjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -206,7 +206,7 @@ public partial class OGLContext
 		}
 
 		[JniSignatureAttribute("(ILjava/lang/String;)V", "")]
-		public OGLContextCaps(int arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OGLContextCaps(int arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

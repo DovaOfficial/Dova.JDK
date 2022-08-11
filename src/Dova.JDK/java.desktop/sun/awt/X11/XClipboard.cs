@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,29 +32,29 @@ public partial class XClipboard
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XClipboard;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selection", "Lsun/awt/X11/XSelection;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "convertSelectionTime", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isSelectionNotifyProcessed", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetsPropertyAtom", "Lsun/awt/X11/XAtom;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "classLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultPollInterval", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "pollInterval", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "targetsAtom2Clipboard", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XClipboard", "(Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getID", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContents", "(Ljava/lang/Object;)Ljava/awt/datatransfer/Transferable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClipboardFormats", "()[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClipboardData", "(J)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setContentsNative", "(Ljava/awt/datatransfer/Transferable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearNativeContext", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerClipboardViewerChecked", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unregisterClipboardViewerChecked", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkChange", "(Lsun/awt/X11/XSelectionEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ownershipChanged", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkChangeHere", "(Ljava/awt/datatransfer/Transferable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTargetsPropertyAtom", "()Lsun/awt/X11/XAtom;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPollInterval", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTargetsDelayed", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selection", "Lsun/awt/X11/XSelection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "convertSelectionTime", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isSelectionNotifyProcessed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetsPropertyAtom", "Lsun/awt/X11/XAtom;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "classLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultPollInterval", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "pollInterval", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "targetsAtom2Clipboard", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getID", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContents", "(Ljava/lang/Object;)Ljava/awt/datatransfer/Transferable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClipboardFormats", "()[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClipboardData", "(J)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setContentsNative", "(Ljava/awt/datatransfer/Transferable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearNativeContext", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registerClipboardViewerChecked", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unregisterClipboardViewerChecked", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkChange", "(Lsun/awt/X11/XSelectionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ownershipChanged", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkChangeHere", "(Ljava/awt/datatransfer/Transferable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTargetsPropertyAtom", "()Lsun/awt/X11/XAtom;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPollInterval", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTargetsDelayed", "()V"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/X11/XSelection;", "private final")]
@@ -175,7 +175,7 @@ public partial class XClipboard
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)V", "public")]
-	public XClipboard(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public XClipboard(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -288,8 +288,8 @@ public partial class XClipboard
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XClipboard$SelectionNotifyHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SelectionNotifyHandler", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatchEvent", "(Lsun/awt/X11/XEvent;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispatchEvent", "(Lsun/awt/X11/XEvent;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -298,7 +298,7 @@ public partial class XClipboard
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SelectionNotifyHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SelectionNotifyHandler() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -328,8 +328,8 @@ public partial class XClipboard
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XClipboard$CheckChangeTimerTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CheckChangeTimerTask", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -338,7 +338,7 @@ public partial class XClipboard
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CheckChangeTimerTask() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CheckChangeTimerTask() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

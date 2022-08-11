@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class XFontPeer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XFontPeer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XFontPeer", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMissingGlyphCharacter", "()C"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMissingGlyphCharacter", "()C"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +40,7 @@ public partial class XFontPeer
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "")]
-	public XFontPeer(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public XFontPeer(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

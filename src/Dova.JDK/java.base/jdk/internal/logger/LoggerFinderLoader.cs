@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,19 +31,19 @@ public partial class LoggerFinderLoader
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LoggerFinderLoader;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "service", "Ljava/lang/System$LoggerFinder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASSLOADER_PERMISSION", "Ljava/security/Permission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READ_PERMISSION", "Ljava/security/Permission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOGGERFINDER_PERMISSION", "Ljava/lang/RuntimePermission;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LoggerFinderLoader", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "service", "()Ljava/lang/System$LoggerFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findLoggerFinderProviders", "()Ljava/util/Iterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ensureSingletonProvider", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadDefaultImplementation", "()Ljava/lang/System$LoggerFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "configurationErrorPolicy", "()Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "service", "Ljava/lang/System$LoggerFinder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASSLOADER_PERMISSION", "Ljava/security/Permission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READ_PERMISSION", "Ljava/security/Permission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOGGERFINDER_PERMISSION", "Ljava/lang/RuntimePermission;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "service", "()Ljava/lang/System$LoggerFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findLoggerFinderProviders", "()Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ensureSingletonProvider", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadDefaultImplementation", "()Ljava/lang/System$LoggerFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "configurationErrorPolicy", "()Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/System$LoggerFinder;", "private static volatile")]
@@ -122,7 +122,7 @@ public partial class LoggerFinderLoader
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public LoggerFinderLoader() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LoggerFinderLoader() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -194,15 +194,15 @@ public partial class LoggerFinderLoader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ERROR", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WARNING", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "QUIET", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ErrorPolicy", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ERROR", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WARNING", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEBUG", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "QUIET", "Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/logger/LoggerFinderLoader$ErrorPolicy;", "public static final")]
@@ -281,7 +281,7 @@ public partial class LoggerFinderLoader
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public ErrorPolicy(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ErrorPolicy(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

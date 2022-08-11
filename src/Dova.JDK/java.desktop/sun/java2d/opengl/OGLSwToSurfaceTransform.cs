@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class OGLSwToSurfaceTransform
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/opengl/OGLSwToSurfaceTransform;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeval", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OGLSwToSurfaceTransform", "(Lsun/java2d/loops/SurfaceType;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Transform", "(Lsun/java2d/SurfaceData;Lsun/java2d/SurfaceData;Ljava/awt/Composite;Lsun/java2d/pipe/Region;Ljava/awt/geom/AffineTransform;IIIIIII)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeval", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/loops/SurfaceType;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "Transform", "(Lsun/java2d/SurfaceData;Lsun/java2d/SurfaceData;Ljava/awt/Composite;Lsun/java2d/pipe/Region;Ljava/awt/geom/AffineTransform;IIIIIII)V"));
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -56,7 +56,7 @@ public partial class OGLSwToSurfaceTransform
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/loops/SurfaceType;I)V", "")]
-	public OGLSwToSurfaceTransform(Dova.JDK.sun.java2d.loops.SurfaceType arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public OGLSwToSurfaceTransform(Dova.JDK.sun.java2d.loops.SurfaceType arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

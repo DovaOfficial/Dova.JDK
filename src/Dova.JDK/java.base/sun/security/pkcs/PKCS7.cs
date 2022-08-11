@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,45 +31,45 @@ public partial class PKCS7
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs/PKCS7;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "contentType", "Lsun/security/util/ObjectIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "digestAlgorithmIds", "[Lsun/security/x509/AlgorithmId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "contentInfo", "Lsun/security/pkcs/ContentInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "certificates", "[Ljava/security/cert/X509Certificate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "crls", "[Ljava/security/cert/X509CRL;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signerInfos", "[Lsun/security/pkcs/SignerInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oldStyle", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "certIssuerNames", "[Ljava/security/Principal;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS7", "([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Lsun/security/pkcs/SignerInfo;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS7", "([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Ljava/security/cert/X509CRL;[Lsun/security/pkcs/SignerInfo;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS7", "([B)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS7", "(Lsun/security/util/DerInputStream;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS7", "(Ljava/io/InputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertificates", "()[Ljava/security/cert/X509Certificate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Lsun/security/util/DerInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Lsun/security/util/DerInputStream;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verify", "(Lsun/security/pkcs/SignerInfo;[B)Lsun/security/pkcs/SignerInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verify", "([B)[Lsun/security/pkcs/SignerInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verify", "()[Lsun/security/pkcs/SignerInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVersion", "()Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCRLs", "()[Ljava/security/cert/X509CRL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSignerInfos", "()[Lsun/security/pkcs/SignerInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertificate", "(Ljava/math/BigInteger;Lsun/security/x509/X500Name;)Ljava/security/cert/X509Certificate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContentInfo", "()Lsun/security/pkcs/ContentInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTimestampingURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "generateSignedData", "([B[Ljava/security/cert/X509Certificate;[BLjava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "generateNewSignedData", "(Ljava/lang/String;Ljava/security/Provider;Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;[BZZLjava/util/function/Function;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "generateTimestampToken", "(Lsun/security/timestamp/Timestamper;Ljava/lang/String;Ljava/lang/String;[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isOldStyle", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseSignedData", "(Lsun/security/util/DerValue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseOldSignedData", "(Lsun/security/util/DerValue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseNetscapeCertChain", "(Lsun/security/util/DerValue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeSignedData", "(Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeSignedData", "(Lsun/security/util/DerOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "populateCertIssuerNames", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructToken", "([B[Ljava/security/cert/X509Certificate;[BLsun/security/pkcs/PKCS9Attributes;Lsun/security/pkcs/PKCS9Attributes;Lsun/security/x509/AlgorithmId;Lsun/security/x509/AlgorithmId;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDigestAlgorithmIds", "()[Lsun/security/x509/AlgorithmId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "contentType", "Lsun/security/util/ObjectIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "digestAlgorithmIds", "[Lsun/security/x509/AlgorithmId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "contentInfo", "Lsun/security/pkcs/ContentInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "certificates", "[Ljava/security/cert/X509Certificate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "crls", "[Ljava/security/cert/X509CRL;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signerInfos", "[Lsun/security/pkcs/SignerInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oldStyle", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "certIssuerNames", "[Ljava/security/Principal;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Lsun/security/pkcs/SignerInfo;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Ljava/security/cert/X509CRL;[Lsun/security/pkcs/SignerInfo;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/DerInputStream;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/InputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertificates", "()[Ljava/security/cert/X509Certificate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Lsun/security/util/DerInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Lsun/security/util/DerInputStream;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verify", "(Lsun/security/pkcs/SignerInfo;[B)Lsun/security/pkcs/SignerInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verify", "([B)[Lsun/security/pkcs/SignerInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verify", "()[Lsun/security/pkcs/SignerInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVersion", "()Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCRLs", "()[Ljava/security/cert/X509CRL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSignerInfos", "()[Lsun/security/pkcs/SignerInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertificate", "(Ljava/math/BigInteger;Lsun/security/x509/X500Name;)Ljava/security/cert/X509Certificate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContentInfo", "()Lsun/security/pkcs/ContentInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTimestampingURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "generateSignedData", "([B[Ljava/security/cert/X509Certificate;[BLjava/lang/String;Ljava/net/URI;Ljava/lang/String;Ljava/lang/String;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "generateNewSignedData", "(Ljava/lang/String;Ljava/security/Provider;Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;[BZZLjava/util/function/Function;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "generateTimestampToken", "(Lsun/security/timestamp/Timestamper;Ljava/lang/String;Ljava/lang/String;[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isOldStyle", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseSignedData", "(Lsun/security/util/DerValue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseOldSignedData", "(Lsun/security/util/DerValue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseNetscapeCertChain", "(Lsun/security/util/DerValue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeSignedData", "(Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeSignedData", "(Lsun/security/util/DerOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "populateCertIssuerNames", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructToken", "([B[Ljava/security/cert/X509Certificate;[BLsun/security/pkcs/PKCS9Attributes;Lsun/security/pkcs/PKCS9Attributes;Lsun/security/x509/AlgorithmId;Lsun/security/x509/AlgorithmId;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDigestAlgorithmIds", "()[Lsun/security/x509/AlgorithmId;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/ObjectIdentifier;", "private")]
@@ -204,27 +204,27 @@ public partial class PKCS7
 	}
 
 	[JniSignatureAttribute("([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Lsun/security/pkcs/SignerInfo;)V", "public")]
-	public PKCS7(JavaArray<Dova.JDK.sun.security.x509.AlgorithmId> arg0, Dova.JDK.sun.security.pkcs.ContentInfo arg1, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg2, JavaArray<Dova.JDK.sun.security.pkcs.SignerInfo> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public PKCS7(JavaArray<Dova.JDK.sun.security.x509.AlgorithmId> arg0, Dova.JDK.sun.security.pkcs.ContentInfo arg1, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg2, JavaArray<Dova.JDK.sun.security.pkcs.SignerInfo> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("([Lsun/security/x509/AlgorithmId;Lsun/security/pkcs/ContentInfo;[Ljava/security/cert/X509Certificate;[Ljava/security/cert/X509CRL;[Lsun/security/pkcs/SignerInfo;)V", "public")]
-	public PKCS7(JavaArray<Dova.JDK.sun.security.x509.AlgorithmId> arg0, Dova.JDK.sun.security.pkcs.ContentInfo arg1, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg2, JavaArray<Dova.JDK.java.security.cert.X509CRL> arg3, JavaArray<Dova.JDK.sun.security.pkcs.SignerInfo> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public PKCS7(JavaArray<Dova.JDK.sun.security.x509.AlgorithmId> arg0, Dova.JDK.sun.security.pkcs.ContentInfo arg1, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg2, JavaArray<Dova.JDK.java.security.cert.X509CRL> arg3, JavaArray<Dova.JDK.sun.security.pkcs.SignerInfo> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("([B)V", "public")]
-	public PKCS7(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+	public PKCS7(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/DerInputStream;)V", "public")]
-	public PKCS7(Dova.JDK.sun.security.util.DerInputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0))
+	public PKCS7(Dova.JDK.sun.security.util.DerInputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/io/InputStream;)V", "public")]
-	public PKCS7(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0))
+	public PKCS7(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0))
 	{
 	}
 
@@ -413,8 +413,8 @@ public partial class PKCS7
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs/PKCS7$SecureRandomHolder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RANDOM", "Ljava/security/SecureRandom;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SecureRandomHolder", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RANDOM", "Ljava/security/SecureRandom;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/SecureRandom;", "static final")]
@@ -437,7 +437,7 @@ public partial class PKCS7
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SecureRandomHolder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SecureRandomHolder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,16 +32,16 @@ public partial class SSLEngineInputRecord
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLEngineInputRecord;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "formatVerified", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeBuffer", "Ljava/nio/ByteBuffer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLEngineInputRecord", "(Lsun/security/ssl/HandshakeHash;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "([Ljava/nio/ByteBuffer;II)[Lsun/security/ssl/Plaintext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "estimateFragmentSize", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bytesInCompletePacket", "(Ljava/nio/ByteBuffer;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bytesInCompletePacket", "([Ljava/nio/ByteBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleUnknownRecord", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeInputRecord", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "formatVerified", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeBuffer", "Ljava/nio/ByteBuffer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/HandshakeHash;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "([Ljava/nio/ByteBuffer;II)[Lsun/security/ssl/Plaintext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "estimateFragmentSize", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bytesInCompletePacket", "(Ljava/nio/ByteBuffer;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bytesInCompletePacket", "([Ljava/nio/ByteBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleUnknownRecord", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeInputRecord", "(Ljava/nio/ByteBuffer;)[Lsun/security/ssl/Plaintext;"));
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -78,7 +78,7 @@ public partial class SSLEngineInputRecord
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/HandshakeHash;)V", "")]
-	public SSLEngineInputRecord(Dova.JDK.sun.security.ssl.HandshakeHash arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SSLEngineInputRecord(Dova.JDK.sun.security.ssl.HandshakeHash arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,134 +31,134 @@ public partial class NormalizerImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IS_ACCEPTABLE", "Ljdk/internal/icu/impl/NormalizerImpl$IsAcceptable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATA_FORMAT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_YES_YES_WITH_CC", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_VT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_NORMAL_MAYBE_YES", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_L", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INERT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HAS_COMP_BOUNDARY_AFTER", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OFFSET_SHIFT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELTA_TCCC_0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELTA_TCCC_1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELTA_TCCC_GT_1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELTA_TCCC_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELTA_SHIFT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_DELTA", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_NORM_TRIE_OFFSET", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_EXTRA_DATA_OFFSET", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_SMALL_FCD_OFFSET", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_RESERVED3_OFFSET", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_TOTAL_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_CCC_LCCC_CP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_DECOMP_NO_CP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_COMP_NO_MAYBE_CP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_YES_NO", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_NO_NO", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_LIMIT_NO_NO", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_MAYBE_YES", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_YES_NO_MAPPINGS_ONLY", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_NO_NO_COMP_BOUNDARY_BEFORE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_NO_NO_COMP_NO_MAYBE_CC", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_NO_NO_EMPTY", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_MIN_LCCC_CP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IX_COUNT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAPPING_HAS_CCC_LCCC_WORD", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAPPING_HAS_RAW_MAPPING", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAPPING_LENGTH_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_1_LAST_TUPLE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_1_TRIPLE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_1_TRAIL_LIMIT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_1_TRAIL_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_1_TRAIL_SHIFT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_2_TRAIL_SHIFT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMP_2_TRAIL_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dataVersion", "Ljdk/internal/icu/util/VersionInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minDecompNoCP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minCompNoMaybeCP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minLcccCP", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minYesNo", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minYesNoMappingsOnly", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minNoNo", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minNoNoCompBoundaryBefore", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minNoNoCompNoMaybeCC", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minNoNoEmpty", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limitNoNo", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerNoNoDelta", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minMaybeYes", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normTrie", "Ljdk/internal/icu/util/CodePointTrie$Fast16;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maybeYesCompositions", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extraData", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "smallFCD", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NormalizerImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "load", "(Ljava/lang/String;)Ljdk/internal/icu/impl/NormalizerImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "load", "(Ljava/nio/ByteBuffer;)Ljdk/internal/icu/impl/NormalizerImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "combine", "(Ljava/lang/String;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compose", "(Ljava/lang/CharSequence;IIZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDecomposition", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "canonicalDecomposeWithSingleQuotation", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCCFromNormalYesOrMaybe", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCCFromNoNo", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNorm16", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCCFromYesOrMaybe", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "singleLeadMightHaveNonZeroFCD16", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFCD16FromNormData", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapAlgorithmic", "(II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRawNorm16", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isHangulLVT", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMaybeOrNonZeroCC", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDecompNoAlgorithmic", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isHangulLV", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decompose", "(Ljava/lang/CharSequence;IILjava/lang/StringBuilder;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decompose", "(IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decompose", "(Ljava/lang/CharSequence;IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMostDecompYesAndZeroCC", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDecompYes", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCC", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompYesAndZeroCC", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "norm16HasCompBoundaryAfter", "(IZ)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCompBoundaryBefore", "(II)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCompBoundaryBefore", "(Ljava/lang/CharSequence;II)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCompBoundaryBefore", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCompBoundaryAfter", "(Ljava/lang/CharSequence;IIZ)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCompBoundaryAfter", "(IZ)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isJamoVT", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPreviousTrailCC", "(Ljava/lang/CharSequence;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "norm16HasCompBoundaryBefore", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decomposeShort", "(Ljava/lang/CharSequence;IIZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recompose", "(Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;IZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTrailCCFromCompYesAndZeroCC", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNextCompBoundary", "(Ljava/lang/CharSequence;IIZ)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findPreviousCompBoundary", "(Ljava/lang/CharSequence;IZ)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNextFCDBoundary", "(Ljava/lang/CharSequence;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "norm16HasDecompBoundaryBefore", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "norm16HasDecompBoundaryAfter", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDecompYesAndZeroCC", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hangulLVT", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMaybe", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCompositionsListForComposite", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCompositionsListForDecompYes", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAlgorithmicNoNo", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTrailCC01ForCompBoundaryAfter", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isInert", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "needSingleQuotation", "(C)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "insertOrdered", "([CIIICCI)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mergeOrdered", "([CII[CII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPrevCC", "(Ljdk/internal/icu/impl/NormalizerImpl$PrevArgs;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNextCC", "(Ljdk/internal/icu/impl/NormalizerImpl$NextCCArgs;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFCD16", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompNo", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCCFromYesOrMaybeCP", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decomposeAndAppend", "(Ljava/lang/CharSequence;ZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "composeQuickCheck", "(Ljava/lang/CharSequence;IIZZ)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "composeAndAppend", "(Ljava/lang/CharSequence;ZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeFCD", "(Ljava/lang/CharSequence;IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasDecompBoundaryBefore", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasDecompBoundaryAfter", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDecompInert", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDecompose", "([I[Ljava/lang/String;)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IS_ACCEPTABLE", "Ljdk/internal/icu/impl/NormalizerImpl$IsAcceptable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DATA_FORMAT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIN_YES_YES_WITH_CC", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_VT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIN_NORMAL_MAYBE_YES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_L", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INERT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HAS_COMP_BOUNDARY_AFTER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OFFSET_SHIFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELTA_TCCC_0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELTA_TCCC_1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELTA_TCCC_GT_1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELTA_TCCC_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELTA_SHIFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_DELTA", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_NORM_TRIE_OFFSET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_EXTRA_DATA_OFFSET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_SMALL_FCD_OFFSET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_RESERVED3_OFFSET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_TOTAL_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIN_CCC_LCCC_CP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_DECOMP_NO_CP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_COMP_NO_MAYBE_CP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_YES_NO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_NO_NO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_LIMIT_NO_NO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_MAYBE_YES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_YES_NO_MAPPINGS_ONLY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_NO_NO_COMP_BOUNDARY_BEFORE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_NO_NO_COMP_NO_MAYBE_CC", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_NO_NO_EMPTY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_MIN_LCCC_CP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IX_COUNT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAPPING_HAS_CCC_LCCC_WORD", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAPPING_HAS_RAW_MAPPING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAPPING_LENGTH_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_1_LAST_TUPLE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_1_TRIPLE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_1_TRAIL_LIMIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_1_TRAIL_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_1_TRAIL_SHIFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_2_TRAIL_SHIFT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMP_2_TRAIL_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dataVersion", "Ljdk/internal/icu/util/VersionInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minDecompNoCP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minCompNoMaybeCP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minLcccCP", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minYesNo", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minYesNoMappingsOnly", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minNoNo", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minNoNoCompBoundaryBefore", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minNoNoCompNoMaybeCC", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minNoNoEmpty", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limitNoNo", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerNoNoDelta", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minMaybeYes", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normTrie", "Ljdk/internal/icu/util/CodePointTrie$Fast16;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maybeYesCompositions", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extraData", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "smallFCD", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "load", "(Ljava/lang/String;)Ljdk/internal/icu/impl/NormalizerImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "load", "(Ljava/nio/ByteBuffer;)Ljdk/internal/icu/impl/NormalizerImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "combine", "(Ljava/lang/String;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compose", "(Ljava/lang/CharSequence;IIZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDecomposition", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "canonicalDecomposeWithSingleQuotation", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCCFromNormalYesOrMaybe", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCCFromNoNo", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNorm16", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCCFromYesOrMaybe", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "singleLeadMightHaveNonZeroFCD16", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFCD16FromNormData", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapAlgorithmic", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRawNorm16", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isHangulLVT", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMaybeOrNonZeroCC", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDecompNoAlgorithmic", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isHangulLV", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decompose", "(Ljava/lang/CharSequence;IILjava/lang/StringBuilder;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decompose", "(IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decompose", "(Ljava/lang/CharSequence;IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMostDecompYesAndZeroCC", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDecompYes", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCC", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompYesAndZeroCC", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "norm16HasCompBoundaryAfter", "(IZ)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCompBoundaryBefore", "(II)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCompBoundaryBefore", "(Ljava/lang/CharSequence;II)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCompBoundaryBefore", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCompBoundaryAfter", "(Ljava/lang/CharSequence;IIZ)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCompBoundaryAfter", "(IZ)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isJamoVT", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPreviousTrailCC", "(Ljava/lang/CharSequence;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "norm16HasCompBoundaryBefore", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decomposeShort", "(Ljava/lang/CharSequence;IIZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recompose", "(Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;IZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTrailCCFromCompYesAndZeroCC", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNextCompBoundary", "(Ljava/lang/CharSequence;IIZ)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findPreviousCompBoundary", "(Ljava/lang/CharSequence;IZ)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNextFCDBoundary", "(Ljava/lang/CharSequence;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "norm16HasDecompBoundaryBefore", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "norm16HasDecompBoundaryAfter", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDecompYesAndZeroCC", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hangulLVT", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMaybe", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCompositionsListForComposite", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCompositionsListForDecompYes", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAlgorithmicNoNo", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTrailCC01ForCompBoundaryAfter", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isInert", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "needSingleQuotation", "(C)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "insertOrdered", "([CIIICCI)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mergeOrdered", "([CII[CII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPrevCC", "(Ljdk/internal/icu/impl/NormalizerImpl$PrevArgs;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNextCC", "(Ljdk/internal/icu/impl/NormalizerImpl$NextCCArgs;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFCD16", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompNo", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCCFromYesOrMaybeCP", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decomposeAndAppend", "(Ljava/lang/CharSequence;ZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "composeQuickCheck", "(Ljava/lang/CharSequence;IIZZ)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "composeAndAppend", "(Ljava/lang/CharSequence;ZZLjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeFCD", "(Ljava/lang/CharSequence;IILjdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasDecompBoundaryBefore", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasDecompBoundaryAfter", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDecompInert", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDecompose", "([I[Ljava/lang/String;)I"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/icu/impl/NormalizerImpl$IsAcceptable;", "private static final")]
@@ -1021,7 +1021,7 @@ public partial class NormalizerImpl
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public NormalizerImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public NormalizerImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -1501,8 +1501,8 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$IsAcceptable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IsAcceptable", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDataVersionAcceptable", "([B)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDataVersionAcceptable", "([B)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1511,7 +1511,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public IsAcceptable() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public IsAcceptable() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1541,10 +1541,10 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$UTF16Plus;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UTF16Plus", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "equal", "(Ljava/lang/CharSequence;IILjava/lang/CharSequence;II)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isSurrogateLead", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isLeadSurrogate", "(I)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "equal", "(Ljava/lang/CharSequence;IILjava/lang/CharSequence;II)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isSurrogateLead", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isLeadSurrogate", "(I)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1553,7 +1553,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public UTF16Plus() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public UTF16Plus() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1598,20 +1598,20 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$Hangul;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_L_BASE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_V_BASE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_T_BASE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANGUL_BASE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANGUL_END", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_L_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_V_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAMO_T_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANGUL_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANGUL_LIMIT", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Hangul", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isHangulLV", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "decompose", "(ILjava/lang/Appendable;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isHangul", "(I)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_L_BASE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_V_BASE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_T_BASE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANGUL_BASE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANGUL_END", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_L_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_V_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAMO_T_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANGUL_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANGUL_LIMIT", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isHangulLV", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "decompose", "(ILjava/lang/Appendable;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isHangul", "(I)Z"));
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -1760,7 +1760,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Hangul() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Hangul() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1806,37 +1806,37 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "impl", "Ljdk/internal/icu/impl/NormalizerImpl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "app", "Ljava/lang/Appendable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "str", "Ljava/lang/StringBuilder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appIsStringBuilder", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reorderStart", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastCC", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codePointStart", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codePointLimit", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReorderingBuffer", "(Ljdk/internal/icu/impl/NormalizerImpl;Ljava/lang/Appendable;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/CharSequence;II)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(Ljava/lang/CharSequence;)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(C)Ljava/lang/Appendable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(C)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(Ljava/lang/CharSequence;II)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljava/lang/CharSequence;IIZII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insert", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIterator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "previousCC", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skipPrevious", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLastCC", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStringBuilder", "()Ljava/lang/StringBuilder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flushAndAppendZeroCC", "(Ljava/lang/CharSequence;II)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeSuffix", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appendZeroCC", "(I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "impl", "Ljdk/internal/icu/impl/NormalizerImpl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "app", "Ljava/lang/Appendable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "str", "Ljava/lang/StringBuilder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appIsStringBuilder", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reorderStart", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastCC", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codePointStart", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codePointLimit", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/icu/impl/NormalizerImpl;Ljava/lang/Appendable;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/CharSequence;II)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(Ljava/lang/CharSequence;)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(C)Ljava/lang/Appendable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(C)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(Ljava/lang/CharSequence;II)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljava/lang/CharSequence;IIZII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insert", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flush", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIterator", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "previousCC", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skipPrevious", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLastCC", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStringBuilder", "()Ljava/lang/StringBuilder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flushAndAppendZeroCC", "(Ljava/lang/CharSequence;II)Ljdk/internal/icu/impl/NormalizerImpl$ReorderingBuffer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeSuffix", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appendZeroCC", "(I)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/impl/NormalizerImpl;", "private final")]
@@ -1957,7 +1957,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/icu/impl/NormalizerImpl;Ljava/lang/Appendable;I)V", "public")]
-		public ReorderingBuffer(Dova.JDK.jdk.@internal.icu.impl.NormalizerImpl arg0, Dova.JDK.java.lang.Appendable arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ReorderingBuffer(Dova.JDK.jdk.@internal.icu.impl.NormalizerImpl arg0, Dova.JDK.java.lang.Appendable arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -2125,12 +2125,12 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$PrevArgs;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "src", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "start", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "current", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c1", "C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c2", "C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrevArgs", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "src", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "start", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "current", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c1", "C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c2", "C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("[C", "")]
@@ -2209,7 +2209,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PrevArgs() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrevArgs() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2232,12 +2232,12 @@ public partial class NormalizerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/impl/NormalizerImpl$NextCCArgs;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "next", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limit", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c1", "C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c2", "C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NextCCArgs", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "next", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limit", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c1", "C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c2", "C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("[C", "")]
@@ -2316,7 +2316,7 @@ public partial class NormalizerImpl
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NextCCArgs() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NextCCArgs() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

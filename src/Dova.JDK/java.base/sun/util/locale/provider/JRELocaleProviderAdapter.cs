@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,47 +32,47 @@ public partial class JRELocaleProviderAdapter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/util/locale/provider/JRELocaleProviderAdapter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "langtagSets", "Ljava/util/concurrent/ConcurrentMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localeResourcesMap", "Ljava/util/concurrent/ConcurrentMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localeData", "Lsun/util/resources/LocaleData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "breakIteratorProvider", "Ljava/text/spi/BreakIteratorProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "collatorProvider", "Ljava/text/spi/CollatorProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dateFormatProvider", "Ljava/text/spi/DateFormatProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dateFormatSymbolsProvider", "Ljava/text/spi/DateFormatSymbolsProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decimalFormatSymbolsProvider", "Ljava/text/spi/DecimalFormatSymbolsProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numberFormatProvider", "Ljava/text/spi/NumberFormatProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currencyNameProvider", "Ljava/util/spi/CurrencyNameProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localeNameProvider", "Ljava/util/spi/LocaleNameProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeZoneNameProvider", "Ljava/util/spi/TimeZoneNameProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "calendarDataProvider", "Ljava/util/spi/CalendarDataProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "calendarNameProvider", "Ljava/util/spi/CalendarNameProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "calendarProvider", "Lsun/util/spi/CalendarProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "javaTimeDateTimePatternProvider", "Lsun/text/spi/JavaTimeDateTimePatternProvider;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JRELocaleProviderAdapter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAvailableLocales", "()[Ljava/util/Locale;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDateFormatProvider", "()Ljava/text/spi/DateFormatProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDateFormatSymbolsProvider", "()Ljava/text/spi/DateFormatSymbolsProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocaleData", "()Lsun/util/resources/LocaleData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocaleResources", "(Ljava/util/Locale;)Lsun/util/locale/provider/LocaleResources;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNumberFormatProvider", "()Ljava/text/spi/NumberFormatProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDecimalFormatSymbolsProvider", "()Ljava/text/spi/DecimalFormatSymbolsProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaTimeDateTimePatternProvider", "()Lsun/text/spi/JavaTimeDateTimePatternProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarProvider", "()Lsun/util/spi/CalendarProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCandidateLocales", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLanguageTagSet", "(Ljava/lang/String;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAdapterType", "()Lsun/util/locale/provider/LocaleProviderAdapter$Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLanguageTagSet", "(Ljava/lang/String;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBreakIteratorProvider", "()Ljava/text/spi/BreakIteratorProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDataProvider", "()Ljava/util/spi/CalendarDataProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarNameProvider", "()Ljava/util/spi/CalendarNameProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCollatorProvider", "()Ljava/text/spi/CollatorProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTimeZoneNameProvider", "()Ljava/util/spi/TimeZoneNameProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSupportedProviderLocale", "(Ljava/util/Locale;Ljava/util/Set;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrencyNameProvider", "()Ljava/util/spi/CurrencyNameProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocaleNameProvider", "()Ljava/util/spi/LocaleNameProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createSupportedLocaleString", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocaleServiceProvider", "(Ljava/lang/Class;)Ljava/util/spi/LocaleServiceProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createAvailableLocales", "()[Ljava/util/Locale;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "langtagSets", "Ljava/util/concurrent/ConcurrentMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localeResourcesMap", "Ljava/util/concurrent/ConcurrentMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localeData", "Lsun/util/resources/LocaleData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "breakIteratorProvider", "Ljava/text/spi/BreakIteratorProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "collatorProvider", "Ljava/text/spi/CollatorProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dateFormatProvider", "Ljava/text/spi/DateFormatProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dateFormatSymbolsProvider", "Ljava/text/spi/DateFormatSymbolsProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decimalFormatSymbolsProvider", "Ljava/text/spi/DecimalFormatSymbolsProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numberFormatProvider", "Ljava/text/spi/NumberFormatProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currencyNameProvider", "Ljava/util/spi/CurrencyNameProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localeNameProvider", "Ljava/util/spi/LocaleNameProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeZoneNameProvider", "Ljava/util/spi/TimeZoneNameProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "calendarDataProvider", "Ljava/util/spi/CalendarDataProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "calendarNameProvider", "Ljava/util/spi/CalendarNameProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "calendarProvider", "Lsun/util/spi/CalendarProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "javaTimeDateTimePatternProvider", "Lsun/text/spi/JavaTimeDateTimePatternProvider;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAvailableLocales", "()[Ljava/util/Locale;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDateFormatProvider", "()Ljava/text/spi/DateFormatProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDateFormatSymbolsProvider", "()Ljava/text/spi/DateFormatSymbolsProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocaleData", "()Lsun/util/resources/LocaleData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocaleResources", "(Ljava/util/Locale;)Lsun/util/locale/provider/LocaleResources;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNumberFormatProvider", "()Ljava/text/spi/NumberFormatProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDecimalFormatSymbolsProvider", "()Ljava/text/spi/DecimalFormatSymbolsProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaTimeDateTimePatternProvider", "()Lsun/text/spi/JavaTimeDateTimePatternProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarProvider", "()Lsun/util/spi/CalendarProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCandidateLocales", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLanguageTagSet", "(Ljava/lang/String;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAdapterType", "()Lsun/util/locale/provider/LocaleProviderAdapter$Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLanguageTagSet", "(Ljava/lang/String;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBreakIteratorProvider", "()Ljava/text/spi/BreakIteratorProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDataProvider", "()Ljava/util/spi/CalendarDataProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarNameProvider", "()Ljava/util/spi/CalendarNameProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCollatorProvider", "()Ljava/text/spi/CollatorProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTimeZoneNameProvider", "()Ljava/util/spi/TimeZoneNameProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSupportedProviderLocale", "(Ljava/util/Locale;Ljava/util/Set;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrencyNameProvider", "()Ljava/util/spi/CurrencyNameProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocaleNameProvider", "()Ljava/util/spi/LocaleNameProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createSupportedLocaleString", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocaleServiceProvider", "(Ljava/lang/Class;)Ljava/util/spi/LocaleServiceProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createAvailableLocales", "()[Ljava/util/Locale;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/ConcurrentMap;", "private final")]
@@ -305,7 +305,7 @@ public partial class JRELocaleProviderAdapter
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JRELocaleProviderAdapter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JRELocaleProviderAdapter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -495,8 +495,8 @@ public partial class JRELocaleProviderAdapter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/util/locale/provider/JRELocaleProviderAdapter$AvailableJRELocales;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "localeList", "[Ljava/util/Locale;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AvailableJRELocales", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "localeList", "[Ljava/util/Locale;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("[Ljava/util/Locale;", "private static final")]
@@ -519,7 +519,7 @@ public partial class JRELocaleProviderAdapter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AvailableJRELocales() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AvailableJRELocales() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

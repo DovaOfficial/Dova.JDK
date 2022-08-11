@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface FieldObserver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/bcel/internal/generic/FieldObserver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notify", "(Lcom/sun/org/apache/bcel/internal/generic/FieldGen;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notify", "(Lcom/sun/org/apache/bcel/internal/generic/FieldGen;)V"));
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/org/apache/bcel/internal/generic/FieldGen;)V", "public abstract")]

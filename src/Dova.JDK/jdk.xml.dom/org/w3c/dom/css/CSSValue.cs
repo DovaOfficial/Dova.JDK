@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,13 +30,13 @@ public partial interface CSSValue
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/css/CSSValue;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CSS_INHERIT", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CSS_PRIMITIVE_VALUE", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CSS_VALUE_LIST", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CSS_CUSTOM", "S"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCssValueType", "()S"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCssText", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCssText", "(Ljava/lang/String;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CSS_INHERIT", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CSS_PRIMITIVE_VALUE", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CSS_VALUE_LIST", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CSS_CUSTOM", "S"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCssValueType", "()S"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCssText", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCssText", "(Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("S", "public static final")]

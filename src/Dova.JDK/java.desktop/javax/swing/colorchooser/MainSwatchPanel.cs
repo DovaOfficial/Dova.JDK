@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,10 +30,10 @@ public partial class MainSwatchPanel
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/MainSwatchPanel;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MainSwatchPanel", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initRawValues", "()[I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initValues", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initColors", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initRawValues", "()[I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initValues", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initColors", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +42,7 @@ public partial class MainSwatchPanel
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public MainSwatchPanel() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MainSwatchPanel() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

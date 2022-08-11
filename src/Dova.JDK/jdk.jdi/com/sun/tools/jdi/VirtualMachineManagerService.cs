@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial interface VirtualMachineManagerService
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/VirtualMachineManagerService;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addConnector", "(Lcom/sun/jdi/connect/Connector;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDefaultConnector", "(Lcom/sun/jdi/connect/LaunchingConnector;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeConnector", "(Lcom/sun/jdi/connect/Connector;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addConnector", "(Lcom/sun/jdi/connect/Connector;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDefaultConnector", "(Lcom/sun/jdi/connect/LaunchingConnector;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeConnector", "(Lcom/sun/jdi/connect/Connector;)V"));
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/connect/Connector;)V", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial interface WatchpointEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jdi/event/WatchpointEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "field", "()Lcom/sun/jdi/Field;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "object", "()Lcom/sun/jdi/ObjectReference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "valueCurrent", "()Lcom/sun/jdi/Value;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "field", "()Lcom/sun/jdi/Field;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "object", "()Lcom/sun/jdi/ObjectReference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "valueCurrent", "()Lcom/sun/jdi/Value;"));
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/jdi/Field;", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,60 +31,60 @@ public partial class EventInstrumentation
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventInstrumentation;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_EVENT_THREAD", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_STACK_TRACE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_DURATION", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_EVENT_HANDLER", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_START_TIME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_NAME", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_REGISTERED", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_ENABLED", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_EVENT_HANDLER", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_SETTING_CONTROL", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_OBJECT", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_BEGIN", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_END", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_IS_ENABLED", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_TIME_STAMP", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_EVENT_SHOULD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_EVENT_HANDLER_SHOULD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_DURATION", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classNode", "Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "settingInfos", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldInfos", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeMethod", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventHandlerXInternalName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "untypedEventHandler", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "guardHandlerReference", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superClass", "Ljava/lang/Class;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventInstrumentation", "(Ljava/lang/Class;[BJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRegistered", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnabled", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "annotationValue", "(Ljdk/internal/org/objectweb/asm/tree/ClassNode;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeWriteMethod", "(Ljava/util/List;)Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createClassNode", "([B)Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildSettingInfos", "(Ljava/lang/Class;Ljdk/internal/org/objectweb/asm/tree/ClassNode;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildFieldInfos", "(Ljava/lang/Class;Ljdk/internal/org/objectweb/asm/tree/ClassNode;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasUntypedHandler", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isValidField", "(ILjava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeInstrumented", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeUninstrumented", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateMethod", "(Ljdk/internal/org/objectweb/asm/commons/Method;Ljava/util/function/Consumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInternalClassName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateExistingWithReturnFalse", "(Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateExistingWithEmptyVoidMethod", "(Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMethodNode", "(Ljdk/internal/org/objectweb/asm/commons/Method;)Ljdk/internal/org/objectweb/asm/tree/MethodNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEventHandler", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildInstrumented", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildUninstrumented", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSettingInfos", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFieldInfos", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEventName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setGuardHandler", "(Z)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_EVENT_THREAD", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_STACK_TRACE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_DURATION", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_EVENT_HANDLER", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_START_TIME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_NAME", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_REGISTERED", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_ENABLED", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_EVENT_HANDLER", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_SETTING_CONTROL", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_OBJECT", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_BEGIN", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_END", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_IS_ENABLED", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_TIME_STAMP", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_EVENT_SHOULD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_EVENT_HANDLER_SHOULD_COMMIT", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_DURATION", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classNode", "Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "settingInfos", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldInfos", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeMethod", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventHandlerXInternalName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "untypedEventHandler", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "guardHandlerReference", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superClass", "Ljava/lang/Class;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[BJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRegistered", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnabled", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "annotationValue", "(Ljdk/internal/org/objectweb/asm/tree/ClassNode;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeWriteMethod", "(Ljava/util/List;)Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createClassNode", "([B)Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildSettingInfos", "(Ljava/lang/Class;Ljdk/internal/org/objectweb/asm/tree/ClassNode;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildFieldInfos", "(Ljava/lang/Class;Ljdk/internal/org/objectweb/asm/tree/ClassNode;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasUntypedHandler", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isValidField", "(ILjava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeInstrumented", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeUninstrumented", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateMethod", "(Ljdk/internal/org/objectweb/asm/commons/Method;Ljava/util/function/Consumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInternalClassName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateExistingWithReturnFalse", "(Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateExistingWithEmptyVoidMethod", "(Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMethodNode", "(Ljdk/internal/org/objectweb/asm/commons/Method;)Ljdk/internal/org/objectweb/asm/tree/MethodNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEventHandler", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildInstrumented", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildUninstrumented", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSettingInfos", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFieldInfos", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEventName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setGuardHandler", "(Z)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -485,7 +485,7 @@ public partial class EventInstrumentation
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Class;[BJ)V", "")]
-	public EventInstrumentation(Dova.JDK.java.lang.Class arg0, JavaArray<byte> arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public EventInstrumentation(Dova.JDK.java.lang.Class arg0, JavaArray<byte> arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -675,13 +675,13 @@ public partial class EventInstrumentation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventInstrumentation$SettingInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodName", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "internalSettingName", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "settingDescriptor", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldName", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "settingControl", "Ljdk/jfr/SettingControl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SettingInfo", "(Ljava/lang/String;I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "internalSettingName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "settingDescriptor", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "settingControl", "Ljdk/jfr/SettingControl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -774,7 +774,7 @@ public partial class EventInstrumentation
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "public")]
-		public SettingInfo(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SettingInfo(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -798,12 +798,12 @@ public partial class EventInstrumentation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventInstrumentation$FieldInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING", "Ljdk/internal/org/objectweb/asm/Type;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldName", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldDescriptor", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "internalClassName", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldInfo", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isString", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRING", "Ljdk/internal/org/objectweb/asm/Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldDescriptor", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "internalClassName", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isString", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/Type;", "private static final")]
@@ -868,7 +868,7 @@ public partial class EventInstrumentation
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "public")]
-		public FieldInfo(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public FieldInfo(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

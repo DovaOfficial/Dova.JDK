@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,14 +32,14 @@ public partial class WildcardTypeImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/beans/WildcardTypeImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "upperBounds", "[Ljava/lang/reflect/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lowerBounds", "[Ljava/lang/reflect/Type;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WildcardTypeImpl", "([Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUpperBounds", "()[Ljava/lang/reflect/Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLowerBounds", "()[Ljava/lang/reflect/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "upperBounds", "[Ljava/lang/reflect/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lowerBounds", "[Ljava/lang/reflect/Type;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUpperBounds", "()[Ljava/lang/reflect/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLowerBounds", "()[Ljava/lang/reflect/Type;"));
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/reflect/Type;", "private final")]
@@ -76,7 +76,7 @@ public partial class WildcardTypeImpl
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/reflect/Type;[Ljava/lang/reflect/Type;)V", "")]
-	public WildcardTypeImpl(JavaArray<Dova.JDK.java.lang.reflect.Type> arg0, JavaArray<Dova.JDK.java.lang.reflect.Type> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public WildcardTypeImpl(JavaArray<Dova.JDK.java.lang.reflect.Type> arg0, JavaArray<Dova.JDK.java.lang.reflect.Type> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

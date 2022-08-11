@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,35 +32,35 @@ public partial class Console
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/Console;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Ljava/io/Reader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out", "Ljava/io/Writer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pw", "Ljava/io/PrintWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "formatter", "Ljava/util/Formatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rcb", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "restoreEcho", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shutdownHookInstalled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHARSET", "Ljava/nio/charset/Charset;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cons", "Ljava/io/Console;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Console", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "charset", "()Ljava/nio/charset/Charset;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readLine", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reader", "()Ljava/io/Reader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writer", "()Ljava/io/PrintWriter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "encoding", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "grow", "()[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readPassword", "()[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readline", "(Z)[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installShutdownHook", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "istty", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "echo", "(Z)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Ljava/io/Reader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out", "Ljava/io/Writer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pw", "Ljava/io/PrintWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "formatter", "Ljava/util/Formatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rcb", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "restoreEcho", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shutdownHookInstalled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHARSET", "Ljava/nio/charset/Charset;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cons", "Ljava/io/Console;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flush", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "charset", "()Ljava/nio/charset/Charset;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printf", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/io/Console;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readLine", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readLine", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reader", "()Ljava/io/Reader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writer", "()Ljava/io/PrintWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "encoding", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "grow", "()[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readPassword", "(Ljava/lang/String;[Ljava/lang/Object;)[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readPassword", "()[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readline", "(Z)[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installShutdownHook", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "istty", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "echo", "(Z)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/Object;", "private")]
@@ -237,7 +237,7 @@ public partial class Console
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Console() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Console() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -370,16 +370,16 @@ public partial class Console
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/Console$LineReader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "in", "Ljava/io/Reader;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cb", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nChars", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextChar", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "leftoverLF", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljava/io/Console;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineReader", "(Ljava/io/Console;Ljava/io/Reader;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "([CII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ready", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "in", "Ljava/io/Reader;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cb", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nChars", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextChar", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "leftoverLF", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljava/io/Console;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/Console;Ljava/io/Reader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "([CII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ready", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/Reader;", "private")]
@@ -472,7 +472,7 @@ public partial class Console
 		}
 
 		[JniSignatureAttribute("(Ljava/io/Console;Ljava/io/Reader;)V", "")]
-		public LineReader(Dova.JDK.java.io.Console arg0, Dova.JDK.java.io.Reader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LineReader(Dova.JDK.java.io.Console arg0, Dova.JDK.java.io.Reader arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

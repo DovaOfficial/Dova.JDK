@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,17 +33,17 @@ public partial class RMISocketFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/rmi/server/RMISocketFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "factory", "Ljava/rmi/server/RMISocketFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultSocketFactory", "Ljava/rmi/server/RMISocketFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "handler", "Ljava/rmi/server/RMIFailureHandler;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RMISocketFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSocketFactory", "(Ljava/rmi/server/RMISocketFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setFailureHandler", "(Ljava/rmi/server/RMIFailureHandler;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFailureHandler", "()Ljava/rmi/server/RMIFailureHandler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "factory", "Ljava/rmi/server/RMISocketFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultSocketFactory", "Ljava/rmi/server/RMISocketFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "handler", "Ljava/rmi/server/RMIFailureHandler;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSocketFactory", "(Ljava/rmi/server/RMISocketFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSocket", "(Ljava/lang/String;I)Ljava/net/Socket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultSocketFactory", "()Ljava/rmi/server/RMISocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setFailureHandler", "(Ljava/rmi/server/RMIFailureHandler;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFailureHandler", "()Ljava/rmi/server/RMIFailureHandler;"));
 	}
 
 	[JniSignatureAttribute("Ljava/rmi/server/RMISocketFactory;", "private static")]
@@ -94,7 +94,7 @@ public partial class RMISocketFactory
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public RMISocketFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public RMISocketFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

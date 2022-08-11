@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class ConnectorBootstrap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "registry", "Ljava/rmi/registry/Registry;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "logger", "Ljava/lang/System$Logger;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConnectorBootstrap", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initialize", "(Ljava/lang/String;Ljava/util/Properties;)Ljavax/management/remote/JMXConnectorServer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initialize", "()Ljavax/management/remote/JMXConnectorServer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "config", "(Ljava/lang/String;Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "config", "(Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "config", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "startRemoteConnectorServer", "(Ljava/lang/String;Ljava/util/Properties;)Ljavax/management/remote/JMXConnectorServer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultFileName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkPasswordFile", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkAccessFile", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exportMBeanServer", "(Ljavax/management/MBeanServer;IIZZLjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lsun/management/jmxremote/ConnectorBootstrap$JMXConnectorServerData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkRestrictedFile", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createSslRMIServerSocketFactory", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)Ljavax/rmi/ssl/SslRMIServerSocketFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unexportRegistry", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "startLocalConnectorServer", "()Ljavax/management/remote/JMXConnectorServer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "registry", "Ljava/rmi/registry/Registry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "logger", "Ljava/lang/System$Logger;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initialize", "(Ljava/lang/String;Ljava/util/Properties;)Ljavax/management/remote/JMXConnectorServer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initialize", "()Ljavax/management/remote/JMXConnectorServer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "config", "(Ljava/lang/String;Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "config", "(Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "config", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "startRemoteConnectorServer", "(Ljava/lang/String;Ljava/util/Properties;)Ljavax/management/remote/JMXConnectorServer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultFileName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkPasswordFile", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkAccessFile", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exportMBeanServer", "(Ljavax/management/MBeanServer;IIZZLjava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZZLjava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Lsun/management/jmxremote/ConnectorBootstrap$JMXConnectorServerData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkRestrictedFile", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createSslRMIServerSocketFactory", "(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)Ljavax/rmi/ssl/SslRMIServerSocketFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unexportRegistry", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "startLocalConnectorServer", "()Ljavax/management/remote/JMXConnectorServer;"));
 	}
 
 	[JniSignatureAttribute("Ljava/rmi/registry/Registry;", "private static")]
@@ -84,7 +84,7 @@ public partial class ConnectorBootstrap
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ConnectorBootstrap() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ConnectorBootstrap() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -196,24 +196,24 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$PropertyNames;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PORT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HOST", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RMI_PORT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCAL_PORT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONFIG_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_LOCAL_ONLY", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_SSL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_REGISTRY_SSL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_AUTHENTICATION", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PASSWORD_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HASH_PASSWORDS", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCESS_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOGIN_CONFIG_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SSL_ENABLED_CIPHER_SUITES", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SSL_ENABLED_PROTOCOLS", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SSL_NEED_CLIENT_AUTH", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SSL_CONFIG_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERIAL_FILTER_PATTERN", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PORT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HOST", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RMI_PORT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCAL_PORT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONFIG_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_LOCAL_ONLY", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_SSL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_REGISTRY_SSL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_AUTHENTICATION", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PASSWORD_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HASH_PASSWORDS", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCESS_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOGIN_CONFIG_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SSL_ENABLED_CIPHER_SUITES", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SSL_ENABLED_PROTOCOLS", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SSL_NEED_CLIENT_AUTH", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SSL_CONFIG_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERIAL_FILTER_PATTERN", "Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -482,16 +482,16 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$DefaultValues;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PORT", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONFIG_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_SSL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_LOCAL_ONLY", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_REGISTRY_SSL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_AUTHENTICATION", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PASSWORD_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HASH_PASSWORDS", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCESS_FILE_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SSL_NEED_CLIENT_AUTH", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PORT", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONFIG_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_SSL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_LOCAL_ONLY", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_REGISTRY_SSL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_AUTHENTICATION", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PASSWORD_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HASH_PASSWORDS", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCESS_FILE_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SSL_NEED_CLIENT_AUTH", "Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -649,9 +649,9 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$JMXConnectorServerData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jmxConnectorServer", "Ljavax/management/remote/JMXConnectorServer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jmxRemoteURL", "Ljavax/management/remote/JMXServiceURL;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JMXConnectorServerData", "(Ljavax/management/remote/JMXConnectorServer;Ljavax/management/remote/JMXServiceURL;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jmxConnectorServer", "Ljavax/management/remote/JMXConnectorServer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jmxRemoteURL", "Ljavax/management/remote/JMXServiceURL;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/management/remote/JMXConnectorServer;Ljavax/management/remote/JMXServiceURL;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/management/remote/JMXConnectorServer;", "")]
@@ -688,7 +688,7 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("(Ljavax/management/remote/JMXConnectorServer;Ljavax/management/remote/JMXServiceURL;)V", "public")]
-		public JMXConnectorServerData(Dova.JDK.javax.management.remote.JMXConnectorServer arg0, Dova.JDK.javax.management.remote.JMXServiceURL arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public JMXConnectorServerData(Dova.JDK.javax.management.remote.JMXConnectorServer arg0, Dova.JDK.javax.management.remote.JMXServiceURL arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -713,10 +713,10 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$PermanentExporter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstExported", "Ljava/rmi/Remote;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PermanentExporter", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;Ljava/io/ObjectInputFilter;)Ljava/rmi/Remote;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unexportObject", "(Ljava/rmi/Remote;Z)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstExported", "Ljava/rmi/Remote;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exportObject", "(Ljava/rmi/Remote;ILjava/rmi/server/RMIClientSocketFactory;Ljava/rmi/server/RMIServerSocketFactory;Ljava/io/ObjectInputFilter;)Ljava/rmi/Remote;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unexportObject", "(Ljava/rmi/Remote;Z)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/rmi/Remote;", "")]
@@ -739,7 +739,7 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PermanentExporter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PermanentExporter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -777,15 +777,15 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$HostAwareSslSocketFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bindAddress", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabledCipherSuites", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabledProtocols", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "needClientAuth", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Ljavax/net/ssl/SSLContext;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HostAwareSslSocketFactory", "([Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HostAwareSslSocketFactory", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkValues", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bindAddress", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabledCipherSuites", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabledProtocols", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "needClientAuth", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Ljavax/net/ssl/SSLContext;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkValues", "(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -864,12 +864,12 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("([Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V", "private")]
-		public HostAwareSslSocketFactory(JavaArray<Dova.JDK.java.lang.String> arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public HostAwareSslSocketFactory(JavaArray<Dova.JDK.java.lang.String> arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;ZLjava/lang/String;)V", "private")]
-		public HostAwareSslSocketFactory(Dova.JDK.javax.net.ssl.SSLContext arg0, JavaArray<Dova.JDK.java.lang.String> arg1, JavaArray<Dova.JDK.java.lang.String> arg2, bool arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+		public HostAwareSslSocketFactory(Dova.JDK.javax.net.ssl.SSLContext arg0, JavaArray<Dova.JDK.java.lang.String> arg1, JavaArray<Dova.JDK.java.lang.String> arg2, bool arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -907,13 +907,13 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$AccessFileCheckerAuthenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "environment", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "properties", "Ljava/util/Properties;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "accessFile", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessFileCheckerAuthenticator", "(Ljava/util/Map;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "propertiesFromFile", "(Ljava/lang/String;)Ljava/util/Properties;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkAccessFileEntries", "(Ljavax/security/auth/Subject;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "authenticate", "(Ljava/lang/Object;)Ljavax/security/auth/Subject;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "environment", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "properties", "Ljava/util/Properties;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "accessFile", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "propertiesFromFile", "(Ljava/lang/String;)Ljava/util/Properties;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkAccessFileEntries", "(Ljavax/security/auth/Subject;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "authenticate", "(Ljava/lang/Object;)Ljavax/security/auth/Subject;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -964,7 +964,7 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map;)V", "public")]
-		public AccessFileCheckerAuthenticator(Dova.JDK.java.util.Map arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AccessFileCheckerAuthenticator(Dova.JDK.java.util.Map arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1009,9 +1009,9 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$HostAwareSocketFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bindAddress", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HostAwareSocketFactory", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bindAddress", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createServerSocket", "(I)Ljava/net/ServerSocket;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1034,7 +1034,7 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
-		public HostAwareSocketFactory(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public HostAwareSocketFactory(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1065,15 +1065,15 @@ public partial class ConnectorBootstrap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jmxremote/ConnectorBootstrap$SslServerSocket;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultSSLSocketFactory", "Ljavax/net/ssl/SSLSocketFactory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabledCipherSuites", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabledProtocols", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "needClientAuth", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Ljavax/net/ssl/SSLContext;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SslServerSocket", "(ILjavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SslServerSocket", "(IILjava/net/InetAddress;Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "()Ljava/net/Socket;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultSSLSocketFactory", "Ljavax/net/ssl/SSLSocketFactory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabledCipherSuites", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabledProtocols", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "needClientAuth", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Ljavax/net/ssl/SSLContext;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ILjavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IILjava/net/InetAddress;Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "()Ljava/net/Socket;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultSSLSocketFactory", "()Ljavax/net/ssl/SSLSocketFactory;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/net/ssl/SSLSocketFactory;", "private static")]
@@ -1152,12 +1152,12 @@ public partial class ConnectorBootstrap
 		}
 
 		[JniSignatureAttribute("(ILjavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V", "private")]
-		public SslServerSocket(int arg0, Dova.JDK.javax.net.ssl.SSLContext arg1, JavaArray<Dova.JDK.java.lang.String> arg2, JavaArray<Dova.JDK.java.lang.String> arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public SslServerSocket(int arg0, Dova.JDK.javax.net.ssl.SSLContext arg1, JavaArray<Dova.JDK.java.lang.String> arg2, JavaArray<Dova.JDK.java.lang.String> arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
 		[JniSignatureAttribute("(IILjava/net/InetAddress;Ljavax/net/ssl/SSLContext;[Ljava/lang/String;[Ljava/lang/String;Z)V", "private")]
-		public SslServerSocket(int arg0, int arg1, Dova.JDK.java.net.InetAddress arg2, Dova.JDK.javax.net.ssl.SSLContext arg3, JavaArray<Dova.JDK.java.lang.String> arg4, JavaArray<Dova.JDK.java.lang.String> arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public SslServerSocket(int arg0, int arg1, Dova.JDK.java.net.InetAddress arg2, Dova.JDK.javax.net.ssl.SSLContext arg3, JavaArray<Dova.JDK.java.lang.String> arg4, JavaArray<Dova.JDK.java.lang.String> arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 

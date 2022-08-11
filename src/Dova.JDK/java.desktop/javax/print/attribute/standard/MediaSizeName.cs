@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,85 +31,85 @@ public partial class MediaSizeName
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/MediaSizeName;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A0", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A1", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A2", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A3", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A4", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A5", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A6", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A7", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A8", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A9", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_A10", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B0", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B1", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B2", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B3", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B4", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B5", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B6", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B7", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B8", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B9", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_B10", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B0", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B1", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B2", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B3", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B4", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B5", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B6", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B7", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B8", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B9", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIS_B10", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C0", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C1", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C2", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C3", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C4", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C5", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_C6", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_LETTER", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_LEGAL", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXECUTIVE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LEDGER", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLOID", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVOICE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOLIO", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "QUARTO", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAPANESE_POSTCARD", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAPANESE_DOUBLE_POSTCARD", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "A", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "B", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "C", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "D", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "E", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_DESIGNATED_LONG", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ITALY_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONARCH_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PERSONAL_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_NUMBER_9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_NUMBER_10_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_NUMBER_11_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_NUMBER_12_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_NUMBER_14_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_6X9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_7X9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_9X11_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_9X12_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_10X13_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_10X14_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_10X15_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_5X7", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NA_8X10", "Ljavax/print/attribute/standard/MediaSizeName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myStringTable", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/MediaSizeName;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MediaSizeName", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStringTable", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A0", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A1", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A2", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A3", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A4", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A5", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A6", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A7", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A8", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A9", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_A10", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B0", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B1", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B2", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B3", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B4", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B5", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B6", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B7", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B8", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B9", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_B10", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B0", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B1", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B2", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B3", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B4", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B5", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B6", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B7", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B8", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B9", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIS_B10", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C0", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C1", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C2", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C3", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C4", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C5", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_C6", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_LETTER", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_LEGAL", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXECUTIVE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LEDGER", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLOID", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVOICE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOLIO", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "QUARTO", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAPANESE_POSTCARD", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAPANESE_DOUBLE_POSTCARD", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "A", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "B", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "C", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "D", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "E", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_DESIGNATED_LONG", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ITALY_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONARCH_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PERSONAL_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_NUMBER_9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_NUMBER_10_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_NUMBER_11_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_NUMBER_12_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_NUMBER_14_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_6X9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_7X9_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_9X11_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_9X12_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_10X13_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_10X14_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_10X15_ENVELOPE", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_5X7", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NA_8X10", "Ljavax/print/attribute/standard/MediaSizeName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myStringTable", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/MediaSizeName;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStringTable", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -1182,7 +1182,7 @@ public partial class MediaSizeName
 	}
 
 	[JniSignatureAttribute("(I)V", "protected")]
-	public MediaSizeName(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MediaSizeName(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

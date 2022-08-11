@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,17 +32,17 @@ public partial class SimpleDoc
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/SimpleDoc;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flavor", "Ljavax/print/DocFlavor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributes", "Ljavax/print/attribute/DocAttributeSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "printData", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Ljava/io/Reader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inStream", "Ljava/io/InputStream;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SimpleDoc", "(Ljava/lang/Object;Ljavax/print/DocFlavor;Ljavax/print/attribute/DocAttributeSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/print/attribute/DocAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReaderForText", "()Ljava/io/Reader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocFlavor", "()Ljavax/print/DocFlavor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintData", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStreamForBytes", "()Ljava/io/InputStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flavor", "Ljavax/print/DocFlavor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributes", "Ljavax/print/attribute/DocAttributeSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "printData", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Ljava/io/Reader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inStream", "Ljava/io/InputStream;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljavax/print/DocFlavor;Ljavax/print/attribute/DocAttributeSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "()Ljavax/print/attribute/DocAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReaderForText", "()Ljava/io/Reader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocFlavor", "()Ljavax/print/DocFlavor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintData", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStreamForBytes", "()Ljava/io/InputStream;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/print/DocFlavor;", "private")]
@@ -121,7 +121,7 @@ public partial class SimpleDoc
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/print/DocFlavor;Ljavax/print/attribute/DocAttributeSet;)V", "public")]
-	public SimpleDoc(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.print.DocFlavor arg1, Dova.JDK.javax.print.attribute.DocAttributeSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public SimpleDoc(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.print.DocFlavor arg1, Dova.JDK.javax.print.attribute.DocAttributeSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

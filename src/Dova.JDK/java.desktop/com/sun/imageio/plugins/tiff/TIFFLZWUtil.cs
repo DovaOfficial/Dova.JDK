@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,25 +31,25 @@ public partial class TIFFLZWUtil
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/plugins/tiff/TIFFLZWUtil;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcData", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dstData", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dstIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringTable", "[[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tableIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bitsToGet", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextData", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextBits", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "andTable", "[I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TIFFLZWUtil", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "([BIIII)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureCapacity", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeString", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initializeStringTable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNextCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addStringToTable", "([BB)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addStringToTable", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "composeString", "([BB)[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcData", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dstData", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dstIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringTable", "[[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tableIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bitsToGet", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextData", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextBits", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "andTable", "[I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "([BIIII)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureCapacity", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeString", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initializeStringTable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNextCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addStringToTable", "([BB)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addStringToTable", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "composeString", "([BB)[B"));
 	}
 
 	[JniSignatureAttribute("[B", "")]
@@ -198,7 +198,7 @@ public partial class TIFFLZWUtil
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public TIFFLZWUtil() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TIFFLZWUtil() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

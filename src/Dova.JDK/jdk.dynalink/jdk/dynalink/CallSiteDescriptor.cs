@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class CallSiteDescriptor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/CallSiteDescriptor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "operation", "Ljdk/dynalink/Operation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodType", "Ljava/lang/invoke/MethodType;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CallSiteDescriptor", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljdk/dynalink/Operation;Ljava/lang/invoke/MethodType;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMethodType", "()Ljava/lang/invoke/MethodType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeMethodTypeInternal", "(Ljava/lang/invoke/MethodType;)Ljdk/dynalink/CallSiteDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "assertChangeInvariants", "(Ljdk/dynalink/CallSiteDescriptor;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "alwaysAssert", "(ZLjava/util/function/Supplier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeOperationInternal", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/CallSiteDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupsEqual", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/invoke/MethodHandles$Lookup;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupHashCode", "(Ljava/lang/invoke/MethodHandles$Lookup;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOperation", "()Ljdk/dynalink/Operation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeMethodType", "(Ljava/lang/invoke/MethodType;)Ljdk/dynalink/CallSiteDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeOperation", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/CallSiteDescriptor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "operation", "Ljdk/dynalink/Operation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodType", "Ljava/lang/invoke/MethodType;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljdk/dynalink/Operation;Ljava/lang/invoke/MethodType;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMethodType", "()Ljava/lang/invoke/MethodType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeMethodTypeInternal", "(Ljava/lang/invoke/MethodType;)Ljdk/dynalink/CallSiteDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "assertChangeInvariants", "(Ljdk/dynalink/CallSiteDescriptor;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "alwaysAssert", "(ZLjava/util/function/Supplier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeOperationInternal", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/CallSiteDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookupsEqual", "(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/invoke/MethodHandles$Lookup;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookupHashCode", "(Ljava/lang/invoke/MethodHandles$Lookup;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOperation", "()Ljdk/dynalink/Operation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeMethodType", "(Ljava/lang/invoke/MethodType;)Ljdk/dynalink/CallSiteDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeOperation", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/CallSiteDescriptor;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/Operation;", "private final")]
@@ -83,7 +83,7 @@ public partial class CallSiteDescriptor
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/invoke/MethodHandles$Lookup;Ljdk/dynalink/Operation;Ljava/lang/invoke/MethodType;)V", "public")]
-	public CallSiteDescriptor(Dova.JDK.java.lang.invoke.MethodHandles.Lookup arg0, Dova.JDK.jdk.dynalink.Operation arg1, Dova.JDK.java.lang.invoke.MethodType arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public CallSiteDescriptor(Dova.JDK.java.lang.invoke.MethodHandles.Lookup arg0, Dova.JDK.jdk.dynalink.Operation arg1, Dova.JDK.java.lang.invoke.MethodType arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

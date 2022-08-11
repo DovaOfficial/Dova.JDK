@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,107 +31,107 @@ public partial class SoftVoice
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/SoftVoice;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exclusiveClass", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "releaseTriggered", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noteOn_noteNumber", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noteOn_velocity", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noteOff_velocity", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delay", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "channelmixer", "Lcom/sun/media/sound/ModelChannelMixer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tunedKey", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tuning", "Lcom/sun/media/sound/SoftTuning;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_channel", "Lcom/sun/media/sound/SoftChannel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_extendedConnectionBlocks", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_performer", "Lcom/sun/media/sound/SoftPerformer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_channelmixer", "Lcom/sun/media/sound/ModelChannelMixer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_voiceID", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_noteNumber", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_velocity", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stealer_releaseTriggered", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "voiceID", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sustain", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sostenuto", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "portamento", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter_left", "Lcom/sun/media/sound/SoftFilter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter_right", "Lcom/sun/media/sound/SoftFilter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eg", "Lcom/sun/media/sound/SoftProcess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lfo", "Lcom/sun/media/sound/SoftProcess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objects", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "synthesizer", "Lcom/sun/media/sound/SoftSynthesizer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instrument", "Lcom/sun/media/sound/SoftInstrument;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "performer", "Lcom/sun/media/sound/SoftPerformer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "softchannel", "Lcom/sun/media/sound/SoftChannel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "on", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "audiostarted", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "started", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stopping", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osc_attenuation", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osc_stream", "Lcom/sun/media/sound/ModelOscillatorStream;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osc_stream_nrofchannels", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osc_buff", "[[F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osc_stream_off_transmitted", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out_mixer_end", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out_mixer_left", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out_mixer_right", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out_mixer_effect1", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out_mixer_effect2", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last_out_mixer_left", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last_out_mixer_right", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last_out_mixer_effect1", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last_out_mixer_effect2", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extendedConnectionBlocks", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connections", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connections_last", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connections_src", "[[[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connections_src_kc", "[[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connections_dst", "[[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "soundoff", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastMuteValue", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastSoloMuteValue", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_noteon_keynumber", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_noteon_velocity", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_noteon_on", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_noteon", "Lcom/sun/media/sound/SoftControl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_active", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_gain", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_pan", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_balance", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_reverb", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer_chorus", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_mixer", "Lcom/sun/media/sound/SoftControl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_osc_pitch", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_osc", "Lcom/sun/media/sound/SoftControl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_filter_freq", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_filter_type", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_filter_q", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "co_filter", "Lcom/sun/media/sound/SoftControl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resampler", "Lcom/sun/media/sound/SoftResamplerStreamer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nrofchannels", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SoftVoice", "(Lcom/sun/media/sound/SoftSynthesizer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shutdown", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue", "(Lcom/sun/media/sound/ModelIdentifier;)[D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processControlLogic", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateTuning", "(Lcom/sun/media/sound/SoftTuning;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processAudioLogic", "([Lcom/sun/media/sound/SoftAudioBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "soundOff", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSoloMute", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNote", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rpnChange", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nrpnChange", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "redamp", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "controlChange", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noteOn", "(III)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noteOff", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPolyPressure", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setChannelPressure", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPitchBend", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMute", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transformValue", "(DLcom/sun/media/sound/ModelSource;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transformValue", "(DLcom/sun/media/sound/ModelDestination;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processKeyBasedController", "(DI)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processConnection", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValueKC", "(Lcom/sun/media/sound/ModelIdentifier;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mixAudioStream", "(Lcom/sun/media/sound/SoftAudioBuffer;Lcom/sun/media/sound/SoftAudioBuffer;Lcom/sun/media/sound/SoftAudioBuffer;FF)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exclusiveClass", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "releaseTriggered", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noteOn_noteNumber", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noteOn_velocity", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noteOff_velocity", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delay", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "channelmixer", "Lcom/sun/media/sound/ModelChannelMixer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tunedKey", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tuning", "Lcom/sun/media/sound/SoftTuning;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_channel", "Lcom/sun/media/sound/SoftChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_extendedConnectionBlocks", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_performer", "Lcom/sun/media/sound/SoftPerformer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_channelmixer", "Lcom/sun/media/sound/ModelChannelMixer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_voiceID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_noteNumber", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_velocity", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stealer_releaseTriggered", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "voiceID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sustain", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sostenuto", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "portamento", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filter_left", "Lcom/sun/media/sound/SoftFilter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filter_right", "Lcom/sun/media/sound/SoftFilter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eg", "Lcom/sun/media/sound/SoftProcess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lfo", "Lcom/sun/media/sound/SoftProcess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objects", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "synthesizer", "Lcom/sun/media/sound/SoftSynthesizer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instrument", "Lcom/sun/media/sound/SoftInstrument;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "performer", "Lcom/sun/media/sound/SoftPerformer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "softchannel", "Lcom/sun/media/sound/SoftChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "on", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "audiostarted", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "started", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stopping", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osc_attenuation", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osc_stream", "Lcom/sun/media/sound/ModelOscillatorStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osc_stream_nrofchannels", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osc_buff", "[[F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osc_stream_off_transmitted", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out_mixer_end", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out_mixer_left", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out_mixer_right", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out_mixer_effect1", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out_mixer_effect2", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last_out_mixer_left", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last_out_mixer_right", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last_out_mixer_effect1", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last_out_mixer_effect2", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extendedConnectionBlocks", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connections", "[Lcom/sun/media/sound/ModelConnectionBlock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connections_last", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connections_src", "[[[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connections_src_kc", "[[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connections_dst", "[[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "soundoff", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastMuteValue", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastSoloMuteValue", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_noteon_keynumber", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_noteon_velocity", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_noteon_on", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_noteon", "Lcom/sun/media/sound/SoftControl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_active", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_gain", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_pan", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_balance", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_reverb", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer_chorus", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_mixer", "Lcom/sun/media/sound/SoftControl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_osc_pitch", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_osc", "Lcom/sun/media/sound/SoftControl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_filter_freq", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_filter_type", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_filter_q", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "co_filter", "Lcom/sun/media/sound/SoftControl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resampler", "Lcom/sun/media/sound/SoftResamplerStreamer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nrofchannels", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/SoftSynthesizer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shutdown", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValue", "(Lcom/sun/media/sound/ModelIdentifier;)[D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processControlLogic", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateTuning", "(Lcom/sun/media/sound/SoftTuning;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processAudioLogic", "([Lcom/sun/media/sound/SoftAudioBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "soundOff", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSoloMute", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNote", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rpnChange", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nrpnChange", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "redamp", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "controlChange", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noteOn", "(III)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noteOff", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPolyPressure", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setChannelPressure", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPitchBend", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMute", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transformValue", "(DLcom/sun/media/sound/ModelSource;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transformValue", "(DLcom/sun/media/sound/ModelDestination;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processKeyBasedController", "(DI)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processConnection", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValueKC", "(Lcom/sun/media/sound/ModelIdentifier;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mixAudioStream", "(Lcom/sun/media/sound/SoftAudioBuffer;Lcom/sun/media/sound/SoftAudioBuffer;Lcom/sun/media/sound/SoftAudioBuffer;FF)V"));
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -1204,7 +1204,7 @@ public partial class SoftVoice
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/SoftSynthesizer;)V", "public")]
-	public SoftVoice(Dova.JDK.com.sun.media.sound.SoftSynthesizer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SoftVoice(Dova.JDK.com.sun.media.sound.SoftSynthesizer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

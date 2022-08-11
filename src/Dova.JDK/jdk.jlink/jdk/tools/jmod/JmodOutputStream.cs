@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,17 +32,17 @@ public partial class JmodOutputStream
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jmod/JmodOutputStream;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entries", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zos", "Ljava/util/zip/ZipOutputStream;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JmodOutputStream", "(Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newOutputStream", "(Ljava/nio/file/Path;)Ljdk/tools/jmod/JmodOutputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEntry", "(Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)Ljava/util/zip/ZipEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeEntry", "(Ljava/io/InputStream;Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeEntry", "([BLjdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeEntry", "(Ljava/io/InputStream;Ljdk/internal/jmod/JmodFile$Entry;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entries", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zos", "Ljava/util/zip/ZipOutputStream;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newOutputStream", "(Ljava/nio/file/Path;)Ljdk/tools/jmod/JmodOutputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEntry", "(Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)Ljava/util/zip/ZipEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeEntry", "(Ljava/io/InputStream;Ljdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeEntry", "([BLjdk/internal/jmod/JmodFile$Section;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeEntry", "(Ljava/io/InputStream;Ljdk/internal/jmod/JmodFile$Entry;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -79,7 +79,7 @@ public partial class JmodOutputStream
 	}
 
 	[JniSignatureAttribute("(Ljava/io/OutputStream;)V", "private")]
-	public JmodOutputStream(Dova.JDK.java.io.OutputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public JmodOutputStream(Dova.JDK.java.io.OutputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

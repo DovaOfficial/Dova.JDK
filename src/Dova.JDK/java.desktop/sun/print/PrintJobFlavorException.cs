@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class PrintJobFlavorException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/PrintJobFlavorException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flavor", "Ljavax/print/DocFlavor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintJobFlavorException", "(Ljava/lang/String;Ljavax/print/DocFlavor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnsupportedFlavors", "()[Ljavax/print/DocFlavor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flavor", "Ljavax/print/DocFlavor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljavax/print/DocFlavor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnsupportedFlavors", "()[Ljavax/print/DocFlavor;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/print/DocFlavor;", "private")]
@@ -57,7 +57,7 @@ public partial class PrintJobFlavorException
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljavax/print/DocFlavor;)V", "")]
-	public PrintJobFlavorException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.print.DocFlavor arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PrintJobFlavorException(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.print.DocFlavor arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

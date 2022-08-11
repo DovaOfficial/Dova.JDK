@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,64 +32,64 @@ public partial class X11GraphicsConfig
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11GraphicsConfig;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "device", "Lsun/awt/X11GraphicsDevice;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "visual", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "depth", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "colormap", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "colorModel", "Ljava/awt/image/ColorModel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aData", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doubleBuffer", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "disposerReferent", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bufferCaps", "Ljava/awt/BufferCapabilities;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "imageCaps", "Ljava/awt/ImageCapabilities;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bitsPerPixel", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "surfaceType", "Lsun/java2d/loops/SurfaceType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "solidloops", "Lsun/java2d/loops/RenderLoops;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X11GraphicsConfig", "(Lsun/awt/X11GraphicsDevice;IIIZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flip", "(Lsun/awt/X11ComponentPeer;Ljava/awt/Component;Ljava/awt/image/VolatileImage;IIIILjava/awt/BufferCapabilities$FlipContents;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initIDs", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scaleUp", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dispose", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTranslucencyCapable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTranslucencyCapable", "(J)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scaleDown", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSurfaceType", "()Lsun/java2d/loops/SurfaceType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSolidLoops", "(Lsun/java2d/loops/SurfaceType;)Lsun/java2d/loops/RenderLoops;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProxyKey", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConfig", "(Lsun/awt/X11GraphicsDevice;IIIZ)Lsun/awt/X11GraphicsConfig;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConfig", "(Lsun/awt/X11GraphicsDevice;IIII)Lsun/awt/X11GraphicsConfig;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultTransform", "()Ljava/awt/geom/AffineTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDepth", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizingTransform", "()Ljava/awt/geom/AffineTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSurfaceData", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/SurfaceData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAData", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeColorModel", "()Ljava/awt/image/ColorModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getScale", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getXResolution", "(I)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getYResolution", "(I)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBufferCapabilities", "()Ljava/awt/BufferCapabilities;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSwapAction", "(Ljava/awt/BufferCapabilities$FlipContents;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBackBuffer", "(JI)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBackBuffer", "(Lsun/awt/X11ComponentPeer;ILjava/awt/BufferCapabilities;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "swapBuffers", "(JI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNumColors", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisual", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getColormap", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBitsPerPixel", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createDCM32", "(IIIIZ)Ljava/awt/image/DirectColorModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createABGRCCM", "()Ljava/awt/image/ComponentColorModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImageCapabilities", "()Ljava/awt/ImageCapabilities;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createAcceleratedImage", "(Ljava/awt/Component;II)Ljava/awt/Image;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "destroyBackBuffer", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBackBufferImage", "(Ljava/awt/Component;J)Ljava/awt/image/VolatileImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDoubleBuffered", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDevice_0", "()Ljava/awt/GraphicsDevice;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDevice_1", "()Lsun/awt/X11GraphicsDevice;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getColorModel", "(I)Ljava/awt/image/ColorModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getColorModel", "()Ljava/awt/image/ColorModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "device", "Lsun/awt/X11GraphicsDevice;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "visual", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "depth", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "colormap", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "colorModel", "Ljava/awt/image/ColorModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aData", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doubleBuffer", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "disposerReferent", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bufferCaps", "Ljava/awt/BufferCapabilities;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "imageCaps", "Ljava/awt/ImageCapabilities;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bitsPerPixel", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "surfaceType", "Lsun/java2d/loops/SurfaceType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "solidloops", "Lsun/java2d/loops/RenderLoops;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11GraphicsDevice;IIIZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flip", "(Lsun/awt/X11ComponentPeer;Ljava/awt/Component;Ljava/awt/image/VolatileImage;IIIILjava/awt/BufferCapabilities$FlipContents;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initIDs", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scaleUp", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dispose", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTranslucencyCapable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTranslucencyCapable", "(J)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scaleDown", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSurfaceType", "()Lsun/java2d/loops/SurfaceType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSolidLoops", "(Lsun/java2d/loops/SurfaceType;)Lsun/java2d/loops/RenderLoops;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProxyKey", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConfig", "(Lsun/awt/X11GraphicsDevice;IIIZ)Lsun/awt/X11GraphicsConfig;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConfig", "(Lsun/awt/X11GraphicsDevice;IIII)Lsun/awt/X11GraphicsConfig;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultTransform", "()Ljava/awt/geom/AffineTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDepth", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizingTransform", "()Ljava/awt/geom/AffineTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSurfaceData", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/SurfaceData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAData", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeColorModel", "()Ljava/awt/image/ColorModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getScale", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getXResolution", "(I)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getYResolution", "(I)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBufferCapabilities", "()Ljava/awt/BufferCapabilities;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSwapAction", "(Ljava/awt/BufferCapabilities$FlipContents;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBackBuffer", "(JI)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBackBuffer", "(Lsun/awt/X11ComponentPeer;ILjava/awt/BufferCapabilities;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "swapBuffers", "(JI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNumColors", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisual", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getColormap", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBitsPerPixel", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createDCM32", "(IIIIZ)Ljava/awt/image/DirectColorModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createABGRCCM", "()Ljava/awt/image/ComponentColorModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImageCapabilities", "()Ljava/awt/ImageCapabilities;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createAcceleratedImage", "(Ljava/awt/Component;II)Ljava/awt/Image;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "destroyBackBuffer", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBackBufferImage", "(Ljava/awt/Component;J)Ljava/awt/image/VolatileImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDoubleBuffered", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDevice_0", "()Ljava/awt/GraphicsDevice;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDevice_1", "()Lsun/awt/X11GraphicsDevice;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getColorModel", "(I)Ljava/awt/image/ColorModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getColorModel", "()Ljava/awt/image/ColorModel;"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/X11GraphicsDevice;", "private final")]
@@ -280,7 +280,7 @@ public partial class X11GraphicsConfig
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/X11GraphicsDevice;IIIZ)V", "protected")]
-	public X11GraphicsConfig(Dova.JDK.sun.awt.X11GraphicsDevice arg0, int arg1, int arg2, int arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public X11GraphicsConfig(Dova.JDK.sun.awt.X11GraphicsDevice arg0, int arg1, int arg2, int arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -606,9 +606,9 @@ public partial class X11GraphicsConfig
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11GraphicsConfig$X11GCDisposerRecord;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x11ConfigData", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X11GCDisposerRecord", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x11ConfigData", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
 		}
 
 		[JniSignatureAttribute("J", "private")]
@@ -631,7 +631,7 @@ public partial class X11GraphicsConfig
 		}
 
 		[JniSignatureAttribute("(J)V", "public")]
-		public X11GCDisposerRecord(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public X11GCDisposerRecord(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -659,7 +659,7 @@ public partial class X11GraphicsConfig
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11GraphicsConfig$XDBECapabilities;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XDBECapabilities", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -668,7 +668,7 @@ public partial class X11GraphicsConfig
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public XDBECapabilities() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XDBECapabilities() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

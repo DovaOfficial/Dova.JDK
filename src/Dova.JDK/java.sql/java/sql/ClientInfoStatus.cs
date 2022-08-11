@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class ClientInfoStatus
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/sql/ClientInfoStatus;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REASON_UNKNOWN", "Ljava/sql/ClientInfoStatus;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REASON_UNKNOWN_PROPERTY", "Ljava/sql/ClientInfoStatus;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REASON_VALUE_INVALID", "Ljava/sql/ClientInfoStatus;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REASON_VALUE_TRUNCATED", "Ljava/sql/ClientInfoStatus;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/sql/ClientInfoStatus;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClientInfoStatus", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/sql/ClientInfoStatus;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/sql/ClientInfoStatus;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/sql/ClientInfoStatus;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REASON_UNKNOWN", "Ljava/sql/ClientInfoStatus;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REASON_UNKNOWN_PROPERTY", "Ljava/sql/ClientInfoStatus;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REASON_VALUE_INVALID", "Ljava/sql/ClientInfoStatus;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REASON_VALUE_TRUNCATED", "Ljava/sql/ClientInfoStatus;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljava/sql/ClientInfoStatus;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljava/sql/ClientInfoStatus;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljava/sql/ClientInfoStatus;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljava/sql/ClientInfoStatus;"));
 	}
 
 	[JniSignatureAttribute("Ljava/sql/ClientInfoStatus;", "public static final")]
@@ -118,7 +118,7 @@ public partial class ClientInfoStatus
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public ClientInfoStatus(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ClientInfoStatus(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

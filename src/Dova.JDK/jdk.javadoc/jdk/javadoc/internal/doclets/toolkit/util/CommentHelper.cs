@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,51 +31,51 @@ public partial class CommentHelper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/CommentHelper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configuration", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "path", "Lcom/sun/source/util/TreePath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dcTree", "Lcom/sun/source/doctree/DocCommentTree;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "element", "Ljavax/lang/model/element/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPACER", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CommentHelper", "(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljavax/lang/model/element/Element;Lcom/sun/source/util/TreePath;Lcom/sun/source/doctree/DocCommentTree;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/IdentifierTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReference", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getException", "(Lcom/sun/source/doctree/ThrowsTree;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/ReferenceTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "(Lcom/sun/source/doctree/ReferenceTree;)Ljavax/lang/model/type/TypeMirror;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "(Ljava/util/List;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Lcom/sun/source/doctree/ReferenceTree;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTagName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFirstSentenceTrees", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFirstSentenceTrees", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDescription", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocTreePath", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/util/DocTreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceType", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/TypeElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExceptionName", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/ReferenceTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalizeSignature", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedElement", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedSignature", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedType", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/type/TypeMirror;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText0", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/StringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedPackage", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/PackageElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedPackage", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/PackageElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedModule", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/ModuleElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedModule", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/ModuleElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedClass", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/TypeElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedClass", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/TypeElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedModuleName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedModuleName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedMember", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedMember", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedMemberName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReferencedMemberName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInheritedDocTreePath", "(Lcom/sun/source/doctree/DocTree;Ljavax/lang/model/element/ExecutableElement;)Lcom/sun/source/util/DocTreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTypeParameter", "(Lcom/sun/source/doctree/DocTree;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTags", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameterName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBody", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLabel", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "configuration", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "path", "Lcom/sun/source/util/TreePath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dcTree", "Lcom/sun/source/doctree/DocCommentTree;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "element", "Ljavax/lang/model/element/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPACER", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljavax/lang/model/element/Element;Lcom/sun/source/util/TreePath;Lcom/sun/source/doctree/DocCommentTree;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/IdentifierTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReference", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getException", "(Lcom/sun/source/doctree/ThrowsTree;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/ReferenceTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "(Lcom/sun/source/doctree/ReferenceTree;)Ljavax/lang/model/type/TypeMirror;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "(Ljava/util/List;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "(Lcom/sun/source/doctree/ReferenceTree;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTagName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFirstSentenceTrees", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFirstSentenceTrees", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDescription", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocTreePath", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/util/DocTreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceType", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/TypeElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExceptionName", "(Lcom/sun/source/doctree/DocTree;)Lcom/sun/source/doctree/ReferenceTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalizeSignature", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedElement", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedSignature", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedType", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/type/TypeMirror;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText0", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/StringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedPackage", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/PackageElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedPackage", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/PackageElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedModule", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/ModuleElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedModule", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/ModuleElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedClass", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/TypeElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedClass", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/TypeElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedModuleName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedModuleName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedMember", "(Lcom/sun/source/doctree/DocTree;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedMember", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedMemberName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReferencedMemberName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInheritedDocTreePath", "(Lcom/sun/source/doctree/DocTree;Ljavax/lang/model/element/ExecutableElement;)Lcom/sun/source/util/DocTreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTypeParameter", "(Lcom/sun/source/doctree/DocTree;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTags", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParameterName", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBody", "(Lcom/sun/source/doctree/DocTree;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLabel", "(Lcom/sun/source/doctree/DocTree;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;", "private final")]
@@ -154,7 +154,7 @@ public partial class CommentHelper
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljavax/lang/model/element/Element;Lcom/sun/source/util/TreePath;Lcom/sun/source/doctree/DocCommentTree;)V", "public")]
-	public CommentHelper(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg0, Dova.JDK.javax.lang.model.element.Element arg1, Dova.JDK.com.sun.source.util.TreePath arg2, Dova.JDK.com.sun.source.doctree.DocCommentTree arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public CommentHelper(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg0, Dova.JDK.javax.lang.model.element.Element arg1, Dova.JDK.com.sun.source.util.TreePath arg2, Dova.JDK.com.sun.source.doctree.DocCommentTree arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -449,21 +449,21 @@ public partial class CommentHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/CommentHelper$ReferenceDocTreeVisitor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceDocTreeVisitor", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLink", "(Lcom/sun/source/doctree/LinkTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLink", "(Lcom/sun/source/doctree/LinkTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSerialField", "(Lcom/sun/source/doctree/SerialFieldTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSerialField", "(Lcom/sun/source/doctree/SerialFieldTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSee", "(Lcom/sun/source/doctree/SeeTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSee", "(Lcom/sun/source/doctree/SeeTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitProvides", "(Lcom/sun/source/doctree/ProvidesTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitProvides", "(Lcom/sun/source/doctree/ProvidesTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitUses", "(Lcom/sun/source/doctree/UsesTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitUses", "(Lcom/sun/source/doctree/UsesTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultAction", "(Lcom/sun/source/doctree/DocTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultAction", "(Lcom/sun/source/doctree/DocTree;Ljava/lang/Void;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitValue", "(Lcom/sun/source/doctree/ValueTree;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitValue", "(Lcom/sun/source/doctree/ValueTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLink", "(Lcom/sun/source/doctree/LinkTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLink", "(Lcom/sun/source/doctree/LinkTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSerialField", "(Lcom/sun/source/doctree/SerialFieldTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSerialField", "(Lcom/sun/source/doctree/SerialFieldTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSee", "(Lcom/sun/source/doctree/SeeTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSee", "(Lcom/sun/source/doctree/SeeTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitProvides", "(Lcom/sun/source/doctree/ProvidesTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitProvides", "(Lcom/sun/source/doctree/ProvidesTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitUses", "(Lcom/sun/source/doctree/UsesTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitUses", "(Lcom/sun/source/doctree/UsesTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defaultAction", "(Lcom/sun/source/doctree/DocTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defaultAction", "(Lcom/sun/source/doctree/DocTree;Ljava/lang/Void;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitValue", "(Lcom/sun/source/doctree/ValueTree;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitValue", "(Lcom/sun/source/doctree/ValueTree;Ljava/lang/Void;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -472,7 +472,7 @@ public partial class CommentHelper
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ReferenceDocTreeVisitor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ReferenceDocTreeVisitor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

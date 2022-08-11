@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,12 +29,12 @@ public partial interface PCMM
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/cmm/PCMM;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTransform", "([Lsun/java2d/cmm/ColorTransform;)Lsun/java2d/cmm/ColorTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTransform", "(Ljava/awt/color/ICC_Profile;II)Lsun/java2d/cmm/ColorTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadProfile", "([B)Lsun/java2d/cmm/Profile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProfileData", "(Lsun/java2d/cmm/Profile;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTagData", "(Lsun/java2d/cmm/Profile;I)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTagData", "(Lsun/java2d/cmm/Profile;I[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTransform", "([Lsun/java2d/cmm/ColorTransform;)Lsun/java2d/cmm/ColorTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTransform", "(Ljava/awt/color/ICC_Profile;II)Lsun/java2d/cmm/ColorTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadProfile", "([B)Lsun/java2d/cmm/Profile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProfileData", "(Lsun/java2d/cmm/Profile;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTagData", "(Lsun/java2d/cmm/Profile;I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTagData", "(Lsun/java2d/cmm/Profile;I[B)V"));
 	}
 
 	[JniSignatureAttribute("([Lsun/java2d/cmm/ColorTransform;)Lsun/java2d/cmm/ColorTransform;", "public abstract")]

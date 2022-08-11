@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,10 +32,10 @@ public partial class AbstractAlgorithmConstraints
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/AbstractAlgorithmConstraints;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decomposer", "Lsun/security/util/AlgorithmDecomposer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractAlgorithmConstraints", "(Lsun/security/util/AlgorithmDecomposer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkAlgorithm", "(Ljava/util/Set;Ljava/lang/String;Lsun/security/util/AlgorithmDecomposer;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decomposer", "Lsun/security/util/AlgorithmDecomposer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/AlgorithmDecomposer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAlgorithms", "(Ljava/lang/String;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkAlgorithm", "(Ljava/util/Set;Ljava/lang/String;Lsun/security/util/AlgorithmDecomposer;)Z"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/AlgorithmDecomposer;", "protected final")]
@@ -58,7 +58,7 @@ public partial class AbstractAlgorithmConstraints
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/AlgorithmDecomposer;)V", "protected")]
-	public AbstractAlgorithmConstraints(Dova.JDK.sun.security.util.AlgorithmDecomposer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractAlgorithmConstraints(Dova.JDK.sun.security.util.AlgorithmDecomposer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

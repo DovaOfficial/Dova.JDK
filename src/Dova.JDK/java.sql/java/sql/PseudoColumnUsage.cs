@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class PseudoColumnUsage
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/sql/PseudoColumnUsage;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SELECT_LIST_ONLY", "Ljava/sql/PseudoColumnUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WHERE_CLAUSE_ONLY", "Ljava/sql/PseudoColumnUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_USAGE_RESTRICTIONS", "Ljava/sql/PseudoColumnUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USAGE_UNKNOWN", "Ljava/sql/PseudoColumnUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/sql/PseudoColumnUsage;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PseudoColumnUsage", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/sql/PseudoColumnUsage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/sql/PseudoColumnUsage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/sql/PseudoColumnUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SELECT_LIST_ONLY", "Ljava/sql/PseudoColumnUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WHERE_CLAUSE_ONLY", "Ljava/sql/PseudoColumnUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_USAGE_RESTRICTIONS", "Ljava/sql/PseudoColumnUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USAGE_UNKNOWN", "Ljava/sql/PseudoColumnUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljava/sql/PseudoColumnUsage;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljava/sql/PseudoColumnUsage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljava/sql/PseudoColumnUsage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljava/sql/PseudoColumnUsage;"));
 	}
 
 	[JniSignatureAttribute("Ljava/sql/PseudoColumnUsage;", "public static final")]
@@ -118,7 +118,7 @@ public partial class PseudoColumnUsage
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public PseudoColumnUsage(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PseudoColumnUsage(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

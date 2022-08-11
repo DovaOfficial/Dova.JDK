@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,37 +31,37 @@ public partial class Loader
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/Loader;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pool", "Ljdk/internal/loader/LoaderPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljava/lang/ClassLoader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nameToModule", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localPackageToModule", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remotePackageToLoader", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "moduleToReader", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acc", "Ljava/security/AccessControlContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Loader", "(Ljava/lang/module/ResolvedModule;Ljdk/internal/loader/LoaderPool;Ljava/lang/ClassLoader;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Loader", "(Ljava/util/Collection;Ljava/lang/ClassLoader;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packageName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResource", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResource", "(Ljava/lang/String;)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljava/lang/String;)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isOpen", "(Ljava/lang/module/ModuleReference;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findClass", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineClass", "(Ljava/lang/String;Ljdk/internal/loader/Loader$LoadedModule;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findLoadedModule", "(Ljava/lang/String;)Ljdk/internal/loader/Loader$LoadedModule;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleReaderFor", "(Ljava/lang/module/ModuleReference;)Ljava/lang/module/ModuleReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findClassInModuleOrNull", "(Ljdk/internal/loader/Loader$LoadedModule;Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initRemotePackageMap", "(Ljava/lang/module/Configuration;Ljava/util/List;)Ljdk/internal/loader/Loader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pool", "()Ljdk/internal/loader/LoaderPool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remotePackage", "(Ljava/lang/String;Ljava/lang/ClassLoader;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResourcesAsList", "(Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createModuleReader", "(Ljava/lang/module/ModuleReference;)Ljava/lang/module/ModuleReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findModuleLayer", "(Ljava/lang/ModuleLayer;Ljava/lang/module/Configuration;)Ljava/util/Optional;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pool", "Ljdk/internal/loader/LoaderPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljava/lang/ClassLoader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nameToModule", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localPackageToModule", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "remotePackageToLoader", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "moduleToReader", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acc", "Ljava/security/AccessControlContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/module/ResolvedModule;Ljdk/internal/loader/LoaderPool;Ljava/lang/ClassLoader;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Collection;Ljava/lang/ClassLoader;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packageName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResource", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResource", "(Ljava/lang/String;)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljava/lang/String;)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isOpen", "(Ljava/lang/module/ModuleReference;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findClass", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineClass", "(Ljava/lang/String;Ljdk/internal/loader/Loader$LoadedModule;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findLoadedModule", "(Ljava/lang/String;)Ljdk/internal/loader/Loader$LoadedModule;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleReaderFor", "(Ljava/lang/module/ModuleReference;)Ljava/lang/module/ModuleReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findClassInModuleOrNull", "(Ljdk/internal/loader/Loader$LoadedModule;Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initRemotePackageMap", "(Ljava/lang/module/Configuration;Ljava/util/List;)Ljdk/internal/loader/Loader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pool", "()Ljdk/internal/loader/LoaderPool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remotePackage", "(Ljava/lang/String;Ljava/lang/ClassLoader;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResourcesAsList", "(Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createModuleReader", "(Ljava/lang/module/ModuleReference;)Ljava/lang/module/ModuleReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findModuleLayer", "(Ljava/lang/ModuleLayer;Ljava/lang/module/Configuration;)Ljava/util/Optional;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/loader/LoaderPool;", "private final")]
@@ -182,12 +182,12 @@ public partial class Loader
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/module/ResolvedModule;Ljdk/internal/loader/LoaderPool;Ljava/lang/ClassLoader;)V", "public")]
-	public Loader(Dova.JDK.java.lang.module.ResolvedModule arg0, Dova.JDK.jdk.@internal.loader.LoaderPool arg1, Dova.JDK.java.lang.ClassLoader arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Loader(Dova.JDK.java.lang.module.ResolvedModule arg0, Dova.JDK.jdk.@internal.loader.LoaderPool arg1, Dova.JDK.java.lang.ClassLoader arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Collection;Ljava/lang/ClassLoader;)V", "public")]
-	public Loader(Dova.JDK.java.util.Collection arg0, Dova.JDK.java.lang.ClassLoader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public Loader(Dova.JDK.java.util.Collection arg0, Dova.JDK.java.lang.ClassLoader arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -356,14 +356,14 @@ public partial class Loader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/Loader$LoadedModule;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mref", "Ljava/lang/module/ModuleReference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "url", "Ljava/net/URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cs", "Ljava/security/CodeSource;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LoadedModule", "(Ljava/lang/module/ModuleReference;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "codeSource", "()Ljava/security/CodeSource;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "location", "()Ljava/net/URL;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mref", "()Ljava/lang/module/ModuleReference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mref", "Ljava/lang/module/ModuleReference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "url", "Ljava/net/URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cs", "Ljava/security/CodeSource;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/module/ModuleReference;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "name", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "codeSource", "()Ljava/security/CodeSource;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "location", "()Ljava/net/URL;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mref", "()Ljava/lang/module/ModuleReference;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/module/ModuleReference;", "private final")]
@@ -414,7 +414,7 @@ public partial class Loader
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/module/ModuleReference;)V", "")]
-		public LoadedModule(Dova.JDK.java.lang.module.ModuleReference arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LoadedModule(Dova.JDK.java.lang.module.ModuleReference arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -466,10 +466,10 @@ public partial class Loader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/Loader$NullModuleReader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NullModuleReader", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "list", "()Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Ljava/util/Optional;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "list", "()Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Ljava/util/Optional;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -478,7 +478,7 @@ public partial class Loader
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NullModuleReader() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NullModuleReader() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

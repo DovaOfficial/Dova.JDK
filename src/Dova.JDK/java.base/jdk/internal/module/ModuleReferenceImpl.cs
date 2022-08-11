@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,26 +31,26 @@ public partial class ModuleReferenceImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleReferenceImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Ljava/net/URI;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readerSupplier", "Ljava/util/function/Supplier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "patcher", "Ljdk/internal/module/ModulePatcher;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljdk/internal/module/ModuleTarget;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recordedHashes", "Ljdk/internal/module/ModuleHashes;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasher", "Ljdk/internal/module/ModuleHashes$HashSupplier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "moduleResolution", "Ljdk/internal/module/ModuleResolution;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cachedHash", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hash", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleReferenceImpl", "(Ljava/lang/module/ModuleDescriptor;Ljava/net/URI;Ljava/util/function/Supplier;Ljdk/internal/module/ModulePatcher;Ljdk/internal/module/ModuleTarget;Ljdk/internal/module/ModuleHashes;Ljdk/internal/module/ModuleHashes$HashSupplier;Ljdk/internal/module/ModuleResolution;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "open", "()Ljava/lang/module/ModuleReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPatched", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleTarget", "()Ljdk/internal/module/ModuleTarget;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recordedHashes", "()Ljdk/internal/module/ModuleHashes;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasher", "()Ljdk/internal/module/ModuleHashes$HashSupplier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleResolution", "()Ljdk/internal/module/ModuleResolution;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeHash", "(Ljava/lang/String;)[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Ljava/net/URI;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readerSupplier", "Ljava/util/function/Supplier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "patcher", "Ljdk/internal/module/ModulePatcher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljdk/internal/module/ModuleTarget;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recordedHashes", "Ljdk/internal/module/ModuleHashes;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasher", "Ljdk/internal/module/ModuleHashes$HashSupplier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "moduleResolution", "Ljdk/internal/module/ModuleResolution;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cachedHash", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hash", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/module/ModuleDescriptor;Ljava/net/URI;Ljava/util/function/Supplier;Ljdk/internal/module/ModulePatcher;Ljdk/internal/module/ModuleTarget;Ljdk/internal/module/ModuleHashes;Ljdk/internal/module/ModuleHashes$HashSupplier;Ljdk/internal/module/ModuleResolution;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "open", "()Ljava/lang/module/ModuleReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPatched", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleTarget", "()Ljdk/internal/module/ModuleTarget;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recordedHashes", "()Ljdk/internal/module/ModuleHashes;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasher", "()Ljdk/internal/module/ModuleHashes$HashSupplier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleResolution", "()Ljdk/internal/module/ModuleResolution;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeHash", "(Ljava/lang/String;)[B"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/URI;", "private final")]
@@ -185,7 +185,7 @@ public partial class ModuleReferenceImpl
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/module/ModuleDescriptor;Ljava/net/URI;Ljava/util/function/Supplier;Ljdk/internal/module/ModulePatcher;Ljdk/internal/module/ModuleTarget;Ljdk/internal/module/ModuleHashes;Ljdk/internal/module/ModuleHashes$HashSupplier;Ljdk/internal/module/ModuleResolution;)V", "public")]
-	public ModuleReferenceImpl(Dova.JDK.java.lang.module.ModuleDescriptor arg0, Dova.JDK.java.net.URI arg1, Dova.JDK.java.util.function.Supplier arg2, Dova.JDK.jdk.@internal.module.ModulePatcher arg3, Dova.JDK.jdk.@internal.module.ModuleTarget arg4, Dova.JDK.jdk.@internal.module.ModuleHashes arg5, Dova.JDK.jdk.@internal.module.ModuleHashes.HashSupplier arg6, Dova.JDK.jdk.@internal.module.ModuleResolution arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public ModuleReferenceImpl(Dova.JDK.java.lang.module.ModuleDescriptor arg0, Dova.JDK.java.net.URI arg1, Dova.JDK.java.util.function.Supplier arg2, Dova.JDK.jdk.@internal.module.ModulePatcher arg3, Dova.JDK.jdk.@internal.module.ModuleTarget arg4, Dova.JDK.jdk.@internal.module.ModuleHashes arg5, Dova.JDK.jdk.@internal.module.ModuleHashes.HashSupplier arg6, Dova.JDK.jdk.@internal.module.ModuleResolution arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 

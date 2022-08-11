@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -34,38 +34,38 @@ public partial class JavaSoundAudioClip
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/JavaSoundAudioClip;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastPlayCall", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MINIMUM_PLAY_DELAY", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loadedAudio", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loadedAudioByteLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loadedAudioFormat", "Ljavax/sound/sampled/AudioFormat;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clip", "Lcom/sun/media/sound/AutoClosingClip;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clipLooping", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "datapusher", "Lcom/sun/media/sound/DataPusher;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sequencer", "Ljavax/sound/midi/Sequencer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sequence", "Ljavax/sound/midi/Sequence;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sequencerloop", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "success", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLIP_THRESHOLD", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STREAM_BUFFER_SIZE", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JavaSoundAudioClip", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finalize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "(Ljavax/sound/sampled/LineEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Ljava/io/InputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/net/URLConnection;)Lcom/sun/media/sound/JavaSoundAudioClip;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/net/URL;)Lcom/sun/media/sound/JavaSoundAudioClip;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readStream", "(Ljavax/sound/sampled/AudioInputStream;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readStream", "(Ljavax/sound/sampled/AudioInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadAudioData", "(Ljavax/sound/sampled/AudioInputStream;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createClip", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSourceDataLine", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSequencer", "(Ljava/io/BufferedInputStream;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startImpl", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "meta", "(Ljavax/sound/midi/MetaMessage;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "play", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastPlayCall", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MINIMUM_PLAY_DELAY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loadedAudio", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loadedAudioByteLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loadedAudioFormat", "Ljavax/sound/sampled/AudioFormat;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clip", "Lcom/sun/media/sound/AutoClosingClip;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clipLooping", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "datapusher", "Lcom/sun/media/sound/DataPusher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sequencer", "Ljavax/sound/midi/Sequencer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sequence", "Ljavax/sound/midi/Sequence;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sequencerloop", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "success", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLIP_THRESHOLD", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STREAM_BUFFER_SIZE", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finalize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "(Ljavax/sound/sampled/LineEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Ljava/io/InputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/net/URLConnection;)Lcom/sun/media/sound/JavaSoundAudioClip;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/net/URL;)Lcom/sun/media/sound/JavaSoundAudioClip;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readStream", "(Ljavax/sound/sampled/AudioInputStream;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readStream", "(Ljavax/sound/sampled/AudioInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadAudioData", "(Ljavax/sound/sampled/AudioInputStream;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createClip", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSourceDataLine", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSequencer", "(Ljava/io/BufferedInputStream;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startImpl", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "meta", "(Ljavax/sound/midi/MetaMessage;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "play", "()V"));
 	}
 
 	[JniSignatureAttribute("J", "private")]
@@ -270,7 +270,7 @@ public partial class JavaSoundAudioClip
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JavaSoundAudioClip() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JavaSoundAudioClip() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -401,8 +401,8 @@ public partial class JavaSoundAudioClip
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/JavaSoundAudioClip$DirectBAOS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DirectBAOS", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInternalBuffer", "()[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInternalBuffer", "()[B"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -411,7 +411,7 @@ public partial class JavaSoundAudioClip
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public DirectBAOS() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DirectBAOS() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

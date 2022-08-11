@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,19 +31,19 @@ public partial class ModuleInfoWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ModuleInfoWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_MODS_TO_FLAGS", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_MODS_TO_FLAGS", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_MODS_TO_FLAGS", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_MODS_TO_FLAGS", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_STRING_ARRAY", "[Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleInfoWriter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toBytes", "(Ljava/lang/module/ModuleDescriptor;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljdk/internal/module/ModuleTarget;Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleTarget;Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljava/io/OutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toModuleInfo", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljdk/internal/module/ModuleTarget;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toByteBuffer", "(Ljava/lang/module/ModuleDescriptor;)Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_MODS_TO_FLAGS", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_MODS_TO_FLAGS", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_MODS_TO_FLAGS", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_MODS_TO_FLAGS", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_STRING_ARRAY", "[Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toBytes", "(Ljava/lang/module/ModuleDescriptor;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljdk/internal/module/ModuleTarget;Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleTarget;Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "write", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljava/io/OutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toModuleInfo", "(Ljava/lang/module/ModuleDescriptor;Ljdk/internal/module/ModuleResolution;Ljdk/internal/module/ModuleTarget;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toByteBuffer", "(Ljava/lang/module/ModuleDescriptor;)Ljava/nio/ByteBuffer;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -122,7 +122,7 @@ public partial class ModuleInfoWriter
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ModuleInfoWriter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ModuleInfoWriter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

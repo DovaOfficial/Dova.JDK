@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,12 +32,12 @@ public partial class SSLBasicKeyDerivation
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLBasicKeyDerivation;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hashAlg", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "secret", "Ljavax/crypto/SecretKey;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hkdfInfo", "[B"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLBasicKeyDerivation", "(Ljavax/crypto/SecretKey;Ljava/lang/String;[B[BI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deriveKey", "(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createHkdfInfo", "([B[BI)[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hashAlg", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "secret", "Ljavax/crypto/SecretKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hkdfInfo", "[B"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/crypto/SecretKey;Ljava/lang/String;[B[BI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deriveKey", "(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createHkdfInfo", "([B[BI)[B"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -88,7 +88,7 @@ public partial class SSLBasicKeyDerivation
 	}
 
 	[JniSignatureAttribute("(Ljavax/crypto/SecretKey;Ljava/lang/String;[B[BI)V", "")]
-	public SSLBasicKeyDerivation(Dova.JDK.javax.crypto.SecretKey arg0, Dova.JDK.java.lang.String arg1, JavaArray<byte> arg2, JavaArray<byte> arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public SSLBasicKeyDerivation(Dova.JDK.javax.crypto.SecretKey arg0, Dova.JDK.java.lang.String arg1, JavaArray<byte> arg2, JavaArray<byte> arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -125,8 +125,8 @@ public partial class SSLBasicKeyDerivation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLBasicKeyDerivation$SecretSizeSpec;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SecretSizeSpec", "(I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "length", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -149,7 +149,7 @@ public partial class SSLBasicKeyDerivation
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public SecretSizeSpec(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SecretSizeSpec(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

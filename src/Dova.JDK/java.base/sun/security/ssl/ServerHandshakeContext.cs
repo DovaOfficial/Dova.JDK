@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class ServerHandshakeContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ServerHandshakeContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "rejectClientInitiatedRenego", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "legacyAlgorithmConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interimAuthn", "Lsun/security/ssl/SSLPossession;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stapleParams", "Lsun/security/ssl/StatusResponseManager$StaplingParameters;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentCertEntry", "Lsun/security/ssl/CertificateMessage$CertificateEntry;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_STATUS_RESP_DELAY", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statusRespTimeout", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServerHandshakeContext", "(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "kickstart", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "rejectClientInitiatedRenego", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "legacyAlgorithmConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interimAuthn", "Lsun/security/ssl/SSLPossession;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stapleParams", "Lsun/security/ssl/StatusResponseManager$StaplingParameters;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentCertEntry", "Lsun/security/ssl/CertificateMessage$CertificateEntry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_STATUS_RESP_DELAY", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statusRespTimeout", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "kickstart", "()V"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -146,7 +146,7 @@ public partial class ServerHandshakeContext
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V", "")]
-	public ServerHandshakeContext(Dova.JDK.sun.security.ssl.SSLContextImpl arg0, Dova.JDK.sun.security.ssl.TransportContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ServerHandshakeContext(Dova.JDK.sun.security.ssl.SSLContextImpl arg0, Dova.JDK.sun.security.ssl.TransportContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

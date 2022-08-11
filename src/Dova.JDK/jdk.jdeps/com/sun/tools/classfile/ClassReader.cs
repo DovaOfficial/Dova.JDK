@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class ClassReader
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/ClassReader;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "in", "Ljava/io/DataInputStream;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classFile", "Lcom/sun/tools/classfile/ClassFile;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributeFactory", "Lcom/sun/tools/classfile/Attribute$Factory;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassReader", "(Lcom/sun/tools/classfile/ClassFile;Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConstantPool", "()Lcom/sun/tools/classfile/ConstantPool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readInt", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readUTF", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readFloat", "()F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readFully", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readUnsignedByte", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readUnsignedShort", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readLong", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readDouble", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttribute", "()Lcom/sun/tools/classfile/Attribute;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassFile", "()Lcom/sun/tools/classfile/ClassFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "in", "Ljava/io/DataInputStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classFile", "Lcom/sun/tools/classfile/ClassFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributeFactory", "Lcom/sun/tools/classfile/Attribute$Factory;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ClassFile;Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConstantPool", "()Lcom/sun/tools/classfile/ConstantPool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readInt", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readUTF", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readFloat", "()F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readFully", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readUnsignedByte", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readUnsignedShort", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readLong", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readDouble", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttribute", "()Lcom/sun/tools/classfile/Attribute;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassFile", "()Lcom/sun/tools/classfile/ClassFile;"));
 	}
 
 	[JniSignatureAttribute("Ljava/io/DataInputStream;", "private")]
@@ -96,7 +96,7 @@ public partial class ClassReader
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassFile;Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V", "")]
-	public ClassReader(Dova.JDK.com.sun.tools.classfile.ClassFile arg0, Dova.JDK.java.io.InputStream arg1, Dova.JDK.com.sun.tools.classfile.Attribute.Factory arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ClassReader(Dova.JDK.com.sun.tools.classfile.ClassFile arg0, Dova.JDK.java.io.InputStream arg1, Dova.JDK.com.sun.tools.classfile.Attribute.Factory arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

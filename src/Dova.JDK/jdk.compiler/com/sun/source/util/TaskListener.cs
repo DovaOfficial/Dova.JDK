@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface TaskListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/source/util/TaskListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/source/util/TaskEvent;)V", "public")]

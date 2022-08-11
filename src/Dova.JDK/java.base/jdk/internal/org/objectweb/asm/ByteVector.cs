@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class ByteVector
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/objectweb/asm/ByteVector;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteVector", "([B)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteVector", "(I)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteVector", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putByte", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putShort", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putInt", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putLong", "(J)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put12", "(II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putByteArray", "([BII)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enlarge", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeUtf8", "(Ljava/lang/String;II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put11", "(II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put112", "(III)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put122", "(III)Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putUTF8", "(Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "length", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putByte", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putShort", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putInt", "(I)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putLong", "(J)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put12", "(II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putByteArray", "([BII)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enlarge", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeUtf8", "(Ljava/lang/String;II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put11", "(II)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put112", "(III)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put122", "(III)Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putUTF8", "(Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/ByteVector;"));
 	}
 
 	[JniSignatureAttribute("[B", "")]
@@ -84,17 +84,17 @@ public partial class ByteVector
 	}
 
 	[JniSignatureAttribute("([B)V", "")]
-	public ByteVector(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ByteVector(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
-	public ByteVector(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public ByteVector(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ByteVector() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2]))
+	public ByteVector() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2]))
 	{
 	}
 

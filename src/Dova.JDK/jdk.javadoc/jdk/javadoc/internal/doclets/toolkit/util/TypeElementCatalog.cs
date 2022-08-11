@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,18 +31,18 @@ public partial class TypeElementCatalog
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/TypeElementCatalog;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packageSet", "Ljava/util/SortedSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allClasses", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configuration", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comparator", "Ljava/util/Comparator;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeElementCatalog", "(Ljava/lang/Iterable;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeElementCatalog", "(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "()Ljava/util/SortedSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTypeElement", "(Ljavax/lang/model/element/TypeElement;Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTypeElement", "(Ljavax/lang/model/element/TypeElement;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "allUnnamedClasses", "()Ljava/util/SortedSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "allClasses", "(Ljavax/lang/model/element/PackageElement;)Ljava/util/SortedSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packageSet", "Ljava/util/SortedSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allClasses", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "configuration", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "comparator", "Ljava/util/Comparator;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Iterable;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packages", "()Ljava/util/SortedSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTypeElement", "(Ljavax/lang/model/element/TypeElement;Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTypeElement", "(Ljavax/lang/model/element/TypeElement;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "allUnnamedClasses", "()Ljava/util/SortedSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "allClasses", "(Ljavax/lang/model/element/PackageElement;)Ljava/util/SortedSet;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/SortedSet;", "private final")]
@@ -121,12 +121,12 @@ public partial class TypeElementCatalog
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Iterable;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V", "public")]
-	public TypeElementCatalog(Dova.JDK.java.lang.Iterable arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public TypeElementCatalog(Dova.JDK.java.lang.Iterable arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;)V", "public")]
-	public TypeElementCatalog(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public TypeElementCatalog(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 

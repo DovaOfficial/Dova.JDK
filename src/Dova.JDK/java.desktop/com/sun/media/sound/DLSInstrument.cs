@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,31 +31,31 @@ public partial class DLSInstrument
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/DLSInstrument;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "preset", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bank", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "druminstrument", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "guid", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "info", "Lcom/sun/media/sound/DLSInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "regions", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modulators", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DLSInstrument", "(Lcom/sun/media/sound/DLSSoundbank;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DLSInstrument", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setName", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertToModelSrc", "(I)Lcom/sun/media/sound/ModelIdentifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertToModelDest", "(I)Lcom/sun/media/sound/ModelIdentifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModulators", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertToModel", "(Lcom/sun/media/sound/DLSModulator;)Lcom/sun/media/sound/ModelConnectionBlock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPatch", "(Ljavax/sound/midi/Patch;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRegions", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPerformers", "()[Lcom/sun/media/sound/ModelPerformer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGuid", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setGuid", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getData", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPatch_0", "()Ljavax/sound/midi/Patch;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPatch_1", "()Lcom/sun/media/sound/ModelPatch;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInfo", "()Lcom/sun/media/sound/DLSInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "preset", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bank", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "druminstrument", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "guid", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "info", "Lcom/sun/media/sound/DLSInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "regions", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modulators", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/DLSSoundbank;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setName", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertToModelSrc", "(I)Lcom/sun/media/sound/ModelIdentifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertToModelDest", "(I)Lcom/sun/media/sound/ModelIdentifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModulators", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertToModel", "(Lcom/sun/media/sound/DLSModulator;)Lcom/sun/media/sound/ModelConnectionBlock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPatch", "(Ljavax/sound/midi/Patch;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRegions", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPerformers", "()[Lcom/sun/media/sound/ModelPerformer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGuid", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setGuid", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getData", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPatch_0", "()Ljavax/sound/midi/Patch;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPatch_1", "()Lcom/sun/media/sound/ModelPatch;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInfo", "()Lcom/sun/media/sound/DLSInfo;"));
 	}
 
 	[JniSignatureAttribute("I", "")]
@@ -162,12 +162,12 @@ public partial class DLSInstrument
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/DLSSoundbank;)V", "public")]
-	public DLSInstrument(Dova.JDK.com.sun.media.sound.DLSSoundbank arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DLSInstrument(Dova.JDK.com.sun.media.sound.DLSSoundbank arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DLSInstrument() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public DLSInstrument() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 

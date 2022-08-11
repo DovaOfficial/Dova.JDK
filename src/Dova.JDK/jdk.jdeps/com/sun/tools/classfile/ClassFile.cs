@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,35 +31,35 @@ public partial class ClassFile
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/ClassFile;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "magic", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minor_version", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "major_version", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "access_flags", "Lcom/sun/tools/classfile/AccessFlags;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this_class", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "super_class", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interfaces", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fields", "[Lcom/sun/tools/classfile/Field;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methods", "[Lcom/sun/tools/classfile/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributes", "Lcom/sun/tools/classfile/Attributes;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassFile", "(Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassFile", "(IIILcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/AccessFlags;II[I[Lcom/sun/tools/classfile/Field;[Lcom/sun/tools/classfile/Method;Lcom/sun/tools/classfile/Attributes;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInterface", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/File;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/nio/file/Path;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/InputStream;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/nio/file/Path;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read", "(Ljava/io/File;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttribute", "(Ljava/lang/String;)Lcom/sun/tools/classfile/Attribute;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteLength", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteLength", "([Lcom/sun/tools/classfile/Field;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteLength", "([I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteLength", "([Lcom/sun/tools/classfile/Method;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isClass", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSuperclassName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInterfaceName", "(I)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "magic", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minor_version", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "major_version", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "access_flags", "Lcom/sun/tools/classfile/AccessFlags;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this_class", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "super_class", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interfaces", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fields", "[Lcom/sun/tools/classfile/Field;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methods", "[Lcom/sun/tools/classfile/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributes", "Lcom/sun/tools/classfile/Attributes;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IIILcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/AccessFlags;II[I[Lcom/sun/tools/classfile/Field;[Lcom/sun/tools/classfile/Method;Lcom/sun/tools/classfile/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isInterface", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/io/File;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/nio/file/Path;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/io/InputStream;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/nio/file/Path;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read", "(Ljava/io/File;Lcom/sun/tools/classfile/Attribute$Factory;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttribute", "(Ljava/lang/String;)Lcom/sun/tools/classfile/Attribute;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "byteLength", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "byteLength", "([Lcom/sun/tools/classfile/Field;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "byteLength", "([I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "byteLength", "([Lcom/sun/tools/classfile/Method;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isClass", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSuperclassName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInterfaceName", "(I)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("I", "public final")]
@@ -222,12 +222,12 @@ public partial class ClassFile
 	}
 
 	[JniSignatureAttribute("(Ljava/io/InputStream;Lcom/sun/tools/classfile/Attribute$Factory;)V", "")]
-	public ClassFile(Dova.JDK.java.io.InputStream arg0, Dova.JDK.com.sun.tools.classfile.Attribute.Factory arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ClassFile(Dova.JDK.java.io.InputStream arg0, Dova.JDK.com.sun.tools.classfile.Attribute.Factory arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(IIILcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/AccessFlags;II[I[Lcom/sun/tools/classfile/Field;[Lcom/sun/tools/classfile/Method;Lcom/sun/tools/classfile/Attributes;)V", "public")]
-	public ClassFile(int arg0, int arg1, int arg2, Dova.JDK.com.sun.tools.classfile.ConstantPool arg3, Dova.JDK.com.sun.tools.classfile.AccessFlags arg4, int arg5, int arg6, JavaArray<int> arg7, JavaArray<Dova.JDK.com.sun.tools.classfile.Field> arg8, JavaArray<Dova.JDK.com.sun.tools.classfile.Method> arg9, Dova.JDK.com.sun.tools.classfile.Attributes arg10) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
+	public ClassFile(int arg0, int arg1, int arg2, Dova.JDK.com.sun.tools.classfile.ConstantPool arg3, Dova.JDK.com.sun.tools.classfile.AccessFlags arg4, int arg5, int arg6, JavaArray<int> arg7, JavaArray<Dova.JDK.com.sun.tools.classfile.Field> arg8, JavaArray<Dova.JDK.com.sun.tools.classfile.Method> arg9, Dova.JDK.com.sun.tools.classfile.Attributes arg10) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
 	{
 	}
 

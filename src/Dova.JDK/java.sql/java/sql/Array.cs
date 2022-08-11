@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,17 +29,17 @@ public partial interface Array
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/sql/Array;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getArray", "(JI)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getArray", "(Ljava/util/Map;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getArray", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getArray", "(JILjava/util/Map;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "free", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseType", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResultSet", "(JI)Ljava/sql/ResultSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResultSet", "(Ljava/util/Map;)Ljava/sql/ResultSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResultSet", "()Ljava/sql/ResultSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseTypeName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getArray", "(JI)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getArray", "(Ljava/util/Map;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getArray", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getArray", "(JILjava/util/Map;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "free", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseType", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResultSet", "(JILjava/util/Map;)Ljava/sql/ResultSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResultSet", "(JI)Ljava/sql/ResultSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResultSet", "(Ljava/util/Map;)Ljava/sql/ResultSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResultSet", "()Ljava/sql/ResultSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseTypeName", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("(JI)Ljava/lang/Object;", "public abstract")]

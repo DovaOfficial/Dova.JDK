@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class ServerMain
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/sjavac/server/ServerMain;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "errorLog", "Lcom/sun/tools/sjavac/server/log/LazyInitFileLog;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServerMain", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "run", "([Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getErrorLog", "()Lcom/sun/tools/sjavac/server/log/LazyInitFileLog;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "errorLog", "Lcom/sun/tools/sjavac/server/log/LazyInitFileLog;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "run", "([Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getErrorLog", "()Lcom/sun/tools/sjavac/server/log/LazyInitFileLog;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/sjavac/server/log/LazyInitFileLog;", "private static")]
@@ -57,7 +57,7 @@ public partial class ServerMain
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ServerMain() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ServerMain() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

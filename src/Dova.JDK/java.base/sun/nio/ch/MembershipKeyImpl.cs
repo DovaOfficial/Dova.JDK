@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,24 +31,24 @@ public partial class MembershipKeyImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/MembershipKeyImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ch", "Ljava/nio/channels/MulticastChannel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "group", "Ljava/net/InetAddress;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interf", "Ljava/net/NetworkInterface;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljava/net/InetAddress;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "invalid", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stateLock", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "blockedSet", "Ljava/util/HashSet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MembershipKeyImpl", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "group", "()Ljava/net/InetAddress;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "block", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "channel", "()Ljava/nio/channels/MulticastChannel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isValid", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "networkInterface", "()Ljava/net/NetworkInterface;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unblock", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceAddress", "()Ljava/net/InetAddress;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidate", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ch", "Ljava/nio/channels/MulticastChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "group", "Ljava/net/InetAddress;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interf", "Ljava/net/NetworkInterface;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljava/net/InetAddress;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "invalid", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stateLock", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "blockedSet", "Ljava/util/HashSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "group", "()Ljava/net/InetAddress;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "block", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "channel", "()Ljava/nio/channels/MulticastChannel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isValid", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "networkInterface", "()Ljava/net/NetworkInterface;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unblock", "(Ljava/net/InetAddress;)Ljava/nio/channels/MembershipKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceAddress", "()Ljava/net/InetAddress;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidate", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/nio/channels/MulticastChannel;", "private final")]
@@ -155,7 +155,7 @@ public partial class MembershipKeyImpl
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;)V", "private")]
-	public MembershipKeyImpl(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public MembershipKeyImpl(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -246,13 +246,13 @@ public partial class MembershipKeyImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/MembershipKeyImpl$Type6;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupAddress", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceAddress", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Type6", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;[BI[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "index", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "source", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "groupAddress", "()[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupAddress", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceAddress", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;[BI[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "index", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "source", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "groupAddress", "()[B"));
 		}
 
 		[JniSignatureAttribute("[B", "private final")]
@@ -303,7 +303,7 @@ public partial class MembershipKeyImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;[BI[B)V", "")]
-		public Type6(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3, JavaArray<byte> arg4, int arg5, JavaArray<byte> arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public Type6(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3, JavaArray<byte> arg4, int arg5, JavaArray<byte> arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 
@@ -348,13 +348,13 @@ public partial class MembershipKeyImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/MembershipKeyImpl$Type4;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupAddress", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interfAddress", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceAddress", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Type4", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "source", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "groupAddress", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "interfaceAddress", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupAddress", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interfAddress", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceAddress", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "source", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "groupAddress", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "interfaceAddress", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -405,7 +405,7 @@ public partial class MembershipKeyImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/channels/MulticastChannel;Ljava/net/InetAddress;Ljava/net/NetworkInterface;Ljava/net/InetAddress;III)V", "")]
-		public Type4(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3, int arg4, int arg5, int arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public Type4(Dova.JDK.java.nio.channels.MulticastChannel arg0, Dova.JDK.java.net.InetAddress arg1, Dova.JDK.java.net.NetworkInterface arg2, Dova.JDK.java.net.InetAddress arg3, int arg4, int arg5, int arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 

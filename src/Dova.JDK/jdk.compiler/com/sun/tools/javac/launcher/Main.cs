@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class Main
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out", "Ljava/io/PrintWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "bundleName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resourceBundle", "Ljava/util/ResourceBundle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorPrefix", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Main", "(Ljava/io/PrintWriter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Main", "(Ljava/io/PrintStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "main", "([Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "([Ljava/lang/String;[Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "(Ljava/nio/file/Path;Ljava/util/List;Lcom/sun/tools/javac/launcher/Main$Context;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "(Lcom/sun/tools/javac/util/JCDiagnostic$Error;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "execute", "(Ljava/lang/String;[Ljava/lang/String;Lcom/sun/tools/javac/launcher/Main$Context;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFile", "([Ljava/lang/String;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readFile", "(Ljava/nio/file/Path;)Ljavax/tools/JavaFileObject;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavacOpts", "([Ljava/lang/String;)Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out", "Ljava/io/PrintWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "bundleName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resourceBundle", "Ljava/util/ResourceBundle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorPrefix", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/PrintWriter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/PrintStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "main", "([Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "([Ljava/lang/String;[Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "(Ljava/nio/file/Path;Ljava/util/List;Lcom/sun/tools/javac/launcher/Main$Context;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "(Lcom/sun/tools/javac/util/JCDiagnostic$Error;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "execute", "(Ljava/lang/String;[Ljava/lang/String;Lcom/sun/tools/javac/launcher/Main$Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFile", "([Ljava/lang/String;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readFile", "(Ljava/nio/file/Path;)Ljavax/tools/JavaFileObject;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavacOpts", "([Ljava/lang/String;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/io/PrintWriter;", "private")]
@@ -109,12 +109,12 @@ public partial class Main
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintWriter;)V", "public")]
-	public Main(Dova.JDK.java.io.PrintWriter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Main(Dova.JDK.java.io.PrintWriter arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/io/PrintStream;)V", "public")]
-	public Main(Dova.JDK.java.io.PrintStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public Main(Dova.JDK.java.io.PrintStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -189,9 +189,9 @@ public partial class Main
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$Fault;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javac/launcher/Main;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Fault", "(Lcom/sun/tools/javac/launcher/Main;Lcom/sun/tools/javac/util/JCDiagnostic$Error;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/javac/launcher/Main;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/launcher/Main;Lcom/sun/tools/javac/util/JCDiagnostic$Error;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -228,7 +228,7 @@ public partial class Main
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/launcher/Main;Lcom/sun/tools/javac/util/JCDiagnostic$Error;)V", "")]
-		public Fault(Dova.JDK.com.sun.tools.javac.launcher.Main arg0, Dova.JDK.com.sun.tools.javac.util.JCDiagnostic.Error arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Fault(Dova.JDK.com.sun.tools.javac.launcher.Main arg0, Dova.JDK.com.sun.tools.javac.util.JCDiagnostic.Error arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -252,11 +252,11 @@ public partial class Main
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$Context;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inMemoryClasses", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Context", "(Ljava/nio/file/Path;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassLoader", "(Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFileManager", "(Ljavax/tools/StandardJavaFileManager;)Ljavax/tools/JavaFileManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "file", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inMemoryClasses", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/file/Path;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassLoader", "(Ljava/lang/ClassLoader;)Ljava/lang/ClassLoader;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFileManager", "(Ljavax/tools/StandardJavaFileManager;)Ljavax/tools/JavaFileManager;"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/file/Path;", "private final")]
@@ -293,7 +293,7 @@ public partial class Main
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/file/Path;)V", "")]
-		public Context(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Context(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -332,9 +332,9 @@ public partial class Main
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$MainClassListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainClass", "Ljavax/lang/model/element/TypeElement;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MainClassListener", "(Lcom/sun/source/util/JavacTask;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainClass", "Ljavax/lang/model/element/TypeElement;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/source/util/JavacTask;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/lang/model/element/TypeElement;", "")]
@@ -357,7 +357,7 @@ public partial class Main
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/source/util/JavacTask;)V", "")]
-		public MainClassListener(Dova.JDK.com.sun.source.util.JavacTask arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MainClassListener(Dova.JDK.com.sun.source.util.JavacTask arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -387,19 +387,19 @@ public partial class Main
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceFileClasses", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "domain", "Ljava/security/ProtectionDomain;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOT_CLASS_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "PROTOCOL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handler", "Ljava/net/URLStreamHandler;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemoryClassLoader", "(Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/nio/file/Path;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResource", "(Ljava/lang/String;)Ljava/net/URL;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljava/lang/String;)Ljava/net/URL;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toBinaryName", "(Ljava/lang/String;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceFileClasses", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "domain", "Ljava/security/ProtectionDomain;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOT_CLASS_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "PROTOCOL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handler", "Ljava/net/URLStreamHandler;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/nio/file/Path;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResource", "(Ljava/lang/String;)Ljava/net/URL;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljava/lang/String;)Ljava/net/URL;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findResources", "(Ljava/lang/String;)Ljava/util/Enumeration;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toBinaryName", "(Ljava/lang/String;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -478,7 +478,7 @@ public partial class Main
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map;Ljava/lang/ClassLoader;Ljava/nio/file/Path;)V", "")]
-		public MemoryClassLoader(Dova.JDK.java.util.Map arg0, Dova.JDK.java.lang.ClassLoader arg1, Dova.JDK.java.nio.file.Path arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public MemoryClassLoader(Dova.JDK.java.util.Map arg0, Dova.JDK.java.lang.ClassLoader arg1, Dova.JDK.java.nio.file.Path arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -550,9 +550,9 @@ public partial class Main
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader$MemoryURLStreamHandler;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemoryURLStreamHandler", "(Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "openConnection", "(Ljava/net/URL;)Ljava/net/URLConnection;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "openConnection", "(Ljava/net/URL;)Ljava/net/URLConnection;"));
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;", "final")]
@@ -575,7 +575,7 @@ public partial class Main
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader;)V", "private")]
-			public MemoryURLStreamHandler(Dova.JDK.com.sun.tools.javac.launcher.Main.MemoryClassLoader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public MemoryURLStreamHandler(Dova.JDK.com.sun.tools.javac.launcher.Main.MemoryClassLoader arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -606,13 +606,13 @@ public partial class Main
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$MemoryClassLoader$MemoryURLConnection;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "[B"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "in", "Ljava/io/InputStream;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemoryURLConnection", "(Ljava/net/URL;[B)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connect", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputStream", "()Ljava/io/InputStream;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContentType", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContentLengthLong", "()J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytes", "[B"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "in", "Ljava/io/InputStream;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/URL;[B)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connect", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputStream", "()Ljava/io/InputStream;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContentType", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContentLengthLong", "()J"));
 			}
 
 			[JniSignatureAttribute("[B", "private")]
@@ -649,7 +649,7 @@ public partial class Main
 			}
 
 			[JniSignatureAttribute("(Ljava/net/URL;[B)V", "")]
-			public MemoryURLConnection(Dova.JDK.java.net.URL arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public MemoryURLConnection(Dova.JDK.java.net.URL arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -701,10 +701,10 @@ public partial class Main
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/launcher/Main$MemoryFileManager;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "map", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemoryFileManager", "(Ljava/util/Map;Ljavax/tools/JavaFileManager;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaFileForOutput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInMemoryClassFile", "(Ljava/lang/String;)Ljavax/tools/JavaFileObject;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "map", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Map;Ljavax/tools/JavaFileManager;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaFileForOutput", "(Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInMemoryClassFile", "(Ljava/lang/String;)Ljavax/tools/JavaFileObject;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -727,7 +727,7 @@ public partial class Main
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map;Ljavax/tools/JavaFileManager;)V", "")]
-		public MemoryFileManager(Dova.JDK.java.util.Map arg0, Dova.JDK.javax.tools.JavaFileManager arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public MemoryFileManager(Dova.JDK.java.util.Map arg0, Dova.JDK.javax.tools.JavaFileManager arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

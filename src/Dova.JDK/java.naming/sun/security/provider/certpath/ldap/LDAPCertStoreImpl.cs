@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,36 +31,36 @@ public partial class LDAPCertStoreImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USER_CERT", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CA_CERT", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CROSS_CERT", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CRL", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARL", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING0", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BB0", "[[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_ATTRIBUTES", "Ljavax/naming/directory/Attributes;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CACHE_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CACHE_LIFETIME", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIFETIME", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROP_LIFETIME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROP_DISABLE_APP_RESOURCE_FILES", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cf", "Ljava/security/cert/CertificateFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctx", "Ljavax/naming/ldap/LdapContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "communicationError", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prefetchCRLs", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valueCache", "Lsun/security/util/Cache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheHits", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheMisses", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requests", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LDAPCertStoreImpl", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertificates", "(Ljava/security/cert/X509CertSelector;Ljava/lang/String;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertificates", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;Ljava/security/cert/X509CertSelector;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCRLs", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;Ljava/security/cert/X509CRLSelector;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCRLs", "(Ljava/security/cert/X509CRLSelector;Ljava/lang/String;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInitialDirContext", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertPairs", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMatchingCrossCerts", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/security/cert/X509CertSelector;Ljava/security/cert/X509CertSelector;)Ljava/util/Collection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Lsun/security/util/Debug;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USER_CERT", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CA_CERT", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CROSS_CERT", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CRL", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARL", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRING0", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BB0", "[[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_ATTRIBUTES", "Ljavax/naming/directory/Attributes;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_CACHE_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_CACHE_LIFETIME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIFETIME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROP_LIFETIME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROP_DISABLE_APP_RESOURCE_FILES", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cf", "Ljava/security/cert/CertificateFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctx", "Ljavax/naming/ldap/LdapContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "communicationError", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prefetchCRLs", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valueCache", "Lsun/security/util/Cache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheHits", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheMisses", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requests", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertificates", "(Ljava/security/cert/X509CertSelector;Ljava/lang/String;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertificates", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;Ljava/security/cert/X509CertSelector;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCRLs", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;Ljava/security/cert/X509CRLSelector;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCRLs", "(Ljava/security/cert/X509CRLSelector;Ljava/lang/String;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInitialDirContext", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertPairs", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/lang/String;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMatchingCrossCerts", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;Ljava/security/cert/X509CertSelector;Ljava/security/cert/X509CertSelector;)Ljava/util/Collection;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/Debug;", "private static final")]
@@ -377,7 +377,7 @@ public partial class LDAPCertStoreImpl
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "")]
-	public LDAPCertStoreImpl(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public LDAPCertStoreImpl(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -448,17 +448,17 @@ public partial class LDAPCertStoreImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl$LDAPRequest;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valueMap", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestedAttributes", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LDAPRequest", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkName", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValueMap", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cacheAttribute", "(Ljava/lang/String;[[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRequestedAttribute", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributeValues", "(Ljavax/naming/directory/Attribute;)[[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValues", "(Ljava/lang/String;)[[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valueMap", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestedAttributes", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkName", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValueMap", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cacheAttribute", "(Ljava/lang/String;[[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addRequestedAttribute", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributeValues", "(Ljavax/naming/directory/Attribute;)[[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValues", "(Ljava/lang/String;)[[B"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -523,7 +523,7 @@ public partial class LDAPCertStoreImpl
 		}
 
 		[JniSignatureAttribute("(Lsun/security/provider/certpath/ldap/LDAPCertStoreImpl;Ljava/lang/String;)V", "")]
-		public LDAPRequest(Dova.JDK.sun.security.provider.certpath.ldap.LDAPCertStoreImpl arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LDAPRequest(Dova.JDK.sun.security.provider.certpath.ldap.LDAPCertStoreImpl arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

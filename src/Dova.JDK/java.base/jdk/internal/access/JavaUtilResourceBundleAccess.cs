@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,12 +29,12 @@ public partial interface JavaUtilResourceBundleAccess
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/JavaUtilResourceBundleAccess;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParent", "(Ljava/util/ResourceBundle;)Ljava/util/ResourceBundle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setName", "(Ljava/util/ResourceBundle;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocale", "(Ljava/util/ResourceBundle;Ljava/util/Locale;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParent", "(Ljava/util/ResourceBundle;Ljava/util/ResourceBundle;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/Module;)Ljava/util/ResourceBundle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newResourceBundle", "(Ljava/lang/Class;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParent", "(Ljava/util/ResourceBundle;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setName", "(Ljava/util/ResourceBundle;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLocale", "(Ljava/util/ResourceBundle;Ljava/util/Locale;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParent", "(Ljava/util/ResourceBundle;Ljava/util/ResourceBundle;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBundle", "(Ljava/lang/String;Ljava/util/Locale;Ljava/lang/Module;)Ljava/util/ResourceBundle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newResourceBundle", "(Ljava/lang/Class;)Ljava/util/ResourceBundle;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/util/ResourceBundle;)Ljava/util/ResourceBundle;", "public abstract")]

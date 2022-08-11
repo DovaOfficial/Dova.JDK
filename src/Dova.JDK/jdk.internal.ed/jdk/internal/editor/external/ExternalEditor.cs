@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class ExternalEditor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/editor/external/ExternalEditor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorHandler", "Ljava/util/function/Consumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "saveHandler", "Ljava/util/function/Consumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wait", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suspendInteractiveInput", "Ljava/lang/Runnable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resumeInteractiveInput", "Ljava/lang/Runnable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "promptForNewLineToEndWait", "Ljava/lang/Runnable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "watcher", "Ljava/nio/file/WatchService;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "watchedThread", "Ljava/lang/Thread;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dir", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tmpfile", "Ljava/nio/file/Path;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExternalEditor", "(Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/Runnable;Ljava/lang/Runnable;ZLjava/lang/Runnable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "edit", "([Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "edit", "([Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/Runnable;Ljava/lang/Runnable;ZLjava/lang/Runnable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setupWatch", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "launch", "([Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deleteDirectory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "saveFile", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorHandler", "Ljava/util/function/Consumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "saveHandler", "Ljava/util/function/Consumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "wait", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suspendInteractiveInput", "Ljava/lang/Runnable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resumeInteractiveInput", "Ljava/lang/Runnable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "promptForNewLineToEndWait", "Ljava/lang/Runnable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "watcher", "Ljava/nio/file/WatchService;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "watchedThread", "Ljava/lang/Thread;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dir", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tmpfile", "Ljava/nio/file/Path;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/Runnable;Ljava/lang/Runnable;ZLjava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "edit", "([Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "edit", "([Ljava/lang/String;Ljava/lang/String;Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/Runnable;Ljava/lang/Runnable;ZLjava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setupWatch", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "launch", "([Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deleteDirectory", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "saveFile", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/Consumer;", "private final")]
@@ -196,7 +196,7 @@ public partial class ExternalEditor
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Consumer;Ljava/util/function/Consumer;Ljava/lang/Runnable;Ljava/lang/Runnable;ZLjava/lang/Runnable;)V", "")]
-	public ExternalEditor(Dova.JDK.java.util.function.Consumer arg0, Dova.JDK.java.util.function.Consumer arg1, Dova.JDK.java.lang.Runnable arg2, Dova.JDK.java.lang.Runnable arg3, bool arg4, Dova.JDK.java.lang.Runnable arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public ExternalEditor(Dova.JDK.java.util.function.Consumer arg0, Dova.JDK.java.util.function.Consumer arg1, Dova.JDK.java.lang.Runnable arg2, Dova.JDK.java.lang.Runnable arg3, bool arg4, Dova.JDK.java.lang.Runnable arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 

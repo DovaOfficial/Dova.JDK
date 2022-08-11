@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,22 +32,22 @@ public partial class EventQueueImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventQueueImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventSets", "Ljava/util/LinkedList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Lcom/sun/tools/jdi/TargetVM;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventQueueImpl", "(Lcom/sun/jdi/VirtualMachine;Lcom/sun/tools/jdi/TargetVM;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(J)Lcom/sun/jdi/event/EventSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "()Lcom/sun/jdi/event/EventSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enqueue", "(Lcom/sun/jdi/event/EventSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeUnfiltered", "(J)Lcom/sun/tools/jdi/EventSetImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startTimerThread", "(J)Lcom/sun/tools/jdi/EventQueueImpl$TimerThread;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldWait", "(Lcom/sun/tools/jdi/EventQueueImpl$TimerThread;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "virtualMachine", "()Lcom/sun/jdi/VirtualMachine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeInternal", "()Lcom/sun/jdi/event/EventSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventSets", "Ljava/util/LinkedList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Lcom/sun/tools/jdi/TargetVM;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closed", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/jdi/VirtualMachine;Lcom/sun/tools/jdi/TargetVM;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(J)Lcom/sun/jdi/event/EventSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "()Lcom/sun/jdi/event/EventSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enqueue", "(Lcom/sun/jdi/event/EventSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeUnfiltered", "(J)Lcom/sun/tools/jdi/EventSetImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startTimerThread", "(J)Lcom/sun/tools/jdi/EventQueueImpl$TimerThread;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldWait", "(Lcom/sun/tools/jdi/EventQueueImpl$TimerThread;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "virtualMachine", "()Lcom/sun/jdi/VirtualMachine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeInternal", "()Lcom/sun/jdi/event/EventSet;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/LinkedList;", "")]
@@ -98,7 +98,7 @@ public partial class EventQueueImpl
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/VirtualMachine;Lcom/sun/tools/jdi/TargetVM;)V", "")]
-	public EventQueueImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0, Dova.JDK.com.sun.tools.jdi.TargetVM arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public EventQueueImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0, Dova.JDK.com.sun.tools.jdi.TargetVM arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -203,12 +203,12 @@ public partial class EventQueueImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventQueueImpl$TimerThread;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timedOut", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeout", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdi/EventQueueImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TimerThread", "(Lcom/sun/tools/jdi/EventQueueImpl;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "timedOut", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timedOut", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeout", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdi/EventQueueImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventQueueImpl;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "timedOut", "()Z"));
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -259,7 +259,7 @@ public partial class EventQueueImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventQueueImpl;J)V", "")]
-		public TimerThread(Dova.JDK.com.sun.tools.jdi.EventQueueImpl arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public TimerThread(Dova.JDK.com.sun.tools.jdi.EventQueueImpl arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

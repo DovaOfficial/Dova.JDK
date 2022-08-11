@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,13 +30,13 @@ public partial class ResourcePoolEntryFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ResourcePoolEntryFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResourcePoolEntryFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;Ljava/nio/file/Path;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;[B)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;Ljava/nio/file/Path;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;[B)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createSymbolicLink", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "moduleFrom", "(Ljava/lang/String;)Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;Ljava/nio/file/Path;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;[B)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;Ljava/nio/file/Path;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;[B)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createSymbolicLink", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry$Type;Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "moduleFrom", "(Ljava/lang/String;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -45,7 +45,7 @@ public partial class ResourcePoolEntryFactory
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ResourcePoolEntryFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ResourcePoolEntryFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

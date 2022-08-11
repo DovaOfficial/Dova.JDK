@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class MaximallySpecific
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/beans/MaximallySpecific;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MaximallySpecific", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compare", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;ILjdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getParameterClass", "(Ljava/lang/invoke/MethodType;IIZ)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMaximallySpecificMethodHandles", "(Ljava/util/List;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMaximallySpecificMethods", "(Ljava/util/List;Z)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMaximallySpecificMethods", "(Ljava/util/List;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;Ljava/util/function/Function;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isMoreSpecific", "(Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "compare", "(Ljava/lang/Class;Ljava/lang/Class;[Ljava/lang/Class;ILjdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getParameterClass", "(Ljava/lang/invoke/MethodType;IIZ)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMaximallySpecificMethodHandles", "(Ljava/util/List;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMaximallySpecificMethods", "(Ljava/util/List;Z)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMaximallySpecificMethods", "(Ljava/util/List;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;Ljava/util/function/Function;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isMoreSpecific", "(Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Z[Ljava/lang/Class;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -61,7 +61,7 @@ public partial class MaximallySpecific
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public MaximallySpecific() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MaximallySpecific() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

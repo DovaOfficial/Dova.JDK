@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial interface StackFrame
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jdi/StackFrame;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue", "(Lcom/sun/jdi/LocalVariable;)Lcom/sun/jdi/Value;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Lcom/sun/jdi/LocalVariable;Lcom/sun/jdi/Value;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "location", "()Lcom/sun/jdi/Location;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "thread", "()Lcom/sun/jdi/ThreadReference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getArgumentValues", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visibleVariableByName", "(Ljava/lang/String;)Lcom/sun/jdi/LocalVariable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "thisObject", "()Lcom/sun/jdi/ObjectReference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visibleVariables", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValues", "(Ljava/util/List;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValue", "(Lcom/sun/jdi/LocalVariable;)Lcom/sun/jdi/Value;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue", "(Lcom/sun/jdi/LocalVariable;Lcom/sun/jdi/Value;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "location", "()Lcom/sun/jdi/Location;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "thread", "()Lcom/sun/jdi/ThreadReference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getArgumentValues", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visibleVariableByName", "(Ljava/lang/String;)Lcom/sun/jdi/LocalVariable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "thisObject", "()Lcom/sun/jdi/ObjectReference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visibleVariables", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValues", "(Ljava/util/List;)Ljava/util/Map;"));
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/LocalVariable;)Lcom/sun/jdi/Value;", "public abstract")]

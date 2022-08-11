@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,15 +32,15 @@ public partial class ECParameterSpec
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/spec/ECParameterSpec;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curve", "Ljava/security/spec/EllipticCurve;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "g", "Ljava/security/spec/ECPoint;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "n", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "h", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECParameterSpec", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrder", "()Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurve", "()Ljava/security/spec/EllipticCurve;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGenerator", "()Ljava/security/spec/ECPoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCofactor", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curve", "Ljava/security/spec/EllipticCurve;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "g", "Ljava/security/spec/ECPoint;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "n", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "h", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrder", "()Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurve", "()Ljava/security/spec/EllipticCurve;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGenerator", "()Ljava/security/spec/ECPoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCofactor", "()I"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/spec/EllipticCurve;", "private final")]
@@ -105,7 +105,7 @@ public partial class ECParameterSpec
 	}
 
 	[JniSignatureAttribute("(Ljava/security/spec/EllipticCurve;Ljava/security/spec/ECPoint;Ljava/math/BigInteger;I)V", "public")]
-	public ECParameterSpec(Dova.JDK.java.security.spec.EllipticCurve arg0, Dova.JDK.java.security.spec.ECPoint arg1, Dova.JDK.java.math.BigInteger arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public ECParameterSpec(Dova.JDK.java.security.spec.EllipticCurve arg0, Dova.JDK.java.security.spec.ECPoint arg1, Dova.JDK.java.math.BigInteger arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

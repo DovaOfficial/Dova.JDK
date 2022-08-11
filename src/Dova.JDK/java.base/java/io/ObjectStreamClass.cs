@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,119 +32,119 @@ public partial class ObjectStreamClass
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_FIELDS", "[Ljava/io/ObjectStreamField;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialPersistentFields", "[Ljava/io/ObjectStreamField;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reflFactory", "Ljdk/internal/reflect/ReflectionFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cl", "Ljava/lang/Class;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suid", "Ljava/lang/Long;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isProxy", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isEnum", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isRecord", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serializable", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "externalizable", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasWriteObjectData", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasBlockExternalData", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resolveEx", "Ljava/lang/ClassNotFoundException;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deserializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultSerializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fields", "[Ljava/io/ObjectStreamField;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "primDataSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numObjFields", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldRefl", "Ljava/io/ObjectStreamClass$FieldReflector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dataLayout", "[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cons", "Ljava/lang/reflect/Constructor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canonicalCtr", "Ljava/lang/invoke/MethodHandle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deserializationCtrs", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deserializationCtr", "Ljava/lang/invoke/MethodHandle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "domains", "[Ljava/security/ProtectionDomain;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeObjectMethod", "Ljava/lang/reflect/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readObjectMethod", "Ljava/lang/reflect/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readObjectNoDataMethod", "Ljava/lang/reflect/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeReplaceMethod", "Ljava/lang/reflect/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readResolveMethod", "Ljava/lang/reflect/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localDesc", "Ljava/io/ObjectStreamClass;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superDesc", "Ljava/io/ObjectStreamClass;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialized", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectStreamClass", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectStreamClass", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(Ljava/lang/Class;Z)Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnum", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRecord", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInstance", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFields", "(Z)[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFields", "()[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInitialized", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "packageEquals", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "hasStaticInitializer", "(Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSerializable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requireInitialized", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSerialVersionUID", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getReflector", "([Ljava/io/ObjectStreamField;Ljava/io/ObjectStreamClass;)Ljava/io/ObjectStreamClass$FieldReflector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noPermissionsDomain", "()Ljava/security/ProtectionDomain;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classNamesEqual", "(Ljava/lang/String;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeFieldOffsets", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "throwMiscException", "(Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassDataLayout0", "()[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVariantFor", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrimFieldValues", "(Ljava/lang/Object;[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDeclaredSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "matchFields", "([Ljava/io/ObjectStreamField;Ljava/io/ObjectStreamClass;)[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProtectionDomains", "(Ljava/lang/reflect/Constructor;Ljava/lang/Class;)[Ljava/security/ProtectionDomain;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkObjFieldValueTypes", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getExternalizableConstructor", "(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSerializableConstructor", "(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "canonicalRecordCtr", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRecordConstructor", "()Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInheritableMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Method;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPrivateMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Method;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDeclaredSUID", "(Ljava/lang/Class;)Ljava/lang/Long;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "computeDefaultSUID", "(Ljava/lang/Class;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeNonProxy", "(Ljava/io/ObjectOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasWriteReplaceMethod", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeWriteReplace", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkSerialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasWriteObjectMethod", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeWriteObject", "(Ljava/lang/Object;Ljava/io/ObjectOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkDefaultSerialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimDataSize", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimFieldValues", "(Ljava/lang/Object;[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNumObjFields", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isProxy", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initNative", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMethodSignature", "([Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasWriteObjectData", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readNonProxy", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forClass", "()Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolveException", "()Ljava/lang/ClassNotFoundException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initProxy", "(Ljava/lang/Class;Ljava/lang/ClassNotFoundException;Ljava/io/ObjectStreamClass;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initNonProxy", "(Ljava/io/ObjectStreamClass;Ljava/lang/Class;Ljava/lang/ClassNotFoundException;Ljava/io/ObjectStreamClass;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSuperDesc", "()Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocalDesc", "()Ljava/io/ObjectStreamClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkDeserialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInstantiable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isExternalizable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasReadResolveMethod", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeReadResolve", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasBlockExternalData", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassDataLayout", "()[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasReadObjectMethod", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasReadObjectNoDataMethod", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeReadObject", "(Ljava/lang/Object;Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeReadObjectNoData", "(Ljava/lang/Object;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_FIELDS", "[Ljava/io/ObjectStreamField;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialPersistentFields", "[Ljava/io/ObjectStreamField;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reflFactory", "Ljdk/internal/reflect/ReflectionFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cl", "Ljava/lang/Class;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suid", "Ljava/lang/Long;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isProxy", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isEnum", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isRecord", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serializable", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "externalizable", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasWriteObjectData", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasBlockExternalData", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resolveEx", "Ljava/lang/ClassNotFoundException;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deserializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultSerializeEx", "Ljava/io/ObjectStreamClass$ExceptionInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fields", "[Ljava/io/ObjectStreamField;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "primDataSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numObjFields", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldRefl", "Ljava/io/ObjectStreamClass$FieldReflector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dataLayout", "[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cons", "Ljava/lang/reflect/Constructor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canonicalCtr", "Ljava/lang/invoke/MethodHandle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deserializationCtrs", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deserializationCtr", "Ljava/lang/invoke/MethodHandle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "domains", "[Ljava/security/ProtectionDomain;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeObjectMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readObjectMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readObjectNoDataMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeReplaceMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readResolveMethod", "Ljava/lang/reflect/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localDesc", "Ljava/io/ObjectStreamClass;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superDesc", "Ljava/io/ObjectStreamClass;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initialized", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookup", "(Ljava/lang/Class;Z)Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookup", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnum", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRecord", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInstance", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFields", "(Z)[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFields", "()[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getField", "(Ljava/lang/String;Ljava/lang/Class;)Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getField", "(Ljava/lang/String;)Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInitialized", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "packageEquals", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "hasStaticInitializer", "(Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSerializable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requireInitialized", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSerialVersionUID", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getReflector", "([Ljava/io/ObjectStreamField;Ljava/io/ObjectStreamClass;)Ljava/io/ObjectStreamClass$FieldReflector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noPermissionsDomain", "()Ljava/security/ProtectionDomain;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classNamesEqual", "(Ljava/lang/String;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeFieldOffsets", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "throwMiscException", "(Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassDataLayout0", "()[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVariantFor", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrimFieldValues", "(Ljava/lang/Object;[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDeclaredSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "matchFields", "([Ljava/io/ObjectStreamField;Ljava/io/ObjectStreamClass;)[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookupAny", "(Ljava/lang/Class;)Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProtectionDomains", "(Ljava/lang/reflect/Constructor;Ljava/lang/Class;)[Ljava/security/ProtectionDomain;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkObjFieldValueTypes", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getExternalizableConstructor", "(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSerializableConstructor", "(Ljava/lang/Class;)Ljava/lang/reflect/Constructor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "canonicalRecordCtr", "(Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRecordConstructor", "()Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInheritableMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Method;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPrivateMethod", "(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/reflect/Method;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSerialFields", "(Ljava/lang/Class;)[Ljava/io/ObjectStreamField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDeclaredSUID", "(Ljava/lang/Class;)Ljava/lang/Long;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "computeDefaultSUID", "(Ljava/lang/Class;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeNonProxy", "(Ljava/io/ObjectOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasWriteReplaceMethod", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeWriteReplace", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkSerialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasWriteObjectMethod", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeWriteObject", "(Ljava/lang/Object;Ljava/io/ObjectOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkDefaultSerialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimDataSize", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimFieldValues", "(Ljava/lang/Object;[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNumObjFields", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isProxy", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initNative", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMethodSignature", "([Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasWriteObjectData", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readNonProxy", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forClass", "()Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolveException", "()Ljava/lang/ClassNotFoundException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initProxy", "(Ljava/lang/Class;Ljava/lang/ClassNotFoundException;Ljava/io/ObjectStreamClass;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initNonProxy", "(Ljava/io/ObjectStreamClass;Ljava/lang/Class;Ljava/lang/ClassNotFoundException;Ljava/io/ObjectStreamClass;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSuperDesc", "()Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocalDesc", "()Ljava/io/ObjectStreamClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkDeserialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isInstantiable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isExternalizable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasReadResolveMethod", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeReadResolve", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasBlockExternalData", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassDataLayout", "()[Ljava/io/ObjectStreamClass$ClassDataSlot;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasReadObjectMethod", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasReadObjectNoDataMethod", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeReadObject", "(Ljava/lang/Object;Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeReadObjectNoData", "(Ljava/lang/Object;)V"));
 	}
 
 	[JniSignatureAttribute("[Ljava/io/ObjectStreamField;", "public static final")]
@@ -671,12 +671,12 @@ public partial class ObjectStreamClass
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ObjectStreamClass() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ObjectStreamClass() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Class;)V", "private")]
-	public ObjectStreamClass(Dova.JDK.java.lang.Class arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public ObjectStreamClass(Dova.JDK.java.lang.Class arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -1196,9 +1196,9 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$Caches;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "localDescs", "Ljava/io/ClassCache;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "reflectors", "Ljava/io/ClassCache;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Caches", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "localDescs", "Ljava/io/ClassCache;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "reflectors", "Ljava/io/ClassCache;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/ClassCache;", "static final")]
@@ -1235,7 +1235,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Caches() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Caches() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1259,22 +1259,22 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$FieldReflector;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "unsafe", "Ljdk/internal/misc/Unsafe;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fields", "[Ljava/io/ObjectStreamField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numPrimFields", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readKeys", "[J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeKeys", "[J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offsets", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeCodes", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "types", "[Ljava/lang/Class;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldReflector", "([Ljava/io/ObjectStreamField;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFields", "()[Ljava/io/ObjectStreamField;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrimFieldValues", "(Ljava/lang/Object;[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkObjectFieldValueTypes", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimFieldValues", "(Ljava/lang/Object;[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "unsafe", "Ljdk/internal/misc/Unsafe;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fields", "[Ljava/io/ObjectStreamField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numPrimFields", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readKeys", "[J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeKeys", "[J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offsets", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeCodes", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "types", "[Ljava/lang/Class;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/io/ObjectStreamField;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFields", "()[Ljava/io/ObjectStreamField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrimFieldValues", "(Ljava/lang/Object;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkObjectFieldValueTypes", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimFieldValues", "(Ljava/lang/Object;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getObjFieldValues", "(Ljava/lang/Object;[Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/misc/Unsafe;", "private static final")]
@@ -1395,7 +1395,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("([Ljava/io/ObjectStreamField;)V", "")]
-		public FieldReflector(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public FieldReflector(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1462,10 +1462,10 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$ExceptionInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "className", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "message", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExceptionInfo", "(Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInvalidClassException", "()Ljava/io/InvalidClassException;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "className", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "message", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInvalidClassException", "()Ljava/io/InvalidClassException;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1502,7 +1502,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)V", "")]
-		public ExceptionInfo(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ExceptionInfo(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1533,13 +1533,13 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$DeserializationConstructorsCache;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_SIZE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "first", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DeserializationConstructorsCache", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "([Ljava/io/ObjectStreamField;)Ljava/lang/invoke/MethodHandle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putIfAbsentAndGet", "([Ljava/io/ObjectStreamField;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_SIZE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "first", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "([Ljava/io/ObjectStreamField;)Ljava/lang/invoke/MethodHandle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putIfAbsentAndGet", "([Ljava/io/ObjectStreamField;Ljava/lang/invoke/MethodHandle;)Ljava/lang/invoke/MethodHandle;"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -1604,7 +1604,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public DeserializationConstructorsCache() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DeserializationConstructorsCache() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1640,12 +1640,12 @@ public partial class ObjectStreamClass
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Key", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldType", "(I)Ljava/lang/Class;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldName", "(I)Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldType", "(I)Ljava/lang/Class;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldName", "(I)Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1654,7 +1654,7 @@ public partial class ObjectStreamClass
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public Key() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public Key() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -1712,13 +1712,13 @@ public partial class ObjectStreamClass
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "next", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldNames", "[Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldTypes", "[Ljava/lang/Class;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Impl", "([Ljava/io/ObjectStreamField;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldType", "(I)Ljava/lang/Class;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldName", "(I)Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "next", "Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldNames", "[Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldTypes", "[Ljava/lang/Class;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/io/ObjectStreamField;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldType", "(I)Ljava/lang/Class;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldName", "(I)Ljava/lang/String;"));
 				}
 
 				[JniSignatureAttribute("Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Impl;", "")]
@@ -1769,7 +1769,7 @@ public partial class ObjectStreamClass
 				}
 
 				[JniSignatureAttribute("([Ljava/io/ObjectStreamField;)V", "")]
-				public Impl(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+				public Impl(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 				{
 				}
 
@@ -1814,11 +1814,11 @@ public partial class ObjectStreamClass
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$DeserializationConstructorsCache$Key$Lookup;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fields", "[Ljava/io/ObjectStreamField;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Lookup", "([Ljava/io/ObjectStreamField;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldType", "(I)Ljava/lang/Class;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fieldName", "(I)Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fields", "[Ljava/io/ObjectStreamField;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/io/ObjectStreamField;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldType", "(I)Ljava/lang/Class;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fieldName", "(I)Ljava/lang/String;"));
 				}
 
 				[JniSignatureAttribute("[Ljava/io/ObjectStreamField;", "final")]
@@ -1841,7 +1841,7 @@ public partial class ObjectStreamClass
 				}
 
 				[JniSignatureAttribute("([Ljava/io/ObjectStreamField;)V", "")]
-				public Lookup(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+				public Lookup(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 				{
 				}
 
@@ -1887,9 +1887,9 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$ClassDataSlot;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "desc", "Ljava/io/ObjectStreamClass;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasData", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassDataSlot", "(Ljava/io/ObjectStreamClass;Z)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "desc", "Ljava/io/ObjectStreamClass;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasData", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/ObjectStreamClass;Z)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/ObjectStreamClass;", "final")]
@@ -1926,7 +1926,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("(Ljava/io/ObjectStreamClass;Z)V", "")]
-		public ClassDataSlot(Dova.JDK.java.io.ObjectStreamClass arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ClassDataSlot(Dova.JDK.java.io.ObjectStreamClass arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1949,12 +1949,12 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$MemberSignature;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "member", "Ljava/lang/reflect/Member;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemberSignature", "(Ljava/lang/reflect/Field;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemberSignature", "(Ljava/lang/reflect/Constructor;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemberSignature", "(Ljava/lang/reflect/Method;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "member", "Ljava/lang/reflect/Member;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Field;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Constructor;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Method;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/reflect/Member;", "public final")]
@@ -2005,17 +2005,17 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Field;)V", "public")]
-		public MemberSignature(Dova.JDK.java.lang.reflect.Field arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MemberSignature(Dova.JDK.java.lang.reflect.Field arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Constructor;)V", "public")]
-		public MemberSignature(Dova.JDK.java.lang.reflect.Constructor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public MemberSignature(Dova.JDK.java.lang.reflect.Constructor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Method;)V", "public")]
-		public MemberSignature(Dova.JDK.java.lang.reflect.Method arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+		public MemberSignature(Dova.JDK.java.lang.reflect.Method arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 		{
 		}
 
@@ -2039,11 +2039,11 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$FieldReflectorKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sigs", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hash", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldReflectorKey", "([Ljava/io/ObjectStreamField;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sigs", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hash", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/io/ObjectStreamField;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/String;", "private final")]
@@ -2080,7 +2080,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("([Ljava/io/ObjectStreamField;)V", "")]
-		public FieldReflectorKey(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public FieldReflectorKey(JavaArray<Dova.JDK.java.io.ObjectStreamField> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2118,11 +2118,11 @@ public partial class ObjectStreamClass
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectStreamClass$RecordSupport;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRIM_VALUE_EXTRACTORS", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RecordSupport", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "streamFieldExtractor", "(Ljava/lang/String;Ljava/lang/Class;Ljava/io/ObjectStreamClass;)Ljava/lang/invoke/MethodHandle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "numberPrimValues", "(Ljava/io/ObjectStreamClass;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "deserializationCtr", "(Ljava/io/ObjectStreamClass;)Ljava/lang/invoke/MethodHandle;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRIM_VALUE_EXTRACTORS", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "streamFieldExtractor", "(Ljava/lang/String;Ljava/lang/Class;Ljava/io/ObjectStreamClass;)Ljava/lang/invoke/MethodHandle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "numberPrimValues", "(Ljava/io/ObjectStreamClass;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "deserializationCtr", "(Ljava/io/ObjectStreamClass;)Ljava/lang/invoke/MethodHandle;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -2145,7 +2145,7 @@ public partial class ObjectStreamClass
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public RecordSupport() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RecordSupport() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

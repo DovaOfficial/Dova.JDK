@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class TemplateManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/TemplateManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "O_ANY", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "O_IMPORT", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "O_GENERATE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "primitiveTemplates", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compositeTemplates", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TemplateManager", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "(Ljava/lang/String;JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTemplate", "(Ljava/lang/String;JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildCompositeTemplate", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Lsun/security/pkcs11/TemplateManager$Template;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTemplate", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Lsun/security/pkcs11/TemplateManager$Template;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEBUG", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "O_ANY", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "O_IMPORT", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "O_GENERATE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "primitiveTemplates", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compositeTemplates", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "(Ljava/lang/String;JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTemplate", "(Ljava/lang/String;JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildCompositeTemplate", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Lsun/security/pkcs11/TemplateManager$Template;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTemplate", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Lsun/security/pkcs11/TemplateManager$Template;"));
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -134,7 +134,7 @@ public partial class TemplateManager
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public TemplateManager() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TemplateManager() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -184,14 +184,14 @@ public partial class TemplateManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/TemplateManager$TemplateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "operation", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyType", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyAlgorithm", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TemplateKey", "(Ljava/lang/String;JJ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appliesTo", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "operation", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyType", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyAlgorithm", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;JJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appliesTo", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -242,7 +242,7 @@ public partial class TemplateManager
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;JJ)V", "")]
-		public TemplateKey(Dova.JDK.java.lang.String arg0, long arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public TemplateKey(Dova.JDK.java.lang.String arg0, long arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -294,14 +294,14 @@ public partial class TemplateManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/TemplateManager$Template;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "A0", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributes", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Template", "()V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Template", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Lsun/security/pkcs11/TemplateManager$Template;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "combine", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "A0", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributes", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Lsun/security/pkcs11/TemplateManager$Template;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "combine", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
 		}
 
 		[JniSignatureAttribute("[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;", "private static final")]
@@ -338,12 +338,12 @@ public partial class TemplateManager
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Template() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Template() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
 		[JniSignatureAttribute("([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public Template(JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public Template(JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
@@ -393,9 +393,9 @@ public partial class TemplateManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/TemplateManager$KeyAndTemplate;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Lsun/security/pkcs11/TemplateManager$TemplateKey;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "template", "Lsun/security/pkcs11/TemplateManager$Template;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyAndTemplate", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;Lsun/security/pkcs11/TemplateManager$Template;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "key", "Lsun/security/pkcs11/TemplateManager$TemplateKey;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "template", "Lsun/security/pkcs11/TemplateManager$Template;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/TemplateManager$TemplateKey;Lsun/security/pkcs11/TemplateManager$Template;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/TemplateManager$TemplateKey;", "final")]
@@ -432,7 +432,7 @@ public partial class TemplateManager
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/TemplateManager$TemplateKey;Lsun/security/pkcs11/TemplateManager$Template;)V", "")]
-		public KeyAndTemplate(Dova.JDK.sun.security.pkcs11.TemplateManager.TemplateKey arg0, Dova.JDK.sun.security.pkcs11.TemplateManager.Template arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public KeyAndTemplate(Dova.JDK.sun.security.pkcs11.TemplateManager.TemplateKey arg0, Dova.JDK.sun.security.pkcs11.TemplateManager.Template arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

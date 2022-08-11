@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class StreamCloser
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/stream/StreamCloser;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "toCloseQueue", "Ljava/util/WeakHashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "streamCloser", "Ljava/lang/Thread;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StreamCloser", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createCloseAction", "(Ljavax/imageio/stream/ImageInputStream;)Lcom/sun/imageio/stream/StreamCloser$CloseAction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "removeFromQueue", "(Lcom/sun/imageio/stream/StreamCloser$CloseAction;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addToQueue", "(Lcom/sun/imageio/stream/StreamCloser$CloseAction;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "toCloseQueue", "Ljava/util/WeakHashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "streamCloser", "Ljava/lang/Thread;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createCloseAction", "(Ljavax/imageio/stream/ImageInputStream;)Lcom/sun/imageio/stream/StreamCloser$CloseAction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "removeFromQueue", "(Lcom/sun/imageio/stream/StreamCloser$CloseAction;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addToQueue", "(Lcom/sun/imageio/stream/StreamCloser$CloseAction;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/WeakHashMap;", "private static")]
@@ -73,7 +73,7 @@ public partial class StreamCloser
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public StreamCloser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public StreamCloser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -115,9 +115,9 @@ public partial class StreamCloser
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/stream/StreamCloser$CloseAction;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iis", "Ljavax/imageio/stream/ImageInputStream;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CloseAction", "(Ljavax/imageio/stream/ImageInputStream;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "performAction", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iis", "Ljavax/imageio/stream/ImageInputStream;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/imageio/stream/ImageInputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "performAction", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/imageio/stream/ImageInputStream;", "private")]
@@ -140,7 +140,7 @@ public partial class StreamCloser
 		}
 
 		[JniSignatureAttribute("(Ljavax/imageio/stream/ImageInputStream;)V", "private")]
-		public CloseAction(Dova.JDK.javax.imageio.stream.ImageInputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CloseAction(Dova.JDK.javax.imageio.stream.ImageInputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

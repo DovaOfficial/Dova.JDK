@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class Authenticator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/krb5/internal/Authenticator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "authenticator_vno", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cname", "Lsun/security/krb5/PrincipalName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cksum", "Lsun/security/krb5/Checksum;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cusec", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctime", "Lsun/security/krb5/internal/KerberosTime;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subKey", "Lsun/security/krb5/EncryptionKey;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "seqNumber", "Ljava/lang/Integer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "authorizationData", "Lsun/security/krb5/internal/AuthorizationData;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Authenticator", "(Lsun/security/util/DerValue;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Authenticator", "([B)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Authenticator", "(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/Checksum;ILsun/security/krb5/internal/KerberosTime;Lsun/security/krb5/EncryptionKey;Ljava/lang/Integer;Lsun/security/krb5/internal/AuthorizationData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Lsun/security/util/DerValue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asn1Encode", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSubKey", "()Lsun/security/krb5/EncryptionKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSeqNumber", "()Ljava/lang/Integer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChecksum", "()Lsun/security/krb5/Checksum;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "authenticator_vno", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cname", "Lsun/security/krb5/PrincipalName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cksum", "Lsun/security/krb5/Checksum;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cusec", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctime", "Lsun/security/krb5/internal/KerberosTime;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subKey", "Lsun/security/krb5/EncryptionKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "seqNumber", "Ljava/lang/Integer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "authorizationData", "Lsun/security/krb5/internal/AuthorizationData;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/DerValue;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/Checksum;ILsun/security/krb5/internal/KerberosTime;Lsun/security/krb5/EncryptionKey;Ljava/lang/Integer;Lsun/security/krb5/internal/AuthorizationData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Lsun/security/util/DerValue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asn1Encode", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSubKey", "()Lsun/security/krb5/EncryptionKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSeqNumber", "()Ljava/lang/Integer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChecksum", "()Lsun/security/krb5/Checksum;"));
 	}
 
 	[JniSignatureAttribute("I", "public")]
@@ -167,17 +167,17 @@ public partial class Authenticator
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/DerValue;)V", "public")]
-	public Authenticator(Dova.JDK.sun.security.util.DerValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Authenticator(Dova.JDK.sun.security.util.DerValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([B)V", "public")]
-	public Authenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public Authenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/PrincipalName;Lsun/security/krb5/Checksum;ILsun/security/krb5/internal/KerberosTime;Lsun/security/krb5/EncryptionKey;Ljava/lang/Integer;Lsun/security/krb5/internal/AuthorizationData;)V", "public")]
-	public Authenticator(Dova.JDK.sun.security.krb5.PrincipalName arg0, Dova.JDK.sun.security.krb5.Checksum arg1, int arg2, Dova.JDK.sun.security.krb5.@internal.KerberosTime arg3, Dova.JDK.sun.security.krb5.EncryptionKey arg4, Dova.JDK.java.lang.Integer arg5, Dova.JDK.sun.security.krb5.@internal.AuthorizationData arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public Authenticator(Dova.JDK.sun.security.krb5.PrincipalName arg0, Dova.JDK.sun.security.krb5.Checksum arg1, int arg2, Dova.JDK.sun.security.krb5.@internal.KerberosTime arg3, Dova.JDK.sun.security.krb5.EncryptionKey arg4, Dova.JDK.java.lang.Integer arg5, Dova.JDK.sun.security.krb5.@internal.AuthorizationData arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 

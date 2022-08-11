@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,25 +31,25 @@ public partial class RadialGradientPaintContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/RadialGradientPaintContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isSimpleFocus", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isNonCyclic", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "radius", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerX", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerY", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "focusX", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "focusY", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "radiusSq", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constA", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constB", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gDeltaDelta", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "trivial", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCALEBACK", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SQRT_LUT_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sqrtLut", "[F"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaintContext", "(Ljava/awt/RadialGradientPaint;Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "simpleNonCyclicFillRaster", "([IIIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cyclicCircularGradientFillRaster", "([IIIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fillRaster", "([IIIIIII)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isSimpleFocus", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isNonCyclic", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "radius", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerX", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerY", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "focusX", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "focusY", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "radiusSq", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constA", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constB", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gDeltaDelta", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "trivial", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCALEBACK", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SQRT_LUT_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sqrtLut", "[F"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/RadialGradientPaint;Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "simpleNonCyclicFillRaster", "([IIIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cyclicCircularGradientFillRaster", "([IIIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fillRaster", "([IIIIIII)V"));
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -268,7 +268,7 @@ public partial class RadialGradientPaintContext
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/RadialGradientPaint;Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;)V", "")]
-	public RadialGradientPaintContext(Dova.JDK.java.awt.RadialGradientPaint arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.Rectangle arg2, Dova.JDK.java.awt.geom.Rectangle2D arg3, Dova.JDK.java.awt.geom.AffineTransform arg4, Dova.JDK.java.awt.RenderingHints arg5, float arg6, float arg7, float arg8, float arg9, float arg10, JavaArray<float> arg11, JavaArray<Dova.JDK.java.awt.Color> arg12, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg13, Dova.JDK.java.awt.MultipleGradientPaint.ColorSpaceType arg14) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14))
+	public RadialGradientPaintContext(Dova.JDK.java.awt.RadialGradientPaint arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.Rectangle arg2, Dova.JDK.java.awt.geom.Rectangle2D arg3, Dova.JDK.java.awt.geom.AffineTransform arg4, Dova.JDK.java.awt.RenderingHints arg5, float arg6, float arg7, float arg8, float arg9, float arg10, JavaArray<float> arg11, JavaArray<Dova.JDK.java.awt.Color> arg12, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg13, Dova.JDK.java.awt.MultipleGradientPaint.ColorSpaceType arg14) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14))
 	{
 	}
 

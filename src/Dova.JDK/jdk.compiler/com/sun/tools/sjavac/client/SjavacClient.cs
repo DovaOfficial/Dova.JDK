@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,20 +32,20 @@ public partial class SjavacClient
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/sjavac/client/SjavacClient;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "portFile", "Lcom/sun/tools/sjavac/server/PortFile;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverCommand", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "KEEPALIVE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POOLSIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONNECTION_TIMEOUT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_CONNECT_ATTEMPTS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WAIT_BETWEEN_CONNECT_ATTEMPTS", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SjavacClient", "(Lcom/sun/tools/sjavac/options/Options;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shutdown", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "([Ljava/lang/String;)Lcom/sun/tools/javac/main/Main$Result;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryConnect", "()Ljava/net/Socket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSureServerIsRunning", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeConnectionAttempt", "()Ljava/net/Socket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startNewServer", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "portFile", "Lcom/sun/tools/sjavac/server/PortFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverCommand", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "KEEPALIVE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POOLSIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONNECTION_TIMEOUT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_CONNECT_ATTEMPTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WAIT_BETWEEN_CONNECT_ATTEMPTS", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/sjavac/options/Options;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shutdown", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "([Ljava/lang/String;)Lcom/sun/tools/javac/main/Main$Result;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryConnect", "()Ljava/net/Socket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSureServerIsRunning", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeConnectionAttempt", "()Ljava/net/Socket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startNewServer", "()V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/sjavac/server/PortFile;", "private")]
@@ -152,7 +152,7 @@ public partial class SjavacClient
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/sjavac/options/Options;)V", "public")]
-	public SjavacClient(Dova.JDK.com.sun.tools.sjavac.options.Options arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SjavacClient(Dova.JDK.com.sun.tools.sjavac.options.Options arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

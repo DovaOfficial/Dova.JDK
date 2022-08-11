@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface Visitor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/generics/visitor/Visitor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClassSignature", "(Lsun/reflect/generics/tree/ClassSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMethodTypeSignature", "(Lsun/reflect/generics/tree/MethodTypeSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitClassSignature", "(Lsun/reflect/generics/tree/ClassSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitMethodTypeSignature", "(Lsun/reflect/generics/tree/MethodTypeSignature;)V"));
 	}
 
 	[JniSignatureAttribute("(Lsun/reflect/generics/tree/ClassSignature;)V", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class TypeAnnotationWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/TypeAnnotationWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotationWriter", "Lcom/sun/tools/javap/AnnotationWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classWriter", "Lcom/sun/tools/javap/ClassWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pcMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeAnnotationWriter", "(Lcom/sun/tools/javap/Context;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "(Lcom/sun/tools/classfile/Code_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "check", "(Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;Lcom/sun/tools/classfile/RuntimeTypeAnnotations_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javap/Context;)Lcom/sun/tools/javap/TypeAnnotationWriter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeDetails", "(Lcom/sun/tools/classfile/Instruction;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addNote", "(ILcom/sun/tools/javap/TypeAnnotationWriter$Note;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotationWriter", "Lcom/sun/tools/javap/AnnotationWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classWriter", "Lcom/sun/tools/javap/ClassWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pcMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javap/Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "(Lcom/sun/tools/classfile/Code_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "check", "(Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;Lcom/sun/tools/classfile/RuntimeTypeAnnotations_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "(Lcom/sun/tools/javap/Context;)Lcom/sun/tools/javap/TypeAnnotationWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeDetails", "(Lcom/sun/tools/classfile/Instruction;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addNote", "(ILcom/sun/tools/javap/TypeAnnotationWriter$Note;)V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javap/AnnotationWriter;", "private")]
@@ -90,7 +90,7 @@ public partial class TypeAnnotationWriter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javap/Context;)V", "protected")]
-	public TypeAnnotationWriter(Dova.JDK.com.sun.tools.javap.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TypeAnnotationWriter(Dova.JDK.com.sun.tools.javap.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -144,13 +144,13 @@ public partial class TypeAnnotationWriter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VISIBLE", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVISIBLE", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NoteKind", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VISIBLE", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVISIBLE", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;", "public static final")]
@@ -201,7 +201,7 @@ public partial class TypeAnnotationWriter
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public NoteKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NoteKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -245,9 +245,9 @@ public partial class TypeAnnotationWriter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/TypeAnnotationWriter$Note;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "kind", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "anno", "Lcom/sun/tools/classfile/TypeAnnotation;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Note", "(Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;Lcom/sun/tools/classfile/TypeAnnotation;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "kind", "Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "anno", "Lcom/sun/tools/classfile/TypeAnnotation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;Lcom/sun/tools/classfile/TypeAnnotation;)V"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;", "public final")]
@@ -284,7 +284,7 @@ public partial class TypeAnnotationWriter
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javap/TypeAnnotationWriter$NoteKind;Lcom/sun/tools/classfile/TypeAnnotation;)V", "")]
-		public Note(Dova.JDK.com.sun.tools.javap.TypeAnnotationWriter.NoteKind arg0, Dova.JDK.com.sun.tools.classfile.TypeAnnotation arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Note(Dova.JDK.com.sun.tools.javap.TypeAnnotationWriter.NoteKind arg0, Dova.JDK.com.sun.tools.classfile.TypeAnnotation arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

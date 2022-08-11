@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface ErroneousTree
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/source/tree/ErroneousTree;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getErrorTrees", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getErrorTrees", "()Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/util/List;", "public abstract")]

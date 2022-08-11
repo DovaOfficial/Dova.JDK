@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface PreferencesFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/prefs/PreferencesFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "userRoot", "()Ljava/util/prefs/Preferences;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "systemRoot", "()Ljava/util/prefs/Preferences;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "userRoot", "()Ljava/util/prefs/Preferences;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "systemRoot", "()Ljava/util/prefs/Preferences;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/util/prefs/Preferences;", "public abstract")]

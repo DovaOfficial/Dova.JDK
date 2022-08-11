@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface ConnectionEventListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/ConnectionEventListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connectionClosed", "(Ljavax/sql/ConnectionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connectionErrorOccurred", "(Ljavax/sql/ConnectionEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/ConnectionEvent;)V", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,67 +31,67 @@ public partial class DateTimeFormatter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/format/DateTimeFormatter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "printerParser", "Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locale", "Ljava/util/Locale;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decimalStyle", "Ljava/time/format/DecimalStyle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resolverStyle", "Ljava/time/format/ResolverStyle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resolverFields", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "chrono", "Ljava/time/chrono/Chronology;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zone", "Ljava/time/ZoneId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_LOCAL_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_OFFSET_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_LOCAL_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_OFFSET_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_LOCAL_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_OFFSET_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_ZONED_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_ORDINAL_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_WEEK_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISO_INSTANT", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BASIC_ISO_DATE", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RFC_1123_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARSED_EXCESS_DAYS", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARSED_LEAP_SECOND", "Ljava/time/temporal/TemporalQuery;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DateTimeFormatter", "(Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;Ljava/util/Locale;Ljava/time/format/DecimalStyle;Ljava/time/format/ResolverStyle;Ljava/util/Set;Ljava/time/chrono/Chronology;Ljava/time/ZoneId;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljava/lang/CharSequence;Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljava/lang/CharSequence;)Ljava/time/temporal/TemporalAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChronology", "()Ljava/time/chrono/Chronology;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "formatTo", "(Ljava/time/temporal/TemporalAccessor;Ljava/lang/Appendable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseResolved0", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createError", "(Ljava/lang/CharSequence;Ljava/lang/RuntimeException;)Ljava/time/format/DateTimeParseException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseUnresolved0", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/format/DateTimeParseContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofPattern", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofPattern", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofLocalizedDate", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofLocalizedTime", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofLocalizedDateTime", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofLocalizedDateTime", "(Ljava/time/format/FormatStyle;Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parsedExcessDays", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parsedLeapSecond", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocale", "()Ljava/util/Locale;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withLocale", "(Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "localizedBy", "(Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDecimalStyle", "()Ljava/time/format/DecimalStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withDecimalStyle", "(Ljava/time/format/DecimalStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withChronology", "(Ljava/time/chrono/Chronology;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolverStyle", "()Ljava/time/format/ResolverStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withResolverStyle", "(Ljava/time/format/ResolverStyle;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolverFields", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withResolverFields", "([Ljava/time/temporal/TemporalField;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withResolverFields", "(Ljava/util/Set;)Ljava/time/format/DateTimeFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseBest", "(Ljava/lang/CharSequence;[Ljava/time/temporal/TemporalQuery;)Ljava/time/temporal/TemporalAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseUnresolved", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toPrinterParser", "(Z)Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFormat", "()Ljava/text/Format;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFormat", "(Ljava/time/temporal/TemporalQuery;)Ljava/text/Format;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "printerParser", "Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "locale", "Ljava/util/Locale;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decimalStyle", "Ljava/time/format/DecimalStyle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resolverStyle", "Ljava/time/format/ResolverStyle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resolverFields", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "chrono", "Ljava/time/chrono/Chronology;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zone", "Ljava/time/ZoneId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_LOCAL_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_OFFSET_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_LOCAL_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_OFFSET_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_LOCAL_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_OFFSET_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_ZONED_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_ORDINAL_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_WEEK_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISO_INSTANT", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BASIC_ISO_DATE", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RFC_1123_DATE_TIME", "Ljava/time/format/DateTimeFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARSED_EXCESS_DAYS", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARSED_LEAP_SECOND", "Ljava/time/temporal/TemporalQuery;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;Ljava/util/Locale;Ljava/time/format/DecimalStyle;Ljava/time/format/ResolverStyle;Ljava/util/Set;Ljava/time/chrono/Chronology;Ljava/time/ZoneId;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/time/temporal/TemporalAccessor;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljava/lang/CharSequence;Ljava/time/temporal/TemporalQuery;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljava/lang/CharSequence;)Ljava/time/temporal/TemporalAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChronology", "()Ljava/time/chrono/Chronology;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "formatTo", "(Ljava/time/temporal/TemporalAccessor;Ljava/lang/Appendable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseResolved0", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createError", "(Ljava/lang/CharSequence;Ljava/lang/RuntimeException;)Ljava/time/format/DateTimeParseException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseUnresolved0", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/format/DateTimeParseContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofPattern", "(Ljava/lang/String;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofPattern", "(Ljava/lang/String;Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofLocalizedDate", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofLocalizedTime", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofLocalizedDateTime", "(Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofLocalizedDateTime", "(Ljava/time/format/FormatStyle;Ljava/time/format/FormatStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parsedExcessDays", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parsedLeapSecond", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocale", "()Ljava/util/Locale;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withLocale", "(Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "localizedBy", "(Ljava/util/Locale;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDecimalStyle", "()Ljava/time/format/DecimalStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withDecimalStyle", "(Ljava/time/format/DecimalStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withChronology", "(Ljava/time/chrono/Chronology;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolverStyle", "()Ljava/time/format/ResolverStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withResolverStyle", "(Ljava/time/format/ResolverStyle;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolverFields", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withResolverFields", "([Ljava/time/temporal/TemporalField;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withResolverFields", "(Ljava/util/Set;)Ljava/time/format/DateTimeFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseBest", "(Ljava/lang/CharSequence;[Ljava/time/temporal/TemporalQuery;)Ljava/time/temporal/TemporalAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseUnresolved", "(Ljava/lang/CharSequence;Ljava/text/ParsePosition;)Ljava/time/temporal/TemporalAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toPrinterParser", "(Z)Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFormat", "()Ljava/text/Format;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFormat", "(Ljava/time/temporal/TemporalQuery;)Ljava/text/Format;"));
 	}
 
 	[JniSignatureAttribute("Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;", "private final")]
@@ -436,7 +436,7 @@ public partial class DateTimeFormatter
 	}
 
 	[JniSignatureAttribute("(Ljava/time/format/DateTimeFormatterBuilder$CompositePrinterParser;Ljava/util/Locale;Ljava/time/format/DecimalStyle;Ljava/time/format/ResolverStyle;Ljava/util/Set;Ljava/time/chrono/Chronology;Ljava/time/ZoneId;)V", "")]
-	public DateTimeFormatter(Dova.JDK.java.time.format.DateTimeFormatterBuilder.CompositePrinterParser arg0, Dova.JDK.java.util.Locale arg1, Dova.JDK.java.time.format.DecimalStyle arg2, Dova.JDK.java.time.format.ResolverStyle arg3, Dova.JDK.java.util.Set arg4, Dova.JDK.java.time.chrono.Chronology arg5, Dova.JDK.java.time.ZoneId arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public DateTimeFormatter(Dova.JDK.java.time.format.DateTimeFormatterBuilder.CompositePrinterParser arg0, Dova.JDK.java.util.Locale arg1, Dova.JDK.java.time.format.DecimalStyle arg2, Dova.JDK.java.time.format.ResolverStyle arg3, Dova.JDK.java.util.Set arg4, Dova.JDK.java.time.chrono.Chronology arg5, Dova.JDK.java.time.ZoneId arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
@@ -710,12 +710,12 @@ public partial class DateTimeFormatter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/format/DateTimeFormatter$ClassicFormat;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "formatter", "Ljava/time/format/DateTimeFormatter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parseType", "Ljava/time/temporal/TemporalQuery;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassicFormat", "(Ljava/time/format/DateTimeFormatter;Ljava/time/temporal/TemporalQuery;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseObject", "(Ljava/lang/String;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "formatter", "Ljava/time/format/DateTimeFormatter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parseType", "Ljava/time/temporal/TemporalQuery;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/format/DateTimeFormatter;Ljava/time/temporal/TemporalQuery;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/lang/Object;Ljava/lang/StringBuffer;Ljava/text/FieldPosition;)Ljava/lang/StringBuffer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseObject", "(Ljava/lang/String;Ljava/text/ParsePosition;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseObject", "(Ljava/lang/String;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/time/format/DateTimeFormatter;", "private final")]
@@ -752,7 +752,7 @@ public partial class DateTimeFormatter
 		}
 
 		[JniSignatureAttribute("(Ljava/time/format/DateTimeFormatter;Ljava/time/temporal/TemporalQuery;)V", "public")]
-		public ClassicFormat(Dova.JDK.java.time.format.DateTimeFormatter arg0, Dova.JDK.java.time.temporal.TemporalQuery arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ClassicFormat(Dova.JDK.java.time.format.DateTimeFormatter arg0, Dova.JDK.java.time.temporal.TemporalQuery arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

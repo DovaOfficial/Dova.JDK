@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,32 +32,32 @@ public partial class MessageDecoder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/MessageDecoder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "output", "Ljdk/internal/net/http/websocket/MessageStreamConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decoder", "Ljdk/internal/net/http/websocket/UTF8AccumulatingDecoder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fin", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "opcode", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "originatingOpcode", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "payloadLen", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unconsumedPayloadLen", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "binaryData", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "server", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskingKey", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MessageDecoder", "(Ljdk/internal/net/http/websocket/MessageStreamConsumer;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MessageDecoder", "(Ljdk/internal/net/http/websocket/MessageStreamConsumer;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mask", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fin", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutput", "()Ljdk/internal/net/http/websocket/MessageStreamConsumer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "payloadData", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maskingKey", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv3", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "endFrame", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "payloadLen", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv1", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unMask", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv2", "(Z)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "output", "Ljdk/internal/net/http/websocket/MessageStreamConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decoder", "Ljdk/internal/net/http/websocket/UTF8AccumulatingDecoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fin", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "opcode", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "originatingOpcode", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "payloadLen", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unconsumedPayloadLen", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "binaryData", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "server", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskingKey", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/websocket/MessageStreamConsumer;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/websocket/MessageStreamConsumer;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mask", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fin", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutput", "()Ljdk/internal/net/http/websocket/MessageStreamConsumer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "payloadData", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maskingKey", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv3", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "endFrame", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "payloadLen", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv1", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unMask", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv2", "(Z)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "private static final")]
@@ -234,12 +234,12 @@ public partial class MessageDecoder
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/websocket/MessageStreamConsumer;)V", "")]
-	public MessageDecoder(Dova.JDK.jdk.@internal.net.http.websocket.MessageStreamConsumer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MessageDecoder(Dova.JDK.jdk.@internal.net.http.websocket.MessageStreamConsumer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/websocket/MessageStreamConsumer;Z)V", "")]
-	public MessageDecoder(Dova.JDK.jdk.@internal.net.http.websocket.MessageStreamConsumer arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public MessageDecoder(Dova.JDK.jdk.@internal.net.http.websocket.MessageStreamConsumer arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,33 +33,33 @@ public partial class ReentrantReadWriteLock
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readerLock", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writerLock", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReentrantReadWriteLock", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReentrantReadWriteLock", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOwner", "()Ljava/lang/Thread;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasQueuedThreads", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getQueueLength", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getQueuedThreads", "()Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWaitingThreads", "(Ljava/util/concurrent/locks/Condition;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isFair", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasQueuedThread", "(Ljava/lang/Thread;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeLock_0", "()Ljava/util/concurrent/locks/Lock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeLock_1", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readLock_0", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readLock_1", "()Ljava/util/concurrent/locks/Lock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReadLockCount", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWriteLocked", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWriteHoldCount", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReadHoldCount", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWriteLockedByCurrentThread", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getQueuedWriterThreads", "()Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getQueuedReaderThreads", "()Ljava/util/Collection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readerLock", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writerLock", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOwner", "()Ljava/lang/Thread;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasQueuedThreads", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getQueueLength", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getQueuedThreads", "()Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasWaiters", "(Ljava/util/concurrent/locks/Condition;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWaitQueueLength", "(Ljava/util/concurrent/locks/Condition;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWaitingThreads", "(Ljava/util/concurrent/locks/Condition;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isFair", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasQueuedThread", "(Ljava/lang/Thread;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeLock_0", "()Ljava/util/concurrent/locks/Lock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeLock_1", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readLock_0", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readLock_1", "()Ljava/util/concurrent/locks/Lock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReadLockCount", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWriteLocked", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWriteHoldCount", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReadHoldCount", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWriteLockedByCurrentThread", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getQueuedWriterThreads", "()Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getQueuedReaderThreads", "()Ljava/util/Collection;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -124,12 +124,12 @@ public partial class ReentrantReadWriteLock
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ReentrantReadWriteLock() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ReentrantReadWriteLock() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Z)V", "public")]
-	public ReentrantReadWriteLock(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public ReentrantReadWriteLock(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -299,10 +299,10 @@ public partial class ReentrantReadWriteLock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$FairSync;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FairSync", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writerShouldBlock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readerShouldBlock", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writerShouldBlock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readerShouldBlock", "()Z"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -325,7 +325,7 @@ public partial class ReentrantReadWriteLock
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public FairSync() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FairSync() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -363,10 +363,10 @@ public partial class ReentrantReadWriteLock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$NonfairSync;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonfairSync", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writerShouldBlock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readerShouldBlock", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writerShouldBlock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readerShouldBlock", "()Z"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -389,7 +389,7 @@ public partial class ReentrantReadWriteLock
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public NonfairSync() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NonfairSync() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -427,37 +427,37 @@ public partial class ReentrantReadWriteLock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHARED_SHIFT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHARED_UNIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCLUSIVE_MASK", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readHolds", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$ThreadLocalHoldCounter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cachedHoldCounter", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$HoldCounter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstReader", "Ljava/lang/Thread;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstReaderHoldCount", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Sync", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCondition", "()Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isHeldExclusively", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOwner", "()Ljava/lang/Thread;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAcquireShared", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAcquire", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryRelease", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryReleaseShared", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReadLockCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWriteLocked", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWriteHoldCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReadHoldCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exclusiveCount", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "sharedCount", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryReadLock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryWriteLock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writerShouldBlock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmatchedUnlockException", "()Ljava/lang/IllegalMonitorStateException;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readerShouldBlock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fullTryAcquireShared", "(Ljava/lang/Thread;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHARED_SHIFT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHARED_UNIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCLUSIVE_MASK", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readHolds", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$ThreadLocalHoldCounter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cachedHoldCounter", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$HoldCounter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstReader", "Ljava/lang/Thread;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstReaderHoldCount", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCondition", "()Ljava/util/concurrent/locks/AbstractQueuedSynchronizer$ConditionObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isHeldExclusively", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOwner", "()Ljava/lang/Thread;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAcquireShared", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAcquire", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryRelease", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryReleaseShared", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReadLockCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWriteLocked", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWriteHoldCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReadHoldCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exclusiveCount", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "sharedCount", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryReadLock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryWriteLock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writerShouldBlock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmatchedUnlockException", "()Ljava/lang/IllegalMonitorStateException;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readerShouldBlock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fullTryAcquireShared", "(Ljava/lang/Thread;)I"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -592,7 +592,7 @@ public partial class ReentrantReadWriteLock
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Sync() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Sync() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -760,9 +760,9 @@ public partial class ReentrantReadWriteLock
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$ThreadLocalHoldCounter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadLocalHoldCounter", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initialValue_0", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$HoldCounter;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initialValue_1", "()Ljava/lang/Object;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initialValue_0", "()Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$HoldCounter;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initialValue_1", "()Ljava/lang/Object;"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -771,7 +771,7 @@ public partial class ReentrantReadWriteLock
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public ThreadLocalHoldCounter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public ThreadLocalHoldCounter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -808,9 +808,9 @@ public partial class ReentrantReadWriteLock
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync$HoldCounter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tid", "J"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HoldCounter", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tid", "J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 			}
 
 			[JniSignatureAttribute("I", "")]
@@ -847,7 +847,7 @@ public partial class ReentrantReadWriteLock
 			}
 
 			[JniSignatureAttribute("()V", "")]
-			public HoldCounter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public HoldCounter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -874,16 +874,16 @@ public partial class ReentrantReadWriteLock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$ReadLock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReadLock", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lock", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lockInterruptibly", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryLock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCondition", "()Ljava/util/concurrent/locks/Condition;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unlock", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lock", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lockInterruptibly", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryLock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCondition", "()Ljava/util/concurrent/locks/Condition;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unlock", "()V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -920,7 +920,7 @@ public partial class ReentrantReadWriteLock
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V", "protected")]
-		public ReadLock(Dova.JDK.java.util.concurrent.locks.ReentrantReadWriteLock arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ReadLock(Dova.JDK.java.util.concurrent.locks.ReentrantReadWriteLock arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -992,18 +992,18 @@ public partial class ReentrantReadWriteLock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/locks/ReentrantReadWriteLock$WriteLock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WriteLock", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lock", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lockInterruptibly", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryLock", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCondition", "()Ljava/util/concurrent/locks/Condition;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHoldCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unlock", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isHeldByCurrentThread", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sync", "Ljava/util/concurrent/locks/ReentrantReadWriteLock$Sync;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lock", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lockInterruptibly", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryLock", "(JLjava/util/concurrent/TimeUnit;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryLock", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCondition", "()Ljava/util/concurrent/locks/Condition;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHoldCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unlock", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isHeldByCurrentThread", "()Z"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1040,7 +1040,7 @@ public partial class ReentrantReadWriteLock
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/locks/ReentrantReadWriteLock;)V", "protected")]
-		public WriteLock(Dova.JDK.java.util.concurrent.locks.ReentrantReadWriteLock arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public WriteLock(Dova.JDK.java.util.concurrent.locks.ReentrantReadWriteLock arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

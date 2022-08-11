@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,67 +31,67 @@ public partial class MetalTheme
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/metal/MetalTheme;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_TEXT_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SYSTEM_TEXT_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USER_TEXT_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_TEXT_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOW_TITLE_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUB_TEXT_FONT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "white", "Ljavax/swing/plaf/ColorUIResource;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "black", "Ljavax/swing/plaf/ColorUIResource;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MetalTheme", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControl", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFocusColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlDarkShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlInfo", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBlack", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWhite", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUserTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextHighlightColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHighlightedTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimary1", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimary3", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimary2", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimaryControlHighlight", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSecondary2", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSecondary3", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlHighlight", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuSelectedBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuSelectedForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAcceleratorForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAcceleratorSelectedForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addCustomEntriesToTable", "(Ljavax/swing/UIDefaults;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSystemTheme", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSecondary1", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSystemTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUserTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowTitleFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSubTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlDisabled", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDesktopColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimaryControl", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimaryControlShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimaryControlDarkShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimaryControlInfo", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSystemTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInactiveControlTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInactiveSystemTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowTitleBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowTitleForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowTitleInactiveBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindowTitleInactiveForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuDisabledForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSeparatorBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSeparatorForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "install", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_TEXT_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SYSTEM_TEXT_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USER_TEXT_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_TEXT_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WINDOW_TITLE_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUB_TEXT_FONT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "white", "Ljavax/swing/plaf/ColorUIResource;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "black", "Ljavax/swing/plaf/ColorUIResource;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControl", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFocusColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlDarkShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlInfo", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBlack", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWhite", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUserTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextHighlightColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHighlightedTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimary1", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimary3", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimary2", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimaryControlHighlight", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSecondary2", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSecondary3", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlHighlight", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuSelectedBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuSelectedForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAcceleratorForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAcceleratorSelectedForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addCustomEntriesToTable", "(Ljavax/swing/UIDefaults;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSystemTheme", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSecondary1", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSystemTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUserTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowTitleFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSubTextFont", "()Ljavax/swing/plaf/FontUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlDisabled", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDesktopColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimaryControl", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimaryControlShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimaryControlDarkShadow", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimaryControlInfo", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSystemTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInactiveControlTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInactiveSystemTextColor", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowTitleBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowTitleForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowTitleInactiveBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindowTitleInactiveForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuDisabledForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSeparatorBackground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSeparatorForeground", "()Ljavax/swing/plaf/ColorUIResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "install", "()V"));
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -212,7 +212,7 @@ public partial class MetalTheme
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public MetalTheme() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MetalTheme() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

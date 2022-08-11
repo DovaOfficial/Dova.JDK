@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,20 +30,20 @@ public partial class Gregorian
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/util/calendar/Gregorian;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Gregorian", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCalendarDate_0", "(Ljava/util/TimeZone;)Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCalendarDate_1", "(Ljava/util/TimeZone;)Lsun/util/calendar/CalendarDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCalendarDate_0", "()Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCalendarDate_1", "()Lsun/util/calendar/CalendarDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_0", "(J)Lsun/util/calendar/CalendarDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_1", "(J)Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_0", "()Lsun/util/calendar/CalendarDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_1", "()Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_0", "(JLjava/util/TimeZone;)Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_1", "(JLjava/util/TimeZone;)Lsun/util/calendar/CalendarDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_0", "(JLsun/util/calendar/CalendarDate;)Lsun/util/calendar/Gregorian$Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarDate_1", "(JLsun/util/calendar/CalendarDate;)Lsun/util/calendar/CalendarDate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCalendarDate_0", "(Ljava/util/TimeZone;)Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCalendarDate_1", "(Ljava/util/TimeZone;)Lsun/util/calendar/CalendarDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCalendarDate_0", "()Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCalendarDate_1", "()Lsun/util/calendar/CalendarDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_0", "(J)Lsun/util/calendar/CalendarDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_1", "(J)Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_0", "()Lsun/util/calendar/CalendarDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_1", "()Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_0", "(JLjava/util/TimeZone;)Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_1", "(JLjava/util/TimeZone;)Lsun/util/calendar/CalendarDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_0", "(JLsun/util/calendar/CalendarDate;)Lsun/util/calendar/Gregorian$Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarDate_1", "(JLsun/util/calendar/CalendarDate;)Lsun/util/calendar/CalendarDate;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +52,7 @@ public partial class Gregorian
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public Gregorian() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Gregorian() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -165,10 +165,10 @@ public partial class Gregorian
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/util/calendar/Gregorian$Date;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Date", "()V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Date", "(Ljava/util/TimeZone;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNormalizedYear", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizedYear", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/TimeZone;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNormalizedYear", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizedYear", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -177,12 +177,12 @@ public partial class Gregorian
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public Date() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Date() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/TimeZone;)V", "protected")]
-		public Date(Dova.JDK.java.util.TimeZone arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public Date(Dova.JDK.java.util.TimeZone arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,15 +32,15 @@ public partial class SSLSecretDerivation
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLSecretDerivation;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sha256EmptyDigest", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sha384EmptyDigest", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hashAlg", "Lsun/security/ssl/CipherSuite$HashAlg;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "secret", "Ljavax/crypto/SecretKey;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transcriptHash", "[B"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLSecretDerivation", "(Lsun/security/ssl/HandshakeContext;Ljavax/crypto/SecretKey;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createHkdfInfo", "([B[BI)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forContext", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLSecretDerivation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deriveKey", "(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)Ljavax/crypto/SecretKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sha256EmptyDigest", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sha384EmptyDigest", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hashAlg", "Lsun/security/ssl/CipherSuite$HashAlg;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "secret", "Ljavax/crypto/SecretKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transcriptHash", "[B"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/HandshakeContext;Ljavax/crypto/SecretKey;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createHkdfInfo", "([B[BI)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forContext", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLSecretDerivation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deriveKey", "(Ljava/lang/String;Ljava/security/spec/AlgorithmParameterSpec;)Ljavax/crypto/SecretKey;"));
 	}
 
 	[JniSignatureAttribute("[B", "private static final")]
@@ -119,7 +119,7 @@ public partial class SSLSecretDerivation
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/HandshakeContext;Ljavax/crypto/SecretKey;)V", "")]
-	public SSLSecretDerivation(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.javax.crypto.SecretKey arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public SSLSecretDerivation(Dova.JDK.sun.security.ssl.HandshakeContext arg0, Dova.JDK.javax.crypto.SecretKey arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -163,23 +163,23 @@ public partial class SSLSecretDerivation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsSaltSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsExtBinderKey", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsResBinderKey", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsClientEarlyTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsEarlyExporterMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsClientHandshakeTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsServerHandshakeTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsClientAppTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsServerAppTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsExporterMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TlsResumptionMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "label", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SecretSchedule", "(Ljava/lang/String;ILjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsSaltSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsExtBinderKey", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsResBinderKey", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsClientEarlyTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsEarlyExporterMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsClientHandshakeTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsServerHandshakeTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsClientAppTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsServerAppTrafficSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsExporterMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TlsResumptionMasterSecret", "Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "label", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/SSLSecretDerivation$SecretSchedule;", "public static final")]
@@ -370,7 +370,7 @@ public partial class SSLSecretDerivation
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;)V", "private")]
-		public SecretSchedule(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public SecretSchedule(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,16 +32,16 @@ public partial class PublicApiCollector
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/sjavac/comp/dependencies/PublicApiCollector;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classSymbols", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "explicitJFOs", "Ljava/util/Collection;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "explicitPubApis", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nonExplicitPubApis", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PublicApiCollector", "(Lcom/sun/tools/javac/util/Context;Ljava/util/Collection;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "collectClassSymbols", "(Lcom/sun/tools/javac/tree/JCTree$JCCompilationUnit;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extractPubApis", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPubApis", "(Z)Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classSymbols", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "explicitJFOs", "Ljava/util/Collection;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "explicitPubApis", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nonExplicitPubApis", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;Ljava/util/Collection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "collectClassSymbols", "(Lcom/sun/tools/javac/tree/JCTree$JCCompilationUnit;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "extractPubApis", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPubApis", "(Z)Ljava/util/Map;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context;", "private")]
@@ -120,7 +120,7 @@ public partial class PublicApiCollector
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;Ljava/util/Collection;)V", "public")]
-	public PublicApiCollector(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.util.Collection arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PublicApiCollector(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.util.Collection arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

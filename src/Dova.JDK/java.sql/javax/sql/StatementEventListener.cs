@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface StatementEventListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/StatementEventListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "statementClosed", "(Ljavax/sql/StatementEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "statementErrorOccurred", "(Ljavax/sql/StatementEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "statementClosed", "(Ljavax/sql/StatementEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "statementErrorOccurred", "(Ljavax/sql/StatementEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/StatementEvent;)V", "public abstract")]

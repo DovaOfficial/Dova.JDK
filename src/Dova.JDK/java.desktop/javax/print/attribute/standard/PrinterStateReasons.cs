@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,16 +32,16 @@ public partial class PrinterStateReasons
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/PrinterStateReasons;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasons", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasons", "(Ljava/util/Map;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasons", "(IF)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasons", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljavax/print/attribute/standard/PrinterStateReason;Ljavax/print/attribute/standard/Severity;)Ljavax/print/attribute/standard/Severity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printerStateReasonSet", "(Ljavax/print/attribute/standard/Severity;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCategory", "()Ljava/lang/Class;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Map;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IF)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put", "(Ljavax/print/attribute/standard/PrinterStateReason;Ljavax/print/attribute/standard/Severity;)Ljavax/print/attribute/standard/Severity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printerStateReasonSet", "(Ljavax/print/attribute/standard/Severity;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCategory", "()Ljava/lang/Class;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -64,22 +64,22 @@ public partial class PrinterStateReasons
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public PrinterStateReasons() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public PrinterStateReasons() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Map;)V", "public")]
-	public PrinterStateReasons(Dova.JDK.java.util.Map arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public PrinterStateReasons(Dova.JDK.java.util.Map arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(IF)V", "public")]
-	public PrinterStateReasons(int arg0, float arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public PrinterStateReasons(int arg0, float arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
-	public PrinterStateReasons(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0))
+	public PrinterStateReasons(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0))
 	{
 	}
 
@@ -137,11 +137,11 @@ public partial class PrinterStateReasons
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/PrinterStateReasons$PrinterStateReasonSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mySeverity", "Ljavax/print/attribute/standard/Severity;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myEntrySet", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasonSet", "(Ljavax/print/attribute/standard/Severity;Ljava/util/Set;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "iterator", "()Ljava/util/Iterator;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mySeverity", "Ljavax/print/attribute/standard/Severity;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myEntrySet", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/standard/Severity;Ljava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "iterator", "()Ljava/util/Iterator;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/print/attribute/standard/Severity;", "private")]
@@ -178,7 +178,7 @@ public partial class PrinterStateReasons
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/standard/Severity;Ljava/util/Set;)V", "public")]
-		public PrinterStateReasonSet(Dova.JDK.javax.print.attribute.standard.Severity arg0, Dova.JDK.java.util.Set arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public PrinterStateReasonSet(Dova.JDK.javax.print.attribute.standard.Severity arg0, Dova.JDK.java.util.Set arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -217,15 +217,15 @@ public partial class PrinterStateReasons
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/PrinterStateReasons$PrinterStateReasonSetIterator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mySeverity", "Ljavax/print/attribute/standard/Severity;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myIterator", "Ljava/util/Iterator;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myEntry", "Ljava/util/Map$Entry;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReasonSetIterator", "(Ljavax/print/attribute/standard/Severity;Ljava/util/Iterator;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasNext", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next_1", "()Ljavax/print/attribute/standard/PrinterStateReason;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "goToNext", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mySeverity", "Ljavax/print/attribute/standard/Severity;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myIterator", "Ljava/util/Iterator;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myEntry", "Ljava/util/Map$Entry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/standard/Severity;Ljava/util/Iterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasNext", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next_1", "()Ljavax/print/attribute/standard/PrinterStateReason;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "goToNext", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/print/attribute/standard/Severity;", "private")]
@@ -276,7 +276,7 @@ public partial class PrinterStateReasons
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/standard/Severity;Ljava/util/Iterator;)V", "public")]
-		public PrinterStateReasonSetIterator(Dova.JDK.javax.print.attribute.standard.Severity arg0, Dova.JDK.java.util.Iterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public PrinterStateReasonSetIterator(Dova.JDK.javax.print.attribute.standard.Severity arg0, Dova.JDK.java.util.Iterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

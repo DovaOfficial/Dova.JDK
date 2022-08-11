@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,11 +30,11 @@ public partial interface SunJmxMBeanServer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/SunJmxMBeanServer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "interceptorsEnabled", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMBeanInstantiator", "()Lcom/sun/jmx/mbeanserver/MBeanInstantiator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMBeanServerInterceptor", "()Ljavax/management/MBeanServer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMBeanServerInterceptor", "(Ljavax/management/MBeanServer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMBeanServerDelegate", "()Ljavax/management/MBeanServerDelegate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "interceptorsEnabled", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMBeanInstantiator", "()Lcom/sun/jmx/mbeanserver/MBeanInstantiator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMBeanServerInterceptor", "()Ljavax/management/MBeanServer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMBeanServerInterceptor", "(Ljavax/management/MBeanServer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMBeanServerDelegate", "()Ljavax/management/MBeanServerDelegate;"));
 	}
 
 	[JniSignatureAttribute("()Z", "public abstract")]

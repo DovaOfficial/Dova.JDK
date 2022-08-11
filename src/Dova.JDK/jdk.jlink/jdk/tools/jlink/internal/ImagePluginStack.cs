@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class ImagePluginStack
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "imageBuilder", "Ljdk/tools/jlink/builder/ImageBuilder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastSorter", "Ljdk/tools/jlink/plugin/Plugin;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "plugins", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resourcePrevisitors", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validate", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImagePluginStack", "(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImagePluginStack", "(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImagePluginStack", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJImageFileOutputStream", "()Ljava/io/DataOutputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImageBuilder", "()Ljdk/tools/jlink/builder/ImageBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitResources", "(Ljdk/tools/jlink/internal/ResourcePoolManager;)Ljdk/tools/jlink/plugin/ResourcePool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "operate", "(Ljdk/tools/jlink/internal/ImagePluginStack$ImageProvider;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "storeFiles", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/internal/BasicImageWriter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExecutableImage", "()Ljdk/tools/jlink/internal/ExecutableImage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "imageBuilder", "Ljdk/tools/jlink/builder/ImageBuilder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastSorter", "Ljdk/tools/jlink/plugin/Plugin;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "plugins", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resourcePrevisitors", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validate", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJImageFileOutputStream", "()Ljava/io/DataOutputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImageBuilder", "()Ljdk/tools/jlink/builder/ImageBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitResources", "(Ljdk/tools/jlink/internal/ResourcePoolManager;)Ljdk/tools/jlink/plugin/ResourcePool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "operate", "(Ljdk/tools/jlink/internal/ImagePluginStack$ImageProvider;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "storeFiles", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/internal/BasicImageWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExecutableImage", "()Ljdk/tools/jlink/internal/ExecutableImage;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/tools/jlink/builder/ImageBuilder;", "private final")]
@@ -123,17 +123,17 @@ public partial class ImagePluginStack
 	}
 
 	[JniSignatureAttribute("(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;Z)V", "public")]
-	public ImagePluginStack(Dova.JDK.jdk.tools.jlink.builder.ImageBuilder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.plugin.Plugin arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public ImagePluginStack(Dova.JDK.jdk.tools.jlink.builder.ImageBuilder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.plugin.Plugin arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/tools/jlink/builder/ImageBuilder;Ljava/util/List;Ljdk/tools/jlink/plugin/Plugin;)V", "public")]
-	public ImagePluginStack(Dova.JDK.jdk.tools.jlink.builder.ImageBuilder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.plugin.Plugin arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public ImagePluginStack(Dova.JDK.jdk.tools.jlink.builder.ImageBuilder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.plugin.Plugin arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ImagePluginStack() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2]))
+	public ImagePluginStack() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2]))
 	{
 	}
 
@@ -194,7 +194,7 @@ public partial class ImagePluginStack
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$ImageProvider;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "retrieve", "(Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "retrieve", "(Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;", "public abstract")]
@@ -221,14 +221,14 @@ public partial class ImagePluginStack
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$PreVisitStrings;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentid", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringsUsage", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringsMap", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reverseMap", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PreVisitStrings", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getString", "(I)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addString", "(Ljava/lang/String;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSortedStrings", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentid", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringsUsage", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringsMap", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reverseMap", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getString", "(I)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addString", "(Ljava/lang/String;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSortedStrings", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -293,7 +293,7 @@ public partial class ImagePluginStack
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PreVisitStrings() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PreVisitStrings() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -338,12 +338,12 @@ public partial class ImagePluginStack
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "orderedList", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "poolImpl", "Ljdk/tools/jlink/internal/ResourcePoolManager$ResourcePoolImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OrderedResourcePoolManager", "(Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/StringTable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrderedList", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resourcePool", "()Ljdk/tools/jlink/plugin/ResourcePool;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "orderedList", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "poolImpl", "Ljdk/tools/jlink/internal/ResourcePoolManager$ResourcePoolImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/StringTable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrderedList", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resourcePool", "()Ljdk/tools/jlink/plugin/ResourcePool;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -380,7 +380,7 @@ public partial class ImagePluginStack
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/StringTable;)V", "public")]
-		public OrderedResourcePoolManager(Dova.JDK.java.nio.ByteOrder arg0, Dova.JDK.jdk.tools.jlink.@internal.StringTable arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OrderedResourcePoolManager(Dova.JDK.java.nio.ByteOrder arg0, Dova.JDK.jdk.tools.jlink.@internal.StringTable arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -423,9 +423,9 @@ public partial class ImagePluginStack
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager$OrderedResourcePool;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OrderedResourcePool", "(Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrderedList", "()Ljava/util/List;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrderedList", "()Ljava/util/List;"));
 			}
 
 			[JniSignatureAttribute("Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;", "final")]
@@ -448,7 +448,7 @@ public partial class ImagePluginStack
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/ImagePluginStack$OrderedResourcePoolManager;)V", "")]
-			public OrderedResourcePool(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack.OrderedResourcePoolManager arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public OrderedResourcePool(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack.OrderedResourcePoolManager arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -480,10 +480,10 @@ public partial class ImagePluginStack
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$CheckOrderResourcePoolManager;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "orderedList", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentIndex", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CheckOrderResourcePoolManager", "(Ljava/nio/ByteOrder;Ljava/util/List;Ljdk/tools/jlink/internal/StringTable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "orderedList", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentIndex", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteOrder;Ljava/util/List;Ljdk/tools/jlink/internal/StringTable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -520,7 +520,7 @@ public partial class ImagePluginStack
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteOrder;Ljava/util/List;Ljdk/tools/jlink/internal/StringTable;)V", "public")]
-		public CheckOrderResourcePoolManager(Dova.JDK.java.nio.ByteOrder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.@internal.StringTable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CheckOrderResourcePoolManager(Dova.JDK.java.nio.ByteOrder arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.tools.jlink.@internal.StringTable arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -550,22 +550,22 @@ public partial class ImagePluginStack
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pool", "Ljdk/tools/jlink/plugin/ResourcePool;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decompressor", "Ljdk/internal/jimage/decompressor/Decompressor;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "content", "Ljava/util/Collection;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LastPoolManager", "(Ljdk/tools/jlink/plugin/ResourcePool;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modules", "()Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entries", "()Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findModule", "(Ljava/lang/String;)Ljava/util/Optional;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "byteOrder", "()Ljava/nio/ByteOrder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entryCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findEntry", "(Ljava/lang/String;)Ljava/util/Optional;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUncompressed", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findEntryInContext", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljava/util/Optional;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pool", "Ljdk/tools/jlink/plugin/ResourcePool;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decompressor", "Ljdk/internal/jimage/decompressor/Decompressor;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "content", "Ljava/util/Collection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/plugin/ResourcePool;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modules", "()Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entries", "()Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findModule", "(Ljava/lang/String;)Ljava/util/Optional;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "byteOrder", "()Ljava/nio/ByteOrder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entryCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findEntry", "(Ljava/lang/String;)Ljava/util/Optional;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUncompressed", "(Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljdk/tools/jlink/plugin/ResourcePoolEntry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findEntryInContext", "(Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolEntry;)Ljava/util/Optional;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/tools/jlink/plugin/ResourcePool;", "private final")]
@@ -616,7 +616,7 @@ public partial class ImagePluginStack
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/plugin/ResourcePool;)V", "")]
-		public LastPoolManager(Dova.JDK.jdk.tools.jlink.plugin.ResourcePool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LastPoolManager(Dova.JDK.jdk.tools.jlink.plugin.ResourcePool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -723,20 +723,20 @@ public partial class ImagePluginStack
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager$LastModule;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "module", "Ljdk/tools/jlink/plugin/ResourcePoolModule;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "descriptor", "Ljava/lang/module/ModuleDescriptor;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljdk/internal/module/ModuleTarget;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LastModule", "(Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;Ljdk/tools/jlink/plugin/ResourcePoolModule;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "()Ljava/util/Set;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entries", "()Ljava/util/stream/Stream;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "descriptor", "()Ljava/lang/module/ModuleDescriptor;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "targetPlatform", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entryCount", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findEntry", "(Ljava/lang/String;)Ljava/util/Optional;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initModuleAttributes", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "module", "Ljdk/tools/jlink/plugin/ResourcePoolModule;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "descriptor", "Ljava/lang/module/ModuleDescriptor;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljdk/internal/module/ModuleTarget;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;Ljdk/tools/jlink/plugin/ResourcePoolModule;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "name", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packages", "()Ljava/util/Set;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entries", "()Ljava/util/stream/Stream;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "descriptor", "()Ljava/lang/module/ModuleDescriptor;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "targetPlatform", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entryCount", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findEntry", "(Ljava/lang/String;)Ljava/util/Optional;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initModuleAttributes", "()V"));
 			}
 
 			[JniSignatureAttribute("Ljdk/tools/jlink/plugin/ResourcePoolModule;", "final")]
@@ -801,7 +801,7 @@ public partial class ImagePluginStack
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/ImagePluginStack$LastPoolManager;Ljdk/tools/jlink/plugin/ResourcePoolModule;)V", "")]
-			public LastModule(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack.LastPoolManager arg0, Dova.JDK.jdk.tools.jlink.plugin.ResourcePoolModule arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public LastModule(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack.LastPoolManager arg0, Dova.JDK.jdk.tools.jlink.plugin.ResourcePoolModule arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 

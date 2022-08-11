@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class BodyContents
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainContents", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "header", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "footer", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BodyContents", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/io/Writer;Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHeader", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFooter", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addMainContent", "(Ljdk/javadoc/internal/doclets/toolkit/Content;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toContent", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainContents", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "header", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "footer", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/io/Writer;Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHeader", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFooter", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlTree;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addMainContent", "(Ljdk/javadoc/internal/doclets/toolkit/Content;)Ljdk/javadoc/internal/doclets/formats/html/markup/BodyContents;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toContent", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private")]
@@ -91,7 +91,7 @@ public partial class BodyContents
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BodyContents() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BodyContents() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

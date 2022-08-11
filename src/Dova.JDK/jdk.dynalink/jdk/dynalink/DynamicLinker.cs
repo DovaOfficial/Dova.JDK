@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,26 +31,26 @@ public partial class DynamicLinker
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/DynamicLinker;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RELINK_METHOD_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_LINK_CLASS_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_LINK_METHOD_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVOKE_PACKAGE_PREFIX", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "stackWalker", "Ljava/lang/StackWalker;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "linkerServices", "Ljdk/dynalink/linker/LinkerServices;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prelinkTransformer", "Ljdk/dynalink/linker/GuardedInvocationTransformer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "syncOnRelink", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unstableRelinkThreshold", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RELINK", "Ljava/lang/invoke/MethodHandle;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DynamicLinker", "(Ljdk/dynalink/linker/LinkerServices;Ljdk/dynalink/linker/GuardedInvocationTransformer;ZI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "link", "(Ljdk/dynalink/RelinkableCallSite;)Ljdk/dynalink/RelinkableCallSite;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createRelinkAndInvokeMethod", "(Ljdk/dynalink/RelinkableCallSite;I)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "relink", "(Ljdk/dynalink/RelinkableCallSite;I[Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "testFrame", "(Ljava/lang/StackWalker$StackFrame;Ljava/lang/String;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isRelinkFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isInitialLinkFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkerServices", "()Ljdk/dynalink/linker/LinkerServices;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLinkedCallSiteLocation", "()Ljava/lang/StackTraceElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RELINK_METHOD_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_LINK_CLASS_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_LINK_METHOD_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVOKE_PACKAGE_PREFIX", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "stackWalker", "Ljava/lang/StackWalker;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "linkerServices", "Ljdk/dynalink/linker/LinkerServices;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prelinkTransformer", "Ljdk/dynalink/linker/GuardedInvocationTransformer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "syncOnRelink", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unstableRelinkThreshold", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RELINK", "Ljava/lang/invoke/MethodHandle;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/dynalink/linker/LinkerServices;Ljdk/dynalink/linker/GuardedInvocationTransformer;ZI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "link", "(Ljdk/dynalink/RelinkableCallSite;)Ljdk/dynalink/RelinkableCallSite;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createRelinkAndInvokeMethod", "(Ljdk/dynalink/RelinkableCallSite;I)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "relink", "(Ljdk/dynalink/RelinkableCallSite;I[Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "testFrame", "(Ljava/lang/StackWalker$StackFrame;Ljava/lang/String;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isRelinkFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isInitialLinkFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkerServices", "()Ljdk/dynalink/linker/LinkerServices;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLinkedCallSiteLocation", "()Ljava/lang/StackTraceElement;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -213,7 +213,7 @@ public partial class DynamicLinker
 	}
 
 	[JniSignatureAttribute("(Ljdk/dynalink/linker/LinkerServices;Ljdk/dynalink/linker/GuardedInvocationTransformer;ZI)V", "")]
-	public DynamicLinker(Dova.JDK.jdk.dynalink.linker.LinkerServices arg0, Dova.JDK.jdk.dynalink.linker.GuardedInvocationTransformer arg1, bool arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public DynamicLinker(Dova.JDK.jdk.dynalink.linker.LinkerServices arg0, Dova.JDK.jdk.dynalink.linker.GuardedInvocationTransformer arg1, bool arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

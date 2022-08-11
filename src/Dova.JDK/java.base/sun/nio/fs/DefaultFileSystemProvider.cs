@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class DefaultFileSystemProvider
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/fs/DefaultFileSystemProvider;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Lsun/nio/fs/LinuxFileSystemProvider;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFileSystemProvider", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "theFileSystem", "()Ljava/nio/file/FileSystem;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "()Lsun/nio/fs/LinuxFileSystemProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Lsun/nio/fs/LinuxFileSystemProvider;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "theFileSystem", "()Ljava/nio/file/FileSystem;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "()Lsun/nio/fs/LinuxFileSystemProvider;"));
 	}
 
 	[JniSignatureAttribute("Lsun/nio/fs/LinuxFileSystemProvider;", "private static final")]
@@ -57,7 +57,7 @@ public partial class DefaultFileSystemProvider
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DefaultFileSystemProvider() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultFileSystemProvider() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

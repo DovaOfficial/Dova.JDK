@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,32 +32,32 @@ public partial class FlatteningPathIterator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/geom/FlatteningPathIterator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GROW_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "src", "Ljava/awt/geom/PathIterator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "squareflat", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limit", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hold", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curx", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cury", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "movx", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "movy", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "holdType", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "holdEnd", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "holdIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "levels", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "levelIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "done", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FlatteningPathIterator", "(Ljava/awt/geom/PathIterator;D)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FlatteningPathIterator", "(Ljava/awt/geom/PathIterator;DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDone", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlatness", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "currentSegment", "([F)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "currentSegment", "([D)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWindingRule", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureHoldCapacity", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRecursionLimit", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GROW_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "src", "Ljava/awt/geom/PathIterator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "squareflat", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limit", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hold", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curx", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cury", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "movx", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "movy", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "holdType", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "holdEnd", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "holdIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "levels", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "levelIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "done", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/PathIterator;D)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/PathIterator;DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDone", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlatness", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "currentSegment", "([F)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "currentSegment", "([D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWindingRule", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureHoldCapacity", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRecursionLimit", "()I"));
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -276,12 +276,12 @@ public partial class FlatteningPathIterator
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/PathIterator;D)V", "public")]
-	public FlatteningPathIterator(Dova.JDK.java.awt.geom.PathIterator arg0, double arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public FlatteningPathIterator(Dova.JDK.java.awt.geom.PathIterator arg0, double arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/PathIterator;DI)V", "public")]
-	public FlatteningPathIterator(Dova.JDK.java.awt.geom.PathIterator arg0, double arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public FlatteningPathIterator(Dova.JDK.java.awt.geom.PathIterator arg0, double arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 

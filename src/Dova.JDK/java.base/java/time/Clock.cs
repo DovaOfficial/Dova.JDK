@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,25 +32,25 @@ public partial class Clock
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OFFSET_SEED", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "offset", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Clock", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "offset", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "system", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fixed", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "systemUTC", "()Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "systemDefaultZone", "()Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tickMillis", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tickSeconds", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tickMinutes", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tick", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "currentInstant", "()Ljava/time/Instant;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OFFSET_SEED", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "offset", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "offset", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "system", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fixed", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "systemUTC", "()Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "systemDefaultZone", "()Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tickMillis", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tickSeconds", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tickMinutes", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tick", "(Ljava/time/Clock;Ljava/time/Duration;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "currentInstant", "()Ljava/time/Instant;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -87,7 +87,7 @@ public partial class Clock
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public Clock() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Clock() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -223,17 +223,17 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$SystemClock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UTC", "Ljava/time/Clock$SystemClock;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zone", "Ljava/time/ZoneId;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SystemClock", "(Ljava/time/ZoneId;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UTC", "Ljava/time/Clock$SystemClock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zone", "Ljava/time/ZoneId;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/ZoneId;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -284,7 +284,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("(Ljava/time/ZoneId;)V", "")]
-		public SystemClock(Dova.JDK.java.time.ZoneId arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SystemClock(Dova.JDK.java.time.ZoneId arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -358,17 +358,17 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$TickClock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseClock", "Ljava/time/Clock;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tickNanos", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TickClock", "(Ljava/time/Clock;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseClock", "Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tickNanos", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/Clock;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -419,7 +419,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("(Ljava/time/Clock;J)V", "")]
-		public TickClock(Dova.JDK.java.time.Clock arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public TickClock(Dova.JDK.java.time.Clock arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -493,17 +493,17 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$FixedClock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instant", "Ljava/time/Instant;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zone", "Ljava/time/ZoneId;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FixedClock", "(Ljava/time/Instant;Ljava/time/ZoneId;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instant", "Ljava/time/Instant;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zone", "Ljava/time/ZoneId;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/Instant;Ljava/time/ZoneId;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -554,7 +554,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("(Ljava/time/Instant;Ljava/time/ZoneId;)V", "")]
-		public FixedClock(Dova.JDK.java.time.Instant arg0, Dova.JDK.java.time.ZoneId arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public FixedClock(Dova.JDK.java.time.Instant arg0, Dova.JDK.java.time.ZoneId arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -628,17 +628,17 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$OffsetClock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseClock", "Ljava/time/Clock;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "Ljava/time/Duration;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OffsetClock", "(Ljava/time/Clock;Ljava/time/Duration;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseClock", "Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "Ljava/time/Duration;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/Clock;Ljava/time/Duration;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -689,7 +689,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("(Ljava/time/Clock;Ljava/time/Duration;)V", "")]
-		public OffsetClock(Dova.JDK.java.time.Clock arg0, Dova.JDK.java.time.Duration arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OffsetClock(Dova.JDK.java.time.Clock arg0, Dova.JDK.java.time.Duration arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -763,17 +763,17 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$SourceClock;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseSource", "Ljava/time/InstantSource;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zone", "Ljava/time/ZoneId;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SourceClock", "(Ljava/time/InstantSource;Ljava/time/ZoneId;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZone", "()Ljava/time/ZoneId;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseSource", "Ljava/time/InstantSource;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zone", "Ljava/time/ZoneId;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/time/InstantSource;Ljava/time/ZoneId;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZone", "()Ljava/time/ZoneId;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -824,7 +824,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("(Ljava/time/InstantSource;Ljava/time/ZoneId;)V", "")]
-		public SourceClock(Dova.JDK.java.time.InstantSource arg0, Dova.JDK.java.time.ZoneId arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SourceClock(Dova.JDK.java.time.InstantSource arg0, Dova.JDK.java.time.ZoneId arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -899,16 +899,16 @@ public partial class Clock
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/Clock$SystemInstantSource;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/time/Clock$SystemInstantSource;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SystemInstantSource", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readResolve", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljava/time/Clock$SystemInstantSource;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readResolve", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -945,7 +945,7 @@ public partial class Clock
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public SystemInstantSource() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SystemInstantSource() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

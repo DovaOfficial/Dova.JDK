@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,69 +31,69 @@ public partial class XRSurfaceData
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSurfaceData;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "peer", "Lsun/awt/X11ComponentPeer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "graphicsConfig", "Lsun/java2d/xr/XRGraphicsConfig;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "renderQueue", "Lsun/java2d/xr/XRBackend;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "solidloops", "Lsun/java2d/loops/RenderLoops;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "depth", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESC_BYTE_A8_X11", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESC_INT_RGB_X11", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESC_INT_ARGB_X11", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ByteA8X11", "Lsun/java2d/loops/SurfaceType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IntRgbX11", "Lsun/java2d/loops/SurfaceType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IntArgbPreX11", "Lsun/java2d/loops/SurfaceType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xrpipe", "Lsun/java2d/xr/XRRenderer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xrtxpipe", "Lsun/java2d/pipe/PixelToShapeConverter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xrtextpipe", "Lsun/java2d/pipe/TextPipe;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xrDrawImage", "Lsun/java2d/xr/XRDrawImage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aaShapePipe", "Lsun/java2d/pipe/ShapeDrawPipe;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aaPixelToShapeConv", "Lsun/java2d/pipe/PixelToShapeConverter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xgc", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedGCForegroundPixel", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedXorComp", "Lsun/java2d/loops/XORComposite;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xid", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "picture", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskBuffer", "Lsun/java2d/xr/XRCompositeManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedClip", "Lsun/java2d/pipe/Region;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedGCClip", "Lsun/java2d/pipe/Region;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedExposures", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transformInUse", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedSourceTransform", "Ljava/awt/geom/AffineTransform;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "staticSrcTx", "Ljava/awt/geom/AffineTransform;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedRepeat", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedFilter", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRSurfaceData", "(Lsun/java2d/xr/XRBackend;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRSurfaceData", "(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initIDs", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyArea", "(Lsun/java2d/SunGraphics2D;IIIIII)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initXRSurfaceData", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextPipe", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/pipe/TextPipe;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validatePipe", "(Lsun/java2d/SunGraphics2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaskFill", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/loops/MaskFill;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRenderLoops", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/loops/RenderLoops;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGC", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getGC", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/xr/XRGraphicsConfig;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSurfaceType", "(Lsun/java2d/xr/XRGraphicsConfig;I)Lsun/java2d/loops/SurfaceType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initXRPicture", "(JI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isXRDrawableValid", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makePipes", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canSourceSendExposures", "(IIII)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateCopyAreaGC", "(Lsun/java2d/pipe/Region;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRInitSurface", "(IIIJI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "freeXSDOPicture", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeProxyFor", "(Lsun/java2d/SurfaceData;)Lsun/java2d/SurfaceDataProxy;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createData", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/xr/XRSurfaceData$XRWindowSurfaceData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createData", "(Lsun/java2d/xr/XRGraphicsConfig;IILjava/awt/image/ColorModel;Ljava/awt/Image;JIZ)Lsun/java2d/xr/XRSurfaceData$XRPixmapSurfaceData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateAsSource", "(Ljava/awt/geom/AffineTransform;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateAsDestination", "(Lsun/java2d/SunGraphics2D;Lsun/java2d/pipe/Region;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPicture", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getXid", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGraphicsConfig", "()Lsun/java2d/xr/XRGraphicsConfig;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setStaticSrcTx", "(Ljava/awt/geom/AffineTransform;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initXRender", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidate", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRaster", "(IIII)Ljava/awt/image/Raster;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDeviceConfiguration", "()Ljava/awt/GraphicsConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "peer", "Lsun/awt/X11ComponentPeer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "graphicsConfig", "Lsun/java2d/xr/XRGraphicsConfig;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "renderQueue", "Lsun/java2d/xr/XRBackend;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "solidloops", "Lsun/java2d/loops/RenderLoops;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "depth", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESC_BYTE_A8_X11", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESC_INT_RGB_X11", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESC_INT_ARGB_X11", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ByteA8X11", "Lsun/java2d/loops/SurfaceType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IntRgbX11", "Lsun/java2d/loops/SurfaceType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IntArgbPreX11", "Lsun/java2d/loops/SurfaceType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xrpipe", "Lsun/java2d/xr/XRRenderer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xrtxpipe", "Lsun/java2d/pipe/PixelToShapeConverter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xrtextpipe", "Lsun/java2d/pipe/TextPipe;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xrDrawImage", "Lsun/java2d/xr/XRDrawImage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aaShapePipe", "Lsun/java2d/pipe/ShapeDrawPipe;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aaPixelToShapeConv", "Lsun/java2d/pipe/PixelToShapeConverter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xgc", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedGCForegroundPixel", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedXorComp", "Lsun/java2d/loops/XORComposite;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xid", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "picture", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskBuffer", "Lsun/java2d/xr/XRCompositeManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedClip", "Lsun/java2d/pipe/Region;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedGCClip", "Lsun/java2d/pipe/Region;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedExposures", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transformInUse", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedSourceTransform", "Ljava/awt/geom/AffineTransform;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "staticSrcTx", "Ljava/awt/geom/AffineTransform;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedRepeat", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedFilter", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/xr/XRBackend;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initIDs", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyArea", "(Lsun/java2d/SunGraphics2D;IIIIII)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initXRSurfaceData", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextPipe", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/pipe/TextPipe;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validatePipe", "(Lsun/java2d/SunGraphics2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaskFill", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/loops/MaskFill;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRenderLoops", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/loops/RenderLoops;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGC", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getGC", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/xr/XRGraphicsConfig;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSurfaceType", "(Lsun/java2d/xr/XRGraphicsConfig;I)Lsun/java2d/loops/SurfaceType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initXRPicture", "(JI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isXRDrawableValid", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makePipes", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canSourceSendExposures", "(IIII)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateCopyAreaGC", "(Lsun/java2d/pipe/Region;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "XRInitSurface", "(IIIJI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "freeXSDOPicture", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeProxyFor", "(Lsun/java2d/SurfaceData;)Lsun/java2d/SurfaceDataProxy;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createData", "(Lsun/awt/X11ComponentPeer;)Lsun/java2d/xr/XRSurfaceData$XRWindowSurfaceData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createData", "(Lsun/java2d/xr/XRGraphicsConfig;IILjava/awt/image/ColorModel;Ljava/awt/Image;JIZ)Lsun/java2d/xr/XRSurfaceData$XRPixmapSurfaceData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateAsSource", "(Ljava/awt/geom/AffineTransform;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateAsDestination", "(Lsun/java2d/SunGraphics2D;Lsun/java2d/pipe/Region;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPicture", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getXid", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGraphicsConfig", "()Lsun/java2d/xr/XRGraphicsConfig;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setStaticSrcTx", "(Ljava/awt/geom/AffineTransform;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initXRender", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidate", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRaster", "(IIII)Ljava/awt/image/Raster;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDeviceConfiguration", "()Ljava/awt/GraphicsConfiguration;"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/X11ComponentPeer;", "")]
@@ -536,12 +536,12 @@ public partial class XRSurfaceData
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/xr/XRBackend;)V", "protected")]
-	public XRSurfaceData(Dova.JDK.sun.java2d.xr.XRBackend arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public XRSurfaceData(Dova.JDK.sun.java2d.xr.XRBackend arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;II)V", "protected")]
-	public XRSurfaceData(Dova.JDK.sun.awt.X11ComponentPeer arg0, Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg1, Dova.JDK.sun.java2d.loops.SurfaceType arg2, Dova.JDK.java.awt.image.ColorModel arg3, int arg4, int arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+	public XRSurfaceData(Dova.JDK.sun.awt.X11ComponentPeer arg0, Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg1, Dova.JDK.sun.java2d.loops.SurfaceType arg2, Dova.JDK.java.awt.image.ColorModel arg3, int arg4, int arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
@@ -761,15 +761,15 @@ public partial class XRSurfaceData
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSurfaceData$XRWindowSurfaceData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scale", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRWindowSurfaceData", "(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canSourceSendExposures", "(IIII)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDestination", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultScaleX", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultScaleY", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidate", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scale", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canSourceSendExposures", "(IIII)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDestination", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultScaleX", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultScaleY", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidate", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "protected final")]
@@ -792,7 +792,7 @@ public partial class XRSurfaceData
 		}
 
 		[JniSignatureAttribute("(Lsun/awt/X11ComponentPeer;Lsun/java2d/xr/XRGraphicsConfig;Lsun/java2d/loops/SurfaceType;)V", "public")]
-		public XRWindowSurfaceData(Dova.JDK.sun.awt.X11ComponentPeer arg0, Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg1, Dova.JDK.sun.java2d.loops.SurfaceType arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public XRWindowSurfaceData(Dova.JDK.sun.awt.X11ComponentPeer arg0, Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg1, Dova.JDK.sun.java2d.loops.SurfaceType arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -864,21 +864,21 @@ public partial class XRSurfaceData
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSurfaceData$XRPixmapSurfaceData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offscreenImage", "Ljava/awt/Image;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "width", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "height", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transparency", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scale", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRPixmapSurfaceData", "(Lsun/java2d/xr/XRGraphicsConfig;IILjava/awt/Image;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;JIIIZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canSourceSendExposures", "(IIII)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initSurface", "(IIIJI)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDestination", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultScaleX", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultScaleY", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offscreenImage", "Ljava/awt/Image;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "width", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "height", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transparency", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scale", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/xr/XRGraphicsConfig;IILjava/awt/Image;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;JIIIZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flush", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canSourceSendExposures", "(IIII)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initSurface", "(IIIJI)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDestination", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultScaleX", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultScaleY", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransparency", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Image;", "")]
@@ -957,7 +957,7 @@ public partial class XRSurfaceData
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/xr/XRGraphicsConfig;IILjava/awt/Image;Lsun/java2d/loops/SurfaceType;Ljava/awt/image/ColorModel;JIIIZ)V", "public")]
-		public XRPixmapSurfaceData(Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg0, int arg1, int arg2, Dova.JDK.java.awt.Image arg3, Dova.JDK.sun.java2d.loops.SurfaceType arg4, Dova.JDK.java.awt.image.ColorModel arg5, long arg6, int arg7, int arg8, int arg9, bool arg10) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
+		public XRPixmapSurfaceData(Dova.JDK.sun.java2d.xr.XRGraphicsConfig arg0, int arg1, int arg2, Dova.JDK.java.awt.Image arg3, Dova.JDK.sun.java2d.loops.SurfaceType arg4, Dova.JDK.java.awt.image.ColorModel arg5, long arg6, int arg7, int arg8, int arg9, bool arg10) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
 		{
 		}
 
@@ -1041,8 +1041,8 @@ public partial class XRSurfaceData
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSurfaceData$LazyPipe;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyPipe", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "(Lsun/java2d/SunGraphics2D;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validate", "(Lsun/java2d/SunGraphics2D;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1051,7 +1051,7 @@ public partial class XRSurfaceData
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public LazyPipe() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LazyPipe() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1081,11 +1081,11 @@ public partial class XRSurfaceData
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSurfaceData$XRInternalSurfaceData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRInternalSurfaceData", "(Lsun/java2d/xr/XRBackend;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canSourceSendExposures", "(IIII)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDestination", "()Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/xr/XRBackend;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canSourceSendExposures", "(IIII)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReplacement", "()Lsun/java2d/SurfaceData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDestination", "()Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1094,7 +1094,7 @@ public partial class XRSurfaceData
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/xr/XRBackend;I)V", "public")]
-		public XRInternalSurfaceData(Dova.JDK.sun.java2d.xr.XRBackend arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public XRInternalSurfaceData(Dova.JDK.sun.java2d.xr.XRBackend arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

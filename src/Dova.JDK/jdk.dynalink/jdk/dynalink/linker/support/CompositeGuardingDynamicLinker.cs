@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class CompositeGuardingDynamicLinker
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/linker/support/CompositeGuardingDynamicLinker;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "linkers", "[Ljdk/dynalink/linker/GuardingDynamicLinker;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeGuardingDynamicLinker", "(Ljava/lang/Iterable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "linkers", "[Ljdk/dynalink/linker/GuardingDynamicLinker;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Iterable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
 	}
 
 	[JniSignatureAttribute("[Ljdk/dynalink/linker/GuardingDynamicLinker;", "private final")]
@@ -57,7 +57,7 @@ public partial class CompositeGuardingDynamicLinker
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Iterable;)V", "public")]
-	public CompositeGuardingDynamicLinker(Dova.JDK.java.lang.Iterable arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CompositeGuardingDynamicLinker(Dova.JDK.java.lang.Iterable arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

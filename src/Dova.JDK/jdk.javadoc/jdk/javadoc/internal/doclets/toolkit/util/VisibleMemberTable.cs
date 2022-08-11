@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,54 +31,54 @@ public partial class VisibleMemberTable
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "te", "Ljavax/lang/model/element/TypeElement;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljavax/lang/model/element/TypeElement;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "config", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "Ljdk/javadoc/internal/doclets/toolkit/BaseOptions;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mcache", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allSuperclasses", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allSuperinterfaces", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parents", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "visibleMembers", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "propertyMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "overriddenMethodTable", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "implementMethodsFinders", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VisibleMemberTable", "(Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInherited", "(Ljavax/lang/model/element/Element;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureInitialized", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasVisibleMembers", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mustDocument", "(Ljavax/lang/model/element/Element;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImplementedMethods", "(Ljavax/lang/model/element/ExecutableElement;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAllVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeVisibleMethods", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMemberHidden", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljava/util/function/Predicate;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAllSuperinterfaces", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "allowInheritedMembers", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImplementedMethodHolder", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/type/TypeMirror;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "overridingSignatureChanged", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDocumentedAnnotations", "(Ljava/util/Set;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeParents", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeVisibleMembers", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisibleTypeElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPropertyField", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/VariableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPropertyGetter", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPropertySetter", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPropertyMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImplementedMethodsFinder", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$ImplementedMethods;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocumentedAnnotations", "(Ljavax/lang/model/element/ExecutableElement;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnclosureInterface", "(Ljavax/lang/model/element/Element;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAllSuperclasses", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSimplyOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "allowInheritedMethod", "(Ljavax/lang/model/element/ExecutableElement;Ljava/util/Map;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeVisibleProperties", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeVisibleFieldsAndInnerClasses", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "te", "Ljavax/lang/model/element/TypeElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljavax/lang/model/element/TypeElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "config", "Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "Ljdk/javadoc/internal/doclets/toolkit/BaseOptions;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mcache", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allSuperclasses", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allSuperinterfaces", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parents", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "visibleMembers", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "propertyMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "overriddenMethodTable", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "implementMethodsFinders", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isInherited", "(Ljavax/lang/model/element/Element;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureInitialized", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasVisibleMembers", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mustDocument", "(Ljavax/lang/model/element/Element;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImplementedMethods", "(Ljavax/lang/model/element/ExecutableElement;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAllVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeVisibleMethods", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMemberHidden", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljava/util/function/Predicate;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAllSuperinterfaces", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "allowInheritedMembers", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImplementedMethodHolder", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/type/TypeMirror;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "overridingSignatureChanged", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDocumentedAnnotations", "(Ljava/util/Set;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeParents", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeVisibleMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeVisibleMembers", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisibleTypeElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPropertyField", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/VariableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPropertyGetter", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPropertySetter", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPropertyMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImplementedMethodsFinder", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$ImplementedMethods;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocumentedAnnotations", "(Ljavax/lang/model/element/ExecutableElement;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnclosureInterface", "(Ljavax/lang/model/element/Element;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAllSuperclasses", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSimplyOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/element/ExecutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "allowInheritedMethod", "(Ljavax/lang/model/element/ExecutableElement;Ljava/util/Map;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeVisibleProperties", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeVisibleFieldsAndInnerClasses", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/lang/model/element/TypeElement;", "final")]
@@ -269,7 +269,7 @@ public partial class VisibleMemberTable
 	}
 
 	[JniSignatureAttribute("(Ljavax/lang/model/element/TypeElement;Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;)V", "protected")]
-	public VisibleMemberTable(Dova.JDK.javax.lang.model.element.TypeElement arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg1, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberCache arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public VisibleMemberTable(Dova.JDK.javax.lang.model.element.TypeElement arg0, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.BaseConfiguration arg1, Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberCache arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -522,28 +522,28 @@ public partial class VisibleMemberTable
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NESTED_CLASSES", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENUM_CONSTANTS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELDS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTORS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHODS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_MEMBER", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_MEMBER_REQUIRED", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_MEMBER_OPTIONAL", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTIES", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultSummarySet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "enumSummarySet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "annotationSummarySet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultDetailSet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "enumDetailSet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "annotationDetailSet", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Kind", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forDetailsOf", "(Ljavax/lang/model/element/ElementKind;)Ljava/util/Set;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forSummariesOf", "(Ljavax/lang/model/element/ElementKind;)Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NESTED_CLASSES", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENUM_CONSTANTS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELDS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTORS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHODS", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_MEMBER", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_MEMBER_REQUIRED", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_MEMBER_OPTIONAL", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROPERTIES", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultSummarySet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "enumSummarySet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "annotationSummarySet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultDetailSet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "enumDetailSet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "annotationDetailSet", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forDetailsOf", "(Ljavax/lang/model/element/ElementKind;)Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forSummariesOf", "(Ljavax/lang/model/element/ElementKind;)Ljava/util/Set;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;", "public static final")]
@@ -776,7 +776,7 @@ public partial class VisibleMemberTable
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Kind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Kind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -835,10 +835,10 @@ public partial class VisibleMemberTable
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$OverriddenMethodInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "overridden", "Ljavax/lang/model/element/ExecutableElement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "simpleOverride", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OverriddenMethodInfo", "(Ljavax/lang/model/element/ExecutableElement;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "overridden", "Ljavax/lang/model/element/ExecutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "simpleOverride", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/lang/model/element/ExecutableElement;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/lang/model/element/ExecutableElement;", "final")]
@@ -875,7 +875,7 @@ public partial class VisibleMemberTable
 		}
 
 		[JniSignatureAttribute("(Ljavax/lang/model/element/ExecutableElement;Z)V", "public")]
-		public OverriddenMethodInfo(Dova.JDK.javax.lang.model.element.ExecutableElement arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OverriddenMethodInfo(Dova.JDK.javax.lang.model.element.ExecutableElement arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -906,18 +906,18 @@ public partial class VisibleMemberTable
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$PropertyMembers;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "propertyMethod", "Ljavax/lang/model/element/ExecutableElement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "field", "Ljavax/lang/model/element/VariableElement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "getter", "Ljavax/lang/model/element/ExecutableElement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "setter", "Ljavax/lang/model/element/ExecutableElement;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PropertyMembers", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/VariableElement;Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "field", "()Ljavax/lang/model/element/VariableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getter", "()Ljavax/lang/model/element/ExecutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setter", "()Ljavax/lang/model/element/ExecutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "propertyMethod", "()Ljavax/lang/model/element/ExecutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "propertyMethod", "Ljavax/lang/model/element/ExecutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "field", "Ljavax/lang/model/element/VariableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "getter", "Ljavax/lang/model/element/ExecutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "setter", "Ljavax/lang/model/element/ExecutableElement;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/VariableElement;Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "field", "()Ljavax/lang/model/element/VariableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getter", "()Ljavax/lang/model/element/ExecutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setter", "()Ljavax/lang/model/element/ExecutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "propertyMethod", "()Ljavax/lang/model/element/ExecutableElement;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/lang/model/element/ExecutableElement;", "private final")]
@@ -982,7 +982,7 @@ public partial class VisibleMemberTable
 		}
 
 		[JniSignatureAttribute("(Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/VariableElement;Ljavax/lang/model/element/ExecutableElement;Ljavax/lang/model/element/ExecutableElement;)V", "")]
-		public PropertyMembers(Dova.JDK.javax.lang.model.element.ExecutableElement propertyMethod, Dova.JDK.javax.lang.model.element.VariableElement field, Dova.JDK.javax.lang.model.element.ExecutableElement getter, Dova.JDK.javax.lang.model.element.ExecutableElement setter) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], propertyMethod, field, getter, setter))
+		public PropertyMembers(Dova.JDK.javax.lang.model.element.ExecutableElement propertyMethod, Dova.JDK.javax.lang.model.element.VariableElement field, Dova.JDK.javax.lang.model.element.ExecutableElement getter, Dova.JDK.javax.lang.model.element.ExecutableElement setter) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], propertyMethod, field, getter, setter))
 		{
 		}
 
@@ -1055,17 +1055,17 @@ public partial class VisibleMemberTable
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$LocalMemberTable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "orderedMembers", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "memberMap", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LocalMemberTable", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMembers", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMembers", "(Ljava/lang/String;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMembers", "(Ljava/lang/String;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljava/lang/Class;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPropertyMethods", "(Ljava/lang/String;I)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrderedMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMemberKey", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addMember", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "orderedMembers", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "memberMap", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMembers", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMembers", "(Ljava/lang/String;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMembers", "(Ljava/lang/String;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;Ljava/lang/Class;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPropertyMethods", "(Ljava/lang/String;I)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrderedMembers", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMemberKey", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addMember", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -1116,7 +1116,7 @@ public partial class VisibleMemberTable
 		}
 
 		[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;)V", "")]
-		public LocalMemberTable(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberTable arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LocalMemberTable(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberTable arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1188,14 +1188,14 @@ public partial class VisibleMemberTable
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$ImplementedMethods;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interfaces", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methlist", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImplementedMethods", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;Ljavax/lang/model/element/ExecutableElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImplementedMethods", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMethodHolder", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/type/TypeMirror;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "overridingMethodFound", "(Ljavax/lang/model/element/ExecutableElement;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interfaces", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methlist", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;Ljavax/lang/model/element/ExecutableElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImplementedMethods", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMethodHolder", "(Ljavax/lang/model/element/ExecutableElement;)Ljavax/lang/model/type/TypeMirror;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeOverriddenMethod", "(Ljavax/lang/model/element/ExecutableElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "overridingMethodFound", "(Ljavax/lang/model/element/ExecutableElement;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -1246,7 +1246,7 @@ public partial class VisibleMemberTable
 		}
 
 		[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;Ljavax/lang/model/element/ExecutableElement;)V", "public")]
-		public ImplementedMethods(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberTable arg0, Dova.JDK.javax.lang.model.element.ExecutableElement arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ImplementedMethods(Dova.JDK.jdk.javadoc.@internal.doclets.toolkit.util.VisibleMemberTable arg0, Dova.JDK.javax.lang.model.element.ExecutableElement arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

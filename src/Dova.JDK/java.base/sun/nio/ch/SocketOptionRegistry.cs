@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class SocketOptionRegistry
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/SocketOptionRegistry;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SocketOptionRegistry", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findOption", "(Ljava/net/SocketOption;Ljava/net/ProtocolFamily;)Lsun/nio/ch/OptionKey;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findOption", "(Ljava/net/SocketOption;Ljava/net/ProtocolFamily;)Lsun/nio/ch/OptionKey;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +40,7 @@ public partial class SocketOptionRegistry
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SocketOptionRegistry() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SocketOptionRegistry() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -70,11 +70,11 @@ public partial class SocketOptionRegistry
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/SocketOptionRegistry$RegistryKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/net/SocketOption;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "family", "Ljava/net/ProtocolFamily;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RegistryKey", "(Ljava/net/SocketOption;Ljava/net/ProtocolFamily;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/net/SocketOption;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "family", "Ljava/net/ProtocolFamily;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/SocketOption;Ljava/net/ProtocolFamily;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljava/net/SocketOption;", "private final")]
@@ -111,7 +111,7 @@ public partial class SocketOptionRegistry
 		}
 
 		[JniSignatureAttribute("(Ljava/net/SocketOption;Ljava/net/ProtocolFamily;)V", "")]
-		public RegistryKey(Dova.JDK.java.net.SocketOption arg0, Dova.JDK.java.net.ProtocolFamily arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public RegistryKey(Dova.JDK.java.net.SocketOption arg0, Dova.JDK.java.net.ProtocolFamily arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -149,9 +149,9 @@ public partial class SocketOptionRegistry
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/SocketOptionRegistry$LazyInitialization;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "options", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyInitialization", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "options", "()Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "options", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "options", "()Ljava/util/Map;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "static final")]
@@ -174,7 +174,7 @@ public partial class SocketOptionRegistry
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public LazyInitialization() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LazyInitialization() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

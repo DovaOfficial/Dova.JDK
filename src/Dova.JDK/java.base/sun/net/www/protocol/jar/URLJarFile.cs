@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,25 +31,25 @@ public partial class URLJarFile
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/protocol/jar/URLJarFile;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "callback", "Lsun/net/www/protocol/jar/URLJarFileCallBack;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeController", "Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BUF_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superMan", "Ljava/util/jar/Manifest;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superAttr", "Ljava/util/jar/Attributes;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superEntries", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URLJarFile", "(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URLJarFile", "(Ljava/io/File;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URLJarFile", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URLJarFile", "(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJarFile", "(Ljava/net/URL;)Ljava/util/jar/JarFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJarFile", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)Ljava/util/jar/JarFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getManifest", "()Ljava/util/jar/Manifest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "retrieve", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)Ljava/util/jar/JarFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isFileURL", "(Ljava/net/URL;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSuperMan", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setCallBack", "(Lsun/net/www/protocol/jar/URLJarFileCallBack;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "callback", "Lsun/net/www/protocol/jar/URLJarFileCallBack;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeController", "Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BUF_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superMan", "Ljava/util/jar/Manifest;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superAttr", "Ljava/util/jar/Attributes;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superEntries", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/File;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJarFile", "(Ljava/net/URL;)Ljava/util/jar/JarFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJarFile", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)Ljava/util/jar/JarFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getManifest", "()Ljava/util/jar/Manifest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEntry", "(Ljava/lang/String;)Ljava/util/zip/ZipEntry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "retrieve", "(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)Ljava/util/jar/JarFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isFileURL", "(Ljava/net/URL;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSuperMan", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setCallBack", "(Lsun/net/www/protocol/jar/URLJarFileCallBack;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/net/www/protocol/jar/URLJarFileCallBack;", "private static")]
@@ -142,22 +142,22 @@ public partial class URLJarFile
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V", "private")]
-	public URLJarFile(Dova.JDK.java.io.File arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1, Dova.JDK.java.lang.Runtime.Version arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public URLJarFile(Dova.JDK.java.io.File arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1, Dova.JDK.java.lang.Runtime.Version arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;)V", "public")]
-	public URLJarFile(Dova.JDK.java.io.File arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public URLJarFile(Dova.JDK.java.io.File arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URL;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;Ljava/lang/Runtime$Version;)V", "private")]
-	public URLJarFile(Dova.JDK.java.net.URL arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1, Dova.JDK.java.lang.Runtime.Version arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public URLJarFile(Dova.JDK.java.net.URL arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1, Dova.JDK.java.lang.Runtime.Version arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/io/File;Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;)V", "public")]
-	public URLJarFile(Dova.JDK.java.io.File arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public URLJarFile(Dova.JDK.java.io.File arg0, Dova.JDK.sun.net.www.protocol.jar.URLJarFile.URLJarFileCloseController arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
@@ -239,7 +239,7 @@ public partial class URLJarFile
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/protocol/jar/URLJarFile$URLJarFileCloseController;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "(Ljava/util/jar/JarFile;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "(Ljava/util/jar/JarFile;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/jar/JarFile;)V", "public abstract")]
@@ -264,12 +264,12 @@ public partial class URLJarFile
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/protocol/jar/URLJarFile$URLJarFileEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "je", "Ljava/util/jar/JarEntry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/net/www/protocol/jar/URLJarFile;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URLJarFileEntry", "(Lsun/net/www/protocol/jar/URLJarFile;Ljava/util/jar/JarEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCertificates", "()[Ljava/security/cert/Certificate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCodeSigners", "()[Ljava/security/CodeSigner;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljava/util/jar/Attributes;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "je", "Ljava/util/jar/JarEntry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/net/www/protocol/jar/URLJarFile;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/net/www/protocol/jar/URLJarFile;Ljava/util/jar/JarEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCertificates", "()[Ljava/security/cert/Certificate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCodeSigners", "()[Ljava/security/CodeSigner;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "()Ljava/util/jar/Attributes;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/jar/JarEntry;", "private")]
@@ -306,7 +306,7 @@ public partial class URLJarFile
 		}
 
 		[JniSignatureAttribute("(Lsun/net/www/protocol/jar/URLJarFile;Ljava/util/jar/JarEntry;)V", "")]
-		public URLJarFileEntry(Dova.JDK.sun.net.www.protocol.jar.URLJarFile arg0, Dova.JDK.java.util.jar.JarEntry arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public URLJarFileEntry(Dova.JDK.sun.net.www.protocol.jar.URLJarFile arg0, Dova.JDK.java.util.jar.JarEntry arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class TreeSelectionEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/TreeSelectionEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "paths", "[Ljavax/swing/tree/TreePath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "areNew", "[Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oldLeadSelectionPath", "Ljavax/swing/tree/TreePath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "newLeadSelectionPath", "Ljavax/swing/tree/TreePath;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TreeSelectionEvent", "(Ljava/lang/Object;[Ljavax/swing/tree/TreePath;[ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TreeSelectionEvent", "(Ljava/lang/Object;Ljavax/swing/tree/TreePath;ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPath", "()Ljavax/swing/tree/TreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPaths", "()[Ljavax/swing/tree/TreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAddedPath", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAddedPath", "(Ljavax/swing/tree/TreePath;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAddedPath", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOldLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNewLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cloneWithSource", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "paths", "[Ljavax/swing/tree/TreePath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "areNew", "[Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oldLeadSelectionPath", "Ljavax/swing/tree/TreePath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "newLeadSelectionPath", "Ljavax/swing/tree/TreePath;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;[Ljavax/swing/tree/TreePath;[ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljavax/swing/tree/TreePath;ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPath", "()Ljavax/swing/tree/TreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPaths", "()[Ljavax/swing/tree/TreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAddedPath", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAddedPath", "(Ljavax/swing/tree/TreePath;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAddedPath", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOldLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNewLeadSelectionPath", "()Ljavax/swing/tree/TreePath;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cloneWithSource", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("[Ljavax/swing/tree/TreePath;", "protected")]
@@ -109,12 +109,12 @@ public partial class TreeSelectionEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;[Ljavax/swing/tree/TreePath;[ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V", "public")]
-	public TreeSelectionEvent(Dova.JDK.java.lang.Object arg0, JavaArray<Dova.JDK.javax.swing.tree.TreePath> arg1, JavaArray<bool> arg2, Dova.JDK.javax.swing.tree.TreePath arg3, Dova.JDK.javax.swing.tree.TreePath arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public TreeSelectionEvent(Dova.JDK.java.lang.Object arg0, JavaArray<Dova.JDK.javax.swing.tree.TreePath> arg1, JavaArray<bool> arg2, Dova.JDK.javax.swing.tree.TreePath arg3, Dova.JDK.javax.swing.tree.TreePath arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/tree/TreePath;ZLjavax/swing/tree/TreePath;Ljavax/swing/tree/TreePath;)V", "public")]
-	public TreeSelectionEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.tree.TreePath arg1, bool arg2, Dova.JDK.javax.swing.tree.TreePath arg3, Dova.JDK.javax.swing.tree.TreePath arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public TreeSelectionEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.tree.TreePath arg1, bool arg2, Dova.JDK.javax.swing.tree.TreePath arg3, Dova.JDK.javax.swing.tree.TreePath arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

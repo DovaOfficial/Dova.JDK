@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class PeerEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/PeerEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRIORITY_EVENT", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ULTIMATE_PRIORITY_EVENT", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOW_PRIORITY_EVENT", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PeerEvent", "(Ljava/lang/Object;Ljava/lang/Runnable;J)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PeerEvent", "(Ljava/lang/Object;Ljava/lang/Runnable;Ljava/lang/Object;ZJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlags", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "coalesceEvents", "(Lsun/awt/PeerEvent;)Lsun/awt/PeerEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRIORITY_EVENT", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ULTIMATE_PRIORITY_EVENT", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOW_PRIORITY_EVENT", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljava/lang/Runnable;J)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljava/lang/Runnable;Ljava/lang/Object;ZJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlags", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "coalesceEvents", "(Lsun/awt/PeerEvent;)Lsun/awt/PeerEvent;"));
 	}
 
 	[JniSignatureAttribute("J", "public static final")]
@@ -103,12 +103,12 @@ public partial class PeerEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Runnable;J)V", "public")]
-	public PeerEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Runnable arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public PeerEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Runnable arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/Runnable;Ljava/lang/Object;ZJ)V", "public")]
-	public PeerEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Runnable arg1, Dova.JDK.java.lang.Object arg2, bool arg3, long arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public PeerEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Runnable arg1, Dova.JDK.java.lang.Object arg2, bool arg3, long arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

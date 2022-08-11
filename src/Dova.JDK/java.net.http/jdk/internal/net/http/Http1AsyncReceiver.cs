@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,42 +31,42 @@ public partial class Http1AsyncReceiver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http1AsyncReceiver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "queue", "Ljava/util/concurrent/ConcurrentLinkedDeque;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "whenFinished", "Ljdk/internal/net/http/common/MinimalFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "executor", "Ljava/util/concurrent/Executor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subscriber", "Ljdk/internal/net/http/Http1AsyncReceiver$Http1TubeSubscriber;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pendingDelegateRef", "Ljava/util/concurrent/atomic/AtomicReference;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "received", "Ljava/util/concurrent/atomic/AtomicLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canRequestMore", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "error", "Ljava/lang/Throwable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegate", "Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "owner", "Ljdk/internal/net/http/Http1Exchange;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "client", "Ljdk/internal/net/http/HttpClientImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "retry", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stopRequested", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dbgTag", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http1AsyncReceiver", "(Ljava/util/concurrent/Executor;Ljdk/internal/net/http/Http1Exchange;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flush", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remaining", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subscriber", "()Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasDemand", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkForErrors", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkRequestMore", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onReadError", "(Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "debugQBB", "([Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handlePendingDelegate", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subscribe", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unsubscribe", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asyncReceive", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setRetryOnError", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "describe", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drain", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "queue", "Ljava/util/concurrent/ConcurrentLinkedDeque;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "whenFinished", "Ljdk/internal/net/http/common/MinimalFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "executor", "Ljava/util/concurrent/Executor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subscriber", "Ljdk/internal/net/http/Http1AsyncReceiver$Http1TubeSubscriber;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pendingDelegateRef", "Ljava/util/concurrent/atomic/AtomicReference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "received", "Ljava/util/concurrent/atomic/AtomicLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canRequestMore", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "error", "Ljava/lang/Throwable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegate", "Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "owner", "Ljdk/internal/net/http/Http1Exchange;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "client", "Ljdk/internal/net/http/HttpClientImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "retry", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stopRequested", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dbgTag", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/Executor;Ljdk/internal/net/http/Http1Exchange;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flush", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remaining", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subscriber", "()Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasDemand", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkForErrors", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkRequestMore", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onReadError", "(Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "debugQBB", "([Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handlePendingDelegate", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dbgString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subscribe", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unsubscribe", "(Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asyncReceive", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setRetryOnError", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "describe", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drain", "(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
@@ -313,7 +313,7 @@ public partial class Http1AsyncReceiver
 	}
 
 	[JniSignatureAttribute("(Ljava/util/concurrent/Executor;Ljdk/internal/net/http/Http1Exchange;)V", "public")]
-	public Http1AsyncReceiver(Dova.JDK.java.util.concurrent.Executor arg0, Dova.JDK.jdk.@internal.net.http.Http1Exchange arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public Http1AsyncReceiver(Dova.JDK.java.util.concurrent.Executor arg0, Dova.JDK.jdk.@internal.net.http.Http1Exchange arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -453,19 +453,19 @@ public partial class Http1AsyncReceiver
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http1AsyncReceiver$Http1TubeSubscriber;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subscription", "Ljava/util/concurrent/Flow$Subscription;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dropped", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/Http1AsyncReceiver;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http1TubeSubscriber", "(Ljdk/internal/net/http/Http1AsyncReceiver;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requestMore", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropSubscription", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onError", "(Ljava/lang/Throwable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onComplete", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subscription", "Ljava/util/concurrent/Flow$Subscription;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completed", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dropped", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/net/http/Http1AsyncReceiver;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/Http1AsyncReceiver;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requestMore", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropSubscription", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onNext", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onNext", "(Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onError", "(Ljava/lang/Throwable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onComplete", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/Flow$Subscription;", "volatile")]
@@ -544,7 +544,7 @@ public partial class Http1AsyncReceiver
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/Http1AsyncReceiver;)V", "")]
-		public Http1TubeSubscriber(Dova.JDK.jdk.@internal.net.http.Http1AsyncReceiver arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Http1TubeSubscriber(Dova.JDK.jdk.@internal.net.http.Http1AsyncReceiver arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -608,11 +608,11 @@ public partial class Http1AsyncReceiver
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegate;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "(Ljava/lang/Throwable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAsyncReceive", "(Ljava/nio/ByteBuffer;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onReadError", "(Ljava/lang/Throwable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subscription", "()Ljdk/internal/net/http/AbstractSubscription;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "(Ljava/lang/Throwable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAsyncReceive", "(Ljava/nio/ByteBuffer;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onReadError", "(Ljava/lang/Throwable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subscription", "()Ljdk/internal/net/http/AbstractSubscription;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onSubscribe", "(Ljdk/internal/net/http/AbstractSubscription;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Throwable;)V", "public abstract")]
@@ -663,13 +663,13 @@ public partial class Http1AsyncReceiver
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/Http1AsyncReceiver$Http1AsyncDelegateSubscription;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onCancel", "Ljava/lang/Runnable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onError", "Ljava/util/function/Consumer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cancelled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Http1AsyncDelegateSubscription", "(Ljdk/internal/net/http/common/SequentialScheduler;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cancel", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "request", "(J)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onCancel", "Ljava/lang/Runnable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onError", "Ljava/util/function/Consumer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cancelled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SequentialScheduler;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cancel", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "request", "(J)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Runnable;", "private final")]
@@ -734,7 +734,7 @@ public partial class Http1AsyncReceiver
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/common/SequentialScheduler;Ljava/lang/Runnable;Ljava/util/function/Consumer;)V", "")]
-		public Http1AsyncDelegateSubscription(Dova.JDK.jdk.@internal.net.http.common.SequentialScheduler arg0, Dova.JDK.java.lang.Runnable arg1, Dova.JDK.java.util.function.Consumer arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Http1AsyncDelegateSubscription(Dova.JDK.jdk.@internal.net.http.common.SequentialScheduler arg0, Dova.JDK.java.lang.Runnable arg1, Dova.JDK.java.util.function.Consumer arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

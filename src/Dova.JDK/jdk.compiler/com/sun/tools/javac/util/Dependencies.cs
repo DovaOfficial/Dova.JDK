@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class Dependencies
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dependenciesKey", "Lcom/sun/tools/javac/util/Context$Key;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dependencies", "(Lcom/sun/tools/javac/util/Context;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/util/Dependencies;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pop", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dependenciesKey", "Lcom/sun/tools/javac/util/Context$Key;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/util/Dependencies;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pop", "()V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context$Key;", "protected static final")]
@@ -58,7 +58,7 @@ public partial class Dependencies
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "protected")]
-	public Dependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Dependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -99,9 +99,9 @@ public partial class Dependencies
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$DummyDependencies;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DummyDependencies", "(Lcom/sun/tools/javac/util/Context;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pop", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pop", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -110,7 +110,7 @@ public partial class Dependencies
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "private")]
-		public DummyDependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DummyDependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -148,19 +148,19 @@ public partial class Dependencies
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dependenciesModes", "Ljava/util/EnumSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dependenciesFile", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nodeStack", "Ljava/util/Stack;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dependencyNodeMap", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GraphDependencies", "(Lcom/sun/tools/javac/util/Context;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "push", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pop", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "complete", "(Lcom/sun/tools/javac/code/Symbol;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNodes", "()Ljava/util/Collection;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTerminal", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "preRegister", "(Lcom/sun/tools/javac/util/Context;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dependenciesModes", "Ljava/util/EnumSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dependenciesFile", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nodeStack", "Ljava/util/Stack;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dependencyNodeMap", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "push", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "push", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;Lcom/sun/tools/javac/util/Dependencies$CompletionCause;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pop", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "complete", "(Lcom/sun/tools/javac/code/Symbol;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNodes", "()Ljava/util/Collection;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTerminal", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "preRegister", "(Lcom/sun/tools/javac/util/Context;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/EnumSet;", "private")]
@@ -225,7 +225,7 @@ public partial class Dependencies
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "")]
-		public GraphDependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public GraphDependencies(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -299,16 +299,16 @@ public partial class Dependencies
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REDUNDANT", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "opt", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DependenciesMode", "(Ljava/lang/String;ILjava/lang/String;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDependenciesModes", "([Ljava/lang/String;)Ljava/util/EnumSet;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REDUNDANT", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "opt", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDependenciesModes", "([Ljava/lang/String;)Ljava/util/EnumSet;"));
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$DependenciesMode;", "public static final")]
@@ -387,7 +387,7 @@ public partial class Dependencies
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;)V", "private")]
-			public DependenciesMode(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public DependenciesMode(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -439,10 +439,10 @@ public partial class Dependencies
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ck", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompletionNode", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nodeAttributes", "()Ljava/util/Properties;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassSymbol", "()Lcom/sun/tools/javac/code/Symbol$ClassSymbol;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ck", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nodeAttributes", "()Ljava/util/Properties;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassSymbol", "()Lcom/sun/tools/javac/code/Symbol$ClassSymbol;"));
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;", "final")]
@@ -465,7 +465,7 @@ public partial class Dependencies
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V", "")]
-			public CompletionNode(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public CompletionNode(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -502,14 +502,14 @@ public partial class Dependencies
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dotStyle", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Kind", "(Ljava/lang/String;ILjava/lang/String;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dotStyle", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
 				}
 
 				[JniSignatureAttribute("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;", "public static final")]
@@ -574,7 +574,7 @@ public partial class Dependencies
 				}
 
 				[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;)V", "private")]
-				public Kind(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Kind(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
@@ -621,17 +621,17 @@ public partial class Dependencies
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "depsByKind", "Ljava/util/EnumMap;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Node", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSupportedDependencyKinds", "()[Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDependenciesByKind", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Collection;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nodeAttributes", "()Ljava/util/Properties;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dependencyAttributes", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Properties;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dependencyAttributes", "(Lcom/sun/tools/javac/util/GraphUtils$DottableNode;Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Properties;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "depsByKind", "Ljava/util/EnumMap;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSupportedDependencyKinds", "()[Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDependenciesByKind", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Collection;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nodeAttributes", "()Ljava/util/Properties;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dependencyAttributes", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Properties;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dependencyAttributes", "(Lcom/sun/tools/javac/util/GraphUtils$DottableNode;Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;)Ljava/util/Properties;"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/EnumMap;", "")]
@@ -654,7 +654,7 @@ public partial class Dependencies
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Symbol$ClassSymbol;)V", "")]
-			public Node(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public Node(Dova.JDK.com.sun.tools.javac.code.Symbol.ClassSymbol arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -739,11 +739,11 @@ public partial class Dependencies
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$PruneVisitor;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PruneVisitor", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNode", "(Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNode", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/GraphUtils$Node;Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNode", "(Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNode", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/GraphUtils$Node;Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -752,7 +752,7 @@ public partial class Dependencies
 			}
 
 			[JniSignatureAttribute("()V", "private")]
-			public PruneVisitor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public PruneVisitor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -800,13 +800,13 @@ public partial class Dependencies
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$FilterVisitor;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ck", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FilterVisitor", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNode", "(Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNode", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/GraphUtils$Node;Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ck", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNode", "(Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNode", "(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/GraphUtils$Node;Lcom/sun/tools/javac/util/GraphUtils$Node;Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDependency", "(Lcom/sun/tools/javac/util/GraphUtils$DependencyKind;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$Node;Ljava/lang/Void;)V"));
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;", "")]
@@ -843,7 +843,7 @@ public partial class Dependencies
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Dependencies$GraphDependencies;Lcom/sun/tools/javac/util/Dependencies$GraphDependencies$CompletionNode$Kind;)V", "private")]
-			public FilterVisitor(Dova.JDK.com.sun.tools.javac.util.Dependencies.GraphDependencies arg0, Dova.JDK.com.sun.tools.javac.util.Dependencies.GraphDependencies.CompletionNode.Kind arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public FilterVisitor(Dova.JDK.com.sun.tools.javac.util.Dependencies.GraphDependencies arg0, Dova.JDK.com.sun.tools.javac.util.Dependencies.GraphDependencies.CompletionNode.Kind arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -893,20 +893,20 @@ public partial class Dependencies
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/util/Dependencies$CompletionCause;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_READER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEADER_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HIERARCHY_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMPORTS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEMBER_ENTER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RECORD_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEMBERS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PERMITS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OTHER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompletionCause", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_READER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEADER_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HIERARCHY_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMPORTS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEMBER_ENTER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RECORD_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEMBERS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PERMITS_PHASE", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OTHER", "Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/javac/util/Dependencies$CompletionCause;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/util/Dependencies$CompletionCause;", "public static final")]
@@ -1055,7 +1055,7 @@ public partial class Dependencies
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public CompletionCause(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompletionCause(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

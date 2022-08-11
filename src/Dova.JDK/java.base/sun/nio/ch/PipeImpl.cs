@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class PipeImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/ch/PipeImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljava/nio/channels/Pipe$SourceChannel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sink", "Ljava/nio/channels/Pipe$SinkChannel;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PipeImpl", "(Ljava/nio/channels/spi/SelectorProvider;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "source", "()Ljava/nio/channels/Pipe$SourceChannel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sink", "()Ljava/nio/channels/Pipe$SinkChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljava/nio/channels/Pipe$SourceChannel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sink", "Ljava/nio/channels/Pipe$SinkChannel;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/channels/spi/SelectorProvider;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "source", "()Ljava/nio/channels/Pipe$SourceChannel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sink", "()Ljava/nio/channels/Pipe$SinkChannel;"));
 	}
 
 	[JniSignatureAttribute("Ljava/nio/channels/Pipe$SourceChannel;", "private final")]
@@ -72,7 +72,7 @@ public partial class PipeImpl
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/channels/spi/SelectorProvider;)V", "")]
-	public PipeImpl(Dova.JDK.java.nio.channels.spi.SelectorProvider arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public PipeImpl(Dova.JDK.java.nio.channels.spi.SelectorProvider arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

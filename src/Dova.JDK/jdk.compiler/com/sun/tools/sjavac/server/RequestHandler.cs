@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class RequestHandler
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/sjavac/server/RequestHandler;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "socket", "Ljava/net/Socket;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sjavac", "Lcom/sun/tools/sjavac/server/Sjavac;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RequestHandler", "(Ljava/net/Socket;Lcom/sun/tools/sjavac/server/Sjavac;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInternalErrorLog", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "socket", "Ljava/net/Socket;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sjavac", "Lcom/sun/tools/sjavac/server/Sjavac;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/Socket;Lcom/sun/tools/sjavac/server/Sjavac;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInternalErrorLog", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/Socket;", "private final")]
@@ -72,7 +72,7 @@ public partial class RequestHandler
 	}
 
 	[JniSignatureAttribute("(Ljava/net/Socket;Lcom/sun/tools/sjavac/server/Sjavac;)V", "public")]
-	public RequestHandler(Dova.JDK.java.net.Socket arg0, Dova.JDK.com.sun.tools.sjavac.server.Sjavac arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public RequestHandler(Dova.JDK.java.net.Socket arg0, Dova.JDK.com.sun.tools.sjavac.server.Sjavac arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,76 +32,76 @@ public partial class GroupLayout
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREF_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPECIFIC_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSET", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INFINITE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREFERRED_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "autocreatePadding", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "autocreateContainerPadding", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "horizontalGroup", "Ljavax/swing/GroupLayout$Group;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verticalGroup", "Ljavax/swing/GroupLayout$Group;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "componentInfos", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "host", "Ljava/awt/Container;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tmpParallelSet", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "springsChanged", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isValid", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasPreferredPaddingSprings", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "layoutStyle", "Ljavax/swing/LayoutStyle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "honorsVisibility", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GroupLayout", "(Ljava/awt/Container;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "replace", "(Ljava/awt/Component;Ljava/awt/Component;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepare", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkSize", "(IIIZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLayoutStyle", "()Ljavax/swing/LayoutStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkComponents", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkResizeType", "(IZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkLessThan", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createParallelGroup", "()Ljavax/swing/GroupLayout$ParallelGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createParallelGroup", "(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createParallelGroup", "(Ljavax/swing/GroupLayout$Alignment;Z)Ljavax/swing/GroupLayout$ParallelGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHorizontalGroup", "(Ljavax/swing/GroupLayout$Group;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setVerticalGroup", "(Ljavax/swing/GroupLayout$Group;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidateHost", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponentInfo", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$ComponentInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHonorsVisibility", "(Ljava/awt/Component;Ljava/lang/Boolean;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHonorsVisibility", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHorizontalGroup", "()Ljavax/swing/GroupLayout$Group;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTopLevelGroup", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVerticalGroup", "()Ljavax/swing/GroupLayout$Group;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSequentialGroup", "()Ljavax/swing/GroupLayout$SequentialGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAutoCreateContainerGaps", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "linkSize", "([Ljava/awt/Component;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "linkSize", "(I[Ljava/awt/Component;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerComponents", "(Ljavax/swing/GroupLayout$Group;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkParent", "(Ljava/awt/Container;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjustSize", "(II)Ljava/awt/Dimension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAutoCreateGaps", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateAutopadding", "(Ljavax/swing/GroupLayout$Group;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAutopadding", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSpringDescription", "(Ljava/lang/StringBuilder;Ljavax/swing/GroupLayout$Spring;Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHonorsVisibility", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAutoCreateGaps", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAutoCreateContainerGaps", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBaselineGroup", "(ZZ)Ljavax/swing/GroupLayout$ParallelGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLayoutStyle", "(Ljavax/swing/LayoutStyle;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLayoutStyle0", "()Ljavax/swing/LayoutStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "areParallelSiblings", "(Ljava/awt/Component;Ljava/awt/Component;I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeLayoutComponent", "(Ljava/awt/Component;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "layoutContainer", "(Ljava/awt/Container;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidateLayout", "(Ljava/awt/Container;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLayoutAlignmentX", "(Ljava/awt/Container;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLayoutAlignmentY", "(Ljava/awt/Container;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLeftToRight", "()Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIN_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PREF_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPECIFIC_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSET", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INFINITE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PREFERRED_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "autocreatePadding", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "autocreateContainerPadding", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "horizontalGroup", "Ljavax/swing/GroupLayout$Group;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "verticalGroup", "Ljavax/swing/GroupLayout$Group;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "componentInfos", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "host", "Ljava/awt/Container;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tmpParallelSet", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "springsChanged", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isValid", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasPreferredPaddingSprings", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "layoutStyle", "Ljavax/swing/LayoutStyle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "honorsVisibility", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Container;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "replace", "(Ljava/awt/Component;Ljava/awt/Component;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepare", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkSize", "(IIIZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLayoutStyle", "()Ljavax/swing/LayoutStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkComponents", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkResizeType", "(IZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkLessThan", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createParallelGroup", "()Ljavax/swing/GroupLayout$ParallelGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createParallelGroup", "(Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createParallelGroup", "(Ljavax/swing/GroupLayout$Alignment;Z)Ljavax/swing/GroupLayout$ParallelGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHorizontalGroup", "(Ljavax/swing/GroupLayout$Group;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setVerticalGroup", "(Ljavax/swing/GroupLayout$Group;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidateHost", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponentInfo", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$ComponentInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHonorsVisibility", "(Ljava/awt/Component;Ljava/lang/Boolean;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHonorsVisibility", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHorizontalGroup", "()Ljavax/swing/GroupLayout$Group;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTopLevelGroup", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVerticalGroup", "()Ljavax/swing/GroupLayout$Group;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSequentialGroup", "()Ljavax/swing/GroupLayout$SequentialGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAutoCreateContainerGaps", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "linkSize", "([Ljava/awt/Component;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "linkSize", "(I[Ljava/awt/Component;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registerComponents", "(Ljavax/swing/GroupLayout$Group;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkParent", "(Ljava/awt/Container;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "adjustSize", "(II)Ljava/awt/Dimension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAutoCreateGaps", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateAutopadding", "(Ljavax/swing/GroupLayout$Group;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertAutopadding", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSpringDescription", "(Ljava/lang/StringBuilder;Ljavax/swing/GroupLayout$Spring;Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHonorsVisibility", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAutoCreateGaps", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAutoCreateContainerGaps", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBaselineGroup", "(ZZ)Ljavax/swing/GroupLayout$ParallelGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLayoutStyle", "(Ljavax/swing/LayoutStyle;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLayoutStyle0", "()Ljavax/swing/LayoutStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "areParallelSiblings", "(Ljava/awt/Component;Ljava/awt/Component;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeLayoutComponent", "(Ljava/awt/Component;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLayoutComponent", "(Ljava/lang/String;Ljava/awt/Component;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLayoutComponent", "(Ljava/awt/Component;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "layoutContainer", "(Ljava/awt/Container;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidateLayout", "(Ljava/awt/Container;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "preferredLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "minimumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maximumLayoutSize", "(Ljava/awt/Container;)Ljava/awt/Dimension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLayoutAlignmentX", "(Ljava/awt/Container;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLayoutAlignmentY", "(Ljava/awt/Container;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLeftToRight", "()Z"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -390,7 +390,7 @@ public partial class GroupLayout
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Container;)V", "public")]
-	public GroupLayout(Dova.JDK.java.awt.Container arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public GroupLayout(Dova.JDK.java.awt.Container arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -730,15 +730,15 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$Alignment;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LEADING", "Ljavax/swing/GroupLayout$Alignment;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAILING", "Ljavax/swing/GroupLayout$Alignment;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CENTER", "Ljavax/swing/GroupLayout$Alignment;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BASELINE", "Ljavax/swing/GroupLayout$Alignment;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljavax/swing/GroupLayout$Alignment;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Alignment", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljavax/swing/GroupLayout$Alignment;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljavax/swing/GroupLayout$Alignment;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LEADING", "Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAILING", "Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CENTER", "Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BASELINE", "Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljavax/swing/GroupLayout$Alignment;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljavax/swing/GroupLayout$Alignment;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljavax/swing/GroupLayout$Alignment;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljavax/swing/GroupLayout$Alignment;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/GroupLayout$Alignment;", "public static final")]
@@ -817,7 +817,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Alignment(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Alignment(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -862,32 +862,32 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$ParallelGroup;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "childAlignment", "Ljavax/swing/GroupLayout$Alignment;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resizable", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ParallelGroup", "(Ljavax/swing/GroupLayout;Ljavax/swing/GroupLayout$Alignment;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "operator", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;III)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_0", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_1", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_0", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_1", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValidSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup_0", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup_1", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup", "(Ljavax/swing/GroupLayout$Alignment;Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_0", "(I)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_1", "(I)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_0", "(III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_1", "(III)Ljavax/swing/GroupLayout$ParallelGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkChildAlignment", "(Ljavax/swing/GroupLayout$Alignment;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkChildAlignment", "(Ljavax/swing/GroupLayout$Alignment;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setChildSize", "(Ljavax/swing/GroupLayout$Spring;III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isResizable", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "childAlignment", "Ljavax/swing/GroupLayout$Alignment;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resizable", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Ljavax/swing/GroupLayout$Alignment;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "operator", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(Ljava/awt/Component;Ljavax/swing/GroupLayout$Alignment;III)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_0", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_1", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_0", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_1", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValidSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup_0", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup_1", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup", "(Ljavax/swing/GroupLayout$Alignment;Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_0", "(I)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_1", "(I)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_0", "(III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_1", "(III)Ljavax/swing/GroupLayout$ParallelGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkChildAlignment", "(Ljavax/swing/GroupLayout$Alignment;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkChildAlignment", "(Ljavax/swing/GroupLayout$Alignment;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setChildSize", "(Ljavax/swing/GroupLayout$Spring;III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isResizable", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/GroupLayout$Alignment;", "private final")]
@@ -938,7 +938,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Ljavax/swing/GroupLayout$Alignment;Z)V", "")]
-		public ParallelGroup(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.GroupLayout.Alignment arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ParallelGroup(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.GroupLayout.Alignment arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1111,31 +1111,31 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$Group;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "springs", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Group", "(Ljavax/swing/GroupLayout;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOf", "(Ljavax/swing/GroupLayout$Spring;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "operator", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValidSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addSpring", "(Ljavax/swing/GroupLayout$Spring;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateAutopadding", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeAutopadding", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unsetAutopadding", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap", "(III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap", "(I)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSpring", "(I)Ljavax/swing/GroupLayout$Spring;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateSize", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSpringSize", "(Ljavax/swing/GroupLayout$Spring;II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "springs", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOf", "(Ljavax/swing/GroupLayout$Spring;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "operator", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValidSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addSpring", "(Ljavax/swing/GroupLayout$Spring;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateAutopadding", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeAutopadding", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unsetAutopadding", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap", "(III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap", "(I)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSpring", "(I)Ljavax/swing/GroupLayout$Spring;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateSize", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSpringSize", "(Ljavax/swing/GroupLayout$Spring;II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "")]
@@ -1186,7 +1186,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;)V", "")]
-		public Group(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Group(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1351,30 +1351,30 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$ComponentInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "component", "Ljava/awt/Component;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "horizontalSpring", "Ljavax/swing/GroupLayout$ComponentSpring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verticalSpring", "Ljavax/swing/GroupLayout$ComponentSpring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "horizontalMaster", "Ljavax/swing/GroupLayout$LinkInfo;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verticalMaster", "Ljavax/swing/GroupLayout$LinkInfo;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "visible", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "honorsVisibility", "Ljava/lang/Boolean;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ComponentInfo", "(Ljavax/swing/GroupLayout;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isVisible", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHonorsVisibility", "(Ljava/lang/Boolean;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkInfo", "(IZ)Ljavax/swing/GroupLayout$LinkInfo;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkInfo", "(I)Ljavax/swing/GroupLayout$LinkInfo;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateVisibility", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearCachedSize", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeSpring", "(Ljavax/swing/GroupLayout$Spring;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLinked", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLinkInfo", "(ILjavax/swing/GroupLayout$LinkInfo;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkSize", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponent", "()Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setComponent", "(Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBounds", "(Ljava/awt/Insets;IZ)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "component", "Ljava/awt/Component;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "horizontalSpring", "Ljavax/swing/GroupLayout$ComponentSpring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "verticalSpring", "Ljavax/swing/GroupLayout$ComponentSpring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "horizontalMaster", "Ljavax/swing/GroupLayout$LinkInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "verticalMaster", "Ljavax/swing/GroupLayout$LinkInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "visible", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "honorsVisibility", "Ljava/lang/Boolean;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isVisible", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHonorsVisibility", "(Ljava/lang/Boolean;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkInfo", "(IZ)Ljavax/swing/GroupLayout$LinkInfo;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkInfo", "(I)Ljavax/swing/GroupLayout$LinkInfo;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateVisibility", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearCachedSize", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeSpring", "(Ljavax/swing/GroupLayout$Spring;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLinked", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLinkInfo", "(ILjavax/swing/GroupLayout$LinkInfo;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkSize", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponent", "()Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setComponent", "(Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setBounds", "(Ljava/awt/Insets;IZ)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Component;", "private")]
@@ -1509,7 +1509,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Ljava/awt/Component;)V", "")]
-		public ComponentInfo(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.java.awt.Component arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ComponentInfo(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.java.awt.Component arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1624,38 +1624,38 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$SequentialGroup;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baselineSpring", "Ljavax/swing/GroupLayout$Spring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SequentialGroup", "(Ljavax/swing/GroupLayout;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "operator", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(ZLjava/awt/Component;III)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_0", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_1", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_0", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent_1", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addComponent", "(ZLjava/awt/Component;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValidSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup_0", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup_1", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGroup", "(ZLjavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_0", "(I)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_1", "(I)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_0", "(III)Ljavax/swing/GroupLayout$Group;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addGap_1", "(III)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addPreferredGap", "(Ljavax/swing/LayoutStyle$ComponentPlacement;II)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addPreferredGap", "(Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;II)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkPreferredGapValues", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContainerGap", "(II)Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContainerGap", "()Ljavax/swing/GroupLayout$SequentialGroup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValidSizeNotPreferred", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildResizableList", "(IZ)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOfNextNonZeroSpring", "(IZ)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseline", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baselineSpring", "Ljavax/swing/GroupLayout$Spring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "operator", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(ZLjava/awt/Component;III)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_0", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_1", "(Ljava/awt/Component;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_0", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent_1", "(Ljava/awt/Component;III)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addComponent", "(ZLjava/awt/Component;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValidSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup_0", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup_1", "(Ljavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGroup", "(ZLjavax/swing/GroupLayout$Group;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertAutopadding", "(ILjava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_0", "(I)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_1", "(I)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_0", "(III)Ljavax/swing/GroupLayout$Group;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addGap_1", "(III)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addPreferredGap", "(Ljavax/swing/LayoutStyle$ComponentPlacement;II)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addPreferredGap", "(Ljavax/swing/LayoutStyle$ComponentPlacement;)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addPreferredGap", "(Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;II)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkPreferredGapValues", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addContainerGap", "(II)Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addContainerGap", "()Ljavax/swing/GroupLayout$SequentialGroup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValidSizeNotPreferred", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildResizableList", "(IZ)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOfNextNonZeroSpring", "(IZ)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseline", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/GroupLayout$Spring;", "private")]
@@ -1706,7 +1706,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;)V", "")]
-		public SequentialGroup(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SequentialGroup(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1922,14 +1922,14 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$ContainerAutoPreferredGapSpring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targets", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContainerAutoPreferredGapSpring", "(Ljavax/swing/GroupLayout;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContainerAutoPreferredGapSpring", "(Ljavax/swing/GroupLayout;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateSize", "(Ljavax/swing/LayoutStyle;Ljavax/swing/GroupLayout$ComponentSpring;I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMatchDescription", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePadding", "(I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targets", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateSize", "(Ljavax/swing/LayoutStyle;Ljavax/swing/GroupLayout$ComponentSpring;I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMatchDescription", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePadding", "(I)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private")]
@@ -1966,12 +1966,12 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;)V", "")]
-		public ContainerAutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ContainerAutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;II)V", "")]
-		public ContainerAutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public ContainerAutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 
@@ -2021,31 +2021,31 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$Spring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "min", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "max", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pref", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljavax/swing/GroupLayout$Spring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alignment", "Ljavax/swing/GroupLayout$Alignment;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Spring", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParent", "()Ljavax/swing/GroupLayout$Spring;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSize", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParent", "(Ljavax/swing/GroupLayout$Spring;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAlignment", "()Ljavax/swing/GroupLayout$Alignment;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unset", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAlignment", "(Ljavax/swing/GroupLayout$Alignment;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isResizable", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseline", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "constrain", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "min", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "max", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pref", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljavax/swing/GroupLayout$Spring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alignment", "Ljavax/swing/GroupLayout$Alignment;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParent", "()Ljavax/swing/GroupLayout$Spring;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSize", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParent", "(Ljavax/swing/GroupLayout$Spring;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAlignment", "()Ljavax/swing/GroupLayout$Alignment;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAlignment", "(Ljavax/swing/GroupLayout$Alignment;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isResizable", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseline", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "constrain", "(I)I"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -2138,7 +2138,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Spring() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Spring() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2284,24 +2284,24 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$BaselineGroup;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allSpringsHaveBaseline", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prefAscent", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prefDescent", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baselineAnchorSet", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baselineAnchoredToTop", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "calcedBaseline", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaselineGroup", "(Ljavax/swing/GroupLayout;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaselineGroup", "(Ljavax/swing/GroupLayout;ZZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValidSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unset", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateSize", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkAxis", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "baselineLayout", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateBaselineAndResizeBehavior", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinSize", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaxSize", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseline", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allSpringsHaveBaseline", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prefAscent", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prefDescent", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baselineAnchorSet", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baselineAnchoredToTop", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "calcedBaseline", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;ZZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValidSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateSize", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkAxis", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "baselineLayout", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateBaselineAndResizeBehavior", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinSize", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaxSize", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseline", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -2394,12 +2394,12 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Z)V", "")]
-		public BaselineGroup(Dova.JDK.javax.swing.GroupLayout arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BaselineGroup(Dova.JDK.javax.swing.GroupLayout arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;ZZ)V", "")]
-		public BaselineGroup(Dova.JDK.javax.swing.GroupLayout arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public BaselineGroup(Dova.JDK.javax.swing.GroupLayout arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 
@@ -2488,16 +2488,16 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$LinkInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "axis", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "linked", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LinkInfo", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljavax/swing/GroupLayout$ComponentInfo;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljavax/swing/GroupLayout$ComponentInfo;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearCachedSize", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateLinkedSize", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "axis", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "linked", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljavax/swing/GroupLayout$ComponentInfo;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljavax/swing/GroupLayout$ComponentInfo;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearCachedSize", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateLinkedSize", "(I)I"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -2562,7 +2562,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public LinkInfo(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LinkInfo(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2618,34 +2618,34 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$ComponentSpring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "component", "Ljava/awt/Component;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "origin", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "min", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pref", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "max", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseline", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "installed", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ComponentSpring", "(Ljavax/swing/GroupLayout;Ljava/awt/Component;III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSize", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrigin", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isVisible", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installIfNecessary", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLinked", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkSize", "(II)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateNonlinkedPreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateNonlinkedMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateNonlinkedMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSizeAlongAxis", "(ILjava/awt/Dimension;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponent", "()Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseline", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setComponent", "(Ljava/awt/Component;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "component", "Ljava/awt/Component;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "origin", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "min", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pref", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "max", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseline", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "installed", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Ljava/awt/Component;III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSize", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrigin", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isVisible", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installIfNecessary", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLinked", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkSize", "(II)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateNonlinkedPreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateNonlinkedMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateNonlinkedMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSizeAlongAxis", "(ILjava/awt/Dimension;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponent", "()Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseline", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaselineResizeBehavior", "()Ljava/awt/Component$BaselineResizeBehavior;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setComponent", "(Ljava/awt/Component;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Component;", "private")]
@@ -2780,7 +2780,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Ljava/awt/Component;III)V", "private")]
-		public ComponentSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.java.awt.Component arg1, int arg2, int arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public ComponentSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.java.awt.Component arg1, int arg2, int arg3, int arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -2927,35 +2927,35 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$AutoPreferredGapSpring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sources", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljavax/swing/GroupLayout$ComponentSpring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matches", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastSize", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pref", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "max", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/swing/LayoutStyle$ComponentPlacement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userCreated", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AutoPreferredGapSpring", "(Ljavax/swing/GroupLayout;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AutoPreferredGapSpring", "(Ljavax/swing/GroupLayout;II)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AutoPreferredGapSpring", "(Ljavax/swing/GroupLayout;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSource", "(Ljavax/swing/GroupLayout$ComponentSpring;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unset", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUserCreated", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMatchDescription", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePadding", "(Ljavax/swing/LayoutStyle;ILjavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePadding", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSources", "(Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setUserCreated", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addValidTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sources", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljavax/swing/GroupLayout$ComponentSpring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matches", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastSize", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pref", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "max", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljavax/swing/LayoutStyle$ComponentPlacement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userCreated", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;II)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSource", "(Ljavax/swing/GroupLayout$ComponentSpring;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUserCreated", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMatchDescription", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePadding", "(Ljavax/swing/LayoutStyle;ILjavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePadding", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSources", "(Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setUserCreated", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addValidTarget", "(Ljavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "")]
@@ -3104,17 +3104,17 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V", "")]
-		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.LayoutStyle.ComponentPlacement arg1, int arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.LayoutStyle.ComponentPlacement arg1, int arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;II)V", "")]
-		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;)V", "private")]
-		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+		public AutoPreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 		{
 		}
 
@@ -3242,11 +3242,11 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$AutoPreferredGapMatch;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljavax/swing/GroupLayout$ComponentSpring;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljavax/swing/GroupLayout$ComponentSpring;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AutoPreferredGapMatch", "(Ljavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Ljavax/swing/GroupLayout$ComponentSpring;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljavax/swing/GroupLayout$ComponentSpring;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljavax/swing/GroupLayout$ComponentSpring;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "(Ljavax/swing/GroupLayout$ComponentSpring;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/GroupLayout$ComponentSpring;", "public final")]
@@ -3283,7 +3283,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout$ComponentSpring;Ljavax/swing/GroupLayout$ComponentSpring;)V", "")]
-		public AutoPreferredGapMatch(Dova.JDK.javax.swing.GroupLayout.ComponentSpring arg0, Dova.JDK.javax.swing.GroupLayout.ComponentSpring arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AutoPreferredGapMatch(Dova.JDK.javax.swing.GroupLayout.ComponentSpring arg0, Dova.JDK.javax.swing.GroupLayout.ComponentSpring arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -3321,14 +3321,14 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$GapSpring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "min", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pref", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "max", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GapSpring", "(III)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "min", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pref", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "max", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(III)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -3379,7 +3379,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(III)V", "")]
-		public GapSpring(int arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public GapSpring(int arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -3431,18 +3431,18 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$PreferredGapSpring;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljavax/swing/JComponent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljavax/swing/JComponent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/swing/LayoutStyle$ComponentPlacement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pref", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "max", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/GroupLayout;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PreferredGapSpring", "(Ljavax/swing/GroupLayout;Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "willHaveZeroSize", "(Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMinimumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculatePreferredSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateMaximumSize", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPadding", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljavax/swing/JComponent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljavax/swing/JComponent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljavax/swing/LayoutStyle$ComponentPlacement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pref", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "max", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/GroupLayout;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/GroupLayout;Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "willHaveZeroSize", "(Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMinimumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculatePreferredSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateMaximumSize", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPadding", "(I)I"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/JComponent;", "private final")]
@@ -3535,7 +3535,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/GroupLayout;Ljavax/swing/JComponent;Ljavax/swing/JComponent;Ljavax/swing/LayoutStyle$ComponentPlacement;II)V", "")]
-		public PreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.JComponent arg1, Dova.JDK.javax.swing.JComponent arg2, Dova.JDK.javax.swing.LayoutStyle.ComponentPlacement arg3, int arg4, int arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+		public PreferredGapSpring(Dova.JDK.javax.swing.GroupLayout arg0, Dova.JDK.javax.swing.JComponent arg1, Dova.JDK.javax.swing.JComponent arg2, Dova.JDK.javax.swing.LayoutStyle.ComponentPlacement arg3, int arg4, int arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 
@@ -3595,12 +3595,12 @@ public partial class GroupLayout
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/GroupLayout$SpringDelta;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delta", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SpringDelta", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljavax/swing/GroupLayout$SpringDelta;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delta", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compareTo", "(Ljavax/swing/GroupLayout$SpringDelta;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compareTo", "(Ljava/lang/Object;)I"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -3637,7 +3637,7 @@ public partial class GroupLayout
 		}
 
 		[JniSignatureAttribute("(II)V", "public")]
-		public SpringDelta(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SpringDelta(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

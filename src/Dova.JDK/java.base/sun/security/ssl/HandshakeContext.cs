@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,67 +32,67 @@ public partial class HandshakeContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/HandshakeContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "allowUnsafeRenegotiation", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "allowLegacyHelloMessages", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeConsumers", "Ljava/util/LinkedHashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeProducers", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sslContext", "Lsun/security/ssl/SSLContextImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "conContext", "Lsun/security/ssl/TransportContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sslConfig", "Lsun/security/ssl/SSLConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "activeProtocols", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "activeCipherSuites", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "algorithmConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maximumActiveProtocol", "Lsun/security/ssl/ProtocolVersion;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeOutput", "Lsun/security/ssl/HandshakeOutStream;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeHash", "Lsun/security/ssl/HandshakeHash;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeSession", "Lsun/security/ssl/SSLSessionImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeFinished", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "kickstartMessageDelivered", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isResumption", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resumingSession", "Lsun/security/ssl/SSLSessionImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statelessResumption", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegatedActions", "Ljava/util/Queue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "taskDelegated", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegatedThrown", "Ljava/lang/Exception;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "negotiatedProtocol", "Lsun/security/ssl/ProtocolVersion;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "negotiatedCipherSuite", "Lsun/security/ssl/CipherSuite;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakePossessions", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeCredentials", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeKeyDerivation", "Lsun/security/ssl/SSLKeyDerivation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeKeyExchange", "Lsun/security/ssl/SSLKeyExchange;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseReadSecret", "Ljavax/crypto/SecretKey;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseWriteSecret", "Ljavax/crypto/SecretKey;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientHelloVersion", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "applicationProtocol", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientHelloRandom", "Lsun/security/ssl/RandomCookie;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverHelloRandom", "Lsun/security/ssl/RandomCookie;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "certRequestContext", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeExtensions", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxFragmentLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localSupportedSignAlgs", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "peerRequestedSignatureSchemes", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "peerRequestedCertSignSchemes", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "peerSupportedAuthorities", "[Ljavax/security/auth/x500/X500Principal;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientRequestedNamedGroups", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serverSelectedNamedGroup", "Lsun/security/ssl/NamedGroup;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestedServerNames", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "negotiatedServerName", "Ljavax/net/ssl/SNIServerName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "staplingActive", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HandshakeContext", "(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HandshakeContext", "(Lsun/security/ssl/TransportContext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatch", "(BLjava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatch", "(BLsun/security/ssl/Plaintext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getHandshakeType", "(Lsun/security/ssl/TransportContext;Lsun/security/ssl/Plaintext;)B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "kickstart", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isNegotiable", "(Lsun/security/ssl/ProtocolVersion;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isNegotiable", "(Lsun/security/ssl/CipherSuite;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNegotiable", "(Ljava/util/List;Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNegotiable", "(Ljava/util/List;Lsun/security/ssl/CipherSuite;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getActiveProtocols", "(Ljava/util/List;Ljava/util/List;Ljava/security/AlgorithmConstraints;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getActiveCipherSuites", "(Ljava/util/List;Ljava/util/List;Ljava/security/AlgorithmConstraints;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isActivatable", "(Lsun/security/ssl/CipherSuite;Ljava/security/AlgorithmConstraints;Ljava/util/Map;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRequestedServerNames", "()Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "allowUnsafeRenegotiation", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "allowLegacyHelloMessages", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeConsumers", "Ljava/util/LinkedHashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeProducers", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sslContext", "Lsun/security/ssl/SSLContextImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "conContext", "Lsun/security/ssl/TransportContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sslConfig", "Lsun/security/ssl/SSLConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "activeProtocols", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "activeCipherSuites", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "algorithmConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maximumActiveProtocol", "Lsun/security/ssl/ProtocolVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeOutput", "Lsun/security/ssl/HandshakeOutStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeHash", "Lsun/security/ssl/HandshakeHash;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeSession", "Lsun/security/ssl/SSLSessionImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeFinished", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "kickstartMessageDelivered", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isResumption", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resumingSession", "Lsun/security/ssl/SSLSessionImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statelessResumption", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegatedActions", "Ljava/util/Queue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "taskDelegated", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegatedThrown", "Ljava/lang/Exception;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "negotiatedProtocol", "Lsun/security/ssl/ProtocolVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "negotiatedCipherSuite", "Lsun/security/ssl/CipherSuite;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakePossessions", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeCredentials", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeKeyDerivation", "Lsun/security/ssl/SSLKeyDerivation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeKeyExchange", "Lsun/security/ssl/SSLKeyExchange;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseReadSecret", "Ljavax/crypto/SecretKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseWriteSecret", "Ljavax/crypto/SecretKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientHelloVersion", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "applicationProtocol", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientHelloRandom", "Lsun/security/ssl/RandomCookie;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverHelloRandom", "Lsun/security/ssl/RandomCookie;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "certRequestContext", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeExtensions", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxFragmentLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localSupportedSignAlgs", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "peerRequestedSignatureSchemes", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "peerRequestedCertSignSchemes", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "peerSupportedAuthorities", "[Ljavax/security/auth/x500/X500Principal;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientRequestedNamedGroups", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serverSelectedNamedGroup", "Lsun/security/ssl/NamedGroup;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestedServerNames", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "negotiatedServerName", "Ljavax/net/ssl/SNIServerName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "staplingActive", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/TransportContext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispatch", "(BLjava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispatch", "(BLsun/security/ssl/Plaintext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getHandshakeType", "(Lsun/security/ssl/TransportContext;Lsun/security/ssl/Plaintext;)B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "kickstart", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isNegotiable", "(Lsun/security/ssl/ProtocolVersion;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isNegotiable", "(Lsun/security/ssl/CipherSuite;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isNegotiable", "(Ljava/util/List;Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isNegotiable", "(Ljava/util/List;Lsun/security/ssl/CipherSuite;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getActiveProtocols", "(Ljava/util/List;Ljava/util/List;Ljava/security/AlgorithmConstraints;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getActiveCipherSuites", "(Ljava/util/List;Ljava/util/List;Ljava/security/AlgorithmConstraints;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isActivatable", "(Lsun/security/ssl/CipherSuite;Ljava/security/AlgorithmConstraints;Ljava/util/Map;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRequestedServerNames", "()Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -745,12 +745,12 @@ public partial class HandshakeContext
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/SSLContextImpl;Lsun/security/ssl/TransportContext;)V", "protected")]
-	public HandshakeContext(Dova.JDK.sun.security.ssl.SSLContextImpl arg0, Dova.JDK.sun.security.ssl.TransportContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public HandshakeContext(Dova.JDK.sun.security.ssl.SSLContextImpl arg0, Dova.JDK.sun.security.ssl.TransportContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/TransportContext;)V", "protected")]
-	public HandshakeContext(Dova.JDK.sun.security.ssl.TransportContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public HandshakeContext(Dova.JDK.sun.security.ssl.TransportContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 

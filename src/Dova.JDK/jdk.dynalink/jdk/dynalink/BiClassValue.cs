@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class BiClassValue
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/BiClassValue;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljdk/dynalink/BiClassValue$BiClassValuesRoot;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compute", "Ljava/util/function/BiFunction;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GET_CLASS_LOADER_CONTEXT", "Ljava/security/AccessControlContext;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BiClassValue", "(Ljava/util/function/BiFunction;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRetentionDirection", "(Ljava/lang/Class;Ljava/lang/Class;)Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "computing", "(Ljava/util/function/BiFunction;)Ljdk/dynalink/BiClassValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljdk/dynalink/BiClassValue$BiClassValuesRoot;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compute", "Ljava/util/function/BiFunction;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GET_CLASS_LOADER_CONTEXT", "Ljava/security/AccessControlContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/BiFunction;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getRetentionDirection", "(Ljava/lang/Class;Ljava/lang/Class;)Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "computing", "(Ljava/util/function/BiFunction;)Ljdk/dynalink/BiClassValue;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/BiClassValue$BiClassValuesRoot;", "private final")]
@@ -88,7 +88,7 @@ public partial class BiClassValue
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/BiFunction;)V", "private")]
-	public BiClassValue(Dova.JDK.java.util.function.BiFunction arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public BiClassValue(Dova.JDK.java.util.function.BiFunction arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -131,9 +131,9 @@ public partial class BiClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/BiClassValue$BiClassValuesRoot;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BiClassValuesRoot", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeValue_0", "(Ljava/lang/Class;)Ljdk/dynalink/BiClassValue$BiClassValues;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeValue_1", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeValue_0", "(Ljava/lang/Class;)Ljdk/dynalink/BiClassValue$BiClassValues;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeValue_1", "(Ljava/lang/Class;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -142,7 +142,7 @@ public partial class BiClassValue
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public BiClassValuesRoot() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BiClassValuesRoot() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -180,16 +180,16 @@ public partial class BiClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/BiClassValue$BiClassValues;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORWARD", "Ljava/lang/invoke/VarHandle;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REVERSE", "Ljava/lang/invoke/VarHandle;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "forward", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reverse", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BiClassValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getForwardValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReverseValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeForward", "(Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeReverse", "(Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FORWARD", "Ljava/lang/invoke/VarHandle;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REVERSE", "Ljava/lang/invoke/VarHandle;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "forward", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reverse", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getForwardValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReverseValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeForward", "(Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeReverse", "(Ljava/lang/Class;Ljava/util/function/Function;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/invoke/VarHandle;", "private static final")]
@@ -254,7 +254,7 @@ public partial class BiClassValue
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public BiClassValues() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BiClassValues() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -313,14 +313,14 @@ public partial class BiClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/BiClassValue$RetentionDirection;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORWARD", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REVERSE", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEITHER", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RetentionDirection", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/dynalink/BiClassValue$RetentionDirection;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FORWARD", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REVERSE", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NEITHER", "Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/dynalink/BiClassValue$RetentionDirection;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/dynalink/BiClassValue$RetentionDirection;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/dynalink/BiClassValue$RetentionDirection;", "public static final")]
@@ -385,7 +385,7 @@ public partial class BiClassValue
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public RetentionDirection(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public RetentionDirection(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

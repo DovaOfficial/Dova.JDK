@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class VSyncedBSManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/VSyncedBSManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Lsun/awt/image/VSyncedBSManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "vSyncLimit", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VSyncedBSManager", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "(Z)Lsun/awt/image/VSyncedBSManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "vsyncAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "releaseVsync", "(Ljava/awt/image/BufferStrategy;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "theInstance", "Lsun/awt/image/VSyncedBSManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "vSyncLimit", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "(Z)Lsun/awt/image/VSyncedBSManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "vsyncAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "releaseVsync", "(Ljava/awt/image/BufferStrategy;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/image/VSyncedBSManager;", "private static")]
@@ -75,7 +75,7 @@ public partial class VSyncedBSManager
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public VSyncedBSManager() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public VSyncedBSManager() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -131,10 +131,10 @@ public partial class VSyncedBSManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/VSyncedBSManager$SingleVSyncedBSMgr;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strategy", "Ljava/lang/ref/WeakReference;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SingleVSyncedBSMgr", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strategy", "Ljava/lang/ref/WeakReference;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ref/WeakReference;", "private")]
@@ -157,7 +157,7 @@ public partial class VSyncedBSManager
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SingleVSyncedBSMgr() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SingleVSyncedBSMgr() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -193,9 +193,9 @@ public partial class VSyncedBSManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/VSyncedBSManager$NoLimitVSyncBSMgr;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NoLimitVSyncBSMgr", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkAllowed", "(Ljava/awt/image/BufferStrategy;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "relinquishVsync", "(Ljava/awt/image/BufferStrategy;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -204,7 +204,7 @@ public partial class VSyncedBSManager
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NoLimitVSyncBSMgr() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NoLimitVSyncBSMgr() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

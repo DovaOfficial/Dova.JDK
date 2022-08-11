@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,10 +29,10 @@ public partial interface IntUnaryOperator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/function/IntUnaryOperator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "identity", "()Ljava/util/function/IntUnaryOperator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyAsInt", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compose", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "andThen", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "identity", "()Ljava/util/function/IntUnaryOperator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyAsInt", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compose", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "andThen", "(Ljava/util/function/IntUnaryOperator;)Ljava/util/function/IntUnaryOperator;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/util/function/IntUnaryOperator;", "public static")]

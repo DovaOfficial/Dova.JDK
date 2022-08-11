@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class EventWriterMethod
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventWriterMethod;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BEGIN_EVENT", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "END_EVENT", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_BYTE", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_SHORT", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_INT", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_LONG", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_FLOAT", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_DOUBLE", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_CHAR", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_BOOLEAN", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_THREAD", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_CLASS", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_STRING", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_EVENT_THREAD", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUT_STACK_TRACE", "Ljdk/jfr/internal/EventWriterMethod;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "asmMethod", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeDescriptor", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/jfr/internal/EventWriterMethod;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventWriterMethod", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/jfr/internal/EventWriterMethod;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jfr/internal/EventWriterMethod;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/jfr/internal/EventWriterMethod;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asASM", "()Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookupMethod", "(Ljdk/jfr/internal/EventInstrumentation$FieldInfo;)Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BEGIN_EVENT", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "END_EVENT", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_BYTE", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_SHORT", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_INT", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_LONG", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_FLOAT", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_DOUBLE", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_CHAR", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_BOOLEAN", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_THREAD", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_CLASS", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_STRING", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_EVENT_THREAD", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUT_STACK_TRACE", "Ljdk/jfr/internal/EventWriterMethod;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "asmMethod", "Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeDescriptor", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/jfr/internal/EventWriterMethod;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/jfr/internal/EventWriterMethod;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jfr/internal/EventWriterMethod;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/jfr/internal/EventWriterMethod;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asASM", "()Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookupMethod", "(Ljdk/jfr/internal/EventInstrumentation$FieldInfo;)Ljdk/jfr/internal/EventWriterMethod;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/EventWriterMethod;", "public static final")]
@@ -315,7 +315,7 @@ public partial class EventWriterMethod
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "private")]
-	public EventWriterMethod(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public EventWriterMethod(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

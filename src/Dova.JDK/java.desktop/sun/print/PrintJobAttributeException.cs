@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,11 +32,11 @@ public partial class PrintJobAttributeException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/PrintJobAttributeException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attr", "Ljavax/print/attribute/Attribute;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "category", "Ljava/lang/Class;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintJobAttributeException", "(Ljava/lang/String;Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnsupportedValues", "()[Ljavax/print/attribute/Attribute;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnsupportedAttributes", "()[Ljava/lang/Class;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attr", "Ljavax/print/attribute/Attribute;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "category", "Ljava/lang/Class;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnsupportedValues", "()[Ljavax/print/attribute/Attribute;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnsupportedAttributes", "()[Ljava/lang/Class;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/print/attribute/Attribute;", "private")]
@@ -73,7 +73,7 @@ public partial class PrintJobAttributeException
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V", "")]
-	public PrintJobAttributeException(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.javax.print.attribute.Attribute arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public PrintJobAttributeException(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.javax.print.attribute.Attribute arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,56 +32,56 @@ public partial class CubicCurve2D
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/geom/CubicCurve2D;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CubicCurve2D", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clone", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(DD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/awt/geom/Point2D;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljava/awt/geom/Rectangle2D;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(DDDD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "within", "(DDD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "([DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "([Ljava/awt/geom/Point2D;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(DDDDDDDD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(Ljava/awt/geom/CubicCurve2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX1", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY1", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX2", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY2", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFlatnessSq", "([DI)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlatnessSq", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFlatnessSq", "(DDDDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFlatness", "([DI)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlatness", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFlatness", "(DDDDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "solveCubic", "([D[D)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "solveCubic", "([D)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "iszero", "(DD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fixRoots", "([D[DI)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRootUpperBound", "([D)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "refineRootWithHint", "([DDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "solveEqn", "([DID)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "oppositeSigns", "(DD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "bisectRootWithHint", "([DDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "bisectRoot", "([DDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivide", "([DI[DI[DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "inInterval", "(DDD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rectCrossings", "(DDDD)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX1", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY1", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX2", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY2", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "intersects", "(DDDD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "intersects", "(Ljava/awt/geom/Rectangle2D;)Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clone", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(DD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(Ljava/awt/geom/Point2D;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(Ljava/awt/geom/Rectangle2D;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(DDDD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "within", "(DDD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "([DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "([Ljava/awt/geom/Point2D;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(DDDDDDDD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(Ljava/awt/geom/CubicCurve2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX1", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY1", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX2", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY2", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFlatnessSq", "([DI)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlatnessSq", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFlatnessSq", "(DDDDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFlatness", "([DI)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlatness", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFlatness", "(DDDDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "solveCubic", "([D[D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "solveCubic", "([D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "iszero", "(DD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fixRoots", "([D[DI)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getRootUpperBound", "([D)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "refineRootWithHint", "([DDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "solveEqn", "([DID)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "oppositeSigns", "(DD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "bisectRootWithHint", "([DDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "bisectRoot", "([DDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivide", "([DI[DI[DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subdivide", "(Ljava/awt/geom/CubicCurve2D;Ljava/awt/geom/CubicCurve2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "inInterval", "(DDD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rectCrossings", "(DDDD)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX1", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY1", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX2", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY2", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPathIterator", "(Ljava/awt/geom/AffineTransform;)Ljava/awt/geom/PathIterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPathIterator", "(Ljava/awt/geom/AffineTransform;D)Ljava/awt/geom/PathIterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "intersects", "(DDDD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "intersects", "(Ljava/awt/geom/Rectangle2D;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -90,7 +90,7 @@ public partial class CubicCurve2D
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public CubicCurve2D() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CubicCurve2D() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -449,31 +449,31 @@ public partial class CubicCurve2D
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/geom/CubicCurve2D$Double;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x1", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y1", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrlx1", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrly1", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrlx2", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrly2", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x2", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y2", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Double", "()V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Double", "(DDDDDDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(DDDDDDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds2D", "()Ljava/awt/geom/Rectangle2D;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x1", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y1", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrlx1", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrly1", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrlx2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrly2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y2", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(DDDDDDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(DDDDDDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds2D", "()Ljava/awt/geom/Rectangle2D;"));
 		}
 
 		[JniSignatureAttribute("D", "public")]
@@ -608,12 +608,12 @@ public partial class CubicCurve2D
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Double() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Double() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
 		[JniSignatureAttribute("(DDDDDDDD)V", "public")]
-		public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+		public Double(double arg0, double arg1, double arg2, double arg3, double arg4, double arg5, double arg6, double arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 		{
 		}
 
@@ -735,32 +735,32 @@ public partial class CubicCurve2D
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/geom/CubicCurve2D$Float;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x1", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y1", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrlx1", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrly1", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrlx2", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctrly2", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x2", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y2", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Float", "()V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Float", "(FFFFFFFF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(DDDDDDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCurve", "(FFFFFFFF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlX2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlY2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY1", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY2", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds2D", "()Ljava/awt/geom/Rectangle2D;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x1", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y1", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrlx1", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrly1", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrlx2", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctrly2", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x2", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y2", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFFFFFFF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(DDDDDDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCurve", "(FFFFFFFF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlX2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlY2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP1", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP1", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCtrlP2", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getP2", "()Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY1", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY2", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds2D", "()Ljava/awt/geom/Rectangle2D;"));
 		}
 
 		[JniSignatureAttribute("F", "public")]
@@ -895,12 +895,12 @@ public partial class CubicCurve2D
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Float() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Float() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
 		[JniSignatureAttribute("(FFFFFFFF)V", "public")]
-		public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+		public Float(float arg0, float arg1, float arg2, float arg3, float arg4, float arg5, float arg6, float arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 		{
 		}
 

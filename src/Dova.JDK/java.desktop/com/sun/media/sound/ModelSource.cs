@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class ModelSource
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/ModelSource;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_NONE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_NOTEON_KEYNUMBER", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_NOTEON_VELOCITY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_EG1", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_EG2", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_LFO1", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_LFO2", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_MIDI_PITCH", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_MIDI_CHANNEL_PRESSURE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_MIDI_POLY_PRESSURE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_MIDI_CC_0", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_MIDI_RPN_0", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transform", "Lcom/sun/media/sound/ModelTransform;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "(Lcom/sun/media/sound/ModelIdentifier;Lcom/sun/media/sound/ModelTransform;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "(Lcom/sun/media/sound/ModelIdentifier;ZZI)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "(Lcom/sun/media/sound/ModelIdentifier;ZZ)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelSource", "(Lcom/sun/media/sound/ModelIdentifier;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransform", "()Lcom/sun/media/sound/ModelTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTransform", "(Lcom/sun/media/sound/ModelTransform;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIdentifier", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIdentifier", "()Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_NONE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_NOTEON_KEYNUMBER", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_NOTEON_VELOCITY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_EG1", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_EG2", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_LFO1", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_LFO2", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_MIDI_PITCH", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_MIDI_CHANNEL_PRESSURE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_MIDI_POLY_PRESSURE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_MIDI_CC_0", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_MIDI_RPN_0", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transform", "Lcom/sun/media/sound/ModelTransform;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;Lcom/sun/media/sound/ModelTransform;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;ZZI)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;ZZ)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransform", "()Lcom/sun/media/sound/ModelTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTransform", "(Lcom/sun/media/sound/ModelTransform;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIdentifier", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIdentifier", "()Lcom/sun/media/sound/ModelIdentifier;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/ModelIdentifier;", "public static final")]
@@ -259,32 +259,32 @@ public partial class ModelSource
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;Lcom/sun/media/sound/ModelTransform;)V", "public")]
-	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, Dova.JDK.com.sun.media.sound.ModelTransform arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, Dova.JDK.com.sun.media.sound.ModelTransform arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;ZZI)V", "public")]
-	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1, bool arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1, bool arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;ZZ)V", "public")]
-	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ModelSource() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
+	public ModelSource() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3]))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;)V", "public")]
-	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0))
+	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;Z)V", "public")]
-	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[5], arg0, arg1))
+	public ModelSource(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[5], arg0, arg1))
 	{
 	}
 

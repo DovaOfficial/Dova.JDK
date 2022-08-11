@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,40 +31,40 @@ public partial class OverridableResource
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/OverridableResource;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "substitutionData", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "category", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resourceDir", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "publicName", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "logPublicName", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "externalPath", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sources", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OverridableResource", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHandler", "(Ljdk/jpackage/internal/OverridableResource$Source;)Ljdk/jpackage/internal/OverridableResource$SourceHandler;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toPath", "(Ljava/io/File;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintableCategory", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processResourceStream", "(Ljava/io/InputStream;Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setResourceDir", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setResourceDir", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPublicName", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPublicName", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLogPublicName", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLogPublicName", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExternal", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExternal", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendToConsumer", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Ljdk/jpackage/internal/OverridableResource$Source;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readDefault", "(Ljava/lang/String;)Ljava/io/InputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "substitute", "(Ljava/util/stream/Stream;Ljava/util/Map;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSubstitutionData", "(Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCategory", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "saveToStream", "(Ljava/io/OutputStream;)Ljdk/jpackage/internal/OverridableResource$Source;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createResource", "(Ljava/lang/String;Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "useExternal", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "useResourceDir", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "useDefault", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSourceOrder", "([Ljdk/jpackage/internal/OverridableResource$Source;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "saveToFile", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource$Source;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "saveToFile", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource$Source;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "substitutionData", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "category", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resourceDir", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "publicName", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "logPublicName", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "externalPath", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sources", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHandler", "(Ljdk/jpackage/internal/OverridableResource$Source;)Ljdk/jpackage/internal/OverridableResource$SourceHandler;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toPath", "(Ljava/io/File;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintableCategory", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processResourceStream", "(Ljava/io/InputStream;Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setResourceDir", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setResourceDir", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPublicName", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPublicName", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLogPublicName", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLogPublicName", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExternal", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExternal", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sendToConsumer", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Ljdk/jpackage/internal/OverridableResource$Source;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readDefault", "(Ljava/lang/String;)Ljava/io/InputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "substitute", "(Ljava/util/stream/Stream;Ljava/util/Map;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSubstitutionData", "(Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCategory", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "saveToStream", "(Ljava/io/OutputStream;)Ljdk/jpackage/internal/OverridableResource$Source;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createResource", "(Ljava/lang/String;Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "useExternal", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "useResourceDir", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "useDefault", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSourceOrder", "([Ljdk/jpackage/internal/OverridableResource$Source;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "saveToFile", "(Ljava/io/File;)Ljdk/jpackage/internal/OverridableResource$Source;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "saveToFile", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/OverridableResource$Source;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private")]
@@ -185,7 +185,7 @@ public partial class OverridableResource
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-	public OverridableResource(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public OverridableResource(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -382,14 +382,14 @@ public partial class OverridableResource
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/OverridableResource$Source;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "External", "Ljdk/jpackage/internal/OverridableResource$Source;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ResourceDir", "Ljdk/jpackage/internal/OverridableResource$Source;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DefaultResource", "Ljdk/jpackage/internal/OverridableResource$Source;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/jpackage/internal/OverridableResource$Source;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Source", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/jpackage/internal/OverridableResource$Source;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource$Source;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/jpackage/internal/OverridableResource$Source;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "External", "Ljdk/jpackage/internal/OverridableResource$Source;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ResourceDir", "Ljdk/jpackage/internal/OverridableResource$Source;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DefaultResource", "Ljdk/jpackage/internal/OverridableResource$Source;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/jpackage/internal/OverridableResource$Source;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/jpackage/internal/OverridableResource$Source;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jpackage/internal/OverridableResource$Source;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/jpackage/internal/OverridableResource$Source;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jpackage/internal/OverridableResource$Source;", "public static final")]
@@ -454,7 +454,7 @@ public partial class OverridableResource
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Source(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Source(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -497,8 +497,8 @@ public partial class OverridableResource
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "(Ljava/io/InputStream;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "publicName", "()Ljava/nio/file/Path;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "(Ljava/io/InputStream;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "publicName", "()Ljava/nio/file/Path;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/io/InputStream;)V", "public abstract")]
@@ -528,7 +528,7 @@ public partial class OverridableResource
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/OverridableResource$SourceHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "apply", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "apply", "(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z"));
 		}
 
 		[JniSignatureAttribute("(Ljdk/jpackage/internal/OverridableResource$ResourceConsumer;)Z", "public abstract")]

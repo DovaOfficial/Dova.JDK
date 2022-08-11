@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class SunGraphicsCallback
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/SunGraphicsCallback;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEAVYWEIGHTS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIGHTWEIGHTS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TWO_PASSES", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "log", "Lsun/util/logging/PlatformLogger;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SunGraphicsCallback", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runOneComponent", "(Ljava/awt/Component;Ljava/awt/Rectangle;Ljava/awt/Graphics;Ljava/awt/Shape;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runComponents", "([Ljava/awt/Component;Ljava/awt/Graphics;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "constrainGraphics", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEAVYWEIGHTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIGHTWEIGHTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TWO_PASSES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "log", "Lsun/util/logging/PlatformLogger;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "runOneComponent", "(Ljava/awt/Component;Ljava/awt/Rectangle;Ljava/awt/Graphics;Ljava/awt/Shape;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "runComponents", "([Ljava/awt/Component;Ljava/awt/Graphics;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "constrainGraphics", "(Ljava/awt/Graphics;Ljava/awt/Rectangle;)V"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -104,7 +104,7 @@ public partial class SunGraphicsCallback
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public SunGraphicsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SunGraphicsCallback() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -151,10 +151,10 @@ public partial class SunGraphicsCallback
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintHeavyweightComponentsCallback", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "()Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/SunGraphicsCallback$PrintHeavyweightComponentsCallback;", "private static")]
@@ -177,7 +177,7 @@ public partial class SunGraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PrintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PrintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -214,10 +214,10 @@ public partial class SunGraphicsCallback
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintHeavyweightComponentsCallback", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "(Ljava/awt/Component;Ljava/awt/Graphics;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "()Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/SunGraphicsCallback$PaintHeavyweightComponentsCallback;", "private static")]
@@ -240,7 +240,7 @@ public partial class SunGraphicsCallback
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public PaintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PaintHeavyweightComponentsCallback() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

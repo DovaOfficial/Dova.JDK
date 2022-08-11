@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class BufferAllocator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/xml/internal/stream/util/BufferAllocator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SMALL_SIZE_LIMIT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEDIUM_SIZE_LIMIT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LARGE_SIZE_LIMIT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "smallCharBuffer", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mediumCharBuffer", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "largeCharBuffer", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "smallByteBuffer", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mediumByteBuffer", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "largeByteBuffer", "[B"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BufferAllocator", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getByteBuffer", "(I)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCharBuffer", "(I)[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "returnCharBuffer", "([C)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "returnByteBuffer", "([B)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SMALL_SIZE_LIMIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEDIUM_SIZE_LIMIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LARGE_SIZE_LIMIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "smallCharBuffer", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mediumCharBuffer", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "largeCharBuffer", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "smallByteBuffer", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mediumByteBuffer", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "largeByteBuffer", "[B"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getByteBuffer", "(I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCharBuffer", "(I)[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "returnCharBuffer", "([C)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "returnByteBuffer", "([B)V"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -179,7 +179,7 @@ public partial class BufferAllocator
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BufferAllocator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BufferAllocator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

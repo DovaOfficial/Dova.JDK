@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class PAEncTSEnc
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/krb5/internal/PAEncTSEnc;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pATimeStamp", "Lsun/security/krb5/internal/KerberosTime;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pAUSec", "Ljava/lang/Integer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PAEncTSEnc", "(Lsun/security/util/DerValue;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PAEncTSEnc", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PAEncTSEnc", "(Lsun/security/krb5/internal/KerberosTime;Ljava/lang/Integer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asn1Encode", "()[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pATimeStamp", "Lsun/security/krb5/internal/KerberosTime;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pAUSec", "Ljava/lang/Integer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/DerValue;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/krb5/internal/KerberosTime;Ljava/lang/Integer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asn1Encode", "()[B"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/krb5/internal/KerberosTime;", "public")]
@@ -73,17 +73,17 @@ public partial class PAEncTSEnc
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/DerValue;)V", "public")]
-	public PAEncTSEnc(Dova.JDK.sun.security.util.DerValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public PAEncTSEnc(Dova.JDK.sun.security.util.DerValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public PAEncTSEnc() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public PAEncTSEnc() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/internal/KerberosTime;Ljava/lang/Integer;)V", "public")]
-	public PAEncTSEnc(Dova.JDK.sun.security.krb5.@internal.KerberosTime arg0, Dova.JDK.java.lang.Integer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public PAEncTSEnc(Dova.JDK.sun.security.krb5.@internal.KerberosTime arg0, Dova.JDK.java.lang.Integer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 

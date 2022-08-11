@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class Label
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/reflect/Label;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "patches", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Label", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljdk/internal/reflect/ClassFileAssembler;SSI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bind", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "patches", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljdk/internal/reflect/ClassFileAssembler;SSI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bind", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -57,7 +57,7 @@ public partial class Label
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public Label() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Label() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -91,11 +91,11 @@ public partial class Label
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/reflect/Label$PatchInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "asm", "Ljdk/internal/reflect/ClassFileAssembler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instrBCI", "S"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "patchBCI", "S"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stackDepth", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PatchInfo", "(Ljdk/internal/reflect/ClassFileAssembler;SSI)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "asm", "Ljdk/internal/reflect/ClassFileAssembler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instrBCI", "S"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "patchBCI", "S"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stackDepth", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/reflect/ClassFileAssembler;SSI)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/reflect/ClassFileAssembler;", "final")]
@@ -160,7 +160,7 @@ public partial class Label
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/reflect/ClassFileAssembler;SSI)V", "")]
-		public PatchInfo(Dova.JDK.jdk.@internal.reflect.ClassFileAssembler arg0, short arg1, short arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public PatchInfo(Dova.JDK.jdk.@internal.reflect.ClassFileAssembler arg0, short arg1, short arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

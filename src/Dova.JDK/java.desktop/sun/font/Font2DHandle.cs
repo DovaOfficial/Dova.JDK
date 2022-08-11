@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class Font2DHandle
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Font2DHandle;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "font2D", "Lsun/font/Font2D;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Font2DHandle", "(Lsun/font/Font2D;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "font2D", "Lsun/font/Font2D;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/font/Font2D;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/font/Font2D;", "public")]
@@ -54,7 +54,7 @@ public partial class Font2DHandle
 	}
 
 	[JniSignatureAttribute("(Lsun/font/Font2D;)V", "public")]
-	public Font2DHandle(Dova.JDK.sun.font.Font2D arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Font2DHandle(Dova.JDK.sun.font.Font2D arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

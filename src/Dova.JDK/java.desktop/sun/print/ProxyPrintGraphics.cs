@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,13 +32,13 @@ public partial class ProxyPrintGraphics
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ProxyPrintGraphics;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "printJob", "Ljava/awt/PrintJob;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProxyPrintGraphics", "(Ljava/awt/Graphics;Ljava/awt/PrintJob;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "(IIII)Ljava/awt/Graphics;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "()Ljava/awt/Graphics;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGraphics", "()Ljava/awt/Graphics;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintJob", "()Ljava/awt/PrintJob;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "printJob", "Ljava/awt/PrintJob;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Graphics;Ljava/awt/PrintJob;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "(IIII)Ljava/awt/Graphics;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "()Ljava/awt/Graphics;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGraphics", "()Ljava/awt/Graphics;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintJob", "()Ljava/awt/PrintJob;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/PrintJob;", "private")]
@@ -61,7 +61,7 @@ public partial class ProxyPrintGraphics
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Graphics;Ljava/awt/PrintJob;)V", "public")]
-	public ProxyPrintGraphics(Dova.JDK.java.awt.Graphics arg0, Dova.JDK.java.awt.PrintJob arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ProxyPrintGraphics(Dova.JDK.java.awt.Graphics arg0, Dova.JDK.java.awt.PrintJob arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

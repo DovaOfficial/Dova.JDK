@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class FlightRecorderMXBeanProvider
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/management/jfr/internal/FlightRecorderMXBeanProvider;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "flightRecorderMXBeanFactory", "Ljava/util/concurrent/Callable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "flightRecorderMXBean", "Ljdk/management/jfr/FlightRecorderMXBean;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FlightRecorderMXBeanProvider", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFlightRecorderMXBean", "()Ljdk/management/jfr/FlightRecorderMXBean;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPlatformComponentList", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setFlightRecorderMXBeanFactory", "(Ljava/util/concurrent/Callable;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "flightRecorderMXBeanFactory", "Ljava/util/concurrent/Callable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "flightRecorderMXBean", "Ljdk/management/jfr/FlightRecorderMXBean;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFlightRecorderMXBean", "()Ljdk/management/jfr/FlightRecorderMXBean;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPlatformComponentList", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setFlightRecorderMXBeanFactory", "(Ljava/util/concurrent/Callable;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/Callable;", "private static")]
@@ -73,7 +73,7 @@ public partial class FlightRecorderMXBeanProvider
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public FlightRecorderMXBeanProvider() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public FlightRecorderMXBeanProvider() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -117,13 +117,13 @@ public partial class FlightRecorderMXBeanProvider
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/management/jfr/internal/FlightRecorderMXBeanProvider$SingleMBeanComponent;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectName", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mbeanInterface", "Ljava/lang/Class;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SingleMBeanComponent", "(Ljava/lang/String;Ljava/lang/Class;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mbeanInterfaceNames", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nameToMBeanMap", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getObjectNamePattern", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mbeanInterfaces", "()Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objectName", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mbeanInterface", "Ljava/lang/Class;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/Class;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mbeanInterfaceNames", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nameToMBeanMap", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getObjectNamePattern", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mbeanInterfaces", "()Ljava/util/Set;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -160,7 +160,7 @@ public partial class FlightRecorderMXBeanProvider
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Class;)V", "public")]
-		public SingleMBeanComponent(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SingleMBeanComponent(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

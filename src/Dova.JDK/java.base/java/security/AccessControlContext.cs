@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,44 +31,44 @@ public partial class AccessControlContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/AccessControlContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "[Ljava/security/ProtectionDomain;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isPrivileged", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAuthorized", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "privilegedContext", "Ljava/security/AccessControlContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "combiner", "Ljava/security/DomainCombiner;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "permissions", "[Ljava/security/Permission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljava/security/AccessControlContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isWrapped", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isLimited", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limitedContext", "[Ljava/security/ProtectionDomain;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debugInit", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "([Ljava/security/ProtectionDomain;Ljava/security/AccessControlContext;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "(Ljava/security/ProtectionDomain;Ljava/security/DomainCombiner;Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;[Ljava/security/Permission;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "([Ljava/security/ProtectionDomain;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessControlContext", "([Ljava/security/ProtectionDomain;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkPermission", "(Ljava/security/Permission;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContext", "()[Ljava/security/ProtectionDomain;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAuthorized", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPrivileged", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCombiner", "()Ljava/security/DomainCombiner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDebug", "()Lsun/security/util/Debug;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkPermission2", "(Ljava/security/Permission;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateFields", "(Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;[Ljava/security/Permission;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "containsAllPDs", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equalContext", "(Ljava/security/AccessControlContext;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equalLimitedContext", "(Ljava/security/AccessControlContext;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equalPDs", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsAllLimits", "(Ljava/security/AccessControlContext;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNextPC", "(Ljava/security/AccessControlContext;)Ljava/security/AccessControlContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAssignedCombiner", "()Ljava/security/DomainCombiner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDomainCombiner", "()Ljava/security/DomainCombiner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "optimize", "()Ljava/security/AccessControlContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "[Ljava/security/ProtectionDomain;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isPrivileged", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAuthorized", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "privilegedContext", "Ljava/security/AccessControlContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "combiner", "Ljava/security/DomainCombiner;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "permissions", "[Ljava/security/Permission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljava/security/AccessControlContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isWrapped", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isLimited", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limitedContext", "[Ljava/security/ProtectionDomain;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debugInit", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Lsun/security/util/Debug;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/security/ProtectionDomain;Ljava/security/AccessControlContext;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/ProtectionDomain;Ljava/security/DomainCombiner;Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;[Ljava/security/Permission;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/security/ProtectionDomain;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/security/ProtectionDomain;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkPermission", "(Ljava/security/Permission;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContext", "()[Ljava/security/ProtectionDomain;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAuthorized", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "combine", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)[Ljava/security/ProtectionDomain;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPrivileged", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCombiner", "()Ljava/security/DomainCombiner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDebug", "()Lsun/security/util/Debug;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkPermission2", "(Ljava/security/Permission;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateFields", "(Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;[Ljava/security/Permission;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "containsAllPDs", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equalContext", "(Ljava/security/AccessControlContext;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equalLimitedContext", "(Ljava/security/AccessControlContext;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equalPDs", "([Ljava/security/ProtectionDomain;[Ljava/security/ProtectionDomain;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "containsAllLimits", "(Ljava/security/AccessControlContext;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNextPC", "(Ljava/security/AccessControlContext;)Ljava/security/AccessControlContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAssignedCombiner", "()Ljava/security/DomainCombiner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDomainCombiner", "()Ljava/security/DomainCombiner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "optimize", "()Ljava/security/AccessControlContext;"));
 	}
 
 	[JniSignatureAttribute("[Ljava/security/ProtectionDomain;", "private")]
@@ -245,32 +245,32 @@ public partial class AccessControlContext
 	}
 
 	[JniSignatureAttribute("([Ljava/security/ProtectionDomain;Ljava/security/AccessControlContext;)V", "")]
-	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0, Dova.JDK.java.security.AccessControlContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0, Dova.JDK.java.security.AccessControlContext arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/ProtectionDomain;Ljava/security/DomainCombiner;Ljava/security/AccessControlContext;Ljava/security/AccessControlContext;[Ljava/security/Permission;)V", "")]
-	public AccessControlContext(Dova.JDK.java.security.ProtectionDomain arg0, Dova.JDK.java.security.DomainCombiner arg1, Dova.JDK.java.security.AccessControlContext arg2, Dova.JDK.java.security.AccessControlContext arg3, JavaArray<Dova.JDK.java.security.Permission> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public AccessControlContext(Dova.JDK.java.security.ProtectionDomain arg0, Dova.JDK.java.security.DomainCombiner arg1, Dova.JDK.java.security.AccessControlContext arg2, Dova.JDK.java.security.AccessControlContext arg3, JavaArray<Dova.JDK.java.security.Permission> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;Z)V", "")]
-	public AccessControlContext(Dova.JDK.java.security.AccessControlContext arg0, Dova.JDK.java.security.DomainCombiner arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public AccessControlContext(Dova.JDK.java.security.AccessControlContext arg0, Dova.JDK.java.security.DomainCombiner arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/AccessControlContext;Ljava/security/DomainCombiner;)V", "public")]
-	public AccessControlContext(Dova.JDK.java.security.AccessControlContext arg0, Dova.JDK.java.security.DomainCombiner arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public AccessControlContext(Dova.JDK.java.security.AccessControlContext arg0, Dova.JDK.java.security.DomainCombiner arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljava/security/ProtectionDomain;)V", "public")]
-	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0))
+	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljava/security/ProtectionDomain;Z)V", "")]
-	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[5], arg0, arg1))
+	public AccessControlContext(JavaArray<Dova.JDK.java.security.ProtectionDomain> arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[5], arg0, arg1))
 	{
 	}
 

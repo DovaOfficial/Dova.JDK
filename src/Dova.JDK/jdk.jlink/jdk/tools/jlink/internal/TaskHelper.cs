@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,24 +31,24 @@ public partial class TaskHelper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JLINK_BUNDLE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JIMAGE_BUNDLE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pluginOptions", "Ljdk/tools/jlink/internal/TaskHelper$PluginsHelper;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "log", "Ljava/io/PrintWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bundleHelper", "Ljdk/tools/jlink/internal/TaskHelper$ResourceBundleHelper;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TaskHelper", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "warning", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportError", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showVersion", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLog", "(Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newBadArgs", "(Ljava/lang/String;[Ljava/lang/Object;)Ljdk/tools/jlink/internal/TaskHelper$BadArgs;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportUnknownError", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExistingImage", "()Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "showsPlugin", "(Ljdk/tools/jlink/plugin/Plugin;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPluginsConfig", "(Ljava/nio/file/Path;Ljava/util/Map;)Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newOptionsHelper", "(Ljava/lang/Class;[Ljdk/tools/jlink/internal/TaskHelper$Option;)Ljdk/tools/jlink/internal/TaskHelper$OptionsHelper;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JLINK_BUNDLE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JIMAGE_BUNDLE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pluginOptions", "Ljdk/tools/jlink/internal/TaskHelper$PluginsHelper;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "log", "Ljava/io/PrintWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bundleHelper", "Ljdk/tools/jlink/internal/TaskHelper$ResourceBundleHelper;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "warning", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportError", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showVersion", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLog", "(Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newBadArgs", "(Ljava/lang/String;[Ljava/lang/Object;)Ljdk/tools/jlink/internal/TaskHelper$BadArgs;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportUnknownError", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExistingImage", "()Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "showsPlugin", "(Ljdk/tools/jlink/plugin/Plugin;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPluginsConfig", "(Ljava/nio/file/Path;Ljava/util/Map;)Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newOptionsHelper", "(Ljava/lang/Class;[Ljdk/tools/jlink/internal/TaskHelper$Option;)Ljdk/tools/jlink/internal/TaskHelper$OptionsHelper;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -127,7 +127,7 @@ public partial class TaskHelper
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public TaskHelper(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TaskHelper(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -229,10 +229,10 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$ResourceBundleHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bundle", "Ljava/util/ResourceBundle;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pluginBundle", "Ljava/util/ResourceBundle;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResourceBundleHelper", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bundle", "Ljava/util/ResourceBundle;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pluginBundle", "Ljava/util/ResourceBundle;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/ResourceBundle;", "private final")]
@@ -269,7 +269,7 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-		public ResourceBundleHelper(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ResourceBundleHelper(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -300,20 +300,20 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$OptionsHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "command", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaults", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OptionsHelper", "(Ljdk/tools/jlink/internal/TaskHelper;Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleOptions", "(Ljava/lang/Object;[Ljava/lang/String;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showHelp", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOption", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/TaskHelper$Option;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaults", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "listPlugins", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showPlugin", "(Ljdk/tools/jlink/plugin/Plugin;Ljava/io/PrintWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldListPlugins", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputCommand", "()[Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPluginsLayer", "()Ljava/lang/ModuleLayer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "command", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaults", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/TaskHelper;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleOptions", "(Ljava/lang/Object;[Ljava/lang/String;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showHelp", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOption", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/TaskHelper$Option;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaults", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "listPlugins", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showPlugin", "(Ljdk/tools/jlink/plugin/Plugin;Ljava/io/PrintWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldListPlugins", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputCommand", "()[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPluginsLayer", "()Ljava/lang/ModuleLayer;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -378,7 +378,7 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/internal/TaskHelper;Ljava/util/List;)V", "")]
-		public OptionsHelper(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OptionsHelper(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -462,13 +462,13 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$BadArgs;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "args", "[Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "showUsage", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BadArgs", "(Ljdk/tools/jlink/internal/TaskHelper;Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showUsage", "(Z)Ljdk/tools/jlink/internal/TaskHelper$BadArgs;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "key", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "args", "[Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "showUsage", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/TaskHelper;Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showUsage", "(Z)Ljdk/tools/jlink/internal/TaskHelper$BadArgs;"));
 		}
 
 		[JniSignatureAttribute("J", "static final")]
@@ -547,7 +547,7 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/internal/TaskHelper;Ljava/lang/String;[Ljava/lang/Object;)V", "private transient")]
-		public BadArgs(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.java.lang.Object> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public BadArgs(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0, Dova.JDK.java.lang.String arg1, JavaArray<Dova.JDK.java.lang.Object> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -578,23 +578,23 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$PluginsHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRIP_NATIVE_DEBUG_SYMBOLS_NAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pluginsLayer", "Ljava/lang/ModuleLayer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "plugins", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastSorter", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listPlugins", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "existingImage", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pluginToMaps", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pluginsOptions", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainOptions", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PluginsHelper", "(Ljdk/tools/jlink/internal/TaskHelper;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOption", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/TaskHelper$PluginOption;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addOrderedPluginOptions", "(Ljdk/tools/jlink/plugin/Plugin;Ljava/util/Set;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addArgumentMap", "(Ljdk/tools/jlink/plugin/Plugin;)Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPluginsConfig", "(Ljava/nio/file/Path;Ljava/util/Map;)Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "argListFor", "(Ljdk/tools/jlink/plugin/Plugin;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addEmptyArgumentMap", "(Ljdk/tools/jlink/plugin/Plugin;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRIP_NATIVE_DEBUG_SYMBOLS_NAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pluginsLayer", "Ljava/lang/ModuleLayer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "plugins", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastSorter", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "listPlugins", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "existingImage", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pluginToMaps", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pluginsOptions", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainOptions", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/TaskHelper;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/TaskHelper;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOption", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/TaskHelper$PluginOption;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addOrderedPluginOptions", "(Ljdk/tools/jlink/plugin/Plugin;Ljava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addArgumentMap", "(Ljdk/tools/jlink/plugin/Plugin;)Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPluginsConfig", "(Ljava/nio/file/Path;Ljava/util/Map;)Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "argListFor", "(Ljdk/tools/jlink/plugin/Plugin;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addEmptyArgumentMap", "(Ljdk/tools/jlink/plugin/Plugin;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -743,7 +743,7 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/internal/TaskHelper;)V", "private")]
-		public PluginsHelper(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PluginsHelper(Dova.JDK.jdk.tools.jlink.@internal.TaskHelper arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -806,9 +806,9 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$PluginOption;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PluginOption", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PluginOption", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resourcePrefix", "()Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resourcePrefix", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -817,12 +817,12 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;)V", "public")]
-		public PluginOption(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public PluginOption(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V", "public")]
-		public PluginOption(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public PluginOption(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -854,30 +854,30 @@ public partial class TaskHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$Option;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasArg", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "processing", "Ljdk/tools/jlink/internal/TaskHelper$Option$Processing;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hidden", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shortname", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shortname2", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "terminalOption", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Option", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isHidden", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/lang/Object;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Ljava/lang/String;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resourceName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "process", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTerminal", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ignoreRest", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resourcePrefix", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShortname", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasArg", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "processing", "Ljdk/tools/jlink/internal/TaskHelper$Option$Processing;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hidden", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shortname", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shortname2", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "terminalOption", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isHidden", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compareTo", "(Ljava/lang/Object;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matches", "(Ljava/lang/String;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resourceName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "process", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTerminal", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ignoreRest", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resourcePrefix", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShortname", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Z", "final")]
@@ -984,37 +984,37 @@ public partial class TaskHelper
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;ZLjava/lang/String;Ljava/lang/String;Z)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, bool arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4, arg5))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, bool arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, bool arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Z)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[5], arg0, arg1, arg2, arg3, arg4))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[5], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjdk/tools/jlink/internal/TaskHelper$Option$Processing;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "public")]
-		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[6], arg0, arg1, arg2, arg3, arg4))
+		public Option(bool arg0, Dova.JDK.jdk.tools.jlink.@internal.TaskHelper.Option.Processing arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[6], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1104,7 +1104,7 @@ public partial class TaskHelper
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/TaskHelper$Option$Processing;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "process", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "process", "(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V"));
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V", "public abstract")]

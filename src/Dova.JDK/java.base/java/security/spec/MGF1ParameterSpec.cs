@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,21 +32,21 @@ public partial class MGF1ParameterSpec
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/spec/MGF1ParameterSpec;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA1", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA224", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA256", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA384", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA512", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA512_224", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA512_256", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA3_224", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA3_256", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA3_384", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHA3_512", "Ljava/security/spec/MGF1ParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mdName", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MGF1ParameterSpec", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDigestAlgorithm", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA1", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA224", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA256", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA384", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA512", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA512_224", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA512_256", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA3_224", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA3_256", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA3_384", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHA3_512", "Ljava/security/spec/MGF1ParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mdName", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDigestAlgorithm", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/spec/MGF1ParameterSpec;", "public static final")]
@@ -223,7 +223,7 @@ public partial class MGF1ParameterSpec
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public MGF1ParameterSpec(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MGF1ParameterSpec(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

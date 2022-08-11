@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class ClassFinder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeprscan/scan/ClassFinder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "list", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verbose", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassFinder", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addJrt", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addJar", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDir", "(Ljava/lang/String;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "list", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "verbose", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addJrt", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addJar", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDir", "(Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "final")]
@@ -74,7 +74,7 @@ public partial class ClassFinder
 	}
 
 	[JniSignatureAttribute("(Z)V", "public")]
-	public ClassFinder(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ClassFinder(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -123,10 +123,10 @@ public partial class ClassFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeprscan/scan/ClassFinder$DirPathEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dir", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DirPathEntry", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/nio/file/Path;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dir", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/nio/file/Path;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/file/Path;", "final")]
@@ -163,7 +163,7 @@ public partial class ClassFinder
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/nio/file/Path;)V", "")]
-		public DirPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0, Dova.JDK.java.nio.file.Path arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public DirPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0, Dova.JDK.java.nio.file.Path arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -195,10 +195,10 @@ public partial class ClassFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeprscan/scan/ClassFinder$JarPathEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jarFile", "Ljava/util/jar/JarFile;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JarPathEntry", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/util/jar/JarFile;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jarFile", "Ljava/util/jar/JarFile;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/util/jar/JarFile;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/jar/JarFile;", "final")]
@@ -235,7 +235,7 @@ public partial class ClassFinder
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdeprscan/scan/ClassFinder;Ljava/util/jar/JarFile;)V", "")]
-		public JarPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0, Dova.JDK.java.util.jar.JarFile arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public JarPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0, Dova.JDK.java.util.jar.JarFile arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -267,10 +267,10 @@ public partial class ClassFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeprscan/scan/ClassFinder$JrtPathEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fs", "Ljava/nio/file/FileSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JrtPathEntry", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fs", "Ljava/nio/file/FileSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdeprscan/scan/ClassFinder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdeprscan/scan/ClassFinder;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/file/FileSystem;", "final")]
@@ -307,7 +307,7 @@ public partial class ClassFinder
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdeprscan/scan/ClassFinder;)V", "")]
-		public JrtPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public JrtPathEntry(Dova.JDK.com.sun.tools.jdeprscan.scan.ClassFinder arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -336,7 +336,7 @@ public partial class ClassFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeprscan/scan/ClassFinder$PathEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "find", "(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)Lcom/sun/tools/classfile/ClassFile;", "public abstract")]

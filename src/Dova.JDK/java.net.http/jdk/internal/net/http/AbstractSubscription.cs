@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class AbstractSubscription
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/AbstractSubscription;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "demand", "Ljdk/internal/net/http/common/Demand;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractSubscription", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "demand", "()Ljdk/internal/net/http/common/Demand;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "demand", "Ljdk/internal/net/http/common/Demand;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "demand", "()Ljdk/internal/net/http/common/Demand;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Demand;", "private final")]
@@ -57,7 +57,7 @@ public partial class AbstractSubscription
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public AbstractSubscription() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AbstractSubscription() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

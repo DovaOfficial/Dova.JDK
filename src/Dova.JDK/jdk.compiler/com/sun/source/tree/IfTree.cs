@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial interface IfTree
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/source/tree/IfTree;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCondition", "()Lcom/sun/source/tree/ExpressionTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElseStatement", "()Lcom/sun/source/tree/StatementTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getThenStatement", "()Lcom/sun/source/tree/StatementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCondition", "()Lcom/sun/source/tree/ExpressionTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElseStatement", "()Lcom/sun/source/tree/StatementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getThenStatement", "()Lcom/sun/source/tree/StatementTree;"));
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/source/tree/ExpressionTree;", "public abstract")]

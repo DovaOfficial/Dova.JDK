@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,68 +31,68 @@ public partial class EmergencySoundbank
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/EmergencySoundbank;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "general_midi_instruments", "[Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EmergencySoundbank", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toBytes", "([FLjavax/sound/sampled/AudioFormat;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "([FD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "([DD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newLayer", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;Lcom/sun/media/sound/SF2Sample;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_bass_drum", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_snare_drum", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_tom", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_open_hihat", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_closed_hihat", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_crash_cymbal", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_side_stick", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_gpiano", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_gpiano2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_piano_hammer", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_piano1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_epiano1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_epiano2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_guitar1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_guitar_pick", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_guitar_dist", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_bass1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_bass2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_synthbass", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_string2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_orchhit", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_choir", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_solostring", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_organ", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_ch_organ", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_bell", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_flute", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_timpani", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_melodic_toms", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_trumpet", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_trombone", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_brass_section", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_horn", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_sax", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_oboe", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_bassoon", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_clarinet", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "new_reverse_cymbal", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newInstrument", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;Ljavax/sound/midi/Patch;[Lcom/sun/media/sound/SF2Layer;)Lcom/sun/media/sound/SF2Instrument;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "complexGaussianDist", "([DDDD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleFFTSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DDI)Lcom/sun/media/sound/SF2Sample;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleFFTSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DD)Lcom/sun/media/sound/SF2Sample;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleFFTSample_dist", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DDD)Lcom/sun/media/sound/SF2Sample;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fft", "([D)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "randomPhase", "([DLjava/util/Random;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "randomPhase", "([D)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ifft", "([D)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "realPart", "([D)[D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fadeUp", "([FI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fadeUp", "([DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newSimpleDrumSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[D)Lcom/sun/media/sound/SF2Sample;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toFloat", "([D)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loopExtend", "([DI)[D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loopExtend", "([FI)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createSoundbank", "()Lcom/sun/media/sound/SF2Soundbank;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "imgPart", "([D)[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "general_midi_instruments", "[Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toBytes", "([FLjavax/sound/sampled/AudioFormat;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "([FD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "([DD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newLayer", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;Lcom/sun/media/sound/SF2Sample;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_bass_drum", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_snare_drum", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_tom", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_open_hihat", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_closed_hihat", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_crash_cymbal", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_side_stick", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_gpiano", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_gpiano2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_piano_hammer", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_piano1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_epiano1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_epiano2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_guitar1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_guitar_pick", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_guitar_dist", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_bass1", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_bass2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_synthbass", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_string2", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_orchhit", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_choir", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_solostring", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_organ", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_ch_organ", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_bell", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_flute", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_timpani", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_melodic_toms", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_trumpet", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_trombone", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_brass_section", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_horn", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_sax", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_oboe", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_bassoon", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_clarinet", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "new_reverse_cymbal", "(Lcom/sun/media/sound/SF2Soundbank;)Lcom/sun/media/sound/SF2Layer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newInstrument", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;Ljavax/sound/midi/Patch;[Lcom/sun/media/sound/SF2Layer;)Lcom/sun/media/sound/SF2Instrument;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "complexGaussianDist", "([DDDD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newSimpleFFTSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DDI)Lcom/sun/media/sound/SF2Sample;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newSimpleFFTSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DD)Lcom/sun/media/sound/SF2Sample;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newSimpleFFTSample_dist", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[DDD)Lcom/sun/media/sound/SF2Sample;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fft", "([D)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "randomPhase", "([DLjava/util/Random;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "randomPhase", "([D)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ifft", "([D)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "realPart", "([D)[D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fadeUp", "([FI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fadeUp", "([DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newSimpleDrumSample", "(Lcom/sun/media/sound/SF2Soundbank;Ljava/lang/String;[D)Lcom/sun/media/sound/SF2Sample;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toFloat", "([D)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loopExtend", "([DI)[D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loopExtend", "([FI)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createSoundbank", "()Lcom/sun/media/sound/SF2Soundbank;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "imgPart", "([D)[D"));
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -115,7 +115,7 @@ public partial class EmergencySoundbank
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public EmergencySoundbank() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public EmergencySoundbank() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

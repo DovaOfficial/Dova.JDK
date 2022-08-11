@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,31 +32,31 @@ public partial class Reifier
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/generics/visitor/Reifier;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resultType", "Ljava/lang/reflect/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "factory", "Lsun/reflect/generics/factory/GenericsFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Reifier", "(Lsun/reflect/generics/factory/GenericsFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFactory", "()Lsun/reflect/generics/factory/GenericsFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "make", "(Lsun/reflect/generics/factory/GenericsFactory;)Lsun/reflect/generics/visitor/Reifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResult_0", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResult_1", "()Ljava/lang/reflect/Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitFormalTypeParameter", "(Lsun/reflect/generics/tree/FormalTypeParameter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSimpleClassTypeSignature", "(Lsun/reflect/generics/tree/SimpleClassTypeSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitClassTypeSignature", "(Lsun/reflect/generics/tree/ClassTypeSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitBottomSignature", "(Lsun/reflect/generics/tree/BottomSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reifyTypeArguments", "([Lsun/reflect/generics/tree/TypeArgument;)[Ljava/lang/reflect/Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArrayTypeSignature", "(Lsun/reflect/generics/tree/ArrayTypeSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitTypeVariableSignature", "(Lsun/reflect/generics/tree/TypeVariableSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitVoidDescriptor", "(Lsun/reflect/generics/tree/VoidDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitWildcard", "(Lsun/reflect/generics/tree/Wildcard;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitByteSignature", "(Lsun/reflect/generics/tree/ByteSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitBooleanSignature", "(Lsun/reflect/generics/tree/BooleanSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitShortSignature", "(Lsun/reflect/generics/tree/ShortSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCharSignature", "(Lsun/reflect/generics/tree/CharSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitIntSignature", "(Lsun/reflect/generics/tree/IntSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLongSignature", "(Lsun/reflect/generics/tree/LongSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitFloatSignature", "(Lsun/reflect/generics/tree/FloatSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDoubleSignature", "(Lsun/reflect/generics/tree/DoubleSignature;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resultType", "Ljava/lang/reflect/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "factory", "Lsun/reflect/generics/factory/GenericsFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/reflect/generics/factory/GenericsFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFactory", "()Lsun/reflect/generics/factory/GenericsFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "make", "(Lsun/reflect/generics/factory/GenericsFactory;)Lsun/reflect/generics/visitor/Reifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResult_0", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResult_1", "()Ljava/lang/reflect/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitFormalTypeParameter", "(Lsun/reflect/generics/tree/FormalTypeParameter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSimpleClassTypeSignature", "(Lsun/reflect/generics/tree/SimpleClassTypeSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitClassTypeSignature", "(Lsun/reflect/generics/tree/ClassTypeSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitBottomSignature", "(Lsun/reflect/generics/tree/BottomSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reifyTypeArguments", "([Lsun/reflect/generics/tree/TypeArgument;)[Ljava/lang/reflect/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitArrayTypeSignature", "(Lsun/reflect/generics/tree/ArrayTypeSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitTypeVariableSignature", "(Lsun/reflect/generics/tree/TypeVariableSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitVoidDescriptor", "(Lsun/reflect/generics/tree/VoidDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitWildcard", "(Lsun/reflect/generics/tree/Wildcard;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitByteSignature", "(Lsun/reflect/generics/tree/ByteSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitBooleanSignature", "(Lsun/reflect/generics/tree/BooleanSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitShortSignature", "(Lsun/reflect/generics/tree/ShortSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCharSignature", "(Lsun/reflect/generics/tree/CharSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitIntSignature", "(Lsun/reflect/generics/tree/IntSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLongSignature", "(Lsun/reflect/generics/tree/LongSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitFloatSignature", "(Lsun/reflect/generics/tree/FloatSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDoubleSignature", "(Lsun/reflect/generics/tree/DoubleSignature;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/reflect/Type;", "private")]
@@ -107,7 +107,7 @@ public partial class Reifier
 	}
 
 	[JniSignatureAttribute("(Lsun/reflect/generics/factory/GenericsFactory;)V", "private")]
-	public Reifier(Dova.JDK.sun.reflect.generics.factory.GenericsFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Reifier(Dova.JDK.sun.reflect.generics.factory.GenericsFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

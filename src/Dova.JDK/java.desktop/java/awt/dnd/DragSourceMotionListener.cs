@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface DragSourceMotionListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/dnd/DragSourceMotionListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dragMouseMoved", "(Ljava/awt/dnd/DragSourceDragEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dragMouseMoved", "(Ljava/awt/dnd/DragSourceDragEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/dnd/DragSourceDragEvent;)V", "public abstract")]

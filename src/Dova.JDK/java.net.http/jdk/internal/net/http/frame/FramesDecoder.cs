@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,47 +31,47 @@ public partial class FramesDecoder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/frame/FramesDecoder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameProcessor", "Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxFrameSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentBuffer", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tailBuffers", "Ljava/util/ArrayDeque;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tailSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slicedToDataFrame", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prepareToRelease", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameHeaderParsed", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameType", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameFlags", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameStreamid", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COPY_THRESHOLD", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FramesDecoder", "(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FramesDecoder", "(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getByte", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShort", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInt", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBytes", "(I)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextFrame", "()Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skipBytes", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "frameProcessed", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseFrameHeader", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseFrameBody", "()Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseDataFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseHeadersFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parsePriorityFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseResetFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseSettingsFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parsePushPromiseFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parsePingFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseGoAwayFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseWindowUpdateFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseContinuationFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBuffers", "(ZI)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextBuffer", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameProcessor", "Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxFrameSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentBuffer", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tailBuffers", "Ljava/util/ArrayDeque;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tailSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slicedToDataFrame", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prepareToRelease", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameHeaderParsed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameType", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameFlags", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameStreamid", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closed", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COPY_THRESHOLD", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getByte", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShort", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInt", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBytes", "(I)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextFrame", "()Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skipBytes", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "frameProcessed", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseFrameHeader", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseFrameBody", "()Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseDataFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseHeadersFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parsePriorityFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseResetFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseSettingsFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parsePushPromiseFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parsePingFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseGoAwayFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseWindowUpdateFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseContinuationFrame", "(III)Ljdk/internal/net/http/frame/Http2Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBuffers", "(ZI)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextBuffer", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "static final")]
@@ -304,12 +304,12 @@ public partial class FramesDecoder
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;)V", "public")]
-	public FramesDecoder(Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder.FrameProcessor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public FramesDecoder(Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder.FrameProcessor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;I)V", "public")]
-	public FramesDecoder(Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder.FrameProcessor arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public FramesDecoder(Dova.JDK.jdk.@internal.net.http.frame.FramesDecoder.FrameProcessor arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -485,7 +485,7 @@ public partial class FramesDecoder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/frame/FramesDecoder$FrameProcessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/frame/Http2Frame;)V", "public abstract")]

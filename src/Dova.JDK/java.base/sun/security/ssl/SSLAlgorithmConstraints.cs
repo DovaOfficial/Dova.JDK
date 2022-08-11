@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,23 +32,23 @@ public partial class SSLAlgorithmConstraints
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLAlgorithmConstraints;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tlsDisabledAlgConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "x509DisabledAlgConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userSpecifiedConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "peerSpecifiedConstraints", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabledX509DisabledAlgConstraints", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT", "Ljava/security/AlgorithmConstraints;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_SSL_ONLY", "Ljava/security/AlgorithmConstraints;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAlgorithmConstraints", "(Ljavax/net/ssl/SSLEngine;[Ljava/lang/String;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAlgorithmConstraints", "(Ljavax/net/ssl/SSLSocket;[Ljava/lang/String;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAlgorithmConstraints", "(Ljavax/net/ssl/SSLEngine;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAlgorithmConstraints", "(Ljavax/net/ssl/SSLSocket;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAlgorithmConstraints", "(Ljava/security/AlgorithmConstraints;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/Key;Ljava/security/AlgorithmParameters;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/AlgorithmParameters;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/security/Key;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUserSpecifiedConstraints", "(Ljavax/net/ssl/SSLEngine;)Ljava/security/AlgorithmConstraints;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUserSpecifiedConstraints", "(Ljavax/net/ssl/SSLSocket;)Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "tlsDisabledAlgConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "x509DisabledAlgConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userSpecifiedConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "peerSpecifiedConstraints", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabledX509DisabledAlgConstraints", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT", "Ljava/security/AlgorithmConstraints;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_SSL_ONLY", "Ljava/security/AlgorithmConstraints;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngine;[Ljava/lang/String;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLSocket;[Ljava/lang/String;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngine;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLSocket;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/AlgorithmConstraints;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/Key;Ljava/security/AlgorithmParameters;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/AlgorithmParameters;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/security/Key;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUserSpecifiedConstraints", "(Ljavax/net/ssl/SSLEngine;)Ljava/security/AlgorithmConstraints;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUserSpecifiedConstraints", "(Ljavax/net/ssl/SSLSocket;)Ljava/security/AlgorithmConstraints;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/AlgorithmConstraints;", "private static final")]
@@ -155,27 +155,27 @@ public partial class SSLAlgorithmConstraints
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngine;[Ljava/lang/String;Z)V", "")]
-	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLEngine arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLEngine arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLSocket;[Ljava/lang/String;Z)V", "")]
-	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLSocket arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLSocket arg0, JavaArray<Dova.JDK.java.lang.String> arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngine;Z)V", "")]
-	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLEngine arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLEngine arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLSocket;Z)V", "")]
-	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLSocket arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public SSLAlgorithmConstraints(Dova.JDK.javax.net.ssl.SSLSocket arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/AlgorithmConstraints;)V", "")]
-	public SSLAlgorithmConstraints(Dova.JDK.java.security.AlgorithmConstraints arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0))
+	public SSLAlgorithmConstraints(Dova.JDK.java.security.AlgorithmConstraints arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0))
 	{
 	}
 
@@ -234,11 +234,11 @@ public partial class SSLAlgorithmConstraints
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLAlgorithmConstraints$SupportedSignatureAlgorithmConstraints;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "supportedAlgorithms", "[Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SupportedSignatureAlgorithmConstraints", "([Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/Key;Ljava/security/AlgorithmParameters;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/security/Key;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/AlgorithmParameters;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "supportedAlgorithms", "[Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/Key;Ljava/security/AlgorithmParameters;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/security/Key;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "permits", "(Ljava/util/Set;Ljava/lang/String;Ljava/security/AlgorithmParameters;)Z"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/String;", "private final")]
@@ -261,7 +261,7 @@ public partial class SSLAlgorithmConstraints
 		}
 
 		[JniSignatureAttribute("([Ljava/lang/String;)V", "")]
-		public SupportedSignatureAlgorithmConstraints(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SupportedSignatureAlgorithmConstraints(JavaArray<Dova.JDK.java.lang.String> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

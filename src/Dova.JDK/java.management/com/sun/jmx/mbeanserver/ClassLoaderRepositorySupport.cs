@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,24 +32,24 @@ public partial class ClassLoaderRepositorySupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_LOADER_ARRAY", "[Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loaders", "[Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "search", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loadersWithNames", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassLoaderRepositorySupport", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClass", "([Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassLoader", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startValidSearch", "(Ljava/lang/ClassLoader;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopValidSearch", "(Ljava/lang/ClassLoader;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClassWithout", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClassBefore", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassLoader", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassLoader", "(Ljava/lang/ClassLoader;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeClassLoader", "(Ljavax/management/ObjectName;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeClassLoader", "(Ljava/lang/ClassLoader;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_LOADER_ARRAY", "[Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loaders", "[Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "search", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loadersWithNames", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClass", "([Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;Ljava/lang/String;Ljava/lang/ClassLoader;Ljava/lang/ClassLoader;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClass", "(Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassLoader", "(Ljavax/management/ObjectName;)Ljava/lang/ClassLoader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startValidSearch", "(Ljava/lang/ClassLoader;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stopValidSearch", "(Ljava/lang/ClassLoader;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClassWithout", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClassBefore", "(Ljava/lang/ClassLoader;Ljava/lang/String;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassLoader", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassLoader", "(Ljava/lang/ClassLoader;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeClassLoader", "(Ljavax/management/ObjectName;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeClassLoader", "(Ljava/lang/ClassLoader;)V"));
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;", "private static final")]
@@ -114,7 +114,7 @@ public partial class ClassLoaderRepositorySupport
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ClassLoaderRepositorySupport() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ClassLoaderRepositorySupport() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -221,9 +221,9 @@ public partial class ClassLoaderRepositorySupport
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/ClassLoaderRepositorySupport$LoaderEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljavax/management/ObjectName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loader", "Ljava/lang/ClassLoader;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LoaderEntry", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljavax/management/ObjectName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loader", "Ljava/lang/ClassLoader;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/management/ObjectName;", "")]
@@ -260,7 +260,7 @@ public partial class ClassLoaderRepositorySupport
 		}
 
 		[JniSignatureAttribute("(Ljavax/management/ObjectName;Ljava/lang/ClassLoader;)V", "")]
-		public LoaderEntry(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.java.lang.ClassLoader arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LoaderEntry(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.java.lang.ClassLoader arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class StaxEntityResolverWrapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/xml/internal/stream/StaxEntityResolverWrapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fStaxResolver", "Ljavax/xml/stream/XMLResolver;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StaxEntityResolverWrapper", "(Ljavax/xml/stream/XMLResolver;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveEntity", "(Lcom/sun/org/apache/xerces/internal/xni/XMLResourceIdentifier;)Lcom/sun/xml/internal/stream/StaxXMLInputSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStaxInputSource", "(Ljava/lang/Object;)Lcom/sun/xml/internal/stream/StaxXMLInputSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setStaxEntityResolver", "(Ljavax/xml/stream/XMLResolver;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStaxEntityResolver", "()Ljavax/xml/stream/XMLResolver;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fStaxResolver", "Ljavax/xml/stream/XMLResolver;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/xml/stream/XMLResolver;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveEntity", "(Lcom/sun/org/apache/xerces/internal/xni/XMLResourceIdentifier;)Lcom/sun/xml/internal/stream/StaxXMLInputSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStaxInputSource", "(Ljava/lang/Object;)Lcom/sun/xml/internal/stream/StaxXMLInputSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setStaxEntityResolver", "(Ljavax/xml/stream/XMLResolver;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStaxEntityResolver", "()Ljavax/xml/stream/XMLResolver;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/xml/stream/XMLResolver;", "")]
@@ -59,7 +59,7 @@ public partial class StaxEntityResolverWrapper
 	}
 
 	[JniSignatureAttribute("(Ljavax/xml/stream/XMLResolver;)V", "public")]
-	public StaxEntityResolverWrapper(Dova.JDK.javax.xml.stream.XMLResolver arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public StaxEntityResolverWrapper(Dova.JDK.javax.xml.stream.XMLResolver arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

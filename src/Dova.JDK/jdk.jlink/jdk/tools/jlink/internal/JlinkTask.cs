@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,40 +31,40 @@ public partial class JlinkTask
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/JlinkTask;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IGNORE_SIGNING_DEFAULT", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "taskHelper", "Ljdk/tools/jlink/internal/TaskHelper;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "recognizedOptions", "[Ljdk/tools/jlink/internal/TaskHelper$Option;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROGNAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "Ljdk/tools/jlink/internal/JlinkTask$OptionsValues;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "optionsHelper", "Ljdk/tools/jlink/internal/TaskHelper$OptionsHelper;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "log", "Ljava/io/PrintWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXIT_OK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXIT_ERROR", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXIT_CMDERR", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXIT_SYSERR", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXIT_ABNORMAL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_MODULE_PATH", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JlinkTask", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "([Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "uses", "(Ljava/util/Set;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "limitFinder", "(Ljava/lang/module/ModuleFinder;Ljava/util/Set;Ljava/util/Set;)Ljava/lang/module/ModuleFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultModulePath", "()Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cleanupOutput", "(Ljava/nio/file/Path;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newModuleFinder", "(Ljava/util/List;Ljava/util/Set;Ljava/util/Set;)Ljava/lang/module/ModuleFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "postProcessImage", "(Ljdk/tools/jlink/internal/ExecutableImage;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createImageProvider", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljava/nio/file/Path;ZZZLjava/io/PrintWriter;)Ljdk/tools/jlink/internal/ImagePluginStack$ImageProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "postProcessOnly", "(Ljava/nio/file/Path;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initJlinkConfig", "()Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "printProviders", "(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/Set;Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "printProviders", "(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSaveOpts", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toPathLocation", "(Ljava/lang/module/ResolvedModule;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "suggestProviders", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "deleteDirectory", "(Ljava/nio/file/Path;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLog", "(Ljava/io/PrintWriter;Ljava/io/PrintWriter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createImage", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createImage", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEBUG", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IGNORE_SIGNING_DEFAULT", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "taskHelper", "Ljdk/tools/jlink/internal/TaskHelper;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "recognizedOptions", "[Ljdk/tools/jlink/internal/TaskHelper$Option;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROGNAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "Ljdk/tools/jlink/internal/JlinkTask$OptionsValues;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "optionsHelper", "Ljdk/tools/jlink/internal/TaskHelper$OptionsHelper;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "log", "Ljava/io/PrintWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXIT_OK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXIT_ERROR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXIT_CMDERR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXIT_SYSERR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXIT_ABNORMAL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_MODULE_PATH", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "([Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "uses", "(Ljava/util/Set;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "limitFinder", "(Ljava/lang/module/ModuleFinder;Ljava/util/Set;Ljava/util/Set;)Ljava/lang/module/ModuleFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultModulePath", "()Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cleanupOutput", "(Ljava/nio/file/Path;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newModuleFinder", "(Ljava/util/List;Ljava/util/Set;Ljava/util/Set;)Ljava/lang/module/ModuleFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "postProcessImage", "(Ljdk/tools/jlink/internal/ExecutableImage;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createImageProvider", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljava/nio/file/Path;ZZZLjava/io/PrintWriter;)Ljdk/tools/jlink/internal/ImagePluginStack$ImageProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "postProcessOnly", "(Ljava/nio/file/Path;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initJlinkConfig", "()Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "printProviders", "(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/Set;Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "printProviders", "(Ljava/io/PrintWriter;Ljava/lang/String;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSaveOpts", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toPathLocation", "(Ljava/lang/module/ResolvedModule;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "suggestProviders", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "deleteDirectory", "(Ljava/nio/file/Path;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLog", "(Ljava/io/PrintWriter;Ljava/io/PrintWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createImage", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;Ljdk/tools/jlink/internal/Jlink$PluginsConfiguration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createImage", "(Ljdk/tools/jlink/internal/Jlink$JlinkConfiguration;)V"));
 	}
 
 	[JniSignatureAttribute("Z", "public static final")]
@@ -269,7 +269,7 @@ public partial class JlinkTask
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JlinkTask() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JlinkTask() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -414,22 +414,22 @@ public partial class JlinkTask
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/JlinkTask$OptionsValues;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "help", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "saveoptsfile", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "verbose", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fullVersion", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modulePath", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limitMods", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "addMods", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "output", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "launchers", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packagedModulesPath", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endian", "Ljava/nio/ByteOrder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ignoreSigning", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bindServices", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suggestProviders", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OptionsValues", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "help", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "saveoptsfile", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "verbose", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fullVersion", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modulePath", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limitMods", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "addMods", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "output", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "launchers", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packagedModulesPath", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endian", "Ljava/nio/ByteOrder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ignoreSigning", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bindServices", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suggestProviders", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -648,7 +648,7 @@ public partial class JlinkTask
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public OptionsValues() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public OptionsValues() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -673,15 +673,15 @@ public partial class JlinkTask
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/JlinkTask$ImageHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "order", "Ljava/nio/ByteOrder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packagedModulesPath", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ignoreSigning", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Ljava/lang/Runtime$Version;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "archives", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageHelper", "(Ljava/lang/module/Configuration;Ljava/util/Map;Ljava/nio/ByteOrder;Ljava/nio/file/Path;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "retrieve", "(Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findModuleName", "(Ljava/nio/file/Path;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArchive", "(Ljava/lang/String;Ljava/nio/file/Path;)Ljdk/tools/jlink/internal/Archive;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "order", "Ljava/nio/ByteOrder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packagedModulesPath", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ignoreSigning", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Ljava/lang/Runtime$Version;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "archives", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/module/Configuration;Ljava/util/Map;Ljava/nio/ByteOrder;Ljava/nio/file/Path;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "retrieve", "(Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findModuleName", "(Ljava/nio/file/Path;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArchive", "(Ljava/lang/String;Ljava/nio/file/Path;)Ljdk/tools/jlink/internal/Archive;"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteOrder;", "final")]
@@ -760,7 +760,7 @@ public partial class JlinkTask
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/module/Configuration;Ljava/util/Map;Ljava/nio/ByteOrder;Ljava/nio/file/Path;Z)V", "")]
-		public ImageHelper(Dova.JDK.java.lang.module.Configuration arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.nio.ByteOrder arg2, Dova.JDK.java.nio.file.Path arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public ImageHelper(Dova.JDK.java.lang.module.Configuration arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.nio.ByteOrder arg2, Dova.JDK.java.nio.file.Path arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

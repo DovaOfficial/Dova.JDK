@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class OperationEntry
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/OperationEntry;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "operation", "Ljavax/management/MBeanOperationInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inputs", "[Lsun/tools/jconsole/inspector/XTextField;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OperationEntry", "(Ljavax/management/MBeanOperationInfo;ZLjavax/swing/JButton;Lsun/tools/jconsole/inspector/XOperations;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReturnType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameters", "()[Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSignature", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPanel", "(ZLjavax/swing/JButton;Lsun/tools/jconsole/inspector/XOperations;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "operation", "Ljavax/management/MBeanOperationInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inputs", "[Lsun/tools/jconsole/inspector/XTextField;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/management/MBeanOperationInfo;ZLjavax/swing/JButton;Lsun/tools/jconsole/inspector/XOperations;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReturnType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParameters", "()[Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSignature", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPanel", "(ZLjavax/swing/JButton;Lsun/tools/jconsole/inspector/XOperations;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/management/MBeanOperationInfo;", "private")]
@@ -74,7 +74,7 @@ public partial class OperationEntry
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/MBeanOperationInfo;ZLjavax/swing/JButton;Lsun/tools/jconsole/inspector/XOperations;)V", "public")]
-	public OperationEntry(Dova.JDK.javax.management.MBeanOperationInfo arg0, bool arg1, Dova.JDK.javax.swing.JButton arg2, Dova.JDK.sun.tools.jconsole.inspector.XOperations arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public OperationEntry(Dova.JDK.javax.management.MBeanOperationInfo arg0, bool arg1, Dova.JDK.javax.swing.JButton arg2, Dova.JDK.sun.tools.jconsole.inspector.XOperations arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

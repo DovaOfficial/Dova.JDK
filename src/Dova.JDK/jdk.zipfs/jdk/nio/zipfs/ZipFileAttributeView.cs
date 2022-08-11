@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,16 +32,16 @@ public partial class ZipFileAttributeView
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/nio/zipfs/ZipFileAttributeView;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "path", "Ljdk/nio/zipfs/ZipPath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isZipView", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ZipFileAttributeView", "(Ljdk/nio/zipfs/ZipPath;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "attribute", "(Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;Ljdk/nio/zipfs/ZipFileAttributes;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttributes", "(Ljava/lang/String;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPermissions", "(Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "path", "Ljdk/nio/zipfs/ZipPath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isZipView", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/nio/zipfs/ZipPath;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "name", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "attribute", "(Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;Ljdk/nio/zipfs/ZipFileAttributes;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttributes", "(Ljava/lang/String;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAttribute", "(Ljava/lang/String;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPermissions", "(Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/nio/zipfs/ZipPath;", "final")]
@@ -78,7 +78,7 @@ public partial class ZipFileAttributeView
 	}
 
 	[JniSignatureAttribute("(Ljdk/nio/zipfs/ZipPath;Z)V", "")]
-	public ZipFileAttributeView(Dova.JDK.jdk.nio.zipfs.ZipPath arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ZipFileAttributeView(Dova.JDK.jdk.nio.zipfs.ZipPath arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -147,26 +147,26 @@ public partial class ZipFileAttributeView
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "size", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "creationTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lastAccessTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lastModifiedTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isDirectory", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isRegularFile", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isSymbolicLink", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isOther", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "fileKey", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "compressedSize", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "crc", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "method", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "owner", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "group", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "permissions", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttrID", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "size", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "creationTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lastAccessTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lastModifiedTime", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isDirectory", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isRegularFile", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isSymbolicLink", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isOther", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "fileKey", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "compressedSize", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "crc", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "method", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "owner", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "group", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "permissions", "Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/nio/zipfs/ZipFileAttributeView$AttrID;", "public static final")]
@@ -399,7 +399,7 @@ public partial class ZipFileAttributeView
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public AttrID(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AttrID(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

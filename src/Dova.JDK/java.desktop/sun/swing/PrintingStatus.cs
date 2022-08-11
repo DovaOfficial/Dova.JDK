@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,26 +31,26 @@ public partial class PrintingStatus
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/PrintingStatus;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "job", "Ljava/awt/print/PrinterJob;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljava/awt/Component;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "abortDialog", "Ljavax/swing/JDialog;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "abortButton", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statusLabel", "Ljavax/swing/JLabel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statusFormat", "Ljava/text/MessageFormat;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAborted", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "abortAction", "Ljavax/swing/Action;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeListener", "Ljava/awt/event/WindowAdapter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintingStatus", "(Ljava/awt/Component;Ljava/awt/print/PrinterJob;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInt", "(Ljava/lang/Object;I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showModalOnEDT", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disposeOnEDT", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createPrintingStatus", "(Ljava/awt/Component;Ljava/awt/print/PrinterJob;)Lsun/swing/PrintingStatus;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNotificationPrintable", "(Ljava/awt/print/Printable;)Ljava/awt/print/Printable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showModal", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAborted", "()Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "job", "Ljava/awt/print/PrinterJob;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljava/awt/Component;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "abortDialog", "Ljavax/swing/JDialog;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "abortButton", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statusLabel", "Ljavax/swing/JLabel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statusFormat", "Ljava/text/MessageFormat;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAborted", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "abortAction", "Ljavax/swing/Action;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeListener", "Ljava/awt/event/WindowAdapter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;Ljava/awt/print/PrinterJob;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInt", "(Ljava/lang/Object;I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showModalOnEDT", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disposeOnEDT", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createPrintingStatus", "(Ljava/awt/Component;Ljava/awt/print/PrinterJob;)Lsun/swing/PrintingStatus;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createNotificationPrintable", "(Ljava/awt/print/Printable;)Ljava/awt/print/Printable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showModal", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAborted", "()Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/print/PrinterJob;", "private final")]
@@ -199,7 +199,7 @@ public partial class PrintingStatus
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/print/PrinterJob;)V", "protected")]
-	public PrintingStatus(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.print.PrinterJob arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PrintingStatus(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.print.PrinterJob arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -281,12 +281,12 @@ public partial class PrintingStatus
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/PrintingStatus$NotificationPrintable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "printDelegatee", "Ljava/awt/print/Printable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/swing/PrintingStatus;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotificationPrintable", "(Lsun/swing/PrintingStatus;Ljava/awt/print/Printable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "print", "(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateStatusOnEDT", "(I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "printDelegatee", "Ljava/awt/print/Printable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/swing/PrintingStatus;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/swing/PrintingStatus;Ljava/awt/print/Printable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "print", "(Ljava/awt/Graphics;Ljava/awt/print/PageFormat;I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateStatusOnEDT", "(I)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/print/Printable;", "private final")]
@@ -337,7 +337,7 @@ public partial class PrintingStatus
 		}
 
 		[JniSignatureAttribute("(Lsun/swing/PrintingStatus;Ljava/awt/print/Printable;)V", "public")]
-		public NotificationPrintable(Dova.JDK.sun.swing.PrintingStatus arg0, Dova.JDK.java.awt.print.Printable arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NotificationPrintable(Dova.JDK.sun.swing.PrintingStatus arg0, Dova.JDK.java.awt.print.Printable arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

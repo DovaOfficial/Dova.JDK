@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class ClassValue
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ClassValue;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_CACHE", "[Ljava/lang/ClassValue$Entry;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hashCodeForCache", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "nextHashCode", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HASH_INCREMENT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HASH_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "identity", "Ljava/lang/ClassValue$Identity;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Ljava/lang/ClassValue$Version;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CRITICAL_SECTION", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSAFE", "Ljdk/internal/misc/Unsafe;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassValue", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "put", "(Ljava/lang/Class;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version", "()Ljava/lang/ClassValue$Version;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/lang/ClassValue$Entry;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMap", "(Ljava/lang/Class;)Ljava/lang/ClassValue$ClassValueMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCacheCarefully", "(Ljava/lang/Class;)[Ljava/lang/ClassValue$Entry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFromBackup", "([Ljava/lang/ClassValue$Entry;Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFromHashMap", "(Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeEntry", "(Ljava/lang/ClassValue$Version;Ljava/lang/Object;)Ljava/lang/ClassValue$Entry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initializeMap", "(Ljava/lang/Class;)Ljava/lang/ClassValue$ClassValueMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "castEntry", "(Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bumpVersion", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_CACHE", "[Ljava/lang/ClassValue$Entry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hashCodeForCache", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "nextHashCode", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HASH_INCREMENT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HASH_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "identity", "Ljava/lang/ClassValue$Identity;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Ljava/lang/ClassValue$Version;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CRITICAL_SECTION", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSAFE", "Ljdk/internal/misc/Unsafe;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "put", "(Ljava/lang/Class;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version", "()Ljava/lang/ClassValue$Version;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/lang/ClassValue$Entry;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMap", "(Ljava/lang/Class;)Ljava/lang/ClassValue$ClassValueMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCacheCarefully", "(Ljava/lang/Class;)[Ljava/lang/ClassValue$Entry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFromBackup", "([Ljava/lang/ClassValue$Entry;Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFromHashMap", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeValue", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeEntry", "(Ljava/lang/ClassValue$Version;Ljava/lang/Object;)Ljava/lang/ClassValue$Entry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initializeMap", "(Ljava/lang/Class;)Ljava/lang/ClassValue$ClassValueMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "castEntry", "(Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bumpVersion", "()V"));
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/ClassValue$Entry;", "private static final")]
@@ -189,7 +189,7 @@ public partial class ClassValue
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public ClassValue() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ClassValue() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -305,7 +305,7 @@ public partial class ClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ClassValue$Identity;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Identity", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -314,7 +314,7 @@ public partial class ClassValue
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Identity() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Identity() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -338,12 +338,12 @@ public partial class ClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ClassValue$Version;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classValue", "Ljava/lang/ClassValue;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "promise", "Ljava/lang/ClassValue$Entry;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Version", "(Ljava/lang/ClassValue;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classValue", "()Ljava/lang/ClassValue;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLive", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "promise", "()Ljava/lang/ClassValue$Entry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classValue", "Ljava/lang/ClassValue;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "promise", "Ljava/lang/ClassValue$Entry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ClassValue;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classValue", "()Ljava/lang/ClassValue;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLive", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "promise", "()Ljava/lang/ClassValue$Entry;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ClassValue;", "private final")]
@@ -380,7 +380,7 @@ public partial class ClassValue
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ClassValue;)V", "")]
-		public Version(Dova.JDK.java.lang.ClassValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Version(Dova.JDK.java.lang.ClassValue arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -425,18 +425,18 @@ public partial class ClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ClassValue$Entry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEAD_ENTRY", "Ljava/lang/ClassValue$Entry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Entry", "(Ljava/lang/ClassValue$Version;Ljava/lang/Object;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Entry", "(Ljava/lang/ClassValue$Version;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "value", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version", "()Ljava/lang/ClassValue$Version;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPromise", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "assertNotPromise", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLive", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classValueOrNull", "()Ljava/lang/ClassValue;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "refreshVersion", "(Ljava/lang/ClassValue$Version;)Ljava/lang/ClassValue$Entry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEAD_ENTRY", "Ljava/lang/ClassValue$Entry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ClassValue$Version;Ljava/lang/Object;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ClassValue$Version;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "value", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version", "()Ljava/lang/ClassValue$Version;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPromise", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "assertNotPromise", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLive", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classValueOrNull", "()Ljava/lang/ClassValue;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "refreshVersion", "(Ljava/lang/ClassValue$Version;)Ljava/lang/ClassValue$Entry;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "final")]
@@ -487,12 +487,12 @@ public partial class ClassValue
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ClassValue$Version;Ljava/lang/Object;)V", "")]
-		public Entry(Dova.JDK.java.lang.ClassValue.Version arg0, Dova.JDK.java.lang.Object arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Entry(Dova.JDK.java.lang.ClassValue.Version arg0, Dova.JDK.java.lang.Object arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ClassValue$Version;)V", "")]
-		public Entry(Dova.JDK.java.lang.ClassValue.Version arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public Entry(Dova.JDK.java.lang.ClassValue.Version arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
@@ -564,34 +564,34 @@ public partial class ClassValue
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/ClassValue$ClassValueMap;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheArray", "[Ljava/lang/ClassValue$Entry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheLoad", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheLoadLimit", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_ENTRIES", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CACHE_LOAD_LIMIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROBE_LIMIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassValueMap", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "probeHomeLocation", "([Ljava/lang/ClassValue$Entry;Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeEntry", "(Ljava/lang/ClassValue;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeEntry", "(Ljava/lang/ClassValue;Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCache", "()[Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "probeBackupLocations", "([Ljava/lang/ClassValue$Entry;Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startEntry", "(Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishEntry", "(Ljava/lang/ClassValue;Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sizeCache", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkCacheLoad", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addToCache", "(Ljava/lang/ClassValue$Entry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addToCache", "(Ljava/lang/ClassValue;Ljava/lang/ClassValue$Entry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeStaleEntries", "(Ljava/lang/ClassValue;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeStaleEntries", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeStaleEntries", "([Ljava/lang/ClassValue$Entry;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadFromCache", "([Ljava/lang/ClassValue$Entry;I)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "entryDislocation", "([Ljava/lang/ClassValue$Entry;ILjava/lang/ClassValue$Entry;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reduceCacheLoad", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findReplacement", "([Ljava/lang/ClassValue$Entry;I)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "placeInCache", "([Ljava/lang/ClassValue$Entry;ILjava/lang/ClassValue$Entry;Z)Ljava/lang/ClassValue$Entry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "overwrittenEntry", "(Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheArray", "[Ljava/lang/ClassValue$Entry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheLoad", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheLoadLimit", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_ENTRIES", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CACHE_LOAD_LIMIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROBE_LIMIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "probeHomeLocation", "([Ljava/lang/ClassValue$Entry;Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeEntry", "(Ljava/lang/ClassValue;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeEntry", "(Ljava/lang/ClassValue;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCache", "()[Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "probeBackupLocations", "([Ljava/lang/ClassValue$Entry;Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startEntry", "(Ljava/lang/ClassValue;)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishEntry", "(Ljava/lang/ClassValue;Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sizeCache", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkCacheLoad", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addToCache", "(Ljava/lang/ClassValue$Entry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addToCache", "(Ljava/lang/ClassValue;Ljava/lang/ClassValue$Entry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeStaleEntries", "(Ljava/lang/ClassValue;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeStaleEntries", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeStaleEntries", "([Ljava/lang/ClassValue$Entry;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadFromCache", "([Ljava/lang/ClassValue$Entry;I)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "entryDislocation", "([Ljava/lang/ClassValue$Entry;ILjava/lang/ClassValue$Entry;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reduceCacheLoad", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findReplacement", "([Ljava/lang/ClassValue$Entry;I)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "placeInCache", "([Ljava/lang/ClassValue$Entry;ILjava/lang/ClassValue$Entry;Z)Ljava/lang/ClassValue$Entry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "overwrittenEntry", "(Ljava/lang/ClassValue$Entry;)Ljava/lang/ClassValue$Entry;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/ClassValue$Entry;", "private")]
@@ -698,7 +698,7 @@ public partial class ClassValue
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ClassValueMap() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClassValueMap() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,20 +30,20 @@ public partial class AttributeSetUtilities
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttributeSetUtilities", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmodifiableView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unmodifiableView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "synchronizedView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "synchronizedView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "synchronizedView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "synchronizedView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "synchronizedView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "verifyAttributeCategory", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "verifyAttributeValue", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "verifyCategoryForValue", "(Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmodifiableView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmodifiableView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unmodifiableView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "synchronizedView", "(Ljavax/print/attribute/PrintJobAttributeSet;)Ljavax/print/attribute/PrintJobAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "synchronizedView", "(Ljavax/print/attribute/PrintRequestAttributeSet;)Ljavax/print/attribute/PrintRequestAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "synchronizedView", "(Ljavax/print/attribute/PrintServiceAttributeSet;)Ljavax/print/attribute/PrintServiceAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "synchronizedView", "(Ljavax/print/attribute/DocAttributeSet;)Ljavax/print/attribute/DocAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "synchronizedView", "(Ljavax/print/attribute/AttributeSet;)Ljavax/print/attribute/AttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "verifyAttributeCategory", "(Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "verifyAttributeValue", "(Ljava/lang/Object;Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "verifyCategoryForValue", "(Ljava/lang/Class;Ljavax/print/attribute/Attribute;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -52,7 +52,7 @@ public partial class AttributeSetUtilities
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public AttributeSetUtilities() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AttributeSetUtilities() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -167,22 +167,22 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$UnmodifiableAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attrset", "Ljavax/print/attribute/AttributeSet;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnmodifiableAttributeSet", "(Ljavax/print/attribute/AttributeSet;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljavax/print/attribute/Attribute;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljavax/print/attribute/Attribute;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Class;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toArray", "()[Ljavax/print/attribute/Attribute;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addAll", "(Ljavax/print/attribute/AttributeSet;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsKey", "(Ljava/lang/Class;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsValue", "(Ljavax/print/attribute/Attribute;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attrset", "Ljavax/print/attribute/AttributeSet;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/AttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljavax/print/attribute/Attribute;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljavax/print/attribute/Attribute;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljava/lang/Class;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toArray", "()[Ljavax/print/attribute/Attribute;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addAll", "(Ljavax/print/attribute/AttributeSet;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "containsKey", "(Ljava/lang/Class;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "containsValue", "(Ljavax/print/attribute/Attribute;)Z"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -219,7 +219,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/AttributeSet;)V", "public")]
-		public UnmodifiableAttributeSet(Dova.JDK.javax.print.attribute.AttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnmodifiableAttributeSet(Dova.JDK.javax.print.attribute.AttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -334,8 +334,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$UnmodifiableDocAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnmodifiableDocAttributeSet", "(Ljavax/print/attribute/DocAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/DocAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -358,7 +358,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/DocAttributeSet;)V", "public")]
-		public UnmodifiableDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnmodifiableDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -383,8 +383,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$UnmodifiablePrintRequestAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnmodifiablePrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -407,7 +407,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintRequestAttributeSet;)V", "public")]
-		public UnmodifiablePrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnmodifiablePrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -432,8 +432,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$UnmodifiablePrintJobAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnmodifiablePrintJobAttributeSet", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -456,7 +456,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintJobAttributeSet;)V", "public")]
-		public UnmodifiablePrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnmodifiablePrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -481,8 +481,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$UnmodifiablePrintServiceAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnmodifiablePrintServiceAttributeSet", "(Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -505,7 +505,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintServiceAttributeSet;)V", "public")]
-		public UnmodifiablePrintServiceAttributeSet(Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnmodifiablePrintServiceAttributeSet(Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -531,22 +531,22 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$SynchronizedAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attrset", "Ljavax/print/attribute/AttributeSet;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedAttributeSet", "(Ljavax/print/attribute/AttributeSet;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljavax/print/attribute/Attribute;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljavax/print/attribute/Attribute;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/Class;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toArray", "()[Ljavax/print/attribute/Attribute;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addAll", "(Ljavax/print/attribute/AttributeSet;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsKey", "(Ljava/lang/Class;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "containsValue", "(Ljavax/print/attribute/Attribute;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attrset", "Ljavax/print/attribute/AttributeSet;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/AttributeSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljavax/print/attribute/Attribute;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljavax/print/attribute/Attribute;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljava/lang/Class;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/lang/Class;)Ljavax/print/attribute/Attribute;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toArray", "()[Ljavax/print/attribute/Attribute;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addAll", "(Ljavax/print/attribute/AttributeSet;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "containsKey", "(Ljava/lang/Class;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "containsValue", "(Ljavax/print/attribute/Attribute;)Z"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -583,7 +583,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/AttributeSet;)V", "public")]
-		public SynchronizedAttributeSet(Dova.JDK.javax.print.attribute.AttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SynchronizedAttributeSet(Dova.JDK.javax.print.attribute.AttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -698,8 +698,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$SynchronizedDocAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedDocAttributeSet", "(Ljavax/print/attribute/DocAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/DocAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -722,7 +722,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/DocAttributeSet;)V", "public")]
-		public SynchronizedDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SynchronizedDocAttributeSet(Dova.JDK.javax.print.attribute.DocAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -747,8 +747,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$SynchronizedPrintRequestAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedPrintRequestAttributeSet", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -771,7 +771,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintRequestAttributeSet;)V", "public")]
-		public SynchronizedPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SynchronizedPrintRequestAttributeSet(Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -796,8 +796,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$SynchronizedPrintJobAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedPrintJobAttributeSet", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -820,7 +820,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintJobAttributeSet;)V", "public")]
-		public SynchronizedPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SynchronizedPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -845,8 +845,8 @@ public partial class AttributeSetUtilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/AttributeSetUtilities$SynchronizedPrintServiceAttributeSet;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedPrintServiceAttributeSet", "(Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -869,7 +869,7 @@ public partial class AttributeSetUtilities
 		}
 
 		[JniSignatureAttribute("(Ljavax/print/attribute/PrintServiceAttributeSet;)V", "public")]
-		public SynchronizedPrintServiceAttributeSet(Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SynchronizedPrintServiceAttributeSet(Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

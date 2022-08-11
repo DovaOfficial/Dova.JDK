@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,26 +32,26 @@ public partial class RecordingFile
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/consumer/RecordingFile;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parserState", "Ljdk/jfr/internal/consumer/ParserState;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isLastEventInChunk", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file", "Ljava/io/File;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "input", "Ljdk/jfr/internal/consumer/RecordingInput;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "chunkParser", "Ljdk/jfr/internal/consumer/ChunkParser;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextEvent", "Ljdk/jfr/consumer/RecordedEvent;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eof", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RecordingFile", "(Ljava/nio/file/Path;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFile", "()Ljava/io/File;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureOpen", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasMoreEvents", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNext", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "aggregateEventTypeForChunk", "(Ljdk/jfr/internal/consumer/ChunkHeader;Ljdk/jfr/internal/MetadataDescriptor;Ljava/util/List;Ljava/util/HashSet;)Ljdk/jfr/internal/MetadataDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "aggregateTypeForChunk", "(Ljdk/jfr/internal/consumer/ChunkHeader;Ljdk/jfr/internal/MetadataDescriptor;Ljava/util/List;Ljava/util/HashSet;)Ljdk/jfr/internal/MetadataDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readEventTypes", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readAllEvents", "(Ljava/nio/file/Path;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readTypes", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLastEventInChunk", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readEvent", "()Ljdk/jfr/consumer/RecordedEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parserState", "Ljdk/jfr/internal/consumer/ParserState;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isLastEventInChunk", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "file", "Ljava/io/File;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "input", "Ljdk/jfr/internal/consumer/RecordingInput;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "chunkParser", "Ljdk/jfr/internal/consumer/ChunkParser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextEvent", "Ljdk/jfr/consumer/RecordedEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eof", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/file/Path;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFile", "()Ljava/io/File;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureOpen", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasMoreEvents", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNext", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "aggregateEventTypeForChunk", "(Ljdk/jfr/internal/consumer/ChunkHeader;Ljdk/jfr/internal/MetadataDescriptor;Ljava/util/List;Ljava/util/HashSet;)Ljdk/jfr/internal/MetadataDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "aggregateTypeForChunk", "(Ljdk/jfr/internal/consumer/ChunkHeader;Ljdk/jfr/internal/MetadataDescriptor;Ljava/util/List;Ljava/util/HashSet;)Ljdk/jfr/internal/MetadataDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readEventTypes", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readAllEvents", "(Ljava/nio/file/Path;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readTypes", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLastEventInChunk", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readEvent", "()Ljdk/jfr/consumer/RecordedEvent;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/consumer/ParserState;", "private final")]
@@ -158,7 +158,7 @@ public partial class RecordingFile
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/file/Path;)V", "public")]
-	public RecordingFile(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public RecordingFile(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

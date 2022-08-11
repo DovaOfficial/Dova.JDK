@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,68 +31,68 @@ public partial class SSLFlowDelegate
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SENTINEL", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HS_TRIGGER", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOTHING", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "monProp", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isMonitored", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exec", "Ljava/util/concurrent/Executor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "engine", "Ljavax/net/ssl/SSLEngine;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tubeName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alpnCF", "Ljava/util/concurrent/CompletableFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "monitor", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "close_notify_received", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readerCF", "Ljava/util/concurrent/CompletableFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writerCF", "Ljava/util/concurrent/CompletableFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stopCF", "Ljava/util/concurrent/CompletableFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recycler", "Ljava/util/function/Consumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "scount", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stopped", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_HANDSHAKING", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANDSHAKING", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOING_TASKS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUESTING_TASKS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TASK_BITS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READER", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WRITER", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeState", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stateList", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUEST_OR_DO_TASKS", "Ljava/util/function/IntBinaryOperator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FINISH_OR_DO_TASKS", "Ljava/util/function/IntBinaryOperator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packetBufferSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "applicationBufferSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "adaptiveAppBufferSize", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLFlowDelegate", "(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLFlowDelegate", "(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connect", "(Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "alpn", "()Ljava/util/concurrent/CompletableFuture;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "closeNotifyReceived", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleError", "(Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopOnError", "(Ljava/lang/Throwable;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cleanList", "(Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doClosure", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "upstreamReader", "()Ljava/util/concurrent/Flow$Subscriber;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "upstreamWriter", "()Ljava/util/concurrent/Flow$Subscriber;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resumeReader", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resetReaderDemand", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNetBuffer", "()Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAppBuffer", "()Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doHandshake", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySetALPN", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resumeActivity", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkForHandshake", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enterReadScheduling", "()Ljdk/internal/net/http/common/SubscriberWrapper$SchedulingAction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "obtainTasks", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "executeTasks", "(Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setALPN", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "normalStop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitor", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "states", "(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "debug", "Ljdk/internal/net/http/common/Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SENTINEL", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HS_TRIGGER", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOTHING", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "monProp", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isMonitored", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exec", "Ljava/util/concurrent/Executor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writer", "Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "engine", "Ljavax/net/ssl/SSLEngine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tubeName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alpnCF", "Ljava/util/concurrent/CompletableFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "monitor", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "close_notify_received", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readerCF", "Ljava/util/concurrent/CompletableFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writerCF", "Ljava/util/concurrent/CompletableFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stopCF", "Ljava/util/concurrent/CompletableFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recycler", "Ljava/util/function/Consumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "scount", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stopped", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_HANDSHAKING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANDSHAKING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOING_TASKS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUESTING_TASKS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TASK_BITS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WRITER", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeState", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stateList", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUEST_OR_DO_TASKS", "Ljava/util/function/IntBinaryOperator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FINISH_OR_DO_TASKS", "Ljava/util/function/IntBinaryOperator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packetBufferSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "applicationBufferSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "adaptiveAppBufferSize", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connect", "(Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dbgString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "alpn", "()Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "closeNotifyReceived", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleError", "(Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stopOnError", "(Ljava/lang/Throwable;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cleanList", "(Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doClosure", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "upstreamReader", "()Ljava/util/concurrent/Flow$Subscriber;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "upstreamWriter", "()Ljava/util/concurrent/Flow$Subscriber;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resumeReader", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resetReaderDemand", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNetBuffer", "()Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAppBuffer", "()Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doHandshake", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySetALPN", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resumeActivity", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkForHandshake", "(Ljava/lang/Throwable;)Ljava/lang/Throwable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enterReadScheduling", "()Ljdk/internal/net/http/common/SubscriberWrapper$SchedulingAction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "obtainTasks", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "executeTasks", "(Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setALPN", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "normalStop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitor", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "states", "(Ljava/util/concurrent/atomic/AtomicInteger;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/Logger;", "final")]
@@ -591,12 +591,12 @@ public partial class SSLFlowDelegate
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V", "public")]
-	public SSLFlowDelegate(Dova.JDK.javax.net.ssl.SSLEngine arg0, Dova.JDK.java.util.concurrent.Executor arg1, Dova.JDK.java.util.concurrent.Flow.Subscriber arg2, Dova.JDK.java.util.concurrent.Flow.Subscriber arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public SSLFlowDelegate(Dova.JDK.javax.net.ssl.SSLEngine arg0, Dova.JDK.java.util.concurrent.Executor arg1, Dova.JDK.java.util.concurrent.Flow.Subscriber arg2, Dova.JDK.java.util.concurrent.Flow.Subscriber arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngine;Ljava/util/concurrent/Executor;Ljava/util/function/Consumer;Ljava/util/concurrent/Flow$Subscriber;Ljava/util/concurrent/Flow$Subscriber;)V", "public")]
-	public SSLFlowDelegate(Dova.JDK.javax.net.ssl.SSLEngine arg0, Dova.JDK.java.util.concurrent.Executor arg1, Dova.JDK.java.util.function.Consumer arg2, Dova.JDK.java.util.concurrent.Flow.Subscriber arg3, Dova.JDK.java.util.concurrent.Flow.Subscriber arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public SSLFlowDelegate(Dova.JDK.javax.net.ssl.SSLEngine arg0, Dova.JDK.java.util.concurrent.Executor arg1, Dova.JDK.java.util.function.Consumer arg2, Dova.JDK.java.util.concurrent.Flow.Subscriber arg3, Dova.JDK.java.util.concurrent.Flow.Subscriber arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -784,7 +784,7 @@ public partial class SSLFlowDelegate
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInfo", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInfo", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
@@ -811,33 +811,33 @@ public partial class SSLFlowDelegate
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TARGET_BUFSIZE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readBuf", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completing", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readBufferLock", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debugr", "Ljdk/internal/net/http/common/Logger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minBytesRequired", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastUnwrapStatus", "Ljavax/net/ssl/SSLEngineResult$Status;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Reader", "(Ljdk/internal/net/http/common/SSLFlowDelegate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "incoming", "(Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "schedule", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addToReadBuf", "(Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "needsMoreData", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reallocReadBuf", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "errorCommon", "(Ljava/lang/Throwable;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unwrapBuffer", "(Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requestMoreDataIfNeeded", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enterScheduling", "()Ljdk/internal/net/http/common/SubscriberWrapper$SchedulingAction;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "upstreamWindowUpdate", "(JJ)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processData", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsRecycling", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TARGET_BUFSIZE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readBuf", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completing", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readBufferLock", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "debugr", "Ljdk/internal/net/http/common/Logger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minBytesRequired", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastUnwrapStatus", "Ljavax/net/ssl/SSLEngineResult$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SSLFlowDelegate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dbgString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "incoming", "(Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "schedule", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addToReadBuf", "(Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "needsMoreData", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reallocReadBuf", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "errorCommon", "(Ljava/lang/Throwable;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unwrapBuffer", "(Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requestMoreDataIfNeeded", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enterScheduling", "()Ljdk/internal/net/http/common/SubscriberWrapper$SchedulingAction;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "upstreamWindowUpdate", "(JJ)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processData", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "supportsRecycling", "()Z"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1000,7 +1000,7 @@ public partial class SSLFlowDelegate
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/common/SSLFlowDelegate;)V", "")]
-		public Reader(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Reader(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1122,9 +1122,9 @@ public partial class SSLFlowDelegate
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Reader$ReaderDownstreamPusher;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReaderDownstreamPusher", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$1", "Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 			}
 
 			[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;", "final")]
@@ -1147,7 +1147,7 @@ public partial class SSLFlowDelegate
 			}
 
 			[JniSignatureAttribute("(Ljdk/internal/net/http/common/SSLFlowDelegate$Reader;)V", "private")]
-			public ReaderDownstreamPusher(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Reader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ReaderDownstreamPusher(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Reader arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1178,31 +1178,31 @@ public partial class SSLFlowDelegate
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeList", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "debugw", "Ljdk/internal/net/http/common/Logger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completing", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writeBuffer", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastWrappedStatus", "Ljavax/net/ssl/SSLEngineResult$Status;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Writer", "(Ljdk/internal/net/http/common/SSLFlowDelegate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "closing", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dbgString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "incoming", "(Ljava/util/List;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "schedule", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "upstreamWindowUpdate", "(JJ)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processData", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompleting", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hsTriggered", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "needWrap", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapBuffers", "([Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sendResultBytes", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "triggerWrite", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheduler", "Ljdk/internal/net/http/common/SequentialScheduler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeList", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "debugw", "Ljdk/internal/net/http/common/Logger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completing", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completed", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writeBuffer", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastWrappedStatus", "Ljavax/net/ssl/SSLEngineResult$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SSLFlowDelegate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "closing", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dbgString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onSubscribe", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "incoming", "(Ljava/util/List;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "schedule", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "upstreamWindowUpdate", "(JJ)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processData", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompleting", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hsTriggered", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "needWrap", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapBuffers", "([Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sendResultBytes", "(Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "triggerWrite", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/common/SequentialScheduler;", "final")]
@@ -1337,7 +1337,7 @@ public partial class SSLFlowDelegate
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/net/http/common/SSLFlowDelegate;)V", "")]
-		public Writer(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Writer(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1458,9 +1458,9 @@ public partial class SSLFlowDelegate
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Writer$WriterDownstreamPusher;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WriterDownstreamPusher", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$1", "Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 			}
 
 			[JniSignatureAttribute("Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;", "final")]
@@ -1483,7 +1483,7 @@ public partial class SSLFlowDelegate
 			}
 
 			[JniSignatureAttribute("(Ljdk/internal/net/http/common/SSLFlowDelegate$Writer;)V", "")]
-			public WriterDownstreamPusher(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Writer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public WriterDownstreamPusher(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Writer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -1514,16 +1514,16 @@ public partial class SSLFlowDelegate
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "list", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "finalList", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "queue", "Ljava/lang/ref/ReferenceQueue;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "themon", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Monitor", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "add", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "remove", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addTarget", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeTarget", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "list", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "finalList", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "queue", "Ljava/lang/ref/ReferenceQueue;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "themon", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "add", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "remove", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addTarget", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeTarget", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "final")]
@@ -1588,7 +1588,7 @@ public partial class SSLFlowDelegate
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Monitor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Monitor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1642,10 +1642,10 @@ public partial class SSLFlowDelegate
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor$FinalMonitorable;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "finalState", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FinalMonitorable", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInfo", "()Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "finalState", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInfo", "()Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -1682,7 +1682,7 @@ public partial class SSLFlowDelegate
 			}
 
 			[JniSignatureAttribute("(Ljdk/internal/net/http/common/SSLFlowDelegate$Monitor;Ljdk/internal/net/http/common/SSLFlowDelegate$Monitorable;)V", "")]
-			public FinalMonitorable(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Monitor arg0, Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Monitorable arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public FinalMonitorable(Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Monitor arg0, Dova.JDK.jdk.@internal.net.http.common.SSLFlowDelegate.Monitorable arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -1714,16 +1714,16 @@ public partial class SSLFlowDelegate
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/SSLFlowDelegate$EngineResult;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "result", "Ljavax/net/ssl/SSLEngineResult;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "destBuffer", "Ljava/nio/ByteBuffer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EngineResult", "(Ljavax/net/ssl/SSLEngineResult;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EngineResult", "(Ljavax/net/ssl/SSLEngineResult;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "status", "()Ljavax/net/ssl/SSLEngineResult$Status;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bytesConsumed", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bytesProduced", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handshaking", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "needUnwrap", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handshakeStatus", "()Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "result", "Ljavax/net/ssl/SSLEngineResult;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "destBuffer", "Ljava/nio/ByteBuffer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngineResult;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLEngineResult;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "status", "()Ljavax/net/ssl/SSLEngineResult$Status;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bytesConsumed", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bytesProduced", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handshaking", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "needUnwrap", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handshakeStatus", "()Ljavax/net/ssl/SSLEngineResult$HandshakeStatus;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/net/ssl/SSLEngineResult;", "final")]
@@ -1760,12 +1760,12 @@ public partial class SSLFlowDelegate
 		}
 
 		[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngineResult;)V", "")]
-		public EngineResult(Dova.JDK.javax.net.ssl.SSLEngineResult arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EngineResult(Dova.JDK.javax.net.ssl.SSLEngineResult arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljavax/net/ssl/SSLEngineResult;Ljava/nio/ByteBuffer;)V", "")]
-		public EngineResult(Dova.JDK.javax.net.ssl.SSLEngineResult arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public EngineResult(Dova.JDK.javax.net.ssl.SSLEngineResult arg0, Dova.JDK.java.nio.ByteBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 

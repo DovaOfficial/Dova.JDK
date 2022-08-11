@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,42 +33,42 @@ public partial class P11Key
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUBLIC", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRIVATE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SECRET", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "token", "Lsun/security/pkcs11/Token;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "algorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tokenObject", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sensitive", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extractable", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyIDHolder", "Lsun/security/pkcs11/NativeKeyHolder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DISABLE_NATIVE_KEYS_EXTRACTION", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "A0", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11Key", "(Ljava/lang/String;Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPublic", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPrivate", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAttributes", "(Lsun/security/pkcs11/Session;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncoded", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeReplace", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSecret", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchAttributes", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "drainRefQueue", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchAttributesAsInts", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "secretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "masterSecretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;II)Ljavax/crypto/SecretKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "publicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljava/security/PublicKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "privateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljava/security/PrivateKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeyID", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseKeyID", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAlgorithm", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUBLIC", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRIVATE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SECRET", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "token", "Lsun/security/pkcs11/Token;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "algorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tokenObject", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sensitive", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extractable", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyIDHolder", "Lsun/security/pkcs11/NativeKeyHolder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DISABLE_NATIVE_KEYS_EXTRACTION", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "A0", "[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPublic", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPrivate", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAttributes", "(Lsun/security/pkcs11/Session;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncoded", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeReplace", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSecret", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchAttributes", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "drainRefQueue", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchAttributesAsInts", "([Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "secretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "masterSecretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;II)Ljavax/crypto/SecretKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "publicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljava/security/PublicKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "privateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)Ljava/security/PrivateKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKeyID", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseKeyID", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAlgorithm", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -273,7 +273,7 @@ public partial class P11Key
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-	public P11Key(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.pkcs11.Session arg1, long arg2, Dova.JDK.java.lang.String arg3, int arg4, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public P11Key(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.pkcs11.Session arg1, long arg2, Dova.JDK.java.lang.String arg3, int arg4, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
@@ -443,11 +443,11 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11SecretKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encoded", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11SecretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encoded", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -484,7 +484,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11SecretKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11SecretKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -523,12 +523,12 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11TlsMasterSecretKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "majorVersion", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minorVersion", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11TlsMasterSecretKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMajorVersion", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMinorVersion", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "majorVersion", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minorVersion", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMajorVersion", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMinorVersion", "()I"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -579,7 +579,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;II)V", "")]
-		public P11TlsMasterSecretKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, int arg5, int arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public P11TlsMasterSecretKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, int arg5, int arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 
@@ -618,16 +618,16 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11RSAPublicKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "n", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "e", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11RSAPublicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModulus", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPublicExponent", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "n", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "e", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModulus", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPublicExponent", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -678,7 +678,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11RSAPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11RSAPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -744,16 +744,16 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DSAPublicKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljava/security/interfaces/DSAParams;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DSAPublicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljava/security/interfaces/DSAParams;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -804,7 +804,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11DSAPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DSAPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -870,18 +870,18 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DHPublicKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljavax/crypto/spec/DHParameterSpec;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DHPublicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljavax/crypto/spec/DHParameterSpec;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "static final")]
@@ -932,7 +932,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11DHPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DHPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1012,16 +1012,16 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11ECPublicKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w", "Ljava/security/spec/ECPoint;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljava/security/spec/ECParameterSpec;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11ECPublicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getW", "()Ljava/security/spec/ECPoint;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "w", "Ljava/security/spec/ECPoint;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljava/security/spec/ECParameterSpec;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getW", "()Ljava/security/spec/ECPoint;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1072,7 +1072,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11ECPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11ECPublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1137,12 +1137,12 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11RSAPrivateKeyInternal;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "n", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11RSAPrivateKeyInternal", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11RSAPrivateKeyInternal;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModulus", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "n", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11RSAPrivateKeyInternal;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModulus", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1179,7 +1179,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "private")]
-		public P11RSAPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11RSAPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1223,12 +1223,12 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DSAPrivateKeyInternal;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljava/security/interfaces/DSAParams;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DSAPrivateKeyInternal", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11DSAPrivateKeyInternal;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljava/security/interfaces/DSAParams;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11DSAPrivateKeyInternal;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1265,7 +1265,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "private")]
-		public P11DSAPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DSAPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1309,12 +1309,12 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DHPrivateKeyInternal;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljavax/crypto/spec/DHParameterSpec;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DHPrivateKeyInternal", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11DHPrivateKeyInternal;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljavax/crypto/spec/DHParameterSpec;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11DHPrivateKeyInternal;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1351,7 +1351,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "private")]
-		public P11DHPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DHPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1395,12 +1395,12 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11ECPrivateKeyInternal;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljava/security/spec/ECParameterSpec;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11ECPrivateKeyInternal", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11ECPrivateKeyInternal;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljava/security/spec/ECParameterSpec;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Z)Lsun/security/pkcs11/P11Key$P11ECPrivateKeyInternal;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1437,7 +1437,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "private")]
-		public P11ECPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11ECPrivateKeyInternal(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1482,14 +1482,14 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11ECPrivateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11ECPrivateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getS", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "s", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/spec/ECParameterSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getS", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1526,7 +1526,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11ECPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11ECPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1585,16 +1585,16 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DHPrivateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DHPrivateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljavax/crypto/spec/DHParameterSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1631,7 +1631,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11DHPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DHPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1704,14 +1704,14 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11DSAPrivateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11DSAPrivateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fetchValues", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fetchValues", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/interfaces/DSAParams;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1748,7 +1748,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11DSAPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11DSAPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1807,13 +1807,13 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11RSAPrivateNonCRTKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "d", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11RSAPrivateNonCRTKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModulus", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrivateExponent", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "d", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModulus", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrivateExponent", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1850,7 +1850,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;)V", "")]
-		public P11RSAPrivateNonCRTKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, Dova.JDK.java.math.BigInteger arg5, Dova.JDK.java.math.BigInteger arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public P11RSAPrivateNonCRTKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, Dova.JDK.java.math.BigInteger arg5, Dova.JDK.java.math.BigInteger arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 
@@ -1903,25 +1903,25 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11RSAPrivateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "e", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "d", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "q", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pe", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "qe", "Ljava/math/BigInteger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "coeff", "Ljava/math/BigInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11RSAPrivateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModulus", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrivateExponent", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimeP", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimeQ", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimeExponentP", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrimeExponentQ", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCrtCoefficient", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPublicExponent", "()Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "e", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "d", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "q", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pe", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "qe", "Ljava/math/BigInteger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "coeff", "Ljava/math/BigInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModulus", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrivateExponent", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimeP", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimeQ", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimeExponentP", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrimeExponentQ", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCrtCoefficient", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPublicExponent", "()Ljava/math/BigInteger;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -2042,7 +2042,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;Ljava/math/BigInteger;Ljava/math/BigInteger;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "private")]
-		public P11RSAPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, Dova.JDK.java.math.BigInteger arg5, Dova.JDK.java.math.BigInteger arg6, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+		public P11RSAPrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4, Dova.JDK.java.math.BigInteger arg5, Dova.JDK.java.math.BigInteger arg6, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 		{
 		}
 
@@ -2136,9 +2136,9 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11PublicKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encoded", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11PublicKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encoded", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -2175,7 +2175,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11PublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11PublicKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -2200,11 +2200,11 @@ public partial class P11Key
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/P11Key$P11PrivateKey;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encoded", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "P11PrivateKey", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEncodedInternal", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encoded", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEncodedInternal", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -2241,7 +2241,7 @@ public partial class P11Key
 		}
 
 		[JniSignatureAttribute("(Lsun/security/pkcs11/Session;JLjava/lang/String;I[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V", "")]
-		public P11PrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public P11PrivateKey(Dova.JDK.sun.security.pkcs11.Session arg0, long arg1, Dova.JDK.java.lang.String arg2, int arg3, JavaArray<Dova.JDK.sun.security.pkcs11.wrapper.CK_ATTRIBUTE> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

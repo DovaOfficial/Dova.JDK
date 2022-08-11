@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,23 +33,23 @@ public partial class DocFlavor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hostEncoding", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myMimeType", "Ljavax/print/MimeType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myClassName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myStringValue", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DocFlavor", "(Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeObject", "(Ljava/io/ObjectOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameter", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMediaType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStringValue", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMimeType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMediaSubtype", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRepresentationClassName", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hostEncoding", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myMimeType", "Ljavax/print/MimeType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myClassName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myStringValue", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeObject", "(Ljava/io/ObjectOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParameter", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMediaType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStringValue", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMimeType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMediaSubtype", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRepresentationClassName", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -128,7 +128,7 @@ public partial class DocFlavor
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)V", "public")]
-	public DocFlavor(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public DocFlavor(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -225,11 +225,11 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$SERVICE_FORMATTED;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RENDERABLE_IMAGE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRINTABLE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PAGEABLE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SERVICE_FORMATTED", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RENDERABLE_IMAGE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRINTABLE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PAGEABLE", "Ljavax/print/DocFlavor$SERVICE_FORMATTED;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -294,7 +294,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public SERVICE_FORMATTED(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SERVICE_FORMATTED(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -317,10 +317,10 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$READER;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$READER;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$READER;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "READER", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$READER;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$READER;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -371,7 +371,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public READER(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public READER(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -394,10 +394,10 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$STRING;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$STRING;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$STRING;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "STRING", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$STRING;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$STRING;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -448,7 +448,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public STRING(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public STRING(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -471,10 +471,10 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$CHAR_ARRAY;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$CHAR_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$CHAR_ARRAY;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CHAR_ARRAY", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN", "Ljavax/print/DocFlavor$CHAR_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML", "Ljavax/print/DocFlavor$CHAR_ARRAY;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -525,7 +525,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public CHAR_ARRAY(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CHAR_ARRAY(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -548,27 +548,27 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$URL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PDF", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PCL", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GIF", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PNG", "Ljavax/print/DocFlavor$URL;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$URL;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "URL", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PDF", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PCL", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GIF", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JPEG", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PNG", "Ljavax/print/DocFlavor$URL;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$URL;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -857,7 +857,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public URL(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public URL(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -880,27 +880,27 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$INPUT_STREAM;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PDF", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PCL", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GIF", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PNG", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "INPUT_STREAM", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PDF", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PCL", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GIF", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JPEG", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PNG", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$INPUT_STREAM;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1189,7 +1189,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public INPUT_STREAM(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public INPUT_STREAM(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1212,27 +1212,27 @@ public partial class DocFlavor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/DocFlavor$BYTE_ARRAY;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PDF", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PCL", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GIF", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JPEG", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PNG", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BYTE_ARRAY", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_HOST", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_8", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16BE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_UTF_16LE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PLAIN_US_ASCII", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_HOST", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_8", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16BE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_UTF_16LE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_HTML_US_ASCII", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PDF", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POSTSCRIPT", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PCL", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GIF", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JPEG", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PNG", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AUTOSENSE", "Ljavax/print/DocFlavor$BYTE_ARRAY;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1521,7 +1521,7 @@ public partial class DocFlavor
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-		public BYTE_ARRAY(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public BYTE_ARRAY(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

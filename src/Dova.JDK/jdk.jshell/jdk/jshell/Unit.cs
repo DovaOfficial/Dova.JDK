@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,60 +31,60 @@ public partial class Unit
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Unit;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "si", "Ljdk/jshell/Snippet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "siOld", "Ljdk/jshell/Snippet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isDependency", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isNew", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "causalSnippet", "Ljdk/jshell/Snippet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "generatedDiagnostics", "Ljdk/jshell/DiagList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "seq", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classNameInitial", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "activeGuts", "Ljdk/jshell/Wrap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "Ljdk/jshell/Snippet$Status;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prevStatus", "Ljdk/jshell/Snippet$Status;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signatureChanged", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compilationDiagnostics", "Ljdk/jshell/DiagList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recompilationDiagnostics", "Ljdk/jshell/DiagList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unresolved", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "replaceOldEvent", "Ljdk/jshell/SnippetEvent;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "secondaryEvents", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAttemptingCorral", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "toRedefine", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dependenciesNeeded", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Unit", "(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;Ljdk/jshell/Snippet;Ljdk/jshell/DiagList;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Unit", "(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "event", "(Ljava/lang/String;Ljdk/jshell/JShellException;)Ljdk/jshell/SnippetEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDefined", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finish", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDependency", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markOldDeclarationOverwritten", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRecoverable", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkForOverwrite", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sigChanged", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recordCompilation", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeDiagnostics", "()Ljdk/jshell/DiagList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeQualifiedParameterTypes", "(Ljdk/jshell/TaskFactory$AnalyzeTask;Ljdk/jshell/MethodSnippet;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "overwriteMatchingMethod", "(Ljdk/jshell/MethodSnippet;)Ljdk/jshell/Snippet$Status;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setWrap", "(Ljava/util/Collection;Ljava/util/Collection;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doRedefines", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classesToLoad", "(Ljava/util/List;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "smashingErrorDiagnostics", "(Ljdk/jshell/TaskFactory$CompileTask;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCorralledDiagnostics", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "corralIfNeeded", "(Ljava/util/Collection;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "secondaryEvents", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "effectedDependents", "()Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markForReplacement", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dependents", "()Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "snippet", "()Ljdk/jshell/Snippet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isImport", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setStatus", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDiagnostics", "(Ljdk/jshell/DiagList;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDiagnostics", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "si", "Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "siOld", "Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isDependency", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isNew", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "causalSnippet", "Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "generatedDiagnostics", "Ljdk/jshell/DiagList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "seq", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classNameInitial", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "activeGuts", "Ljdk/jshell/Wrap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "Ljdk/jshell/Snippet$Status;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prevStatus", "Ljdk/jshell/Snippet$Status;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signatureChanged", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compilationDiagnostics", "Ljdk/jshell/DiagList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recompilationDiagnostics", "Ljdk/jshell/DiagList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unresolved", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "replaceOldEvent", "Ljdk/jshell/SnippetEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "secondaryEvents", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAttemptingCorral", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "toRedefine", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dependenciesNeeded", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;Ljdk/jshell/Snippet;Ljdk/jshell/DiagList;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "event", "(Ljava/lang/String;Ljdk/jshell/JShellException;)Ljdk/jshell/SnippetEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDefined", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finish", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDependency", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "markOldDeclarationOverwritten", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRecoverable", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkForOverwrite", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sigChanged", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recordCompilation", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeDiagnostics", "()Ljdk/jshell/DiagList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeQualifiedParameterTypes", "(Ljdk/jshell/TaskFactory$AnalyzeTask;Ljdk/jshell/MethodSnippet;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "overwriteMatchingMethod", "(Ljdk/jshell/MethodSnippet;)Ljdk/jshell/Snippet$Status;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setWrap", "(Ljava/util/Collection;Ljava/util/Collection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doRedefines", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classesToLoad", "(Ljava/util/List;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "smashingErrorDiagnostics", "(Ljdk/jshell/TaskFactory$CompileTask;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCorralledDiagnostics", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "corralIfNeeded", "(Ljava/util/Collection;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "secondaryEvents", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "effectedDependents", "()Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "markForReplacement", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dependents", "()Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "snippet", "()Ljdk/jshell/Snippet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isImport", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setStatus", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDiagnostics", "(Ljdk/jshell/DiagList;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDiagnostics", "(Ljdk/jshell/TaskFactory$AnalyzeTask;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/JShell;", "private final")]
@@ -387,12 +387,12 @@ public partial class Unit
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;Ljdk/jshell/Snippet;Ljdk/jshell/DiagList;)V", "")]
-	public Unit(Dova.JDK.jdk.jshell.JShell arg0, Dova.JDK.jdk.jshell.Snippet arg1, Dova.JDK.jdk.jshell.Snippet arg2, Dova.JDK.jdk.jshell.DiagList arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public Unit(Dova.JDK.jdk.jshell.JShell arg0, Dova.JDK.jdk.jshell.Snippet arg1, Dova.JDK.jdk.jshell.Snippet arg2, Dova.JDK.jdk.jshell.DiagList arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;Ljdk/jshell/Snippet;)V", "")]
-	public Unit(Dova.JDK.jdk.jshell.JShell arg0, Dova.JDK.jdk.jshell.Snippet arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public Unit(Dova.JDK.jdk.jshell.JShell arg0, Dova.JDK.jdk.jshell.Snippet arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -621,15 +621,15 @@ public partial class Unit
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Unit$UnresolvedExtractor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLVE_ERROR_SYMBOL", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOLVE_ERROR_LOCATION", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unresolved", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "otherErrors", "Ljdk/jshell/DiagList;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "otherAll", "Ljdk/jshell/DiagList;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnresolvedExtractor", "(Ljdk/jshell/DiagList;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "otherAll", "()Ljdk/jshell/DiagList;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unresolved", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "otherCorralledErrors", "()Ljdk/jshell/DiagList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOLVE_ERROR_SYMBOL", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOLVE_ERROR_LOCATION", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unresolved", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "otherErrors", "Ljdk/jshell/DiagList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "otherAll", "Ljdk/jshell/DiagList;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/DiagList;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "otherAll", "()Ljdk/jshell/DiagList;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unresolved", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "otherCorralledErrors", "()Ljdk/jshell/DiagList;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -708,7 +708,7 @@ public partial class Unit
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/DiagList;)V", "")]
-		public UnresolvedExtractor(Dova.JDK.jdk.jshell.DiagList arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnresolvedExtractor(Dova.JDK.jdk.jshell.DiagList arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface TabableView
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/TabableView;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTabbedSpan", "(FLjavax/swing/text/TabExpander;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPartialSpan", "(II)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTabbedSpan", "(FLjavax/swing/text/TabExpander;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPartialSpan", "(II)F"));
 	}
 
 	[JniSignatureAttribute("(FLjavax/swing/text/TabExpander;)F", "public abstract")]

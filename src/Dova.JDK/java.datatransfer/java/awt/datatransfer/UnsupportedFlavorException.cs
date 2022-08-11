@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class UnsupportedFlavorException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/datatransfer/UnsupportedFlavorException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnsupportedFlavorException", "(Ljava/awt/datatransfer/DataFlavor;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/datatransfer/DataFlavor;)V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -54,7 +54,7 @@ public partial class UnsupportedFlavorException
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/datatransfer/DataFlavor;)V", "public")]
-	public UnsupportedFlavorException(Dova.JDK.java.awt.datatransfer.DataFlavor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public UnsupportedFlavorException(Dova.JDK.java.awt.datatransfer.DataFlavor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

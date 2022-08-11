@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class HttpsConfigurator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/net/httpserver/HttpsConfigurator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Ljavax/net/ssl/SSLContext;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HttpsConfigurator", "(Ljavax/net/ssl/SSLContext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSSLContext", "()Ljavax/net/ssl/SSLContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "configure", "(Lcom/sun/net/httpserver/HttpsParameters;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Ljavax/net/ssl/SSLContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/net/ssl/SSLContext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSSLContext", "()Ljavax/net/ssl/SSLContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "configure", "(Lcom/sun/net/httpserver/HttpsParameters;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/net/ssl/SSLContext;", "private")]
@@ -57,7 +57,7 @@ public partial class HttpsConfigurator
 	}
 
 	[JniSignatureAttribute("(Ljavax/net/ssl/SSLContext;)V", "public")]
-	public HttpsConfigurator(Dova.JDK.javax.net.ssl.SSLContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HttpsConfigurator(Dova.JDK.javax.net.ssl.SSLContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class XRPaints
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPaints;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrCompMan", "Lsun/java2d/xr/XRCompositeManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrGradient", "Lsun/java2d/xr/XRPaints$XRGradient;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrLinearGradient", "Lsun/java2d/xr/XRPaints$XRLinearGradient;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrRadialGradient", "Lsun/java2d/xr/XRPaints$XRRadialGradient;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "xrTexture", "Lsun/java2d/xr/XRPaints$XRTexture;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRPaints", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "register", "(Lsun/java2d/xr/XRCompositeManager;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getXRPaint", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/xr/XRPaints;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "colorToIntArgbPixel", "(Ljava/awt/Color;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGradientLength", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertToIntArgbPixels", "([Ljava/awt/Color;)[I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrCompMan", "Lsun/java2d/xr/XRCompositeManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrGradient", "Lsun/java2d/xr/XRPaints$XRGradient;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrLinearGradient", "Lsun/java2d/xr/XRPaints$XRLinearGradient;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrRadialGradient", "Lsun/java2d/xr/XRPaints$XRRadialGradient;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "xrTexture", "Lsun/java2d/xr/XRPaints$XRTexture;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "register", "(Lsun/java2d/xr/XRCompositeManager;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getXRPaint", "(Lsun/java2d/SunGraphics2D;)Lsun/java2d/xr/XRPaints;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "colorToIntArgbPixel", "(Ljava/awt/Color;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGradientLength", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertToIntArgbPixels", "([Ljava/awt/Color;)[I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/java2d/xr/XRCompositeManager;", "static")]
@@ -124,7 +124,7 @@ public partial class XRPaints
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public XRPaints() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public XRPaints() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -206,9 +206,9 @@ public partial class XRPaints
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPaints$XRGradient;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRGradient", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -217,7 +217,7 @@ public partial class XRPaints
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public XRGradient() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XRGradient() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -253,9 +253,9 @@ public partial class XRPaints
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPaints$XRLinearGradient;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRLinearGradient", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -264,7 +264,7 @@ public partial class XRPaints
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public XRLinearGradient() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XRLinearGradient() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -300,9 +300,9 @@ public partial class XRPaints
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPaints$XRRadialGradient;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRRadialGradient", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -311,7 +311,7 @@ public partial class XRPaints
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public XRRadialGradient() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XRRadialGradient() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -347,10 +347,10 @@ public partial class XRPaints
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPaints$XRTexture;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRTexture", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccSrcSurface", "(Lsun/java2d/xr/XRSurfaceData;Ljava/awt/image/BufferedImage;)Lsun/java2d/xr/XRSurfaceData;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPaintValid", "(Lsun/java2d/SunGraphics2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setXRPaint", "(Lsun/java2d/SunGraphics2D;Ljava/awt/Paint;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccSrcSurface", "(Lsun/java2d/xr/XRSurfaceData;Ljava/awt/image/BufferedImage;)Lsun/java2d/xr/XRSurfaceData;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -359,7 +359,7 @@ public partial class XRPaints
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public XRTexture() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XRTexture() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

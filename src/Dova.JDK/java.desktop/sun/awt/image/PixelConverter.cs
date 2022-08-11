@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class PixelConverter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alphaMask", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PixelConverter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAlphaMask", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alphaMask", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAlphaMask", "()I"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -73,7 +73,7 @@ public partial class PixelConverter
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public PixelConverter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public PixelConverter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -117,14 +117,14 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$UshortGray;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORT_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USHORT_RED_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USHORT_GRN_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USHORT_BLU_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UshortGray", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHORT_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USHORT_RED_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USHORT_GRN_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USHORT_BLU_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("D", "static final")]
@@ -203,7 +203,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public UshortGray() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public UshortGray() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -241,13 +241,13 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$ByteGray;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RED_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRN_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLU_MULT", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteGray", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RED_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GRN_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLU_MULT", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("D", "static final")]
@@ -312,7 +312,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ByteGray() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ByteGray() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -350,10 +350,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$ArgbBm;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArgbBm", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -376,7 +376,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ArgbBm() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ArgbBm() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -414,10 +414,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$ArgbPre;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArgbPre", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -440,7 +440,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ArgbPre() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ArgbPre() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -478,10 +478,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$RgbaPre;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RgbaPre", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -504,7 +504,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public RgbaPre() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RgbaPre() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -542,10 +542,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Rgba;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Rgba", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -568,7 +568,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Rgba() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Rgba() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -606,10 +606,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Bgrx;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Bgrx", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -632,7 +632,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Bgrx() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Bgrx() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -670,10 +670,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Xbgr;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Xbgr", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -696,7 +696,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Xbgr() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Xbgr() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -734,10 +734,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Ushort4444Argb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ushort4444Argb", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -760,7 +760,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Ushort4444Argb() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Ushort4444Argb() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -798,10 +798,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Ushort555Rgb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ushort555Rgb", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -824,7 +824,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Ushort555Rgb() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Ushort555Rgb() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -862,10 +862,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Ushort555Rgbx;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ushort555Rgbx", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -888,7 +888,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Ushort555Rgbx() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Ushort555Rgbx() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -926,10 +926,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Ushort565Rgb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ushort565Rgb", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -952,7 +952,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Ushort565Rgb() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Ushort565Rgb() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -990,10 +990,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Argb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Argb", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -1016,7 +1016,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Argb() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Argb() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1054,10 +1054,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Xrgb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Xrgb", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -1080,7 +1080,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Xrgb() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Xrgb() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1118,10 +1118,10 @@ public partial class PixelConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/PixelConverter$Rgbx;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/awt/image/PixelConverter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Rgbx", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/awt/image/PixelConverter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rgbToPixel", "(ILjava/awt/image/ColorModel;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pixelToRgb", "(ILjava/awt/image/ColorModel;)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/PixelConverter;", "public static final")]
@@ -1144,7 +1144,7 @@ public partial class PixelConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Rgbx() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Rgbx() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

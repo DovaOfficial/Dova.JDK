@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class JdiDefaultExecutionControl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/execution/JdiDefaultExecutionControl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "vm", "Lcom/sun/jdi/VirtualMachine;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "process", "Ljava/lang/Process;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remoteAgent", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "STOP_LOCK", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userCodeRunning", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdiDefaultExecutionControl", "(Ljdk/jshell/spi/ExecutionEnv;Ljava/io/ObjectOutput;Ljava/io/ObjectInput;Lcom/sun/jdi/VirtualMachine;Ljava/lang/Process;Ljava/lang/String;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invoke", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "debug", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/jshell/spi/ExecutionEnv;Ljava/lang/String;ZLjava/lang/String;I)Ljdk/jshell/spi/ExecutionControl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "vm", "()Lcom/sun/jdi/VirtualMachine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disposeVM", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "vm", "Lcom/sun/jdi/VirtualMachine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "process", "Ljava/lang/Process;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "remoteAgent", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "STOP_LOCK", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userCodeRunning", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/spi/ExecutionEnv;Ljava/io/ObjectOutput;Ljava/io/ObjectInput;Lcom/sun/jdi/VirtualMachine;Ljava/lang/Process;Ljava/lang/String;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invoke", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "debug", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/jshell/spi/ExecutionEnv;Ljava/lang/String;ZLjava/lang/String;I)Ljdk/jshell/spi/ExecutionControl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "vm", "()Lcom/sun/jdi/VirtualMachine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disposeVM", "()V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jdi/VirtualMachine;", "private")]
@@ -123,7 +123,7 @@ public partial class JdiDefaultExecutionControl
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/spi/ExecutionEnv;Ljava/io/ObjectOutput;Ljava/io/ObjectInput;Lcom/sun/jdi/VirtualMachine;Ljava/lang/Process;Ljava/lang/String;Ljava/util/List;)V", "private")]
-	public JdiDefaultExecutionControl(Dova.JDK.jdk.jshell.spi.ExecutionEnv arg0, Dova.JDK.java.io.ObjectOutput arg1, Dova.JDK.java.io.ObjectInput arg2, Dova.JDK.com.sun.jdi.VirtualMachine arg3, Dova.JDK.java.lang.Process arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.java.util.List arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public JdiDefaultExecutionControl(Dova.JDK.jdk.jshell.spi.ExecutionEnv arg0, Dova.JDK.java.io.ObjectOutput arg1, Dova.JDK.java.io.ObjectInput arg2, Dova.JDK.com.sun.jdi.VirtualMachine arg3, Dova.JDK.java.lang.Process arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.java.util.List arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 

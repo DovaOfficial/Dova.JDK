@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,24 +31,24 @@ public partial class Ed448Operations
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/Ed448Operations;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "two", "Lsun/security/util/math/SmallValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "d", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "basePoint", "Lsun/security/ec/point/ProjectivePoint$Immutable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TWO", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREE", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIVE", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sizeMinus3", "Ljava/math/BigInteger;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ed448Operations", "(Lsun/security/util/math/ImmutableIntegerModuloP;Ljava/math/BigInteger;Ljava/math/BigInteger;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "of_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ProjectivePoint$Immutable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "of_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ImmutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDouble", "(Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDouble", "(Lsun/security/ec/point/MutablePoint;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/MutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "basePointMultiply", "([B)Lsun/security/ec/point/Point;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeAffinePoint", "(Ljava/util/function/Function;ILsun/security/util/math/IntegerModuloP;)Lsun/security/ec/point/AffinePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSum", "(Lsun/security/ec/point/MutablePoint;Lsun/security/ec/point/MutablePoint;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/MutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSum", "(Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNeutral_0", "()Lsun/security/ec/point/ImmutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNeutral_1", "()Lsun/security/ec/point/ProjectivePoint$Immutable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "two", "Lsun/security/util/math/SmallValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "d", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "basePoint", "Lsun/security/ec/point/ProjectivePoint$Immutable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TWO", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREE", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIVE", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sizeMinus3", "Ljava/math/BigInteger;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/ImmutableIntegerModuloP;Ljava/math/BigInteger;Ljava/math/BigInteger;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "of_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ProjectivePoint$Immutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "of_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ImmutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDouble", "(Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDouble", "(Lsun/security/ec/point/MutablePoint;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/MutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "basePointMultiply", "([B)Lsun/security/ec/point/Point;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeAffinePoint", "(Ljava/util/function/Function;ILsun/security/util/math/IntegerModuloP;)Lsun/security/ec/point/AffinePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSum", "(Lsun/security/ec/point/MutablePoint;Lsun/security/ec/point/MutablePoint;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/MutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSum", "(Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/ec/point/ProjectivePoint$Mutable;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)Lsun/security/ec/point/ProjectivePoint$Mutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNeutral_0", "()Lsun/security/ec/point/ImmutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNeutral_1", "()Lsun/security/ec/point/ProjectivePoint$Immutable;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/math/SmallValue;", "private final")]
@@ -155,7 +155,7 @@ public partial class Ed448Operations
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/math/ImmutableIntegerModuloP;Ljava/math/BigInteger;Ljava/math/BigInteger;)V", "public")]
-	public Ed448Operations(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.java.math.BigInteger arg1, Dova.JDK.java.math.BigInteger arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Ed448Operations(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.java.math.BigInteger arg1, Dova.JDK.java.math.BigInteger arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

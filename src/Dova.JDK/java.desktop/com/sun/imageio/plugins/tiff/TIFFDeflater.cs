@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class TIFFDeflater
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/plugins/tiff/TIFFDeflater;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deflater", "Ljava/util/zip/Deflater;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predictor", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TIFFDeflater", "(Ljava/lang/String;ILjavax/imageio/ImageWriteParam;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "([BIII[II)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deflater", "Ljava/util/zip/Deflater;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predictor", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjavax/imageio/ImageWriteParam;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "([BIII[II)I"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/zip/Deflater;", "")]
@@ -71,7 +71,7 @@ public partial class TIFFDeflater
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjavax/imageio/ImageWriteParam;I)V", "public")]
-	public TIFFDeflater(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.javax.imageio.ImageWriteParam arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public TIFFDeflater(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.javax.imageio.ImageWriteParam arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

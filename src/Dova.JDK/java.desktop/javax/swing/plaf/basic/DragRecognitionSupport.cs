@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,19 +31,19 @@ public partial class DragRecognitionSupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/DragRecognitionSupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "motionThreshold", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dndArmedEvent", "Ljava/awt/event/MouseEvent;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "component", "Ljavax/swing/JComponent;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DragRecognitionSupport", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDragRecognitionSupport", "()Ljavax/swing/plaf/basic/DragRecognitionSupport;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressedImpl", "(Ljava/awt/event/MouseEvent;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseReleasedImpl", "(Ljava/awt/event/MouseEvent;)Ljava/awt/event/MouseEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseDraggedImpl", "(Ljava/awt/event/MouseEvent;Ljavax/swing/plaf/basic/DragRecognitionSupport$BeforeDrag;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearState", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapDragOperationFromModifiers", "(Ljava/awt/event/MouseEvent;Ljavax/swing/TransferHandler;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mouseReleased", "(Ljava/awt/event/MouseEvent;)Ljava/awt/event/MouseEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mouseDragged", "(Ljava/awt/event/MouseEvent;Ljavax/swing/plaf/basic/DragRecognitionSupport$BeforeDrag;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "motionThreshold", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dndArmedEvent", "Ljava/awt/event/MouseEvent;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "component", "Ljavax/swing/JComponent;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDragRecognitionSupport", "()Ljavax/swing/plaf/basic/DragRecognitionSupport;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressedImpl", "(Ljava/awt/event/MouseEvent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseReleasedImpl", "(Ljava/awt/event/MouseEvent;)Ljava/awt/event/MouseEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseDraggedImpl", "(Ljava/awt/event/MouseEvent;Ljavax/swing/plaf/basic/DragRecognitionSupport$BeforeDrag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearState", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapDragOperationFromModifiers", "(Ljava/awt/event/MouseEvent;Ljavax/swing/TransferHandler;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mouseReleased", "(Ljava/awt/event/MouseEvent;)Ljava/awt/event/MouseEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mouseDragged", "(Ljava/awt/event/MouseEvent;Ljavax/swing/plaf/basic/DragRecognitionSupport$BeforeDrag;)Z"));
 	}
 
 	[JniSignatureAttribute("I", "private")]
@@ -94,7 +94,7 @@ public partial class DragRecognitionSupport
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public DragRecognitionSupport() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DragRecognitionSupport() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -177,7 +177,7 @@ public partial class DragRecognitionSupport
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/basic/DragRecognitionSupport$BeforeDrag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dragStarting", "(Ljava/awt/event/MouseEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dragStarting", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/event/MouseEvent;)V", "public abstract")]

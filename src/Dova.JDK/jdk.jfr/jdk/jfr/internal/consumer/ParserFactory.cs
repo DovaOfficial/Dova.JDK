@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,18 +31,18 @@ public partial class ParserFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parsers", "Ljdk/jfr/internal/LongMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeConverter", "Ljdk/jfr/internal/consumer/TimeConverter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "types", "Ljdk/jfr/internal/LongMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constantLookups", "Ljdk/jfr/internal/LongMap;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ParserFactory", "(Ljdk/jfr/internal/MetadataDescriptor;Ljdk/jfr/internal/LongMap;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParsers", "()Ljdk/jfr/internal/LongMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTypeMap", "()Ljdk/jfr/internal/LongMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCompositeParser", "(Ljdk/jfr/internal/Type;Z)Ljdk/jfr/internal/consumer/ParserFactory$CompositeParser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createEventParser", "(Ljdk/jfr/EventType;)Ljdk/jfr/internal/consumer/EventParser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createParser", "(Ljdk/jfr/ValueDescriptor;Z)Ljdk/jfr/internal/consumer/Parser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPrimitiveParser", "(Ljdk/jfr/internal/Type;Z)Ljdk/jfr/internal/consumer/Parser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerParserType", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/Parser;)Ljdk/jfr/internal/consumer/Parser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parsers", "Ljdk/jfr/internal/LongMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeConverter", "Ljdk/jfr/internal/consumer/TimeConverter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "types", "Ljdk/jfr/internal/LongMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constantLookups", "Ljdk/jfr/internal/LongMap;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/MetadataDescriptor;Ljdk/jfr/internal/LongMap;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParsers", "()Ljdk/jfr/internal/LongMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTypeMap", "()Ljdk/jfr/internal/LongMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCompositeParser", "(Ljdk/jfr/internal/Type;Z)Ljdk/jfr/internal/consumer/ParserFactory$CompositeParser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createEventParser", "(Ljdk/jfr/EventType;)Ljdk/jfr/internal/consumer/EventParser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createParser", "(Ljdk/jfr/ValueDescriptor;Z)Ljdk/jfr/internal/consumer/Parser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPrimitiveParser", "(Ljdk/jfr/internal/Type;Z)Ljdk/jfr/internal/consumer/Parser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registerParserType", "(Ljdk/jfr/internal/Type;Ljdk/jfr/internal/consumer/Parser;)Ljdk/jfr/internal/consumer/Parser;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/LongMap;", "private final")]
@@ -107,7 +107,7 @@ public partial class ParserFactory
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/MetadataDescriptor;Ljdk/jfr/internal/LongMap;Ljdk/jfr/internal/consumer/TimeConverter;)V", "public")]
-	public ParserFactory(Dova.JDK.jdk.jfr.@internal.MetadataDescriptor arg0, Dova.JDK.jdk.jfr.@internal.LongMap arg1, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ParserFactory(Dova.JDK.jdk.jfr.@internal.MetadataDescriptor arg0, Dova.JDK.jdk.jfr.@internal.LongMap arg1, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -179,10 +179,10 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$CompositeParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parsers", "[Ljdk/jfr/internal/consumer/Parser;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeParser", "([Ljdk/jfr/internal/consumer/Parser;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parsers", "[Ljdk/jfr/internal/consumer/Parser;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljdk/jfr/internal/consumer/Parser;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("[Ljdk/jfr/internal/consumer/Parser;", "private final")]
@@ -205,7 +205,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("([Ljdk/jfr/internal/consumer/Parser;)V", "public")]
-		public CompositeParser(JavaArray<Dova.JDK.jdk.jfr.@internal.consumer.Parser> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CompositeParser(JavaArray<Dova.JDK.jdk.jfr.@internal.consumer.Parser> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -242,10 +242,10 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$ArrayParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elementParser", "Ljdk/jfr/internal/consumer/Parser;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArrayParser", "(Ljdk/jfr/internal/consumer/Parser;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elementParser", "Ljdk/jfr/internal/consumer/Parser;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/consumer/Parser;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jfr/internal/consumer/Parser;", "private final")]
@@ -268,7 +268,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jfr/internal/consumer/Parser;)V", "public")]
-		public ArrayParser(Dova.JDK.jdk.jfr.@internal.consumer.Parser arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ArrayParser(Dova.JDK.jdk.jfr.@internal.consumer.Parser arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -305,12 +305,12 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$EventValueConstantParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lookup", "Ljdk/jfr/internal/consumer/ConstantLookup;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastValue", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastKey", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventValueConstantParser", "(Ljdk/jfr/internal/consumer/ConstantLookup;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lookup", "Ljdk/jfr/internal/consumer/ConstantLookup;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastValue", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastKey", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/consumer/ConstantLookup;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jfr/internal/consumer/ConstantLookup;", "private final")]
@@ -361,7 +361,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jfr/internal/consumer/ConstantLookup;)V", "")]
-		public EventValueConstantParser(Dova.JDK.jdk.jfr.@internal.consumer.ConstantLookup arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EventValueConstantParser(Dova.JDK.jdk.jfr.@internal.consumer.ConstantLookup arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -398,10 +398,10 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$ConstantValueParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lookup", "Ljdk/jfr/internal/consumer/ConstantLookup;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConstantValueParser", "(Ljdk/jfr/internal/consumer/ConstantLookup;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lookup", "Ljdk/jfr/internal/consumer/ConstantLookup;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/consumer/ConstantLookup;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jfr/internal/consumer/ConstantLookup;", "private final")]
@@ -424,7 +424,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jfr/internal/consumer/ConstantLookup;)V", "")]
-		public ConstantValueParser(Dova.JDK.jdk.jfr.@internal.consumer.ConstantLookup arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ConstantValueParser(Dova.JDK.jdk.jfr.@internal.consumer.ConstantLookup arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -461,11 +461,11 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$IntegerParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastIntegergObject", "Ljava/lang/Integer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IntegerParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastIntegergObject", "Ljava/lang/Integer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Integer;", "private")]
@@ -502,7 +502,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public IntegerParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public IntegerParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -539,11 +539,11 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$LongParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastLongObject", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LongParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastLongObject", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "private")]
@@ -580,7 +580,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public LongParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LongParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -616,9 +616,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$FloatParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FloatParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -627,7 +627,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public FloatParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public FloatParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -663,9 +663,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$DoubleParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DoubleParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -674,7 +674,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public DoubleParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DoubleParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -710,9 +710,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$CharacterParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CharacterParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -721,7 +721,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public CharacterParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public CharacterParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -757,9 +757,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$BooleanParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BooleanParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -768,7 +768,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public BooleanParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BooleanParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -804,9 +804,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$ShortParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ShortParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -815,7 +815,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ShortParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ShortParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -851,9 +851,9 @@ public partial class ParserFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ParserFactory$ByteParser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ByteParser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(Ljdk/jfr/internal/consumer/RecordingInput;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljdk/jfr/internal/consumer/RecordingInput;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -862,7 +862,7 @@ public partial class ParserFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ByteParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ByteParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class KeyMap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/KeyMap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "varMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "importMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeyMap", "(Ljdk/jshell/JShell;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForImport", "(Ljava/lang/String;Ljdk/jshell/Snippet$SubKind;)Ljdk/jshell/Key$ImportKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForVariable", "(Ljava/lang/String;)Ljdk/jshell/Key$VarKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doesVariableNameExist", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForExpression", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jshell/Key$ExpressionKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForStatement", "()Ljdk/jshell/Key$StatementKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForClass", "(Ljava/lang/String;)Ljdk/jshell/Key$TypeDeclKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForMethod", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jshell/Key$MethodKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyForErroneous", "()Ljdk/jshell/Key$ErroneousKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "importKeys", "()Ljava/util/stream/Stream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "varMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "importMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForImport", "(Ljava/lang/String;Ljdk/jshell/Snippet$SubKind;)Ljdk/jshell/Key$ImportKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForVariable", "(Ljava/lang/String;)Ljdk/jshell/Key$VarKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doesVariableNameExist", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForExpression", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jshell/Key$ExpressionKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForStatement", "()Ljdk/jshell/Key$StatementKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForClass", "(Ljava/lang/String;)Ljdk/jshell/Key$TypeDeclKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForMethod", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jshell/Key$MethodKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyForErroneous", "()Ljdk/jshell/Key$ErroneousKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "importKeys", "()Ljava/util/stream/Stream;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/JShell;", "private final")]
@@ -124,7 +124,7 @@ public partial class KeyMap
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;)V", "")]
-	public KeyMap(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public KeyMap(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

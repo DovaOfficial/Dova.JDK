@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,76 +31,76 @@ public partial class BaseConfiguration
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doclet", "Ljdk/javadoc/doclet/Doclet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "builderFactory", "Ljdk/javadoc/internal/doclets/toolkit/builders/BuilderFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tagletManager", "Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "metakeywords", "Ljdk/javadoc/internal/doclets/toolkit/util/MetaKeywords;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "docEnv", "Ljdk/javadoc/doclet/DocletEnvironment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "workArounds", "Ljdk/javadoc/internal/doclets/toolkit/WorkArounds;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourcepath", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "showModules", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeElementCatalog", "Ljdk/javadoc/internal/doclets/toolkit/util/TypeElementCatalog;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "group", "Ljdk/javadoc/internal/doclets/toolkit/util/Group;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extern", "Ljdk/javadoc/internal/doclets/toolkit/util/Extern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reporter", "Ljdk/javadoc/doclet/Reporter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locale", "Ljava/util/Locale;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmtUtils", "Ljdk/javadoc/internal/doclets/toolkit/CommentUtils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packages", "Ljava/util/SortedSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "overviewElement", "Ljdk/javadoc/internal/doclets/toolkit/OverviewElement;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "docFileFactory", "Ljdk/javadoc/internal/doclets/toolkit/util/DocFileFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modulePackages", "Ljava/util/SortedMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modules", "Ljava/util/SortedSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sharedResourceBundleName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "visibleMemberCache", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "propertyUtils", "Ljdk/javadoc/internal/doclets/toolkit/PropertyUtils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialized", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "specifiedModuleElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "specifiedPackageElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "specifiedTypeElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includedModuleElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includedPackageElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includedTypeElements", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doclint", "Ljdk/javadoc/internal/doclint/DocLint;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shouldCheck", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaseConfiguration", "(Ljdk/javadoc/doclet/Doclet;Ljava/util/Locale;Ljdk/javadoc/doclet/Reporter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassName", "(Ljavax/lang/model/element/TypeElement;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocale", "()Ljava/util/Locale;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initModules", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isJavaFXMode", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocResources", "()Ljdk/javadoc/internal/doclets/toolkit/Resources;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIncludedPackageElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initDestDirectory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessages", "()Ljdk/javadoc/internal/doclets/toolkit/Messages;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFileManager", "()Ljavax/tools/JavaFileManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initTagletManager", "(Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOverviewPath", "()Ljavax/tools/JavaFileObject;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initPackages", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishOptionSettings0", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishOptionSettings", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tokenize", "(Ljava/lang/String;CI)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldExcludeQualifier", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisibleMemberTable", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocletVersion", "()Ljava/lang/Runtime$Version;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initConfiguration", "(Ljdk/javadoc/doclet/DocletEnvironment;Ljava/util/function/Function;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBuilderFactory", "()Ljdk/javadoc/internal/doclets/toolkit/builders/BuilderFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReporter", "()Ljdk/javadoc/doclet/Reporter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSpecifiedPackageElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSpecifiedTypeElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIncludedModuleElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIncludedTypeElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldExcludeDocFileDir", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isGeneratedDoc", "(Ljavax/lang/model/element/TypeElement;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWriterFactory", "()Ljdk/javadoc/internal/doclets/toolkit/WriterFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showMessage", "(Ljavax/lang/model/element/Element;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showMessage", "(Lcom/sun/source/util/DocTreePath;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAllowScriptInComments", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runDocLint", "(Lcom/sun/source/util/TreePath;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initDocLint", "(Ljava/util/List;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "haveDocLint", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSpecifiedModuleElements", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOptions", "()Ljdk/javadoc/internal/doclets/toolkit/BaseOptions;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOptions", "()Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doclet", "Ljdk/javadoc/doclet/Doclet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "builderFactory", "Ljdk/javadoc/internal/doclets/toolkit/builders/BuilderFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tagletManager", "Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "metakeywords", "Ljdk/javadoc/internal/doclets/toolkit/util/MetaKeywords;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "docEnv", "Ljdk/javadoc/doclet/DocletEnvironment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "workArounds", "Ljdk/javadoc/internal/doclets/toolkit/WorkArounds;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourcepath", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "showModules", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeElementCatalog", "Ljdk/javadoc/internal/doclets/toolkit/util/TypeElementCatalog;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "group", "Ljdk/javadoc/internal/doclets/toolkit/util/Group;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extern", "Ljdk/javadoc/internal/doclets/toolkit/util/Extern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reporter", "Ljdk/javadoc/doclet/Reporter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "locale", "Ljava/util/Locale;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmtUtils", "Ljdk/javadoc/internal/doclets/toolkit/CommentUtils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packages", "Ljava/util/SortedSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "overviewElement", "Ljdk/javadoc/internal/doclets/toolkit/OverviewElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "docFileFactory", "Ljdk/javadoc/internal/doclets/toolkit/util/DocFileFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modulePackages", "Ljava/util/SortedMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modules", "Ljava/util/SortedSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sharedResourceBundleName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "visibleMemberCache", "Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "propertyUtils", "Ljdk/javadoc/internal/doclets/toolkit/PropertyUtils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initialized", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "specifiedModuleElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "specifiedPackageElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "specifiedTypeElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "includedModuleElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "includedPackageElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "includedTypeElements", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doclint", "Ljdk/javadoc/internal/doclint/DocLint;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shouldCheck", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/doclet/Doclet;Ljava/util/Locale;Ljdk/javadoc/doclet/Reporter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassName", "(Ljavax/lang/model/element/TypeElement;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocale", "()Ljava/util/Locale;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initModules", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isJavaFXMode", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocResources", "()Ljdk/javadoc/internal/doclets/toolkit/Resources;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIncludedPackageElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initDestDirectory", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessages", "()Ljdk/javadoc/internal/doclets/toolkit/Messages;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFileManager", "()Ljavax/tools/JavaFileManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initTagletManager", "(Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOverviewPath", "()Ljavax/tools/JavaFileObject;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initPackages", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishOptionSettings0", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishOptionSettings", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tokenize", "(Ljava/lang/String;CI)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldExcludeQualifier", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisibleMemberTable", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocletVersion", "()Ljava/lang/Runtime$Version;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initConfiguration", "(Ljdk/javadoc/doclet/DocletEnvironment;Ljava/util/function/Function;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBuilderFactory", "()Ljdk/javadoc/internal/doclets/toolkit/builders/BuilderFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReporter", "()Ljdk/javadoc/doclet/Reporter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSpecifiedPackageElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSpecifiedTypeElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIncludedModuleElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIncludedTypeElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldExcludeDocFileDir", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isGeneratedDoc", "(Ljavax/lang/model/element/TypeElement;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWriterFactory", "()Ljdk/javadoc/internal/doclets/toolkit/WriterFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showMessage", "(Ljavax/lang/model/element/Element;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showMessage", "(Lcom/sun/source/util/DocTreePath;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAllowScriptInComments", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "runDocLint", "(Lcom/sun/source/util/TreePath;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initDocLint", "(Ljava/util/List;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "haveDocLint", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSpecifiedModuleElements", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOptions", "()Ljdk/javadoc/internal/doclets/toolkit/BaseOptions;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOptions", "()Z"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/doclet/Doclet;", "public final")]
@@ -557,7 +557,7 @@ public partial class BaseConfiguration
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/doclet/Doclet;Ljava/util/Locale;Ljdk/javadoc/doclet/Reporter;)V", "public")]
-	public BaseConfiguration(Dova.JDK.jdk.javadoc.doclet.Doclet arg0, Dova.JDK.java.util.Locale arg1, Dova.JDK.jdk.javadoc.doclet.Reporter arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public BaseConfiguration(Dova.JDK.jdk.javadoc.doclet.Doclet arg0, Dova.JDK.java.util.Locale arg1, Dova.JDK.jdk.javadoc.doclet.Reporter arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -831,10 +831,10 @@ public partial class BaseConfiguration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration$Splitter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mset", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pset", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tset", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Splitter", "(Ljdk/javadoc/doclet/DocletEnvironment;Z)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mset", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pset", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tset", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/doclet/DocletEnvironment;Z)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Set;", "final")]
@@ -885,7 +885,7 @@ public partial class BaseConfiguration
 		}
 
 		[JniSignatureAttribute("(Ljdk/javadoc/doclet/DocletEnvironment;Z)V", "")]
-		public Splitter(Dova.JDK.jdk.javadoc.doclet.DocletEnvironment arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Splitter(Dova.JDK.jdk.javadoc.doclet.DocletEnvironment arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

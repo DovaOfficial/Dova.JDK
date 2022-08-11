@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class GeoTIFFTagSet
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theInstance", "Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MODEL_PIXEL_SCALE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MODEL_TRANSFORMATION", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_MODEL_TIE_POINT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GEO_KEY_DIRECTORY", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GEO_DOUBLE_PARAMS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_GEO_ASCII_PARAMS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tags", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GeoTIFFTagSet", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initTags", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "theInstance", "Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_MODEL_PIXEL_SCALE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_MODEL_TRANSFORMATION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_MODEL_TIE_POINT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_GEO_KEY_DIRECTORY", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_GEO_DOUBLE_PARAMS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_GEO_ASCII_PARAMS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "tags", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "()Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initTags", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet;", "private static")]
@@ -162,7 +162,7 @@ public partial class GeoTIFFTagSet
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public GeoTIFFTagSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public GeoTIFFTagSet() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -196,7 +196,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$ModelPixelScale;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelPixelScale", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -205,7 +205,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ModelPixelScale() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ModelPixelScale() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -227,7 +227,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$ModelTransformation;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelTransformation", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -236,7 +236,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ModelTransformation() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ModelTransformation() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -258,7 +258,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$ModelTiepoint;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelTiepoint", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -267,7 +267,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public ModelTiepoint() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ModelTiepoint() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -289,7 +289,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$GeoKeyDirectory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GeoKeyDirectory", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -298,7 +298,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GeoKeyDirectory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GeoKeyDirectory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -320,7 +320,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$GeoDoubleParams;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GeoDoubleParams", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -329,7 +329,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GeoDoubleParams() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GeoDoubleParams() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -351,7 +351,7 @@ public partial class GeoTIFFTagSet
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/imageio/plugins/tiff/GeoTIFFTagSet$GeoAsciiParams;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GeoAsciiParams", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -360,7 +360,7 @@ public partial class GeoTIFFTagSet
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public GeoAsciiParams() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GeoAsciiParams() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

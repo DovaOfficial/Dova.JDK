@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,15 +32,15 @@ public partial class ClassSignature
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/generics/tree/ClassSignature;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "formalTypeParams", "[Lsun/reflect/generics/tree/FormalTypeParameter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superclass", "Lsun/reflect/generics/tree/ClassTypeSignature;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superInterfaces", "[Lsun/reflect/generics/tree/ClassTypeSignature;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassSignature", "([Lsun/reflect/generics/tree/FormalTypeParameter;Lsun/reflect/generics/tree/ClassTypeSignature;[Lsun/reflect/generics/tree/ClassTypeSignature;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSuperclass", "()Lsun/reflect/generics/tree/ClassTypeSignature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSuperInterfaces", "()[Lsun/reflect/generics/tree/ClassTypeSignature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "make", "([Lsun/reflect/generics/tree/FormalTypeParameter;Lsun/reflect/generics/tree/ClassTypeSignature;[Lsun/reflect/generics/tree/ClassTypeSignature;)Lsun/reflect/generics/tree/ClassSignature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lsun/reflect/generics/visitor/Visitor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormalTypeParameters", "()[Lsun/reflect/generics/tree/FormalTypeParameter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "formalTypeParams", "[Lsun/reflect/generics/tree/FormalTypeParameter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superclass", "Lsun/reflect/generics/tree/ClassTypeSignature;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superInterfaces", "[Lsun/reflect/generics/tree/ClassTypeSignature;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Lsun/reflect/generics/tree/FormalTypeParameter;Lsun/reflect/generics/tree/ClassTypeSignature;[Lsun/reflect/generics/tree/ClassTypeSignature;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSuperclass", "()Lsun/reflect/generics/tree/ClassTypeSignature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSuperInterfaces", "()[Lsun/reflect/generics/tree/ClassTypeSignature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "make", "([Lsun/reflect/generics/tree/FormalTypeParameter;Lsun/reflect/generics/tree/ClassTypeSignature;[Lsun/reflect/generics/tree/ClassTypeSignature;)Lsun/reflect/generics/tree/ClassSignature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(Lsun/reflect/generics/visitor/Visitor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormalTypeParameters", "()[Lsun/reflect/generics/tree/FormalTypeParameter;"));
 	}
 
 	[JniSignatureAttribute("[Lsun/reflect/generics/tree/FormalTypeParameter;", "private final")]
@@ -91,7 +91,7 @@ public partial class ClassSignature
 	}
 
 	[JniSignatureAttribute("([Lsun/reflect/generics/tree/FormalTypeParameter;Lsun/reflect/generics/tree/ClassTypeSignature;[Lsun/reflect/generics/tree/ClassTypeSignature;)V", "private")]
-	public ClassSignature(JavaArray<Dova.JDK.sun.reflect.generics.tree.FormalTypeParameter> arg0, Dova.JDK.sun.reflect.generics.tree.ClassTypeSignature arg1, JavaArray<Dova.JDK.sun.reflect.generics.tree.ClassTypeSignature> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ClassSignature(JavaArray<Dova.JDK.sun.reflect.generics.tree.FormalTypeParameter> arg0, Dova.JDK.sun.reflect.generics.tree.ClassTypeSignature arg1, JavaArray<Dova.JDK.sun.reflect.generics.tree.ClassTypeSignature> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

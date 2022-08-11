@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,10 +32,10 @@ public partial class ReferenceWrapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/rmi/registry/ReferenceWrapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wrappee", "Ljavax/naming/Reference;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceWrapper", "(Ljavax/naming/Reference;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReference", "()Ljavax/naming/Reference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "wrappee", "Ljavax/naming/Reference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/naming/Reference;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReference", "()Ljavax/naming/Reference;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/naming/Reference;", "protected")]
@@ -72,7 +72,7 @@ public partial class ReferenceWrapper
 	}
 
 	[JniSignatureAttribute("(Ljavax/naming/Reference;)V", "public")]
-	public ReferenceWrapper(Dova.JDK.javax.naming.Reference arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ReferenceWrapper(Dova.JDK.javax.naming.Reference arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,21 +32,21 @@ public partial class Krb5ProxyCredential
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/krb5/Krb5ProxyCredential;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "self", "Lsun/security/jgss/krb5/Krb5InitCredential;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "user", "Lsun/security/jgss/krb5/Krb5NameElement;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "userCreds", "Lsun/security/krb5/Credentials;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Krb5ProxyCredential", "(Lsun/security/jgss/krb5/Krb5InitCredential;Lsun/security/jgss/krb5/Krb5NameElement;Lsun/security/krb5/Credentials;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName_0", "()Lsun/security/jgss/spi/GSSNameSpi;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName_1", "()Lsun/security/jgss/krb5/Krb5NameElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProvider", "()Ljava/security/Provider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tryImpersonation", "(Lsun/security/jgss/GSSCaller;Lsun/security/jgss/krb5/Krb5InitCredential;)Lsun/security/jgss/krb5/Krb5CredElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "impersonate", "(Lsun/security/jgss/spi/GSSNameSpi;)Lsun/security/jgss/spi/GSSCredentialSpi;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInitLifetime", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAcceptLifetime", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isInitiatorCredential", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAcceptorCredential", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMechanism", "()Lorg/ietf/jgss/Oid;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "self", "Lsun/security/jgss/krb5/Krb5InitCredential;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "user", "Lsun/security/jgss/krb5/Krb5NameElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "userCreds", "Lsun/security/krb5/Credentials;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/jgss/krb5/Krb5InitCredential;Lsun/security/jgss/krb5/Krb5NameElement;Lsun/security/krb5/Credentials;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName_0", "()Lsun/security/jgss/spi/GSSNameSpi;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName_1", "()Lsun/security/jgss/krb5/Krb5NameElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProvider", "()Ljava/security/Provider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tryImpersonation", "(Lsun/security/jgss/GSSCaller;Lsun/security/jgss/krb5/Krb5InitCredential;)Lsun/security/jgss/krb5/Krb5CredElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "impersonate", "(Lsun/security/jgss/spi/GSSNameSpi;)Lsun/security/jgss/spi/GSSCredentialSpi;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInitLifetime", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAcceptLifetime", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isInitiatorCredential", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAcceptorCredential", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMechanism", "()Lorg/ietf/jgss/Oid;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/jgss/krb5/Krb5InitCredential;", "public final")]
@@ -97,7 +97,7 @@ public partial class Krb5ProxyCredential
 	}
 
 	[JniSignatureAttribute("(Lsun/security/jgss/krb5/Krb5InitCredential;Lsun/security/jgss/krb5/Krb5NameElement;Lsun/security/krb5/Credentials;)V", "")]
-	public Krb5ProxyCredential(Dova.JDK.sun.security.jgss.krb5.Krb5InitCredential arg0, Dova.JDK.sun.security.jgss.krb5.Krb5NameElement arg1, Dova.JDK.sun.security.krb5.Credentials arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Krb5ProxyCredential(Dova.JDK.sun.security.jgss.krb5.Krb5InitCredential arg0, Dova.JDK.sun.security.jgss.krb5.Krb5NameElement arg1, Dova.JDK.sun.security.krb5.Credentials arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

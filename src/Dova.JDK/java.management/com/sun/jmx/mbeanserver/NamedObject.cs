@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class NamedObject
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/NamedObject;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljavax/management/ObjectName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Ljavax/management/DynamicMBean;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamedObject", "(Ljavax/management/ObjectName;Ljavax/management/DynamicMBean;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamedObject", "(Ljava/lang/String;Ljavax/management/DynamicMBean;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljavax/management/ObjectName;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getObject", "()Ljavax/management/DynamicMBean;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljavax/management/ObjectName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Ljavax/management/DynamicMBean;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/management/ObjectName;Ljavax/management/DynamicMBean;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljavax/management/DynamicMBean;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljavax/management/ObjectName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getObject", "()Ljavax/management/DynamicMBean;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/management/ObjectName;", "private final")]
@@ -75,12 +75,12 @@ public partial class NamedObject
 	}
 
 	[JniSignatureAttribute("(Ljavax/management/ObjectName;Ljavax/management/DynamicMBean;)V", "public")]
-	public NamedObject(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.javax.management.DynamicMBean arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public NamedObject(Dova.JDK.javax.management.ObjectName arg0, Dova.JDK.javax.management.DynamicMBean arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljavax/management/DynamicMBean;)V", "public")]
-	public NamedObject(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.management.DynamicMBean arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public NamedObject(Dova.JDK.java.lang.String arg0, Dova.JDK.javax.management.DynamicMBean arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

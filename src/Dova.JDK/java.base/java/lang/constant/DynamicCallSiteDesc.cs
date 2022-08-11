@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,25 +31,25 @@ public partial class DynamicCallSiteDesc
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/constant/DynamicCallSiteDesc;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bootstrapMethod", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bootstrapArgs", "[Ljava/lang/constant/ConstantDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "invocationName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "invocationType", "Ljava/lang/constant/MethodTypeDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DynamicCallSiteDesc", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;[Ljava/lang/constant/ConstantDesc;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;[Ljava/lang/constant/ConstantDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invocationType", "()Ljava/lang/constant/MethodTypeDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bootstrapMethod", "()Ljava/lang/constant/MethodHandleDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invocationName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withArgs", "([Ljava/lang/constant/ConstantDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withNameAndType", "(Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveCallSiteDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/invoke/CallSite;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bootstrapArgs", "()[Ljava/lang/constant/ConstantDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bootstrapMethod", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bootstrapArgs", "[Ljava/lang/constant/ConstantDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "invocationName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "invocationType", "Ljava/lang/constant/MethodTypeDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;[Ljava/lang/constant/ConstantDesc;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;[Ljava/lang/constant/ConstantDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "of", "(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invocationType", "()Ljava/lang/constant/MethodTypeDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bootstrapMethod", "()Ljava/lang/constant/MethodHandleDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invocationName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withArgs", "([Ljava/lang/constant/ConstantDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withNameAndType", "(Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;)Ljava/lang/constant/DynamicCallSiteDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveCallSiteDesc", "(Ljava/lang/invoke/MethodHandles$Lookup;)Ljava/lang/invoke/CallSite;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bootstrapArgs", "()[Ljava/lang/constant/ConstantDesc;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/constant/DirectMethodHandleDesc;", "private final")]
@@ -128,7 +128,7 @@ public partial class DynamicCallSiteDesc
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/constant/DirectMethodHandleDesc;Ljava/lang/String;Ljava/lang/constant/MethodTypeDesc;[Ljava/lang/constant/ConstantDesc;)V", "private")]
-	public DynamicCallSiteDesc(Dova.JDK.java.lang.constant.DirectMethodHandleDesc arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.constant.MethodTypeDesc arg2, JavaArray<Dova.JDK.java.lang.constant.ConstantDesc> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public DynamicCallSiteDesc(Dova.JDK.java.lang.constant.DirectMethodHandleDesc arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.constant.MethodTypeDesc arg2, JavaArray<Dova.JDK.java.lang.constant.ConstantDesc> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

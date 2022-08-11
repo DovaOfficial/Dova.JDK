@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class ScrollPaneWheelScroller
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/ScrollPaneWheelScroller;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "log", "Lsun/util/logging/PlatformLogger;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ScrollPaneWheelScroller", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAdjustableToScroll", "(Ljava/awt/ScrollPane;)Ljava/awt/Adjustable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getIncrementFromAdjustable", "(Ljava/awt/Adjustable;Ljava/awt/event/MouseWheelEvent;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "scrollAdjustable", "(Ljava/awt/Adjustable;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "handleWheelScrolling", "(Ljava/awt/ScrollPane;Ljava/awt/event/MouseWheelEvent;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "log", "Lsun/util/logging/PlatformLogger;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAdjustableToScroll", "(Ljava/awt/ScrollPane;)Ljava/awt/Adjustable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getIncrementFromAdjustable", "(Ljava/awt/Adjustable;Ljava/awt/event/MouseWheelEvent;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "scrollAdjustable", "(Ljava/awt/Adjustable;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "handleWheelScrolling", "(Ljava/awt/ScrollPane;Ljava/awt/event/MouseWheelEvent;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/util/logging/PlatformLogger;", "private static final")]
@@ -59,7 +59,7 @@ public partial class ScrollPaneWheelScroller
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ScrollPaneWheelScroller() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ScrollPaneWheelScroller() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

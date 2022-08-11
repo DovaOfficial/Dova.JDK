@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,52 +31,52 @@ public partial class InstructionFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "short_names", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cg", "Lcom/sun/org/apache/bcel/internal/generic/ClassGen;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cp", "Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "append_mos", "[Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory$MethodObject;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InstructionFactory", "(Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InstructionFactory", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InstructionFactory", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConstantPool", "()Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createStore", "(Lcom/sun/org/apache/bcel/internal/generic/Type;I)Lcom/sun/org/apache/bcel/internal/generic/LocalVariableInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createConstant", "(Ljava/lang/Object;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInvoke", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInvoke", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;SZ)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInvoke", "(Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory$MethodObject;S)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isString", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBinaryIntOp", "(CLjava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBinaryLongOp", "(CLjava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBinaryFloatOp", "(C)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBinaryDoubleOp", "(C)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPrintln", "(Ljava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/InstructionList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createAppend", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createFieldAccess", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/FieldInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createThis", "()Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createReturn", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ReturnInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBinaryOperation", "(Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createPop", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createDup", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createDup_2", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createDup_1", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createLoad", "(Lcom/sun/org/apache/bcel/internal/generic/Type;I)Lcom/sun/org/apache/bcel/internal/generic/LocalVariableInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createArrayLoad", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArrayInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createArrayStore", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArrayInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCast", "(Lcom/sun/org/apache/bcel/internal/generic/Type;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createGetField", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/GETFIELD;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createGetStatic", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/GETSTATIC;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPutField", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/PUTFIELD;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPutStatic", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/PUTSTATIC;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCheckCast", "(Lcom/sun/org/apache/bcel/internal/generic/ReferenceType;)Lcom/sun/org/apache/bcel/internal/generic/CHECKCAST;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createInstanceOf", "(Lcom/sun/org/apache/bcel/internal/generic/ReferenceType;)Lcom/sun/org/apache/bcel/internal/generic/INSTANCEOF;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNewArray", "(Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createNull", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBranchInstruction", "(SLcom/sun/org/apache/bcel/internal/generic/InstructionHandle;)Lcom/sun/org/apache/bcel/internal/generic/BranchInstruction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setClassGen", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassGen", "()Lcom/sun/org/apache/bcel/internal/generic/ClassGen;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setConstantPool", "(Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNew", "(Ljava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/NEW;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNew", "(Lcom/sun/org/apache/bcel/internal/generic/ObjectType;)Lcom/sun/org/apache/bcel/internal/generic/NEW;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "short_names", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cg", "Lcom/sun/org/apache/bcel/internal/generic/ClassGen;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cp", "Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "append_mos", "[Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory$MethodObject;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConstantPool", "()Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createStore", "(Lcom/sun/org/apache/bcel/internal/generic/Type;I)Lcom/sun/org/apache/bcel/internal/generic/LocalVariableInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createConstant", "(Ljava/lang/Object;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInvoke", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInvoke", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;SZ)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInvoke", "(Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory$MethodObject;S)Lcom/sun/org/apache/bcel/internal/generic/InvokeInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isString", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBinaryIntOp", "(CLjava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBinaryLongOp", "(CLjava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBinaryFloatOp", "(C)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBinaryDoubleOp", "(C)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPrintln", "(Ljava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/InstructionList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createAppend", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createFieldAccess", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/FieldInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createThis", "()Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createReturn", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ReturnInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBinaryOperation", "(Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArithmeticInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createPop", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createDup", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createDup_2", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createDup_1", "(I)Lcom/sun/org/apache/bcel/internal/generic/StackInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createLoad", "(Lcom/sun/org/apache/bcel/internal/generic/Type;I)Lcom/sun/org/apache/bcel/internal/generic/LocalVariableInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createArrayLoad", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArrayInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createArrayStore", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/ArrayInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCast", "(Lcom/sun/org/apache/bcel/internal/generic/Type;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createGetField", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/GETFIELD;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createGetStatic", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/GETSTATIC;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPutField", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/PUTFIELD;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPutStatic", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/PUTSTATIC;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCheckCast", "(Lcom/sun/org/apache/bcel/internal/generic/ReferenceType;)Lcom/sun/org/apache/bcel/internal/generic/CHECKCAST;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createInstanceOf", "(Lcom/sun/org/apache/bcel/internal/generic/ReferenceType;)Lcom/sun/org/apache/bcel/internal/generic/INSTANCEOF;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createNewArray", "(Lcom/sun/org/apache/bcel/internal/generic/Type;S)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createNull", "(Lcom/sun/org/apache/bcel/internal/generic/Type;)Lcom/sun/org/apache/bcel/internal/generic/Instruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBranchInstruction", "(SLcom/sun/org/apache/bcel/internal/generic/InstructionHandle;)Lcom/sun/org/apache/bcel/internal/generic/BranchInstruction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setClassGen", "(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassGen", "()Lcom/sun/org/apache/bcel/internal/generic/ClassGen;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setConstantPool", "(Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createNew", "(Ljava/lang/String;)Lcom/sun/org/apache/bcel/internal/generic/NEW;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createNew", "(Lcom/sun/org/apache/bcel/internal/generic/ObjectType;)Lcom/sun/org/apache/bcel/internal/generic/NEW;"));
 	}
 
 	[JniSignatureAttribute("[Ljava/lang/String;", "private static final")]
@@ -141,17 +141,17 @@ public partial class InstructionFactory
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V", "public")]
-	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ConstantPoolGen arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ConstantPoolGen arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;)V", "public")]
-	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ClassGen arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ClassGen arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/org/apache/bcel/internal/generic/ClassGen;Lcom/sun/org/apache/bcel/internal/generic/ConstantPoolGen;)V", "public")]
-	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ClassGen arg0, Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ConstantPoolGen arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public InstructionFactory(Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ClassGen arg0, Dova.JDK.com.sun.org.apache.bcel.@internal.generic.ConstantPoolGen arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
@@ -444,11 +444,11 @@ public partial class InstructionFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/bcel/internal/generic/InstructionFactory$MethodObject;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arg_types", "[Lcom/sun/org/apache/bcel/internal/generic/Type;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "result_type", "Lcom/sun/org/apache/bcel/internal/generic/Type;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "class_name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodObject", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arg_types", "[Lcom/sun/org/apache/bcel/internal/generic/Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "result_type", "Lcom/sun/org/apache/bcel/internal/generic/Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "class_name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;)V"));
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/org/apache/bcel/internal/generic/Type;", "final")]
@@ -513,7 +513,7 @@ public partial class InstructionFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;Lcom/sun/org/apache/bcel/internal/generic/Type;[Lcom/sun/org/apache/bcel/internal/generic/Type;)V", "")]
-		public MethodObject(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.com.sun.org.apache.bcel.@internal.generic.Type arg2, JavaArray<Dova.JDK.com.sun.org.apache.bcel.@internal.generic.Type> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public MethodObject(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.com.sun.org.apache.bcel.@internal.generic.Type arg2, JavaArray<Dova.JDK.com.sun.org.apache.bcel.@internal.generic.Type> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

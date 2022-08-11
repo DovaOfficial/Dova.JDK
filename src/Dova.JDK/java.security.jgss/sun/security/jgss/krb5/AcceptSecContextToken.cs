@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class AcceptSecContextToken
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/krb5/AcceptSecContextToken;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "apRep", "Lsun/security/krb5/KrbApRep;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AcceptSecContextToken", "(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/KrbApReq;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AcceptSecContextToken", "(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;Ljava/io/InputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "()[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "apRep", "Lsun/security/krb5/KrbApRep;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/KrbApReq;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;Ljava/io/InputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "()[B"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/krb5/KrbApRep;", "private")]
@@ -57,12 +57,12 @@ public partial class AcceptSecContextToken
 	}
 
 	[JniSignatureAttribute("(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/KrbApReq;)V", "public")]
-	public AcceptSecContextToken(Dova.JDK.sun.security.jgss.krb5.Krb5Context arg0, Dova.JDK.sun.security.krb5.KrbApReq arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public AcceptSecContextToken(Dova.JDK.sun.security.jgss.krb5.Krb5Context arg0, Dova.JDK.sun.security.krb5.KrbApReq arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/jgss/krb5/Krb5Context;Lsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;Ljava/io/InputStream;)V", "public")]
-	public AcceptSecContextToken(Dova.JDK.sun.security.jgss.krb5.Krb5Context arg0, Dova.JDK.sun.security.krb5.Credentials arg1, Dova.JDK.sun.security.krb5.KrbApReq arg2, Dova.JDK.java.io.InputStream arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public AcceptSecContextToken(Dova.JDK.sun.security.jgss.krb5.Krb5Context arg0, Dova.JDK.sun.security.krb5.Credentials arg1, Dova.JDK.sun.security.krb5.KrbApReq arg2, Dova.JDK.java.io.InputStream arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 

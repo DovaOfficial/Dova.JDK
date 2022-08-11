@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class DontCareFieldPosition
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/text/DontCareFieldPosition;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/text/FieldPosition;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noDelegate", "Ljava/text/Format$FieldDelegate;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DontCareFieldPosition", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFieldDelegate", "()Ljava/text/Format$FieldDelegate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljava/text/FieldPosition;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noDelegate", "Ljava/text/Format$FieldDelegate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFieldDelegate", "()Ljava/text/Format$FieldDelegate;"));
 	}
 
 	[JniSignatureAttribute("Ljava/text/FieldPosition;", "static final")]
@@ -71,7 +71,7 @@ public partial class DontCareFieldPosition
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DontCareFieldPosition() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DontCareFieldPosition() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

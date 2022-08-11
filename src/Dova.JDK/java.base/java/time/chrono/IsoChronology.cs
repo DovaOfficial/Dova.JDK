@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,55 +32,55 @@ public partial class IsoChronology
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/chrono/IsoChronology;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/time/chrono/IsoChronology;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DAYS_0000_TO_1970", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IsoChronology", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getId", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeReplace", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "range", "(Ljava/time/temporal/ChronoField;)Ljava/time/temporal/ValueRange;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_0", "(Ljava/time/chrono/Era;III)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_1", "(Ljava/time/chrono/Era;III)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_0", "(III)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "date_1", "(III)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eras", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "epochSecond", "(IIIIIILjava/time/ZoneOffset;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLeapYear", "(J)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eraOf_0", "(I)Ljava/time/chrono/IsoEra;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eraOf_1", "(I)Ljava/time/chrono/Era;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "localDateTime_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "localDateTime_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCalendarType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateEpochDay_0", "(J)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateEpochDay_1", "(J)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveProlepticMonth", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveYearOfEra_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveYearOfEra_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveYMD_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveYMD_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_0", "(Ljava/time/Clock;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_1", "(Ljava/time/Clock;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_0", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_1", "(Ljava/time/ZoneId;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_0", "()Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateNow_1", "()Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prolepticYear", "(Ljava/time/chrono/Era;I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateYearDay_0", "(II)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateYearDay_1", "(II)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateYearDay_0", "(Ljava/time/chrono/Era;II)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dateYearDay_1", "(Ljava/time/chrono/Era;II)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveDate_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveDate_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "zonedDateTime_0", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "zonedDateTime_1", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "zonedDateTime_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/ZonedDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "zonedDateTime_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "period_0", "(III)Ljava/time/Period;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "period_1", "(III)Ljava/time/chrono/ChronoPeriod;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "numberOfDaysOfMonth", "(II)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljava/time/chrono/IsoChronology;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DAYS_0000_TO_1970", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getId", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeReplace", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "range", "(Ljava/time/temporal/ChronoField;)Ljava/time/temporal/ValueRange;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_0", "(Ljava/time/chrono/Era;III)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_1", "(Ljava/time/chrono/Era;III)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_0", "(III)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "date_1", "(III)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eras", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "epochSecond", "(IIIIIILjava/time/ZoneOffset;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLeapYear", "(J)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eraOf_0", "(I)Ljava/time/chrono/IsoEra;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eraOf_1", "(I)Ljava/time/chrono/Era;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "localDateTime_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/LocalDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "localDateTime_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoLocalDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCalendarType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateEpochDay_0", "(J)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateEpochDay_1", "(J)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveProlepticMonth", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveYearOfEra_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveYearOfEra_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveYMD_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveYMD_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_0", "(Ljava/time/Clock;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_1", "(Ljava/time/Clock;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_0", "(Ljava/time/ZoneId;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_1", "(Ljava/time/ZoneId;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_0", "()Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateNow_1", "()Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prolepticYear", "(Ljava/time/chrono/Era;I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateYearDay_0", "(II)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateYearDay_1", "(II)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateYearDay_0", "(Ljava/time/chrono/Era;II)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dateYearDay_1", "(Ljava/time/chrono/Era;II)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveDate_0", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/chrono/ChronoLocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveDate_1", "(Ljava/util/Map;Ljava/time/format/ResolverStyle;)Ljava/time/LocalDate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "zonedDateTime_0", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/chrono/ChronoZonedDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "zonedDateTime_1", "(Ljava/time/Instant;Ljava/time/ZoneId;)Ljava/time/ZonedDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "zonedDateTime_0", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/ZonedDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "zonedDateTime_1", "(Ljava/time/temporal/TemporalAccessor;)Ljava/time/chrono/ChronoZonedDateTime;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "period_0", "(III)Ljava/time/Period;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "period_1", "(III)Ljava/time/chrono/ChronoPeriod;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "numberOfDaysOfMonth", "(II)I"));
 	}
 
 	[JniSignatureAttribute("Ljava/time/chrono/IsoChronology;", "public static final")]
@@ -131,7 +131,7 @@ public partial class IsoChronology
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public IsoChronology() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public IsoChronology() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

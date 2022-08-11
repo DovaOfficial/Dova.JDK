@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,18 +32,18 @@ public partial class JSRInlinerAdapter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainSubroutineInsns", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subroutinesInsns", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sharedSubroutineInsns", "Ljava/util/BitSet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JSRInlinerAdapter", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JSRInlinerAdapter", "(ILjdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnd", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitJumpInsn", "(ILjdk/internal/org/objectweb/asm/Label;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSubroutinesInsns", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emitCode", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSubroutineInsns", "(ILjava/util/BitSet;Ljava/util/BitSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findReachableInsns", "(ILjava/util/BitSet;Ljava/util/BitSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emitInstantiation", "(Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;Ljava/util/List;Ljdk/internal/org/objectweb/asm/tree/InsnList;Ljava/util/List;Ljava/util/List;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainSubroutineInsns", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subroutinesInsns", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sharedSubroutineInsns", "Ljava/util/BitSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ILjdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnd", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitJumpInsn", "(ILjdk/internal/org/objectweb/asm/Label;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSubroutinesInsns", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emitCode", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSubroutineInsns", "(ILjava/util/BitSet;Ljava/util/BitSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findReachableInsns", "(ILjava/util/BitSet;Ljava/util/BitSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emitInstantiation", "(Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;Ljava/util/List;Ljdk/internal/org/objectweb/asm/tree/InsnList;Ljava/util/List;Ljava/util/List;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/BitSet;", "private final")]
@@ -94,12 +94,12 @@ public partial class JSRInlinerAdapter
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V", "public")]
-	public JSRInlinerAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg0, int arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, JavaArray<Dova.JDK.java.lang.String> arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public JSRInlinerAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg0, int arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, JavaArray<Dova.JDK.java.lang.String> arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
 	[JniSignatureAttribute("(ILjdk/internal/org/objectweb/asm/MethodVisitor;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V", "protected")]
-	public JSRInlinerAdapter(int arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, JavaArray<Dova.JDK.java.lang.String> arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public JSRInlinerAdapter(int arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, JavaArray<Dova.JDK.java.lang.String> arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
@@ -164,20 +164,20 @@ public partial class JSRInlinerAdapter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subroutineInsns", "Ljava/util/BitSet;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clonedLabels", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnLabel", "Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Instantiation", "(Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;Ljava/util/BitSet;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_0", "(Ljava/lang/Object;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entrySet", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClonedLabel", "(Ljdk/internal/org/objectweb/asm/tree/LabelNode;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findOwner", "(I)Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClonedLabelForJumpInsn", "(Ljdk/internal/org/objectweb/asm/tree/LabelNode;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subroutineInsns", "Ljava/util/BitSet;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clonedLabels", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnLabel", "Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;Ljava/util/BitSet;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get_0", "(Ljava/lang/Object;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get_1", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entrySet", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClonedLabel", "(Ljdk/internal/org/objectweb/asm/tree/LabelNode;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findOwner", "(I)Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClonedLabelForJumpInsn", "(Ljdk/internal/org/objectweb/asm/tree/LabelNode;)Ljdk/internal/org/objectweb/asm/tree/LabelNode;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;", "final")]
@@ -256,7 +256,7 @@ public partial class JSRInlinerAdapter
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter;Ljdk/internal/org/objectweb/asm/commons/JSRInlinerAdapter$Instantiation;Ljava/util/BitSet;)V", "")]
-		public Instantiation(Dova.JDK.jdk.@internal.org.objectweb.asm.commons.JSRInlinerAdapter arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.commons.JSRInlinerAdapter.Instantiation arg1, Dova.JDK.java.util.BitSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Instantiation(Dova.JDK.jdk.@internal.org.objectweb.asm.commons.JSRInlinerAdapter arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.commons.JSRInlinerAdapter.Instantiation arg1, Dova.JDK.java.util.BitSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

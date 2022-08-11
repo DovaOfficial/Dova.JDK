@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class ECDSAOperations
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ECDSAOperations;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ecOps", "Lsun/security/ec/ECOperations;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "basePoint", "Lsun/security/ec/point/AffinePoint;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDSAOperations", "(Lsun/security/ec/ECOperations;Ljava/security/spec/ECPoint;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toAffinePoint", "(Ljava/security/spec/ECPoint;Lsun/security/util/math/IntegerFieldModuloP;)Lsun/security/ec/point/AffinePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "signDigest", "([B[BLsun/security/ec/ECDSAOperations$Nonce;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "signDigest", "([B[BLsun/security/ec/ECDSAOperations$Seed;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "b2a", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerFieldModuloP;[B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEcOperations", "()Lsun/security/ec/ECOperations;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "basePointMultiply", "([B)Lsun/security/ec/point/AffinePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifySignedDigest", "([B[BLjava/security/spec/ECPoint;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forParameters", "(Ljava/security/spec/ECParameterSpec;)Ljava/util/Optional;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ecOps", "Lsun/security/ec/ECOperations;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "basePoint", "Lsun/security/ec/point/AffinePoint;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ec/ECOperations;Ljava/security/spec/ECPoint;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toAffinePoint", "(Ljava/security/spec/ECPoint;Lsun/security/util/math/IntegerFieldModuloP;)Lsun/security/ec/point/AffinePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "signDigest", "([B[BLsun/security/ec/ECDSAOperations$Nonce;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "signDigest", "([B[BLsun/security/ec/ECDSAOperations$Seed;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "b2a", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerFieldModuloP;[B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEcOperations", "()Lsun/security/ec/ECOperations;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "basePointMultiply", "([B)Lsun/security/ec/point/AffinePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verifySignedDigest", "([B[BLjava/security/spec/ECPoint;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forParameters", "(Ljava/security/spec/ECParameterSpec;)Ljava/util/Optional;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ec/ECOperations;", "private final")]
@@ -78,7 +78,7 @@ public partial class ECDSAOperations
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ec/ECOperations;Ljava/security/spec/ECPoint;)V", "public")]
-	public ECDSAOperations(Dova.JDK.sun.security.ec.ECOperations arg0, Dova.JDK.java.security.spec.ECPoint arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ECDSAOperations(Dova.JDK.sun.security.ec.ECOperations arg0, Dova.JDK.java.security.spec.ECPoint arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -157,9 +157,9 @@ public partial class ECDSAOperations
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ECDSAOperations$Seed;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "seedValue", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Seed", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSeedValue", "()[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "seedValue", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSeedValue", "()[B"));
 		}
 
 		[JniSignatureAttribute("[B", "private final")]
@@ -182,7 +182,7 @@ public partial class ECDSAOperations
 		}
 
 		[JniSignatureAttribute("([B)V", "public")]
-		public Seed(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Seed(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -213,9 +213,9 @@ public partial class ECDSAOperations
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ECDSAOperations$Nonce;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nonceValue", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Nonce", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNonceValue", "()[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nonceValue", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNonceValue", "()[B"));
 		}
 
 		[JniSignatureAttribute("[B", "private final")]
@@ -238,7 +238,7 @@ public partial class ECDSAOperations
 		}
 
 		[JniSignatureAttribute("([B)V", "public")]
-		public Nonce(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Nonce(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

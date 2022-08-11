@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class TransportFactoryImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/TransportFactoryImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "channel", "Ljdk/internal/net/http/websocket/RawChannel;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TransportFactoryImpl", "(Ljdk/internal/net/http/websocket/RawChannel;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTransport", "(Ljdk/internal/net/http/websocket/MessageQueue;Ljdk/internal/net/http/websocket/MessageStreamConsumer;)Ljdk/internal/net/http/websocket/Transport;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "channel", "Ljdk/internal/net/http/websocket/RawChannel;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/net/http/websocket/RawChannel;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTransport", "(Ljdk/internal/net/http/websocket/MessageQueue;Ljdk/internal/net/http/websocket/MessageStreamConsumer;)Ljdk/internal/net/http/websocket/Transport;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/websocket/RawChannel;", "private final")]
@@ -57,7 +57,7 @@ public partial class TransportFactoryImpl
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/net/http/websocket/RawChannel;)V", "public")]
-	public TransportFactoryImpl(Dova.JDK.jdk.@internal.net.http.websocket.RawChannel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TransportFactoryImpl(Dova.JDK.jdk.@internal.net.http.websocket.RawChannel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

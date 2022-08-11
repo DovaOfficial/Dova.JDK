@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,35 +31,35 @@ public partial class Feedback
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jshell/tool/Feedback;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_PATTERN", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRUNCATION_FIELD", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RECORD_SEPARATOR", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VAR_VALUE_ADD_SELECTOR", "Ljdk/internal/jshell/tool/Selector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RECORD_TYPEKIND_SELECTOR", "Ljdk/internal/jshell/tool/Selector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mode", "Ljdk/internal/jshell/tool/Feedback$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "retainedCurrentMode", "Ljdk/internal/jshell/tool/Feedback$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modeMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "retainedMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Feedback", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFormat", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContinuationPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modeCompletions", "()Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modeCompletions", "(Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;)Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldDisplayCommandFluff", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPre", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPost", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getErrorPre", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getErrorPost", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markModesReadOnly", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "restoreEncodedModes", "(Ljdk/internal/jshell/tool/MessageHandler;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFeedback", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;Ljava/util/function/Consumer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncateVarValue", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTruncation", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMode", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;Ljava/util/function/Consumer;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrompt", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_PATTERN", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRUNCATION_FIELD", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RECORD_SEPARATOR", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VAR_VALUE_ADD_SELECTOR", "Ljdk/internal/jshell/tool/Selector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RECORD_TYPEKIND_SELECTOR", "Ljdk/internal/jshell/tool/Selector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mode", "Ljdk/internal/jshell/tool/Feedback$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "retainedCurrentMode", "Ljdk/internal/jshell/tool/Feedback$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modeMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "retainedMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFormat", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContinuationPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modeCompletions", "()Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modeCompletions", "(Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;)Ljdk/internal/jshell/tool/JShellTool$CompletionProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldDisplayCommandFluff", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPre", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPost", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getErrorPre", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getErrorPost", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "markModesReadOnly", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "restoreEncodedModes", "(Ljdk/internal/jshell/tool/MessageHandler;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFeedback", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;Ljava/util/function/Consumer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncateVarValue", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTruncation", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMode", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;Ljava/util/function/Consumer;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrompt", "(Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/regex/Pattern;", "private static final")]
@@ -194,7 +194,7 @@ public partial class Feedback
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public Feedback() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Feedback() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -349,29 +349,29 @@ public partial class Feedback
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jshell/tool/Feedback$Mode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "commandFluff", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "byField", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "readOnly", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prompt", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "continuationPrompt", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mode", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mode", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mode", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Feedback$Mode$Setting;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "set", "(Ljava/lang/String;Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContinuationPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncateVarValue", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCommandFluff", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrompts", "(Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncateValue", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "commandFluff", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "byField", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "readOnly", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prompt", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "continuationPrompt", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Feedback$Mode$Setting;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "format", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector$FormatCase;Ljdk/internal/jshell/tool/Selector$FormatAction;Ljdk/internal/jshell/tool/Selector$FormatWhen;Ljdk/internal/jshell/tool/Selector$FormatResolve;Ljdk/internal/jshell/tool/Selector$FormatUnresolved;Ljdk/internal/jshell/tool/Selector$FormatErrors;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "set", "(Ljava/lang/String;Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContinuationPrompt", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncateVarValue", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCommandFluff", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrompts", "(Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncateValue", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -464,17 +464,17 @@ public partial class Feedback
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/jshell/tool/Feedback$Mode;)V", "")]
-		public Mode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jshell.tool.Feedback.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Mode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jshell.tool.Feedback.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V", "private")]
-		public Mode(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public Mode(Dova.JDK.java.lang.String arg0, bool arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-		public Mode(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+		public Mode(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 		{
 		}
 
@@ -591,12 +591,12 @@ public partial class Feedback
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jshell/tool/Feedback$Mode$Setting;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "format", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selector", "Ljdk/internal/jshell/tool/Selector;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Setting", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "format", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selector", "Ljdk/internal/jshell/tool/Selector;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -633,7 +633,7 @@ public partial class Feedback
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/jshell/tool/Selector;)V", "")]
-			public Setting(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jshell.tool.Selector arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Setting(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jshell.tool.Selector arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -679,46 +679,46 @@ public partial class Feedback
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jshell/tool/Feedback$Setter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "at", "Ljdk/internal/jshell/tool/ArgTokenizer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "messageHandler", "Ljdk/internal/jshell/tool/MessageHandler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valid", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/internal/jshell/tool/Feedback;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Setter", "(Ljdk/internal/jshell/tool/Feedback;Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFormat", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFormat", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hard", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fluffmsg", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkOptionsAndRemainingInput", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fluff", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showFluff", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hardmsg", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "restoreEncodedModes", "(Ljava/lang/String;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFeedback", "(Ljava/util/function/Consumer;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTruncation", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMode", "(Ljava/util/function/Consumer;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodedModeIterator", "(Ljava/lang/String;)Ljava/util/Iterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildMode", "(Ljava/util/Iterator;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showModeSettings", "(Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showModeSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showPromptSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showFormatSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showTruncationSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextMode", "()Ljdk/internal/jshell/tool/Feedback$Mode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextFormat", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "errorat", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toIdentifier", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installFormat", "(Ljdk/internal/jshell/tool/Feedback$Mode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showFeedbackSetting", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showFeedbackModes", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toModeIdentifier", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseSelector", "(Ljava/lang/String;)Ljdk/internal/jshell/tool/Selector;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextModeIdentifier", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toStringLiteral", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "searchForMode", "(Ljava/lang/String;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "searchForMode", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrompt", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "at", "Ljdk/internal/jshell/tool/ArgTokenizer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "messageHandler", "Ljdk/internal/jshell/tool/MessageHandler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valid", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/internal/jshell/tool/Feedback;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/jshell/tool/Feedback;Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFormat", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFormat", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hard", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fluffmsg", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkOptionsAndRemainingInput", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fluff", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showFluff", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hardmsg", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "restoreEncodedModes", "(Ljava/lang/String;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFeedback", "(Ljava/util/function/Consumer;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTruncation", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMode", "(Ljava/util/function/Consumer;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodedModeIterator", "(Ljava/lang/String;)Ljava/util/Iterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildMode", "(Ljava/util/Iterator;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showModeSettings", "(Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showModeSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showPromptSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showFormatSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showTruncationSettings", "(Ljdk/internal/jshell/tool/Feedback$Mode;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextMode", "()Ljdk/internal/jshell/tool/Feedback$Mode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextFormat", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "errorat", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toIdentifier", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installFormat", "(Ljdk/internal/jshell/tool/Feedback$Mode;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showFeedbackSetting", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showFeedbackModes", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toModeIdentifier", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseSelector", "(Ljava/lang/String;)Ljdk/internal/jshell/tool/Selector;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextModeIdentifier", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toStringLiteral", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "searchForMode", "(Ljava/lang/String;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "searchForMode", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/jshell/tool/Feedback$Mode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrompt", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/jshell/tool/ArgTokenizer;", "private final")]
@@ -797,7 +797,7 @@ public partial class Feedback
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/jshell/tool/Feedback;Ljdk/internal/jshell/tool/MessageHandler;Ljdk/internal/jshell/tool/ArgTokenizer;)V", "")]
-		public Setter(Dova.JDK.jdk.@internal.jshell.tool.Feedback arg0, Dova.JDK.jdk.@internal.jshell.tool.MessageHandler arg1, Dova.JDK.jdk.@internal.jshell.tool.ArgTokenizer arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Setter(Dova.JDK.jdk.@internal.jshell.tool.Feedback arg0, Dova.JDK.jdk.@internal.jshell.tool.MessageHandler arg1, Dova.JDK.jdk.@internal.jshell.tool.ArgTokenizer arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

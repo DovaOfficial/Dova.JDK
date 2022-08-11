@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class AppImageBundler
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/AppImageBundler;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dependentTask", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "paramsValidator", "Ljdk/jpackage/internal/AppImageBundler$ParamsValidator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appImageSupplier", "Ljava/util/function/Function;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AppImageBundler", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "(Ljava/util/Map;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "execute", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDefault", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getID", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createRoot", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createAppBundle", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBundleType", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supported", "(Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDependentTask", "(Z)Ljdk/jpackage/internal/AppImageBundler;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAppImageSupplier", "(Ljava/util/function/Function;)Ljdk/jpackage/internal/AppImageBundler;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParamsValidator", "(Ljdk/jpackage/internal/AppImageBundler$ParamsValidator;)Ljdk/jpackage/internal/AppImageBundler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dependentTask", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "paramsValidator", "Ljdk/jpackage/internal/AppImageBundler$ParamsValidator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appImageSupplier", "Ljava/util/function/Function;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validate", "(Ljava/util/Map;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "execute", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDefault", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getID", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createRoot", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createAppBundle", "(Ljava/util/Map;Ljava/nio/file/Path;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBundleType", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "supported", "(Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDependentTask", "(Z)Ljdk/jpackage/internal/AppImageBundler;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAppImageSupplier", "(Ljava/util/function/Function;)Ljdk/jpackage/internal/AppImageBundler;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParamsValidator", "(Ljdk/jpackage/internal/AppImageBundler$ParamsValidator;)Ljdk/jpackage/internal/AppImageBundler;"));
 	}
 
 	[JniSignatureAttribute("Z", "private")]
@@ -97,7 +97,7 @@ public partial class AppImageBundler
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public AppImageBundler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AppImageBundler() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -202,7 +202,7 @@ public partial class AppImageBundler
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/AppImageBundler$ParamsValidator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "(Ljava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validate", "(Ljava/util/Map;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Map;)V", "public abstract")]

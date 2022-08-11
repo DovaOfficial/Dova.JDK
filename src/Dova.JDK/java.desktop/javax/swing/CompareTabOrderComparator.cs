@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,10 +32,10 @@ public partial class CompareTabOrderComparator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/CompareTabOrderComparator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultFocusManager", "Ljavax/swing/DefaultFocusManager;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompareTabOrderComparator", "(Ljavax/swing/DefaultFocusManager;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compare", "(Ljava/awt/Component;Ljava/awt/Component;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultFocusManager", "Ljavax/swing/DefaultFocusManager;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/DefaultFocusManager;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compare", "(Ljava/awt/Component;Ljava/awt/Component;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/DefaultFocusManager;", "private final")]
@@ -58,7 +58,7 @@ public partial class CompareTabOrderComparator
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/DefaultFocusManager;)V", "")]
-	public CompareTabOrderComparator(Dova.JDK.javax.swing.DefaultFocusManager arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CompareTabOrderComparator(Dova.JDK.javax.swing.DefaultFocusManager arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

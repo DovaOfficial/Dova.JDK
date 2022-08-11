@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,26 +31,26 @@ public partial class ProviderList
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/ProviderList;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROV_PROP_PREFIX", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROV_PROP_PREFIX_LEN", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPI_MECH_FACTORY_TYPE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_MECH_OID", "Lorg/ietf/jgss/Oid;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "preferences", "Ljava/util/ArrayList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "factories", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mechs", "Ljava/util/HashSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caller", "Lsun/security/jgss/GSSCaller;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ProviderList", "(Lsun/security/jgss/GSSCaller;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createGSSException", "(Ljava/security/Provider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)Lorg/ietf/jgss/GSSException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMechFactoryImpl", "(Ljava/security/Provider;Ljava/lang/String;Lorg/ietf/jgss/Oid;Lsun/security/jgss/GSSCaller;)Lsun/security/jgss/spi/MechanismFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addAllMechsFromProvider", "(Ljava/security/Provider;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOidFromMechFactoryProperty", "(Ljava/lang/String;)Lorg/ietf/jgss/Oid;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMechFactoryProperty", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMechs", "()[Lorg/ietf/jgss/Oid;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMechFactory", "(Lsun/security/jgss/ProviderList$PreferencesEntry;Lorg/ietf/jgss/Oid;)Lsun/security/jgss/spi/MechanismFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMechFactory", "(Lorg/ietf/jgss/Oid;Ljava/security/Provider;)Lsun/security/jgss/spi/MechanismFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMechFactory", "(Lorg/ietf/jgss/Oid;)Lsun/security/jgss/spi/MechanismFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addProviderAtFront", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addProviderAtEnd", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROV_PROP_PREFIX", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROV_PROP_PREFIX_LEN", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPI_MECH_FACTORY_TYPE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_MECH_OID", "Lorg/ietf/jgss/Oid;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "preferences", "Ljava/util/ArrayList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "factories", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mechs", "Ljava/util/HashSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caller", "Lsun/security/jgss/GSSCaller;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/jgss/GSSCaller;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createGSSException", "(Ljava/security/Provider;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Exception;)Lorg/ietf/jgss/GSSException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMechFactoryImpl", "(Ljava/security/Provider;Ljava/lang/String;Lorg/ietf/jgss/Oid;Lsun/security/jgss/GSSCaller;)Lsun/security/jgss/spi/MechanismFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addAllMechsFromProvider", "(Ljava/security/Provider;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOidFromMechFactoryProperty", "(Ljava/lang/String;)Lorg/ietf/jgss/Oid;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMechFactoryProperty", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMechs", "()[Lorg/ietf/jgss/Oid;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMechFactory", "(Lsun/security/jgss/ProviderList$PreferencesEntry;Lorg/ietf/jgss/Oid;)Lsun/security/jgss/spi/MechanismFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMechFactory", "(Lorg/ietf/jgss/Oid;Ljava/security/Provider;)Lsun/security/jgss/spi/MechanismFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMechFactory", "(Lorg/ietf/jgss/Oid;)Lsun/security/jgss/spi/MechanismFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addProviderAtFront", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addProviderAtEnd", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -171,7 +171,7 @@ public partial class ProviderList
 	}
 
 	[JniSignatureAttribute("(Lsun/security/jgss/GSSCaller;Z)V", "public")]
-	public ProviderList(Dova.JDK.sun.security.jgss.GSSCaller arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ProviderList(Dova.JDK.sun.security.jgss.GSSCaller arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -269,16 +269,16 @@ public partial class ProviderList
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/ProviderList$PreferencesEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/security/Provider;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oid", "Lorg/ietf/jgss/Oid;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PreferencesEntry", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implies", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProvider", "()Ljava/security/Provider;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "impliesMechanism", "(Lorg/ietf/jgss/Oid;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOid", "()Lorg/ietf/jgss/Oid;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/security/Provider;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oid", "Lorg/ietf/jgss/Oid;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implies", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProvider", "()Ljava/security/Provider;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "impliesMechanism", "(Lorg/ietf/jgss/Oid;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOid", "()Lorg/ietf/jgss/Oid;"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/Provider;", "private")]
@@ -315,7 +315,7 @@ public partial class ProviderList
 		}
 
 		[JniSignatureAttribute("(Ljava/security/Provider;Lorg/ietf/jgss/Oid;)V", "")]
-		public PreferencesEntry(Dova.JDK.java.security.Provider arg0, Dova.JDK.org.ietf.jgss.Oid arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public PreferencesEntry(Dova.JDK.java.security.Provider arg0, Dova.JDK.org.ietf.jgss.Oid arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

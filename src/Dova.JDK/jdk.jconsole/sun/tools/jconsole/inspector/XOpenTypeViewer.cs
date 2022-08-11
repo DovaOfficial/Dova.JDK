@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,25 +32,25 @@ public partial class XOpenTypeViewer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prev", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "incr", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decr", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabularPrev", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabularNext", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compositeLabel", "Ljavax/swing/JLabel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabularLabel", "Ljavax/swing/JLabel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "container", "Ljavax/swing/JScrollPane;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "current", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listener", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeDataListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "compositeNavigationSingle", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tabularNavigationSingle", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "editor", "Ljavax/swing/table/TableCellEditor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XOpenTypeViewer", "(Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setupDisplay", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadOpenType", "(Ljava/lang/Object;)Ljava/awt/Component;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOpenType", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isViewableValue", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prev", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "incr", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decr", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabularPrev", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabularNext", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compositeLabel", "Ljavax/swing/JLabel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabularLabel", "Ljavax/swing/JLabel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "container", "Ljavax/swing/JScrollPane;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "current", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "listener", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeDataListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "compositeNavigationSingle", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "tabularNavigationSingle", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "editor", "Ljavax/swing/table/TableCellEditor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setupDisplay", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadOpenType", "(Ljava/lang/Object;)Ljava/awt/Component;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOpenType", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isViewableValue", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JButton;", "")]
@@ -241,7 +241,7 @@ public partial class XOpenTypeViewer
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;)V", "private")]
-	public XOpenTypeViewer(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public XOpenTypeViewer(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -296,10 +296,10 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeDataListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/tools/jconsole/inspector/XOpenTypeViewer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XOpenTypeDataListener", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedViewedOpenType", "()Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/tools/jconsole/inspector/XOpenTypeViewer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedViewedOpenType", "()Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/inspector/XOpenTypeViewer;", "final")]
@@ -322,7 +322,7 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V", "")]
-		public XOpenTypeDataListener(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public XOpenTypeDataListener(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -359,16 +359,16 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XCompositeData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "columnNames", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composite", "Ljavax/management/openmbean/CompositeData;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XCompositeData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/CompositeData;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XCompositeData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XCompositeData", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "load", "(Ljavax/management/openmbean/CompositeData;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadCompositeData", "(Ljavax/management/openmbean/CompositeData;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "formatKey", "(Ljava/lang/String;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "columnNames", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composite", "Ljavax/management/openmbean/CompositeData;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/CompositeData;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "load", "(Ljavax/management/openmbean/CompositeData;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadCompositeData", "(Ljavax/management/openmbean/CompositeData;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "formatKey", "(Ljava/lang/String;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/String;", "protected final")]
@@ -405,17 +405,17 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/CompositeData;)V", "public")]
-		public XCompositeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.CompositeData arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public XCompositeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.CompositeData arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V", "public")]
-		public XCompositeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+		public XCompositeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public XCompositeData() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2]))
+		public XCompositeData() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2]))
 		{
 		}
 
@@ -471,24 +471,24 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "col1Width", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "col2Width", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "init", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalFont", "Ljava/awt/Font;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "boldFont", "Ljava/awt/Font;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XOpenTypeData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initTable", "([Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emptyTable", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getViewedParent", "()Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isClickableElement", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateColumnWidth", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getToolTip", "(II)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCellRenderer", "(II)Ljavax/swing/table/TableCellRenderer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepareRenderer", "(Ljavax/swing/table/TableCellRenderer;II)Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValueAt", "(Ljava/lang/Object;II)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "col1Width", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "col2Width", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "init", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalFont", "Ljava/awt/Font;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "boldFont", "Ljava/awt/Font;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initTable", "([Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emptyTable", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getViewedParent", "()Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isClickableElement", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateColumnWidth", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getToolTip", "(II)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCellRenderer", "(II)Ljavax/swing/table/TableCellRenderer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepareRenderer", "(Ljavax/swing/table/TableCellRenderer;II)Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValueAt", "(Ljava/lang/Object;II)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;", "")]
@@ -581,7 +581,7 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;)V", "protected")]
-		public XOpenTypeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public XOpenTypeData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -677,23 +677,23 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XTabularData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabular", "Ljavax/management/openmbean/TabularData;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljavax/management/openmbean/TabularType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elements", "[Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalFont", "Ljava/awt/Font;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "italicFont", "Ljava/awt/Font;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XTabularData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/TabularData;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedElementIndex", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canIncrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canDecrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "incrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "accessFirstElement", "(Ljavax/management/openmbean/TabularData;)Ljavax/management/openmbean/CompositeData;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElementCount", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabular", "Ljavax/management/openmbean/TabularData;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljavax/management/openmbean/TabularType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elements", "[Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalFont", "Ljava/awt/Font;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "italicFont", "Ljava/awt/Font;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/TabularData;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedElementIndex", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canIncrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canDecrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "incrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "accessFirstElement", "(Ljavax/management/openmbean/TabularData;)Ljavax/management/openmbean/CompositeData;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElementCount", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljavax/management/openmbean/TabularData;", "final")]
@@ -800,7 +800,7 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/TabularData;)V", "public")]
-		public XTabularData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.TabularData arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public XTabularData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.TabularData arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -885,30 +885,30 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$XArrayData;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dimension", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elemType", "Ljavax/management/openmbean/OpenType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "val", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isCompositeType", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isTabularType", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elements", "[Ljavax/management/openmbean/CompositeData;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arrayColumns", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalFont", "Ljava/awt/Font;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "boldFont", "Ljava/awt/Font;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XArrayData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/ArrayType;Ljava/lang/Object;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XArrayData", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;ILjavax/management/openmbean/OpenType;Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "load", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedElementIndex", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canIncrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canDecrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "incrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadArray", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElementCount", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dimension", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elemType", "Ljavax/management/openmbean/OpenType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "val", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isCompositeType", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isTabularType", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elements", "[Ljavax/management/openmbean/CompositeData;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arrayColumns", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalFont", "Ljava/awt/Font;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "boldFont", "Ljava/awt/Font;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/ArrayType;Ljava/lang/Object;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;ILjavax/management/openmbean/OpenType;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "load", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedElementIndex", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canIncrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "viewed", "(Lsun/tools/jconsole/inspector/XOpenTypeViewer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canDecrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "incrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "renderKey", "(Ljava/lang/String;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadArray", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElementCount", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -1071,12 +1071,12 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;Ljavax/management/openmbean/ArrayType;Ljava/lang/Object;)V", "")]
-		public XArrayData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Object arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public XArrayData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Object arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/tools/jconsole/inspector/XOpenTypeViewer$XOpenTypeData;ILjavax/management/openmbean/OpenType;Ljava/lang/Object;)V", "")]
-		public XArrayData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, int arg1, Dova.JDK.javax.management.openmbean.OpenType arg2, Dova.JDK.java.lang.Object arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public XArrayData(Dova.JDK.sun.tools.jconsole.inspector.XOpenTypeViewer.XOpenTypeData arg0, int arg1, Dova.JDK.javax.management.openmbean.OpenType arg2, Dova.JDK.java.lang.Object arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -1204,10 +1204,10 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$TabularDataComparator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "indexNames", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TabularDataComparator", "(Ljavax/management/openmbean/TabularType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compare", "(Ljavax/management/openmbean/CompositeData;Ljavax/management/openmbean/CompositeData;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "indexNames", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/management/openmbean/TabularType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compare", "(Ljavax/management/openmbean/CompositeData;Ljavax/management/openmbean/CompositeData;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compare", "(Ljava/lang/Object;Ljava/lang/Object;)I"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -1230,7 +1230,7 @@ public partial class XOpenTypeViewer
 		}
 
 		[JniSignatureAttribute("(Ljavax/management/openmbean/TabularType;)V", "public")]
-		public TabularDataComparator(Dova.JDK.javax.management.openmbean.TabularType arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TabularDataComparator(Dova.JDK.javax.management.openmbean.TabularType arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1266,12 +1266,12 @@ public partial class XOpenTypeViewer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XOpenTypeViewer$Navigatable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSelectedElementIndex", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canIncrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canDecrement", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "incrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decrElement", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElementCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSelectedElementIndex", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canIncrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canDecrement", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "incrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decrElement", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElementCount", "()I"));
 		}
 
 		[JniSignatureAttribute("()I", "public abstract")]

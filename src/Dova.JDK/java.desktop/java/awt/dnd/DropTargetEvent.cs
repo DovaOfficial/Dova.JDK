@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class DropTargetEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/dnd/DropTargetEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Ljava/awt/dnd/DropTargetContext;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DropTargetEvent", "(Ljava/awt/dnd/DropTargetContext;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDropTargetContext", "()Ljava/awt/dnd/DropTargetContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Ljava/awt/dnd/DropTargetContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/dnd/DropTargetContext;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDropTargetContext", "()Ljava/awt/dnd/DropTargetContext;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -71,7 +71,7 @@ public partial class DropTargetEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/dnd/DropTargetContext;)V", "public")]
-	public DropTargetEvent(Dova.JDK.java.awt.dnd.DropTargetContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DropTargetEvent(Dova.JDK.java.awt.dnd.DropTargetContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

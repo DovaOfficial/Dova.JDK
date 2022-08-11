@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,18 +30,18 @@ public partial class BufferedBufImgOps
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/pipe/BufferedBufImgOps;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BufferedBufImgOps", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enableConvolveOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/ConvolveOp;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enableRescaleOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/RescaleOp;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enableLookupOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/LookupOp;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "disableConvolveOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "disableRescaleOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "disableLookupOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enableBufImgOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImageOp;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "disableBufImgOp", "(Lsun/java2d/pipe/RenderQueue;Ljava/awt/image/BufferedImageOp;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isConvolveOpValid", "(Ljava/awt/image/ConvolveOp;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isRescaleOpValid", "(Ljava/awt/image/RescaleOp;Ljava/awt/image/BufferedImage;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isLookupOpValid", "(Ljava/awt/image/LookupOp;Ljava/awt/image/BufferedImage;)Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enableConvolveOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/ConvolveOp;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enableRescaleOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/RescaleOp;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enableLookupOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/LookupOp;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "disableConvolveOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "disableRescaleOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "disableLookupOp", "(Lsun/java2d/pipe/RenderQueue;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enableBufImgOp", "(Lsun/java2d/pipe/RenderQueue;Lsun/java2d/SurfaceData;Ljava/awt/image/BufferedImage;Ljava/awt/image/BufferedImageOp;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "disableBufImgOp", "(Lsun/java2d/pipe/RenderQueue;Ljava/awt/image/BufferedImageOp;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isConvolveOpValid", "(Ljava/awt/image/ConvolveOp;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isRescaleOpValid", "(Ljava/awt/image/RescaleOp;Ljava/awt/image/BufferedImage;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isLookupOpValid", "(Ljava/awt/image/LookupOp;Ljava/awt/image/BufferedImage;)Z"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -50,7 +50,7 @@ public partial class BufferedBufImgOps
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BufferedBufImgOps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BufferedBufImgOps() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

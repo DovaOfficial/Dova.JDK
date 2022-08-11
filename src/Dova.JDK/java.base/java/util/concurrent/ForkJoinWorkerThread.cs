@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class ForkJoinWorkerThread
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/ForkJoinWorkerThread;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pool", "Ljava/util/concurrent/ForkJoinPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "workQueue", "Ljava/util/concurrent/ForkJoinPool$WorkQueue;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ForkJoinWorkerThread", "(Ljava/util/concurrent/ForkJoinPool;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ForkJoinWorkerThread", "(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ForkJoinWorkerThread", "(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;ZZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPool", "()Ljava/util/concurrent/ForkJoinPool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPoolIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onStart", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onTermination", "(Ljava/lang/Throwable;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pool", "Ljava/util/concurrent/ForkJoinPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "workQueue", "Ljava/util/concurrent/ForkJoinPool$WorkQueue;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/ForkJoinPool;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;ZZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPool", "()Ljava/util/concurrent/ForkJoinPool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPoolIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onStart", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onTermination", "(Ljava/lang/Throwable;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/ForkJoinPool;", "final")]
@@ -77,17 +77,17 @@ public partial class ForkJoinWorkerThread
 	}
 
 	[JniSignatureAttribute("(Ljava/util/concurrent/ForkJoinPool;)V", "protected")]
-	public ForkJoinWorkerThread(Dova.JDK.java.util.concurrent.ForkJoinPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ForkJoinWorkerThread(Dova.JDK.java.util.concurrent.ForkJoinPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;)V", "")]
-	public ForkJoinWorkerThread(Dova.JDK.java.lang.ThreadGroup arg0, Dova.JDK.java.util.concurrent.ForkJoinPool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ForkJoinWorkerThread(Dova.JDK.java.lang.ThreadGroup arg0, Dova.JDK.java.util.concurrent.ForkJoinPool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ThreadGroup;Ljava/util/concurrent/ForkJoinPool;ZZ)V", "")]
-	public ForkJoinWorkerThread(Dova.JDK.java.lang.ThreadGroup arg0, Dova.JDK.java.util.concurrent.ForkJoinPool arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
+	public ForkJoinWorkerThread(Dova.JDK.java.lang.ThreadGroup arg0, Dova.JDK.java.util.concurrent.ForkJoinPool arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -142,10 +142,10 @@ public partial class ForkJoinWorkerThread
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/concurrent/ForkJoinWorkerThread$InnocuousForkJoinWorkerThread;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "innocuousThreadGroup", "Ljava/lang/ThreadGroup;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InnocuousForkJoinWorkerThread", "(Ljava/util/concurrent/ForkJoinPool;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "innocuousThreadGroup", "Ljava/lang/ThreadGroup;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/ForkJoinPool;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setContextClassLoader", "(Ljava/lang/ClassLoader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setUncaughtExceptionHandler", "(Ljava/lang/Thread$UncaughtExceptionHandler;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/ThreadGroup;", "private static final")]
@@ -168,7 +168,7 @@ public partial class ForkJoinWorkerThread
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/ForkJoinPool;)V", "")]
-		public InnocuousForkJoinWorkerThread(Dova.JDK.java.util.concurrent.ForkJoinPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public InnocuousForkJoinWorkerThread(Dova.JDK.java.util.concurrent.ForkJoinPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,13 +32,13 @@ public partial class AbstractScope
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/generics/scope/AbstractScope;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recvr", "Ljava/lang/reflect/GenericDeclaration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enclosingScope", "Lsun/reflect/generics/scope/Scope;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractScope", "(Ljava/lang/reflect/GenericDeclaration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lookup", "(Ljava/lang/String;)Ljava/lang/reflect/TypeVariable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRecvr", "()Ljava/lang/reflect/GenericDeclaration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeEnclosingScope", "()Lsun/reflect/generics/scope/Scope;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEnclosingScope", "()Lsun/reflect/generics/scope/Scope;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recvr", "Ljava/lang/reflect/GenericDeclaration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enclosingScope", "Lsun/reflect/generics/scope/Scope;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/GenericDeclaration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lookup", "(Ljava/lang/String;)Ljava/lang/reflect/TypeVariable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRecvr", "()Ljava/lang/reflect/GenericDeclaration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeEnclosingScope", "()Lsun/reflect/generics/scope/Scope;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEnclosingScope", "()Lsun/reflect/generics/scope/Scope;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/reflect/GenericDeclaration;", "private final")]
@@ -75,7 +75,7 @@ public partial class AbstractScope
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/reflect/GenericDeclaration;)V", "protected")]
-	public AbstractScope(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractScope(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

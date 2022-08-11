@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial class HKSCS
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/cs/HKSCS;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HKSCS", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -38,7 +38,7 @@ public partial class HKSCS
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HKSCS() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public HKSCS() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -61,23 +61,23 @@ public partial class HKSCS
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/cs/HKSCS$Encoder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "big5Enc", "Lsun/nio/cs/DoubleByte$Encoder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c2bBmp", "[[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c2bSupp", "[[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "repl", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "C2B_UNMAPPABLE", "[C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Encoder", "(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Encoder;[[C[[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeFromUTF16", "([BII[B)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "([CII[B)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canEncode", "(C)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeArrayLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeBufferLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implReplaceWith", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initc2b", "([[C[Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeChar", "(C)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeBig5", "(C)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeSupp", "(I)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "big5Enc", "Lsun/nio/cs/DoubleByte$Encoder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c2bBmp", "[[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c2bSupp", "[[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "repl", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "C2B_UNMAPPABLE", "[C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Encoder;[[C[[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeFromUTF16", "([BII[B)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "([CII[B)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canEncode", "(C)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeArrayLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeBufferLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeLoop", "(Ljava/nio/CharBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implReplaceWith", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initc2b", "([[C[Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeChar", "(C)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeBig5", "(C)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeSupp", "(I)I"));
 		}
 
 		[JniSignatureAttribute("Lsun/nio/cs/DoubleByte$Encoder;", "private final")]
@@ -156,7 +156,7 @@ public partial class HKSCS
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Encoder;[[C[[C)V", "protected")]
-		public Encoder(Dova.JDK.java.nio.charset.Charset arg0, Dova.JDK.sun.nio.cs.DoubleByte.Encoder arg1, JavaArray<JavaArray<char>> arg2, JavaArray<JavaArray<char>> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Encoder(Dova.JDK.java.nio.charset.Charset arg0, Dova.JDK.sun.nio.cs.DoubleByte.Encoder arg1, JavaArray<JavaArray<char>> arg2, JavaArray<JavaArray<char>> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -255,21 +255,21 @@ public partial class HKSCS
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/cs/HKSCS$Decoder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "b2Min", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "b2Max", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "b2cBmp", "[[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "b2cSupp", "[[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "big5Dec", "Lsun/nio/cs/DoubleByte$Decoder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Decoder", "(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Decoder;[[C[[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "([BII[C)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initb2c", "([[C[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeArrayLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeBufferLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeSingle", "(I)C"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeDouble", "(II)C"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeDoubleEx", "(II)C"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeBig5", "(II)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "b2Min", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "b2Max", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "b2cBmp", "[[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "b2cSupp", "[[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "big5Dec", "Lsun/nio/cs/DoubleByte$Decoder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Decoder;[[C[[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "([BII[C)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initb2c", "([[C[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeArrayLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeBufferLoop", "(Ljava/nio/ByteBuffer;Ljava/nio/CharBuffer;)Ljava/nio/charset/CoderResult;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeSingle", "(I)C"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeDouble", "(II)C"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeDoubleEx", "(II)C"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeBig5", "(II)C"));
 		}
 
 		[JniSignatureAttribute("I", "static")]
@@ -348,7 +348,7 @@ public partial class HKSCS
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/charset/Charset;Lsun/nio/cs/DoubleByte$Decoder;[[C[[C)V", "protected")]
-		public Decoder(Dova.JDK.java.nio.charset.Charset arg0, Dova.JDK.sun.nio.cs.DoubleByte.Decoder arg1, JavaArray<JavaArray<char>> arg2, JavaArray<JavaArray<char>> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Decoder(Dova.JDK.java.nio.charset.Charset arg0, Dova.JDK.sun.nio.cs.DoubleByte.Decoder arg1, JavaArray<JavaArray<char>> arg2, JavaArray<JavaArray<char>> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

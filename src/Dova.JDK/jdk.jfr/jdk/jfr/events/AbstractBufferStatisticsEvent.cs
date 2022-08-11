@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class AbstractBufferStatisticsEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/events/AbstractBufferStatisticsEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "totalCapacity", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "memoryUsed", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractBufferStatisticsEvent", "(Ljdk/internal/misc/VM$BufferPool;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findPoolByName", "(Ljava/lang/String;)Ljdk/internal/misc/VM$BufferPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "totalCapacity", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "memoryUsed", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/misc/VM$BufferPool;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findPoolByName", "(Ljava/lang/String;)Ljdk/internal/misc/VM$BufferPool;"));
 	}
 
 	[JniSignatureAttribute("J", "final")]
@@ -86,7 +86,7 @@ public partial class AbstractBufferStatisticsEvent
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/misc/VM$BufferPool;)V", "protected")]
-	public AbstractBufferStatisticsEvent(Dova.JDK.jdk.@internal.misc.VM.BufferPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractBufferStatisticsEvent(Dova.JDK.jdk.@internal.misc.VM.BufferPool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

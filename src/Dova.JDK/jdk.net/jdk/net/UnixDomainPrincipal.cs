@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class UnixDomainPrincipal
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/net/UnixDomainPrincipal;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "user", "Ljava/nio/file/attribute/UserPrincipal;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "group", "Ljava/nio/file/attribute/GroupPrincipal;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnixDomainPrincipal", "(Ljava/nio/file/attribute/UserPrincipal;Ljava/nio/file/attribute/GroupPrincipal;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "group", "()Ljava/nio/file/attribute/GroupPrincipal;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "user", "()Ljava/nio/file/attribute/UserPrincipal;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "user", "Ljava/nio/file/attribute/UserPrincipal;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "group", "Ljava/nio/file/attribute/GroupPrincipal;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/file/attribute/UserPrincipal;Ljava/nio/file/attribute/GroupPrincipal;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "group", "()Ljava/nio/file/attribute/GroupPrincipal;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "user", "()Ljava/nio/file/attribute/UserPrincipal;"));
 	}
 
 	[JniSignatureAttribute("Ljava/nio/file/attribute/UserPrincipal;", "private final")]
@@ -75,7 +75,7 @@ public partial class UnixDomainPrincipal
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/file/attribute/UserPrincipal;Ljava/nio/file/attribute/GroupPrincipal;)V", "public")]
-	public UnixDomainPrincipal(Dova.JDK.java.nio.file.attribute.UserPrincipal user, Dova.JDK.java.nio.file.attribute.GroupPrincipal group) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], user, group))
+	public UnixDomainPrincipal(Dova.JDK.java.nio.file.attribute.UserPrincipal user, Dova.JDK.java.nio.file.attribute.GroupPrincipal group) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], user, group))
 	{
 	}
 

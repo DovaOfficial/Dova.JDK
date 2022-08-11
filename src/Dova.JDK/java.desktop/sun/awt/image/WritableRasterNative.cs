@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial class WritableRasterNative
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/WritableRasterNative;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WritableRasterNative", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createNativeRaster", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;)Lsun/awt/image/WritableRasterNative;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createNativeRaster", "(Ljava/awt/image/ColorModel;Lsun/java2d/SurfaceData;II)Lsun/awt/image/WritableRasterNative;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createNativeRaster", "(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;)Lsun/awt/image/WritableRasterNative;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createNativeRaster", "(Ljava/awt/image/ColorModel;Lsun/java2d/SurfaceData;II)Lsun/awt/image/WritableRasterNative;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -41,7 +41,7 @@ public partial class WritableRasterNative
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/image/SampleModel;Ljava/awt/image/DataBuffer;)V", "protected")]
-	public WritableRasterNative(Dova.JDK.java.awt.image.SampleModel arg0, Dova.JDK.java.awt.image.DataBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public WritableRasterNative(Dova.JDK.java.awt.image.SampleModel arg0, Dova.JDK.java.awt.image.DataBuffer arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

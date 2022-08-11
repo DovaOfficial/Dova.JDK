@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,23 +32,23 @@ public partial class AuthenticationFilter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/AuthenticationFilter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exchange", "Ljdk/internal/net/http/MultiExchange;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "encoder", "Ljava/util/Base64$Encoder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_RETRY_LIMIT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "retry_limit", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNAUTHORIZED", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROXY_UNAUTHORIZED", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BASIC_DUMMY", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "caches", "Ljava/util/WeakHashMap;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AuthenticationFilter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "(Ljava/net/URI;Z)Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toURL", "(Ljava/net/URI;Ljava/lang/String;Z)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCache", "(Ljdk/internal/net/http/MultiExchange;)Ljdk/internal/net/http/AuthenticationFilter$Cache;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "response", "(Ljdk/internal/net/http/Response;)Ljdk/internal/net/http/HttpRequestImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addBasicCredentials", "(Ljdk/internal/net/http/HttpRequestImpl;ZLjava/net/PasswordAuthentication;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProxyURI", "(Ljdk/internal/net/http/HttpRequestImpl;)Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCredentials", "(Ljava/lang/String;ZLjdk/internal/net/http/HttpRequestImpl;)Ljava/net/PasswordAuthentication;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "request", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/MultiExchange;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exchange", "Ljdk/internal/net/http/MultiExchange;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "encoder", "Ljava/util/Base64$Encoder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_RETRY_LIMIT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "retry_limit", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNAUTHORIZED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROXY_UNAUTHORIZED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BASIC_DUMMY", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "caches", "Ljava/util/WeakHashMap;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "(Ljava/net/URI;Z)Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toURL", "(Ljava/net/URI;Ljava/lang/String;Z)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCache", "(Ljdk/internal/net/http/MultiExchange;)Ljdk/internal/net/http/AuthenticationFilter$Cache;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "response", "(Ljdk/internal/net/http/Response;)Ljdk/internal/net/http/HttpRequestImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addBasicCredentials", "(Ljdk/internal/net/http/HttpRequestImpl;ZLjava/net/PasswordAuthentication;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProxyURI", "(Ljdk/internal/net/http/HttpRequestImpl;)Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCredentials", "(Ljava/lang/String;ZLjdk/internal/net/http/HttpRequestImpl;)Ljava/net/PasswordAuthentication;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "request", "(Ljdk/internal/net/http/HttpRequestImpl;Ljdk/internal/net/http/MultiExchange;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/MultiExchange;", "volatile")]
@@ -169,7 +169,7 @@ public partial class AuthenticationFilter
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public AuthenticationFilter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AuthenticationFilter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -246,13 +246,13 @@ public partial class AuthenticationFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/AuthenticationFilter$Cache;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entries", "Ljava/util/LinkedList;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Cache", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Ljava/lang/String;Ljava/net/URI;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Ljava/net/URI;Z)Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "store", "(Ljava/lang/String;Ljava/net/URI;ZLjava/net/PasswordAuthentication;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "equalsIgnoreCase", "(Ljava/lang/String;Ljava/lang/String;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entries", "Ljava/util/LinkedList;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Ljava/lang/String;Ljava/net/URI;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Ljava/net/URI;Z)Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "store", "(Ljava/lang/String;Ljava/net/URI;ZLjava/net/PasswordAuthentication;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "equalsIgnoreCase", "(Ljava/lang/String;Ljava/lang/String;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/LinkedList;", "final")]
@@ -275,7 +275,7 @@ public partial class AuthenticationFilter
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Cache() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Cache() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -331,16 +331,16 @@ public partial class AuthenticationFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fromcache", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheme", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "retries", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "credentials", "Ljava/net/PasswordAuthentication;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheEntry", "Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isUTF8", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AuthInfo", "(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AuthInfo", "(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "retryWithCredentials", "(Ljava/net/PasswordAuthentication;Z)Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fromcache", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheme", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "retries", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "credentials", "Ljava/net/PasswordAuthentication;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheEntry", "Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isUTF8", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "retryWithCredentials", "(Ljava/net/PasswordAuthentication;Z)Ljdk/internal/net/http/AuthenticationFilter$AuthInfo;"));
 		}
 
 		[JniSignatureAttribute("Z", "final")]
@@ -447,12 +447,12 @@ public partial class AuthenticationFilter
 		}
 
 		[JniSignatureAttribute("(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Z)V", "")]
-		public AuthInfo(bool arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.net.PasswordAuthentication arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public AuthInfo(bool arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.net.PasswordAuthentication arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(ZLjava/lang/String;Ljava/net/PasswordAuthentication;Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;Z)V", "")]
-		public AuthInfo(bool arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.net.PasswordAuthentication arg2, Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.CacheEntry arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+		public AuthInfo(bool arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.net.PasswordAuthentication arg2, Dova.JDK.jdk.@internal.net.http.AuthenticationFilter.CacheEntry arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -483,14 +483,14 @@ public partial class AuthenticationFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/AuthenticationFilter$CacheEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scheme", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "proxy", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/net/PasswordAuthentication;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isUTF8", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CacheEntry", "(Ljava/lang/String;Ljava/net/URI;ZLjava/net/PasswordAuthentication;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "value", "()Ljava/net/PasswordAuthentication;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equalsKey", "(Ljava/net/URI;Z)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scheme", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "proxy", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Ljava/net/PasswordAuthentication;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isUTF8", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/net/URI;ZLjava/net/PasswordAuthentication;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "value", "()Ljava/net/PasswordAuthentication;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equalsKey", "(Ljava/net/URI;Z)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -569,7 +569,7 @@ public partial class AuthenticationFilter
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/net/URI;ZLjava/net/PasswordAuthentication;Z)V", "")]
-		public CacheEntry(Dova.JDK.java.lang.String arg0, Dova.JDK.java.net.URI arg1, bool arg2, Dova.JDK.java.net.PasswordAuthentication arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public CacheEntry(Dova.JDK.java.lang.String arg0, Dova.JDK.java.net.URI arg1, bool arg2, Dova.JDK.java.net.PasswordAuthentication arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class ImageWatched
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/ImageWatched;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "endlink", "Lsun/awt/image/ImageWatched$Link;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "watcherList", "Lsun/awt/image/ImageWatched$Link;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageWatched", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWatcherListEmpty", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyWatcherListEmpty", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInfo", "(Ljava/awt/Image;IIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addWatcher", "(Ljava/awt/image/ImageObserver;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "endlink", "Lsun/awt/image/ImageWatched$Link;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "watcherList", "Lsun/awt/image/ImageWatched$Link;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWatcherListEmpty", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyWatcherListEmpty", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInfo", "(Ljava/awt/Image;IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addWatcher", "(Ljava/awt/image/ImageObserver;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/image/ImageWatched$Link;", "public static")]
@@ -76,7 +76,7 @@ public partial class ImageWatched
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ImageWatched() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ImageWatched() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -136,10 +136,10 @@ public partial class ImageWatched
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/ImageWatched$Link;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Link", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)Lsun/awt/image/ImageWatched$Link;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInfo", "(Ljava/awt/Image;IIIII)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)Lsun/awt/image/ImageWatched$Link;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInfo", "(Ljava/awt/Image;IIIII)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -148,7 +148,7 @@ public partial class ImageWatched
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Link() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Link() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -193,13 +193,13 @@ public partial class ImageWatched
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/ImageWatched$WeakLink;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "myref", "Lsun/awt/image/ImageWatched$AccWeakReference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "next", "Lsun/awt/image/ImageWatched$Link;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WeakLink", "(Ljava/awt/image/ImageObserver;Lsun/awt/image/ImageWatched$Link;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "update", "(Ljava/awt/image/ImageObserver;Ljava/security/AccessControlContext;Ljava/awt/Image;IIIII)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)Lsun/awt/image/ImageWatched$Link;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInfo", "(Ljava/awt/Image;IIIII)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "myref", "Lsun/awt/image/ImageWatched$AccWeakReference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "next", "Lsun/awt/image/ImageWatched$Link;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/image/ImageObserver;Lsun/awt/image/ImageWatched$Link;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "update", "(Ljava/awt/image/ImageObserver;Ljava/security/AccessControlContext;Ljava/awt/Image;IIIII)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWatcher", "(Ljava/awt/image/ImageObserver;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeWatcher", "(Ljava/awt/image/ImageObserver;)Lsun/awt/image/ImageWatched$Link;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInfo", "(Ljava/awt/Image;IIIII)Z"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/image/ImageWatched$AccWeakReference;", "private final")]
@@ -236,7 +236,7 @@ public partial class ImageWatched
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/image/ImageObserver;Lsun/awt/image/ImageWatched$Link;)V", "public")]
-		public WeakLink(Dova.JDK.java.awt.image.ImageObserver arg0, Dova.JDK.sun.awt.image.ImageWatched.Link arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public WeakLink(Dova.JDK.java.awt.image.ImageObserver arg0, Dova.JDK.sun.awt.image.ImageWatched.Link arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -287,8 +287,8 @@ public partial class ImageWatched
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/ImageWatched$AccWeakReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acc", "Ljava/security/AccessControlContext;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccWeakReference", "(Ljava/lang/Object;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acc", "Ljava/security/AccessControlContext;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/AccessControlContext;", "private final")]
@@ -311,7 +311,7 @@ public partial class ImageWatched
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;)V", "")]
-		public AccWeakReference(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AccWeakReference(Dova.JDK.java.lang.Object arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

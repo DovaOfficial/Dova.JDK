@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class ObjectContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/ObjectContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "contextLookup", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeConverter", "Ljdk/jfr/internal/consumer/TimeConverter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventType", "Ljdk/jfr/EventType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fields", "Ljava/util/List;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectContext", "(Ljdk/jfr/EventType;Ljava/util/List;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectContext", "(Ljdk/jfr/internal/consumer/ObjectContext;Ljdk/jfr/ValueDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInstance", "(Ljdk/jfr/ValueDescriptor;)Ljdk/jfr/internal/consumer/ObjectContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZoneOffset", "()Ljava/time/ZoneId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertTimestamp", "(J)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "convertTimespan", "(J)J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "contextLookup", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeConverter", "Ljdk/jfr/internal/consumer/TimeConverter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventType", "Ljdk/jfr/EventType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fields", "Ljava/util/List;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/EventType;Ljava/util/List;Ljdk/jfr/internal/consumer/TimeConverter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/consumer/ObjectContext;Ljdk/jfr/ValueDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInstance", "(Ljdk/jfr/ValueDescriptor;)Ljdk/jfr/internal/consumer/ObjectContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZoneOffset", "()Ljava/time/ZoneId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertTimestamp", "(J)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "convertTimespan", "(J)J"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -105,12 +105,12 @@ public partial class ObjectContext
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/EventType;Ljava/util/List;Ljdk/jfr/internal/consumer/TimeConverter;)V", "")]
-	public ObjectContext(Dova.JDK.jdk.jfr.EventType arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ObjectContext(Dova.JDK.jdk.jfr.EventType arg0, Dova.JDK.java.util.List arg1, Dova.JDK.jdk.jfr.@internal.consumer.TimeConverter arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/consumer/ObjectContext;Ljdk/jfr/ValueDescriptor;)V", "private")]
-	public ObjectContext(Dova.JDK.jdk.jfr.@internal.consumer.ObjectContext arg0, Dova.JDK.jdk.jfr.ValueDescriptor arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ObjectContext(Dova.JDK.jdk.jfr.@internal.consumer.ObjectContext arg0, Dova.JDK.jdk.jfr.ValueDescriptor arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

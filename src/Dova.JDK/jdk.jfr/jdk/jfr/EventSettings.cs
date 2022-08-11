@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,14 +30,14 @@ public partial class EventSettings
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/EventSettings;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventSettings", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toMap", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "with", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jfr/EventSettings;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withStackTrace", "()Ljdk/jfr/EventSettings;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withoutStackTrace", "()Ljdk/jfr/EventSettings;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withoutThreshold", "()Ljdk/jfr/EventSettings;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withPeriod", "(Ljava/time/Duration;)Ljdk/jfr/EventSettings;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withThreshold", "(Ljava/time/Duration;)Ljdk/jfr/EventSettings;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toMap", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "with", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jfr/EventSettings;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withStackTrace", "()Ljdk/jfr/EventSettings;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withoutStackTrace", "()Ljdk/jfr/EventSettings;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withoutThreshold", "()Ljdk/jfr/EventSettings;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withPeriod", "(Ljava/time/Duration;)Ljdk/jfr/EventSettings;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withThreshold", "(Ljava/time/Duration;)Ljdk/jfr/EventSettings;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -46,7 +46,7 @@ public partial class EventSettings
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public EventSettings() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public EventSettings() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -118,10 +118,10 @@ public partial class EventSettings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/EventSettings$DelegatedEventSettings;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegate", "Ljdk/jfr/internal/management/EventSettingsModifier;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DelegatedEventSettings", "(Ljdk/jfr/internal/management/EventSettingsModifier;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toMap", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "with", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jfr/EventSettings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegate", "Ljdk/jfr/internal/management/EventSettingsModifier;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/management/EventSettingsModifier;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toMap", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "with", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jfr/EventSettings;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jfr/internal/management/EventSettingsModifier;", "private final")]
@@ -144,7 +144,7 @@ public partial class EventSettings
 		}
 
 		[JniSignatureAttribute("(Ljdk/jfr/internal/management/EventSettingsModifier;)V", "")]
-		public DelegatedEventSettings(Dova.JDK.jdk.jfr.@internal.management.EventSettingsModifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DelegatedEventSettings(Dova.JDK.jdk.jfr.@internal.management.EventSettingsModifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

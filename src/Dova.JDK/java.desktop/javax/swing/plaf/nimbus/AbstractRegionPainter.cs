@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,43 +32,43 @@ public partial class AbstractRegionPainter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/nimbus/AbstractRegionPainter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ctx", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "f", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "leftWidth", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "topHeight", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerWidth", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerHeight", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rightWidth", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bottomHeight", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "leftScale", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "topScale", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerHScale", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "centerVScale", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rightScale", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bottomScale", "F"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractRegionPainter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepare", "(FF)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExtendedCacheKeys", "(Ljavax/swing/JComponent;)[Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPaintContext", "()Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintWithFixedSizeCaching", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintWith9SquareCaching", "(Ljava/awt/Graphics2D;Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeX", "(F)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeY", "(F)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clamp", "(F)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clamp", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "configureGraphics", "(Ljava/awt/Graphics2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doPaint", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeAnchorX", "(FF)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeAnchorY", "(FF)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeColor", "(Ljava/lang/String;FFFI)Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeColor", "(Ljava/awt/Color;Ljava/awt/Color;F)Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeGradient", "(FFFF[F[Ljava/awt/Color;)Ljava/awt/LinearGradientPaint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeRadialGradient", "(FFF[F[Ljava/awt/Color;)Ljava/awt/RadialGradientPaint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponentColor", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/awt/Color;FFI)Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paint0", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImage", "(Ljava/awt/GraphicsConfiguration;Ljavax/swing/JComponent;II[Ljava/lang/Object;)Ljava/awt/image/VolatileImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paint", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ctx", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "f", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "leftWidth", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "topHeight", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerWidth", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerHeight", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rightWidth", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bottomHeight", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "leftScale", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "topScale", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerHScale", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "centerVScale", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rightScale", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bottomScale", "F"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepare", "(FF)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExtendedCacheKeys", "(Ljavax/swing/JComponent;)[Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPaintContext", "()Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintWithFixedSizeCaching", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintWith9SquareCaching", "(Ljava/awt/Graphics2D;Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeX", "(F)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeY", "(F)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clamp", "(F)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clamp", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "configureGraphics", "(Ljava/awt/Graphics2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doPaint", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeAnchorX", "(FF)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeAnchorY", "(FF)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeColor", "(Ljava/lang/String;FFFI)Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeColor", "(Ljava/awt/Color;Ljava/awt/Color;F)Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeGradient", "(FFFF[F[Ljava/awt/Color;)Ljava/awt/LinearGradientPaint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeRadialGradient", "(FFF[F[Ljava/awt/Color;)Ljava/awt/RadialGradientPaint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponentColor", "(Ljavax/swing/JComponent;Ljava/lang/String;Ljava/awt/Color;FFI)Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paint0", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImage", "(Ljava/awt/GraphicsConfiguration;Ljavax/swing/JComponent;II[Ljava/lang/Object;)Ljava/awt/image/VolatileImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paint", "(Ljava/awt/Graphics2D;Ljavax/swing/JComponent;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paint", "(Ljava/awt/Graphics2D;Ljava/lang/Object;II)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;", "private")]
@@ -273,7 +273,7 @@ public partial class AbstractRegionPainter
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public AbstractRegionPainter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AbstractRegionPainter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -441,23 +441,23 @@ public partial class AbstractRegionPainter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_INSETS", "Ljava/awt/Insets;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stretchingInsets", "Ljava/awt/Insets;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canvasSize", "Ljava/awt/Dimension;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inverted", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheMode", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxHorizontalScaleFactor", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxVerticalScaleFactor", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "a", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "b", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "d", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aPercent", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bPercent", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cPercent", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dPercent", "F"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintContext", "(Ljava/awt/Insets;Ljava/awt/Dimension;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintContext", "(Ljava/awt/Insets;Ljava/awt/Dimension;ZLjavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;DD)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_INSETS", "Ljava/awt/Insets;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stretchingInsets", "Ljava/awt/Insets;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canvasSize", "Ljava/awt/Dimension;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inverted", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheMode", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxHorizontalScaleFactor", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxVerticalScaleFactor", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "a", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "b", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "d", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aPercent", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bPercent", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cPercent", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dPercent", "F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Insets;Ljava/awt/Dimension;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Insets;Ljava/awt/Dimension;ZLjavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;DD)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Insets;", "private static")]
@@ -676,12 +676,12 @@ public partial class AbstractRegionPainter
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Insets;Ljava/awt/Dimension;Z)V", "public")]
-		public PaintContext(Dova.JDK.java.awt.Insets arg0, Dova.JDK.java.awt.Dimension arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public PaintContext(Dova.JDK.java.awt.Insets arg0, Dova.JDK.java.awt.Dimension arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Insets;Ljava/awt/Dimension;ZLjavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;DD)V", "public")]
-		public PaintContext(Dova.JDK.java.awt.Insets arg0, Dova.JDK.java.awt.Dimension arg1, bool arg2, Dova.JDK.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode arg3, double arg4, double arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+		public PaintContext(Dova.JDK.java.awt.Insets arg0, Dova.JDK.java.awt.Dimension arg1, bool arg2, Dova.JDK.javax.swing.plaf.nimbus.AbstractRegionPainter.PaintContext.CacheMode arg3, double arg4, double arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 
@@ -704,14 +704,14 @@ public partial class AbstractRegionPainter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_CACHING", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIXED_SIZES", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NINE_SQUARE_SCALE", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CacheMode", "(Ljava/lang/String;I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_CACHING", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIXED_SIZES", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NINE_SQUARE_SCALE", "Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;"));
 			}
 
 			[JniSignatureAttribute("Ljavax/swing/plaf/nimbus/AbstractRegionPainter$PaintContext$CacheMode;", "public static final")]
@@ -776,7 +776,7 @@ public partial class AbstractRegionPainter
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-			public CacheMode(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public CacheMode(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,26 +32,26 @@ public partial class X509Authentication
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/X509Authentication;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSASSA_PSS", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_OR_PSS", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DSA", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EC", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EDDSA", "Lsun/security/ssl/X509Authentication;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyAlgorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyTypes", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/ssl/X509Authentication;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X509Authentication", "(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/ssl/X509Authentication;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Lsun/security/ssl/SignatureScheme;)Lsun/security/ssl/X509Authentication;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/X509Authentication;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/ssl/X509Authentication;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createClientPossession", "(Lsun/security/ssl/ClientHandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createServerPossession", "(Lsun/security/ssl/ServerHandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHandshakeProducers", "(Lsun/security/ssl/HandshakeContext;)[Ljava/util/Map$Entry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRelatedHandshakers", "(Lsun/security/ssl/HandshakeContext;)[Lsun/security/ssl/SSLHandshake;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLPossession;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSASSA_PSS", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_OR_PSS", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DSA", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EC", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EDDSA", "Lsun/security/ssl/X509Authentication;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyAlgorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyTypes", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/ssl/X509Authentication;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/ssl/X509Authentication;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Lsun/security/ssl/SignatureScheme;)Lsun/security/ssl/X509Authentication;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/X509Authentication;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/ssl/X509Authentication;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createClientPossession", "(Lsun/security/ssl/ClientHandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createServerPossession", "(Lsun/security/ssl/ServerHandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHandshakeProducers", "(Lsun/security/ssl/HandshakeContext;)[Ljava/util/Map$Entry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRelatedHandshakers", "(Lsun/security/ssl/HandshakeContext;)[Lsun/security/ssl/SSLHandshake;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;[Ljava/lang/String;)Lsun/security/ssl/SSLPossession;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLPossession;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/X509Authentication;", "public static final")]
@@ -186,7 +186,7 @@ public partial class X509Authentication
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;[Ljava/lang/String;)V", "private transient")]
-	public X509Authentication(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, JavaArray<Dova.JDK.java.lang.String> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public X509Authentication(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, JavaArray<Dova.JDK.java.lang.String> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -280,11 +280,11 @@ public partial class X509Authentication
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/X509Authentication$X509Possession;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popCerts", "[Ljava/security/cert/X509Certificate;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popPrivateKey", "Ljava/security/PrivateKey;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X509Possession", "(Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getXECParameterSpec", "()Ljava/security/spec/NamedParameterSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getECParameterSpec", "()Ljava/security/spec/ECParameterSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "popCerts", "[Ljava/security/cert/X509Certificate;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "popPrivateKey", "Ljava/security/PrivateKey;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getXECParameterSpec", "()Ljava/security/spec/NamedParameterSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getECParameterSpec", "()Ljava/security/spec/ECParameterSpec;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/security/cert/X509Certificate;", "final")]
@@ -321,7 +321,7 @@ public partial class X509Authentication
 		}
 
 		[JniSignatureAttribute("(Ljava/security/PrivateKey;[Ljava/security/cert/X509Certificate;)V", "")]
-		public X509Possession(Dova.JDK.java.security.PrivateKey arg0, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public X509Possession(Dova.JDK.java.security.PrivateKey arg0, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -359,9 +359,9 @@ public partial class X509Authentication
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/X509Authentication$X509Credentials;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popCerts", "[Ljava/security/cert/X509Certificate;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popPublicKey", "Ljava/security/PublicKey;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "X509Credentials", "(Ljava/security/PublicKey;[Ljava/security/cert/X509Certificate;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "popCerts", "[Ljava/security/cert/X509Certificate;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "popPublicKey", "Ljava/security/PublicKey;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/PublicKey;[Ljava/security/cert/X509Certificate;)V"));
 		}
 
 		[JniSignatureAttribute("[Ljava/security/cert/X509Certificate;", "final")]
@@ -398,7 +398,7 @@ public partial class X509Authentication
 		}
 
 		[JniSignatureAttribute("(Ljava/security/PublicKey;[Ljava/security/cert/X509Certificate;)V", "")]
-		public X509Credentials(Dova.JDK.java.security.PublicKey arg0, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public X509Credentials(Dova.JDK.java.security.PublicKey arg0, JavaArray<Dova.JDK.java.security.cert.X509Certificate> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

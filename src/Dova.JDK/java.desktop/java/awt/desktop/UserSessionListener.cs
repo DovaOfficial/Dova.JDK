@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface UserSessionListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/UserSessionListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "userSessionDeactivated", "(Ljava/awt/desktop/UserSessionEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "userSessionActivated", "(Ljava/awt/desktop/UserSessionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "userSessionDeactivated", "(Ljava/awt/desktop/UserSessionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "userSessionActivated", "(Ljava/awt/desktop/UserSessionEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/UserSessionEvent;)V", "public abstract")]

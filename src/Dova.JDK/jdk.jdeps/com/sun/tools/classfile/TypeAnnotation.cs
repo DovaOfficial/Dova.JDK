@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class TypeAnnotation
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/TypeAnnotation;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "position", "Lcom/sun/tools/classfile/TypeAnnotation$Position;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotation", "Lcom/sun/tools/classfile/Annotation;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeAnnotation", "(Lcom/sun/tools/classfile/ClassReader;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeAnnotation", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/Annotation;Lcom/sun/tools/classfile/TypeAnnotation$Position;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "position_length", "(Lcom/sun/tools/classfile/TypeAnnotation$Position;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "read_position", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/TypeAnnotation$Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "position", "Lcom/sun/tools/classfile/TypeAnnotation$Position;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotation", "Lcom/sun/tools/classfile/Annotation;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ClassReader;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/Annotation;Lcom/sun/tools/classfile/TypeAnnotation$Position;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "position_length", "(Lcom/sun/tools/classfile/TypeAnnotation$Position;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "read_position", "(Lcom/sun/tools/classfile/ClassReader;)Lcom/sun/tools/classfile/TypeAnnotation$Position;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/classfile/ConstantPool;", "public final")]
@@ -90,12 +90,12 @@ public partial class TypeAnnotation
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;)V", "")]
-	public TypeAnnotation(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TypeAnnotation(Dova.JDK.com.sun.tools.classfile.ClassReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/Annotation;Lcom/sun/tools/classfile/TypeAnnotation$Position;)V", "public")]
-	public TypeAnnotation(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, Dova.JDK.com.sun.tools.classfile.Annotation arg1, Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public TypeAnnotation(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, Dova.JDK.com.sun.tools.classfile.Annotation arg1, Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
@@ -146,23 +146,23 @@ public partial class TypeAnnotation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/TypeAnnotation$Position;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pos", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isValidOffset", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarOffset", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarLength", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarIndex", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bound_index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parameter_index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type_index", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception_index", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Position", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getBinaryFromTypePath", "(Ljava/util/List;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emitToClassfile", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTypePathFromBinary", "(Ljava/util/List;)Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pos", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isValidOffset", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarOffset", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarLength", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarIndex", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bound_index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parameter_index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type_index", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception_index", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getBinaryFromTypePath", "(Ljava/util/List;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emitToClassfile", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTypePathFromBinary", "(Ljava/util/List;)Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/classfile/TypeAnnotation$TargetType;", "public")]
@@ -339,7 +339,7 @@ public partial class TypeAnnotation
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Position() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Position() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -390,18 +390,18 @@ public partial class TypeAnnotation
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "bytesPerEntry", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arg", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INNER_TYPE", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntry", "(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;)V"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntry", "(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fromBinary", "(II)Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "bytesPerEntry", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tag", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arg", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INNER_TYPE", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WILDCARD", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fromBinary", "(II)Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntry;"));
 			}
 
 			[JniSignatureAttribute("I", "public static final")]
@@ -494,12 +494,12 @@ public partial class TypeAnnotation
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;)V", "private")]
-			public TypePathEntry(Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position.TypePathEntryKind arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public TypePathEntry(Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position.TypePathEntryKind arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;I)V", "public")]
-			public TypePathEntry(Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position.TypePathEntryKind arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+			public TypePathEntry(Dova.JDK.com.sun.tools.classfile.TypeAnnotation.Position.TypePathEntryKind arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 			{
 			}
 
@@ -551,16 +551,16 @@ public partial class TypeAnnotation
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INNER_TYPE", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntryKind", "(Ljava/lang/String;II)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INNER_TYPE", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WILDCARD", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tag", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;"));
 			}
 
 			[JniSignatureAttribute("Lcom/sun/tools/classfile/TypeAnnotation$Position$TypePathEntryKind;", "public static final")]
@@ -653,7 +653,7 @@ public partial class TypeAnnotation
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-			public TypePathEntryKind(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public TypePathEntryKind(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -699,43 +699,43 @@ public partial class TypeAnnotation
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/TypeAnnotation$TargetType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_TYPE_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_TYPE_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_EXTENDS", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_TYPE_PARAMETER_BOUND", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_TYPE_PARAMETER_BOUND", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_RETURN", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_RECEIVER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_FORMAL_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THROWS", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCAL_VARIABLE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOURCE_VARIABLE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCEOF", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_REFERENCE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_REFERENCE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAST", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_INVOCATION_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_REFERENCE_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAXIMUM_TARGET_TYPE_VALUE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetTypeValue", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isLocal", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "targets", "[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TargetType", "(Ljava/lang/String;IIZ)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TargetType", "(Ljava/lang/String;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fromTargetTypeValue", "(I)Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isValidTargetTypeValue", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "targetTypeValue", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLocal", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_TYPE_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_TYPE_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_EXTENDS", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_TYPE_PARAMETER_BOUND", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_TYPE_PARAMETER_BOUND", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_RETURN", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_RECEIVER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_FORMAL_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THROWS", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCAL_VARIABLE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOURCE_VARIABLE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCEPTION_PARAMETER", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCEOF", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NEW", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_REFERENCE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_REFERENCE", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAST", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_INVOCATION_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_REFERENCE_TYPE_ARGUMENT", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAXIMUM_TARGET_TYPE_VALUE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetTypeValue", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isLocal", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "targets", "[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IIZ)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fromTargetTypeValue", "(I)Lcom/sun/tools/classfile/TypeAnnotation$TargetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isValidTargetTypeValue", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "targetTypeValue", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLocal", "()Z"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/classfile/TypeAnnotation$TargetType;", "public static final")]
@@ -1136,12 +1136,12 @@ public partial class TypeAnnotation
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;IIZ)V", "private")]
-		public TargetType(Dova.JDK.java.lang.String arg0, int arg1, int arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public TargetType(Dova.JDK.java.lang.String arg0, int arg1, int arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-		public TargetType(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public TargetType(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 

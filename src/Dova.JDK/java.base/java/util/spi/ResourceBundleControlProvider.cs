@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface ResourceBundleControlProvider
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/spi/ResourceBundleControlProvider;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControl", "(Ljava/lang/String;)Ljava/util/ResourceBundle$Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControl", "(Ljava/lang/String;)Ljava/util/ResourceBundle$Control;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)Ljava/util/ResourceBundle$Control;", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class LibProvidersLookup
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/LibProvidersLookup;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packageLookup", "Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_LDD", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIB_IN_LDD_OUTPUT_REGEX", "Ljava/util/regex/Pattern;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LibProvidersLookup", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "execute", "(Ljava/nio/file/Path;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNeededLibsForFiles", "(Ljava/util/List;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "supported", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPackageLookup", "(Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;)Ljdk/jpackage/internal/LibProvidersLookup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNeededLibsForFile", "(Ljava/nio/file/Path;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "canDependOnLibs", "(Ljava/nio/file/Path;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packageLookup", "Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_LDD", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIB_IN_LDD_OUTPUT_REGEX", "Ljava/util/regex/Pattern;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "execute", "(Ljava/nio/file/Path;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNeededLibsForFiles", "(Ljava/util/List;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "supported", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPackageLookup", "(Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;)Ljdk/jpackage/internal/LibProvidersLookup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNeededLibsForFile", "(Ljava/nio/file/Path;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "canDependOnLibs", "(Ljava/nio/file/Path;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;", "private")]
@@ -91,7 +91,7 @@ public partial class LibProvidersLookup
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public LibProvidersLookup() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LibProvidersLookup() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -154,7 +154,7 @@ public partial class LibProvidersLookup
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/LibProvidersLookup$PackageLookup;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "apply", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "apply", "(Ljava/nio/file/Path;)Ljava/util/stream/Stream;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/file/Path;)Ljava/util/stream/Stream;", "public abstract")]

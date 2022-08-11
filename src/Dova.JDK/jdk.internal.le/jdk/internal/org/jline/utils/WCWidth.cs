@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class WCWidth
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/WCWidth;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "combining", "[Ljdk/internal/org/jline/utils/WCWidth$Interval;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WCWidth", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "bisearch", "(I[Ljdk/internal/org/jline/utils/WCWidth$Interval;I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "wcwidth", "(I)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "combining", "[Ljdk/internal/org/jline/utils/WCWidth$Interval;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "bisearch", "(I[Ljdk/internal/org/jline/utils/WCWidth$Interval;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "wcwidth", "(I)I"));
 	}
 
 	[JniSignatureAttribute("[Ljdk/internal/org/jline/utils/WCWidth$Interval;", "static")]
@@ -57,7 +57,7 @@ public partial class WCWidth
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public WCWidth() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public WCWidth() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -93,9 +93,9 @@ public partial class WCWidth
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/WCWidth$Interval;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "first", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "last", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Interval", "(II)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "first", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "last", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
 		}
 
 		[JniSignatureAttribute("I", "public final")]
@@ -132,7 +132,7 @@ public partial class WCWidth
 		}
 
 		[JniSignatureAttribute("(II)V", "public")]
-		public Interval(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Interval(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

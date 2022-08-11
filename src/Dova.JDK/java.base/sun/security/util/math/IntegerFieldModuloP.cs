@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,13 +29,13 @@ public partial interface IntegerFieldModuloP
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/IntegerFieldModuloP;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSize", "()Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "([B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljava/math/BigInteger;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "([BIIB)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSmallValue", "(I)Lsun/security/util/math/SmallValue;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSize", "()Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "([B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "(Ljava/math/BigInteger;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "([BIIB)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSmallValue", "(I)Lsun/security/util/math/SmallValue;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/math/BigInteger;", "public abstract")]

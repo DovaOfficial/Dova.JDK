@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,70 +30,70 @@ public partial class AccessibleRole
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/accessibility/AccessibleRole;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALERT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLUMN_HEADER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CANVAS", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMBO_BOX", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_ICON", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTML_CONTAINER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERNAL_FRAME", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPTION_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOW", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAME", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DIALOG", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLOR_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DIRECTORY_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILLER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HYPERLINK", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ICON", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LABEL", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROOT_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GLASS_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LAYERED_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIST", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIST_ITEM", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_BAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POPUP_MENU", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_ITEM", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SEPARATOR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PAGE_TAB_LIST", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PAGE_TAB", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PANEL", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROGRESS_BAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PASSWORD_TEXT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUSH_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOGGLE_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHECK_BOX", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RADIO_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROW_HEADER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCROLL_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCROLL_BAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VIEWPORT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SLIDER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPLIT_PANE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TREE", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_BAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_TIP", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AWT_COMPONENT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SWING_COMPONENT", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STATUS_BAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATE_EDITOR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPIN_BOX", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FONT_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GROUP_BOX", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEADER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOOTER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARAGRAPH", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RULER", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EDITBAR", "Ljavax/accessibility/AccessibleRole;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROGRESS_MONITOR", "Ljavax/accessibility/AccessibleRole;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessibleRole", "(Ljava/lang/String;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALERT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLUMN_HEADER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CANVAS", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMBO_BOX", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_ICON", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTML_CONTAINER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERNAL_FRAME", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPTION_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WINDOW", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAME", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DIALOG", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLOR_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DIRECTORY_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FILE_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FILLER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HYPERLINK", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ICON", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LABEL", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROOT_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GLASS_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LAYERED_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIST", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIST_ITEM", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_BAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POPUP_MENU", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_ITEM", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SEPARATOR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PAGE_TAB_LIST", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PAGE_TAB", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PANEL", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROGRESS_BAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PASSWORD_TEXT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUSH_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOGGLE_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHECK_BOX", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RADIO_BUTTON", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROW_HEADER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCROLL_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCROLL_BAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VIEWPORT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SLIDER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPLIT_PANE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TREE", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_BAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_TIP", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AWT_COMPONENT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SWING_COMPONENT", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STATUS_BAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DATE_EDITOR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPIN_BOX", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FONT_CHOOSER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GROUP_BOX", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEADER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOOTER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARAGRAPH", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RULER", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EDITBAR", "Ljavax/accessibility/AccessibleRole;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROGRESS_MONITOR", "Ljavax/accessibility/AccessibleRole;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/accessibility/AccessibleRole;", "public static final")]
@@ -984,7 +984,7 @@ public partial class AccessibleRole
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "protected")]
-	public AccessibleRole(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AccessibleRole(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

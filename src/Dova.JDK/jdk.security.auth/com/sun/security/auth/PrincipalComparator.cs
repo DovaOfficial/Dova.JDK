@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface PrincipalComparator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/security/auth/PrincipalComparator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implies", "(Ljavax/security/auth/Subject;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implies", "(Ljavax/security/auth/Subject;)Z"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/security/auth/Subject;)Z", "public abstract")]

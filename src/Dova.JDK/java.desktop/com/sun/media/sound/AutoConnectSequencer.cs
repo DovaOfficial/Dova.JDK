@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface AutoConnectSequencer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AutoConnectSequencer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAutoConnect", "(Ljavax/sound/midi/Receiver;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAutoConnect", "(Ljavax/sound/midi/Receiver;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/sound/midi/Receiver;)V", "public abstract")]

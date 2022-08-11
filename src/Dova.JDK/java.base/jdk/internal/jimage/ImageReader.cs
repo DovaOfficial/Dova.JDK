@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,35 +32,35 @@ public partial class ImageReader
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Ljdk/internal/jimage/ImageReader$SharedImageReader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageReader", "(Ljdk/internal/jimage/ImageReader$SharedImageReader;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljava/lang/String;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Node;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Resource;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljdk/internal/jimage/ImageLocation;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "open", "(Ljava/nio/file/Path;)Ljdk/internal/jimage/ImageReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "open", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)Ljdk/internal/jimage/ImageReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "(I)[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureOpen", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModuleNames", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findLocation", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageLocation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findLocation", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/jimage/ImageLocation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResourceBuffer", "(Ljdk/internal/jimage/ImageLocation;)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getString", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHeader", "()Ljdk/internal/jimage/ImageHeader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "releaseByteBuffer", "(Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getByteOrder", "()Ljava/nio/ByteOrder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getImagePath", "()Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStrings", "()Ljdk/internal/jimage/ImageStringsReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifyLocation", "(Ljava/lang/String;Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntryNames", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResourceStream", "(Ljdk/internal/jimage/ImageLocation;)Ljava/io/InputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requireOpen", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Ljdk/internal/jimage/ImageReader$SharedImageReader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closed", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/jimage/ImageReader$SharedImageReader;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljava/lang/String;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Node;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Resource;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljdk/internal/jimage/ImageLocation;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "open", "(Ljava/nio/file/Path;)Ljdk/internal/jimage/ImageReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "open", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)Ljdk/internal/jimage/ImageReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "(I)[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureOpen", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModuleNames", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findLocation", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageLocation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findLocation", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/jimage/ImageLocation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResourceBuffer", "(Ljdk/internal/jimage/ImageLocation;)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getString", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHeader", "()Ljdk/internal/jimage/ImageHeader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "releaseByteBuffer", "(Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getByteOrder", "()Ljava/nio/ByteOrder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getImagePath", "()Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStrings", "()Ljdk/internal/jimage/ImageStringsReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verifyLocation", "(Ljava/lang/String;Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEntryNames", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResourceStream", "(Ljdk/internal/jimage/ImageLocation;)Ljava/io/InputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requireOpen", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/jimage/ImageReader$SharedImageReader;", "private final")]
@@ -97,7 +97,7 @@ public partial class ImageReader
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/jimage/ImageReader$SharedImageReader;)V", "private")]
-	public ImageReader(Dova.JDK.jdk.@internal.jimage.ImageReader.SharedImageReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ImageReader(Dova.JDK.jdk.@internal.jimage.ImageReader.SharedImageReader arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -298,39 +298,39 @@ public partial class ImageReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$SharedImageReader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIZE_OF_OFFSET", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPEN_FILES", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "openers", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "imageFileAttributes", "Ljava/nio/file/attribute/BasicFileAttributes;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nodes", "Ljava/util/HashMap;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rootDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packagesDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modulesDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SharedImageReader", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Node;)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Resource;)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "(Ljdk/internal/jimage/ImageReader;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "open", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)Ljdk/internal/jimage/ImageReader;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handlePackages", "(Ljava/lang/String;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleModulesSubTree", "(Ljava/lang/String;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleResource", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleModuleLink", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDirectory", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseExt", "(Ljdk/internal/jimage/ImageLocation;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLinkNode", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)Ljdk/internal/jimage/ImageReader$LinkNode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLocation", "(Ljdk/internal/jimage/ImageLocation;Ljdk/internal/jimage/ImageReader$SharedImageReader$LocationVisitor;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitPackageLocation", "(Ljdk/internal/jimage/ImageLocation;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeDirectories", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newResource", "(Ljdk/internal/jimage/ImageReader$Directory;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Resource;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "imageFileAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeDirectory", "(Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Directory;)Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addOpener", "(Ljdk/internal/jimage/ImageReader;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeOpener", "(Ljdk/internal/jimage/ImageReader;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SIZE_OF_OFFSET", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPEN_FILES", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "openers", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "imageFileAttributes", "Ljava/nio/file/attribute/BasicFileAttributes;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nodes", "Ljava/util/HashMap;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rootDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packagesDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modulesDir", "Ljdk/internal/jimage/ImageReader$Directory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Node;)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResource", "(Ljdk/internal/jimage/ImageReader$Resource;)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "(Ljdk/internal/jimage/ImageReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "open", "(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)Ljdk/internal/jimage/ImageReader;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildRootDirectory", "()Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handlePackages", "(Ljava/lang/String;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleModulesSubTree", "(Ljava/lang/String;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleResource", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleModuleLink", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDirectory", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseExt", "(Ljdk/internal/jimage/ImageLocation;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLinkNode", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)Ljdk/internal/jimage/ImageReader$LinkNode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLocation", "(Ljdk/internal/jimage/ImageLocation;Ljdk/internal/jimage/ImageReader$SharedImageReader$LocationVisitor;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitPackageLocation", "(Ljdk/internal/jimage/ImageLocation;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeDirectories", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newResource", "(Ljdk/internal/jimage/ImageReader$Directory;Ljdk/internal/jimage/ImageLocation;)Ljdk/internal/jimage/ImageReader$Resource;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildNode", "(Ljava/lang/String;)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "imageFileAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeDirectory", "(Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Directory;)Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addOpener", "(Ljdk/internal/jimage/ImageReader;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeOpener", "(Ljdk/internal/jimage/ImageReader;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -465,7 +465,7 @@ public partial class ImageReader
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/file/Path;Ljava/nio/ByteOrder;)V", "private")]
-		public SharedImageReader(Dova.JDK.java.nio.file.Path arg0, Dova.JDK.java.nio.ByteOrder arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SharedImageReader(Dova.JDK.java.nio.file.Path arg0, Dova.JDK.java.nio.ByteOrder arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -643,7 +643,7 @@ public partial class ImageReader
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$SharedImageReader$LocationVisitor;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit", "(Ljdk/internal/jimage/ImageLocation;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit", "(Ljdk/internal/jimage/ImageLocation;)V"));
 			}
 
 			[JniSignatureAttribute("(Ljdk/internal/jimage/ImageLocation;)V", "public abstract")]
@@ -669,13 +669,13 @@ public partial class ImageReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$Directory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "children", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Directory", "(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)Ljdk/internal/jimage/ImageReader$Directory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "walk", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDirectory", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChildren", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addChild", "(Ljdk/internal/jimage/ImageReader$Node;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "children", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)Ljdk/internal/jimage/ImageReader$Directory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "walk", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDirectory", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChildren", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addChild", "(Ljdk/internal/jimage/ImageReader$Node;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -698,7 +698,7 @@ public partial class ImageReader
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V", "private")]
-		public Directory(Dova.JDK.java.lang.String arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Directory(Dova.JDK.java.lang.String arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -755,42 +755,42 @@ public partial class ImageReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$Node;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROOT_DIR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGES_DIR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULES_DIR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fileAttrs", "Ljava/nio/file/attribute/BasicFileAttributes;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Node", "(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocation", "()Ljdk/internal/jimage/ImageLocation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDirectory", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lastModifiedTime", "()Ljava/nio/file/attribute/FileTime;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lastAccessTime", "()Ljava/nio/file/attribute/FileTime;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "creationTime", "()Ljava/nio/file/attribute/FileTime;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compressedSize", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChildren", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNameString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIsRootDir", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIsPackagesDir", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIsModulesDir", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCompleted", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompleted", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isResource", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extension", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveLink", "()Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveLink", "(Z)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRootDir", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPackagesDir", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isModulesDir", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFileAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLink", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contentOffset", "()J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROOT_DIR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGES_DIR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULES_DIR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fileAttrs", "Ljava/nio/file/attribute/BasicFileAttributes;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completed", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocation", "()Ljdk/internal/jimage/ImageLocation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDirectory", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lastModifiedTime", "()Ljava/nio/file/attribute/FileTime;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lastAccessTime", "()Ljava/nio/file/attribute/FileTime;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "creationTime", "()Ljava/nio/file/attribute/FileTime;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compressedSize", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChildren", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNameString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIsRootDir", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIsPackagesDir", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIsModulesDir", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCompleted", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompleted", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isResource", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "extension", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveLink", "()Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveLink", "(Z)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRootDir", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPackagesDir", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isModulesDir", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFileAttributes", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLink", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contentOffset", "()J"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -897,7 +897,7 @@ public partial class ImageReader
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/nio/file/attribute/BasicFileAttributes;)V", "protected")]
-		public Node(Dova.JDK.java.lang.String arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Node(Dova.JDK.java.lang.String arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1113,16 +1113,16 @@ public partial class ImageReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$Resource;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loc", "Ljdk/internal/jimage/ImageLocation;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Resource", "(Ljdk/internal/jimage/ImageLocation;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocation", "()Ljdk/internal/jimage/ImageLocation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljdk/internal/jimage/ImageLocation;Ljava/nio/file/attribute/BasicFileAttributes;)Ljdk/internal/jimage/ImageReader$Resource;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compressedSize", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompleted", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isResource", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extension", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contentOffset", "()J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loc", "Ljdk/internal/jimage/ImageLocation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/jimage/ImageLocation;Ljava/nio/file/attribute/BasicFileAttributes;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocation", "()Ljdk/internal/jimage/ImageLocation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljdk/internal/jimage/ImageLocation;Ljava/nio/file/attribute/BasicFileAttributes;)Ljdk/internal/jimage/ImageReader$Resource;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compressedSize", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompleted", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isResource", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "extension", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contentOffset", "()J"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/jimage/ImageLocation;", "private final")]
@@ -1145,7 +1145,7 @@ public partial class ImageReader
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/jimage/ImageLocation;Ljava/nio/file/attribute/BasicFileAttributes;)V", "private")]
-		public Resource(Dova.JDK.jdk.@internal.jimage.ImageLocation arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Resource(Dova.JDK.jdk.@internal.jimage.ImageLocation arg0, Dova.JDK.java.nio.file.attribute.BasicFileAttributes arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1225,12 +1225,12 @@ public partial class ImageReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jimage/ImageReader$LinkNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "link", "Ljdk/internal/jimage/ImageReader$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LinkNode", "(Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)Ljdk/internal/jimage/ImageReader$LinkNode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompleted", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveLink", "(Z)Ljdk/internal/jimage/ImageReader$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLink", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "link", "Ljdk/internal/jimage/ImageReader$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/internal/jimage/ImageReader$Directory;Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)Ljdk/internal/jimage/ImageReader$LinkNode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompleted", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveLink", "(Z)Ljdk/internal/jimage/ImageReader$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLink", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/jimage/ImageReader$Node;", "private final")]
@@ -1253,7 +1253,7 @@ public partial class ImageReader
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/jimage/ImageReader$Node;)V", "private")]
-		public LinkNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jimage.ImageReader.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LinkNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.jimage.ImageReader.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

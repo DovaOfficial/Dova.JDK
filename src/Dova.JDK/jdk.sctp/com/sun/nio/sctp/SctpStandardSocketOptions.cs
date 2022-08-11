@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,17 +30,17 @@ public partial class SctpStandardSocketOptions
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/SctpStandardSocketOptions;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_DISABLE_FRAGMENTS", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_EXPLICIT_COMPLETE", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_FRAGMENT_INTERLEAVE", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_INIT_MAXSTREAMS", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_NODELAY", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_PRIMARY_ADDR", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCTP_SET_PEER_PRIMARY_ADDR", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SO_SNDBUF", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SO_RCVBUF", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SO_LINGER", "Lcom/sun/nio/sctp/SctpSocketOption;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SctpStandardSocketOptions", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_DISABLE_FRAGMENTS", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_EXPLICIT_COMPLETE", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_FRAGMENT_INTERLEAVE", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_INIT_MAXSTREAMS", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_NODELAY", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_PRIMARY_ADDR", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCTP_SET_PEER_PRIMARY_ADDR", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SO_SNDBUF", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SO_RCVBUF", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SO_LINGER", "Lcom/sun/nio/sctp/SctpSocketOption;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/nio/sctp/SctpSocketOption;", "public static final")]
@@ -189,7 +189,7 @@ public partial class SctpStandardSocketOptions
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SctpStandardSocketOptions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SctpStandardSocketOptions() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -212,15 +212,15 @@ public partial class SctpStandardSocketOptions
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/SctpStandardSocketOptions$InitMaxStreams;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxInStreams", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxOutStreams", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InitMaxStreams", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(II)Lcom/sun/nio/sctp/SctpStandardSocketOptions$InitMaxStreams;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maxOutStreams", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maxInStreams", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxInStreams", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxOutStreams", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(II)Lcom/sun/nio/sctp/SctpStandardSocketOptions$InitMaxStreams;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maxOutStreams", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maxInStreams", "()I"));
 		}
 
 		[JniSignatureAttribute("I", "private")]
@@ -257,7 +257,7 @@ public partial class SctpStandardSocketOptions
 		}
 
 		[JniSignatureAttribute("(II)V", "private")]
-		public InitMaxStreams(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public InitMaxStreams(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,14 +32,14 @@ public partial class CleanerImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/ref/CleanerImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cleanerImplAccess", "Ljava/util/function/Function;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "phantomCleanableList", "Ljdk/internal/ref/PhantomCleanable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "queue", "Ljava/lang/ref/ReferenceQueue;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CleanerImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "(Ljava/lang/ref/Cleaner;Ljava/util/concurrent/ThreadFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCleanerImpl", "(Ljava/lang/ref/Cleaner;)Ljdk/internal/ref/CleanerImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setCleanerImplAccess", "(Ljava/util/function/Function;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cleanerImplAccess", "Ljava/util/function/Function;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "phantomCleanableList", "Ljdk/internal/ref/PhantomCleanable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "queue", "Ljava/lang/ref/ReferenceQueue;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "start", "(Ljava/lang/ref/Cleaner;Ljava/util/concurrent/ThreadFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCleanerImpl", "(Ljava/lang/ref/Cleaner;)Ljdk/internal/ref/CleanerImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setCleanerImplAccess", "(Ljava/util/function/Function;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/Function;", "private static")]
@@ -90,7 +90,7 @@ public partial class CleanerImpl
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CleanerImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CleanerImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -138,12 +138,12 @@ public partial class CleanerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/ref/CleanerImpl$PhantomCleanableRef;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "action", "Ljava/lang/Runnable;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PhantomCleanableRef", "(Ljava/lang/Object;Ljava/lang/ref/Cleaner;Ljava/lang/Runnable;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PhantomCleanableRef", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "performCleanup", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "action", "Ljava/lang/Runnable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljava/lang/ref/Cleaner;Ljava/lang/Runnable;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "performCleanup", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Runnable;", "private final")]
@@ -166,12 +166,12 @@ public partial class CleanerImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Object;Ljava/lang/ref/Cleaner;Ljava/lang/Runnable;)V", "public")]
-		public PhantomCleanableRef(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.@ref.Cleaner arg1, Dova.JDK.java.lang.Runnable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public PhantomCleanableRef(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.@ref.Cleaner arg1, Dova.JDK.java.lang.Runnable arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public PhantomCleanableRef() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+		public PhantomCleanableRef() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 		{
 		}
 
@@ -213,8 +213,8 @@ public partial class CleanerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/ref/CleanerImpl$CleanerCleanable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CleanerCleanable", "(Ljava/lang/ref/Cleaner;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "performCleanup", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ref/Cleaner;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "performCleanup", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -223,7 +223,7 @@ public partial class CleanerImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/ref/Cleaner;)V", "")]
-		public CleanerCleanable(Dova.JDK.java.lang.@ref.Cleaner arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CleanerCleanable(Dova.JDK.java.lang.@ref.Cleaner arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -254,11 +254,11 @@ public partial class CleanerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/ref/CleanerImpl$InnocuousThreadFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "factory", "Ljava/util/concurrent/ThreadFactory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cleanerThreadNumber", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InnocuousThreadFactory", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "factory", "()Ljava/util/concurrent/ThreadFactory;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newThread", "(Ljava/lang/Runnable;)Ljava/lang/Thread;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "factory", "Ljava/util/concurrent/ThreadFactory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cleanerThreadNumber", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "factory", "()Ljava/util/concurrent/ThreadFactory;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newThread", "(Ljava/lang/Runnable;)Ljava/lang/Thread;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/ThreadFactory;", "static final")]
@@ -295,7 +295,7 @@ public partial class CleanerImpl
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public InnocuousThreadFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InnocuousThreadFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

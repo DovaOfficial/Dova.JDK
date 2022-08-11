@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,20 +32,20 @@ public partial class SubjectCodeSource
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/SubjectCodeSource;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subject", "Ljavax/security/auth/Subject;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "principals", "Ljava/util/LinkedList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARAMS", "[Ljava/lang/Class;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Lsun/security/util/Debug;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sysClassLoader", "Ljava/lang/ClassLoader;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SubjectCodeSource", "(Ljavax/security/auth/Subject;Ljava/util/LinkedList;Ljava/net/URL;[Ljava/security/cert/Certificate;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "implies", "(Ljava/security/CodeSource;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrincipals", "()Ljava/util/LinkedList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subjectListImpliesPrincipalEntry", "(Ljava/util/LinkedList;Lsun/security/provider/PolicyParser$PrincipalEntry;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSubject", "()Ljavax/security/auth/Subject;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subject", "Ljavax/security/auth/Subject;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "principals", "Ljava/util/LinkedList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARAMS", "[Ljava/lang/Class;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Lsun/security/util/Debug;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sysClassLoader", "Ljava/lang/ClassLoader;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/security/auth/Subject;Ljava/util/LinkedList;Ljava/net/URL;[Ljava/security/cert/Certificate;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "implies", "(Ljava/security/CodeSource;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrincipals", "()Ljava/util/LinkedList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subjectListImpliesPrincipalEntry", "(Ljava/util/LinkedList;Lsun/security/provider/PolicyParser$PrincipalEntry;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSubject", "()Ljavax/security/auth/Subject;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -138,7 +138,7 @@ public partial class SubjectCodeSource
 	}
 
 	[JniSignatureAttribute("(Ljavax/security/auth/Subject;Ljava/util/LinkedList;Ljava/net/URL;[Ljava/security/cert/Certificate;)V", "")]
-	public SubjectCodeSource(Dova.JDK.javax.security.auth.Subject arg0, Dova.JDK.java.util.LinkedList arg1, Dova.JDK.java.net.URL arg2, JavaArray<Dova.JDK.java.security.cert.Certificate> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public SubjectCodeSource(Dova.JDK.javax.security.auth.Subject arg0, Dova.JDK.java.util.LinkedList arg1, Dova.JDK.java.net.URL arg2, JavaArray<Dova.JDK.java.security.cert.Certificate> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

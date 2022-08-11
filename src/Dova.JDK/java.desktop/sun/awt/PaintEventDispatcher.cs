@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class PaintEventDispatcher
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/PaintEventDispatcher;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dispatcher", "Lsun/awt/PaintEventDispatcher;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PaintEventDispatcher", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPaintEvent", "(Ljava/awt/Component;IIII)Ljava/awt/event/PaintEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "queueSurfaceDataReplacing", "(Ljava/awt/Component;Ljava/lang/Runnable;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldDoNativeBackgroundErase", "(Ljava/awt/Component;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPaintEventDispatcher", "()Lsun/awt/PaintEventDispatcher;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setPaintEventDispatcher", "(Lsun/awt/PaintEventDispatcher;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dispatcher", "Lsun/awt/PaintEventDispatcher;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPaintEvent", "(Ljava/awt/Component;IIII)Ljava/awt/event/PaintEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "queueSurfaceDataReplacing", "(Ljava/awt/Component;Ljava/lang/Runnable;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldDoNativeBackgroundErase", "(Ljava/awt/Component;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPaintEventDispatcher", "()Lsun/awt/PaintEventDispatcher;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setPaintEventDispatcher", "(Lsun/awt/PaintEventDispatcher;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/PaintEventDispatcher;", "private static")]
@@ -60,7 +60,7 @@ public partial class PaintEventDispatcher
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public PaintEventDispatcher() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public PaintEventDispatcher() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

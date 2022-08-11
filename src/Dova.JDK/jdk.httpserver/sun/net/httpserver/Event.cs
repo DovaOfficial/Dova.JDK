@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class Event
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/httpserver/Event;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exchange", "Lsun/net/httpserver/ExchangeImpl;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Event", "(Lsun/net/httpserver/ExchangeImpl;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exchange", "Lsun/net/httpserver/ExchangeImpl;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/net/httpserver/ExchangeImpl;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/net/httpserver/ExchangeImpl;", "")]
@@ -54,7 +54,7 @@ public partial class Event
 	}
 
 	[JniSignatureAttribute("(Lsun/net/httpserver/ExchangeImpl;)V", "protected")]
-	public Event(Dova.JDK.sun.net.httpserver.ExchangeImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Event(Dova.JDK.sun.net.httpserver.ExchangeImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

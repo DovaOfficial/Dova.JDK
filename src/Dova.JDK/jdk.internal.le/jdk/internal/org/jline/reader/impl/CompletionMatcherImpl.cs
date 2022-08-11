@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,22 +32,22 @@ public partial class CompletionMatcherImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/reader/impl/CompletionMatcherImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exact", "Ljava/util/function/Predicate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matchers", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matching", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caseInsensitive", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompletionMatcherImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "(Ljava/util/Map;ZLjdk/internal/org/jline/reader/CompletingParsedLine;ZILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sort", "(Ljava/util/List;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exactMatch", "()Ljdk/internal/org/jline/reader/Candidate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCommonPrefix", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultMatchers", "(Ljava/util/Map;ZLjdk/internal/org/jline/reader/CompletingParsedLine;ZILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCommonStart", "(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "simpleMatcher", "(Ljava/util/function/Predicate;)Ljava/util/function/Function;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "typoMatcher", "(Ljava/lang/String;IZLjava/lang/String;)Ljava/util/function/Function;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "camelMatch", "(Ljava/lang/String;ILjava/lang/String;I)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exact", "Ljava/util/function/Predicate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matchers", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matching", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caseInsensitive", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matches", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "(Ljava/util/Map;ZLjdk/internal/org/jline/reader/CompletingParsedLine;ZILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sort", "(Ljava/util/List;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exactMatch", "()Ljdk/internal/org/jline/reader/Candidate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCommonPrefix", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defaultMatchers", "(Ljava/util/Map;ZLjdk/internal/org/jline/reader/CompletingParsedLine;ZILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCommonStart", "(Ljava/lang/String;Ljava/lang/String;Z)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "simpleMatcher", "(Ljava/util/function/Predicate;)Ljava/util/function/Function;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "typoMatcher", "(Ljava/lang/String;IZLjava/lang/String;)Ljava/util/function/Function;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "camelMatch", "(Ljava/lang/String;ILjava/lang/String;I)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/Predicate;", "protected")]
@@ -112,7 +112,7 @@ public partial class CompletionMatcherImpl
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CompletionMatcherImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CompletionMatcherImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,36 +31,36 @@ public partial class DesktopIntegration
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/DesktopIntegration;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_COMMANDS_INSTALL", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_COMMANDS_UNINSTALL", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UTILITY_SCRIPTS", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thePackage", "Ljdk/jpackage/internal/PlatformPackage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "associations", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "launchers", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iconResource", "Ljdk/jpackage/internal/OverridableResource;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "desktopFileResource", "Ljdk/jpackage/internal/OverridableResource;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mimeInfoFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "desktopFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iconFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nestedIntegrations", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "desktopFileData", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_GROUP", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINUX_SHORTCUT_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DesktopIntegration", "(Ljdk/jpackage/internal/PlatformPackage;Ljava/util/Map;Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/jpackage/internal/PlatformPackage;Ljava/util/Map;)Ljdk/jpackage/internal/DesktopIntegration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDataForDesktopFile", "(Ljava/util/Map;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDesktopFile", "(Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createFileAssociationsMimeInfoFile", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addFileAssociationIconFiles", "(Ljdk/jpackage/internal/DesktopIntegration$ShellCommands;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "stringifyShellCommands", "(Ljava/util/List;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "stringifyShellCommands", "([Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMimeTypeNamesFromFileAssociations", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appendFileAssociation", "(Ljavax/xml/stream/XMLStreamWriter;Ljdk/jpackage/internal/FileAssociation;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requiredPackages", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requiredPackagesSelf", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSquareSizeOfImage", "(Ljava/io/File;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalizeIconSize", "(I)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_COMMANDS_INSTALL", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_COMMANDS_UNINSTALL", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UTILITY_SCRIPTS", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thePackage", "Ljdk/jpackage/internal/PlatformPackage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "associations", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "launchers", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iconResource", "Ljdk/jpackage/internal/OverridableResource;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "desktopFileResource", "Ljdk/jpackage/internal/OverridableResource;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mimeInfoFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "desktopFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iconFile", "Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nestedIntegrations", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "desktopFileData", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_GROUP", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINUX_SHORTCUT_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jpackage/internal/PlatformPackage;Ljava/util/Map;Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/jpackage/internal/PlatformPackage;Ljava/util/Map;)Ljdk/jpackage/internal/DesktopIntegration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDataForDesktopFile", "(Ljava/util/Map;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDesktopFile", "(Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createFileAssociationsMimeInfoFile", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addFileAssociationIconFiles", "(Ljdk/jpackage/internal/DesktopIntegration$ShellCommands;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "stringifyShellCommands", "(Ljava/util/List;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "stringifyShellCommands", "([Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMimeTypeNamesFromFileAssociations", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appendFileAssociation", "(Ljavax/xml/stream/XMLStreamWriter;Ljdk/jpackage/internal/FileAssociation;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requiredPackages", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requiredPackagesSelf", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSquareSizeOfImage", "(Ljava/io/File;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalizeIconSize", "(I)I"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -279,7 +279,7 @@ public partial class DesktopIntegration
 	}
 
 	[JniSignatureAttribute("(Ljdk/jpackage/internal/PlatformPackage;Ljava/util/Map;Ljava/util/Map;)V", "private")]
-	public DesktopIntegration(Dova.JDK.jdk.jpackage.@internal.PlatformPackage arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.util.Map arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public DesktopIntegration(Dova.JDK.jdk.jpackage.@internal.PlatformPackage arg0, Dova.JDK.java.util.Map arg1, Dova.JDK.java.util.Map arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -396,11 +396,11 @@ public partial class DesktopIntegration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/DesktopIntegration$DesktopFile;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "installPath", "Ljava/nio/file/Path;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcPath", "Ljava/nio/file/Path;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DesktopFile", "(Ljdk/jpackage/internal/DesktopIntegration;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installPath", "()Ljava/nio/file/Path;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "srcPath", "()Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "installPath", "Ljava/nio/file/Path;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcPath", "Ljava/nio/file/Path;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jpackage/internal/DesktopIntegration;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installPath", "()Ljava/nio/file/Path;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "srcPath", "()Ljava/nio/file/Path;"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/file/Path;", "private final")]
@@ -437,7 +437,7 @@ public partial class DesktopIntegration
 		}
 
 		[JniSignatureAttribute("(Ljdk/jpackage/internal/DesktopIntegration;Ljava/lang/String;)V", "")]
-		public DesktopFile(Dova.JDK.jdk.jpackage.@internal.DesktopIntegration arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public DesktopFile(Dova.JDK.jdk.jpackage.@internal.DesktopIntegration arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -475,18 +475,18 @@ public partial class DesktopIntegration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/DesktopIntegration$ShellCommands;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "registerDesktopFileCmd", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unregisterDesktopFileCmd", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "registerFileAssociationsCmd", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unregisterFileAssociationsCmd", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "registerIconCmds", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unregisterIconCmds", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/jpackage/internal/DesktopIntegration;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ShellCommands", "(Ljdk/jpackage/internal/DesktopIntegration;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFileAssociations", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyTo", "(Ljava/util/Map;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addIcon", "(Ljava/lang/String;Ljava/nio/file/Path;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addIcon", "(Ljava/lang/String;Ljava/nio/file/Path;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "registerDesktopFileCmd", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unregisterDesktopFileCmd", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "registerFileAssociationsCmd", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unregisterFileAssociationsCmd", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "registerIconCmds", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unregisterIconCmds", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/jpackage/internal/DesktopIntegration;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jpackage/internal/DesktopIntegration;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFileAssociations", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyTo", "(Ljava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addIcon", "(Ljava/lang/String;Ljava/nio/file/Path;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addIcon", "(Ljava/lang/String;Ljava/nio/file/Path;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -593,7 +593,7 @@ public partial class DesktopIntegration
 		}
 
 		[JniSignatureAttribute("(Ljdk/jpackage/internal/DesktopIntegration;)V", "")]
-		public ShellCommands(Dova.JDK.jdk.jpackage.@internal.DesktopIntegration arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ShellCommands(Dova.JDK.jdk.jpackage.@internal.DesktopIntegration arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -640,9 +640,9 @@ public partial class DesktopIntegration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/DesktopIntegration$LinuxFileAssociation;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "Ljdk/jpackage/internal/FileAssociation;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iconSize", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LinuxFileAssociation", "(Ljdk/jpackage/internal/FileAssociation;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "Ljdk/jpackage/internal/FileAssociation;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iconSize", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jpackage/internal/FileAssociation;)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jpackage/internal/FileAssociation;", "final")]
@@ -679,7 +679,7 @@ public partial class DesktopIntegration
 		}
 
 		[JniSignatureAttribute("(Ljdk/jpackage/internal/FileAssociation;)V", "")]
-		public LinuxFileAssociation(Dova.JDK.jdk.jpackage.@internal.FileAssociation arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LinuxFileAssociation(Dova.JDK.jdk.jpackage.@internal.FileAssociation arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

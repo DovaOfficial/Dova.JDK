@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class SoftInstrument
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/SoftInstrument;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "performers", "[Lcom/sun/media/sound/SoftPerformer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modelperformers", "[Lcom/sun/media/sound/ModelPerformer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ins", "Lcom/sun/media/sound/ModelInstrument;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SoftInstrument", "(Lcom/sun/media/sound/ModelInstrument;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SoftInstrument", "(Lcom/sun/media/sound/ModelInstrument;[Lcom/sun/media/sound/ModelPerformer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDirector", "(Ljavax/sound/midi/MidiChannel;Lcom/sun/media/sound/ModelDirectedPlayer;)Lcom/sun/media/sound/ModelDirector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPerformer", "(I)Lcom/sun/media/sound/SoftPerformer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initPerformers", "([Lcom/sun/media/sound/ModelPerformer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceInstrument", "()Lcom/sun/media/sound/ModelInstrument;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getData", "()Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "performers", "[Lcom/sun/media/sound/SoftPerformer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modelperformers", "[Lcom/sun/media/sound/ModelPerformer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ins", "Lcom/sun/media/sound/ModelInstrument;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelInstrument;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelInstrument;[Lcom/sun/media/sound/ModelPerformer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDirector", "(Ljavax/sound/midi/MidiChannel;Lcom/sun/media/sound/ModelDirectedPlayer;)Lcom/sun/media/sound/ModelDirector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPerformer", "(I)Lcom/sun/media/sound/SoftPerformer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initPerformers", "([Lcom/sun/media/sound/ModelPerformer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceInstrument", "()Lcom/sun/media/sound/ModelInstrument;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getData", "()Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/media/sound/SoftPerformer;", "private")]
@@ -106,12 +106,12 @@ public partial class SoftInstrument
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelInstrument;)V", "public")]
-	public SoftInstrument(Dova.JDK.com.sun.media.sound.ModelInstrument arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SoftInstrument(Dova.JDK.com.sun.media.sound.ModelInstrument arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelInstrument;[Lcom/sun/media/sound/ModelPerformer;)V", "public")]
-	public SoftInstrument(Dova.JDK.com.sun.media.sound.ModelInstrument arg0, JavaArray<Dova.JDK.com.sun.media.sound.ModelPerformer> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public SoftInstrument(Dova.JDK.com.sun.media.sound.ModelInstrument arg0, JavaArray<Dova.JDK.com.sun.media.sound.ModelPerformer> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

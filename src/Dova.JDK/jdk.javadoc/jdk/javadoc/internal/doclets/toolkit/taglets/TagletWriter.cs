@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,33 +31,33 @@ public partial class TagletWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isFirstSentence", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TagletWriter", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "configuration", "()Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInlineTagOutput", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;Lcom/sun/source/doctree/DocTree;Lcom/sun/source/doctree/DocTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "simpleBlockTagOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getThrowsHeader", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "throwsTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ThrowsTree;Ljavax/lang/model/type/TypeMirror;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "throwsTagOutput", "(Ljavax/lang/model/type/TypeMirror;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "valueTagOutput", "(Ljavax/lang/model/element/VariableElement;Ljava/lang/String;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidTagOutput", "(Ljava/lang/String;Ljava/util/Optional;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutputInstance", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentPageElement", "()Ljavax/lang/model/element/TypeElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBlockTagOutput", "(Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "snippetTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/SnippetTree;Ljdk/javadoc/internal/doclets/toolkit/taglets/snippet/StyledText;Ljava/lang/String;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seeTagOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "codeTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/DocTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParamHeader", "(Ljdk/javadoc/internal/doclets/toolkit/taglets/ParamTaglet$ParamKind;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDocRootOutput", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deprecatedTagOutput", "(Ljavax/lang/model/element/Element;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "literalTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/LiteralTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "systemPropertyTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/SystemPropertyTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paramTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ParamTree;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "returnTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ReturnTree;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/IndexTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "commentTagsToOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "commentTagsToOutput", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "commentTagsToOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/DocTree;Ljava/util/List;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isFirstSentence", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "configuration", "()Ljdk/javadoc/internal/doclets/toolkit/BaseConfiguration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInlineTagOutput", "(Ljavax/lang/model/element/Element;Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;Lcom/sun/source/doctree/DocTree;Lcom/sun/source/doctree/DocTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "simpleBlockTagOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getThrowsHeader", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "throwsTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ThrowsTree;Ljavax/lang/model/type/TypeMirror;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "throwsTagOutput", "(Ljavax/lang/model/type/TypeMirror;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "valueTagOutput", "(Ljavax/lang/model/element/VariableElement;Ljava/lang/String;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidTagOutput", "(Ljava/lang/String;Ljava/util/Optional;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutputInstance", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentPageElement", "()Ljavax/lang/model/element/TypeElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBlockTagOutput", "(Ljdk/javadoc/internal/doclets/toolkit/taglets/TagletManager;Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "snippetTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/SnippetTree;Ljdk/javadoc/internal/doclets/toolkit/taglets/snippet/StyledText;Ljava/lang/String;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seeTagOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "codeTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/DocTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParamHeader", "(Ljdk/javadoc/internal/doclets/toolkit/taglets/ParamTaglet$ParamKind;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDocRootOutput", "()Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deprecatedTagOutput", "(Ljavax/lang/model/element/Element;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "literalTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/LiteralTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "systemPropertyTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/SystemPropertyTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paramTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ParamTree;Ljava/lang/String;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "returnTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/ReturnTree;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexTagOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/IndexTree;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "commentTagsToOutput", "(Ljavax/lang/model/element/Element;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "commentTagsToOutput", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "commentTagsToOutput", "(Ljavax/lang/model/element/Element;Lcom/sun/source/doctree/DocTree;Ljava/util/List;Z)Ljdk/javadoc/internal/doclets/toolkit/Content;"));
 	}
 
 	[JniSignatureAttribute("Z", "protected final")]
@@ -80,7 +80,7 @@ public partial class TagletWriter
 	}
 
 	[JniSignatureAttribute("(Z)V", "protected")]
-	public TagletWriter(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TagletWriter(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

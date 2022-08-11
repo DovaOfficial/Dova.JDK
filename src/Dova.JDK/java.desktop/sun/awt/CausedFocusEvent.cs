@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class CausedFocusEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/CausedFocusEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dummy", "Ljava/awt/Component;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cause", "Lsun/awt/CausedFocusEvent$Cause;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CausedFocusEvent", "(Ljava/awt/Component;IZLjava/awt/Component;Lsun/awt/CausedFocusEvent$Cause;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readResolve", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$000", "(Lsun/awt/CausedFocusEvent;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dummy", "Ljava/awt/Component;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cause", "Lsun/awt/CausedFocusEvent$Cause;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;IZLjava/awt/Component;Lsun/awt/CausedFocusEvent$Cause;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readResolve", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "access$000", "(Lsun/awt/CausedFocusEvent;)Z"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -87,7 +87,7 @@ public partial class CausedFocusEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;IZLjava/awt/Component;Lsun/awt/CausedFocusEvent$Cause;)V", "private")]
-	public CausedFocusEvent(Dova.JDK.java.awt.Component arg0, int arg1, bool arg2, Dova.JDK.java.awt.Component arg3, Dova.JDK.sun.awt.CausedFocusEvent.Cause arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public CausedFocusEvent(Dova.JDK.java.awt.Component arg0, int arg1, bool arg2, Dova.JDK.java.awt.Component arg3, Dova.JDK.sun.awt.CausedFocusEvent.Cause arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
@@ -124,25 +124,25 @@ public partial class CausedFocusEvent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/CausedFocusEvent$Cause;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MOUSE_EVENT", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAVERSAL", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAVERSAL_UP", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAVERSAL_DOWN", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAVERSAL_FORWARD", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRAVERSAL_BACKWARD", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MANUAL_REQUEST", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AUTOMATIC_TRAVERSE", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROLLBACK", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NATIVE_SYSTEM", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACTIVATION", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLEAR_GLOBAL_FOCUS_OWNER", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RETARGETED", "Lsun/awt/CausedFocusEvent$Cause;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/awt/CausedFocusEvent$Cause;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Cause", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/awt/CausedFocusEvent$Cause;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/awt/CausedFocusEvent$Cause;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MOUSE_EVENT", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAVERSAL", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAVERSAL_UP", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAVERSAL_DOWN", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAVERSAL_FORWARD", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRAVERSAL_BACKWARD", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MANUAL_REQUEST", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AUTOMATIC_TRAVERSE", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROLLBACK", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NATIVE_SYSTEM", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACTIVATION", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLEAR_GLOBAL_FOCUS_OWNER", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RETARGETED", "Lsun/awt/CausedFocusEvent$Cause;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/awt/CausedFocusEvent$Cause;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/awt/CausedFocusEvent$Cause;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/awt/CausedFocusEvent$Cause;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/awt/CausedFocusEvent$Cause;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/CausedFocusEvent$Cause;", "public static final")]
@@ -361,7 +361,7 @@ public partial class CausedFocusEvent
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Cause(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Cause(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -33,25 +33,25 @@ public partial class JdepsFilter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_FILTER", "Lcom/sun/tools/jdeps/JdepsFilter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter", "Lcom/sun/tools/classfile/Dependency$Filter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findJDKInternals", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdepsFilter", "(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matches", "(Lcom/sun/tools/jdeps/Archive;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasIncludePattern", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasTargetFilter", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requiresFilter", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isJDKInternalPackage", "(Lcom/sun/tools/jdeps/Module;Ljava/lang/String;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_FILTER", "Lcom/sun/tools/jdeps/JdepsFilter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filter", "Lcom/sun/tools/classfile/Dependency$Filter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterSamePackage", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterSameArchive", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "findJDKInternals", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "findMissingDeps", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "includePattern", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requires", "Ljava/util/Set;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matches", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matches", "(Lcom/sun/tools/jdeps/Archive;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;Lcom/sun/tools/classfile/Dependency$Location;Lcom/sun/tools/jdeps/Archive;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accepts", "(Lcom/sun/tools/classfile/Dependency;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasIncludePattern", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasTargetFilter", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requiresFilter", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isJDKInternalPackage", "(Lcom/sun/tools/jdeps/Module;Ljava/lang/String;)Z"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/jdeps/JdepsFilter;", "public static final")]
@@ -186,7 +186,7 @@ public partial class JdepsFilter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/Dependency$Filter;Ljava/util/regex/Pattern;ZZZZLjava/util/regex/Pattern;Ljava/util/Set;)V", "private")]
-	public JdepsFilter(Dova.JDK.com.sun.tools.classfile.Dependency.Filter arg0, Dova.JDK.java.util.regex.Pattern arg1, bool arg2, bool arg3, bool arg4, bool arg5, Dova.JDK.java.util.regex.Pattern arg6, Dova.JDK.java.util.Set arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public JdepsFilter(Dova.JDK.com.sun.tools.classfile.Dependency.Filter arg0, Dova.JDK.java.util.regex.Pattern arg1, bool arg2, bool arg3, bool arg4, bool arg5, Dova.JDK.java.util.regex.Pattern arg6, Dova.JDK.java.util.Set arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
@@ -272,25 +272,25 @@ public partial class JdepsFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdeps/JdepsFilter$Builder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "regex", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSamePackage", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filterSameArchive", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findJDKInterals", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "findMissingDeps", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "includePattern", "Ljava/util/regex/Pattern;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requires", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetPackages", "Ljava/util/Set;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Builder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "regex", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "(Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "filter", "(ZZ)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "filter", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Lcom/sun/tools/jdeps/JdepsFilter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requires", "(Ljava/lang/String;Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "includePattern", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findJDKInternals", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findMissingDeps", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterPattern", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "regex", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterSamePackage", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filterSameArchive", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "findJDKInterals", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "findMissingDeps", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "includePattern", "Ljava/util/regex/Pattern;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requires", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetPackages", "Ljava/util/Set;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "regex", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packages", "(Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "filter", "(ZZ)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "filter", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()Lcom/sun/tools/jdeps/JdepsFilter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requires", "(Ljava/lang/String;Ljava/util/Set;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "includePattern", "(Ljava/util/regex/Pattern;)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findJDKInternals", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findMissingDeps", "(Z)Lcom/sun/tools/jdeps/JdepsFilter$Builder;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern;", "")]
@@ -425,7 +425,7 @@ public partial class JdepsFilter
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public Builder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Builder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class JceSecurityManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/crypto/JceSecurityManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultPolicy", "Ljavax/crypto/CryptoPermissions;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "exemptPolicy", "Ljavax/crypto/CryptoPermissions;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "allPerm", "Ljavax/crypto/CryptoAllPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TrustedCallersCache", "Ljava/util/Vector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "exemptCache", "Ljava/util/concurrent/ConcurrentMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CACHE_NULL_MARK", "Ljavax/crypto/CryptoPermissions;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljavax/crypto/JceSecurityManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WALKER", "Ljava/lang/StackWalker;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JceSecurityManager", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCallerTrusted", "(Ljava/lang/Class;Ljava/security/Provider;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCryptoPermission", "(Ljava/lang/String;)Ljavax/crypto/CryptoPermission;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultPermission", "(Ljava/lang/String;)Ljavax/crypto/CryptoPermission;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAppPermissions", "(Ljava/net/URL;)Ljavax/crypto/CryptoPermissions;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCryptoPermissionFromURL", "(Ljava/net/URL;Ljava/lang/String;Ljavax/crypto/CryptoPermission;)Ljavax/crypto/CryptoPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultPolicy", "Ljavax/crypto/CryptoPermissions;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "exemptPolicy", "Ljavax/crypto/CryptoPermissions;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "allPerm", "Ljavax/crypto/CryptoAllPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TrustedCallersCache", "Ljava/util/Vector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "exemptCache", "Ljava/util/concurrent/ConcurrentMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CACHE_NULL_MARK", "Ljavax/crypto/CryptoPermissions;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljavax/crypto/JceSecurityManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WALKER", "Ljava/lang/StackWalker;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCallerTrusted", "(Ljava/lang/Class;Ljava/security/Provider;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCryptoPermission", "(Ljava/lang/String;)Ljavax/crypto/CryptoPermission;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultPermission", "(Ljava/lang/String;)Ljavax/crypto/CryptoPermission;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAppPermissions", "(Ljava/net/URL;)Ljavax/crypto/CryptoPermissions;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCryptoPermissionFromURL", "(Ljava/net/URL;Ljava/lang/String;Ljavax/crypto/CryptoPermission;)Ljavax/crypto/CryptoPermission;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/crypto/CryptoPermissions;", "private static final")]
@@ -165,7 +165,7 @@ public partial class JceSecurityManager
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public JceSecurityManager() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JceSecurityManager() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

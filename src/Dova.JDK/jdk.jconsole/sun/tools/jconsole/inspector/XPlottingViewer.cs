@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,21 +32,21 @@ public partial class XPlottingViewer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XPlottingViewer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLOTTER_DECIMALS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "plotButton", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "plotterCache", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "timerCache", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tab", "Lsun/tools/jconsole/MBeansTab;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributeName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "table", "Ljavax/swing/JTable;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XPlottingViewer", "(Ljava/lang/String;Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/Object;Ljavax/swing/JTable;Lsun/tools/jconsole/MBeansTab;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dispose", "(Lsun/tools/jconsole/MBeansTab;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setupDisplay", "(Lsun/tools/jconsole/Plotter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPlotter", "(Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/String;Ljavax/swing/JTable;)Lsun/tools/jconsole/Plotter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isViewableValue", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadPlotting", "(Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/Object;Ljavax/swing/JTable;Lsun/tools/jconsole/MBeansTab;)Ljava/awt/Component;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLOTTER_DECIMALS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "plotButton", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "plotterCache", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "timerCache", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tab", "Lsun/tools/jconsole/MBeansTab;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributeName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "key", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "table", "Ljavax/swing/JTable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/Object;Ljavax/swing/JTable;Lsun/tools/jconsole/MBeansTab;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dispose", "(Lsun/tools/jconsole/MBeansTab;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setupDisplay", "(Lsun/tools/jconsole/Plotter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPlotter", "(Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/String;Ljavax/swing/JTable;)Lsun/tools/jconsole/Plotter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isViewableValue", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadPlotting", "(Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/Object;Ljavax/swing/JTable;Lsun/tools/jconsole/MBeansTab;)Ljava/awt/Component;"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -167,7 +167,7 @@ public partial class XPlottingViewer
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Lsun/tools/jconsole/inspector/XMBean;Ljava/lang/String;Ljava/lang/Object;Ljavax/swing/JTable;Lsun/tools/jconsole/MBeansTab;)V", "private")]
-	public XPlottingViewer(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.tools.jconsole.inspector.XMBean arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.Object arg3, Dova.JDK.javax.swing.JTable arg4, Dova.JDK.sun.tools.jconsole.MBeansTab arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public XPlottingViewer(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.tools.jconsole.inspector.XMBean arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.java.lang.Object arg3, Dova.JDK.javax.swing.JTable arg4, Dova.JDK.sun.tools.jconsole.MBeansTab arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 

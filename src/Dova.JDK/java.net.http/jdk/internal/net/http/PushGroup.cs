@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class PushGroup
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/PushGroup;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initiatingRequest", "Ljava/net/http/HttpRequest;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noMorePushesCF", "Ljava/util/concurrent/CompletableFuture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "error", "Ljava/lang/Throwable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pushPromiseHandler", "Ljava/net/http/HttpResponse$PushPromiseHandler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "executor", "Ljava/util/concurrent/Executor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numberOfPushes", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remainingPushes", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noMorePushes", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PushGroup", "(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/Executor;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PushGroup", "(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/Executor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkIfCompleted", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushesCF", "()Ljava/util/concurrent/CompletableFuture;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noMorePushes", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noMorePushes", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushError", "(Ljava/lang/Throwable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptPushRequest", "(Ljava/net/http/HttpRequest;)Ljdk/internal/net/http/PushGroup$Acceptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushCompleted", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initiatingRequest", "Ljava/net/http/HttpRequest;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noMorePushesCF", "Ljava/util/concurrent/CompletableFuture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "error", "Ljava/lang/Throwable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pushPromiseHandler", "Ljava/net/http/HttpResponse$PushPromiseHandler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "executor", "Ljava/util/concurrent/Executor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numberOfPushes", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "remainingPushes", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noMorePushes", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/Executor;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/Executor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkIfCompleted", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushesCF", "()Ljava/util/concurrent/CompletableFuture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noMorePushes", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noMorePushes", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushError", "(Ljava/lang/Throwable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptPushRequest", "(Ljava/net/http/HttpRequest;)Ljdk/internal/net/http/PushGroup$Acceptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushCompleted", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/http/HttpRequest;", "private final")]
@@ -168,12 +168,12 @@ public partial class PushGroup
 	}
 
 	[JniSignatureAttribute("(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/Executor;)V", "")]
-	public PushGroup(Dova.JDK.java.net.http.HttpResponse.PushPromiseHandler arg0, Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg1, Dova.JDK.java.util.concurrent.Executor arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public PushGroup(Dova.JDK.java.net.http.HttpResponse.PushPromiseHandler arg0, Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg1, Dova.JDK.java.util.concurrent.Executor arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/net/http/HttpResponse$PushPromiseHandler;Ljdk/internal/net/http/HttpRequestImpl;Ljava/util/concurrent/CompletableFuture;Ljava/util/concurrent/Executor;)V", "private")]
-	public PushGroup(Dova.JDK.java.net.http.HttpResponse.PushPromiseHandler arg0, Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg1, Dova.JDK.java.util.concurrent.CompletableFuture arg2, Dova.JDK.java.util.concurrent.Executor arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public PushGroup(Dova.JDK.java.net.http.HttpResponse.PushPromiseHandler arg0, Dova.JDK.jdk.@internal.net.http.HttpRequestImpl arg1, Dova.JDK.java.util.concurrent.CompletableFuture arg2, Dova.JDK.java.util.concurrent.Executor arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -242,14 +242,14 @@ public partial class PushGroup
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/PushGroup$AcceptorImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "executor", "Ljava/util/concurrent/Executor;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bodyHandler", "Ljava/net/http/HttpResponse$BodyHandler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cf", "Ljava/util/concurrent/CompletableFuture;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AcceptorImpl", "(Ljava/util/concurrent/Executor;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cf", "()Ljava/util/concurrent/CompletableFuture;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepted", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bodyHandler", "()Ljava/net/http/HttpResponse$BodyHandler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "executor", "Ljava/util/concurrent/Executor;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bodyHandler", "Ljava/net/http/HttpResponse$BodyHandler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cf", "Ljava/util/concurrent/CompletableFuture;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/Executor;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(Ljava/net/http/HttpResponse$BodyHandler;)Ljava/util/concurrent/CompletableFuture;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cf", "()Ljava/util/concurrent/CompletableFuture;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accepted", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bodyHandler", "()Ljava/net/http/HttpResponse$BodyHandler;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/concurrent/Executor;", "private final")]
@@ -300,7 +300,7 @@ public partial class PushGroup
 		}
 
 		[JniSignatureAttribute("(Ljava/util/concurrent/Executor;)V", "")]
-		public AcceptorImpl(Dova.JDK.java.util.concurrent.Executor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AcceptorImpl(Dova.JDK.java.util.concurrent.Executor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -350,9 +350,9 @@ public partial class PushGroup
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/PushGroup$Acceptor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cf", "()Ljava/util/concurrent/CompletableFuture;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepted", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bodyHandler", "()Ljava/net/http/HttpResponse$BodyHandler;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cf", "()Ljava/util/concurrent/CompletableFuture;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accepted", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bodyHandler", "()Ljava/net/http/HttpResponse$BodyHandler;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/util/concurrent/CompletableFuture;", "public abstract")]

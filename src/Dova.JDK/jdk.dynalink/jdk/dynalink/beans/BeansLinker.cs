@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,22 +32,22 @@ public partial class BeansLinker
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/beans/BeansLinker;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "linkers", "Ljava/lang/ClassValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "missingMemberHandlerFactory", "Ljdk/dynalink/beans/MissingMemberHandlerFactory;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeansLinker", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeansLinker", "(Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConstructorMethod", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getStaticLinkerForClass", "(Ljava/lang/Class;)Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getReadableStaticPropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getWritableStaticPropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getStaticMethodNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLinkerForClass", "(Ljava/lang/Class;)Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isDynamicMethod", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isDynamicConstructor", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getReadableInstancePropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getWritableInstancePropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstanceMethodNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "linkers", "Ljava/lang/ClassValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "missingMemberHandlerFactory", "Ljdk/dynalink/beans/MissingMemberHandlerFactory;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConstructorMethod", "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getStaticLinkerForClass", "(Ljava/lang/Class;)Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getReadableStaticPropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getWritableStaticPropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getStaticMethodNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLinkerForClass", "(Ljava/lang/Class;)Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isDynamicMethod", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isDynamicConstructor", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getReadableInstancePropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getWritableInstancePropertyNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstanceMethodNames", "(Ljava/lang/Class;)Ljava/util/Set;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ClassValue;", "private static final")]
@@ -84,12 +84,12 @@ public partial class BeansLinker
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BeansLinker() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BeansLinker() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V", "public")]
-	public BeansLinker(Dova.JDK.jdk.dynalink.beans.MissingMemberHandlerFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public BeansLinker(Dova.JDK.jdk.dynalink.beans.MissingMemberHandlerFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -197,11 +197,11 @@ public partial class BeansLinker
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/beans/BeansLinker$NoSuchMemberHandlerBindingLinker;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "linker", "Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "missingMemberHandlerFactory", "Ljdk/dynalink/beans/MissingMemberHandlerFactory;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NoSuchMemberHandlerBindingLinker", "(Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canLinkType", "(Ljava/lang/Class;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "linker", "Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "missingMemberHandlerFactory", "Ljdk/dynalink/beans/MissingMemberHandlerFactory;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canLinkType", "(Ljava/lang/Class;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;", "private final")]
@@ -238,7 +238,7 @@ public partial class BeansLinker
 		}
 
 		[JniSignatureAttribute("(Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;Ljdk/dynalink/beans/MissingMemberHandlerFactory;)V", "")]
-		public NoSuchMemberHandlerBindingLinker(Dova.JDK.jdk.dynalink.linker.TypeBasedGuardingDynamicLinker arg0, Dova.JDK.jdk.dynalink.beans.MissingMemberHandlerFactory arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NoSuchMemberHandlerBindingLinker(Dova.JDK.jdk.dynalink.linker.TypeBasedGuardingDynamicLinker arg0, Dova.JDK.jdk.dynalink.beans.MissingMemberHandlerFactory arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class TypeConverterFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/TypeConverterFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comparators", "[Ljdk/dynalink/linker/ConversionComparator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "autoConversionStrategy", "Ljdk/dynalink/linker/MethodTypeConversionStrategy;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "converterMap", "Ljdk/dynalink/BiClassValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "converterIdentityMap", "Ljdk/dynalink/BiClassValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canConvert", "Ljdk/dynalink/BiClassValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IDENTITY_CONVERSION", "Ljava/lang/invoke/MethodHandle;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeConverterFactory", "(Ljava/lang/Iterable;Ljdk/dynalink/linker/MethodTypeConversionStrategy;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asType", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canConvert", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "canAutoConvert", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "applyConverters", "(Ljava/lang/invoke/MethodHandle;ILjava/util/List;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTypeConverterNull", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCacheableTypeConverter", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCacheableTypeConverterNull", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createConverter", "(Ljava/lang/Class;Ljava/lang/Class;[Ljdk/dynalink/linker/GuardingTypeConverterFactory;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTypeConverter", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareConversion", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "comparators", "[Ljdk/dynalink/linker/ConversionComparator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "autoConversionStrategy", "Ljdk/dynalink/linker/MethodTypeConversionStrategy;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "converterMap", "Ljdk/dynalink/BiClassValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "converterIdentityMap", "Ljdk/dynalink/BiClassValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canConvert", "Ljdk/dynalink/BiClassValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IDENTITY_CONVERSION", "Ljava/lang/invoke/MethodHandle;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Iterable;Ljdk/dynalink/linker/MethodTypeConversionStrategy;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asType", "(Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canConvert", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "canAutoConvert", "(Ljava/lang/Class;Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "applyConverters", "(Ljava/lang/invoke/MethodHandle;ILjava/util/List;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTypeConverterNull", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCacheableTypeConverter", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCacheableTypeConverterNull", "(Ljava/lang/Class;Ljava/lang/Class;Ljdk/dynalink/BiClassValue;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createConverter", "(Ljava/lang/Class;Ljava/lang/Class;[Ljdk/dynalink/linker/GuardingTypeConverterFactory;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTypeConverter", "(Ljava/lang/Class;Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compareConversion", "(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Class;)Ljdk/dynalink/linker/ConversionComparator$Comparison;"));
 	}
 
 	[JniSignatureAttribute("[Ljdk/dynalink/linker/ConversionComparator;", "private final")]
@@ -140,7 +140,7 @@ public partial class TypeConverterFactory
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Iterable;Ljdk/dynalink/linker/MethodTypeConversionStrategy;)V", "")]
-	public TypeConverterFactory(Dova.JDK.java.lang.Iterable arg0, Dova.JDK.jdk.dynalink.linker.MethodTypeConversionStrategy arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public TypeConverterFactory(Dova.JDK.java.lang.Iterable arg0, Dova.JDK.jdk.dynalink.linker.MethodTypeConversionStrategy arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -232,8 +232,8 @@ public partial class TypeConverterFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/TypeConverterFactory$NotCacheableConverter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "converter", "Ljava/lang/invoke/MethodHandle;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotCacheableConverter", "(Ljava/lang/invoke/MethodHandle;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "converter", "Ljava/lang/invoke/MethodHandle;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/invoke/MethodHandle;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/invoke/MethodHandle;", "final")]
@@ -256,7 +256,7 @@ public partial class TypeConverterFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/invoke/MethodHandle;)V", "")]
-		public NotCacheableConverter(Dova.JDK.java.lang.invoke.MethodHandle arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public NotCacheableConverter(Dova.JDK.java.lang.invoke.MethodHandle arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -281,11 +281,11 @@ public partial class TypeConverterFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/TypeConverterFactory$LookupSupplier;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnedLookup", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closed", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LookupSupplier", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_0", "()Ljava/lang/invoke/MethodHandles$Lookup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get_1", "()Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnedLookup", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closed", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get_0", "()Ljava/lang/invoke/MethodHandles$Lookup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get_1", "()Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Z", "volatile")]
@@ -322,7 +322,7 @@ public partial class TypeConverterFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public LookupSupplier() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LookupSupplier() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

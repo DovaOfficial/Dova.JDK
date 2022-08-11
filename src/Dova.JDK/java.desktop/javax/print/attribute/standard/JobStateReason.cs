@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,43 +32,43 @@ public partial class JobStateReason
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/JobStateReason;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_INCOMING", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_DATA_INSUFFICIENT", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOCUMENT_ACCESS_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBMISSION_INTERRUPTED", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_OUTGOING", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_HOLD_UNTIL_SPECIFIED", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOURCES_ARE_NOT_READY", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRINTER_STOPPED_PARTLY", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRINTER_STOPPED", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_INTERPRETING", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_QUEUED", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_TRANSFORMING", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_QUEUED_FOR_MARKER", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_PRINTING", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_CANCELED_BY_USER", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_CANCELED_BY_OPERATOR", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_CANCELED_AT_DEVICE", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABORTED_BY_SYSTEM", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSUPPORTED_COMPRESSION", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPRESSION_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSUPPORTED_DOCUMENT_FORMAT", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOCUMENT_FORMAT_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROCESSING_TO_STOP_POINT", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERVICE_OFF_LINE", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_COMPLETED_SUCCESSFULLY", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_COMPLETED_WITH_WARNINGS", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_COMPLETED_WITH_ERRORS", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JOB_RESTARTABLE", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "QUEUED_IN_DEVICE", "Ljavax/print/attribute/standard/JobStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myStringTable", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/JobStateReason;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JobStateReason", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCategory", "()Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStringTable", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_INCOMING", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_DATA_INSUFFICIENT", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOCUMENT_ACCESS_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUBMISSION_INTERRUPTED", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_OUTGOING", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_HOLD_UNTIL_SPECIFIED", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOURCES_ARE_NOT_READY", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRINTER_STOPPED_PARTLY", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRINTER_STOPPED", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_INTERPRETING", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_QUEUED", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_TRANSFORMING", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_QUEUED_FOR_MARKER", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_PRINTING", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_CANCELED_BY_USER", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_CANCELED_BY_OPERATOR", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_CANCELED_AT_DEVICE", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABORTED_BY_SYSTEM", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSUPPORTED_COMPRESSION", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMPRESSION_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSUPPORTED_DOCUMENT_FORMAT", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOCUMENT_FORMAT_ERROR", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROCESSING_TO_STOP_POINT", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERVICE_OFF_LINE", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_COMPLETED_SUCCESSFULLY", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_COMPLETED_WITH_WARNINGS", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_COMPLETED_WITH_ERRORS", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JOB_RESTARTABLE", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "QUEUED_IN_DEVICE", "Ljavax/print/attribute/standard/JobStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myStringTable", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/JobStateReason;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCategory", "()Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStringTable", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -525,7 +525,7 @@ public partial class JobStateReason
 	}
 
 	[JniSignatureAttribute("(I)V", "protected")]
-	public JobStateReason(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public JobStateReason(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

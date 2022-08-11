@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class ContentModelState
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/parser/ContentModelState;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "model", "Ljavax/swing/text/html/parser/ContentModel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "next", "Ljavax/swing/text/html/parser/ContentModelState;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContentModelState", "(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;J)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContentModelState", "(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContentModelState", "(Ljavax/swing/text/html/parser/ContentModel;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "first", "()Ljavax/swing/text/html/parser/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "advance", "(Ljava/lang/Object;)Ljavax/swing/text/html/parser/ContentModelState;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "terminate", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModel", "()Ljavax/swing/text/html/parser/ContentModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "model", "Ljavax/swing/text/html/parser/ContentModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "next", "Ljavax/swing/text/html/parser/ContentModelState;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;J)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/text/html/parser/ContentModel;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "first", "()Ljavax/swing/text/html/parser/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "advance", "(Ljava/lang/Object;)Ljavax/swing/text/html/parser/ContentModelState;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "terminate", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModel", "()Ljavax/swing/text/html/parser/ContentModel;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/html/parser/ContentModel;", "")]
@@ -91,17 +91,17 @@ public partial class ContentModelState
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;J)V", "")]
-	public ContentModelState(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.text.html.parser.ContentModelState arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ContentModelState(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.text.html.parser.ContentModelState arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/swing/text/html/parser/ContentModelState;)V", "")]
-	public ContentModelState(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.text.html.parser.ContentModelState arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ContentModelState(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.swing.text.html.parser.ContentModelState arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/text/html/parser/ContentModel;)V", "public")]
-	public ContentModelState(Dova.JDK.javax.swing.text.html.parser.ContentModel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+	public ContentModelState(Dova.JDK.javax.swing.text.html.parser.ContentModel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 	{
 	}
 

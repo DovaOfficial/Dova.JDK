@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class UserSessionEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/UserSessionEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reason", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UserSessionEvent", "(Ljava/awt/desktop/UserSessionEvent$Reason;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReason", "()Ljava/awt/desktop/UserSessionEvent$Reason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reason", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/desktop/UserSessionEvent$Reason;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReason", "()Ljava/awt/desktop/UserSessionEvent$Reason;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -71,7 +71,7 @@ public partial class UserSessionEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/UserSessionEvent$Reason;)V", "public")]
-	public UserSessionEvent(Dova.JDK.java.awt.desktop.UserSessionEvent.Reason arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public UserSessionEvent(Dova.JDK.java.awt.desktop.UserSessionEvent.Reason arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -101,15 +101,15 @@ public partial class UserSessionEvent
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/UserSessionEvent$Reason;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSPECIFIED", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSOLE", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REMOTE", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCK", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Reason", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/awt/desktop/UserSessionEvent$Reason;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSPECIFIED", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSOLE", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REMOTE", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCK", "Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljava/awt/desktop/UserSessionEvent$Reason;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljava/awt/desktop/UserSessionEvent$Reason;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/desktop/UserSessionEvent$Reason;", "public static final")]
@@ -188,7 +188,7 @@ public partial class UserSessionEvent
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Reason(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Reason(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

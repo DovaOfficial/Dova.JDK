@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial interface FlowTube
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isFinished", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectFlows", "(Ljdk/internal/net/http/common/FlowTube$TubePublisher;Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "asTubeSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "asTubePublisher", "(Ljava/util/concurrent/Flow$Publisher;)Ljdk/internal/net/http/common/FlowTube$TubePublisher;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isFinished", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connectFlows", "(Ljdk/internal/net/http/common/FlowTube$TubePublisher;Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "asTubeSubscriber", "(Ljava/util/concurrent/Flow$Subscriber;)Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "asTubePublisher", "(Ljava/util/concurrent/Flow$Publisher;)Ljdk/internal/net/http/common/FlowTube$TubePublisher;"));
 	}
 
 	[JniSignatureAttribute("()Z", "public abstract")]
@@ -94,8 +94,8 @@ public partial interface FlowTube
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube$TubeSubscriber;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "supportsRecycling", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropSubscription", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "supportsRecycling", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropSubscription", "()V"));
 		}
 
 		[JniSignatureAttribute("()Z", "public")]
@@ -126,7 +126,7 @@ public partial interface FlowTube
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube$AbstractTubeSubscriber;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractTubeSubscriber", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -135,7 +135,7 @@ public partial interface FlowTube
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public AbstractTubeSubscriber() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AbstractTubeSubscriber() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -158,14 +158,14 @@ public partial interface FlowTube
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube$AbstractTubeSubscriber$TubeSubscriberWrapper;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegate", "Ljava/util/concurrent/Flow$Subscriber;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TubeSubscriberWrapper", "(Ljava/util/concurrent/Flow$Subscriber;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropSubscription", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onNext", "(Ljava/util/List;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onError", "(Ljava/lang/Throwable;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onComplete", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegate", "Ljava/util/concurrent/Flow$Subscriber;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/Flow$Subscriber;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropSubscription", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onSubscribe", "(Ljava/util/concurrent/Flow$Subscription;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onNext", "(Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onNext", "(Ljava/util/List;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onError", "(Ljava/lang/Throwable;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onComplete", "()V"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/concurrent/Flow$Subscriber;", "final")]
@@ -188,7 +188,7 @@ public partial interface FlowTube
 			}
 
 			[JniSignatureAttribute("(Ljava/util/concurrent/Flow$Subscriber;)V", "")]
-			public TubeSubscriberWrapper(Dova.JDK.java.util.concurrent.Flow.Subscriber arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public TubeSubscriberWrapper(Dova.JDK.java.util.concurrent.Flow.Subscriber arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -248,7 +248,7 @@ public partial interface FlowTube
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube$AbstractTubePublisher;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractTubePublisher", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -257,7 +257,7 @@ public partial interface FlowTube
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public AbstractTubePublisher() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AbstractTubePublisher() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -280,9 +280,9 @@ public partial interface FlowTube
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/common/FlowTube$AbstractTubePublisher$TubePublisherWrapper;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegate", "Ljava/util/concurrent/Flow$Publisher;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TubePublisherWrapper", "(Ljava/util/concurrent/Flow$Publisher;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegate", "Ljava/util/concurrent/Flow$Publisher;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/concurrent/Flow$Publisher;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subscribe", "(Ljava/util/concurrent/Flow$Subscriber;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/concurrent/Flow$Publisher;", "final")]
@@ -305,7 +305,7 @@ public partial interface FlowTube
 			}
 
 			[JniSignatureAttribute("(Ljava/util/concurrent/Flow$Publisher;)V", "public")]
-			public TubePublisherWrapper(Dova.JDK.java.util.concurrent.Flow.Publisher arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public TubePublisherWrapper(Dova.JDK.java.util.concurrent.Flow.Publisher arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class XRSolidSrcPict
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRSolidSrcPict;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "con", "Lsun/java2d/xr/XRBackend;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcPict", "Lsun/java2d/xr/XRSurfaceData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xrCol", "Lsun/java2d/xr/XRColor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curPixVal", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRSolidSrcPict", "(Lsun/java2d/xr/XRBackend;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepareSrcPict", "(I)Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "con", "Lsun/java2d/xr/XRBackend;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcPict", "Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xrCol", "Lsun/java2d/xr/XRColor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curPixVal", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/xr/XRBackend;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepareSrcPict", "(I)Lsun/java2d/xr/XRSurfaceData;"));
 	}
 
 	[JniSignatureAttribute("Lsun/java2d/xr/XRBackend;", "")]
@@ -101,7 +101,7 @@ public partial class XRSolidSrcPict
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/xr/XRBackend;I)V", "public")]
-	public XRSolidSrcPict(Dova.JDK.sun.java2d.xr.XRBackend arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public XRSolidSrcPict(Dova.JDK.sun.java2d.xr.XRBackend arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

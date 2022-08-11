@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,101 +32,101 @@ public partial class SSLExtension
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLExtension;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EE_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EE_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLIENT_CERTIFICATE_URL", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRUSTED_CA_KEYS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRUNCATED_HMAC", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CR_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CT_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USER_MAPPING", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLIENT_AUTHZ", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERVER_AUTHZ", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SUPPORTED_GROUPS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EE_SUPPORTED_GROUPS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_EC_POINT_FORMATS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_EC_POINT_FORMATS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SRP", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_SRTP", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEARTBEAT", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_ALPN", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_ALPN", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EE_ALPN", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_STATUS_REQUEST_V2", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_STATUS_REQUEST_V2", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIGNED_CERT_TIMESTAMP", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLIENT_CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERVER_CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PADDING", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENCRYPT_THEN_MAC", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_EXTENDED_MASTER_SECRET", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_EXTENDED_MASTER_SECRET", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOKEN_BINDING", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CACHED_INFO", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SESSION_TICKET", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_SESSION_TICKET", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SIGNATURE_ALGORITHMS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CR_SIGNATURE_ALGORITHMS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EE_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NST_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HRR_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_COOKIE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HRR_COOKIE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MH_COOKIE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PSK_KEY_EXCHANGE_MODES", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_CERTIFICATE_AUTHORITIES", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CR_CERTIFICATE_AUTHORITIES", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OID_FILTERS", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POST_HANDSHAKE_AUTH", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_SIGNATURE_ALGORITHMS_CERT", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CR_SIGNATURE_ALGORITHMS_CERT", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HRR_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_RENEGOTIATION_INFO", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_RENEGOTIATION_INFO", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CH_PRE_SHARED_KEY", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SH_PRE_SHARED_KEY", "Lsun/security/ssl/SSLExtension;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeType", "Lsun/security/ssl/SSLHandshake;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "supportedProtocols", "[Lsun/security/ssl/ProtocolVersion;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "networkProducer", "Lsun/security/ssl/HandshakeProducer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onLoadAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onTradeConsumer", "Lsun/security/ssl/HandshakeConsumer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onTradeAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringizer", "Lsun/security/ssl/SSLStringizer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/ssl/SSLExtension;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLExtension", "(Ljava/lang/String;IILjava/lang/String;Lsun/security/ssl/SSLHandshake;[Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/HandshakeProducer;Lsun/security/ssl/SSLExtension$ExtensionConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/HandshakeConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/SSLStringizer;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLExtension", "(Ljava/lang/String;IILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/ssl/SSLExtension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Lsun/security/ssl/SSLHandshake;I)Lsun/security/ssl/SSLExtension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SSLExtension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/ssl/SSLExtension;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDisabledExtensions", "(Ljava/lang/String;)Ljava/util/Collection;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "absentOnLoad", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "absentOnTrade", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consumeOnTrade", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nameOf", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isConsumable", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consumeOnLoad", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAvailable", "(Lsun/security/ssl/ProtocolVersion;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EE_SERVER_NAME", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EE_MAX_FRAGMENT_LENGTH", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLIENT_CERTIFICATE_URL", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRUSTED_CA_KEYS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRUNCATED_HMAC", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CR_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CT_STATUS_REQUEST", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USER_MAPPING", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLIENT_AUTHZ", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERVER_AUTHZ", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SUPPORTED_GROUPS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EE_SUPPORTED_GROUPS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_EC_POINT_FORMATS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_EC_POINT_FORMATS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SRP", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_SRTP", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEARTBEAT", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_ALPN", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_ALPN", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EE_ALPN", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_STATUS_REQUEST_V2", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_STATUS_REQUEST_V2", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SIGNED_CERT_TIMESTAMP", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLIENT_CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERVER_CERT_TYPE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PADDING", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENCRYPT_THEN_MAC", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_EXTENDED_MASTER_SECRET", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_EXTENDED_MASTER_SECRET", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOKEN_BINDING", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CACHED_INFO", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SESSION_TICKET", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_SESSION_TICKET", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SIGNATURE_ALGORITHMS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CR_SIGNATURE_ALGORITHMS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EE_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NST_EARLY_DATA", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HRR_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MH_SUPPORTED_VERSIONS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_COOKIE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HRR_COOKIE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MH_COOKIE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PSK_KEY_EXCHANGE_MODES", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_CERTIFICATE_AUTHORITIES", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CR_CERTIFICATE_AUTHORITIES", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OID_FILTERS", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POST_HANDSHAKE_AUTH", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_SIGNATURE_ALGORITHMS_CERT", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CR_SIGNATURE_ALGORITHMS_CERT", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HRR_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MH_KEY_SHARE", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_RENEGOTIATION_INFO", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_RENEGOTIATION_INFO", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CH_PRE_SHARED_KEY", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SH_PRE_SHARED_KEY", "Lsun/security/ssl/SSLExtension;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeType", "Lsun/security/ssl/SSLHandshake;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "supportedProtocols", "[Lsun/security/ssl/ProtocolVersion;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "networkProducer", "Lsun/security/ssl/HandshakeProducer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onLoadConsumer", "Lsun/security/ssl/SSLExtension$ExtensionConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onLoadAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onTradeConsumer", "Lsun/security/ssl/HandshakeConsumer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onTradeAbsence", "Lsun/security/ssl/HandshakeAbsence;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringizer", "Lsun/security/ssl/SSLStringizer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/ssl/SSLExtension;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Lsun/security/ssl/SSLHandshake;[Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/HandshakeProducer;Lsun/security/ssl/SSLExtension$ExtensionConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/HandshakeConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/SSLStringizer;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "(Lsun/security/ssl/HandshakeContext;Ljava/nio/ByteBuffer;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/ssl/SSLExtension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Lsun/security/ssl/SSLHandshake;I)Lsun/security/ssl/SSLExtension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SSLExtension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/ssl/SSLExtension;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDisabledExtensions", "(Ljava/lang/String;)Ljava/util/Collection;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "absentOnLoad", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "absentOnTrade", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consumeOnTrade", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nameOf", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isConsumable", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consumeOnLoad", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAvailable", "(Lsun/security/ssl/ProtocolVersion;)Z"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/SSLExtension;", "public static final")]
@@ -1227,12 +1227,12 @@ public partial class SSLExtension
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Lsun/security/ssl/SSLHandshake;[Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/HandshakeProducer;Lsun/security/ssl/SSLExtension$ExtensionConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/HandshakeConsumer;Lsun/security/ssl/HandshakeAbsence;Lsun/security/ssl/SSLStringizer;)V", "private")]
-	public SSLExtension(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.sun.security.ssl.SSLHandshake arg4, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg5, Dova.JDK.sun.security.ssl.HandshakeProducer arg6, Dova.JDK.sun.security.ssl.SSLExtension.ExtensionConsumer arg7, Dova.JDK.sun.security.ssl.HandshakeAbsence arg8, Dova.JDK.sun.security.ssl.HandshakeConsumer arg9, Dova.JDK.sun.security.ssl.HandshakeAbsence arg10, Dova.JDK.sun.security.ssl.SSLStringizer arg11) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11))
+	public SSLExtension(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.sun.security.ssl.SSLHandshake arg4, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg5, Dova.JDK.sun.security.ssl.HandshakeProducer arg6, Dova.JDK.sun.security.ssl.SSLExtension.ExtensionConsumer arg7, Dova.JDK.sun.security.ssl.HandshakeAbsence arg8, Dova.JDK.sun.security.ssl.HandshakeConsumer arg9, Dova.JDK.sun.security.ssl.HandshakeAbsence arg10, Dova.JDK.sun.security.ssl.SSLStringizer arg11) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;)V", "private")]
-	public SSLExtension(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public SSLExtension(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -1354,7 +1354,7 @@ public partial class SSLExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLExtension$ExtensionConsumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V"));
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ConnectionContext;Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;)V", "public abstract")]
@@ -1378,8 +1378,8 @@ public partial class SSLExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLExtension$ServerExtensions;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaults", "Ljava/util/Collection;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServerExtensions", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaults", "Ljava/util/Collection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Collection;", "static final")]
@@ -1402,7 +1402,7 @@ public partial class SSLExtension
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ServerExtensions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ServerExtensions() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1425,8 +1425,8 @@ public partial class SSLExtension
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLExtension$ClientExtensions;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaults", "Ljava/util/Collection;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClientExtensions", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaults", "Ljava/util/Collection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Collection;", "static final")]
@@ -1449,7 +1449,7 @@ public partial class SSLExtension
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ClientExtensions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClientExtensions() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

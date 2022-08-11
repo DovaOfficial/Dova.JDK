@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,42 +31,42 @@ public partial class Attributes
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iflag", "Ljava/util/EnumSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oflag", "Ljava/util/EnumSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cflag", "Ljava/util/EnumSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lflag", "Ljava/util/EnumSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cchars", "Ljava/util/EnumMap;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Attributes", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Attributes", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljava/util/EnumSet;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljava/util/EnumSet;Ljava/util/function/Function;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copy", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "display", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOutputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlFlag", "(Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setControlFlag", "(Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocalFlag", "(Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocalFlag", "(Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setControlChar", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlFlags", "()Ljava/util/EnumSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setControlFlags", "(Ljava/util/EnumSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setControlFlags", "(Ljava/util/EnumSet;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputFlags", "()Ljava/util/EnumSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInputFlags", "(Ljava/util/EnumSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInputFlags", "(Ljava/util/EnumSet;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocalFlags", "()Ljava/util/EnumSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocalFlags", "(Ljava/util/EnumSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocalFlags", "(Ljava/util/EnumSet;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutputFlags", "()Ljava/util/EnumSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOutputFlags", "(Ljava/util/EnumSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOutputFlags", "(Ljava/util/EnumSet;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlChars", "()Ljava/util/EnumMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setControlChars", "(Ljava/util/EnumMap;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlChar", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$InputFlag;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$InputFlag;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iflag", "Ljava/util/EnumSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oflag", "Ljava/util/EnumSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cflag", "Ljava/util/EnumSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lflag", "Ljava/util/EnumSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cchars", "Ljava/util/EnumMap;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljava/util/EnumSet;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljava/util/EnumSet;Ljava/util/function/Function;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copy", "(Ljdk/internal/org/jline/terminal/Attributes;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "display", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOutputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlFlag", "(Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setControlFlag", "(Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocalFlag", "(Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLocalFlag", "(Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setControlChar", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlFlags", "()Ljava/util/EnumSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setControlFlags", "(Ljava/util/EnumSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setControlFlags", "(Ljava/util/EnumSet;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputFlags", "()Ljava/util/EnumSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInputFlags", "(Ljava/util/EnumSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInputFlags", "(Ljava/util/EnumSet;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocalFlags", "()Ljava/util/EnumSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLocalFlags", "(Ljava/util/EnumSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLocalFlags", "(Ljava/util/EnumSet;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutputFlags", "()Ljava/util/EnumSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOutputFlags", "(Ljava/util/EnumSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOutputFlags", "(Ljava/util/EnumSet;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlChars", "()Ljava/util/EnumMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setControlChars", "(Ljava/util/EnumMap;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlChar", "(Ljdk/internal/org/jline/terminal/Attributes$ControlChar;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$InputFlag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$InputFlag;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutputFlag", "(Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/EnumSet;", "final")]
@@ -145,12 +145,12 @@ public partial class Attributes
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public Attributes() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Attributes() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/jline/terminal/Attributes;)V", "public")]
-	public Attributes(Dova.JDK.jdk.@internal.org.jline.terminal.Attributes arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public Attributes(Dova.JDK.jdk.@internal.org.jline.terminal.Attributes arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
@@ -361,25 +361,25 @@ public partial class Attributes
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes$InputFlag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IGNBRK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BRKINT", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IGNPAR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARMRK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INPCK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISTRIP", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INLCR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IGNCR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ICRNL", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IXON", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IXOFF", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IXANY", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMAXBEL", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IUTF8", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InputFlag", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IGNBRK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BRKINT", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IGNPAR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARMRK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INPCK", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISTRIP", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INLCR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IGNCR", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ICRNL", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IXON", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IXOFF", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IXANY", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMAXBEL", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IUTF8", "Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$InputFlag;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes$InputFlag;", "public static final")]
@@ -598,7 +598,7 @@ public partial class Attributes
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public InputFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public InputFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -643,26 +643,26 @@ public partial class Attributes
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPOST", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONLCR", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OXTABS", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONOEOT", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OCRNL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONOCR", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONLRET", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OFILL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NLDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CRDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FFDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VTDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OFDEL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OutputFlag", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPOST", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONLCR", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OXTABS", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONOEOT", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OCRNL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONOCR", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONLRET", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OFILL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NLDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CRDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FFDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VTDLY", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OFDEL", "Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes$OutputFlag;", "public static final")]
@@ -895,7 +895,7 @@ public partial class Attributes
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public OutputFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OutputFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -940,27 +940,27 @@ public partial class Attributes
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CIGNORE", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CS5", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CS6", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CS7", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CS8", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CSTOPB", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CREAD", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARENB", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARODD", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HUPCL", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLOCAL", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CCTS_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CRTS_IFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CDTR_IFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CDSR_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CCAR_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ControlFlag", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CIGNORE", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CS5", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CS6", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CS7", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CS8", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CSTOPB", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CREAD", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARENB", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARODD", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HUPCL", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLOCAL", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CCTS_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CRTS_IFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CDTR_IFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CDSR_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CCAR_OFLOW", "Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes$ControlFlag;", "public static final")]
@@ -1207,7 +1207,7 @@ public partial class Attributes
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public ControlFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ControlFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1252,28 +1252,28 @@ public partial class Attributes
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHOKE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHOE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHOK", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHONL", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHOPRT", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECHOCTL", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ISIG", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ICANON", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALTWERASE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IEXTEN", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTPROC", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOSTOP", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FLUSHO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOKERNINFO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PENDIN", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOFLSH", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LocalFlag", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHOKE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHOE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHOK", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHONL", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHOPRT", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECHOCTL", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ISIG", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ICANON", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALTWERASE", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IEXTEN", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXTPROC", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOSTOP", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FLUSHO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOKERNINFO", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PENDIN", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOFLSH", "Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes$LocalFlag;", "public static final")]
@@ -1534,7 +1534,7 @@ public partial class Attributes
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public LocalFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LocalFlag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1579,29 +1579,29 @@ public partial class Attributes
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/Attributes$ControlChar;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VEOF", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VEOL", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VEOL2", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERASE", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VWERASE", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VKILL", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VREPRINT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VINTR", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VQUIT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSUSP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VDSUSP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSTART", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSTOP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VLNEXT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VDISCARD", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VMIN", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VTIME", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSTATUS", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ControlChar", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VEOF", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VEOL", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VEOL2", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VERASE", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VWERASE", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VKILL", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VREPRINT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VINTR", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VQUIT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSUSP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VDSUSP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSTART", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSTOP", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VLNEXT", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VDISCARD", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VMIN", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VTIME", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSTATUS", "Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/org/jline/terminal/Attributes$ControlChar;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Attributes$ControlChar;", "public static final")]
@@ -1876,7 +1876,7 @@ public partial class Attributes
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public ControlChar(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ControlChar(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

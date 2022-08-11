@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,10 +30,10 @@ public partial interface CookiePolicy
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/net/CookiePolicy;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_ALL", "Ljava/net/CookiePolicy;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_NONE", "Ljava/net/CookiePolicy;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPT_ORIGINAL_SERVER", "Ljava/net/CookiePolicy;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldAccept", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCEPT_ALL", "Ljava/net/CookiePolicy;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCEPT_NONE", "Ljava/net/CookiePolicy;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCEPT_ORIGINAL_SERVER", "Ljava/net/CookiePolicy;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldAccept", "(Ljava/net/URI;Ljava/net/HttpCookie;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/CookiePolicy;", "public static final")]

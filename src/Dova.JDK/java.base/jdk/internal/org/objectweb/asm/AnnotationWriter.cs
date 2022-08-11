@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,27 +31,27 @@ public partial class AnnotationWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/objectweb/asm/AnnotationWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "symbolTable", "Ljdk/internal/org/objectweb/asm/SymbolTable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "useNamedValues", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotation", "Ljdk/internal/org/objectweb/asm/ByteVector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numElementValuePairsOffset", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numElementValuePairs", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "previousAnnotation", "Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextAnnotation", "Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotationWriter", "(Ljdk/internal/org/objectweb/asm/SymbolTable;ZLjdk/internal/org/objectweb/asm/ByteVector;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/internal/org/objectweb/asm/SymbolTable;ILjdk/internal/org/objectweb/asm/TypePath;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljdk/internal/org/objectweb/asm/SymbolTable;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit", "(Ljava/lang/String;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitAnnotation", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/AnnotationVisitor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnd", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnum", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitArray", "(Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/AnnotationVisitor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "computeAnnotationsSize", "(Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeAnnotationsSize", "(Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putAnnotations", "(Ljdk/internal/org/objectweb/asm/SymbolTable;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/ByteVector;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putAnnotations", "(ILjdk/internal/org/objectweb/asm/ByteVector;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "computeParameterAnnotationsSize", "(Ljava/lang/String;[Ljdk/internal/org/objectweb/asm/AnnotationWriter;I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putParameterAnnotations", "(I[Ljdk/internal/org/objectweb/asm/AnnotationWriter;ILjdk/internal/org/objectweb/asm/ByteVector;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "symbolTable", "Ljdk/internal/org/objectweb/asm/SymbolTable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "useNamedValues", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotation", "Ljdk/internal/org/objectweb/asm/ByteVector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numElementValuePairsOffset", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numElementValuePairs", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "previousAnnotation", "Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextAnnotation", "Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/SymbolTable;ZLjdk/internal/org/objectweb/asm/ByteVector;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/internal/org/objectweb/asm/SymbolTable;ILjdk/internal/org/objectweb/asm/TypePath;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljdk/internal/org/objectweb/asm/SymbolTable;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)Ljdk/internal/org/objectweb/asm/AnnotationWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit", "(Ljava/lang/String;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitAnnotation", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/AnnotationVisitor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnd", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnum", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitArray", "(Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/AnnotationVisitor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "computeAnnotationsSize", "(Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeAnnotationsSize", "(Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "putAnnotations", "(Ljdk/internal/org/objectweb/asm/SymbolTable;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/AnnotationWriter;Ljdk/internal/org/objectweb/asm/ByteVector;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putAnnotations", "(ILjdk/internal/org/objectweb/asm/ByteVector;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "computeParameterAnnotationsSize", "(Ljava/lang/String;[Ljdk/internal/org/objectweb/asm/AnnotationWriter;I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "putParameterAnnotations", "(I[Ljdk/internal/org/objectweb/asm/AnnotationWriter;ILjdk/internal/org/objectweb/asm/ByteVector;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/SymbolTable;", "private final")]
@@ -158,7 +158,7 @@ public partial class AnnotationWriter
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/SymbolTable;ZLjdk/internal/org/objectweb/asm/ByteVector;Ljdk/internal/org/objectweb/asm/AnnotationWriter;)V", "")]
-	public AnnotationWriter(Dova.JDK.jdk.@internal.org.objectweb.asm.SymbolTable arg0, bool arg1, Dova.JDK.jdk.@internal.org.objectweb.asm.ByteVector arg2, Dova.JDK.jdk.@internal.org.objectweb.asm.AnnotationWriter arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public AnnotationWriter(Dova.JDK.jdk.@internal.org.objectweb.asm.SymbolTable arg0, bool arg1, Dova.JDK.jdk.@internal.org.objectweb.asm.ByteVector arg2, Dova.JDK.jdk.@internal.org.objectweb.asm.AnnotationWriter arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

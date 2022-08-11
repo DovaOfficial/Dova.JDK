@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class Decoration
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Decoration;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VALUES_MASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLAIN", "Lsun/font/Decoration;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Decoration", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDecoration", "(Lsun/font/AttributeValues;)Lsun/font/Decoration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDecoration", "(Ljava/util/Map;)Lsun/font/Decoration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPlainDecoration", "()Lsun/font/Decoration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawTextAndDecorations", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCharVisualBounds", "(Lsun/font/Decoration$Label;I)Ljava/awt/geom/Rectangle2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisualBounds", "(Lsun/font/Decoration$Label;)Ljava/awt/geom/Rectangle2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutline", "(Lsun/font/Decoration$Label;FF)Ljava/awt/Shape;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VALUES_MASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLAIN", "Lsun/font/Decoration;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDecoration", "(Lsun/font/AttributeValues;)Lsun/font/Decoration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDecoration", "(Ljava/util/Map;)Lsun/font/Decoration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPlainDecoration", "()Lsun/font/Decoration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawTextAndDecorations", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCharVisualBounds", "(Lsun/font/Decoration$Label;I)Ljava/awt/geom/Rectangle2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisualBounds", "(Lsun/font/Decoration$Label;)Ljava/awt/geom/Rectangle2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutline", "(Lsun/font/Decoration$Label;FF)Ljava/awt/Shape;"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -77,7 +77,7 @@ public partial class Decoration
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Decoration() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Decoration() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -148,22 +148,22 @@ public partial class Decoration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Decoration$DecorationImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fgPaint", "Ljava/awt/Paint;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bgPaint", "Ljava/awt/Paint;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "swapColors", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strikethrough", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stdUnderline", "Lsun/font/Underline;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "imUnderline", "Lsun/font/Underline;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DecorationImpl", "(Ljava/awt/Paint;Ljava/awt/Paint;ZZLsun/font/Underline;Lsun/font/Underline;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawTextAndDecorations", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "areEqual", "(Ljava/lang/Object;Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawTextAndEmbellishments", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnderlineMaxY", "(Lsun/font/CoreMetrics;)F"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVisualBounds", "(Lsun/font/Decoration$Label;)Ljava/awt/geom/Rectangle2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOutline", "(Lsun/font/Decoration$Label;FF)Ljava/awt/Shape;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fgPaint", "Ljava/awt/Paint;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bgPaint", "Ljava/awt/Paint;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "swapColors", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strikethrough", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stdUnderline", "Lsun/font/Underline;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "imUnderline", "Lsun/font/Underline;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Paint;Ljava/awt/Paint;ZZLsun/font/Underline;Lsun/font/Underline;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawTextAndDecorations", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "areEqual", "(Ljava/lang/Object;Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawTextAndEmbellishments", "(Lsun/font/Decoration$Label;Ljava/awt/Graphics2D;FF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnderlineMaxY", "(Lsun/font/CoreMetrics;)F"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVisualBounds", "(Lsun/font/Decoration$Label;)Ljava/awt/geom/Rectangle2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOutline", "(Lsun/font/Decoration$Label;FF)Ljava/awt/Shape;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Paint;", "private")]
@@ -256,7 +256,7 @@ public partial class Decoration
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Paint;Ljava/awt/Paint;ZZLsun/font/Underline;Lsun/font/Underline;)V", "")]
-		public DecorationImpl(Dova.JDK.java.awt.Paint arg0, Dova.JDK.java.awt.Paint arg1, bool arg2, bool arg3, Dova.JDK.sun.font.Underline arg4, Dova.JDK.sun.font.Underline arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+		public DecorationImpl(Dova.JDK.java.awt.Paint arg0, Dova.JDK.java.awt.Paint arg1, bool arg2, bool arg3, Dova.JDK.sun.font.Underline arg4, Dova.JDK.sun.font.Underline arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 
@@ -339,12 +339,12 @@ public partial class Decoration
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Decoration$Label;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleDraw", "(Ljava/awt/Graphics2D;FF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleGetVisualBounds", "()Ljava/awt/geom/Rectangle2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleGetCharVisualBounds", "(I)Ljava/awt/geom/Rectangle2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleGetOutline", "(FF)Ljava/awt/Shape;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCoreMetrics", "()Lsun/font/CoreMetrics;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLogicalBounds", "()Ljava/awt/geom/Rectangle2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleDraw", "(Ljava/awt/Graphics2D;FF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleGetVisualBounds", "()Ljava/awt/geom/Rectangle2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleGetCharVisualBounds", "(I)Ljava/awt/geom/Rectangle2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleGetOutline", "(FF)Ljava/awt/Shape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCoreMetrics", "()Lsun/font/CoreMetrics;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLogicalBounds", "()Ljava/awt/geom/Rectangle2D;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Graphics2D;FF)V", "public abstract")]

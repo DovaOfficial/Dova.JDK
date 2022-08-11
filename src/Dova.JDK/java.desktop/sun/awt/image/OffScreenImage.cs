@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class OffScreenImage
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/OffScreenImage;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "c", "Ljava/awt/Component;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "osis", "Lsun/awt/image/OffScreenImageSource;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultFont", "Ljava/awt/Font;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OffScreenImage", "(Ljava/awt/Component;Ljava/awt/image/ColorModel;Ljava/awt/image/WritableRaster;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSource", "()Ljava/awt/image/ImageProducer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initSurface", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createGraphics", "()Ljava/awt/Graphics2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGraphics", "()Ljava/awt/Graphics;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "c", "Ljava/awt/Component;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "osis", "Lsun/awt/image/OffScreenImageSource;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultFont", "Ljava/awt/Font;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;Ljava/awt/image/ColorModel;Ljava/awt/image/WritableRaster;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSource", "()Ljava/awt/image/ImageProducer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initSurface", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createGraphics", "()Ljava/awt/Graphics2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGraphics", "()Ljava/awt/Graphics;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Component;", "protected")]
@@ -89,7 +89,7 @@ public partial class OffScreenImage
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/image/ColorModel;Ljava/awt/image/WritableRaster;Z)V", "public")]
-	public OffScreenImage(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.WritableRaster arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public OffScreenImage(Dova.JDK.java.awt.Component arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.WritableRaster arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

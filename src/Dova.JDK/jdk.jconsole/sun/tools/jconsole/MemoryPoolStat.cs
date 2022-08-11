@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,25 +31,25 @@ public partial class MemoryPoolStat
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/MemoryPoolStat;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "poolName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "usageThreshold", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "usage", "Ljava/lang/management/MemoryUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastGcId", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastGcStartTime", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastGcEndTime", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "collectThreshold", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "beforeGcUsage", "Ljava/lang/management/MemoryUsage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "afterGcUsage", "Ljava/lang/management/MemoryUsage;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MemoryPoolStat", "(Ljava/lang/String;JLjava/lang/management/MemoryUsage;JJJJLjava/lang/management/MemoryUsage;Ljava/lang/management/MemoryUsage;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUsage", "()Ljava/lang/management/MemoryUsage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUsageThreshold", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCollectionUsageThreshold", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPoolName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLastGcId", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLastGcStartTime", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLastGcEndTime", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBeforeGcUsage", "()Ljava/lang/management/MemoryUsage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAfterGcUsage", "()Ljava/lang/management/MemoryUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "poolName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "usageThreshold", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "usage", "Ljava/lang/management/MemoryUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastGcId", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastGcStartTime", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastGcEndTime", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "collectThreshold", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "beforeGcUsage", "Ljava/lang/management/MemoryUsage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "afterGcUsage", "Ljava/lang/management/MemoryUsage;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;JLjava/lang/management/MemoryUsage;JJJJLjava/lang/management/MemoryUsage;Ljava/lang/management/MemoryUsage;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUsage", "()Ljava/lang/management/MemoryUsage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUsageThreshold", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCollectionUsageThreshold", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPoolName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLastGcId", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLastGcStartTime", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLastGcEndTime", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBeforeGcUsage", "()Ljava/lang/management/MemoryUsage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAfterGcUsage", "()Ljava/lang/management/MemoryUsage;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -184,7 +184,7 @@ public partial class MemoryPoolStat
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;JLjava/lang/management/MemoryUsage;JJJJLjava/lang/management/MemoryUsage;Ljava/lang/management/MemoryUsage;)V", "")]
-	public MemoryPoolStat(Dova.JDK.java.lang.String arg0, long arg1, Dova.JDK.java.lang.management.MemoryUsage arg2, long arg3, long arg4, long arg5, long arg6, Dova.JDK.java.lang.management.MemoryUsage arg7, Dova.JDK.java.lang.management.MemoryUsage arg8) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))
+	public MemoryPoolStat(Dova.JDK.java.lang.String arg0, long arg1, Dova.JDK.java.lang.management.MemoryUsage arg2, long arg3, long arg4, long arg5, long arg6, Dova.JDK.java.lang.management.MemoryUsage arg7, Dova.JDK.java.lang.management.MemoryUsage arg8) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))
 	{
 	}
 

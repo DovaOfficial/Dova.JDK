@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class InfoWindow
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "container", "Ljava/awt/Container;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closer", "Lsun/awt/X11/InfoWindow$Closer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InfoWindow", "(Ljava/awt/Frame;Ljava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/awt/Component;)Ljava/awt/Component;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCloser", "(Ljava/lang/Runnable;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "access$001", "(Lsun/awt/X11/InfoWindow;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "show", "(Ljava/awt/Point;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hide", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "container", "Ljava/awt/Container;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closer", "Lsun/awt/X11/InfoWindow$Closer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Frame;Ljava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljava/awt/Component;)Ljava/awt/Component;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCloser", "(Ljava/lang/Runnable;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "access$001", "(Lsun/awt/X11/InfoWindow;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "show", "(Ljava/awt/Point;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hide", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Container;", "private")]
@@ -90,7 +90,7 @@ public partial class InfoWindow
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Frame;Ljava/awt/Color;)V", "protected")]
-	public InfoWindow(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public InfoWindow(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.awt.Color arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -145,15 +145,15 @@ public partial class InfoWindow
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Closer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "action", "Ljava/lang/Runnable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "time", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/awt/X11/InfoWindow;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Closer", "(Lsun/awt/X11/InfoWindow;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "set", "(Ljava/lang/Runnable;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doClose", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "schedule", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "action", "Ljava/lang/Runnable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "time", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/awt/X11/InfoWindow;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11/InfoWindow;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "set", "(Ljava/lang/Runnable;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doClose", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "schedule", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Runnable;", "")]
@@ -204,7 +204,7 @@ public partial class InfoWindow
 		}
 
 		[JniSignatureAttribute("(Lsun/awt/X11/InfoWindow;)V", "private")]
-		public Closer(Dova.JDK.sun.awt.X11.InfoWindow arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Closer(Dova.JDK.sun.awt.X11.InfoWindow arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -258,36 +258,36 @@ public partial class InfoWindow
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Balloon;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "liveArguments", "Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_SHOW_TIME", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_TEXT_MAX_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_WORD_LINE_MAX_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_WORD_LINE_MAX_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_ICON_WIDTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_ICON_HEIGHT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_TRAY_ICON_INDENT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_CAPTION_BACKGROUND_COLOR", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BALLOON_CAPTION_FONT", "Ljava/awt/Font;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainPanel", "Ljava/awt/Panel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "captionPanel", "Ljava/awt/Panel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "captionLabel", "Ljava/awt/Label;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeButton", "Ljava/awt/Button;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "textPanel", "Ljava/awt/Panel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iconCanvas", "Lsun/awt/X11/XTrayIconPeer$IconCanvas;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lineLabels", "[Ljava/awt/Label;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ap", "Lsun/awt/X11/InfoWindow$Balloon$ActionPerformer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "iconImage", "Ljava/awt/Image;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorImage", "Ljava/awt/Image;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "warnImage", "Ljava/awt/Image;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "infoImage", "Ljava/awt/Image;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gtkImagesLoaded", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "displayer", "Lsun/awt/X11/InfoWindow$Balloon$Displayer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Balloon", "(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadGtkImages", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "_display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "liveArguments", "Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_SHOW_TIME", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_TEXT_MAX_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_WORD_LINE_MAX_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_WORD_LINE_MAX_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_ICON_WIDTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_ICON_HEIGHT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_TRAY_ICON_INDENT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_CAPTION_BACKGROUND_COLOR", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BALLOON_CAPTION_FONT", "Ljava/awt/Font;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainPanel", "Ljava/awt/Panel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "captionPanel", "Ljava/awt/Panel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "captionLabel", "Ljava/awt/Label;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeButton", "Ljava/awt/Button;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "textPanel", "Ljava/awt/Panel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iconCanvas", "Lsun/awt/X11/XTrayIconPeer$IconCanvas;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lineLabels", "[Ljava/awt/Label;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ap", "Lsun/awt/X11/InfoWindow$Balloon$ActionPerformer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "iconImage", "Ljava/awt/Image;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorImage", "Ljava/awt/Image;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "warnImage", "Ljava/awt/Image;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "infoImage", "Ljava/awt/Image;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gtkImagesLoaded", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "displayer", "Lsun/awt/X11/InfoWindow$Balloon$Displayer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadGtkImages", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "_display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;", "private final")]
@@ -646,7 +646,7 @@ public partial class InfoWindow
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;)V", "public")]
-		public Balloon(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.sun.awt.X11.InfoWindow.Balloon.LiveArguments arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Balloon(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.sun.awt.X11.InfoWindow.Balloon.LiveArguments arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -693,9 +693,9 @@ public partial class InfoWindow
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Balloon$ActionPerformer;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/awt/X11/InfoWindow$Balloon;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ActionPerformer", "(Lsun/awt/X11/InfoWindow$Balloon;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseClicked", "(Ljava/awt/event/MouseEvent;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/awt/X11/InfoWindow$Balloon;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11/InfoWindow$Balloon;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseClicked", "(Ljava/awt/event/MouseEvent;)V"));
 			}
 
 			[JniSignatureAttribute("Lsun/awt/X11/InfoWindow$Balloon;", "final")]
@@ -718,7 +718,7 @@ public partial class InfoWindow
 			}
 
 			[JniSignatureAttribute("(Lsun/awt/X11/InfoWindow$Balloon;)V", "private")]
-			public ActionPerformer(Dova.JDK.sun.awt.X11.InfoWindow.Balloon arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ActionPerformer(Dova.JDK.sun.awt.X11.InfoWindow.Balloon arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -749,14 +749,14 @@ public partial class InfoWindow
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Balloon$Displayer;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "MAX_CONCURRENT_MSGS", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "messageQueue", "Ljava/util/concurrent/ArrayBlockingQueue;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isDisplayed", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Ljava/lang/Thread;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/awt/X11/InfoWindow$Balloon;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Displayer", "(Lsun/awt/X11/InfoWindow$Balloon;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "MAX_CONCURRENT_MSGS", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "messageQueue", "Ljava/util/concurrent/ArrayBlockingQueue;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isDisplayed", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Ljava/lang/Thread;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/awt/X11/InfoWindow$Balloon;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/X11/InfoWindow$Balloon;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "display", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -835,7 +835,7 @@ public partial class InfoWindow
 			}
 
 			[JniSignatureAttribute("(Lsun/awt/X11/InfoWindow$Balloon;)V", "")]
-			public Displayer(Dova.JDK.sun.awt.X11.InfoWindow.Balloon arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public Displayer(Dova.JDK.sun.awt.X11.InfoWindow.Balloon arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -870,7 +870,7 @@ public partial class InfoWindow
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Balloon$LiveArguments;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getActionCommand", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getActionCommand", "()Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
@@ -895,10 +895,10 @@ public partial class InfoWindow
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Balloon$Message;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caption", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "text", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "messageType", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Message", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caption", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "text", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "messageType", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "")]
@@ -949,7 +949,7 @@ public partial class InfoWindow
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V", "")]
-			public Message(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public Message(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -974,21 +974,21 @@ public partial class InfoWindow
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Tooltip;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "target", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "liveArguments", "Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "textLabel", "Ljava/awt/Label;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "starter", "Ljava/lang/Runnable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_SHOW_TIME", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_START_DELAY_TIME", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_MAX_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_MOUSE_CURSOR_INDENT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_BACKGROUND_COLOR", "Ljava/awt/Color;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLTIP_TEXT_FONT", "Ljava/awt/Font;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Tooltip", "(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exit", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "display", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enter", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPointerOverTrayIcon", "(Ljava/awt/Rectangle;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "target", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "liveArguments", "Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "textLabel", "Ljava/awt/Label;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "starter", "Ljava/lang/Runnable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_SHOW_TIME", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_START_DELAY_TIME", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_MAX_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_MOUSE_CURSOR_INDENT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_BACKGROUND_COLOR", "Ljava/awt/Color;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLTIP_TEXT_FONT", "Ljava/awt/Font;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exit", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "display", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enter", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPointerOverTrayIcon", "(Ljava/awt/Rectangle;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "private final")]
@@ -1137,7 +1137,7 @@ public partial class InfoWindow
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Frame;Ljava/lang/Object;Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;)V", "public")]
-		public Tooltip(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.sun.awt.X11.InfoWindow.Tooltip.LiveArguments arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Tooltip(Dova.JDK.java.awt.Frame arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.sun.awt.X11.InfoWindow.Tooltip.LiveArguments arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1184,7 +1184,7 @@ public partial class InfoWindow
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$Tooltip$LiveArguments;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTooltipString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTooltipString", "()Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
@@ -1209,8 +1209,8 @@ public partial class InfoWindow
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/InfoWindow$LiveArguments;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "()Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDisposed", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "()Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDisposed", "()Z"));
 		}
 
 		[JniSignatureAttribute("()Ljava/awt/Rectangle;", "public abstract")]

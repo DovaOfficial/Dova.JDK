@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,95 +31,95 @@ public partial class SharedSecrets
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/SharedSecrets;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaAWTAccess", "Ljdk/internal/access/JavaAWTAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaAWTFontAccess", "Ljdk/internal/access/JavaAWTFontAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaBeansAccess", "Ljdk/internal/access/JavaBeansAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaLangAccess", "Ljdk/internal/access/JavaLangAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaLangInvokeAccess", "Ljdk/internal/access/JavaLangInvokeAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaLangModuleAccess", "Ljdk/internal/access/JavaLangModuleAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaLangRefAccess", "Ljdk/internal/access/JavaLangRefAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaLangReflectAccess", "Ljdk/internal/access/JavaLangReflectAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaIOAccess", "Ljdk/internal/access/JavaIOAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaIOFileDescriptorAccess", "Ljdk/internal/access/JavaIOFileDescriptorAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaIOFilePermissionAccess", "Ljdk/internal/access/JavaIOFilePermissionAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaIORandomAccessFileAccess", "Ljdk/internal/access/JavaIORandomAccessFileAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaObjectInputStreamReadString", "Ljdk/internal/access/JavaObjectInputStreamReadString;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaObjectInputStreamAccess", "Ljdk/internal/access/JavaObjectInputStreamAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaObjectInputFilterAccess", "Ljdk/internal/access/JavaObjectInputFilterAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaNetInetAddressAccess", "Ljdk/internal/access/JavaNetInetAddressAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaNetHttpCookieAccess", "Ljdk/internal/access/JavaNetHttpCookieAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaNetUriAccess", "Ljdk/internal/access/JavaNetUriAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaNetURLAccess", "Ljdk/internal/access/JavaNetURLAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaNioAccess", "Ljdk/internal/access/JavaNioAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaUtilCollectionAccess", "Ljdk/internal/access/JavaUtilCollectionAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaUtilJarAccess", "Ljdk/internal/access/JavaUtilJarAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaUtilZipFileAccess", "Ljdk/internal/access/JavaUtilZipFileAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaUtilResourceBundleAccess", "Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaSecurityAccess", "Ljdk/internal/access/JavaSecurityAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaSecuritySignatureAccess", "Ljdk/internal/access/JavaSecuritySignatureAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaSecuritySpecAccess", "Ljdk/internal/access/JavaSecuritySpecAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaxCryptoSealedObjectAccess", "Ljdk/internal/access/JavaxCryptoSealedObjectAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "javaxCryptoSpecAccess", "Ljdk/internal/access/JavaxCryptoSpecAccess;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SharedSecrets", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaIOAccess", "()Ljdk/internal/access/JavaIOAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaLangAccess", "(Ljdk/internal/access/JavaLangAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaSecurityAccess", "(Ljdk/internal/access/JavaSecurityAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaLangRefAccess", "(Ljdk/internal/access/JavaLangRefAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaObjectInputStreamAccess", "()Ljdk/internal/access/JavaObjectInputStreamAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaLangReflectAccess", "(Ljdk/internal/access/JavaLangReflectAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaLangAccess", "()Ljdk/internal/access/JavaLangAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaLangModuleAccess", "()Ljdk/internal/access/JavaLangModuleAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaNetURLAccess", "(Ljdk/internal/access/JavaNetURLAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "javaUtilJarAccess", "()Ljdk/internal/access/JavaUtilJarAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaNioAccess", "(Ljdk/internal/access/JavaNioAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaLangInvokeAccess", "()Ljdk/internal/access/JavaLangInvokeAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaUtilCollectionAccess", "(Ljdk/internal/access/JavaUtilCollectionAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaUtilCollectionAccess", "()Ljdk/internal/access/JavaUtilCollectionAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaUtilJarAccess", "(Ljdk/internal/access/JavaUtilJarAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaLangInvokeAccess", "(Ljdk/internal/access/JavaLangInvokeAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaLangModuleAccess", "(Ljdk/internal/access/JavaLangModuleAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaLangRefAccess", "()Ljdk/internal/access/JavaLangRefAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaLangReflectAccess", "()Ljdk/internal/access/JavaLangReflectAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaNetUriAccess", "(Ljdk/internal/access/JavaNetUriAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaNetUriAccess", "()Ljdk/internal/access/JavaNetUriAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaNetURLAccess", "()Ljdk/internal/access/JavaNetURLAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaNetInetAddressAccess", "(Ljdk/internal/access/JavaNetInetAddressAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaNetInetAddressAccess", "()Ljdk/internal/access/JavaNetInetAddressAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaNetHttpCookieAccess", "(Ljdk/internal/access/JavaNetHttpCookieAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaNetHttpCookieAccess", "()Ljdk/internal/access/JavaNetHttpCookieAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaNioAccess", "()Ljdk/internal/access/JavaNioAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaIOAccess", "(Ljdk/internal/access/JavaIOAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaIOFileDescriptorAccess", "(Ljdk/internal/access/JavaIOFileDescriptorAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaIOFilePermissionAccess", "()Ljdk/internal/access/JavaIOFilePermissionAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaIOFilePermissionAccess", "(Ljdk/internal/access/JavaIOFilePermissionAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaIOFileDescriptorAccess", "()Ljdk/internal/access/JavaIOFileDescriptorAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaSecurityAccess", "()Ljdk/internal/access/JavaSecurityAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaUtilZipFileAccess", "()Ljdk/internal/access/JavaUtilZipFileAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaUtilZipFileAccess", "(Ljdk/internal/access/JavaUtilZipFileAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaAWTAccess", "(Ljdk/internal/access/JavaAWTAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaAWTAccess", "()Ljdk/internal/access/JavaAWTAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaAWTFontAccess", "(Ljdk/internal/access/JavaAWTFontAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaAWTFontAccess", "()Ljdk/internal/access/JavaAWTFontAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaBeansAccess", "()Ljdk/internal/access/JavaBeansAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaBeansAccess", "(Ljdk/internal/access/JavaBeansAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaUtilResourceBundleAccess", "()Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaUtilResourceBundleAccess", "(Ljdk/internal/access/JavaUtilResourceBundleAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaObjectInputStreamReadString", "()Ljdk/internal/access/JavaObjectInputStreamReadString;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaObjectInputStreamReadString", "(Ljdk/internal/access/JavaObjectInputStreamReadString;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaObjectInputStreamAccess", "(Ljdk/internal/access/JavaObjectInputStreamAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaObjectInputFilterAccess", "()Ljdk/internal/access/JavaObjectInputFilterAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaObjectInputFilterAccess", "(Ljdk/internal/access/JavaObjectInputFilterAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaIORandomAccessFileAccess", "(Ljdk/internal/access/JavaIORandomAccessFileAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaIORandomAccessFileAccess", "()Ljdk/internal/access/JavaIORandomAccessFileAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaSecuritySignatureAccess", "(Ljdk/internal/access/JavaSecuritySignatureAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaSecuritySignatureAccess", "()Ljdk/internal/access/JavaSecuritySignatureAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaSecuritySpecAccess", "(Ljdk/internal/access/JavaSecuritySpecAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaSecuritySpecAccess", "()Ljdk/internal/access/JavaSecuritySpecAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaxCryptoSpecAccess", "(Ljdk/internal/access/JavaxCryptoSpecAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaxCryptoSpecAccess", "()Ljdk/internal/access/JavaxCryptoSpecAccess;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJavaxCryptoSealedObjectAccess", "(Ljdk/internal/access/JavaxCryptoSealedObjectAccess;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaxCryptoSealedObjectAccess", "()Ljdk/internal/access/JavaxCryptoSealedObjectAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaAWTAccess", "Ljdk/internal/access/JavaAWTAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaAWTFontAccess", "Ljdk/internal/access/JavaAWTFontAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaBeansAccess", "Ljdk/internal/access/JavaBeansAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaLangAccess", "Ljdk/internal/access/JavaLangAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaLangInvokeAccess", "Ljdk/internal/access/JavaLangInvokeAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaLangModuleAccess", "Ljdk/internal/access/JavaLangModuleAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaLangRefAccess", "Ljdk/internal/access/JavaLangRefAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaLangReflectAccess", "Ljdk/internal/access/JavaLangReflectAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaIOAccess", "Ljdk/internal/access/JavaIOAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaIOFileDescriptorAccess", "Ljdk/internal/access/JavaIOFileDescriptorAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaIOFilePermissionAccess", "Ljdk/internal/access/JavaIOFilePermissionAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaIORandomAccessFileAccess", "Ljdk/internal/access/JavaIORandomAccessFileAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaObjectInputStreamReadString", "Ljdk/internal/access/JavaObjectInputStreamReadString;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaObjectInputStreamAccess", "Ljdk/internal/access/JavaObjectInputStreamAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaObjectInputFilterAccess", "Ljdk/internal/access/JavaObjectInputFilterAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaNetInetAddressAccess", "Ljdk/internal/access/JavaNetInetAddressAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaNetHttpCookieAccess", "Ljdk/internal/access/JavaNetHttpCookieAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaNetUriAccess", "Ljdk/internal/access/JavaNetUriAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaNetURLAccess", "Ljdk/internal/access/JavaNetURLAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaNioAccess", "Ljdk/internal/access/JavaNioAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaUtilCollectionAccess", "Ljdk/internal/access/JavaUtilCollectionAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaUtilJarAccess", "Ljdk/internal/access/JavaUtilJarAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaUtilZipFileAccess", "Ljdk/internal/access/JavaUtilZipFileAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaUtilResourceBundleAccess", "Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaSecurityAccess", "Ljdk/internal/access/JavaSecurityAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaSecuritySignatureAccess", "Ljdk/internal/access/JavaSecuritySignatureAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaSecuritySpecAccess", "Ljdk/internal/access/JavaSecuritySpecAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaxCryptoSealedObjectAccess", "Ljdk/internal/access/JavaxCryptoSealedObjectAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "javaxCryptoSpecAccess", "Ljdk/internal/access/JavaxCryptoSpecAccess;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaIOAccess", "()Ljdk/internal/access/JavaIOAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaLangAccess", "(Ljdk/internal/access/JavaLangAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaSecurityAccess", "(Ljdk/internal/access/JavaSecurityAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaLangRefAccess", "(Ljdk/internal/access/JavaLangRefAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaObjectInputStreamAccess", "()Ljdk/internal/access/JavaObjectInputStreamAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaLangReflectAccess", "(Ljdk/internal/access/JavaLangReflectAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaLangAccess", "()Ljdk/internal/access/JavaLangAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaLangModuleAccess", "()Ljdk/internal/access/JavaLangModuleAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaNetURLAccess", "(Ljdk/internal/access/JavaNetURLAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "javaUtilJarAccess", "()Ljdk/internal/access/JavaUtilJarAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaNioAccess", "(Ljdk/internal/access/JavaNioAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaLangInvokeAccess", "()Ljdk/internal/access/JavaLangInvokeAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaUtilCollectionAccess", "(Ljdk/internal/access/JavaUtilCollectionAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaUtilCollectionAccess", "()Ljdk/internal/access/JavaUtilCollectionAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaUtilJarAccess", "(Ljdk/internal/access/JavaUtilJarAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaLangInvokeAccess", "(Ljdk/internal/access/JavaLangInvokeAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaLangModuleAccess", "(Ljdk/internal/access/JavaLangModuleAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaLangRefAccess", "()Ljdk/internal/access/JavaLangRefAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaLangReflectAccess", "()Ljdk/internal/access/JavaLangReflectAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaNetUriAccess", "(Ljdk/internal/access/JavaNetUriAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaNetUriAccess", "()Ljdk/internal/access/JavaNetUriAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaNetURLAccess", "()Ljdk/internal/access/JavaNetURLAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaNetInetAddressAccess", "(Ljdk/internal/access/JavaNetInetAddressAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaNetInetAddressAccess", "()Ljdk/internal/access/JavaNetInetAddressAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaNetHttpCookieAccess", "(Ljdk/internal/access/JavaNetHttpCookieAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaNetHttpCookieAccess", "()Ljdk/internal/access/JavaNetHttpCookieAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaNioAccess", "()Ljdk/internal/access/JavaNioAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaIOAccess", "(Ljdk/internal/access/JavaIOAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaIOFileDescriptorAccess", "(Ljdk/internal/access/JavaIOFileDescriptorAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaIOFilePermissionAccess", "()Ljdk/internal/access/JavaIOFilePermissionAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaIOFilePermissionAccess", "(Ljdk/internal/access/JavaIOFilePermissionAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaIOFileDescriptorAccess", "()Ljdk/internal/access/JavaIOFileDescriptorAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaSecurityAccess", "()Ljdk/internal/access/JavaSecurityAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaUtilZipFileAccess", "()Ljdk/internal/access/JavaUtilZipFileAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaUtilZipFileAccess", "(Ljdk/internal/access/JavaUtilZipFileAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaAWTAccess", "(Ljdk/internal/access/JavaAWTAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaAWTAccess", "()Ljdk/internal/access/JavaAWTAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaAWTFontAccess", "(Ljdk/internal/access/JavaAWTFontAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaAWTFontAccess", "()Ljdk/internal/access/JavaAWTFontAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaBeansAccess", "()Ljdk/internal/access/JavaBeansAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaBeansAccess", "(Ljdk/internal/access/JavaBeansAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaUtilResourceBundleAccess", "()Ljdk/internal/access/JavaUtilResourceBundleAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaUtilResourceBundleAccess", "(Ljdk/internal/access/JavaUtilResourceBundleAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaObjectInputStreamReadString", "()Ljdk/internal/access/JavaObjectInputStreamReadString;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaObjectInputStreamReadString", "(Ljdk/internal/access/JavaObjectInputStreamReadString;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaObjectInputStreamAccess", "(Ljdk/internal/access/JavaObjectInputStreamAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaObjectInputFilterAccess", "()Ljdk/internal/access/JavaObjectInputFilterAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaObjectInputFilterAccess", "(Ljdk/internal/access/JavaObjectInputFilterAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaIORandomAccessFileAccess", "(Ljdk/internal/access/JavaIORandomAccessFileAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaIORandomAccessFileAccess", "()Ljdk/internal/access/JavaIORandomAccessFileAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaSecuritySignatureAccess", "(Ljdk/internal/access/JavaSecuritySignatureAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaSecuritySignatureAccess", "()Ljdk/internal/access/JavaSecuritySignatureAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaSecuritySpecAccess", "(Ljdk/internal/access/JavaSecuritySpecAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaSecuritySpecAccess", "()Ljdk/internal/access/JavaSecuritySpecAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaxCryptoSpecAccess", "(Ljdk/internal/access/JavaxCryptoSpecAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaxCryptoSpecAccess", "()Ljdk/internal/access/JavaxCryptoSpecAccess;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJavaxCryptoSealedObjectAccess", "(Ljdk/internal/access/JavaxCryptoSealedObjectAccess;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaxCryptoSealedObjectAccess", "()Ljdk/internal/access/JavaxCryptoSealedObjectAccess;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/access/JavaAWTAccess;", "private static")]
@@ -534,7 +534,7 @@ public partial class SharedSecrets
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public SharedSecrets() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SharedSecrets() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

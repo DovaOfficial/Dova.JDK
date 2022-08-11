@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,62 +31,62 @@ public partial class Compiler
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xpath/internal/compiler/Compiler;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "countOp", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "locPathDepth", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "s_nextMethodId", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m_currentPrefixResolver", "Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m_errorHandler", "Ljavax/xml/transform/ErrorListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m_locator", "Ljavax/xml/transform/SourceLocator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m_functionTable", "Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Compiler", "(Ljavax/xml/transform/ErrorListener;Ljavax/xml/transform/SourceLocator;Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Compiler", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "group", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "arg", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mod", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lt", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "number", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "warn", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "string", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "predicate", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "or", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "literal", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mult", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "and", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "minus", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "plus", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "div", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "neg", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "union", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "locationPath", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNamespaceContext", "(Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamespaceContext", "()Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bool", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWhatToShow", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notequals", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lte", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "gte", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "numberlit", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileExtension", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileFunction", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchPattern", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "locationPathPattern", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileOperation", "(Lcom/sun/org/apache/xpath/internal/operations/Operation;I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileUnary", "(Lcom/sun/org/apache/xpath/internal/operations/UnaryOperation;I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stepPattern", "(IILcom/sun/org/apache/xpath/internal/patterns/StepPattern;)Lcom/sun/org/apache/xpath/internal/patterns/StepPattern;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCompiledPredicates", "(I)[Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "countPredicates", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compilePredicates", "(I[Lcom/sun/org/apache/xpath/internal/Expression;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNextMethodId", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileExpression", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocationPathDepth", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFunctionTable", "()Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "assertion", "(ZLjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "variable", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "gt", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "countOp", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "locPathDepth", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEBUG", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "s_nextMethodId", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "m_currentPrefixResolver", "Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "m_errorHandler", "Ljavax/xml/transform/ErrorListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "m_locator", "Ljavax/xml/transform/SourceLocator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "m_functionTable", "Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/xml/transform/ErrorListener;Ljavax/xml/transform/SourceLocator;Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "group", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "arg", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mod", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lt", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "number", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "warn", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "string", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "predicate", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "or", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "literal", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mult", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "and", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "minus", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "plus", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "div", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "neg", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "union", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "locationPath", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNamespaceContext", "(Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamespaceContext", "()Lcom/sun/org/apache/xml/internal/utils/PrefixResolver;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bool", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWhatToShow", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notequals", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lte", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "gte", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "numberlit", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileExtension", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileFunction", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchPattern", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "locationPathPattern", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileOperation", "(Lcom/sun/org/apache/xpath/internal/operations/Operation;I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileUnary", "(Lcom/sun/org/apache/xpath/internal/operations/UnaryOperation;I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stepPattern", "(IILcom/sun/org/apache/xpath/internal/patterns/StepPattern;)Lcom/sun/org/apache/xpath/internal/patterns/StepPattern;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCompiledPredicates", "(I)[Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "countPredicates", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compilePredicates", "(I[Lcom/sun/org/apache/xpath/internal/Expression;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNextMethodId", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileExpression", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocationPathDepth", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFunctionTable", "()Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "assertion", "(ZLjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "variable", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "gt", "(I)Lcom/sun/org/apache/xpath/internal/Expression;"));
 	}
 
 	[JniSignatureAttribute("I", "")]
@@ -207,12 +207,12 @@ public partial class Compiler
 	}
 
 	[JniSignatureAttribute("(Ljavax/xml/transform/ErrorListener;Ljavax/xml/transform/SourceLocator;Lcom/sun/org/apache/xpath/internal/compiler/FunctionTable;)V", "public")]
-	public Compiler(Dova.JDK.javax.xml.transform.ErrorListener arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1, Dova.JDK.com.sun.org.apache.xpath.@internal.compiler.FunctionTable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Compiler(Dova.JDK.javax.xml.transform.ErrorListener arg0, Dova.JDK.javax.xml.transform.SourceLocator arg1, Dova.JDK.com.sun.org.apache.xpath.@internal.compiler.FunctionTable arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public Compiler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public Compiler() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 

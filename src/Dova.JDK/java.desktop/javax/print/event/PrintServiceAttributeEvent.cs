@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class PrintServiceAttributeEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/event/PrintServiceAttributeEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attributes", "Ljavax/print/attribute/PrintServiceAttributeSet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintServiceAttributeEvent", "(Ljavax/print/PrintService;Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/print/attribute/PrintServiceAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintService", "()Ljavax/print/PrintService;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attributes", "Ljavax/print/attribute/PrintServiceAttributeSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/PrintService;Ljavax/print/attribute/PrintServiceAttributeSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "()Ljavax/print/attribute/PrintServiceAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintService", "()Ljavax/print/PrintService;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -72,7 +72,7 @@ public partial class PrintServiceAttributeEvent
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/PrintService;Ljavax/print/attribute/PrintServiceAttributeSet;)V", "public")]
-	public PrintServiceAttributeEvent(Dova.JDK.javax.print.PrintService arg0, Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PrintServiceAttributeEvent(Dova.JDK.javax.print.PrintService arg0, Dova.JDK.javax.print.attribute.PrintServiceAttributeSet arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

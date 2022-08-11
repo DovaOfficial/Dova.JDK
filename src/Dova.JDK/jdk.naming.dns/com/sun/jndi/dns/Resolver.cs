@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class Resolver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/dns/Resolver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dnsClient", "Lcom/sun/jndi/dns/DnsClient;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeout", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "retries", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Resolver", "([Ljava/lang/String;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "query", "(Lcom/sun/jndi/dns/DnsName;IIZZ)Lcom/sun/jndi/dns/ResourceRecords;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findNameServers", "(Lcom/sun/jndi/dns/DnsName;Z)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findZoneName", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/DnsName;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "queryZone", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/ResourceRecords;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSoa", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/ResourceRecord;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dnsClient", "Lcom/sun/jndi/dns/DnsClient;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeout", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "retries", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/lang/String;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "query", "(Lcom/sun/jndi/dns/DnsName;IIZZ)Lcom/sun/jndi/dns/ResourceRecords;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findNameServers", "(Lcom/sun/jndi/dns/DnsName;Z)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findZoneName", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/DnsName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "queryZone", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/ResourceRecords;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSoa", "(Lcom/sun/jndi/dns/DnsName;IZ)Lcom/sun/jndi/dns/ResourceRecord;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jndi/dns/DnsClient;", "private")]
@@ -91,7 +91,7 @@ public partial class Resolver
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;II)V", "")]
-	public Resolver(JavaArray<Dova.JDK.java.lang.String> arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public Resolver(JavaArray<Dova.JDK.java.lang.String> arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 

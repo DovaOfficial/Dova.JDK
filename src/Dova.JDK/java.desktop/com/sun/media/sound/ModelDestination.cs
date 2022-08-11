@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,42 +31,42 @@ public partial class ModelDestination
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/ModelDestination;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_NONE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_KEYNUMBER", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_VELOCITY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_PITCH", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_GAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_PAN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_REVERB", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_CHORUS", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_LFO1_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_LFO1_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_LFO2_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_LFO2_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_ATTACK", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_HOLD", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_DECAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_SUSTAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_RELEASE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG1_SHUTDOWN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_ATTACK", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_HOLD", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_DECAY", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_SUSTAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_RELEASE", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_EG2_SHUTDOWN", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_FILTER_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESTINATION_FILTER_Q", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "destination", "Lcom/sun/media/sound/ModelIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transform", "Lcom/sun/media/sound/ModelTransform;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelDestination", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModelDestination", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIdentifier", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIdentifier", "()Lcom/sun/media/sound/ModelIdentifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransform", "()Lcom/sun/media/sound/ModelTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTransform", "(Lcom/sun/media/sound/ModelTransform;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_NONE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_KEYNUMBER", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_VELOCITY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_PITCH", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_GAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_PAN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_REVERB", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_CHORUS", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_LFO1_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_LFO1_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_LFO2_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_LFO2_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_ATTACK", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_HOLD", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_DECAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_SUSTAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_RELEASE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG1_SHUTDOWN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_DELAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_ATTACK", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_HOLD", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_DECAY", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_SUSTAIN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_RELEASE", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_EG2_SHUTDOWN", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_FILTER_FREQ", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESTINATION_FILTER_Q", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "destination", "Lcom/sun/media/sound/ModelIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transform", "Lcom/sun/media/sound/ModelTransform;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIdentifier", "(Lcom/sun/media/sound/ModelIdentifier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIdentifier", "()Lcom/sun/media/sound/ModelIdentifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransform", "()Lcom/sun/media/sound/ModelTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTransform", "(Lcom/sun/media/sound/ModelTransform;)V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/ModelIdentifier;", "public static final")]
@@ -495,12 +495,12 @@ public partial class ModelDestination
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ModelDestination() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ModelDestination() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/media/sound/ModelIdentifier;)V", "public")]
-	public ModelDestination(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public ModelDestination(Dova.JDK.com.sun.media.sound.ModelIdentifier arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,121 +32,121 @@ public partial class AttributeWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/AttributeWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "format", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotationWriter", "Lcom/sun/tools/javap/AnnotationWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codeWriter", "Lcom/sun/tools/javap/CodeWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constantWriter", "Lcom/sun/tools/javap/ConstantWriter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "Lcom/sun/tools/javap/Options;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "owner", "Ljava/lang/Object;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttributeWriter", "(Lcom/sun/tools/javap/Context;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getValue", "(Lcom/sun/tools/classfile/Descriptor;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/lang/Object;Lcom/sun/tools/classfile/Attributes;Lcom/sun/tools/classfile/ConstantPool;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/lang/Object;Lcom/sun/tools/classfile/Attribute;Lcom/sun/tools/classfile/ConstantPool;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSignature", "(Lcom/sun/tools/classfile/Signature_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModuleName", "(Lcom/sun/tools/classfile/ModuleHashes_attribute$Entry;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMethodName", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javap/Context;)Lcom/sun/tools/javap/AttributeWriter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCode", "(Lcom/sun/tools/classfile/Code_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCode", "(Lcom/sun/tools/classfile/Code_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitAnnotationDefault", "(Lcom/sun/tools/classfile/AnnotationDefault_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitAnnotationDefault", "(Lcom/sun/tools/classfile/AnnotationDefault_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNestHost", "(Lcom/sun/tools/classfile/NestHost_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNestHost", "(Lcom/sun/tools/classfile/NestHost_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModule", "(Lcom/sun/tools/classfile/Module_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModule", "(Lcom/sun/tools/classfile/Module_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleResolution", "(Lcom/sun/tools/classfile/ModuleResolution_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleResolution", "(Lcom/sun/tools/classfile/ModuleResolution_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleTarget", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleTarget", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJavaName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModulePackages", "(Lcom/sun/tools/classfile/ModulePackages_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModulePackages", "(Lcom/sun/tools/classfile/ModulePackages_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRecord", "(Lcom/sun/tools/classfile/Record_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRecord", "(Lcom/sun/tools/classfile/Record_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitInnerClasses", "(Lcom/sun/tools/classfile/InnerClasses_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitInnerClasses", "(Lcom/sun/tools/classfile/InnerClasses_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleParameterAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleParameterAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaClassName", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaClassName", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaException", "(Lcom/sun/tools/classfile/Exceptions_attribute;I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeInnerClassHeader", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInnerName", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/InnerClasses_attribute$Info;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printRequiresTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printExportsTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printOpensTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printUsesTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printProvidesTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printExportOpenEntry", "(II[I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaPackage", "(Lcom/sun/tools/classfile/ModulePackages_attribute;I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTargetPlatform", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJavaFieldType", "(Lcom/sun/tools/classfile/Descriptor;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitParameterAnnotations", "(Ljava/lang/String;Lcom/sun/tools/classfile/RuntimeParameterAnnotations_attribute;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSynthetic", "(Lcom/sun/tools/classfile/Synthetic_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSynthetic", "(Lcom/sun/tools/classfile/Synthetic_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitStackMapTable", "(Lcom/sun/tools/classfile/StackMapTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitStackMapTable", "(Lcom/sun/tools/classfile/StackMapTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitStackMap", "(Lcom/sun/tools/classfile/StackMap_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitStackMap", "(Lcom/sun/tools/classfile/StackMap_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceID", "(Lcom/sun/tools/classfile/SourceID_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceID", "(Lcom/sun/tools/classfile/SourceID_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceDebugExtension", "(Lcom/sun/tools/classfile/SourceDebugExtension_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSourceDebugExtension", "(Lcom/sun/tools/classfile/SourceDebugExtension_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSignature", "(Lcom/sun/tools/classfile/Signature_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitSignature", "(Lcom/sun/tools/classfile/Signature_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitPermittedSubclasses", "(Lcom/sun/tools/classfile/PermittedSubclasses_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitPermittedSubclasses", "(Lcom/sun/tools/classfile/PermittedSubclasses_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleTypeAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleTypeAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleTypeAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleTypeAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleParameterAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleParameterAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeInvisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitRuntimeVisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNestMembers", "(Lcom/sun/tools/classfile/NestMembers_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitNestMembers", "(Lcom/sun/tools/classfile/NestMembers_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleMainClass", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleMainClass", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleHashes", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitModuleHashes", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMethodParameters", "(Lcom/sun/tools/classfile/MethodParameters_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMethodParameters", "(Lcom/sun/tools/classfile/MethodParameters_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLocalVariableTypeTable", "(Lcom/sun/tools/classfile/LocalVariableTypeTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLocalVariableTypeTable", "(Lcom/sun/tools/classfile/LocalVariableTypeTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLocalVariableTable", "(Lcom/sun/tools/classfile/LocalVariableTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLocalVariableTable", "(Lcom/sun/tools/classfile/LocalVariableTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLineNumberTable", "(Lcom/sun/tools/classfile/LineNumberTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitLineNumberTable", "(Lcom/sun/tools/classfile/LineNumberTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitExceptions", "(Lcom/sun/tools/classfile/Exceptions_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitExceptions", "(Lcom/sun/tools/classfile/Exceptions_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnclosingMethod", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnclosingMethod", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitConstantValue", "(Lcom/sun/tools/classfile/ConstantValue_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitConstantValue", "(Lcom/sun/tools/classfile/ConstantValue_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCompilationID", "(Lcom/sun/tools/classfile/CompilationID_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCompilationID", "(Lcom/sun/tools/classfile/CompilationID_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCharacterRangeTable", "(Lcom/sun/tools/classfile/CharacterRangeTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitCharacterRangeTable", "(Lcom/sun/tools/classfile/CharacterRangeTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDefault", "(Lcom/sun/tools/classfile/DefaultAttribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDefault", "(Lcom/sun/tools/classfile/DefaultAttribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitBootstrapMethods", "(Lcom/sun/tools/classfile/BootstrapMethods_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitBootstrapMethods", "(Lcom/sun/tools/classfile/BootstrapMethods_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeList", "(Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeModifiers", "(Ljava/util/Collection;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toHex", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toHex", "([B)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toHex", "(II)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toHex", "(BI)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDeprecated", "(Lcom/sun/tools/classfile/Deprecated_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitDeprecated", "(Lcom/sun/tools/classfile/Deprecated_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAlgorithm", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "format", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotationWriter", "Lcom/sun/tools/javap/AnnotationWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codeWriter", "Lcom/sun/tools/javap/CodeWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constantWriter", "Lcom/sun/tools/javap/ConstantWriter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "Lcom/sun/tools/javap/Options;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constant_pool", "Lcom/sun/tools/classfile/ConstantPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "owner", "Ljava/lang/Object;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javap/Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getValue", "(Lcom/sun/tools/classfile/Descriptor;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/lang/Object;Lcom/sun/tools/classfile/Attributes;Lcom/sun/tools/classfile/ConstantPool;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/lang/Object;Lcom/sun/tools/classfile/Attribute;Lcom/sun/tools/classfile/ConstantPool;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSignature", "(Lcom/sun/tools/classfile/Signature_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModuleName", "(Lcom/sun/tools/classfile/ModuleHashes_attribute$Entry;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMethodName", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "(Lcom/sun/tools/javap/Context;)Lcom/sun/tools/javap/AttributeWriter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCode", "(Lcom/sun/tools/classfile/Code_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCode", "(Lcom/sun/tools/classfile/Code_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitAnnotationDefault", "(Lcom/sun/tools/classfile/AnnotationDefault_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitAnnotationDefault", "(Lcom/sun/tools/classfile/AnnotationDefault_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNestHost", "(Lcom/sun/tools/classfile/NestHost_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNestHost", "(Lcom/sun/tools/classfile/NestHost_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModule", "(Lcom/sun/tools/classfile/Module_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModule", "(Lcom/sun/tools/classfile/Module_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleResolution", "(Lcom/sun/tools/classfile/ModuleResolution_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleResolution", "(Lcom/sun/tools/classfile/ModuleResolution_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleTarget", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleTarget", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJavaName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModulePackages", "(Lcom/sun/tools/classfile/ModulePackages_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModulePackages", "(Lcom/sun/tools/classfile/ModulePackages_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRecord", "(Lcom/sun/tools/classfile/Record_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRecord", "(Lcom/sun/tools/classfile/Record_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitInnerClasses", "(Lcom/sun/tools/classfile/InnerClasses_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitInnerClasses", "(Lcom/sun/tools/classfile/InnerClasses_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleParameterAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleParameterAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaClassName", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaClassName", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaException", "(Lcom/sun/tools/classfile/Exceptions_attribute;I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeInnerClassHeader", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInnerName", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/InnerClasses_attribute$Info;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printRequiresTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printExportsTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printOpensTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printUsesTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printProvidesTable", "(Lcom/sun/tools/classfile/Module_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printExportOpenEntry", "(II[I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaPackage", "(Lcom/sun/tools/classfile/ModulePackages_attribute;I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTargetPlatform", "(Lcom/sun/tools/classfile/ModuleTarget_attribute;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJavaFieldType", "(Lcom/sun/tools/classfile/Descriptor;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitParameterAnnotations", "(Ljava/lang/String;Lcom/sun/tools/classfile/RuntimeParameterAnnotations_attribute;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSynthetic", "(Lcom/sun/tools/classfile/Synthetic_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSynthetic", "(Lcom/sun/tools/classfile/Synthetic_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitStackMapTable", "(Lcom/sun/tools/classfile/StackMapTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitStackMapTable", "(Lcom/sun/tools/classfile/StackMapTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitStackMap", "(Lcom/sun/tools/classfile/StackMap_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitStackMap", "(Lcom/sun/tools/classfile/StackMap_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceID", "(Lcom/sun/tools/classfile/SourceID_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceID", "(Lcom/sun/tools/classfile/SourceID_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceFile", "(Lcom/sun/tools/classfile/SourceFile_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceDebugExtension", "(Lcom/sun/tools/classfile/SourceDebugExtension_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSourceDebugExtension", "(Lcom/sun/tools/classfile/SourceDebugExtension_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSignature", "(Lcom/sun/tools/classfile/Signature_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitSignature", "(Lcom/sun/tools/classfile/Signature_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitPermittedSubclasses", "(Lcom/sun/tools/classfile/PermittedSubclasses_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitPermittedSubclasses", "(Lcom/sun/tools/classfile/PermittedSubclasses_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleTypeAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleTypeAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleTypeAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleTypeAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleTypeAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleParameterAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleParameterAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleParameterAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeInvisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeInvisibleAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleAnnotations_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitRuntimeVisibleAnnotations", "(Lcom/sun/tools/classfile/RuntimeVisibleAnnotations_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNestMembers", "(Lcom/sun/tools/classfile/NestMembers_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitNestMembers", "(Lcom/sun/tools/classfile/NestMembers_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleMainClass", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleMainClass", "(Lcom/sun/tools/classfile/ModuleMainClass_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleHashes", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitModuleHashes", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitMethodParameters", "(Lcom/sun/tools/classfile/MethodParameters_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitMethodParameters", "(Lcom/sun/tools/classfile/MethodParameters_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLocalVariableTypeTable", "(Lcom/sun/tools/classfile/LocalVariableTypeTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLocalVariableTypeTable", "(Lcom/sun/tools/classfile/LocalVariableTypeTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLocalVariableTable", "(Lcom/sun/tools/classfile/LocalVariableTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLocalVariableTable", "(Lcom/sun/tools/classfile/LocalVariableTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLineNumberTable", "(Lcom/sun/tools/classfile/LineNumberTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitLineNumberTable", "(Lcom/sun/tools/classfile/LineNumberTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitExceptions", "(Lcom/sun/tools/classfile/Exceptions_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitExceptions", "(Lcom/sun/tools/classfile/Exceptions_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnclosingMethod", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnclosingMethod", "(Lcom/sun/tools/classfile/EnclosingMethod_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitConstantValue", "(Lcom/sun/tools/classfile/ConstantValue_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitConstantValue", "(Lcom/sun/tools/classfile/ConstantValue_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCompilationID", "(Lcom/sun/tools/classfile/CompilationID_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCompilationID", "(Lcom/sun/tools/classfile/CompilationID_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCharacterRangeTable", "(Lcom/sun/tools/classfile/CharacterRangeTable_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitCharacterRangeTable", "(Lcom/sun/tools/classfile/CharacterRangeTable_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDefault", "(Lcom/sun/tools/classfile/DefaultAttribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDefault", "(Lcom/sun/tools/classfile/DefaultAttribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitBootstrapMethods", "(Lcom/sun/tools/classfile/BootstrapMethods_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitBootstrapMethods", "(Lcom/sun/tools/classfile/BootstrapMethods_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeList", "(Ljava/lang/String;Ljava/util/Collection;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeModifiers", "(Ljava/util/Collection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toHex", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toHex", "([B)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toHex", "(II)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toHex", "(BI)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDeprecated", "(Lcom/sun/tools/classfile/Deprecated_attribute;Ljava/lang/Void;)Ljava/lang/Void;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitDeprecated", "(Lcom/sun/tools/classfile/Deprecated_attribute;Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAlgorithm", "(Lcom/sun/tools/classfile/ModuleHashes_attribute;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -253,7 +253,7 @@ public partial class AttributeWriter
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javap/Context;)V", "protected")]
-	public AttributeWriter(Dova.JDK.com.sun.tools.javap.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AttributeWriter(Dova.JDK.com.sun.tools.javap.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -1014,26 +1014,26 @@ public partial class AttributeWriter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/AttributeWriter$StackMapTableWriter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javap/AttributeWriter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StackMapTableWriter", "(Lcom/sun/tools/javap/AttributeWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printHeader", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printMap", "(Ljava/lang/String;[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapTypeName", "(I)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/javap/AttributeWriter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javap/AttributeWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printHeader", "(Lcom/sun/tools/classfile/StackMapTable_attribute$stack_map_frame;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_full_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$full_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printMap", "(Ljava/lang/String;[Lcom/sun/tools/classfile/StackMapTable_attribute$verification_type_info;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapTypeName", "(I)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_locals_1_stack_item_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame_extended;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_chop_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$chop_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_frame_extended", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame_extended;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_append_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$append_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Void;)Ljava/lang/Void;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit_same_locals_1_stack_item_frame", "(Lcom/sun/tools/classfile/StackMapTable_attribute$same_locals_1_stack_item_frame;Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javap/AttributeWriter;", "final")]
@@ -1056,7 +1056,7 @@ public partial class AttributeWriter
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javap/AttributeWriter;)V", "")]
-		public StackMapTableWriter(Dova.JDK.com.sun.tools.javap.AttributeWriter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StackMapTableWriter(Dova.JDK.com.sun.tools.javap.AttributeWriter arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

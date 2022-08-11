@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class ImageResourcesTree
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "paths", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "adder", "Ljdk/tools/jlink/internal/ImageResourcesTree$LocationsAdder;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageResourcesTree", "(JLjdk/tools/jlink/internal/BasicImageWriter;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addContent", "(Ljava/io/DataOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isTreeInfoResource", "(Ljava/lang/String;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "paths", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "adder", "Ljdk/tools/jlink/internal/ImageResourcesTree$LocationsAdder;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLjdk/tools/jlink/internal/BasicImageWriter;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addContent", "(Ljava/io/DataOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isTreeInfoResource", "(Ljava/lang/String;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/List;", "private final")]
@@ -72,7 +72,7 @@ public partial class ImageResourcesTree
 	}
 
 	[JniSignatureAttribute("(JLjdk/tools/jlink/internal/BasicImageWriter;Ljava/util/List;)V", "public")]
-	public ImageResourcesTree(long arg0, Dova.JDK.jdk.tools.jlink.@internal.BasicImageWriter arg1, Dova.JDK.java.util.List arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public ImageResourcesTree(long arg0, Dova.JDK.jdk.tools.jlink.@internal.BasicImageWriter arg1, Dova.JDK.java.util.List arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -108,20 +108,20 @@ public partial class ImageResourcesTree
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "directAccess", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "paths", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modules", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packages", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Tree", "(Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModule", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toPackageName", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRoot", "()Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMap", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toResourceName", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeRadical", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeRadical", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildTree", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "directAccess", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "paths", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modules", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packages", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModule", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toPackageName", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRoot", "()Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMap", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toResourceName", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeRadical", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeRadical", "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildTree", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -200,7 +200,7 @@ public partial class ImageResourcesTree
 		}
 
 		[JniSignatureAttribute("(Ljava/util/List;)V", "private")]
-		public Tree(Dova.JDK.java.util.List arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Tree(Dova.JDK.java.util.List arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -279,14 +279,14 @@ public partial class ImageResourcesTree
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$LocationsAdder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "content", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "writer", "Ljdk/tools/jlink/internal/BasicImageWriter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tree", "Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LocationsAdder", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;JLjdk/tools/jlink/internal/BasicImageWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLocations", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeContent", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;Ljava/util/Map;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeContent", "()Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "content", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "writer", "Ljdk/tools/jlink/internal/BasicImageWriter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tree", "Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;JLjdk/tools/jlink/internal/BasicImageWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLocations", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeContent", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;Ljava/util/Map;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeContent", "()Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("J", "private")]
@@ -351,7 +351,7 @@ public partial class ImageResourcesTree
 		}
 
 		[JniSignatureAttribute("(Ljdk/tools/jlink/internal/ImageResourcesTree$Tree;JLjdk/tools/jlink/internal/BasicImageWriter;)V", "")]
-		public LocationsAdder(Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Tree arg0, long arg1, Dova.JDK.jdk.tools.jlink.@internal.BasicImageWriter arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public LocationsAdder(Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Tree arg0, long arg1, Dova.JDK.jdk.tools.jlink.@internal.BasicImageWriter arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -396,10 +396,10 @@ public partial class ImageResourcesTree
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$PackageNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "references", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PackageNode", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validate", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addReference", "(Ljava/lang/String;Z)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "references", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validate", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addReference", "(Ljava/lang/String;Z)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -422,7 +422,7 @@ public partial class ImageResourcesTree
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V", "")]
-		public PackageNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public PackageNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -457,10 +457,10 @@ public partial class ImageResourcesTree
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$PackageNode$PackageReference;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isEmpty", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PackageReference", "(Ljava/lang/String;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isEmpty", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -497,7 +497,7 @@ public partial class ImageResourcesTree
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Z)V", "")]
-			public PackageReference(Dova.JDK.java.lang.String arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public PackageReference(Dova.JDK.java.lang.String arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -527,7 +527,7 @@ public partial class ImageResourcesTree
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$ResourceNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResourceNode", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -536,7 +536,7 @@ public partial class ImageResourcesTree
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V", "public")]
-		public ResourceNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ResourceNode(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -560,15 +560,15 @@ public partial class ImageResourcesTree
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageResourcesTree$Node;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "children", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parent", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loc", "Ljdk/tools/jlink/internal/ImageLocationWriter;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Node", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPath", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChildren", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildPath", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "children", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parent", "Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loc", "Ljdk/tools/jlink/internal/ImageLocationWriter;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPath", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChildren", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/ImageResourcesTree$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildPath", "(Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -633,7 +633,7 @@ public partial class ImageResourcesTree
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/tools/jlink/internal/ImageResourcesTree$Node;)V", "private")]
-		public Node(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Node(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.tools.jlink.@internal.ImageResourcesTree.Node arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

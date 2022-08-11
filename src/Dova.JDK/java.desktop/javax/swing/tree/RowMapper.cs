@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface RowMapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/tree/RowMapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRowsForPaths", "([Ljavax/swing/tree/TreePath;)[I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRowsForPaths", "([Ljavax/swing/tree/TreePath;)[I"));
 	}
 
 	[JniSignatureAttribute("([Ljavax/swing/tree/TreePath;)[I", "public abstract")]

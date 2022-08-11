@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,13 +29,13 @@ public partial interface InstantSource
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/InstantSource;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "offset", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "millis", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "system", "()Ljava/time/InstantSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fixed", "(Ljava/time/Instant;)Ljava/time/InstantSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instant", "()Ljava/time/Instant;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tick", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "offset", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "millis", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "system", "()Ljava/time/InstantSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fixed", "(Ljava/time/Instant;)Ljava/time/InstantSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instant", "()Ljava/time/Instant;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tick", "(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withZone", "(Ljava/time/ZoneId;)Ljava/time/Clock;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/time/InstantSource;Ljava/time/Duration;)Ljava/time/InstantSource;", "public static")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,10 +30,10 @@ public partial class Headings
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PAGE_TITLE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTENT_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUB_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Headings", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PAGE_TITLE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTENT_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUB_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -84,7 +84,7 @@ public partial class Headings
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public Headings() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Headings() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -106,9 +106,9 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$IndexFrames;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IndexFrames", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -145,7 +145,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public IndexFrames() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public IndexFrames() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -168,8 +168,8 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$TypeUse;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeUse", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -192,7 +192,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public TypeUse() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TypeUse() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -215,11 +215,11 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$SerializedForm;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_SUBHEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEMBER_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SerializedForm", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_SUBHEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEMBER_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -284,7 +284,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public SerializedForm() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SerializedForm() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -307,8 +307,8 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$ConstantsSummary;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConstantsSummary", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -331,7 +331,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ConstantsSummary() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ConstantsSummary() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -354,11 +354,11 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$TypeDeclaration;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INHERITED_SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DETAILS_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEMBER_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeDeclaration", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INHERITED_SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DETAILS_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEMBER_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -423,7 +423,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public TypeDeclaration() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TypeDeclaration() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -446,8 +446,8 @@ public partial class Headings
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/Headings$ModuleDeclaration;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleDeclaration", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY_HEADING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "static final")]
@@ -470,7 +470,7 @@ public partial class Headings
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ModuleDeclaration() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ModuleDeclaration() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

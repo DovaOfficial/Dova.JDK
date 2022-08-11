@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,15 +32,15 @@ public partial class ModalEventFilter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/ModalEventFilter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modalDialog", "Ljava/awt/Dialog;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "disabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModalEventFilter", "(Ljava/awt/Dialog;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compareTo", "(Ljava/awt/ModalEventFilter;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFilterForDialog", "(Ljava/awt/Dialog;)Ljava/awt/ModalEventFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModalDialog", "()Ljava/awt/Dialog;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptEvent", "(Ljava/awt/AWTEvent;)Ljava/awt/EventFilter$FilterAction;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modalDialog", "Ljava/awt/Dialog;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "disabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Dialog;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compareTo", "(Ljava/awt/ModalEventFilter;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createFilterForDialog", "(Ljava/awt/Dialog;)Ljava/awt/ModalEventFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModalDialog", "()Ljava/awt/Dialog;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptEvent", "(Ljava/awt/AWTEvent;)Ljava/awt/EventFilter$FilterAction;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Dialog;", "protected")]
@@ -77,7 +77,7 @@ public partial class ModalEventFilter
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Dialog;)V", "protected")]
-	public ModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -141,9 +141,9 @@ public partial class ModalEventFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/ModalEventFilter$DocumentModalEventFilter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "documentRoot", "Ljava/awt/Window;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DocumentModalEventFilter", "(Ljava/awt/Dialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "documentRoot", "Ljava/awt/Window;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Dialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/Window;", "private")]
@@ -166,7 +166,7 @@ public partial class ModalEventFilter
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Dialog;)V", "")]
-		public DocumentModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DocumentModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -197,9 +197,9 @@ public partial class ModalEventFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/ModalEventFilter$ApplicationModalEventFilter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appContext", "Lsun/awt/AppContext;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ApplicationModalEventFilter", "(Ljava/awt/Dialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appContext", "Lsun/awt/AppContext;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Dialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/AppContext;", "private")]
@@ -222,7 +222,7 @@ public partial class ModalEventFilter
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Dialog;)V", "")]
-		public ApplicationModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ApplicationModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -253,9 +253,9 @@ public partial class ModalEventFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/ModalEventFilter$ToolkitModalEventFilter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appContext", "Lsun/awt/AppContext;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ToolkitModalEventFilter", "(Ljava/awt/Dialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appContext", "Lsun/awt/AppContext;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Dialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptWindow", "(Ljava/awt/Window;)Ljava/awt/EventFilter$FilterAction;"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/AppContext;", "private")]
@@ -278,7 +278,7 @@ public partial class ModalEventFilter
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Dialog;)V", "")]
-		public ToolkitModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ToolkitModalEventFilter(Dova.JDK.java.awt.Dialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

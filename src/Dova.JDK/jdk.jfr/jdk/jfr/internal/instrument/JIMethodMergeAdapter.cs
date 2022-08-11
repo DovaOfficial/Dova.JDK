@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class JIMethodMergeAdapter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/instrument/JIMethodMergeAdapter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cn", "Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodFilter", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JIMethodMergeAdapter", "(Ljdk/internal/org/objectweb/asm/ClassVisitor;Ljdk/internal/org/objectweb/asm/tree/ClassNode;Ljava/util/List;[Ljdk/jfr/internal/instrument/JITypeMapping;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit", "(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitEnd", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMethod", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "methodInFilter", "(Ljava/lang/String;Ljava/lang/String;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cn", "Ljdk/internal/org/objectweb/asm/tree/ClassNode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodFilter", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/ClassVisitor;Ljdk/internal/org/objectweb/asm/tree/ClassNode;Ljava/util/List;[Ljdk/jfr/internal/instrument/JITypeMapping;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit", "(IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitEnd", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitMethod", "(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "methodInFilter", "(Ljava/lang/String;Ljava/lang/String;)Z"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/tree/ClassNode;", "private final")]
@@ -89,7 +89,7 @@ public partial class JIMethodMergeAdapter
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/ClassVisitor;Ljdk/internal/org/objectweb/asm/tree/ClassNode;Ljava/util/List;[Ljdk/jfr/internal/instrument/JITypeMapping;)V", "public")]
-	public JIMethodMergeAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.ClassVisitor arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.tree.ClassNode arg1, Dova.JDK.java.util.List arg2, JavaArray<Dova.JDK.jdk.jfr.@internal.instrument.JITypeMapping> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public JIMethodMergeAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.ClassVisitor arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.tree.ClassNode arg1, Dova.JDK.java.util.List arg2, JavaArray<Dova.JDK.jdk.jfr.@internal.instrument.JITypeMapping> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

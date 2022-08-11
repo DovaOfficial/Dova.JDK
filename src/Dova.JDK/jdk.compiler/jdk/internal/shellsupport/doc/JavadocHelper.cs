@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,12 +32,12 @@ public partial class JavadocHelper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/shellsupport/doc/JavadocHelper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "compiler", "Ljavax/tools/JavaCompiler;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JavadocHelper", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/source/util/JavacTask;Ljava/util/Collection;)Ljdk/internal/shellsupport/doc/JavadocHelper;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceElement", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolvedDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "compiler", "Ljavax/tools/JavaCompiler;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/source/util/JavacTask;Ljava/util/Collection;)Ljdk/internal/shellsupport/doc/JavadocHelper;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceElement", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolvedDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/tools/JavaCompiler;", "private static final")]
@@ -60,7 +60,7 @@ public partial class JavadocHelper
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JavadocHelper() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JavadocHelper() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -110,26 +110,26 @@ public partial class JavadocHelper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/shellsupport/doc/JavadocHelper$OnDemandJavadocHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainTask", "Lcom/sun/source/util/JavacTask;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseFileManager", "Ljavax/tools/JavaFileManager;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fm", "Ljavax/tools/StandardJavaFileManager;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature2Source", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OnDemandJavadocHelper", "(Lcom/sun/source/util/JavacTask;Ljavax/tools/StandardJavaFileManager;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "interfaces", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSource", "(Ljava/lang/String;Ljava/lang/String;)Lcom/sun/tools/javac/util/Pair;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "topLevelType", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/TypeElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fillElementCache", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/tree/CompilationUnitTree;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "superMethodsForInheritDoc", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/ExecutableElement;)Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseDocComment", "(Lcom/sun/source/util/JavacTask;Ljava/lang/String;)Lcom/sun/tools/javac/util/Pair;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "superTypeForInheritDoc", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/Element;)Ljava/util/stream/Stream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceElement", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourceElement", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/Element;)Lcom/sun/tools/javac/util/Pair;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolvedDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolvedDocComment", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/util/TreePath;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "elementSignature", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseBlockTag", "(Lcom/sun/source/util/JavacTask;Ljava/lang/String;)Lcom/sun/source/doctree/DocTree;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getThrownException", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/util/TreePath;Lcom/sun/source/doctree/DocCommentTree;Lcom/sun/source/doctree/ThrowsTree;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainTask", "Lcom/sun/source/util/JavacTask;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseFileManager", "Ljavax/tools/JavaFileManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fm", "Ljavax/tools/StandardJavaFileManager;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature2Source", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/source/util/JavacTask;Ljavax/tools/StandardJavaFileManager;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "interfaces", "(Ljavax/lang/model/element/TypeElement;)Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSource", "(Ljava/lang/String;Ljava/lang/String;)Lcom/sun/tools/javac/util/Pair;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "topLevelType", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/TypeElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fillElementCache", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/tree/CompilationUnitTree;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "superMethodsForInheritDoc", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/ExecutableElement;)Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseDocComment", "(Lcom/sun/source/util/JavacTask;Ljava/lang/String;)Lcom/sun/tools/javac/util/Pair;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "superTypeForInheritDoc", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/Element;)Ljava/util/stream/Stream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceElement", "(Ljavax/lang/model/element/Element;)Ljavax/lang/model/element/Element;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourceElement", "(Lcom/sun/source/util/JavacTask;Ljavax/lang/model/element/Element;)Lcom/sun/tools/javac/util/Pair;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolvedDocComment", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolvedDocComment", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/util/TreePath;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "elementSignature", "(Ljavax/lang/model/element/Element;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseBlockTag", "(Lcom/sun/source/util/JavacTask;Ljava/lang/String;)Lcom/sun/source/doctree/DocTree;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getThrownException", "(Lcom/sun/source/util/JavacTask;Lcom/sun/source/util/TreePath;Lcom/sun/source/doctree/DocCommentTree;Lcom/sun/source/doctree/ThrowsTree;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/source/util/JavacTask;", "private final")]
@@ -194,7 +194,7 @@ public partial class JavadocHelper
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/source/util/JavacTask;Ljavax/tools/StandardJavaFileManager;)V", "private")]
-		public OnDemandJavadocHelper(Dova.JDK.com.sun.source.util.JavacTask arg0, Dova.JDK.javax.tools.StandardJavaFileManager arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OnDemandJavadocHelper(Dova.JDK.com.sun.source.util.JavacTask arg0, Dova.JDK.javax.tools.StandardJavaFileManager arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -320,13 +320,13 @@ public partial class JavadocHelper
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/shellsupport/doc/JavadocHelper$OnDemandJavadocHelper$PatchModuleFileManager;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file", "Ljavax/tools/JavaFileObject;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "moduleName", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PATCH_LOCATION", "Ljavax/tools/JavaFileManager$Location;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PatchModuleFileManager", "(Ljavax/tools/JavaFileManager;Ljavax/tools/JavaFileObject;Ljava/lang/String;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasLocation", "(Ljavax/tools/JavaFileManager$Location;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocationForModule", "(Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljavax/tools/JavaFileManager$Location;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "inferModuleName", "(Ljavax/tools/JavaFileManager$Location;)Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "file", "Ljavax/tools/JavaFileObject;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "moduleName", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PATCH_LOCATION", "Ljavax/tools/JavaFileManager$Location;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/tools/JavaFileManager;Ljavax/tools/JavaFileObject;Ljava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasLocation", "(Ljavax/tools/JavaFileManager$Location;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocationForModule", "(Ljavax/tools/JavaFileManager$Location;Ljavax/tools/JavaFileObject;)Ljavax/tools/JavaFileManager$Location;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "inferModuleName", "(Ljavax/tools/JavaFileManager$Location;)Ljava/lang/String;"));
 			}
 
 			[JniSignatureAttribute("Ljavax/tools/JavaFileObject;", "private final")]
@@ -377,7 +377,7 @@ public partial class JavadocHelper
 			}
 
 			[JniSignatureAttribute("(Ljavax/tools/JavaFileManager;Ljavax/tools/JavaFileObject;Ljava/lang/String;)V", "public")]
-			public PatchModuleFileManager(Dova.JDK.javax.tools.JavaFileManager arg0, Dova.JDK.javax.tools.JavaFileObject arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public PatchModuleFileManager(Dova.JDK.javax.tools.JavaFileManager arg0, Dova.JDK.javax.tools.JavaFileObject arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,60 +31,60 @@ public partial class XRCompositeManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRCompositeManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "enableGradCache", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/java2d/xr/XRCompositeManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOLID", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXTURE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GRADIENT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcType", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "solidSrc32", "Lsun/java2d/xr/XRSolidSrcPict;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "texture", "Lsun/java2d/xr/XRSurfaceData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gradient", "Lsun/java2d/xr/XRSurfaceData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alphaMask", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "solidColor", "Lsun/java2d/xr/XRColor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extraAlpha", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compRule", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alphaColor", "Lsun/java2d/xr/XRColor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "solidSrcPict", "Lsun/java2d/xr/XRSurfaceData;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "alphaMaskPict", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gradCachePixmap", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gradCachePicture", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xorEnabled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedPixel", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedComp", "Ljava/awt/Composite;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedPaint", "Ljava/awt/Paint;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "validatedExtraAlpha", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "con", "Lsun/java2d/xr/XRBackend;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskBuffer", "Lsun/java2d/xr/MaskTileManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "textRenderer", "Lsun/font/XRTextRenderer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskImage", "Lsun/java2d/xr/XRMaskImage;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRCompositeManager", "(Lsun/java2d/xr/XRSurfaceData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "(Lsun/java2d/xr/XRSurfaceData;)Lsun/java2d/xr/XRCompositeManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateCompositeState", "(Ljava/awt/Composite;Ljava/awt/geom/AffineTransform;Ljava/awt/Paint;Lsun/java2d/SunGraphics2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compositeBlit", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/XRSurfaceData;IIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBackend", "()Lsun/java2d/xr/XRBackend;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaskBuffer", "()Lsun/java2d/xr/MaskTileManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTextRenderer", "()Lsun/font/XRTextRenderer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaskImage", "()Lsun/java2d/xr/XRMaskImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExtraAlphaMask", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCompRule", "()B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRComposite", "(IIIIIIIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initResources", "(Lsun/java2d/xr/XRSurfaceData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRResetPaint", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentSource", "()Lsun/java2d/xr/XRSurfaceData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTexturePaintActive", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAlphaColor", "()Lsun/java2d/xr/XRColor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setGradientPaint", "(Lsun/java2d/xr/XRSurfaceData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTexturePaint", "(Lsun/java2d/xr/XRSurfaceData;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maskRequired", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRRenderRectangles", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/GrowableRectArray;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRCompositeRectangles", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/GrowableRectArray;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compositeText", "(Lsun/java2d/xr/XRSurfaceData;IIIILsun/java2d/xr/GrowableEltArray;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaskColor", "()Lsun/java2d/xr/XRColor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSolidPaintActive", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExtraAlpha", "()F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setForeground", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setComposite", "(Ljava/awt/Composite;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "enableGradCache", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/java2d/xr/XRCompositeManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOLID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXTURE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GRADIENT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcType", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "solidSrc32", "Lsun/java2d/xr/XRSolidSrcPict;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "texture", "Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gradient", "Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alphaMask", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "solidColor", "Lsun/java2d/xr/XRColor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extraAlpha", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compRule", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alphaColor", "Lsun/java2d/xr/XRColor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "solidSrcPict", "Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "alphaMaskPict", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gradCachePixmap", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gradCachePicture", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xorEnabled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedPixel", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedComp", "Ljava/awt/Composite;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedPaint", "Ljava/awt/Paint;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "validatedExtraAlpha", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "con", "Lsun/java2d/xr/XRBackend;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskBuffer", "Lsun/java2d/xr/MaskTileManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "textRenderer", "Lsun/font/XRTextRenderer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskImage", "Lsun/java2d/xr/XRMaskImage;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/xr/XRSurfaceData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "(Lsun/java2d/xr/XRSurfaceData;)Lsun/java2d/xr/XRCompositeManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateCompositeState", "(Ljava/awt/Composite;Ljava/awt/geom/AffineTransform;Ljava/awt/Paint;Lsun/java2d/SunGraphics2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compositeBlit", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/XRSurfaceData;IIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBackend", "()Lsun/java2d/xr/XRBackend;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaskBuffer", "()Lsun/java2d/xr/MaskTileManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTextRenderer", "()Lsun/font/XRTextRenderer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaskImage", "()Lsun/java2d/xr/XRMaskImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExtraAlphaMask", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCompRule", "()B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "XRComposite", "(IIIIIIIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initResources", "(Lsun/java2d/xr/XRSurfaceData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "XRResetPaint", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentSource", "()Lsun/java2d/xr/XRSurfaceData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTexturePaintActive", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAlphaColor", "()Lsun/java2d/xr/XRColor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setGradientPaint", "(Lsun/java2d/xr/XRSurfaceData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTexturePaint", "(Lsun/java2d/xr/XRSurfaceData;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maskRequired", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "XRRenderRectangles", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/GrowableRectArray;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "XRCompositeRectangles", "(Lsun/java2d/xr/XRSurfaceData;Lsun/java2d/xr/GrowableRectArray;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compositeText", "(Lsun/java2d/xr/XRSurfaceData;IIIILsun/java2d/xr/GrowableEltArray;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaskColor", "()Lsun/java2d/xr/XRColor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSolidPaintActive", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExtraAlpha", "()F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setForeground", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setComposite", "(Ljava/awt/Composite;)V"));
 	}
 
 	[JniSignatureAttribute("Z", "private static")]
@@ -471,7 +471,7 @@ public partial class XRCompositeManager
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/xr/XRSurfaceData;)V", "private")]
-	public XRCompositeManager(Dova.JDK.sun.java2d.xr.XRSurfaceData arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public XRCompositeManager(Dova.JDK.sun.java2d.xr.XRSurfaceData arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

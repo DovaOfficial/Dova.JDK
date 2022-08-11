@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,11 +29,11 @@ public partial interface ObjectInputFilter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "merge", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "allowFilter", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;)Ljava/io/ObjectInputFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "rejectFilter", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;)Ljava/io/ObjectInputFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "rejectUndecidedClass", "(Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "merge", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "allowFilter", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;)Ljava/io/ObjectInputFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "rejectFilter", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;)Ljava/io/ObjectInputFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "rejectUndecidedClass", "(Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;", "public static")]
@@ -86,26 +86,26 @@ public partial interface ObjectInputFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialFilterLock", "Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERIAL_FILTER_PROPNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERIAL_FILTER_FACTORY_PROPNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialFilter", "Ljava/io/ObjectInputFilter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "invalidFilterMessage", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialFilterFactory", "Ljava/util/function/BinaryOperator;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "invalidFactoryMessage", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "filterFactoryNoReplace", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "configLog", "Ljava/lang/System$Logger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Config", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFilter2", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invalidFilterFactoryMessage", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFilter", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "traceFilter", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSerialFilter", "(Ljava/io/ObjectInputFilter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSerialFilterFactory", "(Ljava/util/function/BinaryOperator;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSerialFilterFactorySingleton", "()Ljava/util/function/BinaryOperator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSerialFilter", "()Ljava/io/ObjectInputFilter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSerialFilterFactory", "()Ljava/util/function/BinaryOperator;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialFilterLock", "Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERIAL_FILTER_PROPNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERIAL_FILTER_FACTORY_PROPNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialFilter", "Ljava/io/ObjectInputFilter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "invalidFilterMessage", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialFilterFactory", "Ljava/util/function/BinaryOperator;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "invalidFactoryMessage", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "filterFactoryNoReplace", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "configLog", "Ljava/lang/System$Logger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createFilter2", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invalidFilterFactoryMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createFilter", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "traceFilter", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSerialFilter", "(Ljava/io/ObjectInputFilter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSerialFilterFactory", "(Ljava/util/function/BinaryOperator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSerialFilterFactorySingleton", "()Ljava/util/function/BinaryOperator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSerialFilter", "()Ljava/io/ObjectInputFilter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSerialFilterFactory", "()Ljava/util/function/BinaryOperator;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Object;", "private static final")]
@@ -254,7 +254,7 @@ public partial interface ObjectInputFilter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Config() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Config() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -338,20 +338,20 @@ public partial interface ObjectInputFilter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$Global;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pattern", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filters", "Ljava/util/List;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxStreamBytes", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxDepth", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxReferences", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxArrayLength", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "checkComponentType", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Global", "(Ljava/lang/String;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createFilter", "(Ljava/lang/String;Z)Ljava/io/ObjectInputFilter;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseLimit", "(Ljava/lang/String;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "matchesPackage", "(Ljava/lang/Class;Ljava/lang/String;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseValue", "(Ljava/lang/String;)J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pattern", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filters", "Ljava/util/List;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxStreamBytes", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxDepth", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxReferences", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxArrayLength", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "checkComponentType", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createFilter", "(Ljava/lang/String;Z)Ljava/io/ObjectInputFilter;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseLimit", "(Ljava/lang/String;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "matchesPackage", "(Ljava/lang/Class;Ljava/lang/String;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseValue", "(Ljava/lang/String;)J"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -458,7 +458,7 @@ public partial interface ObjectInputFilter
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/String;Z)V", "private")]
-			public Global(Dova.JDK.java.lang.String arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Global(Dova.JDK.java.lang.String arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -524,10 +524,10 @@ public partial interface ObjectInputFilter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$BuiltinFilterFactory;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BuiltinFilterFactory", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "apply", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "apply", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)Ljava/io/ObjectInputFilter;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "apply", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -536,7 +536,7 @@ public partial interface ObjectInputFilter
 			}
 
 			[JniSignatureAttribute("()V", "private")]
-			public BuiltinFilterFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public BuiltinFilterFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -582,10 +582,10 @@ public partial interface ObjectInputFilter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$RejectUndecidedFilter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter", "Ljava/io/ObjectInputFilter;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RejectUndecidedFilter", "(Ljava/io/ObjectInputFilter;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filter", "Ljava/io/ObjectInputFilter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/ObjectInputFilter;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/ObjectInputFilter;", "private final")]
@@ -608,7 +608,7 @@ public partial interface ObjectInputFilter
 			}
 
 			[JniSignatureAttribute("(Ljava/io/ObjectInputFilter;)V", "private")]
-			public RejectUndecidedFilter(Dova.JDK.java.io.ObjectInputFilter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public RejectUndecidedFilter(Dova.JDK.java.io.ObjectInputFilter arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -646,14 +646,14 @@ public partial interface ObjectInputFilter
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$RejectUndecidedFilter$SerialInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "base", "Ljava/io/ObjectInputFilter$FilterInfo;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clazz", "Ljava/lang/Class;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SerialInfo", "(Ljava/io/ObjectInputFilter$FilterInfo;Ljava/lang/Class;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "depth", "()J"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "arrayLength", "()J"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "references", "()J"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "serialClass", "()Ljava/lang/Class;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "streamBytes", "()J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "base", "Ljava/io/ObjectInputFilter$FilterInfo;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clazz", "Ljava/lang/Class;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/ObjectInputFilter$FilterInfo;Ljava/lang/Class;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "depth", "()J"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "arrayLength", "()J"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "references", "()J"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "serialClass", "()Ljava/lang/Class;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "streamBytes", "()J"));
 				}
 
 				[JniSignatureAttribute("Ljava/io/ObjectInputFilter$FilterInfo;", "private final")]
@@ -690,7 +690,7 @@ public partial interface ObjectInputFilter
 				}
 
 				[JniSignatureAttribute("(Ljava/io/ObjectInputFilter$FilterInfo;Ljava/lang/Class;)V", "")]
-				public SerialInfo(Dova.JDK.java.io.ObjectInputFilter.FilterInfo arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public SerialInfo(Dova.JDK.java.io.ObjectInputFilter.FilterInfo arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -751,11 +751,11 @@ public partial interface ObjectInputFilter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$MergeFilter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "first", "Ljava/io/ObjectInputFilter;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "second", "Ljava/io/ObjectInputFilter;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MergeFilter", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "first", "Ljava/io/ObjectInputFilter;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "second", "Ljava/io/ObjectInputFilter;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
 			}
 
 			[JniSignatureAttribute("Ljava/io/ObjectInputFilter;", "private final")]
@@ -792,7 +792,7 @@ public partial interface ObjectInputFilter
 			}
 
 			[JniSignatureAttribute("(Ljava/io/ObjectInputFilter;Ljava/io/ObjectInputFilter;)V", "")]
-			public MergeFilter(Dova.JDK.java.io.ObjectInputFilter arg0, Dova.JDK.java.io.ObjectInputFilter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public MergeFilter(Dova.JDK.java.io.ObjectInputFilter arg0, Dova.JDK.java.io.ObjectInputFilter arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -831,12 +831,12 @@ public partial interface ObjectInputFilter
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Config$PredicateFilter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predicate", "Ljava/util/function/Predicate;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ifTrueStatus", "Ljava/io/ObjectInputFilter$Status;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ifFalseStatus", "Ljava/io/ObjectInputFilter$Status;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PredicateFilter", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;Ljava/io/ObjectInputFilter$Status;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predicate", "Ljava/util/function/Predicate;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ifTrueStatus", "Ljava/io/ObjectInputFilter$Status;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ifFalseStatus", "Ljava/io/ObjectInputFilter$Status;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;Ljava/io/ObjectInputFilter$Status;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkInput", "(Ljava/io/ObjectInputFilter$FilterInfo;)Ljava/io/ObjectInputFilter$Status;"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/function/Predicate;", "private final")]
@@ -887,7 +887,7 @@ public partial interface ObjectInputFilter
 			}
 
 			[JniSignatureAttribute("(Ljava/util/function/Predicate;Ljava/io/ObjectInputFilter$Status;Ljava/io/ObjectInputFilter$Status;)V", "")]
-			public PredicateFilter(Dova.JDK.java.util.function.Predicate arg0, Dova.JDK.java.io.ObjectInputFilter.Status arg1, Dova.JDK.java.io.ObjectInputFilter.Status arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public PredicateFilter(Dova.JDK.java.util.function.Predicate arg0, Dova.JDK.java.io.ObjectInputFilter.Status arg1, Dova.JDK.java.io.ObjectInputFilter.Status arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -926,14 +926,14 @@ public partial interface ObjectInputFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$Status;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNDECIDED", "Ljava/io/ObjectInputFilter$Status;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALLOWED", "Ljava/io/ObjectInputFilter$Status;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REJECTED", "Ljava/io/ObjectInputFilter$Status;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/io/ObjectInputFilter$Status;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Status", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/io/ObjectInputFilter$Status;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/io/ObjectInputFilter$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNDECIDED", "Ljava/io/ObjectInputFilter$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALLOWED", "Ljava/io/ObjectInputFilter$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REJECTED", "Ljava/io/ObjectInputFilter$Status;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljava/io/ObjectInputFilter$Status;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljava/io/ObjectInputFilter$Status;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljava/io/ObjectInputFilter$Status;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljava/io/ObjectInputFilter$Status;"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/ObjectInputFilter$Status;", "public static final")]
@@ -998,7 +998,7 @@ public partial interface ObjectInputFilter
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Status(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Status(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1041,11 +1041,11 @@ public partial interface ObjectInputFilter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/io/ObjectInputFilter$FilterInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "depth", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "arrayLength", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "references", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "serialClass", "()Ljava/lang/Class;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "streamBytes", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "depth", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "arrayLength", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "references", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "serialClass", "()Ljava/lang/Class;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "streamBytes", "()J"));
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class AbstractAppImageBuilder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/AbstractAppImageBuilder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appLayout", "Ljdk/jpackage/internal/ApplicationLayout;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractAppImageBuilder", "(Ljava/nio/file/Path;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLauncherIconType", "(Ljava/util/Map;)Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createIconResource", "(Ljava/lang/String;Ljdk/jpackage/internal/BundlerParamInfo;Ljava/util/Map;Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "prepareApplicationFiles", "(Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeCfgFile", "(Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAppLayout", "()Ljdk/jpackage/internal/ApplicationLayout;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyApplication", "(Ljava/util/Map;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appLayout", "Ljdk/jpackage/internal/ApplicationLayout;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/file/Path;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResourceAsStream", "(Ljava/lang/String;)Ljava/io/InputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLauncherIconType", "(Ljava/util/Map;)Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createIconResource", "(Ljava/lang/String;Ljdk/jpackage/internal/BundlerParamInfo;Ljava/util/Map;Ljava/util/Map;)Ljdk/jpackage/internal/OverridableResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "prepareApplicationFiles", "(Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeCfgFile", "(Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAppLayout", "()Ljdk/jpackage/internal/ApplicationLayout;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyApplication", "(Ljava/util/Map;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/nio/file/Path;", "private final")]
@@ -77,7 +77,7 @@ public partial class AbstractAppImageBuilder
 	}
 
 	[JniSignatureAttribute("(Ljava/nio/file/Path;)V", "public")]
-	public AbstractAppImageBuilder(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AbstractAppImageBuilder(Dova.JDK.java.nio.file.Path arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -146,14 +146,14 @@ public partial class AbstractAppImageBuilder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DefaultOrResourceDirIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CustomIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NoIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IconType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DefaultOrResourceDirIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CustomIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NoIcon", "Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jpackage/internal/AbstractAppImageBuilder$IconType;", "public static final")]
@@ -218,7 +218,7 @@ public partial class AbstractAppImageBuilder
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public IconType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public IconType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

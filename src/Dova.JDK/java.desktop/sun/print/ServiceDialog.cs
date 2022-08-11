@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,54 +32,54 @@ public partial class ServiceDialog
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WAITING", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APPROVE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CANCEL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "strBundle", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "panelInsets", "Ljava/awt/Insets;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "compInsets", "Ljava/awt/Insets;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "messageRB", "Ljava/util/ResourceBundle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tpTabs", "Ljavax/swing/JTabbedPane;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "btnCancel", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "btnApprove", "Ljavax/swing/JButton;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "services", "[Ljavax/print/PrintService;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultServiceIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "asOriginal", "Ljavax/print/attribute/PrintRequestAttributeSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "asCurrent", "Ljavax/print/attribute/HashPrintRequestAttributeSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "psCurrent", "Ljavax/print/PrintService;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "docFlavor", "Ljavax/print/DocFlavor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jfc", "Lsun/print/ServiceDialog$ValidatingFileChooser;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlGeneral", "Lsun/print/ServiceDialog$GeneralPanel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlPageSetup", "Lsun/print/ServiceDialog$PageSetupPanel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlAppearance", "Lsun/print/ServiceDialog$AppearancePanel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAWT", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "_keyEventClazz", "Ljava/lang/Class;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServiceDialog", "(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;ILjavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ServiceDialog", "(Ljava/awt/GraphicsConfiguration;IILjavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttributes", "()Ljavax/print/attribute/PrintRequestAttributeSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMsg", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrintService", "()Ljavax/print/PrintService;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStatus", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initPrintDialog", "(II[Ljavax/print/PrintService;ILjavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getVKMnemonic", "(Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updatePanels", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createExitButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JButton;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleEscKey", "(Ljavax/swing/JButton;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initPageDialog", "(IILjavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "showFileChooser", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "removeMnemonics", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getImageResource", "(Ljava/lang/String;)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createCheckBox", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JCheckBox;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createRadioButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JRadioButton;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "showNoPrintService", "(Ljava/awt/GraphicsConfiguration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addToGB", "(Ljava/awt/Component;Ljava/awt/Container;Ljava/awt/GridBagLayout;Ljava/awt/GridBagConstraints;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addToBG", "(Ljavax/swing/AbstractButton;Ljava/awt/Container;Ljavax/swing/ButtonGroup;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initResource", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMnemonic", "(Ljava/lang/String;)C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WAITING", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "APPROVE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CANCEL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "strBundle", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "panelInsets", "Ljava/awt/Insets;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "compInsets", "Ljava/awt/Insets;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "messageRB", "Ljava/util/ResourceBundle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tpTabs", "Ljavax/swing/JTabbedPane;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "btnCancel", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "btnApprove", "Ljavax/swing/JButton;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "services", "[Ljavax/print/PrintService;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultServiceIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "asOriginal", "Ljavax/print/attribute/PrintRequestAttributeSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "asCurrent", "Ljavax/print/attribute/HashPrintRequestAttributeSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "psCurrent", "Ljavax/print/PrintService;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "docFlavor", "Ljavax/print/DocFlavor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jfc", "Lsun/print/ServiceDialog$ValidatingFileChooser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlGeneral", "Lsun/print/ServiceDialog$GeneralPanel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlPageSetup", "Lsun/print/ServiceDialog$PageSetupPanel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlAppearance", "Lsun/print/ServiceDialog$AppearancePanel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAWT", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "_keyEventClazz", "Ljava/lang/Class;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;ILjavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/GraphicsConfiguration;IILjavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttributes", "()Ljavax/print/attribute/PrintRequestAttributeSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMsg", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrintService", "()Ljavax/print/PrintService;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStatus", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initPrintDialog", "(II[Ljavax/print/PrintService;ILjavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getVKMnemonic", "(Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updatePanels", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createExitButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JButton;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleEscKey", "(Ljavax/swing/JButton;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initPageDialog", "(IILjavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "showFileChooser", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "removeMnemonics", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getImageResource", "(Ljava/lang/String;)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createCheckBox", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JCheckBox;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createRadioButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JRadioButton;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "showNoPrintService", "(Ljava/awt/GraphicsConfiguration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addToGB", "(Ljava/awt/Component;Ljava/awt/Container;Ljava/awt/GridBagLayout;Ljava/awt/GridBagConstraints;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addToBG", "(Ljavax/swing/AbstractButton;Ljava/awt/Container;Ljavax/swing/ButtonGroup;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initResource", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMnemonic", "(Ljava/lang/String;)C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createButton", "(Ljava/lang/String;Ljava/awt/event/ActionListener;)Ljavax/swing/JButton;"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -410,12 +410,12 @@ public partial class ServiceDialog
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/GraphicsConfiguration;II[Ljavax/print/PrintService;ILjavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V", "public")]
-	public ServiceDialog(Dova.JDK.java.awt.GraphicsConfiguration arg0, int arg1, int arg2, JavaArray<Dova.JDK.javax.print.PrintService> arg3, int arg4, Dova.JDK.javax.print.DocFlavor arg5, Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg6, Dova.JDK.java.awt.Window arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public ServiceDialog(Dova.JDK.java.awt.GraphicsConfiguration arg0, int arg1, int arg2, JavaArray<Dova.JDK.javax.print.PrintService> arg3, int arg4, Dova.JDK.javax.print.DocFlavor arg5, Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg6, Dova.JDK.java.awt.Window arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/GraphicsConfiguration;IILjavax/print/PrintService;Ljavax/print/DocFlavor;Ljavax/print/attribute/PrintRequestAttributeSet;Ljava/awt/Window;)V", "public")]
-	public ServiceDialog(Dova.JDK.java.awt.GraphicsConfiguration arg0, int arg1, int arg2, Dova.JDK.javax.print.PrintService arg3, Dova.JDK.javax.print.DocFlavor arg4, Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg5, Dova.JDK.java.awt.Window arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public ServiceDialog(Dova.JDK.java.awt.GraphicsConfiguration arg0, int arg1, int arg2, Dova.JDK.javax.print.PrintService arg3, Dova.JDK.javax.print.DocFlavor arg4, Dova.JDK.javax.print.attribute.PrintRequestAttributeSet arg5, Dova.JDK.java.awt.Window arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
@@ -589,13 +589,13 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$GeneralPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlPrintService", "Lsun/print/ServiceDialog$PrintServicePanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlPrintRange", "Lsun/print/ServiceDialog$PrintRangePanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlCopies", "Lsun/print/ServiceDialog$CopiesPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GeneralPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPrintToFileRequested", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlPrintService", "Lsun/print/ServiceDialog$PrintServicePanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlPrintRange", "Lsun/print/ServiceDialog$PrintRangePanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlCopies", "Lsun/print/ServiceDialog$CopiesPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPrintToFileRequested", "()Z"));
 		}
 
 		[JniSignatureAttribute("Lsun/print/ServiceDialog$PrintServicePanel;", "private")]
@@ -660,7 +660,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public GeneralPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public GeneralPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -697,12 +697,12 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$PageSetupPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlMedia", "Lsun/print/ServiceDialog$MediaPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlOrientation", "Lsun/print/ServiceDialog$OrientationPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PageSetupPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlMedia", "Lsun/print/ServiceDialog$MediaPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlOrientation", "Lsun/print/ServiceDialog$OrientationPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/print/ServiceDialog$MediaPanel;", "private")]
@@ -767,7 +767,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public PageSetupPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PageSetupPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -797,13 +797,13 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$AppearancePanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlChromaticity", "Lsun/print/ServiceDialog$ChromaticityPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlQuality", "Lsun/print/ServiceDialog$QualityPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlJobAttributes", "Lsun/print/ServiceDialog$JobAttributesPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlSides", "Lsun/print/ServiceDialog$SidesPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AppearancePanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlChromaticity", "Lsun/print/ServiceDialog$ChromaticityPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlQuality", "Lsun/print/ServiceDialog$QualityPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlJobAttributes", "Lsun/print/ServiceDialog$JobAttributesPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlSides", "Lsun/print/ServiceDialog$SidesPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/print/ServiceDialog$ChromaticityPanel;", "private")]
@@ -882,7 +882,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public AppearancePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AppearancePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -911,8 +911,8 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$ValidatingFileChooser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ValidatingFileChooser", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "approveSelection", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "approveSelection", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -921,7 +921,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ValidatingFileChooser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ValidatingFileChooser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -951,14 +951,14 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$IconRadioButton;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rb", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lbl", "Ljavax/swing/JLabel;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IconRadioButton", "(Ljava/lang/String;Ljava/lang/String;ZLjavax/swing/ButtonGroup;Ljava/awt/event/ActionListener;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addActionListener", "(Ljava/awt/event/ActionListener;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEnabled", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSelected", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSelected", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSameAs", "(Ljava/lang/Object;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rb", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lbl", "Ljavax/swing/JLabel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;ZLjavax/swing/ButtonGroup;Ljava/awt/event/ActionListener;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addActionListener", "(Ljava/awt/event/ActionListener;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEnabled", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSelected", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSelected", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSameAs", "(Ljava/lang/Object;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/JRadioButton;", "private")]
@@ -995,7 +995,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;ZLjavax/swing/ButtonGroup;Ljava/awt/event/ActionListener;)V", "public")]
-		public IconRadioButton(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, bool arg2, Dova.JDK.javax.swing.ButtonGroup arg3, Dova.JDK.java.awt.@event.ActionListener arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public IconRadioButton(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1, bool arg2, Dova.JDK.javax.swing.ButtonGroup arg3, Dova.JDK.java.awt.@event.ActionListener arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1054,22 +1054,22 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$JobAttributesPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblPriority", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblJobName", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblUserName", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "spinPriority", "Ljavax/swing/JSpinner;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "snModel", "Ljavax/swing/SpinnerNumberModel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbJobSheets", "Ljavax/swing/JCheckBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tfJobName", "Ljavax/swing/JTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tfUserName", "Ljavax/swing/JTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JobAttributesPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblPriority", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblJobName", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblUserName", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "spinPriority", "Ljavax/swing/JSpinner;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "snModel", "Ljavax/swing/SpinnerNumberModel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbJobSheets", "Ljavax/swing/JCheckBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tfJobName", "Ljavax/swing/JTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tfUserName", "Ljavax/swing/JTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1218,7 +1218,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public JobAttributesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public JobAttributesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1273,14 +1273,14 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$SidesPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbOneSide", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbTumble", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbDuplex", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SidesPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbOneSide", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbTumble", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbDuplex", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1359,7 +1359,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public SidesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SidesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1396,14 +1396,14 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$QualityPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbDraft", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbNormal", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbHigh", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "QualityPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbDraft", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbNormal", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbHigh", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1482,7 +1482,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public QualityPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public QualityPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1519,13 +1519,13 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$ChromaticityPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbMonochrome", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbColor", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ChromaticityPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbMonochrome", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbColor", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1590,7 +1590,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public ChromaticityPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ChromaticityPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1627,17 +1627,17 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$OrientationPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbPortrait", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbLandscape", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbRevPortrait", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbRevLandscape", "Lsun/print/ServiceDialog$IconRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OrientationPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addOrientationListener", "(Lsun/print/ServiceDialog$MarginsPanel;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbPortrait", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbLandscape", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbRevPortrait", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbRevLandscape", "Lsun/print/ServiceDialog$IconRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addOrientationListener", "(Lsun/print/ServiceDialog$MarginsPanel;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1744,7 +1744,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public OrientationPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public OrientationPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1787,20 +1787,20 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$MediaPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblSize", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblSource", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbSize", "Ljavax/swing/JComboBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbSource", "Ljavax/swing/JComboBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sizes", "Ljava/util/Vector;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sources", "Ljava/util/Vector;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MediaPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "itemStateChanged", "(Ljava/awt/event/ItemEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addMediaListener", "(Lsun/print/ServiceDialog$MarginsPanel;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMediaName", "(Ljava/lang/String;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblSize", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblSource", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbSize", "Ljavax/swing/JComboBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbSource", "Ljavax/swing/JComboBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sizes", "Ljava/util/Vector;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sources", "Ljava/util/Vector;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pnlMargins", "Lsun/print/ServiceDialog$MarginsPanel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "itemStateChanged", "(Ljava/awt/event/ItemEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addMediaListener", "(Lsun/print/ServiceDialog$MarginsPanel;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMediaName", "(Ljava/lang/String;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1935,7 +1935,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public MediaPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MediaPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1986,32 +1986,32 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$MarginsPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "leftMargin", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rightMargin", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "topMargin", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bottomMargin", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblLeft", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblRight", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblTop", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblBottom", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "units", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lmVal", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmVal", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tmVal", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bmVal", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lmObj", "Ljava/lang/Float;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmObj", "Ljava/lang/Float;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tmObj", "Ljava/lang/Float;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bmObj", "Ljava/lang/Float;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MarginsPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateMargins", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateMargins", "(FFFF)Ljavax/print/attribute/standard/MediaPrintableArea;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "leftMargin", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rightMargin", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "topMargin", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bottomMargin", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblLeft", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblRight", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblTop", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblBottom", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "units", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lmVal", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmVal", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tmVal", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bmVal", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lmObj", "Ljava/lang/Float;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmObj", "Ljava/lang/Float;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tmObj", "Ljava/lang/Float;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bmObj", "Ljava/lang/Float;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateMargins", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateMargins", "(FFFF)Ljavax/print/attribute/standard/MediaPrintableArea;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -2286,7 +2286,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public MarginsPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MarginsPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2349,18 +2349,18 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$CopiesPanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "snModel", "Ljavax/swing/SpinnerNumberModel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "spinCopies", "Ljavax/swing/JSpinner;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblCopies", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbCollate", "Ljavax/swing/JCheckBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scSupported", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CopiesPanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateCollateCB", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "snModel", "Ljavax/swing/SpinnerNumberModel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "spinCopies", "Ljavax/swing/JSpinner;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblCopies", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbCollate", "Ljavax/swing/JCheckBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scSupported", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stateChanged", "(Ljavax/swing/event/ChangeEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateCollateCB", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -2467,7 +2467,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public CopiesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CopiesPanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2517,24 +2517,24 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$PrintRangePanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prAll", "Ljavax/print/attribute/standard/PageRanges;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbAll", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbPages", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rbSelect", "Ljavax/swing/JRadioButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tfRangeFrom", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tfRangeTo", "Ljavax/swing/JFormattedTextField;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblRangeTo", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prSupported", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prPgRngSupported", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintRangePanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setupRangeWidgets", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateRangeAttribute", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prAll", "Ljavax/print/attribute/standard/PageRanges;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbAll", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbPages", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rbSelect", "Ljavax/swing/JRadioButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tfRangeFrom", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tfRangeTo", "Ljavax/swing/JFormattedTextField;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblRangeTo", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prSupported", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prPgRngSupported", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusGained", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "focusLost", "(Ljava/awt/event/FocusEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setupRangeWidgets", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateRangeAttribute", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -2697,7 +2697,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public PrintRangePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PrintRangePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2760,29 +2760,29 @@ public partial class ServiceDialog
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/ServiceDialog$PrintServicePanel;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strTitle", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "printToFilePermission", "Ljava/io/FilePermission;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "btnProperties", "Ljavax/swing/JButton;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbPrintToFile", "Ljavax/swing/JCheckBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cbName", "Ljavax/swing/JComboBox;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblType", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblStatus", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lblInfo", "Ljavax/swing/JLabel;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uiFactory", "Ljavax/print/ServiceUIFactory;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "changedService", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filePermission", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/print/ServiceDialog;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrintServicePanel", "(Lsun/print/ServiceDialog;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "popupMenuWillBecomeVisible", "(Ljavax/swing/event/PopupMenuEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "popupMenuWillBecomeInvisible", "(Ljavax/swing/event/PopupMenuEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "popupMenuCanceled", "(Ljavax/swing/event/PopupMenuEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "itemStateChanged", "(Ljava/awt/event/ItemEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPrintToFileSelected", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLabel", "(Ljava/lang/String;Ljava/awt/GridBagLayout;Ljava/awt/GridBagConstraints;)Ljavax/swing/JLabel;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "allowedToPrintToFile", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "throwPrintToFile", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strTitle", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "printToFilePermission", "Ljava/io/FilePermission;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "btnProperties", "Ljavax/swing/JButton;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbPrintToFile", "Ljavax/swing/JCheckBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cbName", "Ljavax/swing/JComboBox;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblType", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblStatus", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lblInfo", "Ljavax/swing/JLabel;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uiFactory", "Ljavax/print/ServiceUIFactory;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "changedService", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filePermission", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/print/ServiceDialog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/print/ServiceDialog;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "actionPerformed", "(Ljava/awt/event/ActionEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateInfo", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "popupMenuWillBecomeVisible", "(Ljavax/swing/event/PopupMenuEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "popupMenuWillBecomeInvisible", "(Ljavax/swing/event/PopupMenuEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "popupMenuCanceled", "(Ljavax/swing/event/PopupMenuEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "itemStateChanged", "(Ljava/awt/event/ItemEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPrintToFileSelected", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLabel", "(Ljava/lang/String;Ljava/awt/GridBagLayout;Ljava/awt/GridBagConstraints;)Ljavax/swing/JLabel;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "allowedToPrintToFile", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "throwPrintToFile", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -2959,7 +2959,7 @@ public partial class ServiceDialog
 		}
 
 		[JniSignatureAttribute("(Lsun/print/ServiceDialog;)V", "public")]
-		public PrintServicePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PrintServicePanel(Dova.JDK.sun.print.ServiceDialog arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

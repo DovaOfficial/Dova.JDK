@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,47 +31,47 @@ public partial class Eval
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Eval;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMPORT_PATTERN", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_PREFIX", "Ljava/util/regex/Pattern;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "preserveState", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "varNumber", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "anonCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectMethods", "Ljava/util/Set;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Eval", "(Ljdk/jshell/JShell;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "load", "(Ljava/util/Collection;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "events", "(Ljdk/jshell/Unit;Ljava/util/Collection;Ljava/lang/String;Ljdk/jshell/JShellException;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eval", "(Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "interestingEvent", "(Ljdk/jshell/SnippetEvent;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToSnippets", "(Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "declare", "(Ljdk/jshell/Snippet;Ljdk/jshell/DiagList;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trialCompile", "(Ljdk/jshell/Wrap;)Ljdk/jshell/DiagList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "kindOfTree", "(Lcom/sun/source/tree/Tree;)Ljdk/jshell/Snippet$Kind;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileFailResult", "(Ljdk/jshell/DiagList;Ljava/lang/String;Ljdk/jshell/Snippet$Kind;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileFailResult", "(Ljdk/jshell/TaskFactory$BaseTask;Ljava/lang/String;Ljdk/jshell/Snippet$Kind;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "anonymous2Member", "(Ljdk/jshell/ExpressionToTypeInfo$ExpressionInfo;Ljava/lang/String;Ljdk/jshell/Wrap$Range;Ljdk/jshell/TreeDissector;Lcom/sun/source/tree/Tree;)Ljdk/jshell/Util$Pair;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modifierDiagnostics", "(Lcom/sun/source/tree/ModifiersTree;Ljdk/jshell/TreeDissector;Z)Ljdk/jshell/DiagList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nameInUnicode", "(Ljavax/lang/model/element/Name;Z)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldGenTempVar", "(Ljdk/jshell/Snippet$SubKind;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "objectMethodNameDiag", "(Ljava/lang/String;J)Ljdk/jshell/Diag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compileAndLoad", "(Ljava/util/Set;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asUnresolvedReferenceException", "(Ljdk/jshell/spi/ExecutionControl$ResolutionException;)Ljdk/jshell/UnresolvedReferenceException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asEvalException", "(Ljdk/jshell/spi/ExecutionControl$UserException;)Ljdk/jshell/EvalException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "translateExceptionStack", "(Ljava/lang/Exception;)[Ljava/lang/StackTraceElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asJShellException", "(Ljava/lang/Throwable;)Ljdk/jshell/JShellException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "outerWrapSet", "(Ljava/util/Collection;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWrap", "(Ljava/lang/StackTraceElement;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processImport", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processVariables", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processExpression", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processClass", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/Snippet$SubKind;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processMethod", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processStatement", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToSnippetsWithWrappers", "(Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toScratchSnippets", "(Ljava/lang/String;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "userReadableName", "(Ljavax/lang/model/element/Name;Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeDeclareName", "(Lcom/sun/tools/javac/code/Symbol$TypeSymbol;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drop", "(Ljdk/jshell/Snippet;)Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMPORT_PATTERN", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_PREFIX", "Ljava/util/regex/Pattern;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "preserveState", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "varNumber", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "anonCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objectMethods", "Ljava/util/Set;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "load", "(Ljava/util/Collection;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "events", "(Ljdk/jshell/Unit;Ljava/util/Collection;Ljava/lang/String;Ljdk/jshell/JShellException;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eval", "(Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "interestingEvent", "(Ljdk/jshell/SnippetEvent;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToSnippets", "(Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "declare", "(Ljdk/jshell/Snippet;Ljdk/jshell/DiagList;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trialCompile", "(Ljdk/jshell/Wrap;)Ljdk/jshell/DiagList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "kindOfTree", "(Lcom/sun/source/tree/Tree;)Ljdk/jshell/Snippet$Kind;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileFailResult", "(Ljdk/jshell/DiagList;Ljava/lang/String;Ljdk/jshell/Snippet$Kind;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileFailResult", "(Ljdk/jshell/TaskFactory$BaseTask;Ljava/lang/String;Ljdk/jshell/Snippet$Kind;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "anonymous2Member", "(Ljdk/jshell/ExpressionToTypeInfo$ExpressionInfo;Ljava/lang/String;Ljdk/jshell/Wrap$Range;Ljdk/jshell/TreeDissector;Lcom/sun/source/tree/Tree;)Ljdk/jshell/Util$Pair;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modifierDiagnostics", "(Lcom/sun/source/tree/ModifiersTree;Ljdk/jshell/TreeDissector;Z)Ljdk/jshell/DiagList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nameInUnicode", "(Ljavax/lang/model/element/Name;Z)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldGenTempVar", "(Ljdk/jshell/Snippet$SubKind;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "objectMethodNameDiag", "(Ljava/lang/String;J)Ljdk/jshell/Diag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compileAndLoad", "(Ljava/util/Set;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asUnresolvedReferenceException", "(Ljdk/jshell/spi/ExecutionControl$ResolutionException;)Ljdk/jshell/UnresolvedReferenceException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asEvalException", "(Ljdk/jshell/spi/ExecutionControl$UserException;)Ljdk/jshell/EvalException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "translateExceptionStack", "(Ljava/lang/Exception;)[Ljava/lang/StackTraceElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asJShellException", "(Ljava/lang/Throwable;)Ljdk/jshell/JShellException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "outerWrapSet", "(Ljava/util/Collection;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWrap", "(Ljava/lang/StackTraceElement;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processImport", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processVariables", "(Ljava/lang/String;Ljava/util/List;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processExpression", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processClass", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/Snippet$SubKind;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processMethod", "(Ljava/lang/String;Lcom/sun/source/tree/Tree;Ljava/lang/String;Ljdk/jshell/TaskFactory$ParseTask;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processStatement", "(Ljava/lang/String;Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToSnippetsWithWrappers", "(Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toScratchSnippets", "(Ljava/lang/String;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "userReadableName", "(Ljavax/lang/model/element/Name;Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeDeclareName", "(Lcom/sun/tools/javac/code/Symbol$TypeSymbol;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drop", "(Ljdk/jshell/Snippet;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/regex/Pattern;", "private static final")]
@@ -178,7 +178,7 @@ public partial class Eval
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;)V", "")]
-	public Eval(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Eval(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -431,10 +431,10 @@ public partial class Eval
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Eval$EvalPretty;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out", "Ljava/io/Writer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EvalPretty", "(Ljava/io/Writer;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "print", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "prettyExpr", "(Lcom/sun/tools/javac/tree/JCTree;Z)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out", "Ljava/io/Writer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/Writer;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "print", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "prettyExpr", "(Lcom/sun/tools/javac/tree/JCTree;Z)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/Writer;", "private final")]
@@ -457,7 +457,7 @@ public partial class Eval
 		}
 
 		[JniSignatureAttribute("(Ljava/io/Writer;Z)V", "public")]
-		public EvalPretty(Dova.JDK.java.io.Writer arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public EvalPretty(Dova.JDK.java.io.Writer arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -494,14 +494,14 @@ public partial class Eval
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Eval$Result;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUCESS", "Ljdk/jshell/Eval$Result;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FAILURE", "Ljdk/jshell/Eval$Result;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTINUE", "Ljdk/jshell/Eval$Result;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/jshell/Eval$Result;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Result", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/jshell/Eval$Result;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jshell/Eval$Result;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/jshell/Eval$Result;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUCESS", "Ljdk/jshell/Eval$Result;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FAILURE", "Ljdk/jshell/Eval$Result;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTINUE", "Ljdk/jshell/Eval$Result;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/jshell/Eval$Result;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/jshell/Eval$Result;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jshell/Eval$Result;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/jshell/Eval$Result;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jshell/Eval$Result;", "public static final")]
@@ -566,7 +566,7 @@ public partial class Eval
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Result(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Result(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -611,17 +611,17 @@ public partial class Eval
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/Eval$ModifierDiagnostic;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fatal", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "message", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "start", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "end", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModifierDiagnostic", "(Ljdk/jshell/Eval;ZLjava/lang/String;JJ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "(Ljava/util/Locale;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isError", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEndPosition", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCode", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPosition", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStartPosition", "()J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fatal", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "message", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "start", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "end", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/Eval;ZLjava/lang/String;JJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "(Ljava/util/Locale;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isError", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEndPosition", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCode", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPosition", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStartPosition", "()J"));
 		}
 
 		[JniSignatureAttribute("Z", "final")]
@@ -686,7 +686,7 @@ public partial class Eval
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/Eval;ZLjava/lang/String;JJ)V", "")]
-		public ModifierDiagnostic(Dova.JDK.jdk.jshell.Eval arg0, bool arg1, Dova.JDK.java.lang.String arg2, long arg3, long arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public ModifierDiagnostic(Dova.JDK.jdk.jshell.Eval arg0, bool arg1, Dova.JDK.java.lang.String arg2, long arg3, long arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

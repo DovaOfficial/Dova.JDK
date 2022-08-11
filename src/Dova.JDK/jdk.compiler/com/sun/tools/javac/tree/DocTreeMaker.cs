@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,108 +32,108 @@ public partial class DocTreeMaker
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/tree/DocTreeMaker;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "treeMakerKey", "Lcom/sun/tools/javac/util/Context$Key;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sentenceBreakTags", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pos", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "trees", "Lcom/sun/tools/javac/api/JavacTrees;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "referenceParser", "Lcom/sun/tools/javac/parser/ReferenceParser;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DocTreeMaker", "(Lcom/sun/tools/javac/util/Context;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cast", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "at_0", "(I)Lcom/sun/source/util/DocTreeFactory;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "at_1", "(I)Lcom/sun/tools/javac/tree/DocTreeMaker;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/tree/DocTreeMaker;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skipWhiteSpace", "(Ljava/lang/String;I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSentenceBreak", "(Ljava/lang/String;Lcom/sun/source/doctree/DocTree;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newTextTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/TextTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newTextTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCText;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultSentenceBreak", "(Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReturnTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReturn;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReturnTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/ReturnTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReturnTree_0", "(ZLjava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReturn;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReturnTree_1", "(ZLjava/util/List;)Lcom/sun/source/doctree/ReturnTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newProvidesTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCProvides;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newProvidesTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ProvidesTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newParamTree_0", "(ZLcom/sun/source/doctree/IdentifierTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCParam;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newParamTree_1", "(ZLcom/sun/source/doctree/IdentifierTree;Ljava/util/List;)Lcom/sun/source/doctree/ParamTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLiteralTree_0", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCLiteral;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLiteralTree_1", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/LiteralTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLinkPlainTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/LinkTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLinkPlainTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCLink;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLinkTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCLink;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLinkTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/LinkTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInheritDocTree_0", "()Lcom/sun/source/doctree/InheritDocTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInheritDocTree_1", "()Lcom/sun/tools/javac/tree/DCTree$DCInheritDoc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newIndexTree_0", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCIndex;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newIndexTree_1", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Lcom/sun/source/doctree/IndexTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newIdentifierTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCIdentifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newIdentifierTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/IdentifierTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUsesTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUses;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUsesTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/UsesTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUnknownInlineTagTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUnknownInlineTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUnknownInlineTagTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/source/doctree/UnknownInlineTagTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUnknownBlockTagTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUnknownBlockTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newUnknownBlockTagTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/source/doctree/UnknownBlockTagTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newThrowsTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCThrows;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newThrowsTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ThrowsTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSystemPropertyTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/SystemPropertyTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSystemPropertyTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCSystemProperty;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSummaryTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SummaryTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSummaryTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSummary;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newStartElementTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;Z)Lcom/sun/source/doctree/StartElementTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newStartElementTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;Z)Lcom/sun/tools/javac/tree/DCTree$DCStartElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSnippetTree_0", "(Ljava/util/List;Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/SnippetTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSnippetTree_1", "(Ljava/util/List;Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCSnippet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSinceTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SinceTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSinceTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSince;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialFieldTree_0", "(Lcom/sun/source/doctree/IdentifierTree;Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerialField;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialFieldTree_1", "(Lcom/sun/source/doctree/IdentifierTree;Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/SerialFieldTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialDataTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SerialDataTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialDataTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerialData;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerial;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSerialTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/SerialTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSeeTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SeeTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSeeTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSee;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReferenceTree", "(Ljava/lang/String;Lcom/sun/tools/javac/tree/JCTree$JCExpression;Lcom/sun/tools/javac/tree/JCTree;Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReferenceTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/ReferenceTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newReferenceTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCReference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newHiddenTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/HiddenTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newHiddenTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCHidden;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newExceptionTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ThrowsTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newExceptionTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCThrows;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newErroneousTree_0", "(Ljava/lang/String;Ljavax/tools/Diagnostic;)Lcom/sun/tools/javac/tree/DCTree$DCErroneous;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newErroneousTree_1", "(Ljava/lang/String;Ljavax/tools/Diagnostic;)Lcom/sun/source/doctree/ErroneousTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEntityTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/EntityTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEntityTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCEntity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEndElementTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/EndElementTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEndElementTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCEndElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocTypeTree_0", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCDocType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocTypeTree_1", "(Ljava/lang/String;)Lcom/sun/source/doctree/DocTypeTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocRootTree_0", "()Lcom/sun/source/doctree/DocRootTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocRootTree_1", "()Lcom/sun/tools/javac/tree/DCTree$DCDocRoot;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDeprecatedTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/DeprecatedTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDeprecatedTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDeprecated;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCommentTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/CommentTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCommentTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCComment;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "splitBody", "(Ljava/util/Collection;)Lcom/sun/tools/javac/util/Pair;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocCommentTree", "(Lcom/sun/tools/javac/parser/Tokens$Comment;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocCommentTree_0", "(Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocCommentTree_1", "(Ljava/util/List;Ljava/util/List;)Lcom/sun/source/doctree/DocCommentTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocCommentTree_0", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDocCommentTree_1", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/source/doctree/DocCommentTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCodeTree_0", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/LiteralTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCodeTree_1", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCLiteral;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newAuthorTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCAuthor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newAuthorTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/AuthorTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newAttributeTree_0", "(Ljavax/lang/model/element/Name;Lcom/sun/source/doctree/AttributeTree$ValueKind;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCAttribute;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newAttributeTree_1", "(Ljavax/lang/model/element/Name;Lcom/sun/source/doctree/AttributeTree$ValueKind;Ljava/util/List;)Lcom/sun/source/doctree/AttributeTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSentenceBreak", "(Lcom/sun/source/doctree/DocTree;Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSentenceBreak", "(Ljavax/lang/model/element/Name;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTextTree", "(Lcom/sun/source/doctree/DocTree;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newVersionTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/VersionTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newVersionTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCVersion;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newValueTree_0", "(Lcom/sun/source/doctree/ReferenceTree;)Lcom/sun/source/doctree/ValueTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newValueTree_1", "(Lcom/sun/source/doctree/ReferenceTree;)Lcom/sun/tools/javac/tree/DCTree$DCValue;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFirstSentence", "(Ljava/util/List;)Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "treeMakerKey", "Lcom/sun/tools/javac/util/Context$Key;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sentenceBreakTags", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pos", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "trees", "Lcom/sun/tools/javac/api/JavacTrees;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "referenceParser", "Lcom/sun/tools/javac/parser/ReferenceParser;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cast", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "at_0", "(I)Lcom/sun/source/util/DocTreeFactory;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "at_1", "(I)Lcom/sun/tools/javac/tree/DocTreeMaker;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "(Lcom/sun/tools/javac/util/Context;)Lcom/sun/tools/javac/tree/DocTreeMaker;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skipWhiteSpace", "(Ljava/lang/String;I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSentenceBreak", "(Ljava/lang/String;Lcom/sun/source/doctree/DocTree;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newTextTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/TextTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newTextTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCText;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defaultSentenceBreak", "(Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReturnTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReturn;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReturnTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/ReturnTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReturnTree_0", "(ZLjava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReturn;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReturnTree_1", "(ZLjava/util/List;)Lcom/sun/source/doctree/ReturnTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newProvidesTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCProvides;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newProvidesTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ProvidesTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newParamTree_0", "(ZLcom/sun/source/doctree/IdentifierTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCParam;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newParamTree_1", "(ZLcom/sun/source/doctree/IdentifierTree;Ljava/util/List;)Lcom/sun/source/doctree/ParamTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLiteralTree_0", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCLiteral;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLiteralTree_1", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/LiteralTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLinkPlainTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/LinkTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLinkPlainTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCLink;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLinkTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCLink;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLinkTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/LinkTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInheritDocTree_0", "()Lcom/sun/source/doctree/InheritDocTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInheritDocTree_1", "()Lcom/sun/tools/javac/tree/DCTree$DCInheritDoc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newIndexTree_0", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCIndex;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newIndexTree_1", "(Lcom/sun/source/doctree/DocTree;Ljava/util/List;)Lcom/sun/source/doctree/IndexTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newIdentifierTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCIdentifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newIdentifierTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/IdentifierTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUsesTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUses;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUsesTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/UsesTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUnknownInlineTagTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUnknownInlineTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUnknownInlineTagTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/source/doctree/UnknownInlineTagTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUnknownBlockTagTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCUnknownBlockTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newUnknownBlockTagTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/source/doctree/UnknownBlockTagTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newThrowsTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCThrows;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newThrowsTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ThrowsTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSystemPropertyTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/SystemPropertyTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSystemPropertyTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCSystemProperty;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSummaryTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SummaryTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSummaryTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSummary;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newStartElementTree_0", "(Ljavax/lang/model/element/Name;Ljava/util/List;Z)Lcom/sun/source/doctree/StartElementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newStartElementTree_1", "(Ljavax/lang/model/element/Name;Ljava/util/List;Z)Lcom/sun/tools/javac/tree/DCTree$DCStartElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSnippetTree_0", "(Ljava/util/List;Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/SnippetTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSnippetTree_1", "(Ljava/util/List;Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCSnippet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSinceTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SinceTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSinceTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSince;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialFieldTree_0", "(Lcom/sun/source/doctree/IdentifierTree;Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerialField;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialFieldTree_1", "(Lcom/sun/source/doctree/IdentifierTree;Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/SerialFieldTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialDataTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SerialDataTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialDataTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerialData;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSerial;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSerialTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/SerialTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSeeTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/SeeTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSeeTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCSee;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReferenceTree", "(Ljava/lang/String;Lcom/sun/tools/javac/tree/JCTree$JCExpression;Lcom/sun/tools/javac/tree/JCTree;Ljavax/lang/model/element/Name;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCReference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReferenceTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/ReferenceTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newReferenceTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCReference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newHiddenTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/HiddenTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newHiddenTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCHidden;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newExceptionTree_0", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/source/doctree/ThrowsTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newExceptionTree_1", "(Lcom/sun/source/doctree/ReferenceTree;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCThrows;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newErroneousTree_0", "(Ljava/lang/String;Ljavax/tools/Diagnostic;)Lcom/sun/tools/javac/tree/DCTree$DCErroneous;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newErroneousTree_1", "(Ljava/lang/String;Ljavax/tools/Diagnostic;)Lcom/sun/source/doctree/ErroneousTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEntityTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/EntityTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEntityTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCEntity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEndElementTree_0", "(Ljavax/lang/model/element/Name;)Lcom/sun/source/doctree/EndElementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEndElementTree_1", "(Ljavax/lang/model/element/Name;)Lcom/sun/tools/javac/tree/DCTree$DCEndElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocTypeTree_0", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCDocType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocTypeTree_1", "(Ljava/lang/String;)Lcom/sun/source/doctree/DocTypeTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocRootTree_0", "()Lcom/sun/source/doctree/DocRootTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocRootTree_1", "()Lcom/sun/tools/javac/tree/DCTree$DCDocRoot;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDeprecatedTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/DeprecatedTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDeprecatedTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDeprecated;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCommentTree_0", "(Ljava/lang/String;)Lcom/sun/source/doctree/CommentTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCommentTree_1", "(Ljava/lang/String;)Lcom/sun/tools/javac/tree/DCTree$DCComment;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "splitBody", "(Ljava/util/Collection;)Lcom/sun/tools/javac/util/Pair;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocCommentTree", "(Lcom/sun/tools/javac/parser/Tokens$Comment;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocCommentTree_0", "(Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocCommentTree_1", "(Ljava/util/List;Ljava/util/List;)Lcom/sun/source/doctree/DocCommentTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocCommentTree_0", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCDocComment;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDocCommentTree_1", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lcom/sun/source/doctree/DocCommentTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCodeTree_0", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/source/doctree/LiteralTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCodeTree_1", "(Lcom/sun/source/doctree/TextTree;)Lcom/sun/tools/javac/tree/DCTree$DCLiteral;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newAuthorTree_0", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCAuthor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newAuthorTree_1", "(Ljava/util/List;)Lcom/sun/source/doctree/AuthorTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newAttributeTree_0", "(Ljavax/lang/model/element/Name;Lcom/sun/source/doctree/AttributeTree$ValueKind;Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCAttribute;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newAttributeTree_1", "(Ljavax/lang/model/element/Name;Lcom/sun/source/doctree/AttributeTree$ValueKind;Ljava/util/List;)Lcom/sun/source/doctree/AttributeTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSentenceBreak", "(Lcom/sun/source/doctree/DocTree;Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSentenceBreak", "(Ljavax/lang/model/element/Name;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTextTree", "(Lcom/sun/source/doctree/DocTree;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newVersionTree_0", "(Ljava/util/List;)Lcom/sun/source/doctree/VersionTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newVersionTree_1", "(Ljava/util/List;)Lcom/sun/tools/javac/tree/DCTree$DCVersion;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newValueTree_0", "(Lcom/sun/source/doctree/ReferenceTree;)Lcom/sun/source/doctree/ValueTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newValueTree_1", "(Lcom/sun/source/doctree/ReferenceTree;)Lcom/sun/tools/javac/tree/DCTree$DCValue;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFirstSentence", "(Ljava/util/List;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context$Key;", "protected static final")]
@@ -212,7 +212,7 @@ public partial class DocTreeMaker
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "protected")]
-	public DocTreeMaker(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DocTreeMaker(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

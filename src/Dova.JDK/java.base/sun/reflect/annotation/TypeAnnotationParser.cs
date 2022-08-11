@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,45 +31,45 @@ public partial class TypeAnnotationParser
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/TypeAnnotationParser;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_TYPE_ANNOTATION_ARRAY", "[Lsun/reflect/annotation/TypeAnnotation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_TYPE_PARAMETER", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_TYPE_PARAMETER", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_EXTENDS", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_TYPE_PARAMETER_BOUND", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_TYPE_PARAMETER_BOUND", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_RETURN", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_RECEIVER", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_FORMAL_PARAMETER", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THROWS", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCAL_VARIABLE", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOURCE_VARIABLE", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION_PARAMETER", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCEOF", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_REFERENCE", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_REFERENCE", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAST", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_INVOCATION_TYPE_ARGUMENT", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT", "B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_REFERENCE_TYPE_ARGUMENT", "B"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeAnnotationParser", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAnnotatedSuperclass", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/Class;)Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAnnotatedInterfaces", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/Class;)[Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAnnotatedType", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;)Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAnnotatedTypes", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;[Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;)[Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mapTypeAnnotations", "([Lsun/reflect/annotation/TypeAnnotation;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseTypeAnnotations", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)[Lsun/reflect/annotation/TypeAnnotation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseAllTypeAnnotations", "(Ljava/lang/reflect/AnnotatedElement;)[Lsun/reflect/annotation/TypeAnnotation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fetchBounds", "(Ljava/lang/reflect/GenericDeclaration;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseTypeAnnotation", "(Ljava/nio/ByteBuffer;Ljdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)Lsun/reflect/annotation/TypeAnnotation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseTargetInfo", "(Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parse2ByteTarget", "(Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseShortTarget", "(Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseTypeVariableAnnotations", "(Ljava/lang/reflect/GenericDeclaration;I)[Ljava/lang/annotation/Annotation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseAnnotatedBounds", "([Ljava/lang/reflect/Type;Ljava/lang/reflect/GenericDeclaration;I)[Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parseAnnotatedBounds", "([Ljava/lang/reflect/Type;Ljava/lang/reflect/GenericDeclaration;ILsun/reflect/annotation/TypeAnnotation$LocationInfo;)[Ljava/lang/reflect/AnnotatedType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_TYPE_ANNOTATION_ARRAY", "[Lsun/reflect/annotation/TypeAnnotation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_TYPE_PARAMETER", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_TYPE_PARAMETER", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_EXTENDS", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_TYPE_PARAMETER_BOUND", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_TYPE_PARAMETER_BOUND", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_RETURN", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_RECEIVER", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_FORMAL_PARAMETER", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THROWS", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCAL_VARIABLE", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOURCE_VARIABLE", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCEPTION_PARAMETER", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCEOF", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NEW", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_REFERENCE", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_REFERENCE", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAST", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_INVOCATION_TYPE_ARGUMENT", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_INVOCATION_TYPE_ARGUMENT", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_REFERENCE_TYPE_ARGUMENT", "B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_REFERENCE_TYPE_ARGUMENT", "B"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAnnotatedSuperclass", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/Class;)Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAnnotatedInterfaces", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/Class;)[Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAnnotatedType", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;)Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAnnotatedTypes", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;[Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;)[Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mapTypeAnnotations", "([Lsun/reflect/annotation/TypeAnnotation;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseTypeAnnotations", "([BLjdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)[Lsun/reflect/annotation/TypeAnnotation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseAllTypeAnnotations", "(Ljava/lang/reflect/AnnotatedElement;)[Lsun/reflect/annotation/TypeAnnotation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fetchBounds", "(Ljava/lang/reflect/GenericDeclaration;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseTypeAnnotation", "(Ljava/nio/ByteBuffer;Ljdk/internal/reflect/ConstantPool;Ljava/lang/reflect/AnnotatedElement;Ljava/lang/Class;)Lsun/reflect/annotation/TypeAnnotation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseTargetInfo", "(Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parse2ByteTarget", "(Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseShortTarget", "(Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTarget;Ljava/nio/ByteBuffer;)Lsun/reflect/annotation/TypeAnnotation$TypeAnnotationTargetInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseTypeVariableAnnotations", "(Ljava/lang/reflect/GenericDeclaration;I)[Ljava/lang/annotation/Annotation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseAnnotatedBounds", "([Ljava/lang/reflect/Type;Ljava/lang/reflect/GenericDeclaration;I)[Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parseAnnotatedBounds", "([Ljava/lang/reflect/Type;Ljava/lang/reflect/GenericDeclaration;ILsun/reflect/annotation/TypeAnnotation$LocationInfo;)[Ljava/lang/reflect/AnnotatedType;"));
 	}
 
 	[JniSignatureAttribute("[Lsun/reflect/annotation/TypeAnnotation;", "private static final")]
@@ -400,7 +400,7 @@ public partial class TypeAnnotationParser
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public TypeAnnotationParser() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TypeAnnotationParser() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface JavaUtilCollectionAccess
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/JavaUtilCollectionAccess;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "listFromTrustedArray", "([Ljava/lang/Object;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "listFromTrustedArrayNullsAllowed", "([Ljava/lang/Object;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "listFromTrustedArray", "([Ljava/lang/Object;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "listFromTrustedArrayNullsAllowed", "([Ljava/lang/Object;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/Object;)Ljava/util/List;", "public abstract")]

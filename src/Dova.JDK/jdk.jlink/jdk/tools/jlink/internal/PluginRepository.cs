@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class PluginRepository
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/PluginRepository;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "registeredPlugins", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PluginRepository", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newPlugin", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPlugin", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPlugin", "(Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "registerPlugin", "(Ljdk/tools/jlink/plugin/Plugin;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "unregisterPlugin", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPlugins", "(Ljava/lang/ModuleLayer;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPlugins", "(Ljava/lang/Class;Ljava/lang/ModuleLayer;)Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "registeredPlugins", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newPlugin", "(Ljava/util/Map;Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPlugin", "(Ljava/lang/Class;Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPlugin", "(Ljava/lang/String;Ljava/lang/ModuleLayer;)Ljdk/tools/jlink/plugin/Plugin;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "registerPlugin", "(Ljdk/tools/jlink/plugin/Plugin;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "unregisterPlugin", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPlugins", "(Ljava/lang/ModuleLayer;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPlugins", "(Ljava/lang/Class;Ljava/lang/ModuleLayer;)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -62,7 +62,7 @@ public partial class PluginRepository
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public PluginRepository() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public PluginRepository() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

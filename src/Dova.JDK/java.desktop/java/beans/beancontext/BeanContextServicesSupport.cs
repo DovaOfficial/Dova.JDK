@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,44 +32,44 @@ public partial class BeanContextServicesSupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "services", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serializable", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "proxy", "Ljava/beans/beancontext/BeanContextServicesSupport$BCSSProxyServiceProvider;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bcsListeners", "Ljava/util/ArrayList;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeanContextServicesSupport", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeanContextServicesSupport", "(Ljava/beans/beancontext/BeanContextServices;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeanContextServicesSupport", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeanContextServicesSupport", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BeanContextServicesSupport", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;ZZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initialize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeObject", "(Ljava/io/ObjectOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBCSChild", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/beans/beancontext/BeanContextSupport$BCSChild;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "childJustRemovedHook", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextSupport$BCSChild;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bcsPreSerializationHook", "(Ljava/io/ObjectOutputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bcsPreDeserializationHook", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBCSSServiceProvider", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)Ljava/beans/beancontext/BeanContextServicesSupport$BCSSServiceProvider;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBeanContextServicesPeer", "()Ljava/beans/beancontext/BeanContextServices;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireServiceAdded", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireServiceAdded", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireServiceRevoked", "(Ljava/lang/Class;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireServiceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getChildBeanContextServicesListener", "(Ljava/lang/Object;)Ljava/beans/beancontext/BeanContextServicesListener;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseBeanContextResources", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initializeBeanContextResources", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentServiceSelectors", "(Ljava/lang/Class;)Ljava/util/Iterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "revokeService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasService", "(Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentServiceClasses", "()Ljava/util/Iterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "services", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serializable", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "proxy", "Ljava/beans/beancontext/BeanContextServicesSupport$BCSSProxyServiceProvider;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bcsListeners", "Ljava/util/ArrayList;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServices;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;ZZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initialize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeObject", "(Ljava/io/ObjectOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBCSChild", "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/beans/beancontext/BeanContextSupport$BCSChild;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "childJustRemovedHook", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextSupport$BCSChild;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bcsPreSerializationHook", "(Ljava/io/ObjectOutputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bcsPreDeserializationHook", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBCSSServiceProvider", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)Ljava/beans/beancontext/BeanContextServicesSupport$BCSSServiceProvider;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBeanContextServicesPeer", "()Ljava/beans/beancontext/BeanContextServices;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireServiceAdded", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireServiceAdded", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireServiceRevoked", "(Ljava/lang/Class;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireServiceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getChildBeanContextServicesListener", "(Ljava/lang/Object;)Ljava/beans/beancontext/BeanContextServicesListener;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseBeanContextResources", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initializeBeanContextResources", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "serviceAvailable", "(Ljava/beans/beancontext/BeanContextServiceAvailableEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentServiceSelectors", "(Ljava/lang/Class;)Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "revokeService", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasService", "(Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseService", "(Ljava/beans/beancontext/BeanContextChild;Ljava/lang/Object;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentServiceClasses", "()Ljava/util/Iterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeBeanContextServicesListener", "(Ljava/beans/beancontext/BeanContextServicesListener;)V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -148,27 +148,27 @@ public partial class BeanContextServicesSupport
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public BeanContextServicesSupport() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BeanContextServicesSupport() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServices;)V", "public")]
-	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;)V", "public")]
-	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;Z)V", "public")]
-	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2))
+	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServices;Ljava/util/Locale;ZZ)V", "public")]
-	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3))
+	public BeanContextServicesSupport(Dova.JDK.java.beans.beancontext.BeanContextServices arg0, Dova.JDK.java.util.Locale arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -369,16 +369,16 @@ public partial class BeanContextServicesSupport
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceClasses", "Ljava/util/HashMap;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceRequestors", "Ljava/util/HashMap;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljava/beans/beancontext/BeanContextServicesSupport;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BCSSChild", "(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/lang/Object;Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "usingService", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;ZLjava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cleanupReferences", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "revokeAllDelegatedServicesNow", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "revokeService", "(Ljava/lang/Class;ZZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseService", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceClasses", "Ljava/util/HashMap;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceRequestors", "Ljava/util/HashMap;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljava/beans/beancontext/BeanContextServicesSupport;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/lang/Object;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "usingService", "(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;ZLjava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cleanupReferences", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "revokeAllDelegatedServicesNow", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "revokeService", "(Ljava/lang/Class;ZZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseService", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -443,7 +443,7 @@ public partial class BeanContextServicesSupport
 		}
 
 		[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/lang/Object;Ljava/lang/Object;)V", "")]
-		public BCSSChild(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public BCSSChild(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -496,29 +496,29 @@ public partial class BeanContextServicesSupport
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceClass", "Ljava/lang/Class;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceRefs", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegateProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegateRefs", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestors", "Ljava/util/HashMap;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BCSSCServiceClassRef", "(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entries", "()Ljava/util/Iterator;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifyAndMaybeSetProvider", "(Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "verifyRequestor", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRequestor", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRef", "(Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDelegateProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseRef", "(Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeRequestor", "(Ljava/lang/Object;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cloneOfEntries", "()Ljava/util/Iterator;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRefs", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDelegateRefs", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceRefs", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDelegated", "()Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceClass", "()Ljava/lang/Class;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceClass", "Ljava/lang/Class;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceRefs", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegateProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegateRefs", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestors", "Ljava/util/HashMap;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entries", "()Ljava/util/Iterator;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verifyAndMaybeSetProvider", "(Ljava/beans/beancontext/BeanContextServiceProvider;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "verifyRequestor", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addRequestor", "(Ljava/lang/Object;Ljava/beans/beancontext/BeanContextServiceRevokedListener;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addRef", "(Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDelegateProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseRef", "(Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeRequestor", "(Ljava/lang/Object;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cloneOfEntries", "()Ljava/util/Iterator;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRefs", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDelegateRefs", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceRefs", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDelegated", "()Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceClass", "()Ljava/lang/Class;"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/Class;", "")]
@@ -611,7 +611,7 @@ public partial class BeanContextServicesSupport
 			}
 
 			[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;Z)V", "")]
-			public BCSSCServiceClassRef(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.java.beans.beancontext.BeanContextServiceProvider arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+			public BCSSCServiceClassRef(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.java.beans.beancontext.BeanContextServiceProvider arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 			{
 			}
 
@@ -741,14 +741,14 @@ public partial class BeanContextServicesSupport
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceRef;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceClassRef", "Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refCnt", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "delegated", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BCSSCServiceRef", "(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "release", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRef", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceClassRef", "()Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDelegated", "()Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceClassRef", "Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refCnt", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "delegated", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "release", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addRef", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceClassRef", "()Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDelegated", "()Z"));
 			}
 
 			[JniSignatureAttribute("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;", "")]
@@ -799,7 +799,7 @@ public partial class BeanContextServicesSupport
 			}
 
 			[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild;Ljava/beans/beancontext/BeanContextServicesSupport$BCSSChild$BCSSCServiceClassRef;Z)V", "")]
-			public BCSSCServiceRef(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild arg0, Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild.BCSSCServiceClassRef arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public BCSSCServiceRef(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild arg0, Dova.JDK.java.beans.beancontext.BeanContextServicesSupport.BCSSChild.BCSSCServiceClassRef arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -852,10 +852,10 @@ public partial class BeanContextServicesSupport
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSServiceProvider;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "serviceProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BCSSServiceProvider", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getServiceProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "serviceProvider", "Ljava/beans/beancontext/BeanContextServiceProvider;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getServiceProvider", "()Ljava/beans/beancontext/BeanContextServiceProvider;"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -892,7 +892,7 @@ public partial class BeanContextServicesSupport
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;Ljava/beans/beancontext/BeanContextServiceProvider;)V", "")]
-		public BCSSServiceProvider(Dova.JDK.java.lang.Class arg0, Dova.JDK.java.beans.beancontext.BeanContextServiceProvider arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BCSSServiceProvider(Dova.JDK.java.lang.Class arg0, Dova.JDK.java.beans.beancontext.BeanContextServiceProvider arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -925,13 +925,13 @@ public partial class BeanContextServicesSupport
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextServicesSupport$BCSSProxyServiceProvider;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nestingCtxt", "Ljava/beans/beancontext/BeanContextServices;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljava/beans/beancontext/BeanContextServicesSupport;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BCSSProxyServiceProvider", "(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/beans/beancontext/BeanContextServices;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentServiceSelectors", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Class;)Ljava/util/Iterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "releaseService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Object;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nestingCtxt", "Ljava/beans/beancontext/BeanContextServices;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljava/beans/beancontext/BeanContextServicesSupport;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/beans/beancontext/BeanContextServices;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "serviceRevoked", "(Ljava/beans/beancontext/BeanContextServiceRevokedEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentServiceSelectors", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Class;)Ljava/util/Iterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "releaseService", "(Ljava/beans/beancontext/BeanContextServices;Ljava/lang/Object;Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/beans/beancontext/BeanContextServices;", "private")]
@@ -968,7 +968,7 @@ public partial class BeanContextServicesSupport
 		}
 
 		[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextServicesSupport;Ljava/beans/beancontext/BeanContextServices;)V", "")]
-		public BCSSProxyServiceProvider(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport arg0, Dova.JDK.java.beans.beancontext.BeanContextServices arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BCSSProxyServiceProvider(Dova.JDK.java.beans.beancontext.BeanContextServicesSupport arg0, Dova.JDK.java.beans.beancontext.BeanContextServices arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class JdpController
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jdp/JdpController;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "controller", "Lsun/management/jdp/JdpController$JDPControllerRunner;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdpController", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInteger", "(Ljava/lang/String;ILjava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getProcessId", "()Ljava/lang/Long;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "stopDiscoveryService", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "startDiscoveryService", "(Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInetAddress", "(Ljava/lang/String;Ljava/net/InetAddress;Ljava/lang/String;)Ljava/net/InetAddress;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "controller", "Lsun/management/jdp/JdpController$JDPControllerRunner;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInteger", "(Ljava/lang/String;ILjava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getProcessId", "()Ljava/lang/Long;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "stopDiscoveryService", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "startDiscoveryService", "(Ljava/net/InetAddress;ILjava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInetAddress", "(Ljava/lang/String;Ljava/net/InetAddress;Ljava/lang/String;)Ljava/net/InetAddress;"));
 	}
 
 	[JniSignatureAttribute("Lsun/management/jdp/JdpController$JDPControllerRunner;", "private static")]
@@ -60,7 +60,7 @@ public partial class JdpController
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public JdpController() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JdpController() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -117,13 +117,13 @@ public partial class JdpController
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/management/jdp/JdpController$JDPControllerRunner;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packet", "Lsun/management/jdp/JdpJmxPacket;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bcast", "Lsun/management/jdp/JdpBroadcaster;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pause", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shutdown", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JDPControllerRunner", "(Lsun/management/jdp/JdpBroadcaster;Lsun/management/jdp/JdpJmxPacket;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packet", "Lsun/management/jdp/JdpJmxPacket;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bcast", "Lsun/management/jdp/JdpBroadcaster;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pause", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shutdown", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/management/jdp/JdpBroadcaster;Lsun/management/jdp/JdpJmxPacket;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/management/jdp/JdpJmxPacket;", "private final")]
@@ -188,7 +188,7 @@ public partial class JdpController
 		}
 
 		[JniSignatureAttribute("(Lsun/management/jdp/JdpBroadcaster;Lsun/management/jdp/JdpJmxPacket;I)V", "private")]
-		public JDPControllerRunner(Dova.JDK.sun.management.jdp.JdpBroadcaster arg0, Dova.JDK.sun.management.jdp.JdpJmxPacket arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public JDPControllerRunner(Dova.JDK.sun.management.jdp.JdpBroadcaster arg0, Dova.JDK.sun.management.jdp.JdpJmxPacket arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

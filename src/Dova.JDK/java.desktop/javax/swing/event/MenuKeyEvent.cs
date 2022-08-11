@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class MenuKeyEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/MenuKeyEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "path", "[Ljavax/swing/MenuElement;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "manager", "Ljavax/swing/MenuSelectionManager;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MenuKeyEvent", "(Ljava/awt/Component;IJIIC[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPath", "()[Ljavax/swing/MenuElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenuSelectionManager", "()Ljavax/swing/MenuSelectionManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "path", "[Ljavax/swing/MenuElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "manager", "Ljavax/swing/MenuSelectionManager;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;IJIIC[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPath", "()[Ljavax/swing/MenuElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenuSelectionManager", "()Ljavax/swing/MenuSelectionManager;"));
 	}
 
 	[JniSignatureAttribute("[Ljavax/swing/MenuElement;", "private")]
@@ -72,7 +72,7 @@ public partial class MenuKeyEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;IJIIC[Ljavax/swing/MenuElement;Ljavax/swing/MenuSelectionManager;)V", "public")]
-	public MenuKeyEvent(Dova.JDK.java.awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, JavaArray<Dova.JDK.javax.swing.MenuElement> arg6, Dova.JDK.javax.swing.MenuSelectionManager arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public MenuKeyEvent(Dova.JDK.java.awt.Component arg0, int arg1, long arg2, int arg3, int arg4, char arg5, JavaArray<Dova.JDK.javax.swing.MenuElement> arg6, Dova.JDK.javax.swing.MenuSelectionManager arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 

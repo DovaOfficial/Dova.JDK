@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,27 +31,27 @@ public partial class XECOperations
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/XECOperations;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Lsun/security/ec/XECParameters;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "field", "Lsun/security/util/math/IntegerFieldModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "zero", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "one", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "a24", "Lsun/security/util/math/SmallValue;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "basePoint", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XECOperations", "(Lsun/security/ec/XECParameters;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameters", "()Lsun/security/ec/XECParameters;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generatePrivate", "(Ljava/security/SecureRandom;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computePublic", "([B)Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getIntegerFieldModulo", "(Ljava/math/BigInteger;)Lsun/security/util/math/IntegerFieldModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pruneK", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "pruneK", "([BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pointMultiply", "([BLsun/security/util/math/ImmutableIntegerModuloP;)Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeU", "([BI)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decodeU", "([B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "maskHighOrder", "([BI)B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bitAt", "([BI)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "cswap", "(ILsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodedPointMultiply", "([BLjava/math/BigInteger;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodedPointMultiply", "([B[B)[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Lsun/security/ec/XECParameters;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "field", "Lsun/security/util/math/IntegerFieldModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "zero", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "one", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "a24", "Lsun/security/util/math/SmallValue;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "basePoint", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ec/XECParameters;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParameters", "()Lsun/security/ec/XECParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "generatePrivate", "(Ljava/security/SecureRandom;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computePublic", "([B)Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getIntegerFieldModulo", "(Ljava/math/BigInteger;)Lsun/security/util/math/IntegerFieldModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pruneK", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "pruneK", "([BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pointMultiply", "([BLsun/security/util/math/ImmutableIntegerModuloP;)Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeU", "([BI)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decodeU", "([B)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "maskHighOrder", "([BI)B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bitAt", "([BI)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "cswap", "(ILsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodedPointMultiply", "([BLjava/math/BigInteger;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodedPointMultiply", "([B[B)[B"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ec/XECParameters;", "private final")]
@@ -144,7 +144,7 @@ public partial class XECOperations
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ec/XECParameters;)V", "public")]
-	public XECOperations(Dova.JDK.sun.security.ec.XECParameters arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public XECOperations(Dova.JDK.sun.security.ec.XECParameters arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

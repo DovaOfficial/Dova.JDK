@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class ObjectEndpoint
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/ObjectEndpoint;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "Ljava/rmi/server/ObjID;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transport", "Lsun/rmi/transport/Transport;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectEndpoint", "(Ljava/rmi/server/ObjID;Lsun/rmi/transport/Transport;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "Ljava/rmi/server/ObjID;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transport", "Lsun/rmi/transport/Transport;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/rmi/server/ObjID;Lsun/rmi/transport/Transport;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
 	}
 
 	[JniSignatureAttribute("Ljava/rmi/server/ObjID;", "private final")]
@@ -88,7 +88,7 @@ public partial class ObjectEndpoint
 	}
 
 	[JniSignatureAttribute("(Ljava/rmi/server/ObjID;Lsun/rmi/transport/Transport;)V", "")]
-	public ObjectEndpoint(Dova.JDK.java.rmi.server.ObjID arg0, Dova.JDK.sun.rmi.transport.Transport arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ObjectEndpoint(Dova.JDK.java.rmi.server.ObjID arg0, Dova.JDK.sun.rmi.transport.Transport arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

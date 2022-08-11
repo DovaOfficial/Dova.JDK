@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class ConnectionEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/ConnectionEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ex", "Ljava/sql/SQLException;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConnectionEvent", "(Ljavax/sql/PooledConnection;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConnectionEvent", "(Ljavax/sql/PooledConnection;Ljava/sql/SQLException;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSQLException", "()Ljava/sql/SQLException;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ex", "Ljava/sql/SQLException;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sql/PooledConnection;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sql/PooledConnection;Ljava/sql/SQLException;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSQLException", "()Ljava/sql/SQLException;"));
 	}
 
 	[JniSignatureAttribute("Ljava/sql/SQLException;", "private")]
@@ -72,12 +72,12 @@ public partial class ConnectionEvent
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/PooledConnection;)V", "public")]
-	public ConnectionEvent(Dova.JDK.javax.sql.PooledConnection arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ConnectionEvent(Dova.JDK.javax.sql.PooledConnection arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/PooledConnection;Ljava/sql/SQLException;)V", "public")]
-	public ConnectionEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.SQLException arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ConnectionEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.SQLException arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

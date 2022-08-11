@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,21 +30,21 @@ public partial class RenderLoops
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/loops/RenderLoops;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "primTypeID", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawLineLoop", "Lsun/java2d/loops/DrawLine;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fillRectLoop", "Lsun/java2d/loops/FillRect;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawRectLoop", "Lsun/java2d/loops/DrawRect;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawPolygonsLoop", "Lsun/java2d/loops/DrawPolygons;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawPathLoop", "Lsun/java2d/loops/DrawPath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fillPathLoop", "Lsun/java2d/loops/FillPath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fillSpansLoop", "Lsun/java2d/loops/FillSpans;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fillParallelogramLoop", "Lsun/java2d/loops/FillParallelogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawParallelogramLoop", "Lsun/java2d/loops/DrawParallelogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawGlyphListLoop", "Lsun/java2d/loops/DrawGlyphList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawGlyphListAALoop", "Lsun/java2d/loops/DrawGlyphListAA;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawGlyphListLCDLoop", "Lsun/java2d/loops/DrawGlyphListLCD;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "drawGlyphListColorLoop", "Lsun/java2d/loops/DrawGlyphListColor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RenderLoops", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "primTypeID", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawLineLoop", "Lsun/java2d/loops/DrawLine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fillRectLoop", "Lsun/java2d/loops/FillRect;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawRectLoop", "Lsun/java2d/loops/DrawRect;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawPolygonsLoop", "Lsun/java2d/loops/DrawPolygons;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawPathLoop", "Lsun/java2d/loops/DrawPath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fillPathLoop", "Lsun/java2d/loops/FillPath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fillSpansLoop", "Lsun/java2d/loops/FillSpans;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fillParallelogramLoop", "Lsun/java2d/loops/FillParallelogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawParallelogramLoop", "Lsun/java2d/loops/DrawParallelogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawGlyphListLoop", "Lsun/java2d/loops/DrawGlyphList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawGlyphListAALoop", "Lsun/java2d/loops/DrawGlyphListAA;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawGlyphListLCDLoop", "Lsun/java2d/loops/DrawGlyphListLCD;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "drawGlyphListColorLoop", "Lsun/java2d/loops/DrawGlyphListColor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -249,7 +249,7 @@ public partial class RenderLoops
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public RenderLoops() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public RenderLoops() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class ImageFileCreator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/ImageFileCreator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entriesForModule", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "plugins", "Ljdk/tools/jlink/internal/ImagePluginStack;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImageFileCreator", "(Ljdk/tools/jlink/internal/ImagePluginStack;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toPackage", "(Ljava/lang/String;Z)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toPackage", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/util/Set;Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/util/Set;Ljava/nio/ByteOrder;)Ljdk/tools/jlink/internal/ExecutableImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/util/Set;Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "resourceName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "generateJImage", "(Ljdk/tools/jlink/internal/ResourcePoolManager;Ljdk/tools/jlink/internal/BasicImageWriter;Ljdk/tools/jlink/internal/ImagePluginStack;Ljava/io/DataOutputStream;)Ljdk/tools/jlink/plugin/ResourcePool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createPoolManager", "(Ljava/util/Set;Ljava/util/Map;Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/BasicImageWriter;)Ljdk/tools/jlink/internal/ResourcePoolManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "recreateJimage", "(Ljava/nio/file/Path;Ljava/util/Set;Ljdk/tools/jlink/internal/ImagePluginStack;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAllEntries", "(Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "splitPath", "(Ljava/lang/String;)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeImage", "(Ljava/util/Set;Ljava/nio/ByteOrder;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entriesForModule", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "plugins", "Ljdk/tools/jlink/internal/ImagePluginStack;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/ImagePluginStack;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toPackage", "(Ljava/lang/String;Z)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toPackage", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/util/Set;Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/util/Set;Ljava/nio/ByteOrder;)Ljdk/tools/jlink/internal/ExecutableImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/util/Set;Ljdk/tools/jlink/internal/ImagePluginStack;)Ljdk/tools/jlink/internal/ExecutableImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "resourceName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "generateJImage", "(Ljdk/tools/jlink/internal/ResourcePoolManager;Ljdk/tools/jlink/internal/BasicImageWriter;Ljdk/tools/jlink/internal/ImagePluginStack;Ljava/io/DataOutputStream;)Ljdk/tools/jlink/plugin/ResourcePool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createPoolManager", "(Ljava/util/Set;Ljava/util/Map;Ljava/nio/ByteOrder;Ljdk/tools/jlink/internal/BasicImageWriter;)Ljdk/tools/jlink/internal/ResourcePoolManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "recreateJimage", "(Ljava/nio/file/Path;Ljava/util/Set;Ljdk/tools/jlink/internal/ImagePluginStack;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAllEntries", "(Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "splitPath", "(Ljava/lang/String;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeImage", "(Ljava/util/Set;Ljava/nio/ByteOrder;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -82,7 +82,7 @@ public partial class ImageFileCreator
 	}
 
 	[JniSignatureAttribute("(Ljdk/tools/jlink/internal/ImagePluginStack;)V", "private")]
-	public ImageFileCreator(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ImageFileCreator(Dova.JDK.jdk.tools.jlink.@internal.ImagePluginStack arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

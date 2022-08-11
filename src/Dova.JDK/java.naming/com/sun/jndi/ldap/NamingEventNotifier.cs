@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,26 +32,26 @@ public partial class NamingEventNotifier
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/ldap/NamingEventNotifier;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "debug", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namingListeners", "Ljava/util/Vector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "worker", "Ljava/lang/Thread;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/jndi/ldap/LdapCtx;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventSrc", "Ljavax/naming/event/EventContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "support", "Lcom/sun/jndi/ldap/EventSupport;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "results", "Ljavax/naming/NamingEnumeration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "info", "Lcom/sun/jndi/ldap/NotifierArgs;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamingEventNotifier", "(Lcom/sun/jndi/ldap/EventSupport;Lcom/sun/jndi/ldap/LdapCtx;Lcom/sun/jndi/ldap/NotifierArgs;Ljavax/naming/event/NamingListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cleanup", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addNamingListener", "(Ljavax/naming/event/NamingListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeNamingListener", "(Ljavax/naming/event/NamingListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasNamingListeners", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireObjectAdded", "(Ljavax/naming/Binding;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireObjectRemoved", "(Ljavax/naming/Binding;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireObjectChanged", "(Ljavax/naming/Binding;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireObjectRenamed", "(Ljavax/naming/Binding;Ljava/lang/String;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireNamingException", "(Ljavax/naming/NamingException;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "debug", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namingListeners", "Ljava/util/Vector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "worker", "Ljava/lang/Thread;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Lcom/sun/jndi/ldap/LdapCtx;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventSrc", "Ljavax/naming/event/EventContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "support", "Lcom/sun/jndi/ldap/EventSupport;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "results", "Ljavax/naming/NamingEnumeration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "info", "Lcom/sun/jndi/ldap/NotifierArgs;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/jndi/ldap/EventSupport;Lcom/sun/jndi/ldap/LdapCtx;Lcom/sun/jndi/ldap/NotifierArgs;Ljavax/naming/event/NamingListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cleanup", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addNamingListener", "(Ljavax/naming/event/NamingListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeNamingListener", "(Ljavax/naming/event/NamingListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasNamingListeners", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireObjectAdded", "(Ljavax/naming/Binding;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireObjectRemoved", "(Ljavax/naming/Binding;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireObjectChanged", "(Ljavax/naming/Binding;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireObjectRenamed", "(Ljavax/naming/Binding;Ljava/lang/String;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireNamingException", "(Ljavax/naming/NamingException;)V"));
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -172,7 +172,7 @@ public partial class NamingEventNotifier
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jndi/ldap/EventSupport;Lcom/sun/jndi/ldap/LdapCtx;Lcom/sun/jndi/ldap/NotifierArgs;Ljavax/naming/event/NamingListener;)V", "")]
-	public NamingEventNotifier(Dova.JDK.com.sun.jndi.ldap.EventSupport arg0, Dova.JDK.com.sun.jndi.ldap.LdapCtx arg1, Dova.JDK.com.sun.jndi.ldap.NotifierArgs arg2, Dova.JDK.javax.naming.@event.NamingListener arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public NamingEventNotifier(Dova.JDK.com.sun.jndi.ldap.EventSupport arg0, Dova.JDK.com.sun.jndi.ldap.LdapCtx arg1, Dova.JDK.com.sun.jndi.ldap.NotifierArgs arg2, Dova.JDK.javax.naming.@event.NamingListener arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,20 +32,20 @@ public partial class NamespaceOperation
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/NamespaceOperation;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseOperation", "Ljdk/dynalink/Operation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namespaces", "[Ljdk/dynalink/Namespace;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamespaceOperation", "(Ljdk/dynalink/Operation;[Ljdk/dynalink/Namespace;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "contains", "(Ljdk/dynalink/Operation;Ljdk/dynalink/Operation;Ljdk/dynalink/Namespace;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "contains", "(Ljdk/dynalink/Namespace;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getBaseOperation", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/Operation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBaseOperation", "()Ljdk/dynalink/Operation;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamespaces", "()[Ljdk/dynalink/Namespace;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNamespaces", "(Ljdk/dynalink/Operation;)[Ljdk/dynalink/Namespace;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamespaceCount", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamespace", "(I)Ljdk/dynalink/Namespace;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseOperation", "Ljdk/dynalink/Operation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namespaces", "[Ljdk/dynalink/Namespace;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/dynalink/Operation;[Ljdk/dynalink/Namespace;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "contains", "(Ljdk/dynalink/Operation;Ljdk/dynalink/Operation;Ljdk/dynalink/Namespace;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "contains", "(Ljdk/dynalink/Namespace;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getBaseOperation", "(Ljdk/dynalink/Operation;)Ljdk/dynalink/Operation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBaseOperation", "()Ljdk/dynalink/Operation;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamespaces", "()[Ljdk/dynalink/Namespace;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNamespaces", "(Ljdk/dynalink/Operation;)[Ljdk/dynalink/Namespace;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamespaceCount", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamespace", "(I)Ljdk/dynalink/Namespace;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/dynalink/Operation;", "private final")]
@@ -82,7 +82,7 @@ public partial class NamespaceOperation
 	}
 
 	[JniSignatureAttribute("(Ljdk/dynalink/Operation;[Ljdk/dynalink/Namespace;)V", "public transient")]
-	public NamespaceOperation(Dova.JDK.jdk.dynalink.Operation arg0, JavaArray<Dova.JDK.jdk.dynalink.Namespace> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public NamespaceOperation(Dova.JDK.jdk.dynalink.Operation arg0, JavaArray<Dova.JDK.jdk.dynalink.Namespace> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

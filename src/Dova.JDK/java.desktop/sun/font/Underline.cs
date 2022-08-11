@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class Underline
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Underline;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_THICKNESS", "F"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USE_THICKNESS", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IGNORE_THICKNESS", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNDERLINES", "Ljava/util/concurrent/ConcurrentHashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNDERLINE_LIST", "[Lsun/font/Underline;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Underline", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUnderline", "(Ljava/lang/Object;)Lsun/font/Underline;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUnderline", "(I)Lsun/font/Underline;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLowerDrawLimit", "(F)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_THICKNESS", "F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USE_THICKNESS", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IGNORE_THICKNESS", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNDERLINES", "Ljava/util/concurrent/ConcurrentHashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNDERLINE_LIST", "[Lsun/font/Underline;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUnderline", "(Ljava/lang/Object;)Lsun/font/Underline;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUnderline", "(I)Lsun/font/Underline;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLowerDrawLimit", "(F)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
 	}
 
 	[JniSignatureAttribute("F", "private static final")]
@@ -120,7 +120,7 @@ public partial class Underline
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public Underline() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Underline() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -177,18 +177,18 @@ public partial class Underline
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Underline$StandardUnderline;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shift", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thicknessMultiplier", "F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dashPattern", "[F"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "useThickness", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cachedStroke", "Ljava/awt/BasicStroke;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StandardUnderline", "(FF[FZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStroke", "(F)Ljava/awt/Stroke;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLowerDrawLimit", "(F)F"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLineThickness", "(F)F"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createStroke", "(F)Ljava/awt/BasicStroke;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shift", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thicknessMultiplier", "F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dashPattern", "[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "useThickness", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cachedStroke", "Ljava/awt/BasicStroke;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FF[FZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStroke", "(F)Ljava/awt/Stroke;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLowerDrawLimit", "(F)F"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLineThickness", "(F)F"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createStroke", "(F)Ljava/awt/BasicStroke;"));
 		}
 
 		[JniSignatureAttribute("F", "private")]
@@ -267,7 +267,7 @@ public partial class Underline
 		}
 
 		[JniSignatureAttribute("(FF[FZ)V", "")]
-		public StandardUnderline(float arg0, float arg1, JavaArray<float> arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public StandardUnderline(float arg0, float arg1, JavaArray<float> arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -332,11 +332,11 @@ public partial class Underline
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/Underline$IMGrayUnderline;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stroke", "Ljava/awt/BasicStroke;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IMGrayUnderline", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLowerDrawLimit", "(F)F"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stroke", "Ljava/awt/BasicStroke;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "drawUnderline", "(Ljava/awt/Graphics2D;FFFF)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLowerDrawLimit", "(F)F"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUnderlineShape", "(FFFF)Ljava/awt/Shape;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/BasicStroke;", "private")]
@@ -359,7 +359,7 @@ public partial class Underline
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public IMGrayUnderline() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public IMGrayUnderline() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class Helpers
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/Helpers;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Helpers", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "within", "(DDD)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "quadraticRoots", "(DDD[DI)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "cubicRootsInAB", "(DDDD[DIDD)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "filterOutNotInAB", "([DIIDD)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "linelen", "(DDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isort", "([DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideCubic", "([D[D[D)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideQuad", "([D[D[D)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideCubicAt", "(D[DI[DII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideLineAt", "(D[DI[DII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideQuadAt", "(D[DI[DII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "evalCubic", "(DDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "evalQuad", "(DDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fastLineLen", "(DDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fastQuadLen", "(DDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "quadlen", "(DDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fastCurvelen", "(DDDDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "curvelen", "(DDDDDDDD)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findSubdivPoints", "(Lsun/java2d/marlin/Curve;[D[DID)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findClipPoints", "(Lsun/java2d/marlin/Curve;[D[DII[D)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivide", "([D[D[DI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subdivideAt", "(D[DI[DII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "outcode", "(DD[D)I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "within", "(DDD)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "quadraticRoots", "(DDD[DI)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "cubicRootsInAB", "(DDDD[DIDD)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "filterOutNotInAB", "([DIIDD)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "linelen", "(DDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isort", "([DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideCubic", "([D[D[D)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideQuad", "([D[D[D)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideCubicAt", "(D[DI[DII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideLineAt", "(D[DI[DII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideQuadAt", "(D[DI[DII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "evalCubic", "(DDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "evalQuad", "(DDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fastLineLen", "(DDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fastQuadLen", "(DDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "quadlen", "(DDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fastCurvelen", "(DDDDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "curvelen", "(DDDDDDDD)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findSubdivPoints", "(Lsun/java2d/marlin/Curve;[D[DID)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findClipPoints", "(Lsun/java2d/marlin/Curve;[D[DII[D)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivide", "([D[D[DI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subdivideAt", "(D[DI[DII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "outcode", "(DD[D)I"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -63,7 +63,7 @@ public partial class Helpers
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Helpers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Helpers() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -239,21 +239,21 @@ public partial class Helpers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/Helpers$IndexStack;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "end", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "indices", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "indices_ref", "Lsun/java2d/marlin/IntArrayCache$Reference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "indicesUseMark", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_idxstack_indices", "Lsun/java2d/marlin/stats/Histogram;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IndexStack", "(Lsun/java2d/marlin/RendererContext;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IndexStack", "(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEmpty", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "push", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pullAll", "([DLsun/java2d/marlin/DPathConsumer2D;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "end", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "indices", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "indices_ref", "Lsun/java2d/marlin/IntArrayCache$Reference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "indicesUseMark", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_idxstack_indices", "Lsun/java2d/marlin/stats/Histogram;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/marlin/RendererContext;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEmpty", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "push", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pullAll", "([DLsun/java2d/marlin/DPathConsumer2D;)V"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -374,12 +374,12 @@ public partial class Helpers
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/marlin/RendererContext;)V", "")]
-		public IndexStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public IndexStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;)V", "")]
-		public IndexStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0, Dova.JDK.sun.java2d.marlin.stats.StatLong arg1, Dova.JDK.sun.java2d.marlin.stats.Histogram arg2, Dova.JDK.sun.java2d.marlin.stats.StatLong arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public IndexStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0, Dova.JDK.sun.java2d.marlin.stats.StatLong arg1, Dova.JDK.sun.java2d.marlin.stats.Histogram arg2, Dova.JDK.sun.java2d.marlin.stats.StatLong arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -434,34 +434,34 @@ public partial class Helpers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/Helpers$PolyStack;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_LINETO", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_QUADTO", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_CUBICTO", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_CURVES_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_TYPES_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curves", "[D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "end", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curveTypes", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numCurves", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curves_ref", "Lsun/java2d/marlin/DoubleArrayCache$Reference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curveTypes_ref", "Lsun/java2d/marlin/ByteArrayCache$Reference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curveTypesUseMark", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curvesUseMark", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_polystack_curveTypes", "Lsun/java2d/marlin/stats/StatLong;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PolyStack", "(Lsun/java2d/marlin/RendererContext;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PolyStack", "(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pullAll", "(Lsun/java2d/marlin/DPathConsumer2D;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureSpace", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushCubic", "(DDDDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushQuad", "(DDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushLine", "(DD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "popAll", "(Lsun/java2d/marlin/DPathConsumer2D;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_LINETO", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_QUADTO", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_CUBICTO", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_CURVES_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_TYPES_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curves", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "end", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curveTypes", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numCurves", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curves_ref", "Lsun/java2d/marlin/DoubleArrayCache$Reference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curveTypes_ref", "Lsun/java2d/marlin/ByteArrayCache$Reference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curveTypesUseMark", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curvesUseMark", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_polystack_curveTypes", "Lsun/java2d/marlin/stats/StatLong;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/marlin/RendererContext;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pullAll", "(Lsun/java2d/marlin/DPathConsumer2D;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureSpace", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushCubic", "(DDDDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushQuad", "(DDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushLine", "(DD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "popAll", "(Lsun/java2d/marlin/DPathConsumer2D;)V"));
 		}
 
 		[JniSignatureAttribute("B", "private static final")]
@@ -722,12 +722,12 @@ public partial class Helpers
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/marlin/RendererContext;)V", "")]
-		public PolyStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PolyStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/marlin/RendererContext;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/Histogram;Lsun/java2d/marlin/stats/StatLong;Lsun/java2d/marlin/stats/StatLong;)V", "")]
-		public PolyStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0, Dova.JDK.sun.java2d.marlin.stats.StatLong arg1, Dova.JDK.sun.java2d.marlin.stats.StatLong arg2, Dova.JDK.sun.java2d.marlin.stats.Histogram arg3, Dova.JDK.sun.java2d.marlin.stats.StatLong arg4, Dova.JDK.sun.java2d.marlin.stats.StatLong arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+		public PolyStack(Dova.JDK.sun.java2d.marlin.RendererContext arg0, Dova.JDK.sun.java2d.marlin.stats.StatLong arg1, Dova.JDK.sun.java2d.marlin.stats.StatLong arg2, Dova.JDK.sun.java2d.marlin.stats.Histogram arg3, Dova.JDK.sun.java2d.marlin.stats.StatLong arg4, Dova.JDK.sun.java2d.marlin.stats.StatLong arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 		{
 		}
 

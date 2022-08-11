@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,77 +31,77 @@ public partial class HtmlIds
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/HtmlIds;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "configuration", "Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_CLASSES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_MODULES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_PACKAGES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_ELEMENT_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_OPTIONAL_ELEMENT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ANNOTATION_TYPE_REQUIRED_ELEMENT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONSTRUCTOR_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENUM_CONSTANT_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENUM_CONSTANT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOR_REMOVAL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HELP_NAVIGATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HELP_PAGES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HELP_SEARCH", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_SUMMARY_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAVBAR_SUB_LIST", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAVBAR_TOGGLE_BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAVBAR_TOP", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAVBAR_TOP_FIRSTROW", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NESTED_CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE_SUMMARY_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTY_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTY_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RELATED_PACKAGE_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESET_BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SEARCH_INPUT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SERVICES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SKIP_NAVBAR_TOP", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNNAMED_PACKAGE_ANCHOR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENUM_CONSTANTS_INHERITANCE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELDS_INHERITANCE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHODS_INHERITANCE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NESTED_CLASSES_INHERITANCE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROPERTIES_INHERITANCE", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlIds", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forProperty", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forPackage", "(Ljavax/lang/model/element/PackageElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forMemberSummary", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forPreviewSection", "(Ljavax/lang/model/element/Element;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forTabPanel", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forPage", "(Ljdk/javadoc/internal/doclets/formats/html/Navigation$PageMode;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forIndexChar", "(C)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forLine", "(I)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forParam", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forText", "(Ljava/lang/String;Ljava/util/Map;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInheritedClasses", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInheritedFields", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInheritedEnumConstants", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInheritedMethods", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInheritedProperties", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forErasure", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forInherited", "(Ljava/lang/String;Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forSummaryKind", "(Ljdk/javadoc/internal/doclets/toolkit/util/SummaryAPIListBuilder$SummaryElementKind;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forTab", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;I)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forMember", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forMember", "(Ljavax/lang/model/element/VariableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forMember", "(Ljavax/lang/model/element/TypeElement;Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forMember", "(Ljavax/lang/model/element/TypeElement;Ljavax/lang/model/element/VariableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forClass", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "configuration", "Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "utils", "Ljdk/javadoc/internal/doclets/toolkit/util/Utils;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_CLASSES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_MODULES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_PACKAGES_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_ELEMENT_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_OPTIONAL_ELEMENT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ANNOTATION_TYPE_REQUIRED_ELEMENT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONSTRUCTOR_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENUM_CONSTANT_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENUM_CONSTANT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOR_REMOVAL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HELP_NAVIGATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HELP_PAGES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HELP_SEARCH", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_SUMMARY_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAVBAR_SUB_LIST", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAVBAR_TOGGLE_BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAVBAR_TOP", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAVBAR_TOP_FIRSTROW", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NESTED_CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE_SUMMARY_TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROPERTY_DETAIL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROPERTY_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RELATED_PACKAGE_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESET_BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SEARCH_INPUT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SERVICES", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SKIP_NAVBAR_TOP", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNNAMED_PACKAGE_ANCHOR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENUM_CONSTANTS_INHERITANCE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELDS_INHERITANCE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHODS_INHERITANCE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NESTED_CLASSES_INHERITANCE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROPERTIES_INHERITANCE", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forProperty", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forPackage", "(Ljavax/lang/model/element/PackageElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forMemberSummary", "(Ljdk/javadoc/internal/doclets/toolkit/util/VisibleMemberTable$Kind;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forPreviewSection", "(Ljavax/lang/model/element/Element;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forTabPanel", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forPage", "(Ljdk/javadoc/internal/doclets/formats/html/Navigation$PageMode;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forIndexChar", "(C)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forLine", "(I)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forParam", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forText", "(Ljava/lang/String;Ljava/util/Map;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInheritedClasses", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInheritedFields", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInheritedEnumConstants", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInheritedMethods", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInheritedProperties", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forErasure", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forInherited", "(Ljava/lang/String;Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forSummaryKind", "(Ljdk/javadoc/internal/doclets/toolkit/util/SummaryAPIListBuilder$SummaryElementKind;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forTab", "(Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;I)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forMember", "(Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forMember", "(Ljavax/lang/model/element/VariableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forMember", "(Ljavax/lang/model/element/TypeElement;Ljavax/lang/model/element/ExecutableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forMember", "(Ljavax/lang/model/element/TypeElement;Ljavax/lang/model/element/VariableElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forClass", "(Ljavax/lang/model/element/TypeElement;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlId;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;", "private final")]
@@ -754,7 +754,7 @@ public partial class HtmlIds
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/doclets/formats/html/HtmlConfiguration;)V", "")]
-	public HtmlIds(Dova.JDK.jdk.javadoc.@internal.doclets.formats.html.HtmlConfiguration arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HtmlIds(Dova.JDK.jdk.javadoc.@internal.doclets.formats.html.HtmlConfiguration arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

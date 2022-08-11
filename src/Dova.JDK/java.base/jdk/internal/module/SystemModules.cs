@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,13 +29,13 @@ public partial interface SystemModules
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/SystemModules;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasSplitPackages", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasIncubatorModules", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleReads", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleDescriptors", "()[Ljava/lang/module/ModuleDescriptor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleTargets", "()[Ljdk/internal/module/ModuleTarget;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleHashes", "()[Ljdk/internal/module/ModuleHashes;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleResolutions", "()[Ljdk/internal/module/ModuleResolution;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasSplitPackages", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasIncubatorModules", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleReads", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleDescriptors", "()[Ljava/lang/module/ModuleDescriptor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleTargets", "()[Ljdk/internal/module/ModuleTarget;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleHashes", "()[Ljdk/internal/module/ModuleHashes;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleResolutions", "()[Ljdk/internal/module/ModuleResolution;"));
 	}
 
 	[JniSignatureAttribute("()Z", "public abstract")]

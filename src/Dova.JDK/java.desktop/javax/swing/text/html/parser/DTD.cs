@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,49 +32,49 @@ public partial class DTD
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/parser/DTD;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elements", "Ljava/util/Vector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elementHash", "Ljava/util/Hashtable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entityHash", "Ljava/util/Hashtable;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pcdata", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "html", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "meta", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "base", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isindex", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "head", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "body", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "applet", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "param", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "title", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "style", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "link", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "script", "Ljavax/swing/text/html/parser/Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_VERSION", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DTD_HASH_KEY", "Ljava/lang/Object;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTD", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "(Ljava/io/DataInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement", "(I)Ljavax/swing/text/html/parser/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntity", "(I)Ljavax/swing/text/html/parser/Entity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEntity", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Entity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defEntity", "(Ljava/lang/String;ILjava/lang/String;)Ljavax/swing/text/html/parser/Entity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defEntity", "(Ljava/lang/String;II)Ljavax/swing/text/html/parser/Entity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDtdHash", "()Ljava/util/Hashtable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readContentModel", "(Ljava/io/DataInputStream;[Ljava/lang/String;)Ljavax/swing/text/html/parser/ContentModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readNameArray", "(Ljava/io/DataInputStream;[Ljava/lang/String;)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttributeList", "(Ljava/io/DataInputStream;[Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;[Ljava/lang/String;[Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defContentModel", "(ILjava/lang/Object;Ljavax/swing/text/html/parser/ContentModel;)Ljavax/swing/text/html/parser/ContentModel;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "elementExists", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineAttributes", "(Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defAttributeList", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/AttributeList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putDTDHash", "(Ljava/lang/String;Ljavax/swing/text/html/parser/DTD;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDTD", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/DTD;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineEntity", "(Ljava/lang/String;I[C)Ljavax/swing/text/html/parser/Entity;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;Ljava/util/BitSet;Ljava/util/BitSet;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elements", "Ljava/util/Vector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elementHash", "Ljava/util/Hashtable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entityHash", "Ljava/util/Hashtable;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pcdata", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "html", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "meta", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "base", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isindex", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "head", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "body", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "applet", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "param", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "title", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "style", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "link", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "script", "Ljavax/swing/text/html/parser/Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FILE_VERSION", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DTD_HASH_KEY", "Ljava/lang/Object;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "(Ljava/io/DataInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement", "(I)Ljavax/swing/text/html/parser/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEntity", "(I)Ljavax/swing/text/html/parser/Entity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEntity", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/Entity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defEntity", "(Ljava/lang/String;ILjava/lang/String;)Ljavax/swing/text/html/parser/Entity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defEntity", "(Ljava/lang/String;II)Ljavax/swing/text/html/parser/Entity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDtdHash", "()Ljava/util/Hashtable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readContentModel", "(Ljava/io/DataInputStream;[Ljava/lang/String;)Ljavax/swing/text/html/parser/ContentModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readNameArray", "(Ljava/io/DataInputStream;[Ljava/lang/String;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttributeList", "(Ljava/io/DataInputStream;[Ljava/lang/String;)Ljavax/swing/text/html/parser/AttributeList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;[Ljava/lang/String;[Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defContentModel", "(ILjava/lang/Object;Ljavax/swing/text/html/parser/ContentModel;)Ljavax/swing/text/html/parser/ContentModel;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "elementExists", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineAttributes", "(Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defAttributeList", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/AttributeList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "putDTDHash", "(Ljava/lang/String;Ljavax/swing/text/html/parser/DTD;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDTD", "(Ljava/lang/String;)Ljavax/swing/text/html/parser/DTD;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineEntity", "(Ljava/lang/String;I[C)Ljavax/swing/text/html/parser/Entity;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineElement", "(Ljava/lang/String;IZZLjavax/swing/text/html/parser/ContentModel;Ljava/util/BitSet;Ljava/util/BitSet;Ljavax/swing/text/html/parser/AttributeList;)Ljavax/swing/text/html/parser/Element;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public")]
@@ -363,7 +363,7 @@ public partial class DTD
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "protected")]
-	public DTD(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DTD(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

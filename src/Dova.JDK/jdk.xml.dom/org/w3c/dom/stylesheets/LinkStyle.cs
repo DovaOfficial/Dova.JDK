@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface LinkStyle
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/stylesheets/LinkStyle;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSheet", "()Lorg/w3c/dom/stylesheets/StyleSheet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSheet", "()Lorg/w3c/dom/stylesheets/StyleSheet;"));
 	}
 
 	[JniSignatureAttribute("()Lorg/w3c/dom/stylesheets/StyleSheet;", "public abstract")]

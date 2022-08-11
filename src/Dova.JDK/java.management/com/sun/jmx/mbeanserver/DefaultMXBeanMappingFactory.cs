@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,33 +31,33 @@ public partial class DefaultMXBeanMappingFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "mappings", "Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$Mappings;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "permanentMappings", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "keyArray", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "keyValueArray", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "inProgress", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultMXBeanMappingFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isIdentity", "(Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "propertyName", "(Ljava/lang/reflect/Method;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "capitalize", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMapping", "(Ljava/lang/reflect/Type;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "openDataException", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljavax/management/openmbean/OpenDataException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "openDataException", "(Ljava/lang/Throwable;)Ljavax/management/openmbean/OpenDataException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeArrayOrCollectionMapping", "(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeEnumMapping", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeMXBeanRefMapping", "(Ljava/lang/reflect/Type;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeCompositeMapping", "(Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeParameterizedTypeMapping", "(Ljava/lang/reflect/ParameterizedType;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mappingForType", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mustBeComparable", "(Ljava/lang/Class;Ljava/lang/reflect/Type;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeTabularMapping", "(Ljava/lang/reflect/Type;ZLjava/lang/reflect/Type;Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invalidObjectException", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/io/InvalidObjectException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invalidObjectException", "(Ljava/lang/Throwable;)Ljava/io/InvalidObjectException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "putPermanentMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "decapitalize", "(Ljava/lang/String;)Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "mappings", "Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$Mappings;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "permanentMappings", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "keyArray", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "keyValueArray", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "inProgress", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isIdentity", "(Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "propertyName", "(Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "capitalize", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMapping", "(Ljava/lang/reflect/Type;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "putMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "openDataException", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljavax/management/openmbean/OpenDataException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "openDataException", "(Ljava/lang/Throwable;)Ljavax/management/openmbean/OpenDataException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeArrayOrCollectionMapping", "(Ljava/lang/reflect/Type;Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeEnumMapping", "(Ljava/lang/Class;Ljava/lang/Class;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeMXBeanRefMapping", "(Ljava/lang/reflect/Type;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeCompositeMapping", "(Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeParameterizedTypeMapping", "(Ljava/lang/reflect/ParameterizedType;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mappingForType", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mustBeComparable", "(Ljava/lang/Class;Ljava/lang/reflect/Type;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeTabularMapping", "(Ljava/lang/reflect/Type;ZLjava/lang/reflect/Type;Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invalidObjectException", "(Ljava/lang/String;Ljava/lang/Throwable;)Ljava/io/InvalidObjectException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invalidObjectException", "(Ljava/lang/Throwable;)Ljava/io/InvalidObjectException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "putPermanentMapping", "(Ljava/lang/reflect/Type;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "decapitalize", "(Ljava/lang/String;)Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$Mappings;", "private static final")]
@@ -150,7 +150,7 @@ public partial class DefaultMXBeanMappingFactory
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DefaultMXBeanMappingFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultMXBeanMappingFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -309,12 +309,12 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$NonNullMXBeanMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonNullMXBeanMapping", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isIdentity", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isIdentity", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -323,7 +323,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V", "")]
-		public NonNullMXBeanMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.OpenType arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NonNullMXBeanMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.OpenType arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -380,7 +380,7 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$Mappings;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mappings", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -389,7 +389,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Mappings() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Mappings() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -413,11 +413,11 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$EnumMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enumClass", "Ljava/lang/Class;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EnumMapping", "(Ljava/lang/Class;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue_0", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue_1", "(Ljava/lang/Object;)Ljava/lang/Enum;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enumClass", "Ljava/lang/Class;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue_0", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue_1", "(Ljava/lang/Object;)Ljava/lang/Enum;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Class;", "private final")]
@@ -440,7 +440,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;)V", "")]
-		public EnumMapping(Dova.JDK.java.lang.Class arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EnumMapping(Dova.JDK.java.lang.Class arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -485,13 +485,13 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CollectionMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "collectionClass", "Ljava/lang/Class;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elementMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CollectionMapping", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkReconstructible", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "collectionClass", "Ljava/lang/Class;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elementMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkReconstructible", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Class;", "private final")]
@@ -542,7 +542,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V", "")]
-		public CollectionMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Class arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public CollectionMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Class arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -585,10 +585,10 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$IdentityMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IdentityMapping", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isIdentity", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isIdentity", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -597,7 +597,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Ljavax/management/openmbean/OpenType;)V", "")]
-		public IdentityMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.OpenType arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public IdentityMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.OpenType arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -642,11 +642,11 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$ArrayMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elementMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArrayMapping", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkReconstructible", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elementMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkReconstructible", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jmx/mbeanserver/MXBeanMapping;", "private final")]
@@ -669,7 +669,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Ljavax/management/openmbean/ArrayType;Ljava/lang/Class;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V", "")]
-		public ArrayMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Class arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public ArrayMapping(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.javax.management.openmbean.ArrayType arg1, Dova.JDK.java.lang.Class arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -713,13 +713,13 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$TabularMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sortedMap", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valueMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TabularMapping", "(Ljava/lang/reflect/Type;ZLjavax/management/openmbean/TabularType;Lcom/sun/jmx/mbeanserver/MXBeanMapping;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkReconstructible", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sortedMap", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valueMapping", "Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;ZLjavax/management/openmbean/TabularType;Lcom/sun/jmx/mbeanserver/MXBeanMapping;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkReconstructible", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Z", "private final")]
@@ -770,7 +770,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;ZLjavax/management/openmbean/TabularType;Lcom/sun/jmx/mbeanserver/MXBeanMapping;Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V", "")]
-		public TabularMapping(Dova.JDK.java.lang.reflect.Type arg0, bool arg1, Dova.JDK.javax.management.openmbean.TabularType arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public TabularMapping(Dova.JDK.java.lang.reflect.Type arg0, bool arg1, Dova.JDK.javax.management.openmbean.TabularType arg2, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg3, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -813,10 +813,10 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$MXBeanRefMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MXBeanRefMapping", "(Ljava/lang/reflect/Type;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lookupNotNull", "(Ljava/lang/Class;)Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lookupNotNull", "(Ljava/lang/Class;)Lcom/sun/jmx/mbeanserver/MXBeanLookup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -825,7 +825,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;)V", "")]
-		public MXBeanRefMapping(Dova.JDK.java.lang.reflect.Type arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MXBeanRefMapping(Dova.JDK.java.lang.reflect.Type arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -870,16 +870,16 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeMapping;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "itemNames", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "getters", "[Ljava/lang/reflect/Method;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "getterMappings", "[Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compositeBuilder", "Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeMapping", "(Ljava/lang/Class;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/reflect/Method;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeCompositeBuilder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkReconstructible", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "itemNames", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "getters", "[Ljava/lang/reflect/Method;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "getterMappings", "[Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compositeBuilder", "Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/reflect/Method;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeCompositeBuilder", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkReconstructible", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toNonNullOpenValue", "(Ljava/lang/Object;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/String;", "private final")]
@@ -958,7 +958,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;Ljavax/management/openmbean/CompositeType;[Ljava/lang/String;[Ljava/lang/reflect/Method;Lcom/sun/jmx/mbeanserver/MXBeanMappingFactory;)V", "")]
-		public CompositeMapping(Dova.JDK.java.lang.Class arg0, Dova.JDK.javax.management.openmbean.CompositeType arg1, JavaArray<Dova.JDK.java.lang.String> arg2, JavaArray<Dova.JDK.java.lang.reflect.Method> arg3, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMappingFactory arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public CompositeMapping(Dova.JDK.java.lang.Class arg0, Dova.JDK.javax.management.openmbean.CompositeType arg1, JavaArray<Dova.JDK.java.lang.String> arg2, JavaArray<Dova.JDK.java.lang.reflect.Method> arg3, Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMappingFactory arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -1007,9 +1007,9 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderViaProxy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilderViaProxy", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1018,7 +1018,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public CompositeBuilderViaProxy(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompositeBuilderViaProxy(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1055,16 +1055,16 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$RecordCompositeBuilder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RecordCompositeBuilder", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConstPropValues", "(Ljava/lang/reflect/Constructor;)[Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportNoConstructor", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchingMechanism", "(Ljava/lang/reflect/Constructor;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "referenceMechannism", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportMultipleConstructorsFoundFor", "([Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportConstructorsAmbiguousFor", "(Ljava/util/Set;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportNoConstructorFoundFor", "(Ljava/util/Set;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConstPropValues", "(Ljava/lang/reflect/Constructor;)[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportNoConstructor", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchingMechanism", "(Ljava/lang/reflect/Constructor;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "referenceMechannism", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportMultipleConstructorsFoundFor", "([Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportConstructorsAmbiguousFor", "(Ljava/util/Set;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportNoConstructorFoundFor", "(Ljava/util/Set;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1073,7 +1073,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public RecordCompositeBuilder(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public RecordCompositeBuilder(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1160,18 +1160,18 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderViaConstructor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotatedConstructors", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilderViaConstructor", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "subset", "(Ljava/util/BitSet;Ljava/util/BitSet;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConstPropValues", "(Ljava/lang/reflect/Constructor;)[Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportNoConstructor", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchingMechanism", "(Ljava/lang/reflect/Constructor;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "referenceMechannism", "(Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportMultipleConstructorsFoundFor", "([Ljava/lang/String;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportConstructorsAmbiguousFor", "(Ljava/util/Set;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reportNoConstructorFoundFor", "(Ljava/util/Set;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotatedConstructors", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "subset", "(Ljava/util/BitSet;Ljava/util/BitSet;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConstPropValues", "(Ljava/lang/reflect/Constructor;)[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportNoConstructor", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchingMechanism", "(Ljava/lang/reflect/Constructor;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "referenceMechannism", "(Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportMultipleConstructorsFoundFor", "([Ljava/lang/String;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportConstructorsAmbiguousFor", "(Ljava/util/Set;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reportNoConstructorFoundFor", "(Ljava/util/Set;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private")]
@@ -1194,7 +1194,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public CompositeBuilderViaConstructor(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompositeBuilderViaConstructor(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1286,10 +1286,10 @@ public partial class DefaultMXBeanMappingFactory
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderViaConstructor$Constr;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "constructor", "Ljava/lang/reflect/Constructor;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "paramIndexes", "[I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "presentParams", "Ljava/util/BitSet;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Constr", "(Ljava/lang/reflect/Constructor;[ILjava/util/BitSet;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "constructor", "Ljava/lang/reflect/Constructor;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "paramIndexes", "[I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "presentParams", "Ljava/util/BitSet;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Constructor;[ILjava/util/BitSet;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/reflect/Constructor;", "final")]
@@ -1340,7 +1340,7 @@ public partial class DefaultMXBeanMappingFactory
 			}
 
 			[JniSignatureAttribute("(Ljava/lang/reflect/Constructor;[ILjava/util/BitSet;)V", "")]
-			public Constr(Dova.JDK.java.lang.reflect.Constructor arg0, JavaArray<int> arg1, Dova.JDK.java.util.BitSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public Constr(Dova.JDK.java.lang.reflect.Constructor arg0, JavaArray<int> arg1, Dova.JDK.java.util.BitSet arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
@@ -1365,10 +1365,10 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderViaSetters;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "setters", "[Ljava/lang/reflect/Method;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilderViaSetters", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "setters", "[Ljava/lang/reflect/Method;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/reflect/Method;", "private")]
@@ -1391,7 +1391,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public CompositeBuilderViaSetters(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompositeBuilderViaSetters(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1429,12 +1429,12 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderCheckGetters;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "getterConverters", "[Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "possibleCause", "Ljava/lang/Throwable;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilderCheckGetters", "(Ljava/lang/Class;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "possibleCause", "()Ljava/lang/Throwable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "getterConverters", "[Lcom/sun/jmx/mbeanserver/MXBeanMapping;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "possibleCause", "Ljava/lang/Throwable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "possibleCause", "()Ljava/lang/Throwable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("[Lcom/sun/jmx/mbeanserver/MXBeanMapping;", "private final")]
@@ -1471,7 +1471,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)V", "")]
-		public CompositeBuilderCheckGetters(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1, JavaArray<Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CompositeBuilderCheckGetters(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1, JavaArray<Dova.JDK.com.sun.jmx.mbeanserver.MXBeanMapping> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1516,10 +1516,10 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilderViaFrom;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fromMethod", "Ljava/lang/reflect/Method;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilderViaFrom", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fromMethod", "Ljava/lang/reflect/Method;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/reflect/Method;", "private")]
@@ -1542,7 +1542,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public CompositeBuilderViaFrom(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompositeBuilderViaFrom(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1580,14 +1580,14 @@ public partial class DefaultMXBeanMappingFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jmx/mbeanserver/DefaultMXBeanMappingFactory$CompositeBuilder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetClass", "Ljava/lang/Class;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "itemNames", "[Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeBuilder", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "possibleCause", "()Ljava/lang/Throwable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTargetClass", "()Ljava/lang/Class;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getItemNames", "()[Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetClass", "Ljava/lang/Class;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "itemNames", "[Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Class;[Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "possibleCause", "()Ljava/lang/Throwable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fromCompositeData", "(Ljavax/management/openmbean/CompositeData;[Ljava/lang/String;[Lcom/sun/jmx/mbeanserver/MXBeanMapping;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTargetClass", "()Ljava/lang/Class;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getItemNames", "()[Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applicable", "([Ljava/lang/reflect/Method;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Class;", "private final")]
@@ -1624,7 +1624,7 @@ public partial class DefaultMXBeanMappingFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/Class;[Ljava/lang/String;)V", "")]
-		public CompositeBuilder(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CompositeBuilder(Dova.JDK.java.lang.Class arg0, JavaArray<Dova.JDK.java.lang.String> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

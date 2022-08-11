@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class XPlotter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/tools/jconsole/inspector/XPlotter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "table", "Ljavax/swing/JTable;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XPlotter", "(Ljavax/swing/JTable;Lsun/tools/jconsole/Plotter$Unit;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addValues", "(J[J)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "table", "Ljavax/swing/JTable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/JTable;Lsun/tools/jconsole/Plotter$Unit;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addValues", "(J[J)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JTable;", "")]
@@ -56,7 +56,7 @@ public partial class XPlotter
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JTable;Lsun/tools/jconsole/Plotter$Unit;)V", "public")]
-	public XPlotter(Dova.JDK.javax.swing.JTable arg0, Dova.JDK.sun.tools.jconsole.Plotter.Unit arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public XPlotter(Dova.JDK.javax.swing.JTable arg0, Dova.JDK.sun.tools.jconsole.Plotter.Unit arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

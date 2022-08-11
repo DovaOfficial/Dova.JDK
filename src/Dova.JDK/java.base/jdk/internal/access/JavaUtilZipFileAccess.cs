@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,16 +29,16 @@ public partial interface JavaUtilZipFileAccess
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/access/JavaUtilZipFileAccess;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stream", "(Ljava/util/zip/ZipFile;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entries", "(Ljava/util/zip/ZipFile;)Ljava/util/Enumeration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getManifestNum", "(Ljava/util/jar/JarFile;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "entryNameStream", "(Ljava/util/zip/ZipFile;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMetaInfVersions", "(Ljava/util/jar/JarFile;)[I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getManifestName", "(Ljava/util/jar/JarFile;Z)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getManifestAndSignatureRelatedFiles", "(Ljava/util/jar/JarFile;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startsWithLocHeader", "(Ljava/util/zip/ZipFile;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExtraAttributes", "(Ljava/util/zip/ZipEntry;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExtraAttributes", "(Ljava/util/zip/ZipEntry;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stream", "(Ljava/util/zip/ZipFile;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entries", "(Ljava/util/zip/ZipFile;)Ljava/util/Enumeration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getManifestNum", "(Ljava/util/jar/JarFile;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "entryNameStream", "(Ljava/util/zip/ZipFile;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMetaInfVersions", "(Ljava/util/jar/JarFile;)[I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getManifestName", "(Ljava/util/jar/JarFile;Z)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getManifestAndSignatureRelatedFiles", "(Ljava/util/jar/JarFile;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startsWithLocHeader", "(Ljava/util/zip/ZipFile;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExtraAttributes", "(Ljava/util/zip/ZipEntry;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExtraAttributes", "(Ljava/util/zip/ZipEntry;I)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/util/zip/ZipFile;)Ljava/util/stream/Stream;", "public abstract")]

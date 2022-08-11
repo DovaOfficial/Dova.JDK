@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class DelegatingMethodAccessorImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/reflect/DelegatingMethodAccessorImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialDelegate", "Ljdk/internal/reflect/MethodAccessorImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "altDelegate", "Ljdk/internal/reflect/MethodAccessorImpl;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DelegatingMethodAccessorImpl", "(Ljdk/internal/reflect/MethodAccessorImpl;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDelegate", "(Ljdk/internal/reflect/MethodAccessorImpl;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "delegate", "()Ljdk/internal/reflect/MethodAccessorImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initialDelegate", "Ljdk/internal/reflect/MethodAccessorImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "altDelegate", "Ljdk/internal/reflect/MethodAccessorImpl;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/reflect/MethodAccessorImpl;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;Ljava/lang/Class;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invoke", "(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDelegate", "(Ljdk/internal/reflect/MethodAccessorImpl;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "delegate", "()Ljdk/internal/reflect/MethodAccessorImpl;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/reflect/MethodAccessorImpl;", "private final")]
@@ -74,7 +74,7 @@ public partial class DelegatingMethodAccessorImpl
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/reflect/MethodAccessorImpl;)V", "")]
-	public DelegatingMethodAccessorImpl(Dova.JDK.jdk.@internal.reflect.MethodAccessorImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DelegatingMethodAccessorImpl(Dova.JDK.jdk.@internal.reflect.MethodAccessorImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

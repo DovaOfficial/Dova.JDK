@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,10 +32,10 @@ public partial class OptionComboBoxModel
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/html/OptionComboBoxModel;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selectedOption", "Ljavax/swing/text/html/Option;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OptionComboBoxModel", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInitialSelection", "(Ljavax/swing/text/html/Option;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInitialSelection", "()Ljavax/swing/text/html/Option;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selectedOption", "Ljavax/swing/text/html/Option;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInitialSelection", "(Ljavax/swing/text/html/Option;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInitialSelection", "()Ljavax/swing/text/html/Option;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/text/html/Option;", "private")]
@@ -58,7 +58,7 @@ public partial class OptionComboBoxModel
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public OptionComboBoxModel() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public OptionComboBoxModel() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

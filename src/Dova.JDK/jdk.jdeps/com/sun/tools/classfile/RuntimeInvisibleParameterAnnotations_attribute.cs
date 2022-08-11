@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,10 +30,10 @@ public partial class RuntimeInvisibleParameterAnnotations_attribute
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/RuntimeInvisibleParameterAnnotations_attribute;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RuntimeInvisibleParameterAnnotations_attribute", "(I[[Lcom/sun/tools/classfile/Annotation;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RuntimeInvisibleParameterAnnotations_attribute", "(Lcom/sun/tools/classfile/ConstantPool;[[Lcom/sun/tools/classfile/Annotation;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RuntimeInvisibleParameterAnnotations_attribute", "(Lcom/sun/tools/classfile/ClassReader;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/Attribute$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I[[Lcom/sun/tools/classfile/Annotation;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ConstantPool;[[Lcom/sun/tools/classfile/Annotation;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ClassReader;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(Lcom/sun/tools/classfile/Attribute$Visitor;Ljava/lang/Object;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,17 +42,17 @@ public partial class RuntimeInvisibleParameterAnnotations_attribute
 	}
 
 	[JniSignatureAttribute("(I[[Lcom/sun/tools/classfile/Annotation;)V", "public")]
-	public RuntimeInvisibleParameterAnnotations_attribute(int arg0, JavaArray<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation>> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public RuntimeInvisibleParameterAnnotations_attribute(int arg0, JavaArray<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation>> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ConstantPool;[[Lcom/sun/tools/classfile/Annotation;)V", "public")]
-	public RuntimeInvisibleParameterAnnotations_attribute(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, JavaArray<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation>> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public RuntimeInvisibleParameterAnnotations_attribute(Dova.JDK.com.sun.tools.classfile.ConstantPool arg0, JavaArray<JavaArray<Dova.JDK.com.sun.tools.classfile.Annotation>> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassReader;II)V", "")]
-	public RuntimeInvisibleParameterAnnotations_attribute(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public RuntimeInvisibleParameterAnnotations_attribute(Dova.JDK.com.sun.tools.classfile.ClassReader arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 

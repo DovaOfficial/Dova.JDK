@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,11 +30,11 @@ public partial class ToolException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/tool/ToolException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "message", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "result", "Ljdk/javadoc/internal/tool/Main$Result;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ToolException", "(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ToolException", "(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;Ljava/lang/Throwable;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "message", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "result", "Ljdk/javadoc/internal/tool/Main$Result;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;Ljava/lang/Throwable;)V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -85,12 +85,12 @@ public partial class ToolException
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;)V", "")]
-	public ToolException(Dova.JDK.jdk.javadoc.@internal.tool.Main.Result arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ToolException(Dova.JDK.jdk.javadoc.@internal.tool.Main.Result arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/javadoc/internal/tool/Main$Result;Ljava/lang/String;Ljava/lang/Throwable;)V", "")]
-	public ToolException(Dova.JDK.jdk.javadoc.@internal.tool.Main.Result arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.Throwable arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public ToolException(Dova.JDK.jdk.javadoc.@internal.tool.Main.Result arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.lang.Throwable arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 

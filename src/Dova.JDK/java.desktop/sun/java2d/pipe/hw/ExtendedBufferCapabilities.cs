@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class ExtendedBufferCapabilities
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/pipe/hw/ExtendedBufferCapabilities;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "vsync", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedBufferCapabilities", "(Ljava/awt/BufferCapabilities;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedBufferCapabilities", "(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedBufferCapabilities", "(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedBufferCapabilities", "(Ljava/awt/BufferCapabilities;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "derive", "(Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)Lsun/java2d/pipe/hw/ExtendedBufferCapabilities;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPageFlipping", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVSync", "()Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "vsync", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/BufferCapabilities;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/BufferCapabilities;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "derive", "(Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)Lsun/java2d/pipe/hw/ExtendedBufferCapabilities;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPageFlipping", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVSync", "()Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
 	}
 
 	[JniSignatureAttribute("Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;", "private")]
@@ -61,22 +61,22 @@ public partial class ExtendedBufferCapabilities
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/BufferCapabilities;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V", "public")]
-	public ExtendedBufferCapabilities(Dova.JDK.java.awt.BufferCapabilities arg0, Dova.JDK.sun.java2d.pipe.hw.ExtendedBufferCapabilities.VSyncType arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ExtendedBufferCapabilities(Dova.JDK.java.awt.BufferCapabilities arg0, Dova.JDK.sun.java2d.pipe.hw.ExtendedBufferCapabilities.VSyncType arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;)V", "public")]
-	public ExtendedBufferCapabilities(Dova.JDK.java.awt.ImageCapabilities arg0, Dova.JDK.java.awt.ImageCapabilities arg1, Dova.JDK.java.awt.BufferCapabilities.FlipContents arg2, Dova.JDK.sun.java2d.pipe.hw.ExtendedBufferCapabilities.VSyncType arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public ExtendedBufferCapabilities(Dova.JDK.java.awt.ImageCapabilities arg0, Dova.JDK.java.awt.ImageCapabilities arg1, Dova.JDK.java.awt.BufferCapabilities.FlipContents arg2, Dova.JDK.sun.java2d.pipe.hw.ExtendedBufferCapabilities.VSyncType arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/ImageCapabilities;Ljava/awt/ImageCapabilities;Ljava/awt/BufferCapabilities$FlipContents;)V", "public")]
-	public ExtendedBufferCapabilities(Dova.JDK.java.awt.ImageCapabilities arg0, Dova.JDK.java.awt.ImageCapabilities arg1, Dova.JDK.java.awt.BufferCapabilities.FlipContents arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public ExtendedBufferCapabilities(Dova.JDK.java.awt.ImageCapabilities arg0, Dova.JDK.java.awt.ImageCapabilities arg1, Dova.JDK.java.awt.BufferCapabilities.FlipContents arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/BufferCapabilities;)V", "public")]
-	public ExtendedBufferCapabilities(Dova.JDK.java.awt.BufferCapabilities arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0))
+	public ExtendedBufferCapabilities(Dova.JDK.java.awt.BufferCapabilities arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0))
 	{
 	}
 
@@ -120,16 +120,16 @@ public partial class ExtendedBufferCapabilities
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSYNC_DEFAULT", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSYNC_ON", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSYNC_OFF", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VSyncType", "(Ljava/lang/String;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "id", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSYNC_DEFAULT", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSYNC_ON", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSYNC_OFF", "Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "id", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;"));
 		}
 
 		[JniSignatureAttribute("Lsun/java2d/pipe/hw/ExtendedBufferCapabilities$VSyncType;", "public static final")]
@@ -208,7 +208,7 @@ public partial class ExtendedBufferCapabilities
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-		public VSyncType(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public VSyncType(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

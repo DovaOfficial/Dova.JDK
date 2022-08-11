@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial class ExpandVetoException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/tree/ExpandVetoException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "event", "Ljavax/swing/event/TreeExpansionEvent;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExpandVetoException", "(Ljavax/swing/event/TreeExpansionEvent;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExpandVetoException", "(Ljavax/swing/event/TreeExpansionEvent;Ljava/lang/String;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "event", "Ljavax/swing/event/TreeExpansionEvent;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/event/TreeExpansionEvent;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/event/TreeExpansionEvent;Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/event/TreeExpansionEvent;", "protected")]
@@ -55,12 +55,12 @@ public partial class ExpandVetoException
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/TreeExpansionEvent;)V", "public")]
-	public ExpandVetoException(Dova.JDK.javax.swing.@event.TreeExpansionEvent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ExpandVetoException(Dova.JDK.javax.swing.@event.TreeExpansionEvent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/TreeExpansionEvent;Ljava/lang/String;)V", "public")]
-	public ExpandVetoException(Dova.JDK.javax.swing.@event.TreeExpansionEvent arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ExpandVetoException(Dova.JDK.javax.swing.@event.TreeExpansionEvent arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

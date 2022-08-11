@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,80 +31,80 @@ public partial class PKCS11
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PKCS11_WRAPPER", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pkcs11ModulePath", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Lsun/security/pkcs11/wrapper/CK_VERSION;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pNativeData", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "moduleMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS11", "(Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finalize", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Lsun/security/pkcs11/wrapper/CK_C_INITIALIZE_ARGS;Z)Lsun/security/pkcs11/wrapper/PKCS11;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connect", "(Ljava/lang/String;Ljava/lang/String;)Lsun/security/pkcs11/wrapper/CK_VERSION;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVersion", "()Lsun/security/pkcs11/wrapper/CK_VERSION;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_WrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;JJ)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_UnwrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[B[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyFinal", "(J[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Verify", "(J[B[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyUpdate", "(JJ[BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignUpdate", "(JJ[BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignFinal", "(JI)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DestroyObject", "(JJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNativeKeyInfo", "(JJJLsun/security/pkcs11/wrapper/CK_MECHANISM;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createNativeKey", "(J[BJLsun/security/pkcs11/wrapper/CK_MECHANISM;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "freeMechanism", "(J)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetTokenInfo", "(J)Lsun/security/pkcs11/wrapper/CK_TOKEN_INFO;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSessionInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SESSION_INFO;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSlotInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SLOT_INFO;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetMechanismInfo", "(JJ)Lsun/security/pkcs11/wrapper/CK_MECHANISM_INFO;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Sign", "(J[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyRecover", "(J[BII[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Encrypt", "(JJ[BIIJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Decrypt", "(JJ[BIIJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SeedRandom", "(J[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateRandom", "(J[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptFinal", "(JJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptFinal", "(JJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptUpdate", "(JJ[BIIJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptUpdate", "(JJ[BIIJ[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetInfo", "()Lsun/security/pkcs11/wrapper/CK_INFO;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Initialize", "(Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestSingle", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[BII[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestUpdate", "(JJ[BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestFinal", "(J[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestKey", "(JJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetOperationState", "(J)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SetOperationState", "(J[BJJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "loadNative", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initializeLibrary", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "finalizeLibrary", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Finalize", "(Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSlotList", "(Z)[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetMechanismList", "(J)[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_OpenSession", "(JJLjava/lang/Object;Lsun/security/pkcs11/wrapper/CK_NOTIFY;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CloseSession", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Login", "(JJ[C)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Logout", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignRecover", "(J[BII[BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CreateObject", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateKeyPair", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DeriveKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CopyObject", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjectsInit", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjects", "(JJ)[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjectsFinal", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disconnect", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SessionCancel", "(JJ)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PKCS11_WRAPPER", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pkcs11ModulePath", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Lsun/security/pkcs11/wrapper/CK_VERSION;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pNativeData", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "moduleMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finalize", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "(Ljava/lang/String;Ljava/lang/String;Lsun/security/pkcs11/wrapper/CK_C_INITIALIZE_ARGS;Z)Lsun/security/pkcs11/wrapper/PKCS11;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connect", "(Ljava/lang/String;Ljava/lang/String;)Lsun/security/pkcs11/wrapper/CK_VERSION;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVersion", "()Lsun/security/pkcs11/wrapper/CK_VERSION;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_WrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;JJ)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_UnwrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[B[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyFinal", "(J[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Verify", "(J[B[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyUpdate", "(JJ[BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignUpdate", "(JJ[BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignFinal", "(JI)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DestroyObject", "(JJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNativeKeyInfo", "(JJJLsun/security/pkcs11/wrapper/CK_MECHANISM;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createNativeKey", "(J[BJLsun/security/pkcs11/wrapper/CK_MECHANISM;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "freeMechanism", "(J)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetTokenInfo", "(J)Lsun/security/pkcs11/wrapper/CK_TOKEN_INFO;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSessionInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SESSION_INFO;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSlotInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SLOT_INFO;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetMechanismInfo", "(JJ)Lsun/security/pkcs11/wrapper/CK_MECHANISM_INFO;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Sign", "(J[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyRecover", "(J[BII[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Encrypt", "(JJ[BIIJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Decrypt", "(JJ[BIIJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SeedRandom", "(J[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateRandom", "(J[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptFinal", "(JJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptFinal", "(JJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptUpdate", "(JJ[BIIJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptUpdate", "(JJ[BIIJ[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetInfo", "()Lsun/security/pkcs11/wrapper/CK_INFO;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Initialize", "(Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestSingle", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[BII[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestUpdate", "(JJ[BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestFinal", "(J[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestKey", "(JJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetOperationState", "(J)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SetOperationState", "(J[BJJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "loadNative", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initializeLibrary", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "finalizeLibrary", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Finalize", "(Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSlotList", "(Z)[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetMechanismList", "(J)[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_OpenSession", "(JJLjava/lang/Object;Lsun/security/pkcs11/wrapper/CK_NOTIFY;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CloseSession", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Login", "(JJ[C)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Logout", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignRecover", "(J[BII[BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CreateObject", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateKeyPair", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DeriveKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CopyObject", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjectsInit", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjects", "(JJ)[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjectsFinal", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disconnect", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SessionCancel", "(JJ)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -183,7 +183,7 @@ public partial class PKCS11
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)V", "")]
-	public PKCS11(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PKCS11(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -649,61 +649,61 @@ public partial class PKCS11
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11$SynchronizedPKCS11;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SynchronizedPKCS11", "(Ljava/lang/String;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_WrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;JJ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_UnwrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[B[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyFinal", "(J[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Verify", "(J[B[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyUpdate", "(JJ[BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignUpdate", "(JJ[BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignFinal", "(JI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DestroyObject", "(JJ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetTokenInfo", "(J)Lsun/security/pkcs11/wrapper/CK_TOKEN_INFO;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSessionInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SESSION_INFO;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSlotInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SLOT_INFO;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetMechanismInfo", "(JJ)Lsun/security/pkcs11/wrapper/CK_MECHANISM_INFO;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Sign", "(J[B)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_VerifyRecover", "(J[BII[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Encrypt", "(JJ[BIIJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Decrypt", "(JJ[BIIJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SeedRandom", "(J[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateRandom", "(J[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptFinal", "(JJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptFinal", "(JJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_EncryptUpdate", "(JJ[BIIJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DecryptUpdate", "(JJ[BIIJ[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetInfo", "()Lsun/security/pkcs11/wrapper/CK_INFO;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Initialize", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestSingle", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[BII[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestUpdate", "(JJ[BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestFinal", "(J[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DigestKey", "(JJ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Finalize", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetSlotList", "(Z)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GetMechanismList", "(J)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_OpenSession", "(JJLjava/lang/Object;Lsun/security/pkcs11/wrapper/CK_NOTIFY;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CloseSession", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Login", "(JJ[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_Logout", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SignRecover", "(J[BII[BII)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CreateObject", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_GenerateKeyPair", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_DeriveKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_CopyObject", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjectsInit", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjects", "(JJ)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_FindObjectsFinal", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "C_SessionCancel", "(JJ)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_WrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;JJ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_UnwrapKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[B[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyFinal", "(J[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Verify", "(J[B[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyUpdate", "(JJ[BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignUpdate", "(JJ[BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignFinal", "(JI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DestroyObject", "(JJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetTokenInfo", "(J)Lsun/security/pkcs11/wrapper/CK_TOKEN_INFO;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSessionInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SESSION_INFO;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSlotInfo", "(J)Lsun/security/pkcs11/wrapper/CK_SLOT_INFO;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetMechanismInfo", "(JJ)Lsun/security/pkcs11/wrapper/CK_MECHANISM_INFO;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Sign", "(J[B)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_VerifyRecover", "(J[BII[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Encrypt", "(JJ[BIIJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Decrypt", "(JJ[BIIJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SeedRandom", "(J[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateRandom", "(J[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptFinal", "(JJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptFinal", "(JJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_EncryptUpdate", "(JJ[BIIJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DecryptUpdate", "(JJ[BIIJ[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetInfo", "()Lsun/security/pkcs11/wrapper/CK_INFO;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Initialize", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestSingle", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[BII[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestUpdate", "(JJ[BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestFinal", "(J[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DigestKey", "(JJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Finalize", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetSlotList", "(Z)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GetMechanismList", "(J)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_OpenSession", "(JJLjava/lang/Object;Lsun/security/pkcs11/wrapper/CK_NOTIFY;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CloseSession", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Login", "(JJ[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_Logout", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignRecoverInit", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SignRecover", "(J[BII[BII)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CreateObject", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_GenerateKeyPair", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_DeriveKey", "(JLsun/security/pkcs11/wrapper/CK_MECHANISM;J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SetAttributeValue", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_CopyObject", "(JJ[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjectsInit", "(J[Lsun/security/pkcs11/wrapper/CK_ATTRIBUTE;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjects", "(JJ)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_FindObjectsFinal", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "C_SessionCancel", "(JJ)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -712,7 +712,7 @@ public partial class PKCS11
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/String;)V", "")]
-		public SynchronizedPKCS11(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SynchronizedPKCS11(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

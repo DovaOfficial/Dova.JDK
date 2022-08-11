@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,49 +32,49 @@ public partial class AttributedStringBuilder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/AttributedStringBuilder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buffer", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "style", "[J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabs", "Ljdk/internal/org/jline/utils/AttributedStringBuilder$TabStops;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastLineLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "current", "Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttributedStringBuilder", "(I)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttributedStringBuilder", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedString;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedCharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(C)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(C)Ljava/lang/Appendable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "append", "([Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedString;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedString;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_0", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append_1", "(Ljava/lang/CharSequence;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedCharSequence;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Ljava/lang/CharSequence;Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "charAt", "(I)C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "offset", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buffer", "()[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subSequence_0", "(II)Ljdk/internal/org/jline/utils/AttributedString;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subSequence_1", "(II)Ljava/lang/CharSequence;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLength", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ensureCapacity", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "style", "()Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "style", "(Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "style", "(Ljava/util/function/Function;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styleCodeAt", "(I)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styleAt", "(I)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tabs", "(I)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tabs", "(Ljava/util/List;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ansiAppend", "(Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styleMatches", "(Ljava/util/regex/Pattern;Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styleMatches", "(Ljava/util/regex/Pattern;Ljava/util/List;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styled", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styled", "(Ljava/util/function/Function;Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "styled", "(Ljava/util/function/Function;Ljava/util/function/Consumer;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appendAnsi", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertTab", "(Ljdk/internal/org/jline/utils/AttributedStyle;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buffer", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "style", "[J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "length", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabs", "Ljdk/internal/org/jline/utils/AttributedStringBuilder$TabStops;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastLineLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "current", "Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedString;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedCharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(C)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(C)Ljava/lang/Appendable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(Ljava/lang/CharSequence;)Ljava/lang/Appendable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "append", "([Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedString;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedString;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_0", "(Ljava/lang/CharSequence;II)Ljava/lang/Appendable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append_1", "(Ljava/lang/CharSequence;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljdk/internal/org/jline/utils/AttributedCharSequence;II)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Ljava/lang/CharSequence;Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "charAt", "(I)C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "offset", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buffer", "()[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subSequence_0", "(II)Ljdk/internal/org/jline/utils/AttributedString;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subSequence_1", "(II)Ljava/lang/CharSequence;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLength", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ensureCapacity", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "style", "()Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "style", "(Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "style", "(Ljava/util/function/Function;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styleCodeAt", "(I)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styleAt", "(I)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tabs", "(I)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tabs", "(Ljava/util/List;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ansiAppend", "(Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styleMatches", "(Ljava/util/regex/Pattern;Ljdk/internal/org/jline/utils/AttributedStyle;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styleMatches", "(Ljava/util/regex/Pattern;Ljava/util/List;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styled", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styled", "(Ljava/util/function/Function;Ljava/lang/CharSequence;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "styled", "(Ljava/util/function/Function;Ljava/util/function/Consumer;)Ljdk/internal/org/jline/utils/AttributedStringBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appendAnsi", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertTab", "(Ljdk/internal/org/jline/utils/AttributedStyle;)V"));
 	}
 
 	[JniSignatureAttribute("[C", "private")]
@@ -167,12 +167,12 @@ public partial class AttributedStringBuilder
 	}
 
 	[JniSignatureAttribute("(I)V", "public")]
-	public AttributedStringBuilder(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public AttributedStringBuilder(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public AttributedStringBuilder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public AttributedStringBuilder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 
@@ -436,13 +436,13 @@ public partial class AttributedStringBuilder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/AttributedStringBuilder$TabStops;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tabs", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastStop", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastSize", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TabStops", "(Ljdk/internal/org/jline/utils/AttributedStringBuilder;I)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TabStops", "(Ljdk/internal/org/jline/utils/AttributedStringBuilder;Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "spaces", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defined", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tabs", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastStop", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastSize", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/utils/AttributedStringBuilder;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/utils/AttributedStringBuilder;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "spaces", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defined", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private")]
@@ -493,12 +493,12 @@ public partial class AttributedStringBuilder
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/utils/AttributedStringBuilder;I)V", "public")]
-		public TabStops(Dova.JDK.jdk.@internal.org.jline.utils.AttributedStringBuilder arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public TabStops(Dova.JDK.jdk.@internal.org.jline.utils.AttributedStringBuilder arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/utils/AttributedStringBuilder;Ljava/util/List;)V", "public")]
-		public TabStops(Dova.JDK.jdk.@internal.org.jline.utils.AttributedStringBuilder arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public TabStops(Dova.JDK.jdk.@internal.org.jline.utils.AttributedStringBuilder arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 

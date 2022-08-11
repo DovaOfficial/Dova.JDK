@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,32 +31,32 @@ public partial class FramesEncoder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/frame/FramesEncoder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_FLAGS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ZERO_STREAM", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FramesEncoder", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "join", "(Ljava/nio/ByteBuffer;Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBuffer", "(I)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodePingFrame", "(Ljdk/internal/net/http/frame/PingFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "joinWithPadding", "(Ljava/nio/ByteBuffer;Ljava/util/List;I)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeSettingsFrame", "(Ljdk/internal/net/http/frame/SettingsFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putHeader", "(Ljava/nio/ByteBuffer;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeWindowUpdateFrame", "(Ljdk/internal/net/http/frame/WindowUpdateFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodePushPromiseFrame", "(Ljdk/internal/net/http/frame/PushPromiseFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeContinuationFrame", "(Ljdk/internal/net/http/frame/ContinuationFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putSettingsFrame", "(Ljava/nio/ByteBuffer;Ljdk/internal/net/http/frame/SettingsFrame;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodePriorityFrame", "(Ljdk/internal/net/http/frame/PriorityFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putPriority", "(Ljava/nio/ByteBuffer;ZII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeHeadersFrameStart", "(Ljdk/internal/net/http/frame/HeadersFrame;)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeGoAwayFrame", "(Ljdk/internal/net/http/frame/GoAwayFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeDataFrameStart", "(Ljdk/internal/net/http/frame/DataFrame;)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeResetFrame", "(Ljdk/internal/net/http/frame/ResetFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeHeadersFrame", "(Ljdk/internal/net/http/frame/HeadersFrame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeConnectionPreface", "([BLjdk/internal/net/http/frame/SettingsFrame;)Ljava/nio/ByteBuffer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeFrames", "(Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPadding", "(I)Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_FLAGS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ZERO_STREAM", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "join", "(Ljava/nio/ByteBuffer;Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBuffer", "(I)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodePingFrame", "(Ljdk/internal/net/http/frame/PingFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "joinWithPadding", "(Ljava/nio/ByteBuffer;Ljava/util/List;I)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeSettingsFrame", "(Ljdk/internal/net/http/frame/SettingsFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putHeader", "(Ljava/nio/ByteBuffer;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeWindowUpdateFrame", "(Ljdk/internal/net/http/frame/WindowUpdateFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeDataFrame", "(Ljdk/internal/net/http/frame/DataFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodePushPromiseFrame", "(Ljdk/internal/net/http/frame/PushPromiseFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeContinuationFrame", "(Ljdk/internal/net/http/frame/ContinuationFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putSettingsFrame", "(Ljava/nio/ByteBuffer;Ljdk/internal/net/http/frame/SettingsFrame;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodePriorityFrame", "(Ljdk/internal/net/http/frame/PriorityFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putPriority", "(Ljava/nio/ByteBuffer;ZII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeHeadersFrameStart", "(Ljdk/internal/net/http/frame/HeadersFrame;)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeGoAwayFrame", "(Ljdk/internal/net/http/frame/GoAwayFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeDataFrameStart", "(Ljdk/internal/net/http/frame/DataFrame;)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeResetFrame", "(Ljdk/internal/net/http/frame/ResetFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeHeadersFrame", "(Ljdk/internal/net/http/frame/HeadersFrame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeConnectionPreface", "([BLjdk/internal/net/http/frame/SettingsFrame;)Ljava/nio/ByteBuffer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeFrames", "(Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeFrame", "(Ljdk/internal/net/http/frame/Http2Frame;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPadding", "(I)Ljava/nio/ByteBuffer;"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -107,7 +107,7 @@ public partial class FramesEncoder
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public FramesEncoder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public FramesEncoder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class RemoteMonitoredVm
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listeners", "Ljava/util/ArrayList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "notifierTask", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$NotifierTask;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "samplerTask", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$SamplerTask;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timer", "Ljava/util/Timer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rvm", "Lsun/jvmstat/monitor/remote/RemoteVm;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "updateBuffer", "Ljava/nio/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RemoteMonitoredVm", "(Lsun/jvmstat/monitor/remote/RemoteVm;Lsun/jvmstat/monitor/VmIdentifier;Ljava/util/Timer;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "attach", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "detach", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sample", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRemoteVm", "()Lsun/jvmstat/monitor/remote/RemoteVm;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireMonitorStatusChangedEvents", "(Ljava/util/List;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fireMonitorsUpdatedEvents", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setInterval", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addVmListener", "(Lsun/jvmstat/monitor/event/VmListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeVmListener", "(Lsun/jvmstat/monitor/event/VmListener;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "listeners", "Ljava/util/ArrayList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "notifierTask", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$NotifierTask;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "samplerTask", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$SamplerTask;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timer", "Ljava/util/Timer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rvm", "Lsun/jvmstat/monitor/remote/RemoteVm;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "updateBuffer", "Ljava/nio/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/jvmstat/monitor/remote/RemoteVm;Lsun/jvmstat/monitor/VmIdentifier;Ljava/util/Timer;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "attach", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "detach", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sample", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRemoteVm", "()Lsun/jvmstat/monitor/remote/RemoteVm;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireMonitorStatusChangedEvents", "(Ljava/util/List;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fireMonitorsUpdatedEvents", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setInterval", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addVmListener", "(Lsun/jvmstat/monitor/event/VmListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeVmListener", "(Lsun/jvmstat/monitor/event/VmListener;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/ArrayList;", "private")]
@@ -154,7 +154,7 @@ public partial class RemoteMonitoredVm
 	}
 
 	[JniSignatureAttribute("(Lsun/jvmstat/monitor/remote/RemoteVm;Lsun/jvmstat/monitor/VmIdentifier;Ljava/util/Timer;I)V", "public")]
-	public RemoteMonitoredVm(Dova.JDK.sun.jvmstat.monitor.remote.RemoteVm arg0, Dova.JDK.sun.jvmstat.monitor.VmIdentifier arg1, Dova.JDK.java.util.Timer arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public RemoteMonitoredVm(Dova.JDK.sun.jvmstat.monitor.remote.RemoteVm arg0, Dova.JDK.sun.jvmstat.monitor.VmIdentifier arg1, Dova.JDK.java.util.Timer arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -232,9 +232,9 @@ public partial class RemoteMonitoredVm
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$SamplerTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SamplerTask", "(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;", "final")]
@@ -257,7 +257,7 @@ public partial class RemoteMonitoredVm
 		}
 
 		[JniSignatureAttribute("(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V", "private")]
-		public SamplerTask(Dova.JDK.sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SamplerTask(Dova.JDK.sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -287,9 +287,9 @@ public partial class RemoteMonitoredVm
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm$NotifierTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotifierTask", "(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;", "final")]
@@ -312,7 +312,7 @@ public partial class RemoteMonitoredVm
 		}
 
 		[JniSignatureAttribute("(Lsun/jvmstat/perfdata/monitor/protocol/rmi/RemoteMonitoredVm;)V", "private")]
-		public NotifierTask(Dova.JDK.sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public NotifierTask(Dova.JDK.sun.jvmstat.perfdata.monitor.protocol.rmi.RemoteMonitoredVm arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

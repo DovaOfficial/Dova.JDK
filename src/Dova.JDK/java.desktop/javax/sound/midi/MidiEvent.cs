@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class MidiEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sound/midi/MidiEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "message", "Ljavax/sound/midi/MidiMessage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tick", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MidiEvent", "(Ljavax/sound/midi/MidiMessage;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "()Ljavax/sound/midi/MidiMessage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTick", "(J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTick", "()J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "message", "Ljavax/sound/midi/MidiMessage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tick", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sound/midi/MidiMessage;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "()Ljavax/sound/midi/MidiMessage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTick", "(J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTick", "()J"));
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/midi/MidiMessage;", "private final")]
@@ -73,7 +73,7 @@ public partial class MidiEvent
 	}
 
 	[JniSignatureAttribute("(Ljavax/sound/midi/MidiMessage;J)V", "public")]
-	public MidiEvent(Dova.JDK.javax.sound.midi.MidiMessage arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public MidiEvent(Dova.JDK.javax.sound.midi.MidiMessage arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

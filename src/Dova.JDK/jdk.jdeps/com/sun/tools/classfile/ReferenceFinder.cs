@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class ReferenceFinder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/ReferenceFinder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filter", "Lcom/sun/tools/classfile/ReferenceFinder$Filter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "visitor", "Lcom/sun/tools/classfile/ReferenceFinder$Visitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cpVisitor", "Lcom/sun/tools/classfile/ConstantPool$Visitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codeVisitor", "Lcom/sun/tools/classfile/Instruction$KindVisitor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceFinder", "(Lcom/sun/tools/classfile/ReferenceFinder$Filter;Lcom/sun/tools/classfile/ReferenceFinder$Visitor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Lcom/sun/tools/classfile/ClassFile;)Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filter", "Lcom/sun/tools/classfile/ReferenceFinder$Filter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "visitor", "Lcom/sun/tools/classfile/ReferenceFinder$Visitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cpVisitor", "Lcom/sun/tools/classfile/ConstantPool$Visitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codeVisitor", "Lcom/sun/tools/classfile/Instruction$KindVisitor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/classfile/ReferenceFinder$Filter;Lcom/sun/tools/classfile/ReferenceFinder$Visitor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Lcom/sun/tools/classfile/ClassFile;)Z"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/classfile/ReferenceFinder$Filter;", "private final")]
@@ -101,7 +101,7 @@ public partial class ReferenceFinder
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/classfile/ReferenceFinder$Filter;Lcom/sun/tools/classfile/ReferenceFinder$Visitor;)V", "public")]
-	public ReferenceFinder(Dova.JDK.com.sun.tools.classfile.ReferenceFinder.Filter arg0, Dova.JDK.com.sun.tools.classfile.ReferenceFinder.Visitor arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ReferenceFinder(Dova.JDK.com.sun.tools.classfile.ReferenceFinder.Filter arg0, Dova.JDK.com.sun.tools.classfile.ReferenceFinder.Visitor arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -129,7 +129,7 @@ public partial class ReferenceFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/ReferenceFinder$Filter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/ConstantPool$CPRefInfo;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/ConstantPool$CPRefInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ConstantPool;Lcom/sun/tools/classfile/ConstantPool$CPRefInfo;)Z", "public abstract")]
@@ -153,7 +153,7 @@ public partial class ReferenceFinder
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/classfile/ReferenceFinder$Visitor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visit", "(Lcom/sun/tools/classfile/ClassFile;Lcom/sun/tools/classfile/Method;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visit", "(Lcom/sun/tools/classfile/ClassFile;Lcom/sun/tools/classfile/Method;Ljava/util/List;)V"));
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/classfile/ClassFile;Lcom/sun/tools/classfile/Method;Ljava/util/List;)V", "public abstract")]

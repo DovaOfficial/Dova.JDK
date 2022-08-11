@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,11 +30,11 @@ public partial class ECDHKeyExchange
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "poGenerator", "Lsun/security/ssl/SSLPossessionGenerator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ecdhKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ecdheKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ecdheXdhKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHKeyExchange", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "poGenerator", "Lsun/security/ssl/SSLPossessionGenerator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ecdhKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ecdheKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ecdheXdhKAGenerator", "Lsun/security/ssl/SSLKeyAgreementGenerator;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/SSLPossessionGenerator;", "static final")]
@@ -99,7 +99,7 @@ public partial class ECDHKeyExchange
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ECDHKeyExchange() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ECDHKeyExchange() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -122,8 +122,8 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHEPossessionGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHEPossessionGenerator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLPossession;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPossession", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLPossession;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -132,7 +132,7 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ECDHEPossessionGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ECDHEPossessionGenerator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -163,10 +163,10 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHKAGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHKAGenerator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createServerKeyDerivation", "(Lsun/security/ssl/ServerHandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createClientKeyDerivation", "(Lsun/security/ssl/ClientHandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createServerKeyDerivation", "(Lsun/security/ssl/ServerHandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createClientKeyDerivation", "(Lsun/security/ssl/ClientHandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -175,7 +175,7 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ECDHKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ECDHKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -220,8 +220,8 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHEKAGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHEKAGenerator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -230,7 +230,7 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ECDHEKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ECDHEKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -261,8 +261,8 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHEXDHKAGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHEXDHKAGenerator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createKeyDerivation", "(Lsun/security/ssl/HandshakeContext;)Lsun/security/ssl/SSLKeyDerivation;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -271,7 +271,7 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ECDHEXDHKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ECDHEXDHKAGenerator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -303,18 +303,18 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHEPossession;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "privateKey", "Ljava/security/PrivateKey;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "publicKey", "Ljava/security/interfaces/ECPublicKey;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHEPossession", "(Lsun/security/ssl/NamedGroup;Ljava/security/SecureRandom;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHEPossession", "(Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;Ljava/security/SecureRandom;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPublicKey", "()Ljava/security/PublicKey;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkConstraints", "(Ljava/security/AlgorithmConstraints;[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPrivateKey", "()Ljava/security/PrivateKey;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAgreedSecret", "([B)Ljavax/crypto/SecretKey;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAgreedSecret", "(Ljava/security/PublicKey;)Ljavax/crypto/SecretKey;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamedGroup", "()Lsun/security/ssl/NamedGroup;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "privateKey", "Ljava/security/PrivateKey;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "publicKey", "Ljava/security/interfaces/ECPublicKey;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/NamedGroup;Ljava/security/SecureRandom;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;Ljava/security/SecureRandom;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPublicKey", "()Ljava/security/PublicKey;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkConstraints", "(Ljava/security/AlgorithmConstraints;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPrivateKey", "()Ljava/security/PrivateKey;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAgreedSecret", "([B)Ljavax/crypto/SecretKey;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAgreedSecret", "(Ljava/security/PublicKey;)Ljavax/crypto/SecretKey;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamedGroup", "()Lsun/security/ssl/NamedGroup;"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/PrivateKey;", "final")]
@@ -365,12 +365,12 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/NamedGroup;Ljava/security/SecureRandom;)V", "")]
-		public ECDHEPossession(Dova.JDK.sun.security.ssl.NamedGroup arg0, Dova.JDK.java.security.SecureRandom arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ECDHEPossession(Dova.JDK.sun.security.ssl.NamedGroup arg0, Dova.JDK.java.security.SecureRandom arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;Ljava/security/SecureRandom;)V", "")]
-		public ECDHEPossession(Dova.JDK.sun.security.ssl.ECDHKeyExchange.ECDHECredentials arg0, Dova.JDK.java.security.SecureRandom arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public ECDHEPossession(Dova.JDK.sun.security.ssl.ECDHKeyExchange.ECDHECredentials arg0, Dova.JDK.java.security.SecureRandom arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -443,12 +443,12 @@ public partial class ECDHKeyExchange
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "popPublicKey", "Ljava/security/interfaces/ECPublicKey;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ECDHECredentials", "(Ljava/security/interfaces/ECPublicKey;Lsun/security/ssl/NamedGroup;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Lsun/security/ssl/NamedGroup;[B)Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPublicKey", "()Ljava/security/PublicKey;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamedGroup", "()Lsun/security/ssl/NamedGroup;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "popPublicKey", "Ljava/security/interfaces/ECPublicKey;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/interfaces/ECPublicKey;Lsun/security/ssl/NamedGroup;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Lsun/security/ssl/NamedGroup;[B)Lsun/security/ssl/ECDHKeyExchange$ECDHECredentials;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPublicKey", "()Ljava/security/PublicKey;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamedGroup", "()Lsun/security/ssl/NamedGroup;"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/interfaces/ECPublicKey;", "final")]
@@ -485,7 +485,7 @@ public partial class ECDHKeyExchange
 		}
 
 		[JniSignatureAttribute("(Ljava/security/interfaces/ECPublicKey;Lsun/security/ssl/NamedGroup;)V", "")]
-		public ECDHECredentials(Dova.JDK.java.security.interfaces.ECPublicKey arg0, Dova.JDK.sun.security.ssl.NamedGroup arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ECDHECredentials(Dova.JDK.java.security.interfaces.ECPublicKey arg0, Dova.JDK.sun.security.ssl.NamedGroup arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

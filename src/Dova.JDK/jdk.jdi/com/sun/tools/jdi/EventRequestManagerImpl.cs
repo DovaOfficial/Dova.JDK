@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,51 +32,51 @@ public partial class EventRequestManagerImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestLists", "[Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "methodExitEventCmd", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventRequestManagerImpl", "(Lcom/sun/jdi/VirtualMachine;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "request", "(II)Lcom/sun/jdi/request/EventRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "JDItoJDWPSuspendPolicy", "(I)B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createClassUnloadRequest", "()Lcom/sun/jdi/request/ClassUnloadRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createExceptionRequest", "(Lcom/sun/jdi/ReferenceType;ZZ)Lcom/sun/jdi/request/ExceptionRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createStepRequest", "(Lcom/sun/jdi/ThreadReference;II)Lcom/sun/jdi/request/StepRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createThreadDeathRequest", "()Lcom/sun/jdi/request/ThreadDeathRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createThreadStartRequest", "()Lcom/sun/jdi/request/ThreadStartRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMethodEntryRequest", "()Lcom/sun/jdi/request/MethodEntryRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMethodExitRequest", "()Lcom/sun/jdi/request/MethodExitRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMonitorContendedEnterRequest", "()Lcom/sun/jdi/request/MonitorContendedEnterRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMonitorContendedEnteredRequest", "()Lcom/sun/jdi/request/MonitorContendedEnteredRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMonitorWaitRequest", "()Lcom/sun/jdi/request/MonitorWaitRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMonitorWaitedRequest", "()Lcom/sun/jdi/request/MonitorWaitedRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBreakpointRequest", "(Lcom/sun/jdi/Location;)Lcom/sun/jdi/request/BreakpointRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createAccessWatchpointRequest", "(Lcom/sun/jdi/Field;)Lcom/sun/jdi/request/AccessWatchpointRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createModificationWatchpointRequest", "(Lcom/sun/jdi/Field;)Lcom/sun/jdi/request/ModificationWatchpointRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createVMDeathRequest", "()Lcom/sun/jdi/request/VMDeathRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deleteEventRequest", "(Lcom/sun/jdi/request/EventRequest;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deleteEventRequests", "(Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "deleteAllBreakpoints", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stepRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classPrepareRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classUnloadRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "threadStartRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requestList", "(I)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unmodifiableRequestList", "(I)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "JDWPtoJDISuspendPolicy", "(B)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "threadDeathRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exceptionRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "breakpointRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accessWatchpointRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "modificationWatchpointRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "methodEntryRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "methodExitRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitorContendedEnterRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitorContendedEnteredRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitorWaitRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitorWaitedRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "vmDeathRequests", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createClassPrepareRequest", "()Lcom/sun/jdi/request/ClassPrepareRequest;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestLists", "[Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "methodExitEventCmd", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/jdi/VirtualMachine;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "request", "(II)Lcom/sun/jdi/request/EventRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "JDItoJDWPSuspendPolicy", "(I)B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createClassUnloadRequest", "()Lcom/sun/jdi/request/ClassUnloadRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createExceptionRequest", "(Lcom/sun/jdi/ReferenceType;ZZ)Lcom/sun/jdi/request/ExceptionRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createStepRequest", "(Lcom/sun/jdi/ThreadReference;II)Lcom/sun/jdi/request/StepRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createThreadDeathRequest", "()Lcom/sun/jdi/request/ThreadDeathRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createThreadStartRequest", "()Lcom/sun/jdi/request/ThreadStartRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMethodEntryRequest", "()Lcom/sun/jdi/request/MethodEntryRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMethodExitRequest", "()Lcom/sun/jdi/request/MethodExitRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMonitorContendedEnterRequest", "()Lcom/sun/jdi/request/MonitorContendedEnterRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMonitorContendedEnteredRequest", "()Lcom/sun/jdi/request/MonitorContendedEnteredRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMonitorWaitRequest", "()Lcom/sun/jdi/request/MonitorWaitRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMonitorWaitedRequest", "()Lcom/sun/jdi/request/MonitorWaitedRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBreakpointRequest", "(Lcom/sun/jdi/Location;)Lcom/sun/jdi/request/BreakpointRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createAccessWatchpointRequest", "(Lcom/sun/jdi/Field;)Lcom/sun/jdi/request/AccessWatchpointRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createModificationWatchpointRequest", "(Lcom/sun/jdi/Field;)Lcom/sun/jdi/request/ModificationWatchpointRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createVMDeathRequest", "()Lcom/sun/jdi/request/VMDeathRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deleteEventRequest", "(Lcom/sun/jdi/request/EventRequest;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deleteEventRequests", "(Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "deleteAllBreakpoints", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stepRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classPrepareRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classUnloadRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "threadStartRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requestList", "(I)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unmodifiableRequestList", "(I)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "JDWPtoJDISuspendPolicy", "(B)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "threadDeathRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exceptionRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "breakpointRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accessWatchpointRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "modificationWatchpointRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "methodEntryRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "methodExitRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitorContendedEnterRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitorContendedEnteredRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitorWaitRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitorWaitedRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "vmDeathRequests", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createClassPrepareRequest", "()Lcom/sun/jdi/request/ClassPrepareRequest;"));
 	}
 
 	[JniSignatureAttribute("[Ljava/util/List;", "private final")]
@@ -113,7 +113,7 @@ public partial class EventRequestManagerImpl
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/jdi/VirtualMachine;)V", "")]
-	public EventRequestManagerImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public EventRequestManagerImpl(Dova.JDK.com.sun.jdi.VirtualMachine arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -427,10 +427,10 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ClassPrepareRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassPrepareRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addSourceNameFilter", "(Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addSourceNameFilter", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -439,7 +439,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ClassPrepareRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ClassPrepareRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -483,9 +483,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ClassUnloadRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassUnloadRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -494,7 +494,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ClassUnloadRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ClassUnloadRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -533,15 +533,15 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ExceptionRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/jdi/ReferenceType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caught", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uncaught", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExceptionRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ReferenceType;ZZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exception", "()Lcom/sun/jdi/ReferenceType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyCaught", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyUncaught", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/jdi/ReferenceType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caught", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uncaught", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ReferenceType;ZZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exception", "()Lcom/sun/jdi/ReferenceType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyCaught", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyUncaught", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jdi/ReferenceType;", "")]
@@ -592,7 +592,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ReferenceType;ZZ)V", "")]
-		public ExceptionRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.ReferenceType arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public ExceptionRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.ReferenceType arg1, bool arg2, bool arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -652,15 +652,15 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$StepRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "depth", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StepRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ThreadReference;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "depth", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "thread", "()Lcom/sun/jdi/ThreadReference;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "depth", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ThreadReference;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "depth", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "thread", "()Lcom/sun/jdi/ThreadReference;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/jdi/ThreadReferenceImpl;", "")]
@@ -711,7 +711,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/ThreadReference;II)V", "")]
-		public StepRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.ThreadReference arg1, int arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public StepRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.ThreadReference arg1, int arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -770,9 +770,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ThreadDeathRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadDeathRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -781,7 +781,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ThreadDeathRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ThreadDeathRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -819,9 +819,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ThreadStartRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadStartRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -830,7 +830,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ThreadStartRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ThreadStartRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -868,9 +868,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MethodEntryRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodEntryRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -879,7 +879,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MethodEntryRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MethodEntryRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -917,9 +917,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MethodExitRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodExitRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -928,7 +928,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MethodExitRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MethodExitRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -966,9 +966,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MonitorContendedEnterRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorContendedEnterRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -977,7 +977,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MonitorContendedEnterRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MonitorContendedEnterRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1015,9 +1015,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MonitorContendedEnteredRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorContendedEnteredRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1026,7 +1026,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MonitorContendedEnteredRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MonitorContendedEnteredRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1064,9 +1064,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MonitorWaitRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorWaitRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1075,7 +1075,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MonitorWaitRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MonitorWaitRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1113,9 +1113,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$MonitorWaitedRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorWaitedRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1124,7 +1124,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public MonitorWaitedRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MonitorWaitedRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1163,11 +1163,11 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$BreakpointRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BreakpointRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Location;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "location", "()Lcom/sun/jdi/Location;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Location;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "location", "()Lcom/sun/jdi/Location;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jdi/Location;", "private final")]
@@ -1190,7 +1190,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Location;)V", "")]
-		public BreakpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Location arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BreakpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Location arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1235,9 +1235,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$AccessWatchpointRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AccessWatchpointRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1246,7 +1246,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V", "")]
-		public AccessWatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AccessWatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1284,9 +1284,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ModificationWatchpointRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModificationWatchpointRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1295,7 +1295,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V", "")]
-		public ModificationWatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ModificationWatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1333,9 +1333,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$VMDeathRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VMDeathRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1344,7 +1344,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public VMDeathRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public VMDeathRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1383,33 +1383,33 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$EventRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "filters", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isEnabled", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deleted", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suspendPolicy", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clientProperties", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdi/EventRequestManagerImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "set", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProperties", "()Ljava/util/Map;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "delete", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "state", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "enable", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnabled", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disable", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEnabled", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "suspendPolicy", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addCountFilter", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSuspendPolicy", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requestList", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventCmd", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invalidState", "()Lcom/sun/jdi/request/InvalidRequestStateException;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "filters", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isEnabled", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deleted", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suspendPolicy", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clientProperties", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdi/EventRequestManagerImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProperty", "(Ljava/lang/Object;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "set", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProperties", "()Ljava/util/Map;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "delete", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "state", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "enable", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnabled", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putProperty", "(Ljava/lang/Object;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disable", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEnabled", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "suspendPolicy", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addCountFilter", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSuspendPolicy", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requestList", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventCmd", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invalidState", "()Lcom/sun/jdi/request/InvalidRequestStateException;"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1516,7 +1516,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public EventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1665,9 +1665,9 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$WatchpointRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "field", "Lcom/sun/jdi/Field;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WatchpointRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "field", "()Lcom/sun/jdi/Field;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "field", "Lcom/sun/jdi/Field;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "field", "()Lcom/sun/jdi/Field;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/jdi/Field;", "final")]
@@ -1690,7 +1690,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;Lcom/sun/jdi/Field;)V", "")]
-		public WatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public WatchpointRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0, Dova.JDK.com.sun.jdi.Field arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1720,11 +1720,11 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ClassVisibleEventRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassVisibleEventRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassExclusionFilter", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addInstanceFilter", "(Lcom/sun/jdi/ObjectReference;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassFilter", "(Lcom/sun/jdi/ReferenceType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addClassFilter", "(Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassExclusionFilter", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addInstanceFilter", "(Lcom/sun/jdi/ObjectReference;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassFilter", "(Lcom/sun/jdi/ReferenceType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addClassFilter", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1733,7 +1733,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ClassVisibleEventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ClassVisibleEventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1780,8 +1780,8 @@ public partial class EventRequestManagerImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/EventRequestManagerImpl$ThreadVisibleEventRequestImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadVisibleEventRequestImpl", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addThreadFilter", "(Lcom/sun/jdi/ThreadReference;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addThreadFilter", "(Lcom/sun/jdi/ThreadReference;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1790,7 +1790,7 @@ public partial class EventRequestManagerImpl
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/EventRequestManagerImpl;)V", "")]
-		public ThreadVisibleEventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ThreadVisibleEventRequestImpl(Dova.JDK.com.sun.tools.jdi.EventRequestManagerImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

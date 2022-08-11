@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface Scanner
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java_cup/internal/runtime/Scanner;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next_token", "()Lcom/sun/java_cup/internal/runtime/Symbol;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next_token", "()Lcom/sun/java_cup/internal/runtime/Symbol;"));
 	}
 
 	[JniSignatureAttribute("()Lcom/sun/java_cup/internal/runtime/Symbol;", "public abstract")]

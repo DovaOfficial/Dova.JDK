@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class SSLExtensions
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SSLExtensions;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeMessage", "Lsun/security/ssl/SSLHandshake$HandshakeMessage;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extMap", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encodedLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "logMap", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLExtensions", "(Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLExtensions", "(Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;[Lsun/security/ssl/SSLExtension;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Lsun/security/ssl/SSLExtension;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toString", "(I[B)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consumeOnTrade", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reproduce", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "send", "(Lsun/security/ssl/HandshakeOutStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "produce", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consumeOnLoad", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeMessage", "Lsun/security/ssl/SSLHandshake$HandshakeMessage;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extMap", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encodedLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "logMap", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;[Lsun/security/ssl/SSLExtension;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Lsun/security/ssl/SSLExtension;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toString", "(I[B)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consumeOnTrade", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reproduce", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "send", "(Lsun/security/ssl/HandshakeOutStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "produce", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consumeOnLoad", "(Lsun/security/ssl/HandshakeContext;[Lsun/security/ssl/SSLExtension;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/SSLHandshake$HandshakeMessage;", "private final")]
@@ -110,12 +110,12 @@ public partial class SSLExtensions
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/SSLHandshake$HandshakeMessage;)V", "")]
-	public SSLExtensions(Dova.JDK.sun.security.ssl.SSLHandshake.HandshakeMessage arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SSLExtensions(Dova.JDK.sun.security.ssl.SSLHandshake.HandshakeMessage arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/ssl/SSLHandshake$HandshakeMessage;Ljava/nio/ByteBuffer;[Lsun/security/ssl/SSLExtension;)V", "")]
-	public SSLExtensions(Dova.JDK.sun.security.ssl.SSLHandshake.HandshakeMessage arg0, Dova.JDK.java.nio.ByteBuffer arg1, JavaArray<Dova.JDK.sun.security.ssl.SSLExtension> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public SSLExtensions(Dova.JDK.sun.security.ssl.SSLHandshake.HandshakeMessage arg0, Dova.JDK.java.nio.ByteBuffer arg1, JavaArray<Dova.JDK.sun.security.ssl.SSLExtension> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 

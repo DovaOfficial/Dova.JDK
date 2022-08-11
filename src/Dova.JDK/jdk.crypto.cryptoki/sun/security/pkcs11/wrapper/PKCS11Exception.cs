@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class PKCS11Exception
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorCode", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "errorMsg", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PKCS11Exception", "(JLjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(J)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getErrorCode", "()J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorCode", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "errorMsg", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookup", "(J)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getErrorCode", "()J"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -89,7 +89,7 @@ public partial class PKCS11Exception
 	}
 
 	[JniSignatureAttribute("(JLjava/lang/String;)V", "public")]
-	public PKCS11Exception(long arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PKCS11Exception(long arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -140,110 +140,110 @@ public partial class PKCS11Exception
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANCEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_HOST_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SLOT_ID_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_GENERAL_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ARGUMENTS_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NO_EVENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEED_TO_CREATE_THREADS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CANT_LOCK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ATTRIBUTE_VALUE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ACTION_PROHIBITED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DEVICE_REMOVED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_ENCRYPTED_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_AEAD_DECRYPT_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_CANCELED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_PARALLEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_CHANGED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_INDIGESTIBLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_FUNCTION_NOT_PERMITTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_NOT_WRAPPABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_KEY_UNEXTRACTABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MECHANISM_PARAM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OBJECT_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_ACTIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INCORRECT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_EXPIRED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_CLOSED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_COUNT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_PARALLEL_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_ONLY_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SESSION_READ_WRITE_SO_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SIGNATURE_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCOMPLETE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TEMPLATE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_PRESENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_NOT_RECOGNIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_WRITE_PROTECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_UNWRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_NOT_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_PIN_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_ANOTHER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_USER_TOO_MANY_TYPES", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPED_KEY_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_WRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_SEED_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_RANDOM_NO_RNG", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_DOMAIN_PARAMS_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CURVE_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_BUFFER_TOO_SMALL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_SAVED_STATE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_INFORMATION_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_STATE_UNSAVEABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_CRYPTOKI_ALREADY_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_MUTEX_NOT_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEW_PIN_MODE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_NEXT_OTP", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_EXCEEDED_MAX_ITERATIONS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FIPS_SELF_TEST_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_LIBRARY_LOAD_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PIN_TOO_WEAK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_PUBLIC_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_FUNCTION_REJECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_TOKEN_RESOURCE_EXCEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_OPERATION_CANCEL_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CKR_VENDOR_DEFINED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RV", "(Ljava/lang/String;IJ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_OK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_CANCEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_HOST_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SLOT_ID_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_GENERAL_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FUNCTION_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ARGUMENTS_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_NO_EVENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_NEED_TO_CREATE_THREADS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_CANT_LOCK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ATTRIBUTE_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ATTRIBUTE_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ATTRIBUTE_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ATTRIBUTE_VALUE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ACTION_PROHIBITED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DEVICE_ERROR", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DEVICE_MEMORY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DEVICE_REMOVED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ENCRYPTED_DATA_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_ENCRYPTED_DATA_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_AEAD_DECRYPT_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FUNCTION_CANCELED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FUNCTION_NOT_PARALLEL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FUNCTION_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_NOT_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_CHANGED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_NEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_INDIGESTIBLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_FUNCTION_NOT_PERMITTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_NOT_WRAPPABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_KEY_UNEXTRACTABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_MECHANISM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_MECHANISM_PARAM_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_OBJECT_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_OPERATION_ACTIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_OPERATION_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_INCORRECT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_EXPIRED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_CLOSED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_COUNT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_PARALLEL_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_READ_ONLY", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_READ_ONLY_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SESSION_READ_WRITE_SO_EXISTS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SIGNATURE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SIGNATURE_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TEMPLATE_INCOMPLETE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TEMPLATE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TOKEN_NOT_PRESENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TOKEN_NOT_RECOGNIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TOKEN_WRITE_PROTECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_UNWRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_UNWRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_UNWRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_NOT_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_PIN_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_TYPE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_ANOTHER_ALREADY_LOGGED_IN", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_USER_TOO_MANY_TYPES", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_WRAPPED_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_WRAPPED_KEY_LEN_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_WRAPPING_KEY_HANDLE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_WRAPPING_KEY_SIZE_RANGE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_WRAPPING_KEY_TYPE_INCONSISTENT", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_RANDOM_SEED_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_RANDOM_NO_RNG", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_DOMAIN_PARAMS_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_CURVE_NOT_SUPPORTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_BUFFER_TOO_SMALL", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_SAVED_STATE_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_INFORMATION_SENSITIVE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_STATE_UNSAVEABLE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_CRYPTOKI_NOT_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_CRYPTOKI_ALREADY_INITIALIZED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_MUTEX_BAD", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_MUTEX_NOT_LOCKED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_NEW_PIN_MODE", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_NEXT_OTP", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_EXCEEDED_MAX_ITERATIONS", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FIPS_SELF_TEST_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_LIBRARY_LOAD_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PIN_TOO_WEAK", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_PUBLIC_KEY_INVALID", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_FUNCTION_REJECTED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_TOKEN_RESOURCE_EXCEEDED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_OPERATION_CANCEL_FAILED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CKR_VENDOR_DEFINED", "Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IJ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/PKCS11Exception$RV;", "public static final")]
@@ -1652,7 +1652,7 @@ public partial class PKCS11Exception
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;IJ)V", "private")]
-		public RV(Dova.JDK.java.lang.String arg0, int arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public RV(Dova.JDK.java.lang.String arg0, int arg1, long arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

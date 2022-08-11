@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class CleanerFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/ref/CleanerFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "commonCleaner", "Ljava/lang/ref/Cleaner;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CleanerFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "cleaner", "()Ljava/lang/ref/Cleaner;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "commonCleaner", "Ljava/lang/ref/Cleaner;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "cleaner", "()Ljava/lang/ref/Cleaner;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ref/Cleaner;", "private static final")]
@@ -56,7 +56,7 @@ public partial class CleanerFactory
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CleanerFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CleanerFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

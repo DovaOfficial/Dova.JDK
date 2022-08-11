@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,45 +32,45 @@ public partial class RendererContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/RendererContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CTX_COUNT", "Ljava/util/concurrent/atomic/AtomicInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cleanerObj", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirty", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "double6", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curve", "Lsun/java2d/marlin/Curve;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nPCPathIterator", "Lsun/java2d/marlin/DMarlinRenderingEngine$NormalizingPathIterator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nPQPathIterator", "Lsun/java2d/marlin/DMarlinRenderingEngine$NormalizingPathIterator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transformerPC2D", "Lsun/java2d/marlin/TransformingPathConsumer2D;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refPath2D", "Ljava/lang/ref/WeakReference;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "renderer", "Lsun/java2d/marlin/Renderer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stroker", "Lsun/java2d/marlin/Stroker;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "simplifier", "Lsun/java2d/marlin/CollinearSimplifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pathSimplifier", "Lsun/java2d/marlin/PathSimplifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dasher", "Lsun/java2d/marlin/Dasher;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ptg", "Lsun/java2d/marlin/MarlinTileGenerator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cache", "Lsun/java2d/marlin/MarlinCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stroking", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doClip", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closedPath", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clipRect", "[D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clipInvScale", "D"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "monotonizer", "Lsun/java2d/marlin/TransformingPathConsumer2D$CurveBasicMonotonizer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "curveClipSplitter", "Lsun/java2d/marlin/TransformingPathConsumer2D$CurveClipSplitter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cleanIntCache", "Lsun/java2d/marlin/IntArrayCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyIntCache", "Lsun/java2d/marlin/IntArrayCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyDoubleCache", "Lsun/java2d/marlin/DoubleArrayCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyByteCache", "Lsun/java2d/marlin/ByteArrayCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stats", "Lsun/java2d/marlin/RendererStats;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p2dAdapter", "Lsun/java2d/marlin/RendererContext$PathConsumer2DAdapter;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RendererContext", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDirtyDoubleArrayRef", "(I)Lsun/java2d/marlin/DoubleArrayCache$Reference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newOffHeapArray", "(J)Lsun/java2d/marlin/OffHeapArray;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCleanIntArrayRef", "(I)Lsun/java2d/marlin/IntArrayCache$Reference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDirtyIntArrayRef", "(I)Lsun/java2d/marlin/IntArrayCache$Reference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newDirtyByteArrayRef", "(I)Lsun/java2d/marlin/ByteArrayCache$Reference;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPath2D", "()Ljava/awt/geom/Path2D$Double;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stats", "()Lsun/java2d/marlin/RendererStats;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createContext", "()Lsun/java2d/marlin/RendererContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CTX_COUNT", "Ljava/util/concurrent/atomic/AtomicInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cleanerObj", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirty", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "double6", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curve", "Lsun/java2d/marlin/Curve;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nPCPathIterator", "Lsun/java2d/marlin/DMarlinRenderingEngine$NormalizingPathIterator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nPQPathIterator", "Lsun/java2d/marlin/DMarlinRenderingEngine$NormalizingPathIterator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transformerPC2D", "Lsun/java2d/marlin/TransformingPathConsumer2D;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refPath2D", "Ljava/lang/ref/WeakReference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "renderer", "Lsun/java2d/marlin/Renderer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stroker", "Lsun/java2d/marlin/Stroker;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "simplifier", "Lsun/java2d/marlin/CollinearSimplifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pathSimplifier", "Lsun/java2d/marlin/PathSimplifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dasher", "Lsun/java2d/marlin/Dasher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ptg", "Lsun/java2d/marlin/MarlinTileGenerator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cache", "Lsun/java2d/marlin/MarlinCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stroking", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doClip", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closedPath", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clipRect", "[D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clipInvScale", "D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "monotonizer", "Lsun/java2d/marlin/TransformingPathConsumer2D$CurveBasicMonotonizer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "curveClipSplitter", "Lsun/java2d/marlin/TransformingPathConsumer2D$CurveClipSplitter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cleanIntCache", "Lsun/java2d/marlin/IntArrayCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyIntCache", "Lsun/java2d/marlin/IntArrayCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyDoubleCache", "Lsun/java2d/marlin/DoubleArrayCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyByteCache", "Lsun/java2d/marlin/ByteArrayCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stats", "Lsun/java2d/marlin/RendererStats;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p2dAdapter", "Lsun/java2d/marlin/RendererContext$PathConsumer2DAdapter;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDirtyDoubleArrayRef", "(I)Lsun/java2d/marlin/DoubleArrayCache$Reference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newOffHeapArray", "(J)Lsun/java2d/marlin/OffHeapArray;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCleanIntArrayRef", "(I)Lsun/java2d/marlin/IntArrayCache$Reference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDirtyIntArrayRef", "(I)Lsun/java2d/marlin/IntArrayCache$Reference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newDirtyByteArrayRef", "(I)Lsun/java2d/marlin/ByteArrayCache$Reference;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPath2D", "()Ljava/awt/geom/Path2D$Double;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stats", "()Lsun/java2d/marlin/RendererStats;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createContext", "()Lsun/java2d/marlin/RendererContext;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/concurrent/atomic/AtomicInteger;", "private static final")]
@@ -485,7 +485,7 @@ public partial class RendererContext
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-	public RendererContext(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public RendererContext(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -571,16 +571,16 @@ public partial class RendererContext
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/RendererContext$PathConsumer2DAdapter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "out", "Lsun/awt/geom/PathConsumer2D;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PathConsumer2DAdapter", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Lsun/awt/geom/PathConsumer2D;)Lsun/java2d/marlin/RendererContext$PathConsumer2DAdapter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moveTo", "(DD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "quadTo", "(DDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "curveTo", "(DDDDDD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pathDone", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNativeConsumer", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "closePath", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lineTo", "(DD)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "out", "Lsun/awt/geom/PathConsumer2D;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Lsun/awt/geom/PathConsumer2D;)Lsun/java2d/marlin/RendererContext$PathConsumer2DAdapter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moveTo", "(DD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "quadTo", "(DDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "curveTo", "(DDDDDD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pathDone", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNativeConsumer", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "closePath", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lineTo", "(DD)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/awt/geom/PathConsumer2D;", "private")]
@@ -603,7 +603,7 @@ public partial class RendererContext
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public PathConsumer2DAdapter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public PathConsumer2DAdapter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

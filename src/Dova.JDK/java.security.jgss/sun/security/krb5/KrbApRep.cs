@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class KrbApRep
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/krb5/KrbApRep;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "obuf", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ibuf", "[B"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encPart", "Lsun/security/krb5/internal/EncAPRepPart;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "apRepMessg", "Lsun/security/krb5/internal/APRep;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KrbApRep", "(Lsun/security/util/DerValue;Lsun/security/krb5/Credentials;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KrbApRep", "([BLsun/security/krb5/Credentials;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KrbApRep", "(Lsun/security/krb5/KrbApReq;ZLsun/security/krb5/EncryptionKey;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KrbApRep", "([BLsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMessage", "()[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Lsun/security/krb5/KrbApReq;Lsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/SeqNumber;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "authenticate", "(Lsun/security/krb5/KrbApReq;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMessage", "(Lsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/KerberosTime;ILsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/SeqNumber;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSubKey", "()Lsun/security/krb5/EncryptionKey;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSeqNumber", "()Ljava/lang/Integer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "obuf", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ibuf", "[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encPart", "Lsun/security/krb5/internal/EncAPRepPart;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "apRepMessg", "Lsun/security/krb5/internal/APRep;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/DerValue;Lsun/security/krb5/Credentials;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([BLsun/security/krb5/Credentials;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/krb5/KrbApReq;ZLsun/security/krb5/EncryptionKey;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([BLsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMessage", "()[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Lsun/security/krb5/KrbApReq;Lsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/SeqNumber;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "authenticate", "(Lsun/security/krb5/KrbApReq;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMessage", "(Lsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/KerberosTime;ILsun/security/krb5/EncryptionKey;Lsun/security/krb5/internal/SeqNumber;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSubKey", "()Lsun/security/krb5/EncryptionKey;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSeqNumber", "()Ljava/lang/Integer;"));
 	}
 
 	[JniSignatureAttribute("[B", "private")]
@@ -109,22 +109,22 @@ public partial class KrbApRep
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/DerValue;Lsun/security/krb5/Credentials;)V", "private")]
-	public KrbApRep(Dova.JDK.sun.security.util.DerValue arg0, Dova.JDK.sun.security.krb5.Credentials arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public KrbApRep(Dova.JDK.sun.security.util.DerValue arg0, Dova.JDK.sun.security.krb5.Credentials arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("([BLsun/security/krb5/Credentials;)V", "private")]
-	public KrbApRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.Credentials arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public KrbApRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.Credentials arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/security/krb5/KrbApReq;ZLsun/security/krb5/EncryptionKey;)V", "public")]
-	public KrbApRep(Dova.JDK.sun.security.krb5.KrbApReq arg0, bool arg1, Dova.JDK.sun.security.krb5.EncryptionKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public KrbApRep(Dova.JDK.sun.security.krb5.KrbApReq arg0, bool arg1, Dova.JDK.sun.security.krb5.EncryptionKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("([BLsun/security/krb5/Credentials;Lsun/security/krb5/KrbApReq;)V", "public")]
-	public KrbApRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.Credentials arg1, Dova.JDK.sun.security.krb5.KrbApReq arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2))
+	public KrbApRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.Credentials arg1, Dova.JDK.sun.security.krb5.KrbApReq arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2))
 	{
 	}
 

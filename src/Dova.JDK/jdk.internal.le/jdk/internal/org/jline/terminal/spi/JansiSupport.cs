@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,13 +29,13 @@ public partial interface JansiSupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/spi/JansiSupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "current", "()Ljdk/internal/org/jline/terminal/spi/Pty;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "open", "(Ljdk/internal/org/jline/terminal/Attributes;Ljdk/internal/org/jline/terminal/Size;)Ljdk/internal/org/jline/terminal/spi/Pty;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWindowsConsole", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "winSysTerminal", "(Ljava/lang/String;Ljava/lang/String;ZLjava/nio/charset/Charset;IZLjdk/internal/org/jline/terminal/Terminal$SignalHandler;Z)Ljdk/internal/org/jline/terminal/Terminal;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "winSysTerminal", "(Ljava/lang/String;Ljava/lang/String;ZLjava/nio/charset/Charset;IZLjdk/internal/org/jline/terminal/Terminal$SignalHandler;)Ljdk/internal/org/jline/terminal/Terminal;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isConsoleInput", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isConsoleOutput", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "current", "()Ljdk/internal/org/jline/terminal/spi/Pty;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "open", "(Ljdk/internal/org/jline/terminal/Attributes;Ljdk/internal/org/jline/terminal/Size;)Ljdk/internal/org/jline/terminal/spi/Pty;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWindowsConsole", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "winSysTerminal", "(Ljava/lang/String;Ljava/lang/String;ZLjava/nio/charset/Charset;IZLjdk/internal/org/jline/terminal/Terminal$SignalHandler;Z)Ljdk/internal/org/jline/terminal/Terminal;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "winSysTerminal", "(Ljava/lang/String;Ljava/lang/String;ZLjava/nio/charset/Charset;IZLjdk/internal/org/jline/terminal/Terminal$SignalHandler;)Ljdk/internal/org/jline/terminal/Terminal;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isConsoleInput", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isConsoleOutput", "()Z"));
 	}
 
 	[JniSignatureAttribute("()Ljdk/internal/org/jline/terminal/spi/Pty;", "public abstract")]

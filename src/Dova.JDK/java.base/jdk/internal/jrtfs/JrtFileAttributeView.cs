@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,19 +32,19 @@ public partial class JrtFileAttributeView
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jrtfs/JrtFileAttributeView;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "path", "Ljdk/internal/jrtfs/JrtPath;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isJrtView", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "[Ljava/nio/file/LinkOption;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JrtFileAttributeView", "(Ljdk/internal/jrtfs/JrtPath;Z[Ljava/nio/file/LinkOption;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljdk/internal/jrtfs/JrtFileAttributeView;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "attribute", "(Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;Ljdk/internal/jrtfs/JrtFileAttributes;Z)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readAttributes", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttributes_0", "()Ljdk/internal/jrtfs/JrtFileAttributes;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readAttributes_1", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAttribute", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "path", "Ljdk/internal/jrtfs/JrtPath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isJrtView", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "[Ljava/nio/file/LinkOption;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/jrtfs/JrtPath;Z[Ljava/nio/file/LinkOption;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "name", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljdk/internal/jrtfs/JrtFileAttributeView;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/Class;[Ljava/nio/file/LinkOption;)Ljava/nio/file/attribute/FileAttributeView;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "attribute", "(Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;Ljdk/internal/jrtfs/JrtFileAttributes;Z)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readAttributes", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;[Ljava/nio/file/LinkOption;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttributes_0", "()Ljdk/internal/jrtfs/JrtFileAttributes;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readAttributes_1", "()Ljava/nio/file/attribute/BasicFileAttributes;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAttribute", "(Ljdk/internal/jrtfs/JrtPath;Ljava/lang/String;Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTimes", "(Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;Ljava/nio/file/attribute/FileTime;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/jrtfs/JrtPath;", "private final")]
@@ -95,7 +95,7 @@ public partial class JrtFileAttributeView
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/jrtfs/JrtPath;Z[Ljava/nio/file/LinkOption;)V", "private transient")]
-	public JrtFileAttributeView(Dova.JDK.jdk.@internal.jrtfs.JrtPath arg0, bool arg1, JavaArray<Dova.JDK.java.nio.file.LinkOption> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public JrtFileAttributeView(Dova.JDK.jdk.@internal.jrtfs.JrtPath arg0, bool arg1, JavaArray<Dova.JDK.java.nio.file.LinkOption> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -179,22 +179,22 @@ public partial class JrtFileAttributeView
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "size", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "creationTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lastAccessTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lastModifiedTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isDirectory", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isRegularFile", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isSymbolicLink", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isOther", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "fileKey", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "compressedSize", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "extension", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttrID", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "size", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "creationTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lastAccessTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lastModifiedTime", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isDirectory", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isRegularFile", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isSymbolicLink", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isOther", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "fileKey", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "compressedSize", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "extension", "Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/jrtfs/JrtFileAttributeView$AttrID;", "public static final")]
@@ -371,7 +371,7 @@ public partial class JrtFileAttributeView
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public AttrID(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AttrID(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

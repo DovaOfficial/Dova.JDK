@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,12 +32,12 @@ public partial class ShutdownHook
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/ShutdownHook;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recorder", "Ljdk/jfr/internal/PlatformRecorder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tlabDummyObject", "Ljava/lang/Object;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ShutdownHook", "(Ljdk/jfr/internal/PlatformRecorder;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dump", "(Ljdk/jfr/internal/PlatformRecording;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeDumpOnExitPath", "(Ljdk/jfr/internal/PlatformRecording;)Ljdk/jfr/internal/WriteableUserPath;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recorder", "Ljdk/jfr/internal/PlatformRecorder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tlabDummyObject", "Ljava/lang/Object;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/PlatformRecorder;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dump", "(Ljdk/jfr/internal/PlatformRecording;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeDumpOnExitPath", "(Ljdk/jfr/internal/PlatformRecording;)Ljdk/jfr/internal/WriteableUserPath;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/PlatformRecorder;", "private final")]
@@ -74,7 +74,7 @@ public partial class ShutdownHook
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/PlatformRecorder;)V", "")]
-	public ShutdownHook(Dova.JDK.jdk.jfr.@internal.PlatformRecorder arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ShutdownHook(Dova.JDK.jdk.jfr.@internal.PlatformRecorder arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -116,8 +116,8 @@ public partial class ShutdownHook
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/ShutdownHook$ExceptionHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExceptionHandler", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uncaughtException", "(Ljava/lang/Thread;Ljava/lang/Throwable;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -126,7 +126,7 @@ public partial class ShutdownHook
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ExceptionHandler() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ExceptionHandler() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

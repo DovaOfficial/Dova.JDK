@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,19 +31,19 @@ public partial class ScriptRunner
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/ScriptRunner;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scriptNameSuffix", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resourceCategoryId", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "directory", "Ljava/nio/file/Path;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "environment", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ScriptRunner", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "(Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "scriptSuffix", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "shell", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDirectory", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/ScriptRunner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setResourceCategoryId", "(Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setScriptNameSuffix", "(Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addEnvironment", "(Ljava/util/Map;)Ljdk/jpackage/internal/ScriptRunner;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEnvironmentVariable", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scriptNameSuffix", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resourceCategoryId", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "directory", "Ljava/nio/file/Path;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "environment", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "(Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "scriptSuffix", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "shell", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDirectory", "(Ljava/nio/file/Path;)Ljdk/jpackage/internal/ScriptRunner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setResourceCategoryId", "(Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setScriptNameSuffix", "(Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addEnvironment", "(Ljava/util/Map;)Ljdk/jpackage/internal/ScriptRunner;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEnvironmentVariable", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/jpackage/internal/ScriptRunner;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private")]
@@ -108,7 +108,7 @@ public partial class ScriptRunner
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ScriptRunner() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ScriptRunner() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

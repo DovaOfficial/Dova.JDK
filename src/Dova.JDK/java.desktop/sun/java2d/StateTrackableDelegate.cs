@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,20 +32,20 @@ public partial class StateTrackableDelegate
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/StateTrackableDelegate;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNTRACKABLE_DELEGATE", "Lsun/java2d/StateTrackableDelegate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMMUTABLE_DELEGATE", "Lsun/java2d/StateTrackableDelegate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "theState", "Lsun/java2d/StateTrackable$State;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "theTracker", "Lsun/java2d/StateTracker;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numDynamicAgents", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StateTrackableDelegate", "(Lsun/java2d/StateTrackable$State;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getState", "()Lsun/java2d/StateTrackable$State;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createInstance", "(Lsun/java2d/StateTrackable$State;)Lsun/java2d/StateTrackableDelegate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStateTracker", "()Lsun/java2d/StateTracker;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markDirty", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setImmutable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setUntrackable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addDynamicAgent", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeDynamicAgent", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNTRACKABLE_DELEGATE", "Lsun/java2d/StateTrackableDelegate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMMUTABLE_DELEGATE", "Lsun/java2d/StateTrackableDelegate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "theState", "Lsun/java2d/StateTrackable$State;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "theTracker", "Lsun/java2d/StateTracker;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numDynamicAgents", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/StateTrackable$State;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getState", "()Lsun/java2d/StateTrackable$State;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createInstance", "(Lsun/java2d/StateTrackable$State;)Lsun/java2d/StateTrackableDelegate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStateTracker", "()Lsun/java2d/StateTracker;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "markDirty", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setImmutable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setUntrackable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addDynamicAgent", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeDynamicAgent", "()V"));
 	}
 
 	[JniSignatureAttribute("Lsun/java2d/StateTrackableDelegate;", "public static final")]
@@ -124,7 +124,7 @@ public partial class StateTrackableDelegate
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/StateTrackable$State;)V", "private")]
-	public StateTrackableDelegate(Dova.JDK.sun.java2d.StateTrackable.State arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public StateTrackableDelegate(Dova.JDK.sun.java2d.StateTrackable.State arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

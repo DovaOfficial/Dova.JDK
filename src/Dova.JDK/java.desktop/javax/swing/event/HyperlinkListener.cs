@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface HyperlinkListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/HyperlinkListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hyperlinkUpdate", "(Ljavax/swing/event/HyperlinkEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/HyperlinkEvent;)V", "public abstract")]

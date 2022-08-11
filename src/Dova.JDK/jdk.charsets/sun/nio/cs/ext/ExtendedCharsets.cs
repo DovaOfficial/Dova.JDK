@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class ExtendedCharsets
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/nio/cs/ext/ExtendedCharsets;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Lsun/nio/cs/ext/ExtendedCharsets;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedCharsets", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "aliasesFor", "(Ljava/lang/String;)[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Lsun/nio/cs/ext/ExtendedCharsets;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "aliasesFor", "(Ljava/lang/String;)[Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Lsun/nio/cs/ext/ExtendedCharsets;", "static volatile")]
@@ -56,7 +56,7 @@ public partial class ExtendedCharsets
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public ExtendedCharsets() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ExtendedCharsets() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

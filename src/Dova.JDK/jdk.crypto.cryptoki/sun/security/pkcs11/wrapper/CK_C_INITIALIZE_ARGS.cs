@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,13 +30,13 @@ public partial class CK_C_INITIALIZE_ARGS
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/CK_C_INITIALIZE_ARGS;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "CreateMutex", "Lsun/security/pkcs11/wrapper/CK_CREATEMUTEX;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "DestroyMutex", "Lsun/security/pkcs11/wrapper/CK_DESTROYMUTEX;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "LockMutex", "Lsun/security/pkcs11/wrapper/CK_LOCKMUTEX;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "UnlockMutex", "Lsun/security/pkcs11/wrapper/CK_UNLOCKMUTEX;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pReserved", "Ljava/lang/Object;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_C_INITIALIZE_ARGS", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "CreateMutex", "Lsun/security/pkcs11/wrapper/CK_CREATEMUTEX;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "DestroyMutex", "Lsun/security/pkcs11/wrapper/CK_DESTROYMUTEX;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "LockMutex", "Lsun/security/pkcs11/wrapper/CK_LOCKMUTEX;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "UnlockMutex", "Lsun/security/pkcs11/wrapper/CK_UNLOCKMUTEX;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pReserved", "Ljava/lang/Object;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/pkcs11/wrapper/CK_CREATEMUTEX;", "public")]
@@ -129,7 +129,7 @@ public partial class CK_C_INITIALIZE_ARGS
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CK_C_INITIALIZE_ARGS() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CK_C_INITIALIZE_ARGS() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

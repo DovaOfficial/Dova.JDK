@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class CMSManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/cmm/CMSManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cmmImpl", "Lsun/java2d/cmm/PCMM;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMSManager", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getModule", "()Lsun/java2d/cmm/PCMM;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createModule", "()Lsun/java2d/cmm/PCMM;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "canCreateModule", "()Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cmmImpl", "Lsun/java2d/cmm/PCMM;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getModule", "()Lsun/java2d/cmm/PCMM;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createModule", "()Lsun/java2d/cmm/PCMM;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "canCreateModule", "()Z"));
 	}
 
 	[JniSignatureAttribute("Lsun/java2d/cmm/PCMM;", "private static volatile")]
@@ -58,7 +58,7 @@ public partial class CMSManager
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CMSManager() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CMSManager() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -103,16 +103,16 @@ public partial class CMSManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/cmm/CMSManager$CMMTracer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tcmm", "Lsun/java2d/cmm/PCMM;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cName", "Ljava/lang/String;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMMTracer", "(Lsun/java2d/cmm/PCMM;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "signatureToString", "(I)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTransform", "(Ljava/awt/color/ICC_Profile;II)Lsun/java2d/cmm/ColorTransform;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTransform", "([Lsun/java2d/cmm/ColorTransform;)Lsun/java2d/cmm/ColorTransform;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadProfile", "([B)Lsun/java2d/cmm/Profile;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getProfileData", "(Lsun/java2d/cmm/Profile;)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTagData", "(Lsun/java2d/cmm/Profile;I)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTagData", "(Lsun/java2d/cmm/Profile;I[B)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tcmm", "Lsun/java2d/cmm/PCMM;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cName", "Ljava/lang/String;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/cmm/PCMM;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "signatureToString", "(I)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTransform", "(Ljava/awt/color/ICC_Profile;II)Lsun/java2d/cmm/ColorTransform;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTransform", "([Lsun/java2d/cmm/ColorTransform;)Lsun/java2d/cmm/ColorTransform;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadProfile", "([B)Lsun/java2d/cmm/Profile;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getProfileData", "(Lsun/java2d/cmm/Profile;)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTagData", "(Lsun/java2d/cmm/Profile;I)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTagData", "(Lsun/java2d/cmm/Profile;I[B)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/java2d/cmm/PCMM;", "")]
@@ -149,7 +149,7 @@ public partial class CMSManager
 		}
 
 		[JniSignatureAttribute("(Lsun/java2d/cmm/PCMM;)V", "public")]
-		public CMMTracer(Dova.JDK.sun.java2d.cmm.PCMM arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CMMTracer(Dova.JDK.sun.java2d.cmm.PCMM arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

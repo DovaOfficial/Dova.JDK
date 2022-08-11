@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,29 +31,29 @@ public partial class CMap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ShiftJISEncoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GBKEncoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "Big5Encoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WansungEncoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JohabEncoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MSUnicodeSurrogateEncoding", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "noSuchChar", "C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORTMASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTMASK", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "converterMaps", "[[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xlat", "[C"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uvs", "Lsun/font/CMap$UVS;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "theNullCmap", "Lsun/font/CMap$NullCMapClass;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMap", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "initialize", "(Lsun/font/TrueTypeFont;)Lsun/font/CMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createCMap", "(Ljava/nio/ByteBuffer;I[C)Lsun/font/CMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConverterMap", "(S)[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createUVS", "(Ljava/nio/ByteBuffer;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConverter", "(S)[C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getControlCodeGlyph", "(IZ)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormatCharGlyph", "(I)C"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVariationGlyph", "(II)C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ShiftJISEncoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GBKEncoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "Big5Encoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WansungEncoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JohabEncoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MSUnicodeSurrogateEncoding", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "noSuchChar", "C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHORTMASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTMASK", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "converterMaps", "[[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xlat", "[C"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uvs", "Lsun/font/CMap$UVS;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "theNullCmap", "Lsun/font/CMap$NullCMapClass;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "initialize", "(Lsun/font/TrueTypeFont;)Lsun/font/CMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createCMap", "(Ljava/nio/ByteBuffer;I[C)Lsun/font/CMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConverterMap", "(S)[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createUVS", "(Ljava/nio/ByteBuffer;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConverter", "(S)[C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getControlCodeGlyph", "(IZ)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormatCharGlyph", "(I)C"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVariationGlyph", "(II)C"));
 	}
 
 	[JniSignatureAttribute("S", "static final")]
@@ -244,7 +244,7 @@ public partial class CMap
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public CMap() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CMap() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -329,14 +329,14 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$UVS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numSelectors", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "selector", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numUVSMapping", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unicodeValue", "[[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "glyphID", "[[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VS_NOGLYPH", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UVS", "(Ljava/nio/ByteBuffer;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(II)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numSelectors", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "selector", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numUVSMapping", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unicodeValue", "[[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "glyphID", "[[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VS_NOGLYPH", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(II)I"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -429,7 +429,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I)V", "")]
-		public UVS(Dova.JDK.java.nio.ByteBuffer arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public UVS(Dova.JDK.java.nio.ByteBuffer arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -460,9 +460,9 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat0;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmap", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat0", "(Ljava/nio/ByteBuffer;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmap", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("[B", "")]
@@ -485,7 +485,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I)V", "")]
-		public CMapFormat0(Dova.JDK.java.nio.ByteBuffer arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CMapFormat0(Dova.JDK.java.nio.ByteBuffer arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -516,14 +516,14 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat2;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subHeaderKey", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstCodeArray", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entryCountArray", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idDeltaArray", "[S"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idRangeOffSetArray", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "glyphIndexArray", "[C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat2", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subHeaderKey", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstCodeArray", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entryCountArray", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idDeltaArray", "[S"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idRangeOffSetArray", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "glyphIndexArray", "[C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("[C", "")]
@@ -616,7 +616,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat2(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat2(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -647,16 +647,16 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat4;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "segCount", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entrySelector", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rangeShift", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endCount", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "startCount", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idDelta", "[S"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idRangeOffset", "[C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "glyphIds", "[C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat4", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "segCount", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entrySelector", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rangeShift", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endCount", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "startCount", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idDelta", "[S"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idRangeOffset", "[C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "glyphIds", "[C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -777,7 +777,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat4(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat4(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -808,11 +808,11 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat6;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstCode", "C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entryCount", "C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "glyphIdArray", "[C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat6", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstCode", "C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entryCount", "C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "glyphIdArray", "[C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("C", "")]
@@ -863,7 +863,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat6(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat6(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -894,13 +894,13 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat8;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "is32", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nGroups", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "startCharCode", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endCharCode", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "startGlyphID", "[I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat8", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "is32", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nGroups", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "startCharCode", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endCharCode", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "startGlyphID", "[I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("[B", "")]
@@ -979,7 +979,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat8(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat8(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1010,11 +1010,11 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat10;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstCode", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entryCount", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "glyphIdArray", "[C"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat10", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstCode", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entryCount", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "glyphIdArray", "[C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("J", "")]
@@ -1065,7 +1065,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat10(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat10(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1096,15 +1096,15 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$CMapFormat12;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numGroups", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highBit", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "power", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extra", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "startCharCode", "[J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endCharCode", "[J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "startGlyphID", "[I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMapFormat12", "(Ljava/nio/ByteBuffer;I[C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numGroups", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highBit", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "power", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extra", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "startCharCode", "[J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endCharCode", "[J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "startGlyphID", "[I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/nio/ByteBuffer;I[C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1211,7 +1211,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("(Ljava/nio/ByteBuffer;I[C)V", "")]
-		public CMapFormat12(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CMapFormat12(Dova.JDK.java.nio.ByteBuffer arg0, int arg1, JavaArray<char> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -1241,8 +1241,8 @@ public partial class CMap
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/CMap$NullCMapClass;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NullCMapClass", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGlyph", "(I)C"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGlyph", "(I)C"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1251,7 +1251,7 @@ public partial class CMap
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public NullCMapClass() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NullCMapClass() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

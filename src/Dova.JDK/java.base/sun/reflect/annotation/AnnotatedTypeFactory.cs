@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class AnnotatedTypeFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_TYPE_ANNOTATION_ARRAY", "[Lsun/reflect/annotation/TypeAnnotation;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_ANNOTATED_TYPE", "Ljava/lang/reflect/AnnotatedType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EMPTY_ANNOTATED_TYPE_ARRAY", "[Ljava/lang/reflect/AnnotatedType;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedTypeFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isArray", "(Ljava/lang/reflect/Type;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "buildAnnotatedType", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)Ljava/lang/reflect/AnnotatedType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nestingForType", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;)Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_TYPE_ANNOTATION_ARRAY", "[Lsun/reflect/annotation/TypeAnnotation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_ANNOTATED_TYPE", "Ljava/lang/reflect/AnnotatedType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EMPTY_ANNOTATED_TYPE_ARRAY", "[Ljava/lang/reflect/AnnotatedType;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isArray", "(Ljava/lang/reflect/Type;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "buildAnnotatedType", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)Ljava/lang/reflect/AnnotatedType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nestingForType", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;)Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
 	}
 
 	[JniSignatureAttribute("[Lsun/reflect/annotation/TypeAnnotation;", "static final")]
@@ -88,7 +88,7 @@ public partial class AnnotatedTypeFactory
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public AnnotatedTypeFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AnnotatedTypeFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -132,13 +132,13 @@ public partial class AnnotatedTypeFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory$AnnotatedArrayTypeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedArrayTypeImpl", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComponentType", "()Ljava/lang/reflect/Type;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedGenericComponentType", "()Ljava/lang/reflect/AnnotatedType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComponentType", "()Ljava/lang/reflect/Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedGenericComponentType", "()Ljava/lang/reflect/AnnotatedType;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -147,7 +147,7 @@ public partial class AnnotatedTypeFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V", "")]
-		public AnnotatedArrayTypeImpl(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public AnnotatedArrayTypeImpl(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -214,29 +214,29 @@ public partial class AnnotatedTypeFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory$AnnotatedTypeBaseImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/lang/reflect/Type;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decl", "Ljava/lang/reflect/AnnotatedElement;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allOnSameTargetTypeAnnotations", "[Lsun/reflect/annotation/TypeAnnotation;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "annotations", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedTypeBaseImpl", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotations", "()[Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocation", "()Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "()Ljava/lang/reflect/Type;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTypeAnnotations", "()[Lsun/reflect/annotation/TypeAnnotation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equalsTypeAndAnnotations", "(Ljava/lang/reflect/AnnotatedType;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "baseHashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "annotationsToString", "([Ljava/lang/annotation/Annotation;Z)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDecl", "()Ljava/lang/reflect/AnnotatedElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljava/lang/reflect/Type;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decl", "Ljava/lang/reflect/AnnotatedElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allOnSameTargetTypeAnnotations", "[Lsun/reflect/annotation/TypeAnnotation;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "annotations", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotations", "()[Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDeclaredAnnotation", "(Ljava/lang/Class;)Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDeclaredAnnotationsByType", "(Ljava/lang/Class;)[Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDeclaredAnnotations", "()[Ljava/lang/annotation/Annotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocation", "()Lsun/reflect/annotation/TypeAnnotation$LocationInfo;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "()Ljava/lang/reflect/Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTypeAnnotations", "()[Lsun/reflect/annotation/TypeAnnotation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equalsTypeAndAnnotations", "(Ljava/lang/reflect/AnnotatedType;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "baseHashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "annotationsToString", "([Ljava/lang/annotation/Annotation;Z)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDecl", "()Ljava/lang/reflect/AnnotatedElement;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/reflect/Type;", "private final")]
@@ -315,7 +315,7 @@ public partial class AnnotatedTypeFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/Type;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V", "")]
-		public AnnotatedTypeBaseImpl(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public AnnotatedTypeBaseImpl(Dova.JDK.java.lang.reflect.Type arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -458,11 +458,11 @@ public partial class AnnotatedTypeFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory$AnnotatedTypeVariableImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedTypeVariableImpl", "(Ljava/lang/reflect/TypeVariable;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTypeVariable", "()Ljava/lang/reflect/TypeVariable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/TypeVariable;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTypeVariable", "()Ljava/lang/reflect/TypeVariable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -471,7 +471,7 @@ public partial class AnnotatedTypeFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/TypeVariable;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V", "")]
-		public AnnotatedTypeVariableImpl(Dova.JDK.java.lang.reflect.TypeVariable arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public AnnotatedTypeVariableImpl(Dova.JDK.java.lang.reflect.TypeVariable arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -523,13 +523,13 @@ public partial class AnnotatedTypeFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory$AnnotatedParameterizedTypeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedParameterizedTypeImpl", "(Ljava/lang/reflect/ParameterizedType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParameterizedType", "()Ljava/lang/reflect/ParameterizedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedActualTypeArguments", "()[Ljava/lang/reflect/AnnotatedType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/ParameterizedType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParameterizedType", "()Ljava/lang/reflect/ParameterizedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedActualTypeArguments", "()[Ljava/lang/reflect/AnnotatedType;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -538,7 +538,7 @@ public partial class AnnotatedTypeFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/ParameterizedType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V", "")]
-		public AnnotatedParameterizedTypeImpl(Dova.JDK.java.lang.reflect.ParameterizedType arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public AnnotatedParameterizedTypeImpl(Dova.JDK.java.lang.reflect.ParameterizedType arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -605,17 +605,17 @@ public partial class AnnotatedTypeFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/reflect/annotation/AnnotatedTypeFactory$AnnotatedWildcardTypeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasUpperBounds", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnnotatedWildcardTypeImpl", "(Ljava/lang/reflect/WildcardType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWildcardType", "()Ljava/lang/reflect/WildcardType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasUpperBounds", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedLowerBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedUpperBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAnnotatedBounds", "([Ljava/lang/reflect/Type;)[Ljava/lang/reflect/AnnotatedType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasUpperBounds", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/reflect/WildcardType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedOwnerType", "()Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWildcardType", "()Ljava/lang/reflect/WildcardType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasUpperBounds", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedLowerBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedUpperBounds", "()[Ljava/lang/reflect/AnnotatedType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAnnotatedBounds", "([Ljava/lang/reflect/Type;)[Ljava/lang/reflect/AnnotatedType;"));
 		}
 
 		[JniSignatureAttribute("Z", "private final")]
@@ -638,7 +638,7 @@ public partial class AnnotatedTypeFactory
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/reflect/WildcardType;Lsun/reflect/annotation/TypeAnnotation$LocationInfo;[Lsun/reflect/annotation/TypeAnnotation;[Lsun/reflect/annotation/TypeAnnotation;Ljava/lang/reflect/AnnotatedElement;)V", "")]
-		public AnnotatedWildcardTypeImpl(Dova.JDK.java.lang.reflect.WildcardType arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public AnnotatedWildcardTypeImpl(Dova.JDK.java.lang.reflect.WildcardType arg0, Dova.JDK.sun.reflect.annotation.TypeAnnotation.LocationInfo arg1, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg2, JavaArray<Dova.JDK.sun.reflect.annotation.TypeAnnotation> arg3, Dova.JDK.java.lang.reflect.AnnotatedElement arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

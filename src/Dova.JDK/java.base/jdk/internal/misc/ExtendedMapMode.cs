@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class ExtendedMapMode
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/misc/ExtendedMapMode;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAP_MODE_CONSTRUCTOR", "Ljava/lang/invoke/MethodHandle;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READ_ONLY_SYNC", "Ljava/nio/channels/FileChannel$MapMode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READ_WRITE_SYNC", "Ljava/nio/channels/FileChannel$MapMode;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedMapMode", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newMapMode", "(Ljava/lang/String;)Ljava/nio/channels/FileChannel$MapMode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAP_MODE_CONSTRUCTOR", "Ljava/lang/invoke/MethodHandle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READ_ONLY_SYNC", "Ljava/nio/channels/FileChannel$MapMode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READ_WRITE_SYNC", "Ljava/nio/channels/FileChannel$MapMode;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newMapMode", "(Ljava/lang/String;)Ljava/nio/channels/FileChannel$MapMode;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/invoke/MethodHandle;", "static final")]
@@ -86,7 +86,7 @@ public partial class ExtendedMapMode
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ExtendedMapMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ExtendedMapMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class ErroneousSnippet
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/ErroneousSnippet;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "probableKind", "Ljdk/jshell/Snippet$Kind;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ErroneousSnippet", "(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "probableKind", "()Ljdk/jshell/Snippet$Kind;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "probableKind", "Ljdk/jshell/Snippet$Kind;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "probableKind", "()Ljdk/jshell/Snippet$Kind;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/Snippet$Kind;", "private final")]
@@ -56,7 +56,7 @@ public partial class ErroneousSnippet
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/Key$ErroneousKey;Ljava/lang/String;Ljdk/jshell/Wrap;Ljdk/jshell/Snippet$Kind;Ljdk/jshell/Snippet$SubKind;)V", "")]
-	public ErroneousSnippet(Dova.JDK.jdk.jshell.Key.ErroneousKey arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.jdk.jshell.Wrap arg2, Dova.JDK.jdk.jshell.Snippet.Kind arg3, Dova.JDK.jdk.jshell.Snippet.SubKind arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public ErroneousSnippet(Dova.JDK.jdk.jshell.Key.ErroneousKey arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.jdk.jshell.Wrap arg2, Dova.JDK.jdk.jshell.Snippet.Kind arg3, Dova.JDK.jdk.jshell.Snippet.SubKind arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

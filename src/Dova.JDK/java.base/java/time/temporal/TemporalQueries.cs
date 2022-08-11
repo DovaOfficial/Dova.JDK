@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class TemporalQueries
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/time/temporal/TemporalQueries;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ZONE_ID", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHRONO", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRECISION", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OFFSET", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ZONE", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCAL_DATE", "Ljava/time/temporal/TemporalQuery;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOCAL_TIME", "Ljava/time/temporal/TemporalQuery;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TemporalQueries", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "offset", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "zone", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "precision", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "chronology", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "zoneId", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "localDate", "()Ljava/time/temporal/TemporalQuery;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "localTime", "()Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ZONE_ID", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHRONO", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRECISION", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OFFSET", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ZONE", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCAL_DATE", "Ljava/time/temporal/TemporalQuery;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOCAL_TIME", "Ljava/time/temporal/TemporalQuery;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "offset", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "zone", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "precision", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "chronology", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "zoneId", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "localDate", "()Ljava/time/temporal/TemporalQuery;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "localTime", "()Ljava/time/temporal/TemporalQuery;"));
 	}
 
 	[JniSignatureAttribute("Ljava/time/temporal/TemporalQuery;", "static final")]
@@ -152,7 +152,7 @@ public partial class TemporalQueries
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public TemporalQueries() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public TemporalQueries() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

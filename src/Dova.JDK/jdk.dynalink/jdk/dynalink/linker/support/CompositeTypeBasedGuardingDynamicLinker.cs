@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,12 +32,12 @@ public partial class CompositeTypeBasedGuardingDynamicLinker
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/linker/support/CompositeTypeBasedGuardingDynamicLinker;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classToLinker", "Ljava/lang/ClassValue;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompositeTypeBasedGuardingDynamicLinker", "(Ljava/lang/Iterable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "optimize", "(Ljava/lang/Iterable;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "addTypeBased", "(Ljava/util/List;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canLinkType", "(Ljava/lang/Class;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classToLinker", "Ljava/lang/ClassValue;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Iterable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "optimize", "(Ljava/lang/Iterable;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "addTypeBased", "(Ljava/util/List;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canLinkType", "(Ljava/lang/Class;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getGuardedInvocation", "(Ljdk/dynalink/linker/LinkRequest;Ljdk/dynalink/linker/LinkerServices;)Ljdk/dynalink/linker/GuardedInvocation;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ClassValue;", "private final")]
@@ -60,7 +60,7 @@ public partial class CompositeTypeBasedGuardingDynamicLinker
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Iterable;)V", "public")]
-	public CompositeTypeBasedGuardingDynamicLinker(Dova.JDK.java.lang.Iterable arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CompositeTypeBasedGuardingDynamicLinker(Dova.JDK.java.lang.Iterable arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -110,12 +110,12 @@ public partial class CompositeTypeBasedGuardingDynamicLinker
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/dynalink/linker/support/CompositeTypeBasedGuardingDynamicLinker$ClassToLinker;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_LINKER", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "linkers", "[Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "singletonLinkers", "[Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassToLinker", "([Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeValue_0", "(Ljava/lang/Class;)Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeValue_1", "(Ljava/lang/Class;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_LINKER", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "linkers", "[Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "singletonLinkers", "[Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeValue_0", "(Ljava/lang/Class;)Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeValue_1", "(Ljava/lang/Class;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/List;", "private static final")]
@@ -166,7 +166,7 @@ public partial class CompositeTypeBasedGuardingDynamicLinker
 		}
 
 		[JniSignatureAttribute("([Ljdk/dynalink/linker/TypeBasedGuardingDynamicLinker;)V", "")]
-		public ClassToLinker(JavaArray<Dova.JDK.jdk.dynalink.linker.TypeBasedGuardingDynamicLinker> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ClassToLinker(JavaArray<Dova.JDK.jdk.dynalink.linker.TypeBasedGuardingDynamicLinker> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

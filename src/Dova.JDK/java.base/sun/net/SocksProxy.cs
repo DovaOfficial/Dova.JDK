@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class SocksProxy
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/SocksProxy;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SocksProxy", "(Ljava/net/SocketAddress;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/net/SocketAddress;I)Lsun/net/SocksProxy;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "protocolVersion", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/SocketAddress;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/net/SocketAddress;I)Lsun/net/SocksProxy;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "protocolVersion", "()I"));
 	}
 
 	[JniSignatureAttribute("I", "private final")]
@@ -57,7 +57,7 @@ public partial class SocksProxy
 	}
 
 	[JniSignatureAttribute("(Ljava/net/SocketAddress;I)V", "private")]
-	public SocksProxy(Dova.JDK.java.net.SocketAddress arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public SocksProxy(Dova.JDK.java.net.SocketAddress arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

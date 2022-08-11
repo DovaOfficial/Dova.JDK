@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,71 +31,71 @@ public partial class ConstantDescs
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/constant/ConstantDescs;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_NAME", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Object", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_String", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Class", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Number", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Integer", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Long", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Float", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Double", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Short", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Byte", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Character", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Boolean", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Void", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Throwable", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Exception", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Enum", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_VarHandle", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodHandles", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodHandles_Lookup", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodHandle", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodType", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_CallSite", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Collection", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_List", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Set", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_Map", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_ConstantDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_ClassDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_EnumDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodTypeDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodHandleDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_DirectMethodHandleDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_VarHandleDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_MethodHandleDesc_Kind", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_DynamicConstantDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_DynamicCallSiteDesc", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_ConstantBootstraps", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INDY_BOOTSTRAP_ARGS", "[Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONDY_BOOTSTRAP_ARGS", "[Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_PRIMITIVE_CLASS", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_ENUM_CONSTANT", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_GET_STATIC_FINAL", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_NULL_CONSTANT", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_VARHANDLE_FIELD", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_VARHANDLE_STATIC_FIELD", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_VARHANDLE_ARRAY", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_INVOKE", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BSM_EXPLICIT_CAST", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_int", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_long", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_float", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_double", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_short", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_byte", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_char", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_boolean", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CD_void", "Ljava/lang/constant/ClassDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NULL", "Ljava/lang/constant/ConstantDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRUE", "Ljava/lang/constant/DynamicConstantDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FALSE", "Ljava/lang/constant/DynamicConstantDesc;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MHD_METHODHANDLE_ASTYPE", "Ljava/lang/constant/DirectMethodHandleDesc;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConstantDescs", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofConstantBootstrap", "(Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/DirectMethodHandleDesc;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofCallsiteBootstrap", "(Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_NAME", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Object", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_String", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Class", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Number", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Integer", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Long", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Float", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Double", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Short", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Byte", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Character", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Boolean", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Void", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Throwable", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Exception", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Enum", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_VarHandle", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodHandles", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodHandles_Lookup", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodHandle", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodType", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_CallSite", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Collection", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_List", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Set", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_Map", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_ConstantDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_ClassDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_EnumDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodTypeDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodHandleDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_DirectMethodHandleDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_VarHandleDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_MethodHandleDesc_Kind", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_DynamicConstantDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_DynamicCallSiteDesc", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_ConstantBootstraps", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INDY_BOOTSTRAP_ARGS", "[Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONDY_BOOTSTRAP_ARGS", "[Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_PRIMITIVE_CLASS", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_ENUM_CONSTANT", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_GET_STATIC_FINAL", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_NULL_CONSTANT", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_VARHANDLE_FIELD", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_VARHANDLE_STATIC_FIELD", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_VARHANDLE_ARRAY", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_INVOKE", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BSM_EXPLICIT_CAST", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_int", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_long", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_float", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_double", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_short", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_byte", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_char", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_boolean", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CD_void", "Ljava/lang/constant/ClassDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NULL", "Ljava/lang/constant/ConstantDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRUE", "Ljava/lang/constant/DynamicConstantDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FALSE", "Ljava/lang/constant/DynamicConstantDesc;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MHD_METHODHANDLE_ASTYPE", "Ljava/lang/constant/DirectMethodHandleDesc;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofConstantBootstrap", "(Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/DirectMethodHandleDesc;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofCallsiteBootstrap", "(Ljava/lang/constant/ClassDesc;Ljava/lang/String;Ljava/lang/constant/ClassDesc;[Ljava/lang/constant/ClassDesc;)Ljava/lang/constant/DirectMethodHandleDesc;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "public static final")]
@@ -972,7 +972,7 @@ public partial class ConstantDescs
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ConstantDescs() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ConstantDescs() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

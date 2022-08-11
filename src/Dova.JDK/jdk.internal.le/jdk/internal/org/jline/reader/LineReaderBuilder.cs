@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,31 +31,31 @@ public partial class LineReaderBuilder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/reader/LineReaderBuilder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "terminal", "Ljdk/internal/org/jline/terminal/Terminal;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "appName", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "variables", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "history", "Ljdk/internal/org/jline/reader/History;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completer", "Ljdk/internal/org/jline/reader/Completer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "memoryHistory", "Ljdk/internal/org/jline/reader/History;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "highlighter", "Ljdk/internal/org/jline/reader/Highlighter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parser", "Ljdk/internal/org/jline/reader/Parser;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "expander", "Ljdk/internal/org/jline/reader/Expander;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completionMatcher", "Ljdk/internal/org/jline/reader/CompletionMatcher;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineReaderBuilder", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "builder", "()Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "option", "(Ljdk/internal/org/jline/reader/LineReader$Option;Z)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljdk/internal/org/jline/reader/LineReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parser", "(Ljdk/internal/org/jline/reader/Parser;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "completer", "(Ljdk/internal/org/jline/reader/Completer;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "history", "(Ljdk/internal/org/jline/reader/History;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expander", "(Ljdk/internal/org/jline/reader/Expander;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "completionMatcher", "(Ljdk/internal/org/jline/reader/CompletionMatcher;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "variables", "(Ljava/util/Map;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appName", "(Ljava/lang/String;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "terminal", "(Ljdk/internal/org/jline/terminal/Terminal;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "highlighter", "(Ljdk/internal/org/jline/reader/Highlighter;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "variable", "(Ljava/lang/String;Ljava/lang/Object;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "terminal", "Ljdk/internal/org/jline/terminal/Terminal;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "appName", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "variables", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "history", "Ljdk/internal/org/jline/reader/History;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completer", "Ljdk/internal/org/jline/reader/Completer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "memoryHistory", "Ljdk/internal/org/jline/reader/History;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "highlighter", "Ljdk/internal/org/jline/reader/Highlighter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parser", "Ljdk/internal/org/jline/reader/Parser;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "expander", "Ljdk/internal/org/jline/reader/Expander;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completionMatcher", "Ljdk/internal/org/jline/reader/CompletionMatcher;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "builder", "()Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "option", "(Ljdk/internal/org/jline/reader/LineReader$Option;Z)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()Ljdk/internal/org/jline/reader/LineReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parser", "(Ljdk/internal/org/jline/reader/Parser;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "completer", "(Ljdk/internal/org/jline/reader/Completer;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "history", "(Ljdk/internal/org/jline/reader/History;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expander", "(Ljdk/internal/org/jline/reader/Expander;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "completionMatcher", "(Ljdk/internal/org/jline/reader/CompletionMatcher;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "variables", "(Ljava/util/Map;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appName", "(Ljava/lang/String;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "terminal", "(Ljdk/internal/org/jline/terminal/Terminal;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "highlighter", "(Ljdk/internal/org/jline/reader/Highlighter;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "variable", "(Ljava/lang/String;Ljava/lang/Object;)Ljdk/internal/org/jline/reader/LineReaderBuilder;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/jline/terminal/Terminal;", "")]
@@ -218,7 +218,7 @@ public partial class LineReaderBuilder
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public LineReaderBuilder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LineReaderBuilder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

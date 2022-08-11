@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class SF2LayerRegion
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/SF2LayerRegion;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sample", "Lcom/sun/media/sound/SF2Sample;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SF2LayerRegion", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSample", "()Lcom/sun/media/sound/SF2Sample;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSample", "(Lcom/sun/media/sound/SF2Sample;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sample", "Lcom/sun/media/sound/SF2Sample;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSample", "()Lcom/sun/media/sound/SF2Sample;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSample", "(Lcom/sun/media/sound/SF2Sample;)V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/media/sound/SF2Sample;", "")]
@@ -57,7 +57,7 @@ public partial class SF2LayerRegion
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public SF2LayerRegion() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SF2LayerRegion() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

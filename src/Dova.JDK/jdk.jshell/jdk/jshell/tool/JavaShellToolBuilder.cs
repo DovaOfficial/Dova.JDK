@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,20 +29,20 @@ public partial interface JavaShellToolBuilder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/tool/JavaShellToolBuilder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "([Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "([Ljava/lang/String;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "builder", "()Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "locale", "(Ljava/util/Locale;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "out", "(Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "out", "(Ljava/io/PrintStream;Ljava/io/PrintStream;Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "err", "(Ljava/io/PrintStream;Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "err", "(Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "in", "(Ljava/io/InputStream;Ljava/io/InputStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "env", "(Ljava/util/Map;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "interactiveTerminal", "(Z)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "persistence", "(Ljava/util/prefs/Preferences;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "persistence", "(Ljava/util/Map;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "promptCapture", "(Z)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "([Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "start", "([Ljava/lang/String;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "builder", "()Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "locale", "(Ljava/util/Locale;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "out", "(Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "out", "(Ljava/io/PrintStream;Ljava/io/PrintStream;Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "err", "(Ljava/io/PrintStream;Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "err", "(Ljava/io/PrintStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "in", "(Ljava/io/InputStream;Ljava/io/InputStream;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "env", "(Ljava/util/Map;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "interactiveTerminal", "(Z)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "persistence", "(Ljava/util/prefs/Preferences;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "persistence", "(Ljava/util/Map;)Ljdk/jshell/tool/JavaShellToolBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "promptCapture", "(Z)Ljdk/jshell/tool/JavaShellToolBuilder;"));
 	}
 
 	[JniSignatureAttribute("([Ljava/lang/String;)V", "public abstract transient")]

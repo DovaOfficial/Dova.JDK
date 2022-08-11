@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface ReferenceCountingDevice
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/ReferenceCountingDevice;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReceiverReferenceCounting", "()Ljavax/sound/midi/Receiver;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransmitterReferenceCounting", "()Ljavax/sound/midi/Transmitter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReceiverReferenceCounting", "()Ljavax/sound/midi/Receiver;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransmitterReferenceCounting", "()Ljavax/sound/midi/Transmitter;"));
 	}
 
 	[JniSignatureAttribute("()Ljavax/sound/midi/Receiver;", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,11 +32,11 @@ public partial class ResolverProviderConfiguration
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/ResolverProviderConfiguration;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "builtinResolver", "Ljava/net/spi/InetAddressResolver;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localHostNameSupplier", "Ljava/util/function/Supplier;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResolverProviderConfiguration", "(Ljava/net/spi/InetAddressResolver;Ljava/util/function/Supplier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "builtinResolver", "()Ljava/net/spi/InetAddressResolver;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lookupLocalHostName", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "builtinResolver", "Ljava/net/spi/InetAddressResolver;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localHostNameSupplier", "Ljava/util/function/Supplier;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/spi/InetAddressResolver;Ljava/util/function/Supplier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "builtinResolver", "()Ljava/net/spi/InetAddressResolver;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lookupLocalHostName", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/spi/InetAddressResolver;", "private final")]
@@ -73,7 +73,7 @@ public partial class ResolverProviderConfiguration
 	}
 
 	[JniSignatureAttribute("(Ljava/net/spi/InetAddressResolver;Ljava/util/function/Supplier;)V", "public")]
-	public ResolverProviderConfiguration(Dova.JDK.java.net.spi.InetAddressResolver arg0, Dova.JDK.java.util.function.Supplier arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ResolverProviderConfiguration(Dova.JDK.java.net.spi.InetAddressResolver arg0, Dova.JDK.java.util.function.Supplier arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

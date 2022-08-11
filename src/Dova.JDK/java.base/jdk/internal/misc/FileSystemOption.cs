@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class FileSystemOption
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/misc/FileSystemOption;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERRUPTIBLE", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_READ", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_WRITE", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHARE_DELETE", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_TREE", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DIRECT", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_HIGH", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_MEDIUM", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SENSITIVITY_LOW", "Ljdk/internal/misc/FileSystemOption;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "internalOption", "Lsun/nio/fs/ExtendedOptions$InternalOption;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FileSystemOption", "(Lsun/nio/fs/ExtendedOptions$InternalOption;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/OpenOption;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/CopyOption;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;Ljava/lang/Object;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERRUPTIBLE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSHARE_READ", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSHARE_WRITE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSHARE_DELETE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FILE_TREE", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DIRECT", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SENSITIVITY_HIGH", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SENSITIVITY_MEDIUM", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SENSITIVITY_LOW", "Ljdk/internal/misc/FileSystemOption;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "internalOption", "Lsun/nio/fs/ExtendedOptions$InternalOption;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/nio/fs/ExtendedOptions$InternalOption;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "register", "(Ljava/nio/file/OpenOption;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "register", "(Ljava/nio/file/CopyOption;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "register", "(Ljava/nio/file/WatchEvent$Modifier;Ljava/lang/Object;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/misc/FileSystemOption;", "public static final")]
@@ -194,7 +194,7 @@ public partial class FileSystemOption
 	}
 
 	[JniSignatureAttribute("(Lsun/nio/fs/ExtendedOptions$InternalOption;)V", "private")]
-	public FileSystemOption(Dova.JDK.sun.nio.fs.ExtendedOptions.InternalOption arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public FileSystemOption(Dova.JDK.sun.nio.fs.ExtendedOptions.InternalOption arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

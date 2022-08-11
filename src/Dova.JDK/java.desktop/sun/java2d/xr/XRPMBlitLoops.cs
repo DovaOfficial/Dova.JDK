@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class XRPMBlitLoops
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/xr/XRPMBlitLoops;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "argbTmpPM", "Ljava/lang/ref/WeakReference;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "rgbTmpPM", "Ljava/lang/ref/WeakReference;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XRPMBlitLoops", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "register", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "cacheToTmpSurface", "(Lsun/java2d/SurfaceData;Lsun/java2d/xr/XRSurfaceData;IIII)Lsun/java2d/xr/XRSurfaceData;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "argbTmpPM", "Ljava/lang/ref/WeakReference;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "rgbTmpPM", "Ljava/lang/ref/WeakReference;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "register", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "cacheToTmpSurface", "(Lsun/java2d/SurfaceData;Lsun/java2d/xr/XRSurfaceData;IIII)Lsun/java2d/xr/XRSurfaceData;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ref/WeakReference;", "static")]
@@ -72,7 +72,7 @@ public partial class XRPMBlitLoops
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public XRPMBlitLoops() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public XRPMBlitLoops() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

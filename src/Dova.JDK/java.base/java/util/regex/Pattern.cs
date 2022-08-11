@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,133 +32,133 @@ public partial class Pattern
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNIX_LINES", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CASE_INSENSITIVE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMENTS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MULTILINE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LITERAL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOTALL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNICODE_CASE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CANON_EQ", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNICODE_CHARACTER_CLASS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_FLAGS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pattern", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compiled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalizedPattern", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljava/util/regex/Pattern$Node;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matchRoot", "Ljava/util/regex/Pattern$Node;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buffer", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedGroups", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupNodes", "[Ljava/util/regex/Pattern$GroupHead;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "topClosureNodes", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localTCNCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasGroupRef", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "temp", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "capturingGroupCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cursor", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "patternLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hasSupplementary", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_REPS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "accept", "Ljava/util/regex/Pattern$Node;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "lastAccept", "Ljava/util/regex/Pattern$Node;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Pattern", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clazz", "(Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "flags", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getClass", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "x", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "c", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "single", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "o", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(ILjava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ref", "(I)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mark", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(Ljava/lang/String;)Ljava/util/regex/PatternSyntaxException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peek", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "u", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "range", "(Ljava/util/regex/Pattern$BitClass;)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "quote", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sequence", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "escape", "(ZZZ)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cursor", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unread", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ALL", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expr", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "inRange", "(III)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "negate", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "family", "(ZZ)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pattern", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "N", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "namedGroups", "()Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalizeSlice", "(Ljava/lang/String;IILjava/lang/StringBuilder;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalizeClazz", "(Ljava/lang/String;IILjava/lang/StringBuilder;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "produceEquivalentAlternation", "(Ljava/lang/String;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "countChars", "(Ljava/lang/CharSequence;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "producePermutations", "(Ljava/lang/String;)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "composeOneStep", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "countCodePoints", "(Ljava/lang/CharSequence;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "has", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isSupplementary", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RemoveQEQuoting", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSlice", "([IIZ)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parsePastWhitespace", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekPastWhitespace", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekPastLine", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parsePastLine", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLineSeparator", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "group0", "()Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newCharProperty", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharProperty;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextEscaped", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "atom", "()Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "UNIXDOT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "DOT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "closure", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "HorizWS", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "VertWS", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "groupname", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "SingleU", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "SingleI", "(II)Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "SingleS", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "Single", "(I)Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bitsOrSingle", "(Ljava/util/regex/Pattern$BitClass;I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "CIRangeU", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "CIRange", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "Range", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createGroup", "(Z)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSupplementary", "(II)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addFlag", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "subFlag", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "qtype", "()Ljava/util/regex/Pattern$Qtype;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "curly", "(Ljava/util/regex/Pattern$Node;I)Ljava/util/regex/Pattern$Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uxxxx", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setcursor", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readEscaped", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "hasBaseCharacter", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asPredicate", "()Ljava/util/function/Predicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asMatchPredicate", "()Ljava/util/function/Predicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "splitAsStream", "(Ljava/lang/CharSequence;)Ljava/util/stream/Stream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNIX_LINES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CASE_INSENSITIVE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMENTS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MULTILINE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LITERAL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOTALL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNICODE_CASE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CANON_EQ", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNICODE_CHARACTER_CLASS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_FLAGS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pattern", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compiled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalizedPattern", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljava/util/regex/Pattern$Node;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matchRoot", "Ljava/util/regex/Pattern$Node;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buffer", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedGroups", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupNodes", "[Ljava/util/regex/Pattern$GroupHead;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "topClosureNodes", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localTCNCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasGroupRef", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "temp", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "capturingGroupCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cursor", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "patternLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hasSupplementary", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_REPS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "accept", "Ljava/util/regex/Pattern$Node;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "lastAccept", "Ljava/util/regex/Pattern$Node;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clazz", "(Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "flags", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getClass", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "matches", "(Ljava/lang/String;Ljava/lang/CharSequence;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "compile", "(Ljava/lang/String;)Ljava/util/regex/Pattern;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "compile", "(Ljava/lang/String;I)Ljava/util/regex/Pattern;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matcher", "(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "split", "(Ljava/lang/CharSequence;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "split", "(Ljava/lang/CharSequence;I)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "x", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "c", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "single", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "o", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readObject", "(Ljava/io/ObjectInputStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(ILjava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "ref", "(I)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mark", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(Ljava/lang/String;)Ljava/util/regex/PatternSyntaxException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peek", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "u", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "range", "(Ljava/util/regex/Pattern$BitClass;)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "quote", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sequence", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "escape", "(ZZZ)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cursor", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unread", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ALL", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expr", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "inRange", "(III)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "negate", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "family", "(ZZ)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pattern", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "N", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "namedGroups", "()Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalizeSlice", "(Ljava/lang/String;IILjava/lang/StringBuilder;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalizeClazz", "(Ljava/lang/String;IILjava/lang/StringBuilder;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "produceEquivalentAlternation", "(Ljava/lang/String;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "countChars", "(Ljava/lang/CharSequence;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "producePermutations", "(Ljava/lang/String;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "composeOneStep", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "countCodePoints", "(Ljava/lang/CharSequence;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "has", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isSupplementary", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "RemoveQEQuoting", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSlice", "([IIZ)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parsePastWhitespace", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekPastWhitespace", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekPastLine", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parsePastLine", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLineSeparator", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "group0", "()Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newCharProperty", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharProperty;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextEscaped", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "atom", "()Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "UNIXDOT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "DOT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "closure", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "HorizWS", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "VertWS", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "groupname", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "SingleU", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "SingleI", "(II)Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "SingleS", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "Single", "(I)Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bitsOrSingle", "(Ljava/util/regex/Pattern$BitClass;I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "CIRangeU", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "CIRange", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "Range", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createGroup", "(Z)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSupplementary", "(II)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addFlag", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "subFlag", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "qtype", "()Ljava/util/regex/Pattern$Qtype;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "curly", "(Ljava/util/regex/Pattern$Node;I)Ljava/util/regex/Pattern$Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uxxxx", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setcursor", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readEscaped", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "hasBaseCharacter", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asPredicate", "()Ljava/util/function/Predicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asMatchPredicate", "()Ljava/util/function/Predicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "splitAsStream", "(Ljava/lang/CharSequence;)Ljava/util/stream/Stream;"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -657,7 +657,7 @@ public partial class Pattern
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public Pattern(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public Pattern(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -1304,10 +1304,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Start;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minLength", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Start", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minLength", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1330,7 +1330,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;)V", "")]
-		public Start(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Start(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1368,10 +1368,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Node;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "next", "Ljava/util/regex/Pattern$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Node", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "next", "Ljava/util/regex/Pattern$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -1394,7 +1394,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Node() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Node() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1432,10 +1432,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$GroupHead;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tail", "Ljava/util/regex/Pattern$GroupTail;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GroupHead", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tail", "Ljava/util/regex/Pattern$GroupTail;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -1472,7 +1472,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public GroupHead(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public GroupHead(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1502,8 +1502,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Slice;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Slice", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1512,7 +1512,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public Slice(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Slice(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1543,13 +1543,13 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BnM;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buffer", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lastOcc", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "optoSft", "[I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BnM", "([I[I[ILjava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "optimize", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buffer", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lastOcc", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "optoSft", "[I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I[I[ILjava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "optimize", "(Ljava/util/regex/Pattern$Node;)Ljava/util/regex/Pattern$Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("[I", "")]
@@ -1600,7 +1600,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I[I[ILjava/util/regex/Pattern$Node;)V", "")]
-		public BnM(JavaArray<int> arg0, JavaArray<int> arg1, JavaArray<int> arg2, Dova.JDK.java.util.regex.Pattern.Node arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public BnM(JavaArray<int> arg0, JavaArray<int> arg1, JavaArray<int> arg2, Dova.JDK.java.util.regex.Pattern.Node arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -1644,8 +1644,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$StartS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StartS", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1654,7 +1654,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;)V", "")]
-		public StartS(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StartS(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1684,8 +1684,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Begin;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Begin", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1694,7 +1694,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Begin() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Begin() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1725,10 +1725,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$First;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "First", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -1751,7 +1751,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;)V", "")]
-		public First(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public First(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1789,16 +1789,16 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Loop;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "body", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "countIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "beginIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmin", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmax", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "posIndex", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Loop", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchInit", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "body", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "countIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "beginIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmin", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmax", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "posIndex", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchInit", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -1891,7 +1891,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(II)V", "")]
-		public Loop(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Loop(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1935,9 +1935,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BranchConn;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BranchConn", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1946,7 +1946,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public BranchConn() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BranchConn() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1984,13 +1984,13 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Branch;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "atoms", "[Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "conn", "Ljava/util/regex/Pattern$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Branch", "(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "atoms", "[Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "conn", "Ljava/util/regex/Pattern$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("[Ljava/util/regex/Pattern$Node;", "")]
@@ -2041,7 +2041,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Node;)V", "")]
-		public Branch(Dova.JDK.java.util.regex.Pattern.Node arg0, Dova.JDK.java.util.regex.Pattern.Node arg1, Dova.JDK.java.util.regex.Pattern.Node arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Branch(Dova.JDK.java.util.regex.Pattern.Node arg0, Dova.JDK.java.util.regex.Pattern.Node arg1, Dova.JDK.java.util.regex.Pattern.Node arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -2085,10 +2085,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$NFCCharProperty;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFCCharProperty", "(Ljava/util/regex/Pattern$CharPredicate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$CharPredicate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$CharPredicate;", "")]
@@ -2111,7 +2111,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$CharPredicate;)V", "")]
-		public NFCCharProperty(Dova.JDK.java.util.regex.Pattern.CharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public NFCCharProperty(Dova.JDK.java.util.regex.Pattern.CharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2147,11 +2147,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$CharPredicate;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "is", "(I)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "negate", "()Ljava/util/regex/Pattern$CharPredicate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "is", "(I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "negate", "()Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
 		}
 
 		[JniSignatureAttribute("(I)Z", "public abstract")]
@@ -2205,10 +2205,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$CharProperty;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CharProperty", "(Ljava/util/regex/Pattern$CharPredicate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$CharPredicate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$CharPredicate;", "final")]
@@ -2231,7 +2231,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$CharPredicate;)V", "")]
-		public CharProperty(Dova.JDK.java.util.regex.Pattern.CharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CharProperty(Dova.JDK.java.util.regex.Pattern.CharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2268,8 +2268,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$UnixCaret;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnixCaret", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2278,7 +2278,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public UnixCaret() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public UnixCaret() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2308,8 +2308,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Caret;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Caret", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2318,7 +2318,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Caret() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Caret() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2349,10 +2349,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$UnixDollar;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "multiline", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnixDollar", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "multiline", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -2375,7 +2375,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Z)V", "")]
-		public UnixDollar(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public UnixDollar(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2413,10 +2413,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Dollar;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "multiline", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dollar", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "multiline", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Z", "")]
@@ -2439,7 +2439,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Z)V", "")]
-		public Dollar(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Dollar(bool arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2477,11 +2477,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$CIBackRef;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "doUnicodeCase", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CIBackRef", "(IZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "doUnicodeCase", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -2518,7 +2518,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(IZ)V", "")]
-		public CIBackRef(int arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CIBackRef(int arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -2556,10 +2556,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BackRef;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupIndex", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BackRef", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupIndex", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -2582,7 +2582,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public BackRef(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public BackRef(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -2620,16 +2620,16 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Bound;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LEFT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RIGHT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "useUWORD", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Bound", "(IZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "check", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isWord", "(I)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LEFT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RIGHT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BOTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "useUWORD", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "check", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isWord", "(I)Z"));
 		}
 
 		[JniSignatureAttribute("I", "static")]
@@ -2722,7 +2722,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(IZ)V", "")]
-		public Bound(int arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Bound(int arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -2766,9 +2766,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BmpCharPredicate;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "and", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "union", "(Ljava/util/regex/Pattern$CharPredicate;Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$CharPredicate;)Ljava/util/regex/Pattern$CharPredicate;", "public")]
@@ -2807,8 +2807,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$LastMatch;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LastMatch", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2817,7 +2817,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public LastMatch() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LastMatch() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2847,9 +2847,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$LineEnding;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineEnding", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2858,7 +2858,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public LineEnding() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LineEnding() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2895,9 +2895,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$XGrapheme;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XGrapheme", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2906,7 +2906,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public XGrapheme() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public XGrapheme() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2943,8 +2943,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$GraphemeBound;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GraphemeBound", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2953,7 +2953,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public GraphemeBound() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public GraphemeBound() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2983,8 +2983,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$End;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "End", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2993,7 +2993,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public End() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public End() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3025,11 +3025,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BitClass;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bits", "[Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BitClass", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(II)Ljava/util/regex/Pattern$BitClass;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "is", "(I)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bits", "[Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(II)Ljava/util/regex/Pattern$BitClass;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "is", "(I)Z"));
 		}
 
 		[JniSignatureAttribute("[Z", "final")]
@@ -3066,7 +3066,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public BitClass() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public BitClass() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3103,8 +3103,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BmpCharProperty;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BmpCharProperty", "(Ljava/util/regex/Pattern$BmpCharPredicate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$BmpCharPredicate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3113,7 +3113,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$BmpCharPredicate;)V", "")]
-		public BmpCharProperty(Dova.JDK.java.util.regex.Pattern.BmpCharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public BmpCharProperty(Dova.JDK.java.util.regex.Pattern.BmpCharPredicate arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -3144,9 +3144,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Pos;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Pos", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3169,7 +3169,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;)V", "")]
-		public Pos(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Pos(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -3200,9 +3200,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Neg;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Neg", "(Ljava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3225,7 +3225,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;)V", "")]
-		public Neg(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Neg(Dova.JDK.java.util.regex.Pattern.Node arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -3256,11 +3256,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Ques;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Ques", "(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Qtype;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Qtype;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3297,7 +3297,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;Ljava/util/regex/Pattern$Qtype;)V", "")]
-		public Ques(Dova.JDK.java.util.regex.Pattern.Node arg0, Dova.JDK.java.util.regex.Pattern.Qtype arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Ques(Dova.JDK.java.util.regex.Pattern.Node arg0, Dova.JDK.java.util.regex.Pattern.Qtype arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -3335,15 +3335,15 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Qtype;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GREEDY", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LAZY", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POSSESSIVE", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INDEPENDENT", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljava/util/regex/Pattern$Qtype;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Qtype", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljava/util/regex/Pattern$Qtype;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljava/util/regex/Pattern$Qtype;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GREEDY", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LAZY", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POSSESSIVE", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INDEPENDENT", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljava/util/regex/Pattern$Qtype;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljava/util/regex/Pattern$Qtype;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljava/util/regex/Pattern$Qtype;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljava/util/regex/Pattern$Qtype;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Qtype;", "public static final")]
@@ -3422,7 +3422,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Qtype(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Qtype(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -3467,9 +3467,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$LookBehindEndNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/util/regex/Pattern$LookBehindEndNode;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LookBehindEndNode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljava/util/regex/Pattern$LookBehindEndNode;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$LookBehindEndNode;", "static")]
@@ -3492,7 +3492,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public LookBehindEndNode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LookBehindEndNode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3523,12 +3523,12 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$TreeInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minLength", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxLength", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxValid", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "deterministic", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TreeInfo", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minLength", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxLength", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxValid", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "deterministic", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -3593,7 +3593,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public TreeInfo() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TreeInfo() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -3622,8 +3622,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BehindS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BehindS", "(Ljava/util/regex/Pattern$Node;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3632,7 +3632,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;II)V", "")]
-		public BehindS(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public BehindS(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -3663,11 +3663,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Behind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmax", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmin", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Behind", "(Ljava/util/regex/Pattern$Node;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmax", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmin", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3718,7 +3718,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;II)V", "")]
-		public Behind(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Behind(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -3748,8 +3748,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$NotBehindS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotBehindS", "(Ljava/util/regex/Pattern$Node;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -3758,7 +3758,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;II)V", "")]
-		public NotBehindS(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public NotBehindS(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -3789,11 +3789,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$NotBehind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmax", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rmin", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NotBehind", "(Ljava/util/regex/Pattern$Node;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cond", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmax", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rmin", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3844,7 +3844,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;II)V", "")]
-		public NotBehind(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public NotBehind(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -3875,16 +3875,16 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Curly;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmin", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmax", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Curly", "(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match0", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match1", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match2", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmin", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmax", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match0", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match1", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match2", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -3949,7 +3949,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;)V", "")]
-		public Curly(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2, Dova.JDK.java.util.regex.Pattern.Qtype arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Curly(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2, Dova.JDK.java.util.regex.Pattern.Qtype arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -4008,10 +4008,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$GroupTail;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupIndex", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GroupTail", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupIndex", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -4048,7 +4048,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(II)V", "")]
-		public GroupTail(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public GroupTail(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -4079,19 +4079,19 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$GroupCurly;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmin", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmax", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupIndex", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "capture", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GroupCurly", "(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;IIZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match0", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match1", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match2", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "atom", "Ljava/util/regex/Pattern$Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljava/util/regex/Pattern$Qtype;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmin", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmax", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupIndex", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "capture", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;IIZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match0", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match1", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match2", "(Ljava/util/regex/Matcher;IILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Node;", "")]
@@ -4198,7 +4198,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Node;IILjava/util/regex/Pattern$Qtype;IIZ)V", "")]
-		public GroupCurly(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2, Dova.JDK.java.util.regex.Pattern.Qtype arg3, int arg4, int arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+		public GroupCurly(Dova.JDK.java.util.regex.Pattern.Node arg0, int arg1, int arg2, Dova.JDK.java.util.regex.Pattern.Qtype arg3, int arg4, int arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 		{
 		}
 
@@ -4256,10 +4256,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$LazyLoop;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoop", "(II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchInit", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchInit", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4268,7 +4268,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(II)V", "")]
-		public LazyLoop(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public LazyLoop(int arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -4313,10 +4313,10 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$Prolog;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loop", "Ljava/util/regex/Pattern$Loop;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Prolog", "(Ljava/util/regex/Pattern$Loop;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loop", "Ljava/util/regex/Pattern$Loop;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$Loop;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$Loop;", "")]
@@ -4339,7 +4339,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$Loop;)V", "")]
-		public Prolog(Dova.JDK.java.util.regex.Pattern.Loop arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Prolog(Dova.JDK.java.util.regex.Pattern.Loop arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4376,8 +4376,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BmpCharPropertyGreedy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BmpCharPropertyGreedy", "(Ljava/util/regex/Pattern$BmpCharProperty;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$BmpCharProperty;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4386,7 +4386,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$BmpCharProperty;I)V", "")]
-		public BmpCharPropertyGreedy(Dova.JDK.java.util.regex.Pattern.BmpCharProperty arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BmpCharPropertyGreedy(Dova.JDK.java.util.regex.Pattern.BmpCharProperty arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -4417,11 +4417,11 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$CharPropertyGreedy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cmin", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CharPropertyGreedy", "(Ljava/util/regex/Pattern$CharProperty;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "predicate", "Ljava/util/regex/Pattern$CharPredicate;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cmin", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/regex/Pattern$CharProperty;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/regex/Pattern$CharPredicate;", "final")]
@@ -4458,7 +4458,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("(Ljava/util/regex/Pattern$CharProperty;I)V", "")]
-		public CharPropertyGreedy(Dova.JDK.java.util.regex.Pattern.CharProperty arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CharPropertyGreedy(Dova.JDK.java.util.regex.Pattern.CharProperty arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -4495,8 +4495,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceUS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceUS", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toLower", "(I)I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toLower", "(I)I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4505,7 +4505,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceUS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceUS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4535,8 +4535,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceU;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceU", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4545,7 +4545,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceU(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceU(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4575,9 +4575,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceIS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceIS", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toLower", "(I)I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toLower", "(I)I"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4586,7 +4586,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceIS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceIS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4623,8 +4623,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceI;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceI", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4633,7 +4633,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceI(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceI(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4663,8 +4663,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceS", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4673,7 +4673,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceS(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -4703,8 +4703,8 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$LastNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LastNode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -4713,7 +4713,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public LastNode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public LastNode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4744,9 +4744,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$BnMS;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lengthInChars", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BnMS", "([I[I[ILjava/util/regex/Pattern$Node;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lengthInChars", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I[I[ILjava/util/regex/Pattern$Node;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljava/util/regex/Matcher;ILjava/lang/CharSequence;)Z"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -4769,7 +4769,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I[I[ILjava/util/regex/Pattern$Node;)V", "")]
-		public BnMS(JavaArray<int> arg0, JavaArray<int> arg1, JavaArray<int> arg2, Dova.JDK.java.util.regex.Pattern.Node arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public BnMS(JavaArray<int> arg0, JavaArray<int> arg1, JavaArray<int> arg2, Dova.JDK.java.util.regex.Pattern.Node arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -4800,9 +4800,9 @@ public partial class Pattern
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/Pattern$SliceNode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buffer", "[I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SliceNode", "([I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buffer", "[I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "study", "(Ljava/util/regex/Pattern$TreeInfo;)Z"));
 		}
 
 		[JniSignatureAttribute("[I", "")]
@@ -4825,7 +4825,7 @@ public partial class Pattern
 		}
 
 		[JniSignatureAttribute("([I)V", "")]
-		public SliceNode(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SliceNode(JavaArray<int> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

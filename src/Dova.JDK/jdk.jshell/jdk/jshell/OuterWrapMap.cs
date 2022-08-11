@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class OuterWrapMap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/OuterWrapMap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classOuters", "Ljava/util/Map;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OuterWrapMap", "(Ljdk/jshell/JShell;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapInClass", "(Ljava/util/Set;Ljava/util/Collection;Ljava/util/List;Ljava/util/List;)Ljdk/jshell/OuterWrap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapImport", "(Ljdk/jshell/Wrap;Ljdk/jshell/Snippet;)Ljdk/jshell/OuterWrap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapInTrialClass", "(Ljdk/jshell/Wrap;)Ljdk/jshell/OuterWrap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOuter", "(Ljava/lang/String;)Ljdk/jshell/OuterSnippetsClassWrap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrappedInClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljdk/jshell/Wrap$CompoundWrap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classOuters", "Ljava/util/Map;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapInClass", "(Ljava/util/Set;Ljava/util/Collection;Ljava/util/List;Ljava/util/List;)Ljdk/jshell/OuterWrap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapImport", "(Ljdk/jshell/Wrap;Ljdk/jshell/Snippet;)Ljdk/jshell/OuterWrap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapInTrialClass", "(Ljdk/jshell/Wrap;)Ljdk/jshell/OuterWrap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOuter", "(Ljava/lang/String;)Ljdk/jshell/OuterSnippetsClassWrap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrappedInClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljdk/jshell/Wrap$CompoundWrap;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/JShell;", "private final")]
@@ -75,7 +75,7 @@ public partial class OuterWrapMap
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;)V", "")]
-	public OuterWrapMap(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public OuterWrapMap(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

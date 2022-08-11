@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class CK_TLS12_KEY_MAT_PARAMS
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/CK_TLS12_KEY_MAT_PARAMS;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ulMacSizeInBits", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ulKeySizeInBits", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ulIVSizeInBits", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bIsExport", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "RandomInfo", "Lsun/security/pkcs11/wrapper/CK_SSL3_RANDOM_DATA;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pReturnedKeyMaterial", "Lsun/security/pkcs11/wrapper/CK_SSL3_KEY_MAT_OUT;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prfHashMechanism", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_TLS12_KEY_MAT_PARAMS", "(IIIZLsun/security/pkcs11/wrapper/CK_SSL3_RANDOM_DATA;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ulMacSizeInBits", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ulKeySizeInBits", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ulIVSizeInBits", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bIsExport", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "RandomInfo", "Lsun/security/pkcs11/wrapper/CK_SSL3_RANDOM_DATA;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pReturnedKeyMaterial", "Lsun/security/pkcs11/wrapper/CK_SSL3_KEY_MAT_OUT;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prfHashMechanism", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IIIZLsun/security/pkcs11/wrapper/CK_SSL3_RANDOM_DATA;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("J", "public")]
@@ -146,7 +146,7 @@ public partial class CK_TLS12_KEY_MAT_PARAMS
 	}
 
 	[JniSignatureAttribute("(IIIZLsun/security/pkcs11/wrapper/CK_SSL3_RANDOM_DATA;J)V", "public")]
-	public CK_TLS12_KEY_MAT_PARAMS(int arg0, int arg1, int arg2, bool arg3, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA arg4, long arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public CK_TLS12_KEY_MAT_PARAMS(int arg0, int arg1, int arg2, bool arg3, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_RANDOM_DATA arg4, long arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 

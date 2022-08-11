@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface FlavorMap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/datatransfer/FlavorMap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNativesForFlavors", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlavorsForNatives", "([Ljava/lang/String;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNativesForFlavors", "([Ljava/awt/datatransfer/DataFlavor;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlavorsForNatives", "([Ljava/lang/String;)Ljava/util/Map;"));
 	}
 
 	[JniSignatureAttribute("([Ljava/awt/datatransfer/DataFlavor;)Ljava/util/Map;", "public abstract")]

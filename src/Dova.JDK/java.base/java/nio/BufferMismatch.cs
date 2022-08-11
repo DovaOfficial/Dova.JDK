@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class BufferMismatch
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/nio/BufferMismatch;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPED_MEMORY_ACCESS", "Ljdk/internal/misc/ScopedMemoryAccess;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BufferMismatch", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/FloatBuffer;ILjava/nio/FloatBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/LongBuffer;ILjava/nio/LongBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/DoubleBuffer;ILjava/nio/DoubleBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/IntBuffer;ILjava/nio/IntBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/ShortBuffer;ILjava/nio/ShortBuffer;II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "mismatch", "(Ljava/nio/CharBuffer;ILjava/nio/CharBuffer;II)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCOPED_MEMORY_ACCESS", "Ljdk/internal/misc/ScopedMemoryAccess;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/FloatBuffer;ILjava/nio/FloatBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/LongBuffer;ILjava/nio/LongBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/DoubleBuffer;ILjava/nio/DoubleBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/IntBuffer;ILjava/nio/IntBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/ByteBuffer;ILjava/nio/ByteBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/ShortBuffer;ILjava/nio/ShortBuffer;II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "mismatch", "(Ljava/nio/CharBuffer;ILjava/nio/CharBuffer;II)I"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/misc/ScopedMemoryAccess;", "static final")]
@@ -62,7 +62,7 @@ public partial class BufferMismatch
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public BufferMismatch() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public BufferMismatch() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

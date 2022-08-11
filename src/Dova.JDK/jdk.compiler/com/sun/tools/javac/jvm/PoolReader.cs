@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,36 +31,36 @@ public partial class PoolReader
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/PoolReader;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Lcom/sun/tools/javac/jvm/ClassReader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buf", "Lcom/sun/tools/javac/util/ByteBuffer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "syms", "Lcom/sun/tools/javac/code/Symtab;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pool", "Lcom/sun/tools/javac/jvm/PoolReader$ImmutablePoolHelper;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "classCP", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "constantCP", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "moduleCP", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "packageCP", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "utf8CP", "Ljava/util/BitSet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "nameAndTypeCP", "Ljava/util/BitSet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PoolReader", "(Lcom/sun/tools/javac/util/ByteBuffer;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PoolReader", "(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/ByteBuffer;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PoolReader", "(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "(I)Lcom/sun/tools/javac/util/Name;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getModule", "(I)Lcom/sun/tools/javac/code/Symbol$ModuleSymbol;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClass", "(I)Lcom/sun/tools/javac/code/Symbol$ClassSymbol;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPackage", "(I)Lcom/sun/tools/javac/code/Symbol$PackageSymbol;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolve", "(Lcom/sun/tools/javac/util/ByteBuffer;II)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "(I)Lcom/sun/tools/javac/code/Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getUtf8", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sizeof", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekClassName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekPackageName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekModuleName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "peekName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasTag", "(II)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConstant", "(I)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readPool", "(Lcom/sun/tools/javac/util/ByteBuffer;I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNameAndType", "(I)Lcom/sun/tools/javac/jvm/PoolConstant$NameAndType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Lcom/sun/tools/javac/jvm/ClassReader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buf", "Lcom/sun/tools/javac/util/ByteBuffer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "syms", "Lcom/sun/tools/javac/code/Symtab;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pool", "Lcom/sun/tools/javac/jvm/PoolReader$ImmutablePoolHelper;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "classCP", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "constantCP", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "moduleCP", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "packageCP", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "utf8CP", "Ljava/util/BitSet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "nameAndTypeCP", "Ljava/util/BitSet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/ByteBuffer;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/ByteBuffer;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "(I)Lcom/sun/tools/javac/util/Name;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getModule", "(I)Lcom/sun/tools/javac/code/Symbol$ModuleSymbol;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClass", "(I)Lcom/sun/tools/javac/code/Symbol$ClassSymbol;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPackage", "(I)Lcom/sun/tools/javac/code/Symbol$PackageSymbol;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolve", "(Lcom/sun/tools/javac/util/ByteBuffer;II)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "(I)Lcom/sun/tools/javac/code/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getUtf8", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sizeof", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekClassName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekPackageName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekModuleName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "peekName", "(ILcom/sun/tools/javac/util/Name$NameMapper;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasTag", "(II)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConstant", "(I)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readPool", "(Lcom/sun/tools/javac/util/ByteBuffer;I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNameAndType", "(I)Lcom/sun/tools/javac/jvm/PoolConstant$NameAndType;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/jvm/ClassReader;", "private final")]
@@ -223,17 +223,17 @@ public partial class PoolReader
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/ByteBuffer;)V", "")]
-	public PoolReader(Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public PoolReader(Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/ByteBuffer;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V", "")]
-	public PoolReader(Dova.JDK.com.sun.tools.javac.jvm.ClassReader arg0, Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg1, Dova.JDK.com.sun.tools.javac.util.Names arg2, Dova.JDK.com.sun.tools.javac.code.Symtab arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public PoolReader(Dova.JDK.com.sun.tools.javac.jvm.ClassReader arg0, Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg1, Dova.JDK.com.sun.tools.javac.util.Names arg2, Dova.JDK.com.sun.tools.javac.code.Symtab arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/jvm/ClassReader;Lcom/sun/tools/javac/util/Names;Lcom/sun/tools/javac/code/Symtab;)V", "")]
-	public PoolReader(Dova.JDK.com.sun.tools.javac.jvm.ClassReader arg0, Dova.JDK.com.sun.tools.javac.util.Names arg1, Dova.JDK.com.sun.tools.javac.code.Symtab arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public PoolReader(Dova.JDK.com.sun.tools.javac.jvm.ClassReader arg0, Dova.JDK.com.sun.tools.javac.util.Names arg1, Dova.JDK.com.sun.tools.javac.code.Symtab arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
@@ -368,15 +368,15 @@ public partial class PoolReader
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/jvm/PoolReader$ImmutablePoolHelper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "[Ljava/lang/Object;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offsets", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "poolbuf", "Lcom/sun/tools/javac/util/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/javac/jvm/PoolReader;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImmutablePoolHelper", "(Lcom/sun/tools/javac/jvm/PoolReader;Lcom/sun/tools/javac/util/ByteBuffer;[I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkIndex", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "offset", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tag", "(I)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readIfNeeded", "(ILjava/util/BitSet;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "values", "[Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offsets", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "poolbuf", "Lcom/sun/tools/javac/util/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/javac/jvm/PoolReader;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/jvm/PoolReader;Lcom/sun/tools/javac/util/ByteBuffer;[I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkIndex", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "offset", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tag", "(I)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readIfNeeded", "(ILjava/util/BitSet;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("[Ljava/lang/Object;", "final")]
@@ -441,7 +441,7 @@ public partial class PoolReader
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/jvm/PoolReader;Lcom/sun/tools/javac/util/ByteBuffer;[I)V", "public")]
-		public ImmutablePoolHelper(Dova.JDK.com.sun.tools.javac.jvm.PoolReader arg0, Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg1, JavaArray<int> arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ImmutablePoolHelper(Dova.JDK.com.sun.tools.javac.jvm.PoolReader arg0, Dova.JDK.com.sun.tools.javac.util.ByteBuffer arg1, JavaArray<int> arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial class KeepAliveEntry
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/net/www/http/KeepAliveEntry;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hc", "Lsun/net/www/http/HttpClient;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idleStartTime", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KeepAliveEntry", "(Lsun/net/www/http/HttpClient;J)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hc", "Lsun/net/www/http/HttpClient;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idleStartTime", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/net/www/http/HttpClient;J)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/net/www/http/HttpClient;", "")]
@@ -69,7 +69,7 @@ public partial class KeepAliveEntry
 	}
 
 	[JniSignatureAttribute("(Lsun/net/www/http/HttpClient;J)V", "")]
-	public KeepAliveEntry(Dova.JDK.sun.net.www.http.HttpClient arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public KeepAliveEntry(Dova.JDK.sun.net.www.http.HttpClient arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,37 +31,37 @@ public partial class EventControl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventControl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_SETTING_PREFIX", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_ENABLED", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_THRESHOLD", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_STACK_TRACE", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_PERIOD", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_CUTOFF", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_THROTTLE", "Ljdk/jfr/internal/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "settingInfos", "Ljava/util/ArrayList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedControls", "Ljava/util/ArrayList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Ljdk/jfr/internal/PlatformEventType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "idName", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventControl", "(Ljdk/jfr/internal/PlatformEventType;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventControl", "(Ljdk/jfr/internal/PlatformEventType;Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "remove", "(Ljdk/jfr/internal/PlatformEventType;Ljava/util/List;Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disable", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "defineThreshold", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addControl", "(Ljava/lang/String;Ljdk/jfr/internal/Control;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "defineStackTrace", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "definePeriod", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "defineCutoff", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "defineThrottle", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "defineEnabled", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineSettings", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasControl", "(Ljava/lang/String;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineSetting", "(Ljava/lang/Class;Ljava/lang/reflect/Method;Ljdk/jfr/internal/PlatformEventType;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "instantiateSettingControl", "(Ljava/lang/Class;)Ljdk/jfr/SettingControl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeActiveSettingEvent", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNamedControls", "()Ljava/util/ArrayList;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEventType", "()Ljdk/jfr/internal/PlatformEventType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSettingsId", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSettingInfos", "()Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_SETTING_PREFIX", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_ENABLED", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_THRESHOLD", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_STACK_TRACE", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_PERIOD", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_CUTOFF", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_THROTTLE", "Ljdk/jfr/internal/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "settingInfos", "Ljava/util/ArrayList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedControls", "Ljava/util/ArrayList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Ljdk/jfr/internal/PlatformEventType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "idName", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/PlatformEventType;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/PlatformEventType;Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "remove", "(Ljdk/jfr/internal/PlatformEventType;Ljava/util/List;Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disable", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "defineThreshold", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addControl", "(Ljava/lang/String;Ljdk/jfr/internal/Control;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "defineStackTrace", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "definePeriod", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "defineCutoff", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "defineThrottle", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "defineEnabled", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/internal/Control;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineSettings", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasControl", "(Ljava/lang/String;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineSetting", "(Ljava/lang/Class;Ljava/lang/reflect/Method;Ljdk/jfr/internal/PlatformEventType;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "instantiateSettingControl", "(Ljava/lang/Class;)Ljdk/jfr/SettingControl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeActiveSettingEvent", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNamedControls", "()Ljava/util/ArrayList;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEventType", "()Ljdk/jfr/internal/PlatformEventType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSettingsId", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSettingInfos", "()Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -224,12 +224,12 @@ public partial class EventControl
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/PlatformEventType;)V", "")]
-	public EventControl(Dova.JDK.jdk.jfr.@internal.PlatformEventType arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public EventControl(Dova.JDK.jdk.jfr.@internal.PlatformEventType arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/PlatformEventType;Ljava/lang/Class;)V", "")]
-	public EventControl(Dova.JDK.jdk.jfr.@internal.PlatformEventType arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public EventControl(Dova.JDK.jdk.jfr.@internal.PlatformEventType arg0, Dova.JDK.java.lang.Class arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -371,9 +371,9 @@ public partial class EventControl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/EventControl$NamedControl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "control", "Ljdk/jfr/internal/Control;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NamedControl", "(Ljava/lang/String;Ljdk/jfr/internal/Control;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "control", "Ljdk/jfr/internal/Control;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/jfr/internal/Control;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "public final")]
@@ -410,7 +410,7 @@ public partial class EventControl
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/jfr/internal/Control;)V", "")]
-		public NamedControl(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.jfr.@internal.Control arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NamedControl(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.jfr.@internal.Control arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

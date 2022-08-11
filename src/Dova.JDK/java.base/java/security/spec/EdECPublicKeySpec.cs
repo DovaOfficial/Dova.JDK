@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,11 +32,11 @@ public partial class EdECPublicKeySpec
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/security/spec/EdECPublicKeySpec;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "params", "Ljava/security/spec/NamedParameterSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "point", "Ljava/security/spec/EdECPoint;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EdECPublicKeySpec", "(Ljava/security/spec/NamedParameterSpec;Ljava/security/spec/EdECPoint;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParams", "()Ljava/security/spec/NamedParameterSpec;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPoint", "()Ljava/security/spec/EdECPoint;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "params", "Ljava/security/spec/NamedParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "point", "Ljava/security/spec/EdECPoint;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/spec/NamedParameterSpec;Ljava/security/spec/EdECPoint;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParams", "()Ljava/security/spec/NamedParameterSpec;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPoint", "()Ljava/security/spec/EdECPoint;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/spec/NamedParameterSpec;", "private final")]
@@ -73,7 +73,7 @@ public partial class EdECPublicKeySpec
 	}
 
 	[JniSignatureAttribute("(Ljava/security/spec/NamedParameterSpec;Ljava/security/spec/EdECPoint;)V", "public")]
-	public EdECPublicKeySpec(Dova.JDK.java.security.spec.NamedParameterSpec arg0, Dova.JDK.java.security.spec.EdECPoint arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public EdECPublicKeySpec(Dova.JDK.java.security.spec.NamedParameterSpec arg0, Dova.JDK.java.security.spec.EdECPoint arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

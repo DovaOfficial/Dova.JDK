@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,81 +32,81 @@ public partial class RendererStats
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/RendererStats;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_cache_rowAA", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_cache_rowAAChunk", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_cache_tiles", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_addLine", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_addLine_skip", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_curveBreak", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_curveBreak_dec", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_curveBreak_inc", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_quadBreak", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_quadBreak_dec", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_edges", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_edges_count", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_edges_resizes", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_activeEdges", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_activeEdges_updates", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_activeEdges_adds", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_activeEdges_adds_high", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_crossings_updates", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_crossings_sorts", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_crossings_bsearch", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_rdr_crossings_msorts", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_str_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_str_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_cpd_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_cpd_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_dasher_dasher", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_dasher_firstSegmentsBuffer", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_marlincache_rowAAChunk", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_marlincache_touchedTile", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_alphaline", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_crossings", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_aux_crossings", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_edgeBuckets", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_edgeBucketCounts", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_edgePtrs", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_renderer_aux_edgePtrs", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_str_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_str_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_cpd_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_cpd_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stat_array_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_edges_count", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_crossings", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_crossings_ratio", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_crossings_adds", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_crossings_msorts", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_rdr_crossings_msorts_adds", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_str_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_tile_generator_alpha", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_tile_generator_encoding", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_tile_generator_encoding_dist", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_tile_generator_encoding_ratio", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_tile_generator_encoding_runLen", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_cpd_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hist_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/Histogram;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statistics", "[Lsun/java2d/marlin/stats/StatLong;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_pre_getAATileGenerator", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_rdr_addLine", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_rdr_endRendering", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_rdr_endRendering_Y", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_rdr_copyAARow", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_pipe_renderTiles", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_ptg_getAlpha", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mon_debug", "Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "monitors", "[Lsun/java2d/marlin/stats/Monitor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "totalOffHeapInitial", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "totalOffHeap", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "totalOffHeapMax", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheStats", "[Lsun/java2d/marlin/ArrayCacheConst$CacheStats;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RendererStats", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createInstance", "(Ljava/lang/Object;Ljava/lang/String;)Lsun/java2d/marlin/RendererStats;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dump", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dumpStats", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_cache_rowAA", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_cache_rowAAChunk", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_cache_tiles", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_addLine", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_addLine_skip", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_curveBreak", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_curveBreak_dec", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_curveBreak_inc", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_quadBreak", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_quadBreak_dec", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_edges", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_edges_count", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_edges_resizes", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_activeEdges", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_activeEdges_updates", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_activeEdges_adds", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_activeEdges_adds_high", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_crossings_updates", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_crossings_sorts", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_crossings_bsearch", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_rdr_crossings_msorts", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_str_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_str_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_cpd_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_cpd_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_dasher_dasher", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_dasher_firstSegmentsBuffer", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_marlincache_rowAAChunk", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_marlincache_touchedTile", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_alphaline", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_crossings", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_aux_crossings", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_edgeBuckets", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_edgeBucketCounts", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_edgePtrs", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_renderer_aux_edgePtrs", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_str_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_str_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_cpd_polystack_curves", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_cpd_polystack_types", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stat_array_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_edges_count", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_crossings", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_crossings_ratio", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_crossings_adds", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_crossings_msorts", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_rdr_crossings_msorts_adds", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_str_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_tile_generator_alpha", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_tile_generator_encoding", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_tile_generator_encoding_dist", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_tile_generator_encoding_ratio", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_tile_generator_encoding_runLen", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_cpd_polystack_curves", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hist_pcf_idxstack_indices", "Lsun/java2d/marlin/stats/Histogram;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statistics", "[Lsun/java2d/marlin/stats/StatLong;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_pre_getAATileGenerator", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_rdr_addLine", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_rdr_endRendering", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_rdr_endRendering_Y", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_rdr_copyAARow", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_pipe_renderTiles", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_ptg_getAlpha", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mon_debug", "Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "monitors", "[Lsun/java2d/marlin/stats/Monitor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "totalOffHeapInitial", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "totalOffHeap", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "totalOffHeapMax", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheStats", "[Lsun/java2d/marlin/ArrayCacheConst$CacheStats;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createInstance", "(Ljava/lang/Object;Ljava/lang/String;)Lsun/java2d/marlin/RendererStats;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dump", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dumpStats", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "final")]
@@ -1109,7 +1109,7 @@ public partial class RendererStats
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
-	public RendererStats(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public RendererStats(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -1151,14 +1151,14 @@ public partial class RendererStats
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/marlin/RendererStats$RendererStatsHolder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SINGLETON", "Lsun/java2d/marlin/RendererStats$RendererStatsHolder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "allStats", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RendererStatsHolder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add", "(Ljava/lang/Object;Lsun/java2d/marlin/RendererStats;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "remove", "(Lsun/java2d/marlin/RendererStats;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInstance", "()Lsun/java2d/marlin/RendererStats$RendererStatsHolder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dump", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dumpStats", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SINGLETON", "Lsun/java2d/marlin/RendererStats$RendererStatsHolder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "allStats", "Ljava/util/concurrent/ConcurrentLinkedQueue;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add", "(Ljava/lang/Object;Lsun/java2d/marlin/RendererStats;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "remove", "(Lsun/java2d/marlin/RendererStats;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInstance", "()Lsun/java2d/marlin/RendererStats$RendererStatsHolder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dump", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dumpStats", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/java2d/marlin/RendererStats$RendererStatsHolder;", "private static volatile")]
@@ -1195,7 +1195,7 @@ public partial class RendererStats
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public RendererStatsHolder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public RendererStatsHolder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

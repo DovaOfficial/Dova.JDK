@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class WhileOps
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAKE_FLAGS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DROP_FLAGS", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WhileOps", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeTakeWhileRef", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDropWhileRef", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeTakeWhileInt", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDropWhileInt", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeTakeWhileDouble", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDropWhileDouble", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeTakeWhileLong", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeDropWhileLong", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAKE_FLAGS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DROP_FLAGS", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeTakeWhileRef", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeDropWhileRef", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/Predicate;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeTakeWhileInt", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeDropWhileInt", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/IntPredicate;)Ljava/util/stream/IntStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeTakeWhileDouble", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeDropWhileDouble", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/DoublePredicate;)Ljava/util/stream/DoubleStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeTakeWhileLong", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeDropWhileLong", "(Ljava/util/stream/AbstractPipeline;Ljava/util/function/LongPredicate;)Ljava/util/stream/LongStream;"));
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -78,7 +78,7 @@ public partial class WhileOps
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public WhileOps() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public WhileOps() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -157,21 +157,21 @@ public partial class WhileOps
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$DropWhileTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "generator", "Ljava/util/function/IntFunction;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isOrdered", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thisNodeSize", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DropWhileTask", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DropWhileTask", "(Ljava/util/stream/WhileOps$DropWhileTask;Ljava/util/Spliterator;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "merge", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/WhileOps$DropWhileTask;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doTruncate", "(Ljava/util/stream/Node;)Ljava/util/stream/Node;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "generator", "Ljava/util/function/IntFunction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isOrdered", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thisNodeSize", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/stream/WhileOps$DropWhileTask;Ljava/util/Spliterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "merge", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/WhileOps$DropWhileTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doLeaf_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doTruncate", "(Ljava/util/stream/Node;)Ljava/util/stream/Node;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/AbstractPipeline;", "private final")]
@@ -264,12 +264,12 @@ public partial class WhileOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V", "")]
-		public DropWhileTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public DropWhileTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/WhileOps$DropWhileTask;Ljava/util/Spliterator;)V", "")]
-		public DropWhileTask(Dova.JDK.java.util.stream.WhileOps.DropWhileTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public DropWhileTask(Dova.JDK.java.util.stream.WhileOps.DropWhileTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -341,23 +341,23 @@ public partial class WhileOps
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$TakeWhileTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "generator", "Ljava/util/function/IntFunction;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isOrdered", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thisNodeSize", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "shortCircuited", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "completed", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TakeWhileTask", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TakeWhileTask", "(Ljava/util/stream/WhileOps$TakeWhileTask;Ljava/util/Spliterator;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "merge", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cancel", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/WhileOps$TakeWhileTask;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_0", "()Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEmptyResult_1", "()Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "op", "Ljava/util/stream/AbstractPipeline;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "generator", "Ljava/util/function/IntFunction;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isOrdered", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thisNodeSize", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "shortCircuited", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "completed", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/stream/WhileOps$TakeWhileTask;Ljava/util/Spliterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "merge", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cancel", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "onCompletion", "(Ljava/util/concurrent/CountedCompleter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeChild_0", "(Ljava/util/Spliterator;)Ljava/util/stream/WhileOps$TakeWhileTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeChild_1", "(Ljava/util/Spliterator;)Ljava/util/stream/AbstractTask;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doLeaf_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "doLeaf_1", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEmptyResult_0", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEmptyResult_1", "()Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/stream/AbstractPipeline;", "private final")]
@@ -450,12 +450,12 @@ public partial class WhileOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/AbstractPipeline;Ljava/util/stream/PipelineHelper;Ljava/util/Spliterator;Ljava/util/function/IntFunction;)V", "")]
-		public TakeWhileTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public TakeWhileTask(Dova.JDK.java.util.stream.AbstractPipeline arg0, Dova.JDK.java.util.stream.PipelineHelper arg1, Dova.JDK.java.util.Spliterator arg2, Dova.JDK.java.util.function.IntFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/WhileOps$TakeWhileTask;Ljava/util/Spliterator;)V", "")]
-		public TakeWhileTask(Dova.JDK.java.util.stream.WhileOps.TakeWhileTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public TakeWhileTask(Dova.JDK.java.util.stream.WhileOps.TakeWhileTask arg0, Dova.JDK.java.util.Spliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -541,21 +541,21 @@ public partial class WhileOps
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CANCEL_CHECK_COUNT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "s", "Ljava/util/Spliterator;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noSplitting", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cancel", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "takeOrDrop", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnorderedWhileSpliterator", "(Ljava/util/Spliterator;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnorderedWhileSpliterator", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "characteristics", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit", "()Ljava/util/Spliterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "estimateSize", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExactSizeIfKnown", "()J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getComparator", "()Ljava/util/Comparator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkCancelOnCount", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CANCEL_CHECK_COUNT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "s", "Ljava/util/Spliterator;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noSplitting", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cancel", "Ljava/util/concurrent/atomic/AtomicBoolean;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "takeOrDrop", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "characteristics", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit", "()Ljava/util/Spliterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "estimateSize", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExactSizeIfKnown", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getComparator", "()Ljava/util/Comparator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkCancelOnCount", "()Z"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -648,12 +648,12 @@ public partial class WhileOps
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;Z)V", "")]
-		public UnorderedWhileSpliterator(Dova.JDK.java.lang.Object arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public UnorderedWhileSpliterator(Dova.JDK.java.lang.Object arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator;)V", "")]
-		public UnorderedWhileSpliterator(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public UnorderedWhileSpliterator(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -727,13 +727,13 @@ public partial class WhileOps
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/util/function/DoublePredicate;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "D"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfDouble", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfDouble", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(D)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfDouble;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/util/function/DoublePredicate;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "t", "D"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(D)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfDouble;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/function/DoublePredicate;", "final")]
@@ -770,12 +770,12 @@ public partial class WhileOps
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V", "")]
-			public OfDouble(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public OfDouble(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V", "")]
-			public OfDouble(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+			public OfDouble(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 			{
 			}
 
@@ -817,14 +817,14 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble$Dropping;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfDouble;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfDouble;)Ljava/util/Spliterator$OfDouble;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfDouble;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfDouble;)Ljava/util/Spliterator$OfDouble;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -833,12 +833,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -903,15 +903,15 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble$Taking;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_2", "()Ljava/util/Spliterator$OfDouble;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfDouble;)Ljava/util/Spliterator$OfDouble;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/DoubleConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_2", "()Ljava/util/Spliterator$OfDouble;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfDouble;)Ljava/util/Spliterator$OfDouble;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -920,12 +920,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;ZLjava/util/function/DoublePredicate;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Taking(Dova.JDK.java.util.Spliterator.OfDouble arg0, bool arg1, Dova.JDK.java.util.function.DoublePredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfDouble;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfDouble;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Taking(Dova.JDK.java.util.Spliterator.OfDouble arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfDouble arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1001,13 +1001,13 @@ public partial class WhileOps
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/util/function/LongPredicate;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "J"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfLong", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfLong", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(J)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfLong;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/util/function/LongPredicate;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "t", "J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(J)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfLong;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/function/LongPredicate;", "final")]
@@ -1044,12 +1044,12 @@ public partial class WhileOps
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V", "")]
-			public OfLong(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public OfLong(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V", "")]
-			public OfLong(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+			public OfLong(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 			{
 			}
 
@@ -1091,14 +1091,14 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong$Dropping;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/LongConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfLong;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfLong;)Ljava/util/Spliterator$OfLong;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/LongConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfLong;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfLong;)Ljava/util/Spliterator$OfLong;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1107,12 +1107,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1177,15 +1177,15 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong$Taking;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/LongConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_2", "()Ljava/util/Spliterator$OfLong;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfLong;)Ljava/util/Spliterator$OfLong;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/LongConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_2", "()Ljava/util/Spliterator$OfLong;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfLong;)Ljava/util/Spliterator$OfLong;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1194,12 +1194,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;ZLjava/util/function/LongPredicate;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Taking(Dova.JDK.java.util.Spliterator.OfLong arg0, bool arg1, Dova.JDK.java.util.function.LongPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfLong;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfLong;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Taking(Dova.JDK.java.util.Spliterator.OfLong arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfLong arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1275,13 +1275,13 @@ public partial class WhileOps
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/util/function/IntPredicate;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfInt", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfInt", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfInt;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/util/function/IntPredicate;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "t", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfInt;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfPrimitive;"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/function/IntPredicate;", "final")]
@@ -1318,12 +1318,12 @@ public partial class WhileOps
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V", "")]
-			public OfInt(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public OfInt(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V", "")]
-			public OfInt(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+			public OfInt(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 			{
 			}
 
@@ -1365,14 +1365,14 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt$Dropping;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/IntConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator$OfInt;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfInt;)Ljava/util/Spliterator$OfInt;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/IntConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator$OfInt;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfInt;)Ljava/util/Spliterator$OfInt;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1381,12 +1381,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Dropping(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1451,15 +1451,15 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt$Taking;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/IntConsumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit_2", "()Ljava/util/Spliterator$OfInt;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfInt;)Ljava/util/Spliterator$OfInt;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/lang/Object;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/IntConsumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_0", "()Ljava/util/Spliterator$OfPrimitive;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_1", "()Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit_2", "()Ljava/util/Spliterator$OfInt;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator$OfInt;)Ljava/util/Spliterator$OfInt;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1468,12 +1468,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;ZLjava/util/function/IntPredicate;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Taking(Dova.JDK.java.util.Spliterator.OfInt arg0, bool arg1, Dova.JDK.java.util.function.IntPredicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator$OfInt;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfInt;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Taking(Dova.JDK.java.util.Spliterator.OfInt arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfInt arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1548,11 +1548,11 @@ public partial class WhileOps
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Ljava/util/function/Predicate;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "Ljava/lang/Object;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfRef", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OfRef", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accept", "(Ljava/lang/Object;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Ljava/util/function/Predicate;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "t", "Ljava/lang/Object;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accept", "(Ljava/lang/Object;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/function/Predicate;", "final")]
@@ -1589,12 +1589,12 @@ public partial class WhileOps
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V", "")]
-			public OfRef(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public OfRef(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 
 			[JniSignatureAttribute("(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef;)V", "")]
-			public OfRef(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+			public OfRef(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 			{
 			}
 
@@ -1622,10 +1622,10 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Dropping;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dropping", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Dropping;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/Consumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Dropping;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/Consumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1634,12 +1634,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Dropping(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Dropping;)V", "")]
-				public Dropping(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef.Dropping arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Dropping(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef.Dropping arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1676,11 +1676,11 @@ public partial class WhileOps
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Taking;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Taking", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Taking;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tryAdvance", "(Ljava/util/function/Consumer;)Z"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trySplit", "()Ljava/util/Spliterator;"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Taking;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tryAdvance", "(Ljava/util/function/Consumer;)Z"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trySplit", "()Ljava/util/Spliterator;"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSpliterator", "(Ljava/util/Spliterator;)Ljava/util/Spliterator;"));
 				}
 
 				[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1689,12 +1689,12 @@ public partial class WhileOps
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator;ZLjava/util/function/Predicate;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+				public Taking(Dova.JDK.java.util.Spliterator arg0, bool arg1, Dova.JDK.java.util.function.Predicate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 				{
 				}
 
 				[JniSignatureAttribute("(Ljava/util/Spliterator;Ljava/util/stream/WhileOps$UnorderedWhileSpliterator$OfRef$Taking;)V", "")]
-				public Taking(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef.Taking arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+				public Taking(Dova.JDK.java.util.Spliterator arg0, Dova.JDK.java.util.stream.WhileOps.UnorderedWhileSpliterator.OfRef.Taking arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 				{
 				}
 
@@ -1740,7 +1740,7 @@ public partial class WhileOps
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$DropWhileSink;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDropCount", "()J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDropCount", "()J"));
 		}
 
 		[JniSignatureAttribute("()J", "public abstract")]
@@ -1764,7 +1764,7 @@ public partial class WhileOps
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/WhileOps$DropWhileOp;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opWrapSink", "(Ljava/util/stream/Sink;Z)Ljava/util/stream/WhileOps$DropWhileSink;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opWrapSink", "(Ljava/util/stream/Sink;Z)Ljava/util/stream/WhileOps$DropWhileSink;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/stream/Sink;Z)Ljava/util/stream/WhileOps$DropWhileSink;", "public abstract")]

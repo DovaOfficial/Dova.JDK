@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class RadialGradientPaint
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/RadialGradientPaint;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "focus", "Ljava/awt/geom/Point2D;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "center", "Ljava/awt/geom/Point2D;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "radius", "F"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;Ljava/awt/geom/AffineTransform;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(Ljava/awt/geom/Rectangle2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(FFF[F[Ljava/awt/Color;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(FFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RadialGradientPaint", "(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createGradientTransform", "(Ljava/awt/geom/Rectangle2D;)Ljava/awt/geom/AffineTransform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFocusPoint", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRadius", "()F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCenterPoint", "()Ljava/awt/geom/Point2D;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "focus", "Ljava/awt/geom/Point2D;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "center", "Ljava/awt/geom/Point2D;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "radius", "F"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;Ljava/awt/geom/AffineTransform;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Rectangle2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFF[F[Ljava/awt/Color;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createGradientTransform", "(Ljava/awt/geom/Rectangle2D;)Ljava/awt/geom/AffineTransform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFocusPoint", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRadius", "()F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCenterPoint", "()Ljava/awt/geom/Point2D;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/Point2D;", "private final")]
@@ -97,42 +97,42 @@ public partial class RadialGradientPaint
 	}
 
 	[JniSignatureAttribute("(FFFFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V", "public")]
-	public RadialGradientPaint(float arg0, float arg1, float arg2, float arg3, float arg4, JavaArray<float> arg5, JavaArray<Dova.JDK.java.awt.Color> arg6, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public RadialGradientPaint(float arg0, float arg1, float arg2, float arg3, float arg4, JavaArray<float> arg5, JavaArray<Dova.JDK.java.awt.Color> arg6, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V", "public")]
-	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, Dova.JDK.java.awt.geom.Point2D arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
+	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, Dova.JDK.java.awt.geom.Point2D arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;FLjava/awt/geom/Point2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;Ljava/awt/geom/AffineTransform;)V", "public")]
-	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, Dova.JDK.java.awt.geom.Point2D arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5, Dova.JDK.java.awt.MultipleGradientPaint.ColorSpaceType arg6, Dova.JDK.java.awt.geom.AffineTransform arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, Dova.JDK.java.awt.geom.Point2D arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5, Dova.JDK.java.awt.MultipleGradientPaint.ColorSpaceType arg6, Dova.JDK.java.awt.geom.AffineTransform arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Rectangle2D;[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V", "public")]
-	public RadialGradientPaint(Dova.JDK.java.awt.geom.Rectangle2D arg0, JavaArray<float> arg1, JavaArray<Dova.JDK.java.awt.Color> arg2, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3))
+	public RadialGradientPaint(Dova.JDK.java.awt.geom.Rectangle2D arg0, JavaArray<float> arg1, JavaArray<Dova.JDK.java.awt.Color> arg2, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(FFF[F[Ljava/awt/Color;)V", "public")]
-	public RadialGradientPaint(float arg0, float arg1, float arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4))
+	public RadialGradientPaint(float arg0, float arg1, float arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;)V", "public")]
-	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, JavaArray<float> arg2, JavaArray<Dova.JDK.java.awt.Color> arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[5], arg0, arg1, arg2, arg3))
+	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, JavaArray<float> arg2, JavaArray<Dova.JDK.java.awt.Color> arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[5], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(FFF[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V", "public")]
-	public RadialGradientPaint(float arg0, float arg1, float arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[6], arg0, arg1, arg2, arg3, arg4, arg5))
+	public RadialGradientPaint(float arg0, float arg1, float arg2, JavaArray<float> arg3, JavaArray<Dova.JDK.java.awt.Color> arg4, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[6], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;F[F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;)V", "public")]
-	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, JavaArray<float> arg2, JavaArray<Dova.JDK.java.awt.Color> arg3, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[7], arg0, arg1, arg2, arg3, arg4))
+	public RadialGradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, float arg1, JavaArray<float> arg2, JavaArray<Dova.JDK.java.awt.Color> arg3, Dova.JDK.java.awt.MultipleGradientPaint.CycleMethod arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[7], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

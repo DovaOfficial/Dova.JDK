@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface XAConnection
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/XAConnection;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getXAResource", "()Ljavax/transaction/xa/XAResource;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getXAResource", "()Ljavax/transaction/xa/XAResource;"));
 	}
 
 	[JniSignatureAttribute("()Ljavax/transaction/xa/XAResource;", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,47 +32,47 @@ public partial class PrinterStateReason
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/standard/PrinterStateReason;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OTHER", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEDIA_NEEDED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEDIA_JAM", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MOVING_TO_PAUSED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PAUSED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHUTDOWN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONNECTING_TO_DEVICE", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TIMED_OUT", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STOPPING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STOPPED_PARTLY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TONER_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TONER_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPOOL_AREA_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COVER_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERLOCK_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOOR_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INPUT_TRAY_MISSING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEDIA_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MEDIA_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OUTPUT_TRAY_MISSING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OUTPUT_AREA_ALMOST_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OUTPUT_AREA_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARKER_SUPPLY_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARKER_SUPPLY_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARKER_WASTE_ALMOST_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARKER_WASTE_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FUSER_OVER_TEMP", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FUSER_UNDER_TEMP", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPC_NEAR_EOL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPC_LIFE_OVER", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEVELOPER_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEVELOPER_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERPRETER_RESOURCE_UNAVAILABLE", "Ljavax/print/attribute/standard/PrinterStateReason;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myStringTable", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/PrinterStateReason;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PrinterStateReason", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCategory", "()Ljava/lang/Class;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStringTable", "()[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OTHER", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEDIA_NEEDED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEDIA_JAM", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MOVING_TO_PAUSED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PAUSED", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHUTDOWN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONNECTING_TO_DEVICE", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TIMED_OUT", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STOPPING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STOPPED_PARTLY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TONER_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TONER_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPOOL_AREA_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COVER_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERLOCK_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOOR_OPEN", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INPUT_TRAY_MISSING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEDIA_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MEDIA_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OUTPUT_TRAY_MISSING", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OUTPUT_AREA_ALMOST_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OUTPUT_AREA_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARKER_SUPPLY_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARKER_SUPPLY_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARKER_WASTE_ALMOST_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARKER_WASTE_FULL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FUSER_OVER_TEMP", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FUSER_UNDER_TEMP", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPC_NEAR_EOL", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPC_LIFE_OVER", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEVELOPER_LOW", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEVELOPER_EMPTY", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERPRETER_RESOURCE_UNAVAILABLE", "Ljavax/print/attribute/standard/PrinterStateReason;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myStringTable", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "myEnumValueTable", "[Ljavax/print/attribute/standard/PrinterStateReason;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCategory", "()Ljava/lang/Class;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStringTable", "()[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEnumValueTable", "()[Ljavax/print/attribute/EnumSyntax;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -585,7 +585,7 @@ public partial class PrinterStateReason
 	}
 
 	[JniSignatureAttribute("(I)V", "protected")]
-	public PrinterStateReason(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public PrinterStateReason(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

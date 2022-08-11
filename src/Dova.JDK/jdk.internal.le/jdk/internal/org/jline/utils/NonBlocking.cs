@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,15 +30,15 @@ public partial class NonBlocking
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/NonBlocking;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonBlocking", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljdk/internal/org/jline/utils/NonBlockingReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/InputStream;)Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/Reader;)Ljdk/internal/org/jline/utils/NonBlockingReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlockingPumpInputStream", "(I)Ljdk/internal/org/jline/utils/NonBlockingPumpInputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlockingPumpInputStream", "()Ljdk/internal/org/jline/utils/NonBlockingPumpInputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlockingPumpReader", "(I)Ljdk/internal/org/jline/utils/NonBlockingPumpReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlockingPumpReader", "()Ljdk/internal/org/jline/utils/NonBlockingPumpReader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nonBlockingStream", "(Ljdk/internal/org/jline/utils/NonBlockingReader;Ljava/nio/charset/Charset;)Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/InputStream;Ljava/nio/charset/Charset;)Ljdk/internal/org/jline/utils/NonBlockingReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/InputStream;)Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlocking", "(Ljava/lang/String;Ljava/io/Reader;)Ljdk/internal/org/jline/utils/NonBlockingReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlockingPumpInputStream", "(I)Ljdk/internal/org/jline/utils/NonBlockingPumpInputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlockingPumpInputStream", "()Ljdk/internal/org/jline/utils/NonBlockingPumpInputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlockingPumpReader", "(I)Ljdk/internal/org/jline/utils/NonBlockingPumpReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlockingPumpReader", "()Ljdk/internal/org/jline/utils/NonBlockingPumpReader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nonBlockingStream", "(Ljdk/internal/org/jline/utils/NonBlockingReader;Ljava/nio/charset/Charset;)Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -47,7 +47,7 @@ public partial class NonBlocking
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public NonBlocking() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public NonBlocking() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -126,14 +126,14 @@ public partial class NonBlocking
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/NonBlocking$NonBlockingReaderInputStream;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reader", "Ljdk/internal/org/jline/utils/NonBlockingReader;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "encoder", "Ljava/nio/charset/CharsetEncoder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "chars", "Ljava/nio/CharBuffer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonBlockingReaderInputStream", "(Ljdk/internal/org/jline/utils/NonBlockingReader;Ljava/nio/charset/Charset;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "(JZ)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "available", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reader", "Ljdk/internal/org/jline/utils/NonBlockingReader;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "encoder", "Ljava/nio/charset/CharsetEncoder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytes", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "chars", "Ljava/nio/CharBuffer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/utils/NonBlockingReader;Ljava/nio/charset/Charset;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "(JZ)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "available", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/utils/NonBlockingReader;", "private final")]
@@ -198,7 +198,7 @@ public partial class NonBlocking
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/utils/NonBlockingReader;Ljava/nio/charset/Charset;)V", "private")]
-		public NonBlockingReaderInputStream(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingReader arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NonBlockingReaderInputStream(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingReader arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -242,16 +242,16 @@ public partial class NonBlocking
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/NonBlocking$NonBlockingInputStreamReader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "input", "Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "decoder", "Ljava/nio/charset/CharsetDecoder;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "chars", "Ljava/nio/CharBuffer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonBlockingInputStreamReader", "(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/Charset;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NonBlockingInputStreamReader", "(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/CharsetDecoder;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shutdown", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "(JZ)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readBuffered", "([C)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "input", "Ljdk/internal/org/jline/utils/NonBlockingInputStream;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "decoder", "Ljava/nio/charset/CharsetDecoder;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytes", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "chars", "Ljava/nio/CharBuffer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/Charset;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/CharsetDecoder;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shutdown", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "(JZ)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readBuffered", "([C)I"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/org/jline/utils/NonBlockingInputStream;", "private final")]
@@ -316,12 +316,12 @@ public partial class NonBlocking
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/Charset;)V", "public")]
-		public NonBlockingInputStreamReader(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingInputStream arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public NonBlockingInputStreamReader(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingInputStream arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/org/jline/utils/NonBlockingInputStream;Ljava/nio/charset/CharsetDecoder;)V", "public")]
-		public NonBlockingInputStreamReader(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingInputStream arg0, Dova.JDK.java.nio.charset.CharsetDecoder arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public NonBlockingInputStreamReader(Dova.JDK.jdk.@internal.org.jline.utils.NonBlockingInputStream arg0, Dova.JDK.java.nio.charset.CharsetDecoder arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 

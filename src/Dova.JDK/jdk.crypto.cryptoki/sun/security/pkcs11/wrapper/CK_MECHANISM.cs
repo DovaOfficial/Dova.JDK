@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class CK_MECHANISM
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/pkcs11/wrapper/CK_MECHANISM;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mechanism", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pParameter", "Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pHandle", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLjava/lang/Long;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_ECDH1_DERIVE_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_TLS_MAC_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_TLS_PRF_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_SALSA20_CHACHA20_POLY1305_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_CCM_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_GCM_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_AES_CTR_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_VERSION;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLjava/math/BigInteger;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(J[B)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(J)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_TLS12_KEY_MAT_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_SSL3_KEY_MAT_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_TLS12_MASTER_KEY_DERIVE_PARAMS;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CK_MECHANISM", "(JLsun/security/pkcs11/wrapper/CK_SSL3_MASTER_KEY_DERIVE_PARAMS;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(JLjava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "freeHandle", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParameter", "(Lsun/security/pkcs11/wrapper/CK_RSA_PKCS_PSS_PARAMS;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mechanism", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pParameter", "Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pHandle", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLjava/lang/Long;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_ECDH1_DERIVE_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_TLS_MAC_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_TLS_PRF_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_SALSA20_CHACHA20_POLY1305_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_CCM_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_GCM_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_AES_CTR_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_VERSION;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLjava/math/BigInteger;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J[B)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_TLS12_KEY_MAT_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_SSL3_KEY_MAT_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_TLS12_MASTER_KEY_DERIVE_PARAMS;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLsun/security/pkcs11/wrapper/CK_SSL3_MASTER_KEY_DERIVE_PARAMS;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(JLjava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "freeHandle", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParameter", "(Lsun/security/pkcs11/wrapper/CK_RSA_PKCS_PSS_PARAMS;)V"));
 	}
 
 	[JniSignatureAttribute("J", "public")]
@@ -119,82 +119,82 @@ public partial class CK_MECHANISM
 	}
 
 	[JniSignatureAttribute("(JLjava/lang/Long;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.java.lang.Long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.java.lang.Long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_ECDH1_DERIVE_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_ECDH1_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_TLS_MAC_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS_MAC_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS_MAC_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_TLS_PRF_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS_PRF_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS_PRF_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_SALSA20_CHACHA20_POLY1305_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SALSA20_CHACHA20_POLY1305_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SALSA20_CHACHA20_POLY1305_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_CCM_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_CCM_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[5], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_CCM_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[5], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_GCM_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_GCM_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[6], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_GCM_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[6], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_AES_CTR_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[7], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_AES_CTR_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[7], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_VERSION;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_VERSION arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[8], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_VERSION arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[8], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLjava/math/BigInteger;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[9], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[9], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(J[B)V", "public")]
-	public CK_MECHANISM(long arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[10], arg0, arg1))
+	public CK_MECHANISM(long arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[10], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(J)V", "public")]
-	public CK_MECHANISM(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[11], arg0))
+	public CK_MECHANISM(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[11], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_TLS12_KEY_MAT_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS12_KEY_MAT_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[12], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS12_KEY_MAT_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[12], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_SSL3_KEY_MAT_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[13], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_KEY_MAT_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[13], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_TLS12_MASTER_KEY_DERIVE_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS12_MASTER_KEY_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[14], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_TLS12_MASTER_KEY_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[14], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(JLsun/security/pkcs11/wrapper/CK_SSL3_MASTER_KEY_DERIVE_PARAMS;)V", "public")]
-	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_MASTER_KEY_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[15], arg0, arg1))
+	public CK_MECHANISM(long arg0, Dova.JDK.sun.security.pkcs11.wrapper.CK_SSL3_MASTER_KEY_DERIVE_PARAMS arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[15], arg0, arg1))
 	{
 	}
 

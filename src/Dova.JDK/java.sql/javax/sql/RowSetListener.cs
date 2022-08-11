@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial interface RowSetListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/RowSetListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rowChanged", "(Ljavax/sql/RowSetEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rowChanged", "(Ljavax/sql/RowSetEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rowSetChanged", "(Ljavax/sql/RowSetEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cursorMoved", "(Ljavax/sql/RowSetEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/RowSetEvent;)V", "public abstract")]

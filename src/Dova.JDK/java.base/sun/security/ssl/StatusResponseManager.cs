@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,30 +31,30 @@ public partial class StatusResponseManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/StatusResponseManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CORE_THREADS", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CACHE_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_CACHE_LIFETIME", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "threadMgr", "Ljava/util/concurrent/ScheduledThreadPoolExecutor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "responseCache", "Lsun/security/util/Cache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultResponder", "Ljava/net/URI;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "respOverride", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheCapacity", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheLifetime", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ignoreExtensions", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatusResponseManager", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shutdown", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get", "(Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;Lsun/security/ssl/CertStatusExtension$CertStatusRequest;[Ljava/security/cert/X509Certificate;JLjava/util/concurrent/TimeUnit;)Ljava/util/Map;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clear", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "size", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCacheLifetime", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCacheCapacity", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultResponder", "()Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getURIOverride", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIgnoreExtensions", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "processStapling", "(Lsun/security/ssl/ServerHandshakeContext;)Lsun/security/ssl/StatusResponseManager$StaplingParameters;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFromCache", "(Lsun/security/provider/certpath/CertId;Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;)Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_CORE_THREADS", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_CACHE_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_CACHE_LIFETIME", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "threadMgr", "Ljava/util/concurrent/ScheduledThreadPoolExecutor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "responseCache", "Lsun/security/util/Cache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultResponder", "Ljava/net/URI;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "respOverride", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheCapacity", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheLifetime", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ignoreExtensions", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shutdown", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get", "(Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;Lsun/security/ssl/CertStatusExtension$CertStatusRequest;[Ljava/security/cert/X509Certificate;JLjava/util/concurrent/TimeUnit;)Ljava/util/Map;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clear", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "size", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCacheLifetime", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCacheCapacity", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultResponder", "()Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getURIOverride", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIgnoreExtensions", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "processStapling", "(Lsun/security/ssl/ServerHandshakeContext;)Lsun/security/ssl/StatusResponseManager$StaplingParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getURI", "(Ljava/security/cert/X509Certificate;)Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFromCache", "(Lsun/security/provider/certpath/CertId;Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;)Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -203,7 +203,7 @@ public partial class StatusResponseManager
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public StatusResponseManager() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public StatusResponseManager() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -314,12 +314,12 @@ public partial class StatusResponseManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "Lsun/security/provider/certpath/OCSPResponse$ResponseStatus;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ocspBytes", "[B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextUpdate", "Ljava/util/Date;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "singleResp", "Lsun/security/provider/certpath/OCSPResponse$SingleResponse;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "respId", "Lsun/security/provider/certpath/ResponderId;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ResponseCacheEntry", "([BLsun/security/provider/certpath/CertId;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "Lsun/security/provider/certpath/OCSPResponse$ResponseStatus;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ocspBytes", "[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextUpdate", "Ljava/util/Date;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "singleResp", "Lsun/security/provider/certpath/OCSPResponse$SingleResponse;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "respId", "Lsun/security/provider/certpath/ResponderId;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([BLsun/security/provider/certpath/CertId;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/provider/certpath/OCSPResponse$ResponseStatus;", "final")]
@@ -398,7 +398,7 @@ public partial class StatusResponseManager
 		}
 
 		[JniSignatureAttribute("([BLsun/security/provider/certpath/CertId;)V", "")]
-		public ResponseCacheEntry(JavaArray<byte> arg0, Dova.JDK.sun.security.provider.certpath.CertId arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ResponseCacheEntry(JavaArray<byte> arg0, Dova.JDK.sun.security.provider.certpath.CertId arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -422,14 +422,14 @@ public partial class StatusResponseManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/StatusResponseManager$StatusInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cert", "Ljava/security/cert/X509Certificate;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cid", "Lsun/security/provider/certpath/CertId;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "responder", "Ljava/net/URI;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "responseData", "Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatusInfo", "(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatusInfo", "(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Lsun/security/provider/certpath/CertId;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatusInfo", "(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cert", "Ljava/security/cert/X509Certificate;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cid", "Lsun/security/provider/certpath/CertId;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "responder", "Ljava/net/URI;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "responseData", "Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Lsun/security/provider/certpath/CertId;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/cert/X509Certificate;", "final")]
@@ -494,17 +494,17 @@ public partial class StatusResponseManager
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;)V", "")]
-		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.sun.security.ssl.StatusResponseManager.StatusInfo arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.sun.security.ssl.StatusResponseManager.StatusInfo arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Lsun/security/provider/certpath/CertId;)V", "")]
-		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.java.security.cert.X509Certificate arg1, Dova.JDK.sun.security.provider.certpath.CertId arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.java.security.cert.X509Certificate arg1, Dova.JDK.sun.security.provider.certpath.CertId arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/StatusResponseManager;Ljava/security/cert/X509Certificate;Ljava/security/cert/X509Certificate;)V", "")]
-		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.java.security.cert.X509Certificate arg1, Dova.JDK.java.security.cert.X509Certificate arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+		public StatusInfo(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.java.security.cert.X509Certificate arg1, Dova.JDK.java.security.cert.X509Certificate arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 		{
 		}
 
@@ -536,16 +536,16 @@ public partial class StatusResponseManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/StatusResponseManager$OCSPFetchCall;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statInfo", "Lsun/security/ssl/StatusResponseManager$StatusInfo;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ocspRequest", "Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extensions", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "responderIds", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/security/ssl/StatusResponseManager;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OCSPFetchCall", "(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "call_0", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "call_1", "()Lsun/security/ssl/StatusResponseManager$StatusInfo;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addToCache", "(Lsun/security/provider/certpath/CertId;Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNextTaskDelay", "(Ljava/util/Date;)J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statInfo", "Lsun/security/ssl/StatusResponseManager$StatusInfo;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ocspRequest", "Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extensions", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "responderIds", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/security/ssl/StatusResponseManager;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "call_0", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "call_1", "()Lsun/security/ssl/StatusResponseManager$StatusInfo;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addToCache", "(Lsun/security/provider/certpath/CertId;Lsun/security/ssl/StatusResponseManager$ResponseCacheEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNextTaskDelay", "(Ljava/util/Date;)J"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/StatusResponseManager$StatusInfo;", "")]
@@ -624,7 +624,7 @@ public partial class StatusResponseManager
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/StatusResponseManager;Lsun/security/ssl/StatusResponseManager$StatusInfo;Lsun/security/ssl/CertStatusExtension$OCSPStatusRequest;)V", "public")]
-		public OCSPFetchCall(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.sun.security.ssl.StatusResponseManager.StatusInfo arg1, Dova.JDK.sun.security.ssl.CertStatusExtension.OCSPStatusRequest arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public OCSPFetchCall(Dova.JDK.sun.security.ssl.StatusResponseManager arg0, Dova.JDK.sun.security.ssl.StatusResponseManager.StatusInfo arg1, Dova.JDK.sun.security.ssl.CertStatusExtension.OCSPStatusRequest arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -674,11 +674,11 @@ public partial class StatusResponseManager
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/StatusResponseManager$StaplingParameters;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statusRespExt", "Lsun/security/ssl/SSLExtension;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statReqType", "Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statReqData", "Lsun/security/ssl/CertStatusExtension$CertStatusRequest;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "responseMap", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StaplingParameters", "(Lsun/security/ssl/SSLExtension;Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;Lsun/security/ssl/CertStatusExtension$CertStatusRequest;Ljava/util/Map;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statusRespExt", "Lsun/security/ssl/SSLExtension;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statReqType", "Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statReqData", "Lsun/security/ssl/CertStatusExtension$CertStatusRequest;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "responseMap", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/SSLExtension;Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;Lsun/security/ssl/CertStatusExtension$CertStatusRequest;Ljava/util/Map;)V"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/SSLExtension;", "final")]
@@ -743,7 +743,7 @@ public partial class StatusResponseManager
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/SSLExtension;Lsun/security/ssl/CertStatusExtension$CertStatusRequestType;Lsun/security/ssl/CertStatusExtension$CertStatusRequest;Ljava/util/Map;)V", "")]
-		public StaplingParameters(Dova.JDK.sun.security.ssl.SSLExtension arg0, Dova.JDK.sun.security.ssl.CertStatusExtension.CertStatusRequestType arg1, Dova.JDK.sun.security.ssl.CertStatusExtension.CertStatusRequest arg2, Dova.JDK.java.util.Map arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public StaplingParameters(Dova.JDK.sun.security.ssl.SSLExtension arg0, Dova.JDK.sun.security.ssl.CertStatusExtension.CertStatusRequestType arg1, Dova.JDK.sun.security.ssl.CertStatusExtension.CertStatusRequest arg2, Dova.JDK.java.util.Map arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

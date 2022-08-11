@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,20 +31,20 @@ public partial class AudioFloatConverter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "format", "Ljavax/sound/sampled/AudioFormat;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConverter", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FI[BI)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([F[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FI[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormat", "()Ljavax/sound/sampled/AudioFormat;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getConverter", "(Ljavax/sound/sampled/AudioFormat;)Lcom/sun/media/sound/AudioFloatConverter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([B[FI)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([B[FII)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FI)[F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([B[F)[F"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "format", "Ljavax/sound/sampled/AudioFormat;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FI[BI)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([F[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FI[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormat", "()Ljavax/sound/sampled/AudioFormat;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getConverter", "(Ljavax/sound/sampled/AudioFormat;)Lcom/sun/media/sound/AudioFloatConverter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([B[FI)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([B[FII)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FI)[F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([B[F)[F"));
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/sampled/AudioFormat;", "private")]
@@ -67,7 +67,7 @@ public partial class AudioFloatConverter
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public AudioFloatConverter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AudioFloatConverter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -173,9 +173,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion8S;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion8S", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -184,7 +184,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion8S() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion8S() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -221,9 +221,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion16SB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion16SB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -232,7 +232,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion16SB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion16SB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -269,9 +269,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion24SB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion24SB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -280,7 +280,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion24SB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion24SB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -317,9 +317,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32SB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32SB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -328,7 +328,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32SB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32SB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -366,10 +366,10 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32xSB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xbytes", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32xSB", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xbytes", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -392,7 +392,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public AudioFloatConversion32xSB(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AudioFloatConversion32xSB(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -429,9 +429,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion16SL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion16SL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -440,7 +440,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion16SL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion16SL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -477,9 +477,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion24SL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion24SL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -488,7 +488,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion24SL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion24SL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -525,9 +525,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32SL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32SL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -536,7 +536,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32SL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32SL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -574,10 +574,10 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32xSL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xbytes", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32xSL", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xbytes", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -600,7 +600,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public AudioFloatConversion32xSL(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AudioFloatConversion32xSL(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -637,9 +637,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion8U;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion8U", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -648,7 +648,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion8U() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion8U() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -685,9 +685,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion16UB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion16UB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -696,7 +696,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion16UB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion16UB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -733,9 +733,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion24UB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion24UB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -744,7 +744,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion24UB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion24UB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -781,9 +781,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32UB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32UB", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -792,7 +792,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32UB() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32UB() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -830,10 +830,10 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32xUB;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xbytes", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32xUB", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xbytes", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -856,7 +856,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public AudioFloatConversion32xUB(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AudioFloatConversion32xUB(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -893,9 +893,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion16UL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion16UL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -904,7 +904,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion16UL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion16UL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -941,9 +941,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion24UL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion24UL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -952,7 +952,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion24UL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion24UL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -989,9 +989,9 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32UL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32UL", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1000,7 +1000,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32UL() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32UL() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1038,10 +1038,10 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32xUL;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "xbytes", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32xUL", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "xbytes", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("I", "private final")]
@@ -1064,7 +1064,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public AudioFloatConversion32xUL(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public AudioFloatConversion32xUL(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1102,11 +1102,11 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32B;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "floatbuffer", "Ljava/nio/FloatBuffer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32B", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "floatbuffer", "Ljava/nio/FloatBuffer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "")]
@@ -1143,7 +1143,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32B() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32B() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1181,11 +1181,11 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion32L;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "floatbuffer", "Ljava/nio/FloatBuffer;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion32L", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "floatbuffer", "Ljava/nio/FloatBuffer;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "")]
@@ -1222,7 +1222,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion32L() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion32L() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1260,12 +1260,12 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion64B;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "floatbuffer", "Ljava/nio/DoubleBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "double_buff", "[D"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion64B", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "floatbuffer", "Ljava/nio/DoubleBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "double_buff", "[D"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "")]
@@ -1316,7 +1316,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion64B() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion64B() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1354,12 +1354,12 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatConversion64L;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "floatbuffer", "Ljava/nio/DoubleBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "double_buff", "[D"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatConversion64L", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytebuffer", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "floatbuffer", "Ljava/nio/DoubleBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "double_buff", "[D"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "")]
@@ -1410,7 +1410,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public AudioFloatConversion64L() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AudioFloatConversion64L() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1448,14 +1448,14 @@ public partial class AudioFloatConverter
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/AudioFloatConverter$AudioFloatLSBFilter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "converter", "Lcom/sun/media/sound/AudioFloatConverter;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stepsize", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mask", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mask_buffer", "[B"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AudioFloatLSBFilter", "(Lcom/sun/media/sound/AudioFloatConverter;Ljavax/sound/sampled/AudioFormat;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toByteArray", "([FII[BI)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toFloatArray", "([BI[FII)[F"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "converter", "Lcom/sun/media/sound/AudioFloatConverter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stepsize", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mask", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mask_buffer", "[B"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/media/sound/AudioFloatConverter;Ljavax/sound/sampled/AudioFormat;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toByteArray", "([FII[BI)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toFloatArray", "([BI[FII)[F"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/media/sound/AudioFloatConverter;", "private final")]
@@ -1534,7 +1534,7 @@ public partial class AudioFloatConverter
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/media/sound/AudioFloatConverter;Ljavax/sound/sampled/AudioFormat;)V", "")]
-		public AudioFloatLSBFilter(Dova.JDK.com.sun.media.sound.AudioFloatConverter arg0, Dova.JDK.javax.sound.sampled.AudioFormat arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AudioFloatLSBFilter(Dova.JDK.com.sun.media.sound.AudioFloatConverter arg0, Dova.JDK.javax.sound.sampled.AudioFormat arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

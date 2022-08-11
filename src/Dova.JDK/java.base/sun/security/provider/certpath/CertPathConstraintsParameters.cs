@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,20 +32,20 @@ public partial class CertPathConstraintsParameters
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/provider/certpath/CertPathConstraintsParameters;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "key", "Ljava/security/Key;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "anchor", "Ljava/security/cert/TrustAnchor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "date", "Ljava/util/Date;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "variant", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cert", "Ljava/security/cert/X509Certificate;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertPathConstraintsParameters", "(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;Ljava/security/cert/X509Certificate;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertPathConstraintsParameters", "(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CertPathConstraintsParameters", "(Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVariant", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDate", "()Ljava/util/Date;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeys", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "anchorIsJdkCA", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "extendedExceptionMsg", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "key", "Ljava/security/Key;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "anchor", "Ljava/security/cert/TrustAnchor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "date", "Ljava/util/Date;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "variant", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cert", "Ljava/security/cert/X509Certificate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;Ljava/security/cert/X509Certificate;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVariant", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDate", "()Ljava/util/Date;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKeys", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "anchorIsJdkCA", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "extendedExceptionMsg", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/Key;", "private final")]
@@ -124,17 +124,17 @@ public partial class CertPathConstraintsParameters
 	}
 
 	[JniSignatureAttribute("(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;Ljava/security/cert/X509Certificate;)V", "private")]
-	public CertPathConstraintsParameters(Dova.JDK.java.security.Key arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3, Dova.JDK.java.security.cert.X509Certificate arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public CertPathConstraintsParameters(Dova.JDK.java.security.Key arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3, Dova.JDK.java.security.cert.X509Certificate arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/Key;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V", "public")]
-	public CertPathConstraintsParameters(Dova.JDK.java.security.Key arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+	public CertPathConstraintsParameters(Dova.JDK.java.security.Key arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/security/cert/X509Certificate;Ljava/lang/String;Ljava/security/cert/TrustAnchor;Ljava/util/Date;)V", "public")]
-	public CertPathConstraintsParameters(Dova.JDK.java.security.cert.X509Certificate arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
+	public CertPathConstraintsParameters(Dova.JDK.java.security.cert.X509Certificate arg0, Dova.JDK.java.lang.String arg1, Dova.JDK.java.security.cert.TrustAnchor arg2, Dova.JDK.java.util.Date arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
 	{
 	}
 

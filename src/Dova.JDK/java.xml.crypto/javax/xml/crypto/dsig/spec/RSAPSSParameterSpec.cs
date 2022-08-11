@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class RSAPSSParameterSpec
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/xml/crypto/dsig/spec/RSAPSSParameterSpec;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "spec", "Ljava/security/spec/PSSParameterSpec;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RSAPSSParameterSpec", "(Ljava/security/spec/PSSParameterSpec;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPSSParameterSpec", "()Ljava/security/spec/PSSParameterSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "spec", "Ljava/security/spec/PSSParameterSpec;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/spec/PSSParameterSpec;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPSSParameterSpec", "()Ljava/security/spec/PSSParameterSpec;"));
 	}
 
 	[JniSignatureAttribute("Ljava/security/spec/PSSParameterSpec;", "private final")]
@@ -57,7 +57,7 @@ public partial class RSAPSSParameterSpec
 	}
 
 	[JniSignatureAttribute("(Ljava/security/spec/PSSParameterSpec;)V", "public")]
-	public RSAPSSParameterSpec(Dova.JDK.java.security.spec.PSSParameterSpec arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public RSAPSSParameterSpec(Dova.JDK.java.security.spec.PSSParameterSpec arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

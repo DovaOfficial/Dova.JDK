@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface PreviewFeature
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/javac/PreviewFeature;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "feature", "()Ljdk/internal/javac/PreviewFeature$Feature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reflective", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "feature", "()Ljdk/internal/javac/PreviewFeature$Feature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reflective", "()Z"));
 	}
 
 	[JniSignatureAttribute("()Ljdk/internal/javac/PreviewFeature$Feature;", "public abstract")]
@@ -63,13 +63,13 @@ public partial interface PreviewFeature
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/javac/PreviewFeature$Feature;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SWITCH_PATTERN_MATCHING", "Ljdk/internal/javac/PreviewFeature$Feature;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEST", "Ljdk/internal/javac/PreviewFeature$Feature;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/javac/PreviewFeature$Feature;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Feature", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/javac/PreviewFeature$Feature;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/javac/PreviewFeature$Feature;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/javac/PreviewFeature$Feature;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SWITCH_PATTERN_MATCHING", "Ljdk/internal/javac/PreviewFeature$Feature;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEST", "Ljdk/internal/javac/PreviewFeature$Feature;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/javac/PreviewFeature$Feature;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/javac/PreviewFeature$Feature;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/javac/PreviewFeature$Feature;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/javac/PreviewFeature$Feature;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/javac/PreviewFeature$Feature;", "public static final")]
@@ -120,7 +120,7 @@ public partial interface PreviewFeature
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Feature(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Feature(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

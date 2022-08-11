@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,10 +29,10 @@ public partial interface IntPredicate
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/function/IntPredicate;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "test", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "or", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "negate", "()Ljava/util/function/IntPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "and", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "test", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "or", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "negate", "()Ljava/util/function/IntPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "and", "(Ljava/util/function/IntPredicate;)Ljava/util/function/IntPredicate;"));
 	}
 
 	[JniSignatureAttribute("(I)Z", "public abstract")]

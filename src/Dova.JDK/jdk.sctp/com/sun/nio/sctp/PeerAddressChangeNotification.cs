@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class PeerAddressChangeNotification
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/PeerAddressChangeNotification;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PeerAddressChangeNotification", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "event", "()Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "address", "()Ljava/net/SocketAddress;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "association", "()Lcom/sun/nio/sctp/Association;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "event", "()Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "address", "()Ljava/net/SocketAddress;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "association", "()Lcom/sun/nio/sctp/Association;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -43,7 +43,7 @@ public partial class PeerAddressChangeNotification
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public PeerAddressChangeNotification() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public PeerAddressChangeNotification() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -87,17 +87,17 @@ public partial class PeerAddressChangeNotification
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_AVAILABLE", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_UNREACHABLE", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_REMOVED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_ADDED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_MADE_PRIMARY", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDR_CONFIRMED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AddressChangeEvent", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_AVAILABLE", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_UNREACHABLE", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_REMOVED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_ADDED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_MADE_PRIMARY", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDR_CONFIRMED", "Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/nio/sctp/PeerAddressChangeNotification$AddressChangeEvent;", "public static final")]
@@ -204,7 +204,7 @@ public partial class PeerAddressChangeNotification
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public AddressChangeEvent(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AddressChangeEvent(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

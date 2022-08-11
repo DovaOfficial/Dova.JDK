@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class DriverInfo
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/sql/DriverInfo;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "driver", "Ljava/sql/Driver;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "da", "Ljava/sql/DriverAction;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DriverInfo", "(Ljava/sql/Driver;Ljava/sql/DriverAction;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "action", "()Ljava/sql/DriverAction;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "driver", "Ljava/sql/Driver;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "da", "Ljava/sql/DriverAction;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/sql/Driver;Ljava/sql/DriverAction;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "action", "()Ljava/sql/DriverAction;"));
 	}
 
 	[JniSignatureAttribute("Ljava/sql/Driver;", "final")]
@@ -74,7 +74,7 @@ public partial class DriverInfo
 	}
 
 	[JniSignatureAttribute("(Ljava/sql/Driver;Ljava/sql/DriverAction;)V", "")]
-	public DriverInfo(Dova.JDK.java.sql.Driver arg0, Dova.JDK.java.sql.DriverAction arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public DriverInfo(Dova.JDK.java.sql.Driver arg0, Dova.JDK.java.sql.DriverAction arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

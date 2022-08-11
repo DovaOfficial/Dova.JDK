@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class StatementEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/StatementEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Ljava/sql/SQLException;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "statement", "Ljava/sql/PreparedStatement;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatementEvent", "(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StatementEvent", "(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;Ljava/sql/SQLException;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSQLException", "()Ljava/sql/SQLException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStatement", "()Ljava/sql/PreparedStatement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Ljava/sql/SQLException;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "statement", "Ljava/sql/PreparedStatement;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;Ljava/sql/SQLException;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSQLException", "()Ljava/sql/SQLException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStatement", "()Ljava/sql/PreparedStatement;"));
 	}
 
 	[JniSignatureAttribute("J", "static final")]
@@ -88,12 +88,12 @@ public partial class StatementEvent
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;)V", "public")]
-	public StatementEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.PreparedStatement arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public StatementEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.PreparedStatement arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/sql/PooledConnection;Ljava/sql/PreparedStatement;Ljava/sql/SQLException;)V", "public")]
-	public StatementEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.PreparedStatement arg1, Dova.JDK.java.sql.SQLException arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public StatementEvent(Dova.JDK.javax.sql.PooledConnection arg0, Dova.JDK.java.sql.PreparedStatement arg1, Dova.JDK.java.sql.SQLException arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 

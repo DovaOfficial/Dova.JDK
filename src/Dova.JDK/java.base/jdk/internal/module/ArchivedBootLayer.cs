@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class ArchivedBootLayer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/module/ArchivedBootLayer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "archivedBootLayer", "Ljdk/internal/module/ArchivedBootLayer;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bootLayer", "Ljava/lang/ModuleLayer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArchivedBootLayer", "(Ljava/lang/ModuleLayer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "()Ljdk/internal/module/ArchivedBootLayer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bootLayer", "()Ljava/lang/ModuleLayer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "archive", "(Ljava/lang/ModuleLayer;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "archivedBootLayer", "Ljdk/internal/module/ArchivedBootLayer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bootLayer", "Ljava/lang/ModuleLayer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/ModuleLayer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "()Ljdk/internal/module/ArchivedBootLayer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bootLayer", "()Ljava/lang/ModuleLayer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "archive", "(Ljava/lang/ModuleLayer;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/module/ArchivedBootLayer;", "private static")]
@@ -73,7 +73,7 @@ public partial class ArchivedBootLayer
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/ModuleLayer;)V", "private")]
-	public ArchivedBootLayer(Dova.JDK.java.lang.ModuleLayer arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public ArchivedBootLayer(Dova.JDK.java.lang.ModuleLayer arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

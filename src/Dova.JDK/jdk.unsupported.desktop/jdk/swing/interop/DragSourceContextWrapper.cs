@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class DragSourceContextWrapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/DragSourceContextWrapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dsp", "Ljdk/swing/interop/DragSourceContextWrapper$DragSourceContextPeerProxy;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DragSourceContextWrapper", "(Ljava/awt/dnd/DragGestureEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNativeCursor", "(Ljava/awt/Cursor;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startDrag", "(Ljava/awt/datatransfer/Transferable;[JLjava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startSecondaryEventLoop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "convertModifiersToDropAction", "(II)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "quitSecondaryEventLoop", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dragDropFinished", "(ZIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDragSourceContext", "()Ljava/awt/dnd/DragSourceContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPeer", "()Ljava/awt/dnd/peer/DragSourceContextPeer;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dsp", "Ljdk/swing/interop/DragSourceContextWrapper$DragSourceContextPeerProxy;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/dnd/DragGestureEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNativeCursor", "(Ljava/awt/Cursor;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startDrag", "(Ljava/awt/datatransfer/Transferable;[JLjava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startSecondaryEventLoop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "convertModifiersToDropAction", "(II)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "quitSecondaryEventLoop", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dragDropFinished", "(ZIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDragSourceContext", "()Ljava/awt/dnd/DragSourceContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPeer", "()Ljava/awt/dnd/peer/DragSourceContextPeer;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/swing/interop/DragSourceContextWrapper$DragSourceContextPeerProxy;", "private")]
@@ -63,7 +63,7 @@ public partial class DragSourceContextWrapper
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/dnd/DragGestureEvent;)V", "public")]
-	public DragSourceContextWrapper(Dova.JDK.java.awt.dnd.DragGestureEvent arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DragSourceContextWrapper(Dova.JDK.java.awt.dnd.DragGestureEvent arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -137,14 +137,14 @@ public partial class DragSourceContextWrapper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/DragSourceContextWrapper$DragSourceContextPeerProxy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/swing/interop/DragSourceContextWrapper;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DragSourceContextPeerProxy", "(Ljdk/swing/interop/DragSourceContextWrapper;Ljava/awt/dnd/DragGestureEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDragSourceContextCall", "()Ljava/awt/dnd/DragSourceContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNativeCursor", "(JLjava/awt/Cursor;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startDrag", "(Ljava/awt/datatransfer/Transferable;[JLjava/util/Map;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startSecondaryEventLoop", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dragDropFinishedCall", "(ZIII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "quitSecondaryEventLoop", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/swing/interop/DragSourceContextWrapper;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/swing/interop/DragSourceContextWrapper;Ljava/awt/dnd/DragGestureEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDragSourceContextCall", "()Ljava/awt/dnd/DragSourceContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNativeCursor", "(JLjava/awt/Cursor;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startDrag", "(Ljava/awt/datatransfer/Transferable;[JLjava/util/Map;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startSecondaryEventLoop", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dragDropFinishedCall", "(ZIII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "quitSecondaryEventLoop", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/swing/interop/DragSourceContextWrapper;", "final")]
@@ -167,7 +167,7 @@ public partial class DragSourceContextWrapper
 		}
 
 		[JniSignatureAttribute("(Ljdk/swing/interop/DragSourceContextWrapper;Ljava/awt/dnd/DragGestureEvent;)V", "public")]
-		public DragSourceContextPeerProxy(Dova.JDK.jdk.swing.interop.DragSourceContextWrapper arg0, Dova.JDK.java.awt.dnd.DragGestureEvent arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public DragSourceContextPeerProxy(Dova.JDK.jdk.swing.interop.DragSourceContextWrapper arg0, Dova.JDK.java.awt.dnd.DragGestureEvent arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

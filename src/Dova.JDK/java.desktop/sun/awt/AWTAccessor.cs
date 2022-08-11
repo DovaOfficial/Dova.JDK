@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,101 +31,101 @@ public partial class AWTAccessor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "componentAccessor", "Lsun/awt/AWTAccessor$ComponentAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "containerAccessor", "Lsun/awt/AWTAccessor$ContainerAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "windowAccessor", "Lsun/awt/AWTAccessor$WindowAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "awtEventAccessor", "Lsun/awt/AWTAccessor$AWTEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "inputEventAccessor", "Lsun/awt/AWTAccessor$InputEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "mouseEventAccessor", "Lsun/awt/AWTAccessor$MouseEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "frameAccessor", "Lsun/awt/AWTAccessor$FrameAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "kfmAccessor", "Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "menuComponentAccessor", "Lsun/awt/AWTAccessor$MenuComponentAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "eventQueueAccessor", "Lsun/awt/AWTAccessor$EventQueueAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "popupMenuAccessor", "Lsun/awt/AWTAccessor$PopupMenuAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "fileDialogAccessor", "Lsun/awt/AWTAccessor$FileDialogAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "scrollPaneAdjustableAccessor", "Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "checkboxMenuItemAccessor", "Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cursorAccessor", "Lsun/awt/AWTAccessor$CursorAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "menuBarAccessor", "Lsun/awt/AWTAccessor$MenuBarAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "menuItemAccessor", "Lsun/awt/AWTAccessor$MenuItemAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "menuAccessor", "Lsun/awt/AWTAccessor$MenuAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "keyEventAccessor", "Lsun/awt/AWTAccessor$KeyEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "clientPropertyKeyAccessor", "Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "systemTrayAccessor", "Lsun/awt/AWTAccessor$SystemTrayAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "trayIconAccessor", "Lsun/awt/AWTAccessor$TrayIconAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "defaultKeyboardFocusManagerAccessor", "Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "sequencedEventAccessor", "Lsun/awt/AWTAccessor$SequencedEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "toolkitAccessor", "Lsun/awt/AWTAccessor$ToolkitAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "invocationEventAccessor", "Lsun/awt/AWTAccessor$InvocationEventAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "systemColorAccessor", "Lsun/awt/AWTAccessor$SystemColorAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "accessibleContextAccessor", "Lsun/awt/AWTAccessor$AccessibleContextAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "accessibleBundleAccessor", "Lsun/awt/AWTAccessor$AccessibleBundleAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dragSourceContextAccessor", "Lsun/awt/AWTAccessor$DragSourceContextAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dropTargetContextAccessor", "Lsun/awt/AWTAccessor$DropTargetContextAccessor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AWTAccessor", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setComponentAccessor", "(Lsun/awt/AWTAccessor$ComponentAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getComponentAccessor", "()Lsun/awt/AWTAccessor$ComponentAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setContainerAccessor", "(Lsun/awt/AWTAccessor$ContainerAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInputEventAccessor", "()Lsun/awt/AWTAccessor$InputEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAWTEventAccessor", "(Lsun/awt/AWTAccessor$AWTEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setFrameAccessor", "(Lsun/awt/AWTAccessor$FrameAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAccessibleBundleAccessor", "(Lsun/awt/AWTAccessor$AccessibleBundleAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setWindowAccessor", "(Lsun/awt/AWTAccessor$WindowAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getContainerAccessor", "()Lsun/awt/AWTAccessor$ContainerAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getWindowAccessor", "()Lsun/awt/AWTAccessor$WindowAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAWTEventAccessor", "()Lsun/awt/AWTAccessor$AWTEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setInputEventAccessor", "(Lsun/awt/AWTAccessor$InputEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setMouseEventAccessor", "(Lsun/awt/AWTAccessor$MouseEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMouseEventAccessor", "()Lsun/awt/AWTAccessor$MouseEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFrameAccessor", "()Lsun/awt/AWTAccessor$FrameAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setKeyboardFocusManagerAccessor", "(Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeyboardFocusManagerAccessor", "()Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setMenuComponentAccessor", "(Lsun/awt/AWTAccessor$MenuComponentAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMenuComponentAccessor", "()Lsun/awt/AWTAccessor$MenuComponentAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setEventQueueAccessor", "(Lsun/awt/AWTAccessor$EventQueueAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getEventQueueAccessor", "()Lsun/awt/AWTAccessor$EventQueueAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setPopupMenuAccessor", "(Lsun/awt/AWTAccessor$PopupMenuAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPopupMenuAccessor", "()Lsun/awt/AWTAccessor$PopupMenuAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setFileDialogAccessor", "(Lsun/awt/AWTAccessor$FileDialogAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getFileDialogAccessor", "()Lsun/awt/AWTAccessor$FileDialogAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setScrollPaneAdjustableAccessor", "(Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getScrollPaneAdjustableAccessor", "()Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setCheckboxMenuItemAccessor", "(Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCheckboxMenuItemAccessor", "()Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setCursorAccessor", "(Lsun/awt/AWTAccessor$CursorAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getCursorAccessor", "()Lsun/awt/AWTAccessor$CursorAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setMenuBarAccessor", "(Lsun/awt/AWTAccessor$MenuBarAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMenuBarAccessor", "()Lsun/awt/AWTAccessor$MenuBarAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setMenuItemAccessor", "(Lsun/awt/AWTAccessor$MenuItemAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMenuItemAccessor", "()Lsun/awt/AWTAccessor$MenuItemAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setMenuAccessor", "(Lsun/awt/AWTAccessor$MenuAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getMenuAccessor", "()Lsun/awt/AWTAccessor$MenuAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setKeyEventAccessor", "(Lsun/awt/AWTAccessor$KeyEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeyEventAccessor", "()Lsun/awt/AWTAccessor$KeyEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setClientPropertyKeyAccessor", "(Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getClientPropertyKeyAccessor", "()Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSystemTrayAccessor", "(Lsun/awt/AWTAccessor$SystemTrayAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSystemTrayAccessor", "()Lsun/awt/AWTAccessor$SystemTrayAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setTrayIconAccessor", "(Lsun/awt/AWTAccessor$TrayIconAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTrayIconAccessor", "()Lsun/awt/AWTAccessor$TrayIconAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setDefaultKeyboardFocusManagerAccessor", "(Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultKeyboardFocusManagerAccessor", "()Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSequencedEventAccessor", "(Lsun/awt/AWTAccessor$SequencedEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSequencedEventAccessor", "()Lsun/awt/AWTAccessor$SequencedEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setToolkitAccessor", "(Lsun/awt/AWTAccessor$ToolkitAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getToolkitAccessor", "()Lsun/awt/AWTAccessor$ToolkitAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setInvocationEventAccessor", "(Lsun/awt/AWTAccessor$InvocationEventAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInvocationEventAccessor", "()Lsun/awt/AWTAccessor$InvocationEventAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSystemColorAccessor", "()Lsun/awt/AWTAccessor$SystemColorAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setSystemColorAccessor", "(Lsun/awt/AWTAccessor$SystemColorAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAccessibleContextAccessor", "()Lsun/awt/AWTAccessor$AccessibleContextAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAccessibleBundleAccessor", "()Lsun/awt/AWTAccessor$AccessibleBundleAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAccessibleContextAccessor", "(Lsun/awt/AWTAccessor$AccessibleContextAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDragSourceContextAccessor", "()Lsun/awt/AWTAccessor$DragSourceContextAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setDragSourceContextAccessor", "(Lsun/awt/AWTAccessor$DragSourceContextAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDropTargetContextAccessor", "()Lsun/awt/AWTAccessor$DropTargetContextAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setDropTargetContextAccessor", "(Lsun/awt/AWTAccessor$DropTargetContextAccessor;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "componentAccessor", "Lsun/awt/AWTAccessor$ComponentAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "containerAccessor", "Lsun/awt/AWTAccessor$ContainerAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "windowAccessor", "Lsun/awt/AWTAccessor$WindowAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "awtEventAccessor", "Lsun/awt/AWTAccessor$AWTEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "inputEventAccessor", "Lsun/awt/AWTAccessor$InputEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "mouseEventAccessor", "Lsun/awt/AWTAccessor$MouseEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "frameAccessor", "Lsun/awt/AWTAccessor$FrameAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "kfmAccessor", "Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "menuComponentAccessor", "Lsun/awt/AWTAccessor$MenuComponentAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "eventQueueAccessor", "Lsun/awt/AWTAccessor$EventQueueAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "popupMenuAccessor", "Lsun/awt/AWTAccessor$PopupMenuAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "fileDialogAccessor", "Lsun/awt/AWTAccessor$FileDialogAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "scrollPaneAdjustableAccessor", "Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "checkboxMenuItemAccessor", "Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cursorAccessor", "Lsun/awt/AWTAccessor$CursorAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "menuBarAccessor", "Lsun/awt/AWTAccessor$MenuBarAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "menuItemAccessor", "Lsun/awt/AWTAccessor$MenuItemAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "menuAccessor", "Lsun/awt/AWTAccessor$MenuAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "keyEventAccessor", "Lsun/awt/AWTAccessor$KeyEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "clientPropertyKeyAccessor", "Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "systemTrayAccessor", "Lsun/awt/AWTAccessor$SystemTrayAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "trayIconAccessor", "Lsun/awt/AWTAccessor$TrayIconAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "defaultKeyboardFocusManagerAccessor", "Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "sequencedEventAccessor", "Lsun/awt/AWTAccessor$SequencedEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "toolkitAccessor", "Lsun/awt/AWTAccessor$ToolkitAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "invocationEventAccessor", "Lsun/awt/AWTAccessor$InvocationEventAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "systemColorAccessor", "Lsun/awt/AWTAccessor$SystemColorAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "accessibleContextAccessor", "Lsun/awt/AWTAccessor$AccessibleContextAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "accessibleBundleAccessor", "Lsun/awt/AWTAccessor$AccessibleBundleAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dragSourceContextAccessor", "Lsun/awt/AWTAccessor$DragSourceContextAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dropTargetContextAccessor", "Lsun/awt/AWTAccessor$DropTargetContextAccessor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setComponentAccessor", "(Lsun/awt/AWTAccessor$ComponentAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getComponentAccessor", "()Lsun/awt/AWTAccessor$ComponentAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setContainerAccessor", "(Lsun/awt/AWTAccessor$ContainerAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInputEventAccessor", "()Lsun/awt/AWTAccessor$InputEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAWTEventAccessor", "(Lsun/awt/AWTAccessor$AWTEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setFrameAccessor", "(Lsun/awt/AWTAccessor$FrameAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAccessibleBundleAccessor", "(Lsun/awt/AWTAccessor$AccessibleBundleAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setWindowAccessor", "(Lsun/awt/AWTAccessor$WindowAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getContainerAccessor", "()Lsun/awt/AWTAccessor$ContainerAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getWindowAccessor", "()Lsun/awt/AWTAccessor$WindowAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAWTEventAccessor", "()Lsun/awt/AWTAccessor$AWTEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setInputEventAccessor", "(Lsun/awt/AWTAccessor$InputEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setMouseEventAccessor", "(Lsun/awt/AWTAccessor$MouseEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMouseEventAccessor", "()Lsun/awt/AWTAccessor$MouseEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFrameAccessor", "()Lsun/awt/AWTAccessor$FrameAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setKeyboardFocusManagerAccessor", "(Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeyboardFocusManagerAccessor", "()Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setMenuComponentAccessor", "(Lsun/awt/AWTAccessor$MenuComponentAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMenuComponentAccessor", "()Lsun/awt/AWTAccessor$MenuComponentAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setEventQueueAccessor", "(Lsun/awt/AWTAccessor$EventQueueAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getEventQueueAccessor", "()Lsun/awt/AWTAccessor$EventQueueAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setPopupMenuAccessor", "(Lsun/awt/AWTAccessor$PopupMenuAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPopupMenuAccessor", "()Lsun/awt/AWTAccessor$PopupMenuAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setFileDialogAccessor", "(Lsun/awt/AWTAccessor$FileDialogAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getFileDialogAccessor", "()Lsun/awt/AWTAccessor$FileDialogAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setScrollPaneAdjustableAccessor", "(Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getScrollPaneAdjustableAccessor", "()Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setCheckboxMenuItemAccessor", "(Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCheckboxMenuItemAccessor", "()Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setCursorAccessor", "(Lsun/awt/AWTAccessor$CursorAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getCursorAccessor", "()Lsun/awt/AWTAccessor$CursorAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setMenuBarAccessor", "(Lsun/awt/AWTAccessor$MenuBarAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMenuBarAccessor", "()Lsun/awt/AWTAccessor$MenuBarAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setMenuItemAccessor", "(Lsun/awt/AWTAccessor$MenuItemAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMenuItemAccessor", "()Lsun/awt/AWTAccessor$MenuItemAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setMenuAccessor", "(Lsun/awt/AWTAccessor$MenuAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getMenuAccessor", "()Lsun/awt/AWTAccessor$MenuAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setKeyEventAccessor", "(Lsun/awt/AWTAccessor$KeyEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeyEventAccessor", "()Lsun/awt/AWTAccessor$KeyEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setClientPropertyKeyAccessor", "(Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getClientPropertyKeyAccessor", "()Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSystemTrayAccessor", "(Lsun/awt/AWTAccessor$SystemTrayAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSystemTrayAccessor", "()Lsun/awt/AWTAccessor$SystemTrayAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setTrayIconAccessor", "(Lsun/awt/AWTAccessor$TrayIconAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTrayIconAccessor", "()Lsun/awt/AWTAccessor$TrayIconAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setDefaultKeyboardFocusManagerAccessor", "(Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultKeyboardFocusManagerAccessor", "()Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSequencedEventAccessor", "(Lsun/awt/AWTAccessor$SequencedEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSequencedEventAccessor", "()Lsun/awt/AWTAccessor$SequencedEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setToolkitAccessor", "(Lsun/awt/AWTAccessor$ToolkitAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getToolkitAccessor", "()Lsun/awt/AWTAccessor$ToolkitAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setInvocationEventAccessor", "(Lsun/awt/AWTAccessor$InvocationEventAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInvocationEventAccessor", "()Lsun/awt/AWTAccessor$InvocationEventAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSystemColorAccessor", "()Lsun/awt/AWTAccessor$SystemColorAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setSystemColorAccessor", "(Lsun/awt/AWTAccessor$SystemColorAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAccessibleContextAccessor", "()Lsun/awt/AWTAccessor$AccessibleContextAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAccessibleBundleAccessor", "()Lsun/awt/AWTAccessor$AccessibleBundleAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAccessibleContextAccessor", "(Lsun/awt/AWTAccessor$AccessibleContextAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDragSourceContextAccessor", "()Lsun/awt/AWTAccessor$DragSourceContextAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setDragSourceContextAccessor", "(Lsun/awt/AWTAccessor$DragSourceContextAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDropTargetContextAccessor", "()Lsun/awt/AWTAccessor$DropTargetContextAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setDropTargetContextAccessor", "(Lsun/awt/AWTAccessor$DropTargetContextAccessor;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/AWTAccessor$ComponentAccessor;", "private static")]
@@ -568,7 +568,7 @@ public partial class AWTAccessor
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public AWTAccessor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AWTAccessor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -998,41 +998,41 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$ComponentAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBounds", "(Ljava/awt/Component;)Ljava/awt/Rectangle;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLocation", "(Ljava/awt/Component;)Ljava/awt/Point;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParent", "(Ljava/awt/Component;)Ljava/awt/Container;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParent", "(Ljava/awt/Component;Ljava/awt/Container;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSize", "(Ljava/awt/Component;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnabled", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBackgroundEraseDisabled", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPeer", "(Ljava/awt/Component;Ljava/awt/peer/ComponentPeer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLocation", "(Ljava/awt/Component;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAppContext", "(Ljava/awt/Component;)Lsun/awt/AppContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLightweight", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getForeground", "(Ljava/awt/Component;)Ljava/awt/Color;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBackground", "(Ljava/awt/Component;)Ljava/awt/Color;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBackground", "(Ljava/awt/Component;Ljava/awt/Color;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFont", "(Ljava/awt/Component;)Ljava/awt/Font;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "(Ljava/awt/Component;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY", "(Ljava/awt/Component;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getWidth", "(Ljava/awt/Component;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHeight", "(Ljava/awt/Component;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "revalidateSynchronously", "(Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isVisible", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createBufferStrategy", "(Ljava/awt/Component;ILjava/awt/BufferCapabilities;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processEvent", "(Ljava/awt/Component;Ljava/awt/AWTEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requestFocus", "(Ljava/awt/Component;Ljava/awt/event/FocusEvent$Cause;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canBeFocusOwner", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDisplayable", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessControlContext", "(Ljava/awt/Component;)Ljava/security/AccessControlContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setGraphicsConfiguration", "(Ljava/awt/Component;Ljava/awt/GraphicsConfiguration;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCursor", "(Ljava/awt/Component;)Ljava/awt/Cursor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBufferStrategy", "(Ljava/awt/Component;)Ljava/awt/image/BufferStrategy;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIgnoreRepaint", "(Ljava/awt/Component;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setRequestFocusController", "(Lsun/awt/RequestFocusController;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAppContext", "(Ljava/awt/Component;Lsun/awt/AppContext;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPeer", "(Ljava/awt/Component;)Ljava/awt/peer/ComponentPeer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBackgroundEraseDisabled", "(Ljava/awt/Component;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBounds", "(Ljava/awt/Component;)Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLocation", "(Ljava/awt/Component;)Ljava/awt/Point;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParent", "(Ljava/awt/Component;)Ljava/awt/Container;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParent", "(Ljava/awt/Component;Ljava/awt/Container;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSize", "(Ljava/awt/Component;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnabled", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBackgroundEraseDisabled", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPeer", "(Ljava/awt/Component;Ljava/awt/peer/ComponentPeer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLocation", "(Ljava/awt/Component;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAppContext", "(Ljava/awt/Component;)Lsun/awt/AppContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLightweight", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getForeground", "(Ljava/awt/Component;)Ljava/awt/Color;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBackground", "(Ljava/awt/Component;)Ljava/awt/Color;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setBackground", "(Ljava/awt/Component;Ljava/awt/Color;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFont", "(Ljava/awt/Component;)Ljava/awt/Font;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX", "(Ljava/awt/Component;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY", "(Ljava/awt/Component;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getWidth", "(Ljava/awt/Component;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHeight", "(Ljava/awt/Component;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "revalidateSynchronously", "(Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isVisible", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createBufferStrategy", "(Ljava/awt/Component;ILjava/awt/BufferCapabilities;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processEvent", "(Ljava/awt/Component;Ljava/awt/AWTEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requestFocus", "(Ljava/awt/Component;Ljava/awt/event/FocusEvent$Cause;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canBeFocusOwner", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDisplayable", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessControlContext", "(Ljava/awt/Component;)Ljava/security/AccessControlContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setGraphicsConfiguration", "(Ljava/awt/Component;Ljava/awt/GraphicsConfiguration;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCursor", "(Ljava/awt/Component;)Ljava/awt/Cursor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBufferStrategy", "(Ljava/awt/Component;)Ljava/awt/image/BufferStrategy;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIgnoreRepaint", "(Ljava/awt/Component;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setRequestFocusController", "(Lsun/awt/RequestFocusController;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAppContext", "(Ljava/awt/Component;Lsun/awt/AppContext;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPeer", "(Ljava/awt/Component;)Ljava/awt/peer/ComponentPeer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setBackgroundEraseDisabled", "(Ljava/awt/Component;Z)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Component;)Ljava/awt/Rectangle;", "public abstract")]
@@ -1281,10 +1281,10 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$ContainerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findComponentAt", "(Ljava/awt/Container;IIZ)Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateUnconditionally", "(Ljava/awt/Container;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startLWModal", "(Ljava/awt/Container;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stopLWModal", "(Ljava/awt/Container;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findComponentAt", "(Ljava/awt/Container;IIZ)Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateUnconditionally", "(Ljava/awt/Container;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startLWModal", "(Ljava/awt/Container;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stopLWModal", "(Ljava/awt/Container;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Container;IIZ)Ljava/awt/Component;", "public abstract")]
@@ -1326,14 +1326,14 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$WindowAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTrayIconWindow", "(Ljava/awt/Window;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOwnedWindows", "(Ljava/awt/Window;)[Ljava/awt/Window;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateWindow", "(Ljava/awt/Window;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAutoRequestFocus", "(Ljava/awt/Window;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calculateSecurityWarningPosition", "(Ljava/awt/Window;DDDD)Ljava/awt/geom/Point2D;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLWRequestStatus", "(Ljava/awt/Window;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSecurityWarningSize", "(Ljava/awt/Window;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTrayIconWindow", "(Ljava/awt/Window;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTrayIconWindow", "(Ljava/awt/Window;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOwnedWindows", "(Ljava/awt/Window;)[Ljava/awt/Window;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateWindow", "(Ljava/awt/Window;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAutoRequestFocus", "(Ljava/awt/Window;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calculateSecurityWarningPosition", "(Ljava/awt/Window;DDDD)Ljava/awt/geom/Point2D;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLWRequestStatus", "(Ljava/awt/Window;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSecurityWarningSize", "(Ljava/awt/Window;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTrayIconWindow", "(Ljava/awt/Window;Z)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Window;)Z", "public abstract")]
@@ -1402,12 +1402,12 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$AWTEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPosted", "(Ljava/awt/AWTEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSystemGenerated", "(Ljava/awt/AWTEvent;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAccessControlContext", "(Ljava/awt/AWTEvent;)Ljava/security/AccessControlContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBData", "(Ljava/awt/AWTEvent;)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBData", "(Ljava/awt/AWTEvent;[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSystemGenerated", "(Ljava/awt/AWTEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPosted", "(Ljava/awt/AWTEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSystemGenerated", "(Ljava/awt/AWTEvent;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAccessControlContext", "(Ljava/awt/AWTEvent;)Ljava/security/AccessControlContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBData", "(Ljava/awt/AWTEvent;)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setBData", "(Ljava/awt/AWTEvent;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSystemGenerated", "(Ljava/awt/AWTEvent;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/AWTEvent;)V", "public abstract")]
@@ -1463,9 +1463,9 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$InputEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "canAccessSystemClipboard", "(Ljava/awt/event/InputEvent;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCanAccessSystemClipboard", "(Ljava/awt/event/InputEvent;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getButtonDownMasks", "()[I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "canAccessSystemClipboard", "(Ljava/awt/event/InputEvent;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCanAccessSystemClipboard", "(Ljava/awt/event/InputEvent;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getButtonDownMasks", "()[I"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/event/InputEvent;)Z", "public abstract")]
@@ -1502,8 +1502,8 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$MouseEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCausedByTouchEvent", "(Ljava/awt/event/MouseEvent;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCausedByTouchEvent", "(Ljava/awt/event/MouseEvent;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCausedByTouchEvent", "(Ljava/awt/event/MouseEvent;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCausedByTouchEvent", "(Ljava/awt/event/MouseEvent;Z)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/event/MouseEvent;)Z", "public abstract")]
@@ -1533,9 +1533,9 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$FrameAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExtendedState", "(Ljava/awt/Frame;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExtendedState", "(Ljava/awt/Frame;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaximizedBounds", "(Ljava/awt/Frame;)Ljava/awt/Rectangle;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExtendedState", "(Ljava/awt/Frame;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExtendedState", "(Ljava/awt/Frame;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaximizedBounds", "(Ljava/awt/Frame;)Ljava/awt/Rectangle;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Frame;)I", "public abstract")]
@@ -1572,13 +1572,13 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$KeyboardFocusManagerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processSynchronousLightweightTransfer", "(Ljava/awt/Component;Ljava/awt/Component;ZZJ)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldNativelyFocusHeavyweight", "(Ljava/awt/Component;Ljava/awt/Component;ZZJLjava/awt/event/FocusEvent$Cause;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeLastFocusRequest", "(Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentKeyboardFocusManager", "(Lsun/awt/AppContext;)Ljava/awt/KeyboardFocusManager;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMostRecentFocusOwner", "(Ljava/awt/Window;Ljava/awt/Component;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMostRecentFocusOwner", "(Ljava/awt/Window;)Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCurrentFocusCycleRoot", "()Ljava/awt/Container;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processSynchronousLightweightTransfer", "(Ljava/awt/Component;Ljava/awt/Component;ZZJ)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldNativelyFocusHeavyweight", "(Ljava/awt/Component;Ljava/awt/Component;ZZJLjava/awt/event/FocusEvent$Cause;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeLastFocusRequest", "(Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentKeyboardFocusManager", "(Lsun/awt/AppContext;)Ljava/awt/KeyboardFocusManager;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMostRecentFocusOwner", "(Ljava/awt/Window;Ljava/awt/Component;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMostRecentFocusOwner", "(Ljava/awt/Window;)Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCurrentFocusCycleRoot", "()Ljava/awt/Container;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Component;Ljava/awt/Component;ZZJ)Z", "public abstract")]
@@ -1642,12 +1642,12 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$MenuComponentAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getParent", "(Ljava/awt/MenuComponent;)Ljava/awt/MenuContainer;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setParent", "(Ljava/awt/MenuComponent;Ljava/awt/MenuContainer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAppContext", "(Ljava/awt/MenuComponent;)Lsun/awt/AppContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFont_NoClientCode", "(Ljava/awt/MenuComponent;)Ljava/awt/Font;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAppContext", "(Ljava/awt/MenuComponent;Lsun/awt/AppContext;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPeer", "(Ljava/awt/MenuComponent;)Ljava/awt/peer/MenuComponentPeer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getParent", "(Ljava/awt/MenuComponent;)Ljava/awt/MenuContainer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setParent", "(Ljava/awt/MenuComponent;Ljava/awt/MenuContainer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAppContext", "(Ljava/awt/MenuComponent;)Lsun/awt/AppContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFont_NoClientCode", "(Ljava/awt/MenuComponent;)Ljava/awt/Font;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAppContext", "(Ljava/awt/MenuComponent;Lsun/awt/AppContext;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPeer", "(Ljava/awt/MenuComponent;)Ljava/awt/peer/MenuComponentPeer;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/MenuComponent;)Ljava/awt/MenuContainer;", "public abstract")]
@@ -1704,14 +1704,14 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$EventQueueAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeSourceEvents", "(Ljava/awt/EventQueue;Ljava/lang/Object;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMostRecentEventTime", "(Ljava/awt/EventQueue;)J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeAndWait", "(Ljava/lang/Object;Ljava/lang/Runnable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wakeup", "(Ljava/awt/EventQueue;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDispatchThreadImpl", "(Ljava/awt/EventQueue;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noEvents", "(Ljava/awt/EventQueue;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFwDispatcher", "(Ljava/awt/EventQueue;Lsun/awt/FwDispatcher;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDispatchThread", "(Ljava/awt/EventQueue;)Ljava/lang/Thread;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeSourceEvents", "(Ljava/awt/EventQueue;Ljava/lang/Object;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMostRecentEventTime", "(Ljava/awt/EventQueue;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeAndWait", "(Ljava/lang/Object;Ljava/lang/Runnable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wakeup", "(Ljava/awt/EventQueue;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDispatchThreadImpl", "(Ljava/awt/EventQueue;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noEvents", "(Ljava/awt/EventQueue;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFwDispatcher", "(Ljava/awt/EventQueue;Lsun/awt/FwDispatcher;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDispatchThread", "(Ljava/awt/EventQueue;)Ljava/lang/Thread;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/EventQueue;Ljava/lang/Object;Z)V", "public abstract")]
@@ -1780,7 +1780,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$PopupMenuAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isTrayIconPopup", "(Ljava/awt/PopupMenu;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isTrayIconPopup", "(Ljava/awt/PopupMenu;)Z"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/PopupMenu;)Z", "public abstract")]
@@ -1804,10 +1804,10 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$FileDialogAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDirectory", "(Ljava/awt/FileDialog;Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isMultipleMode", "(Ljava/awt/FileDialog;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFiles", "(Ljava/awt/FileDialog;[Ljava/io/File;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setFile", "(Ljava/awt/FileDialog;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDirectory", "(Ljava/awt/FileDialog;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isMultipleMode", "(Ljava/awt/FileDialog;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFiles", "(Ljava/awt/FileDialog;[Ljava/io/File;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setFile", "(Ljava/awt/FileDialog;Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/FileDialog;Ljava/lang/String;)V", "public abstract")]
@@ -1849,7 +1849,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$ScrollPaneAdjustableAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setTypedValue", "(Ljava/awt/ScrollPaneAdjustable;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setTypedValue", "(Ljava/awt/ScrollPaneAdjustable;II)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/ScrollPaneAdjustable;II)V", "public abstract")]
@@ -1872,7 +1872,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$CheckboxMenuItemAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getState", "(Ljava/awt/CheckboxMenuItem;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getState", "(Ljava/awt/CheckboxMenuItem;)Z"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/CheckboxMenuItem;)Z", "public abstract")]
@@ -1896,9 +1896,9 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$CursorAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "(Ljava/awt/Cursor;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPData", "(Ljava/awt/Cursor;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPData", "(Ljava/awt/Cursor;)J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "(Ljava/awt/Cursor;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPData", "(Ljava/awt/Cursor;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPData", "(Ljava/awt/Cursor;)J"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Cursor;)I", "public abstract")]
@@ -1935,8 +1935,8 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$MenuBarAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHelpMenu", "(Ljava/awt/MenuBar;)Ljava/awt/Menu;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMenus", "(Ljava/awt/MenuBar;)Ljava/util/Vector;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHelpMenu", "(Ljava/awt/MenuBar;)Ljava/awt/Menu;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMenus", "(Ljava/awt/MenuBar;)Ljava/util/Vector;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/MenuBar;)Ljava/awt/Menu;", "public abstract")]
@@ -1967,11 +1967,11 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$MenuItemAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isEnabled", "(Ljava/awt/MenuItem;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getActionCommandImpl", "(Ljava/awt/MenuItem;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isItemEnabled", "(Ljava/awt/MenuItem;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShortcut", "(Ljava/awt/MenuItem;)Ljava/awt/MenuShortcut;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLabel", "(Ljava/awt/MenuItem;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isEnabled", "(Ljava/awt/MenuItem;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getActionCommandImpl", "(Ljava/awt/MenuItem;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isItemEnabled", "(Ljava/awt/MenuItem;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShortcut", "(Ljava/awt/MenuItem;)Ljava/awt/MenuShortcut;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLabel", "(Ljava/awt/MenuItem;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/MenuItem;)Z", "public abstract")]
@@ -2023,7 +2023,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$MenuAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getItems", "(Ljava/awt/Menu;)Ljava/util/Vector;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getItems", "(Ljava/awt/Menu;)Ljava/util/Vector;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/Menu;)Ljava/util/Vector;", "public abstract")]
@@ -2047,11 +2047,11 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$KeyEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setRawCode", "(Ljava/awt/event/KeyEvent;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPrimaryLevelUnicode", "(Ljava/awt/event/KeyEvent;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExtendedKeyCode", "(Ljava/awt/event/KeyEvent;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOriginalSource", "(Ljava/awt/event/KeyEvent;)Ljava/awt/Component;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isProxyActive", "(Ljava/awt/event/KeyEvent;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setRawCode", "(Ljava/awt/event/KeyEvent;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPrimaryLevelUnicode", "(Ljava/awt/event/KeyEvent;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExtendedKeyCode", "(Ljava/awt/event/KeyEvent;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOriginalSource", "(Ljava/awt/event/KeyEvent;)Ljava/awt/Component;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isProxyActive", "(Ljava/awt/event/KeyEvent;)Z"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/event/KeyEvent;J)V", "public abstract")]
@@ -2100,7 +2100,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$ClientPropertyKeyAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getJComponent_TRANSFER_HANDLER", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getJComponent_TRANSFER_HANDLER", "()Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/Object;", "public abstract")]
@@ -2124,7 +2124,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$SystemTrayAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firePropertyChange", "(Ljava/awt/SystemTray;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "firePropertyChange", "(Ljava/awt/SystemTray;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/SystemTray;Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V", "public abstract")]
@@ -2147,8 +2147,8 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$TrayIconAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeNotify", "(Ljava/awt/TrayIcon;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addNotify", "(Ljava/awt/TrayIcon;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeNotify", "(Ljava/awt/TrayIcon;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addNotify", "(Ljava/awt/TrayIcon;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/TrayIcon;)V", "public abstract")]
@@ -2177,7 +2177,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$DefaultKeyboardFocusManagerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consumeNextKeyTyped", "(Ljava/awt/DefaultKeyboardFocusManager;Ljava/awt/event/KeyEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consumeNextKeyTyped", "(Ljava/awt/DefaultKeyboardFocusManager;Ljava/awt/event/KeyEvent;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/DefaultKeyboardFocusManager;Ljava/awt/event/KeyEvent;)V", "public abstract")]
@@ -2200,9 +2200,9 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$SequencedEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "(Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSequencedEvent", "(Ljava/awt/AWTEvent;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNested", "(Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "(Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSequencedEvent", "(Ljava/awt/AWTEvent;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNested", "(Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/AWTEvent;)Ljava/awt/AWTEvent;", "public abstract")]
@@ -2240,7 +2240,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$ToolkitAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPlatformResources", "(Ljava/util/ResourceBundle;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPlatformResources", "(Ljava/util/ResourceBundle;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/util/ResourceBundle;)V", "public abstract")]
@@ -2263,7 +2263,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$InvocationEventAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "(Ljava/awt/event/InvocationEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "(Ljava/awt/event/InvocationEvent;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/event/InvocationEvent;)V", "public abstract")]
@@ -2286,7 +2286,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$SystemColorAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateSystemColors", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateSystemColors", "()V"));
 		}
 
 		[JniSignatureAttribute("()V", "public abstract")]
@@ -2309,10 +2309,10 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$AccessibleContextAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAppContext", "(Ljavax/accessibility/AccessibleContext;)Lsun/awt/AppContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAppContext", "(Ljavax/accessibility/AccessibleContext;Lsun/awt/AppContext;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNativeAXResource", "(Ljavax/accessibility/AccessibleContext;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNativeAXResource", "(Ljavax/accessibility/AccessibleContext;Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAppContext", "(Ljavax/accessibility/AccessibleContext;)Lsun/awt/AppContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAppContext", "(Ljavax/accessibility/AccessibleContext;Lsun/awt/AppContext;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNativeAXResource", "(Ljavax/accessibility/AccessibleContext;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNativeAXResource", "(Ljavax/accessibility/AccessibleContext;Ljava/lang/Object;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/accessibility/AccessibleContext;)Lsun/awt/AppContext;", "public abstract")]
@@ -2355,7 +2355,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$AccessibleBundleAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKey", "(Ljavax/accessibility/AccessibleBundle;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKey", "(Ljavax/accessibility/AccessibleBundle;)Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/accessibility/AccessibleBundle;)Ljava/lang/String;", "public abstract")]
@@ -2379,7 +2379,7 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$DragSourceContextAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPeer", "(Ljava/awt/dnd/DragSourceContext;)Ljava/awt/dnd/peer/DragSourceContextPeer;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPeer", "(Ljava/awt/dnd/DragSourceContext;)Ljava/awt/dnd/peer/DragSourceContextPeer;"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/dnd/DragSourceContext;)Ljava/awt/dnd/peer/DragSourceContextPeer;", "public abstract")]
@@ -2403,8 +2403,8 @@ public partial class AWTAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTAccessor$DropTargetContextAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "(Ljava/awt/dnd/DropTargetContext;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDropTargetContextPeer", "(Ljava/awt/dnd/DropTargetContext;Ljava/awt/dnd/peer/DropTargetContextPeer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "(Ljava/awt/dnd/DropTargetContext;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDropTargetContextPeer", "(Ljava/awt/dnd/DropTargetContext;Ljava/awt/dnd/peer/DropTargetContextPeer;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/dnd/DropTargetContext;)V", "public abstract")]

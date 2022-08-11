@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial class FlightRecorderPermission
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/FlightRecorderPermission;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FlightRecorderPermission", "(Ljava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -38,7 +38,7 @@ public partial class FlightRecorderPermission
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "public")]
-	public FlightRecorderPermission(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public FlightRecorderPermission(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -60,25 +60,25 @@ public partial class FlightRecorderPermission
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/FlightRecorderPermission$InternalAccess;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InternalAccess", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContext", "(Ljdk/jfr/SettingControl;)Ljava/security/AccessControlContext;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getType", "(Ljava/lang/Object;)Ljdk/jfr/internal/Type;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newConfiguration", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Ljdk/jfr/Configuration;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFieldName", "(Ljdk/jfr/ValueDescriptor;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isUnsigned", "(Ljdk/jfr/ValueDescriptor;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPlatformEventType", "(Ljdk/jfr/EventType;)Ljdk/jfr/internal/PlatformEventType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEventSettings", "(Ljdk/jfr/internal/management/EventSettingsModifier;)Ljdk/jfr/EventSettings;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPlatformRecording", "(Ljdk/jfr/Recording;)Ljdk/jfr/internal/PlatformRecording;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newEventType", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/EventType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newAnnotation", "(Ljdk/jfr/internal/Type;Ljava/util/List;Z)Ljdk/jfr/AnnotationElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newValueDescriptor", "(Ljava/lang/Class;Ljava/lang/String;)Ljdk/jfr/ValueDescriptor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newValueDescriptor", "(Ljava/lang/String;Ljdk/jfr/internal/Type;Ljava/util/List;IZLjava/lang/String;)Ljdk/jfr/ValueDescriptor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newSettingDescriptor", "(Ljdk/jfr/internal/Type;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljdk/jfr/SettingDescriptor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPlatformRecorder", "()Ljdk/jfr/internal/PlatformRecorder;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isVisible", "(Ljdk/jfr/EventType;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAnnotations", "(Ljdk/jfr/ValueDescriptor;Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAnnotations", "(Ljdk/jfr/SettingDescriptor;Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isConstantPool", "(Ljdk/jfr/ValueDescriptor;)Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContext", "(Ljdk/jfr/SettingControl;)Ljava/security/AccessControlContext;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getType", "(Ljava/lang/Object;)Ljdk/jfr/internal/Type;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newConfiguration", "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Ljdk/jfr/Configuration;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFieldName", "(Ljdk/jfr/ValueDescriptor;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isUnsigned", "(Ljdk/jfr/ValueDescriptor;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPlatformEventType", "(Ljdk/jfr/EventType;)Ljdk/jfr/internal/PlatformEventType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEventSettings", "(Ljdk/jfr/internal/management/EventSettingsModifier;)Ljdk/jfr/EventSettings;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPlatformRecording", "(Ljdk/jfr/Recording;)Ljdk/jfr/internal/PlatformRecording;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newEventType", "(Ljdk/jfr/internal/PlatformEventType;)Ljdk/jfr/EventType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newAnnotation", "(Ljdk/jfr/internal/Type;Ljava/util/List;Z)Ljdk/jfr/AnnotationElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newValueDescriptor", "(Ljava/lang/Class;Ljava/lang/String;)Ljdk/jfr/ValueDescriptor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newValueDescriptor", "(Ljava/lang/String;Ljdk/jfr/internal/Type;Ljava/util/List;IZLjava/lang/String;)Ljdk/jfr/ValueDescriptor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newSettingDescriptor", "(Ljdk/jfr/internal/Type;Ljava/lang/String;Ljava/lang/String;Ljava/util/List;)Ljdk/jfr/SettingDescriptor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPlatformRecorder", "()Ljdk/jfr/internal/PlatformRecorder;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isVisible", "(Ljdk/jfr/EventType;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAnnotations", "(Ljdk/jfr/ValueDescriptor;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAnnotations", "(Ljdk/jfr/SettingDescriptor;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isConstantPool", "(Ljdk/jfr/ValueDescriptor;)Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -87,7 +87,7 @@ public partial class FlightRecorderPermission
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public InternalAccess() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InternalAccess() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface AdjustmentListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/event/AdjustmentListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "adjustmentValueChanged", "(Ljava/awt/event/AdjustmentEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/event/AdjustmentEvent;)V", "public abstract")]

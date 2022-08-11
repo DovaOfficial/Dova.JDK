@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,29 +31,29 @@ public partial class SwingAccessor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "jComponentAccessor", "Lsun/swing/SwingAccessor$JComponentAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "jtextComponentAccessor", "Lsun/swing/SwingAccessor$JTextComponentAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "jLightweightFrameAccessor", "Lsun/swing/SwingAccessor$JLightweightFrameAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "uiDefaultsAccessor", "Lsun/swing/SwingAccessor$UIDefaultsAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "repaintManagerAccessor", "Lsun/swing/SwingAccessor$RepaintManagerAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "popupFactoryAccessor", "Lsun/swing/SwingAccessor$PopupFactoryAccessor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "keyStrokeAccessor", "Lsun/swing/SwingAccessor$KeyStrokeAccessor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SwingAccessor", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJTextComponentAccessor", "()Lsun/swing/SwingAccessor$JTextComponentAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJLightweightFrameAccessor", "(Lsun/swing/SwingAccessor$JLightweightFrameAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJLightweightFrameAccessor", "()Lsun/swing/SwingAccessor$JLightweightFrameAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setUIDefaultsAccessor", "(Lsun/swing/SwingAccessor$UIDefaultsAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUIDefaultsAccessor", "()Lsun/swing/SwingAccessor$UIDefaultsAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setRepaintManagerAccessor", "(Lsun/swing/SwingAccessor$RepaintManagerAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getRepaintManagerAccessor", "()Lsun/swing/SwingAccessor$RepaintManagerAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPopupFactoryAccessor", "()Lsun/swing/SwingAccessor$PopupFactoryAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setPopupFactoryAccessor", "(Lsun/swing/SwingAccessor$PopupFactoryAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getKeyStrokeAccessor", "()Lsun/swing/SwingAccessor$KeyStrokeAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setKeyStrokeAccessor", "(Lsun/swing/SwingAccessor$KeyStrokeAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getJComponentAccessor", "()Lsun/swing/SwingAccessor$JComponentAccessor;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJTextComponentAccessor", "(Lsun/swing/SwingAccessor$JTextComponentAccessor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setJComponentAccessor", "(Lsun/swing/SwingAccessor$JComponentAccessor;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "jComponentAccessor", "Lsun/swing/SwingAccessor$JComponentAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "jtextComponentAccessor", "Lsun/swing/SwingAccessor$JTextComponentAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "jLightweightFrameAccessor", "Lsun/swing/SwingAccessor$JLightweightFrameAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "uiDefaultsAccessor", "Lsun/swing/SwingAccessor$UIDefaultsAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "repaintManagerAccessor", "Lsun/swing/SwingAccessor$RepaintManagerAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "popupFactoryAccessor", "Lsun/swing/SwingAccessor$PopupFactoryAccessor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "keyStrokeAccessor", "Lsun/swing/SwingAccessor$KeyStrokeAccessor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ensureClassInitialized", "(Ljava/lang/Class;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJTextComponentAccessor", "()Lsun/swing/SwingAccessor$JTextComponentAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJLightweightFrameAccessor", "(Lsun/swing/SwingAccessor$JLightweightFrameAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJLightweightFrameAccessor", "()Lsun/swing/SwingAccessor$JLightweightFrameAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setUIDefaultsAccessor", "(Lsun/swing/SwingAccessor$UIDefaultsAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUIDefaultsAccessor", "()Lsun/swing/SwingAccessor$UIDefaultsAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setRepaintManagerAccessor", "(Lsun/swing/SwingAccessor$RepaintManagerAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getRepaintManagerAccessor", "()Lsun/swing/SwingAccessor$RepaintManagerAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPopupFactoryAccessor", "()Lsun/swing/SwingAccessor$PopupFactoryAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setPopupFactoryAccessor", "(Lsun/swing/SwingAccessor$PopupFactoryAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getKeyStrokeAccessor", "()Lsun/swing/SwingAccessor$KeyStrokeAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setKeyStrokeAccessor", "(Lsun/swing/SwingAccessor$KeyStrokeAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getJComponentAccessor", "()Lsun/swing/SwingAccessor$JComponentAccessor;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJTextComponentAccessor", "(Lsun/swing/SwingAccessor$JTextComponentAccessor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setJComponentAccessor", "(Lsun/swing/SwingAccessor$JComponentAccessor;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/swing/SwingAccessor$JComponentAccessor;", "private static")]
@@ -160,7 +160,7 @@ public partial class SwingAccessor
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public SwingAccessor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SwingAccessor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -278,8 +278,8 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$JComponentAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compWriteObjectNotify", "(Ljavax/swing/JComponent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFlag", "(Ljavax/swing/JComponent;I)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compWriteObjectNotify", "(Ljavax/swing/JComponent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFlag", "(Ljavax/swing/JComponent;I)Z"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/JComponent;)V", "public abstract")]
@@ -309,8 +309,8 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$JTextComponentAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropLocationForPoint", "(Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljavax/swing/TransferHandler$DropLocation;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDropLocation", "(Ljavax/swing/text/JTextComponent;Ljavax/swing/TransferHandler$DropLocation;Ljava/lang/Object;Z)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropLocationForPoint", "(Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljavax/swing/TransferHandler$DropLocation;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDropLocation", "(Ljavax/swing/text/JTextComponent;Ljavax/swing/TransferHandler$DropLocation;Ljava/lang/Object;Z)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/text/JTextComponent;Ljava/awt/Point;)Ljavax/swing/TransferHandler$DropLocation;", "public abstract")]
@@ -341,7 +341,7 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$JLightweightFrameAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateCursor", "(Lsun/swing/JLightweightFrame;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateCursor", "(Lsun/swing/JLightweightFrame;)V"));
 		}
 
 		[JniSignatureAttribute("(Lsun/swing/JLightweightFrame;)V", "public abstract")]
@@ -364,7 +364,7 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$UIDefaultsAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addInternalBundle", "(Ljavax/swing/UIDefaults;Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addInternalBundle", "(Ljavax/swing/UIDefaults;Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/UIDefaults;Ljava/lang/String;)V", "public abstract")]
@@ -387,8 +387,8 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$RepaintManagerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addRepaintListener", "(Ljavax/swing/RepaintManager;Lsun/swing/SwingUtilities2$RepaintListener;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeRepaintListener", "(Ljavax/swing/RepaintManager;Lsun/swing/SwingUtilities2$RepaintListener;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addRepaintListener", "(Ljavax/swing/RepaintManager;Lsun/swing/SwingUtilities2$RepaintListener;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeRepaintListener", "(Ljavax/swing/RepaintManager;Lsun/swing/SwingUtilities2$RepaintListener;)V"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/RepaintManager;Lsun/swing/SwingUtilities2$RepaintListener;)V", "public abstract")]
@@ -417,7 +417,7 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$PopupFactoryAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHeavyWeightPopup", "(Ljavax/swing/PopupFactory;Ljava/awt/Component;Ljava/awt/Component;II)Ljavax/swing/Popup;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHeavyWeightPopup", "(Ljavax/swing/PopupFactory;Ljava/awt/Component;Ljava/awt/Component;II)Ljavax/swing/Popup;"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/PopupFactory;Ljava/awt/Component;Ljava/awt/Component;II)Ljavax/swing/Popup;", "public abstract")]
@@ -441,7 +441,7 @@ public partial class SwingAccessor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/swing/SwingAccessor$KeyStrokeAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "()Ljavax/swing/KeyStroke;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "()Ljavax/swing/KeyStroke;"));
 		}
 
 		[JniSignatureAttribute("()Ljavax/swing/KeyStroke;", "public abstract")]

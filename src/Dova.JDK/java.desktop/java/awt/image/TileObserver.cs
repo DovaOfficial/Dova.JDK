@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface TileObserver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/image/TileObserver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tileUpdate", "(Ljava/awt/image/WritableRenderedImage;IIZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tileUpdate", "(Ljava/awt/image/WritableRenderedImage;IIZ)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/image/WritableRenderedImage;IIZ)V", "public abstract")]

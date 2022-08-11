@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class ClassLoaders
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/ClassLoaders;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JLA", "Ljdk/internal/access/JavaLangAccess;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOOT_LOADER", "Ljdk/internal/loader/ClassLoaders$BootClassLoader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLATFORM_LOADER", "Ljdk/internal/loader/ClassLoaders$PlatformClassLoader;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APP_LOADER", "Ljdk/internal/loader/ClassLoaders$AppClassLoader;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassLoaders", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toFileURL", "(Ljava/lang/String;)Ljava/net/URL;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "platformClassLoader", "()Ljava/lang/ClassLoader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "appClassLoader", "()Ljava/lang/ClassLoader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "bootLoader", "()Ljdk/internal/loader/BuiltinClassLoader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setArchivedServicesCatalog", "(Ljava/lang/ClassLoader;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JLA", "Ljdk/internal/access/JavaLangAccess;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BOOT_LOADER", "Ljdk/internal/loader/ClassLoaders$BootClassLoader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLATFORM_LOADER", "Ljdk/internal/loader/ClassLoaders$PlatformClassLoader;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "APP_LOADER", "Ljdk/internal/loader/ClassLoaders$AppClassLoader;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toFileURL", "(Ljava/lang/String;)Ljava/net/URL;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "platformClassLoader", "()Ljava/lang/ClassLoader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "appClassLoader", "()Ljava/lang/ClassLoader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "bootLoader", "()Ljdk/internal/loader/BuiltinClassLoader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setArchivedServicesCatalog", "(Ljava/lang/ClassLoader;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/access/JavaLangAccess;", "private static final")]
@@ -105,7 +105,7 @@ public partial class ClassLoaders
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public ClassLoaders() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ClassLoaders() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -161,8 +161,8 @@ public partial class ClassLoaders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/ClassLoaders$BootClassLoader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BootClassLoader", "(Ljdk/internal/loader/URLClassPath;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClassOrNull", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/loader/URLClassPath;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClassOrNull", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -171,7 +171,7 @@ public partial class ClassLoaders
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/loader/URLClassPath;)V", "")]
-		public BootClassLoader(Dova.JDK.jdk.@internal.loader.URLClassPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public BootClassLoader(Dova.JDK.jdk.@internal.loader.URLClassPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -200,7 +200,7 @@ public partial class ClassLoaders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/ClassLoaders$PlatformClassLoader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PlatformClassLoader", "(Ljdk/internal/loader/ClassLoaders$BootClassLoader;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/loader/ClassLoaders$BootClassLoader;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -209,7 +209,7 @@ public partial class ClassLoaders
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/loader/ClassLoaders$BootClassLoader;)V", "")]
-		public PlatformClassLoader(Dova.JDK.jdk.@internal.loader.ClassLoaders.BootClassLoader arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public PlatformClassLoader(Dova.JDK.jdk.@internal.loader.ClassLoaders.BootClassLoader arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -232,12 +232,12 @@ public partial class ClassLoaders
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/loader/ClassLoaders$AppClassLoader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AppClassLoader", "(Ljdk/internal/loader/BuiltinClassLoader;Ljdk/internal/loader/URLClassPath;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defineOrCheckPackage", "(Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)Ljava/lang/Package;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "appendToClassPathForInstrumentation", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resetArchivedStates", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/loader/BuiltinClassLoader;Ljdk/internal/loader/URLClassPath;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loadClass", "(Ljava/lang/String;Z)Ljava/lang/Class;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defineOrCheckPackage", "(Ljava/lang/String;Ljava/util/jar/Manifest;Ljava/net/URL;)Ljava/lang/Package;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "appendToClassPathForInstrumentation", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resetArchivedStates", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPermissions", "(Ljava/security/CodeSource;)Ljava/security/PermissionCollection;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -246,7 +246,7 @@ public partial class ClassLoaders
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/loader/BuiltinClassLoader;Ljdk/internal/loader/URLClassPath;)V", "")]
-		public AppClassLoader(Dova.JDK.jdk.@internal.loader.BuiltinClassLoader arg0, Dova.JDK.jdk.@internal.loader.URLClassPath arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AppClassLoader(Dova.JDK.jdk.@internal.loader.BuiltinClassLoader arg0, Dova.JDK.jdk.@internal.loader.URLClassPath arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

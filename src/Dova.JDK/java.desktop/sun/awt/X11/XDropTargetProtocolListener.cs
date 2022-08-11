@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface XDropTargetProtocolListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XDropTargetProtocolListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "handleDropTargetNotification", "(Lsun/awt/X11/XWindow;IIII[JJI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "handleDropTargetNotification", "(Lsun/awt/X11/XWindow;IIII[JJI)V"));
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/X11/XWindow;IIII[JJI)V", "public abstract")]

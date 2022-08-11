@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,16 +31,16 @@ public partial class Util
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/execution/Util;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_DATA", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_CLOSED", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TAG_EXCEPTION", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Util", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "multiplexingOutputStream", "(Ljava/lang/String;Ljava/io/OutputStream;)Ljava/io/OutputStream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forwardExecutionControlAndIO", "(Ljdk/jshell/spi/ExecutionControl;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/Map;Ljava/util/Map;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forwardExecutionControl", "(Ljdk/jshell/spi/ExecutionControl;Ljava/io/ObjectInput;Ljava/io/ObjectOutput;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "detectJdiExitEvent", "(Lcom/sun/jdi/VirtualMachine;Ljava/util/function/Consumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "remoteInputOutput", "(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/Map;Ljava/util/Map;Ljava/util/function/BiFunction;)Ljdk/jshell/spi/ExecutionControl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_DATA", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_CLOSED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TAG_EXCEPTION", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "debug", "(Ljava/lang/Throwable;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "multiplexingOutputStream", "(Ljava/lang/String;Ljava/io/OutputStream;)Ljava/io/OutputStream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forwardExecutionControlAndIO", "(Ljdk/jshell/spi/ExecutionControl;Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/Map;Ljava/util/Map;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forwardExecutionControl", "(Ljdk/jshell/spi/ExecutionControl;Ljava/io/ObjectInput;Ljava/io/ObjectOutput;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "detectJdiExitEvent", "(Lcom/sun/jdi/VirtualMachine;Ljava/util/function/Consumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "remoteInputOutput", "(Ljava/io/InputStream;Ljava/io/OutputStream;Ljava/util/Map;Ljava/util/Map;Ljava/util/function/BiFunction;)Ljdk/jshell/spi/ExecutionControl;"));
 	}
 
 	[JniSignatureAttribute("I", "private static final")]
@@ -91,7 +91,7 @@ public partial class Util
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Util() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Util() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,51 +32,51 @@ public partial class IntegerPolynomial
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/intpoly/IntegerPolynomial;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TWO", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numLimbs", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modulus", "Ljava/math/BigInteger;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bitsPerLimb", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "posModLimbs", "[J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maxAdds", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IntegerPolynomial", "(IIILjava/math/BigInteger;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "decode", "([J[BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "(Ljava/nio/ByteBuffer;IB[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encode", "([BIIB[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSize", "()Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reduce", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "square", "([J[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "carry", "([JII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "carry", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mult", "([J[J[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get0_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get0_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "evaluate", "([J)Ljava/math/BigInteger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement_0", "(Ljava/math/BigInteger;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement_1", "(Ljava/math/BigInteger;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement_0", "([BIIB)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElement_1", "([BIIB)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reduceIn", "([JJI)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finalCarryReduceLast", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setPosModLimbs", "()[J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLimbsValuePositive", "(Ljava/math/BigInteger;[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "encodeSmall", "(Ljava/nio/ByteBuffer;IB[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reduceHigh", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "postEncodeCarry", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "carryOut", "([JI)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "carryValue", "(J)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "conditionalSwap", "(I[J[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finalReduce", "([J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLimbs", "([J[J[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "multByInt", "([JJ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNumLimbs", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMaxAdds", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setLimbsValue", "(Ljava/math/BigInteger;[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "conditionalAssign", "(I[J[J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "limbsToByteArray", "([J[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLimbsModPowerTwo", "([J[J[B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSmallValue", "(I)Lsun/security/util/math/SmallValue;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get1_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "get1_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TWO", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numLimbs", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modulus", "Ljava/math/BigInteger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bitsPerLimb", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "posModLimbs", "[J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maxAdds", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IIILjava/math/BigInteger;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "decode", "([J[BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "(Ljava/nio/ByteBuffer;IB[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encode", "([BIIB[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSize", "()Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reduce", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "square", "([J[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "carry", "([JII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "carry", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mult", "([J[J[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get0_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get0_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "evaluate", "([J)Ljava/math/BigInteger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement_0", "(Ljava/math/BigInteger;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement_1", "(Ljava/math/BigInteger;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement_0", "([BIIB)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElement_1", "([BIIB)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reduceIn", "([JJI)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finalCarryReduceLast", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setPosModLimbs", "()[J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLimbsValuePositive", "(Ljava/math/BigInteger;[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "encodeSmall", "(Ljava/nio/ByteBuffer;IB[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reduceHigh", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "postEncodeCarry", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "carryOut", "([JI)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "carryValue", "(J)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "conditionalSwap", "(I[J[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finalReduce", "([J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLimbs", "([J[J[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "multByInt", "([JJ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNumLimbs", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMaxAdds", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setLimbsValue", "(Ljava/math/BigInteger;[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "conditionalAssign", "(I[J[J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "limbsToByteArray", "([J[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLimbsModPowerTwo", "([J[J[B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSmallValue", "(I)Lsun/security/util/math/SmallValue;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get1_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "get1_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
 	}
 
 	[JniSignatureAttribute("Ljava/math/BigInteger;", "protected static final")]
@@ -169,7 +169,7 @@ public partial class IntegerPolynomial
 	}
 
 	[JniSignatureAttribute("(IIILjava/math/BigInteger;)V", "")]
-	public IntegerPolynomial(int arg0, int arg1, int arg2, Dova.JDK.java.math.BigInteger arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public IntegerPolynomial(int arg0, int arg1, int arg2, Dova.JDK.java.math.BigInteger arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -436,11 +436,11 @@ public partial class IntegerPolynomial
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImmutableElement", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImmutableElement", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ImmutableElement", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -449,17 +449,17 @@ public partial class IntegerPolynomial
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V", "protected")]
-		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V", "protected")]
-		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V", "protected")]
-		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+		public ImmutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 		{
 		}
 
@@ -497,8 +497,8 @@ public partial class IntegerPolynomial
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/intpoly/IntegerPolynomial$Limb;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Limb", "(I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
 		}
 
 		[JniSignatureAttribute("I", "")]
@@ -521,7 +521,7 @@ public partial class IntegerPolynomial
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public Limb(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Limb(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -546,32 +546,32 @@ public partial class IntegerPolynomial
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/security/util/math/intpoly/IntegerPolynomial;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MutableElement", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Ljava/nio/ByteBuffer;IB)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Ljava/nio/ByteBuffer;IB)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "([BIIB)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "([BIIB)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSwapWith", "(Lsun/security/util/math/MutableIntegerModuloP;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProduct_0", "(Lsun/security/util/math/SmallValue;)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProduct_1", "(Lsun/security/util/math/SmallValue;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProduct_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setProduct_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAdditiveInverse_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setAdditiveInverse_1", "()Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet", "(Lsun/security/util/math/IntegerModuloP;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSum_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSum_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSquare_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setSquare_1", "()Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDifference_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDifference_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setReduced_0", "()Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setReduced_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/security/util/math/intpoly/IntegerPolynomial;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_0", "(Ljava/nio/ByteBuffer;IB)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_1", "(Ljava/nio/ByteBuffer;IB)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_0", "([BIIB)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_1", "([BIIB)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "conditionalSwapWith", "(Lsun/security/util/math/MutableIntegerModuloP;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setProduct_0", "(Lsun/security/util/math/SmallValue;)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setProduct_1", "(Lsun/security/util/math/SmallValue;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setProduct_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setProduct_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAdditiveInverse_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setAdditiveInverse_1", "()Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "conditionalSet", "(Lsun/security/util/math/IntegerModuloP;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSum_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSum_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSquare_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setSquare_1", "()Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDifference_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDifference_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setReduced_0", "()Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setReduced_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/util/math/intpoly/IntegerPolynomial;", "final")]
@@ -594,7 +594,7 @@ public partial class IntegerPolynomial
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V", "protected")]
-		public MutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public MutableElement(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -785,30 +785,30 @@ public partial class IntegerPolynomial
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/util/math/intpoly/IntegerPolynomial$Element;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "limbs", "[J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numAdds", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/security/util/math/intpoly/IntegerPolynomial;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Element", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Element", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Element", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "add_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Ljava/math/BigInteger;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "multiply_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "multiply_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "square_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "square_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asByteArray", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSummand", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyLow", "([J[J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cloneLow", "([J)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addModPowerTwo", "(Lsun/security/util/math/IntegerModuloP;[B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asBigInteger", "()Ljava/math/BigInteger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "additiveInverse_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "additiveInverse_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_0", "()Lsun/security/util/math/MutableIntegerModuloP;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "limbs", "[J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numAdds", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/security/util/math/intpoly/IntegerPolynomial;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "add_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue", "(Ljava/math/BigInteger;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "multiply_0", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "multiply_1", "(Lsun/security/util/math/IntegerModuloP;)Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "square_0", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "square_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asByteArray", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSummand", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyLow", "([J[J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cloneLow", "([J)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addModPowerTwo", "(Lsun/security/util/math/IntegerModuloP;[B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asBigInteger", "()Ljava/math/BigInteger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "additiveInverse_0", "()Lsun/security/util/math/intpoly/IntegerPolynomial$ImmutableElement;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "additiveInverse_1", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable_0", "()Lsun/security/util/math/MutableIntegerModuloP;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable_1", "()Lsun/security/util/math/intpoly/IntegerPolynomial$MutableElement;"));
 		}
 
 		[JniSignatureAttribute("[J", "protected")]
@@ -859,17 +859,17 @@ public partial class IntegerPolynomial
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;[JI)V", "private")]
-		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, JavaArray<long> arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;Z)V", "public")]
-		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, bool arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/intpoly/IntegerPolynomial;Ljava/math/BigInteger;)V", "public")]
-		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+		public Element(Dova.JDK.sun.security.util.math.intpoly.IntegerPolynomial arg0, Dova.JDK.java.math.BigInteger arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 		{
 		}
 

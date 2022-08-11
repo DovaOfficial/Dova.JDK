@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface SystemSleepListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/SystemSleepListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "systemAboutToSleep", "(Ljava/awt/desktop/SystemSleepEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "systemAwoke", "(Ljava/awt/desktop/SystemSleepEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "systemAboutToSleep", "(Ljava/awt/desktop/SystemSleepEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "systemAwoke", "(Ljava/awt/desktop/SystemSleepEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/SystemSleepEvent;)V", "public abstract")]

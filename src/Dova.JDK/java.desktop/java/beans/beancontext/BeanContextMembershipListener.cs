@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial interface BeanContextMembershipListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/beans/beancontext/BeanContextMembershipListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "childrenAdded", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "childrenRemoved", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "childrenAdded", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "childrenRemoved", "(Ljava/beans/beancontext/BeanContextMembershipEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/beans/beancontext/BeanContextMembershipEvent;)V", "public abstract")]

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,57 +31,57 @@ public partial class StandardBundlerParam
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jpackage/internal/StandardBundlerParam;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAVABASEJMOD", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_VERSION", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_RELEASE", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_JLINK_OPTIONS", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LAUNCHER_DATA", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOURCE_DIR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAIN_JAR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAIN_CLASS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREDEFINED_RUNTIME_IMAGE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREDEFINED_APP_IMAGE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APP_NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTALLER_NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ICON", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABOUT_URL", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VENDOR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESCRIPTION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COPYRIGHT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARGUMENTS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JAVA_OPTIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERSION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RELEASE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LICENSE_FILE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEMP_ROOT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONFIG_ROOT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERBOSE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORTCUT_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESOURCE_DIR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTALL_DIR", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADD_LAUNCHERS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FILE_ASSOCIATIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FA_EXTENSIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FA_CONTENT_TYPE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FA_DESCRIPTION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FA_ICON", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DMG_CONTENT", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "APP_CONTENT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_PATH", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADD_MODULES", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JLINK_OPTIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIMIT_MODULES", "Ljdk/jpackage/internal/BundlerParamInfo;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIGN_BUNDLE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StandardBundlerParam", "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/function/Function;Ljava/util/function/BiFunction;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPredefinedAppImage", "(Ljava/util/Map;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultModulePath", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "findPathOfModule", "(Ljava/util/List;Ljava/lang/String;)Ljava/nio/file/Path;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDefaultAppVersion", "(Ljava/util/Map;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isRuntimeInstaller", "(Ljava/util/Map;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "copyPredefinedRuntimeImage", "(Ljava/util/Map;Ljdk/jpackage/internal/ApplicationLayout;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAVABASEJMOD", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_VERSION", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_RELEASE", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_JLINK_OPTIONS", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LAUNCHER_DATA", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOURCE_DIR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAIN_JAR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAIN_CLASS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PREDEFINED_RUNTIME_IMAGE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PREDEFINED_APP_IMAGE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "APP_NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTALLER_NAME", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ICON", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABOUT_URL", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VENDOR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESCRIPTION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COPYRIGHT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARGUMENTS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JAVA_OPTIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VERSION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RELEASE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LICENSE_FILE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEMP_ROOT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONFIG_ROOT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VERBOSE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHORTCUT_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_HINT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESOURCE_DIR", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTALL_DIR", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADD_LAUNCHERS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FILE_ASSOCIATIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FA_EXTENSIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FA_CONTENT_TYPE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FA_DESCRIPTION", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FA_ICON", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DMG_CONTENT", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "APP_CONTENT", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_PATH", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADD_MODULES", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JLINK_OPTIONS", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIMIT_MODULES", "Ljdk/jpackage/internal/BundlerParamInfo;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SIGN_BUNDLE", "Ljdk/jpackage/internal/StandardBundlerParam;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/Class;Ljava/util/function/Function;Ljava/util/function/BiFunction;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPredefinedAppImage", "(Ljava/util/Map;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultModulePath", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "findPathOfModule", "(Ljava/util/List;Ljava/lang/String;)Ljava/nio/file/Path;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDefaultAppVersion", "(Ljava/util/Map;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isRuntimeInstaller", "(Ljava/util/Map;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "copyPredefinedRuntimeImage", "(Ljava/util/Map;Ljdk/jpackage/internal/ApplicationLayout;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -706,7 +706,7 @@ public partial class StandardBundlerParam
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Class;Ljava/util/function/Function;Ljava/util/function/BiFunction;)V", "")]
-	public StandardBundlerParam(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.java.util.function.Function arg2, Dova.JDK.java.util.function.BiFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public StandardBundlerParam(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Class arg1, Dova.JDK.java.util.function.Function arg2, Dova.JDK.java.util.function.BiFunction arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 

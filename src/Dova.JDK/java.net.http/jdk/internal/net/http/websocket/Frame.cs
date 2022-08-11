@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial class Frame
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_HEADER_SIZE_BYTES", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_CONTROL_FRAME_PAYLOAD_LENGTH", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Frame", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_HEADER_SIZE_BYTES", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_CONTROL_FRAME_PAYLOAD_LENGTH", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("I", "static final")]
@@ -69,7 +69,7 @@ public partial class Frame
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Frame() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Frame() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -92,21 +92,21 @@ public partial class Frame
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame$Reader;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AWAITING_FIRST_BYTE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AWAITING_SECOND_BYTE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READING_16_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READING_64_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READING_MASK", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READING_PAYLOAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "accumulator", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mask", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "remainingPayloadLength", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Reader", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "notMinimalEncoding", "(J)Ljdk/internal/net/http/websocket/FailWebSocketException;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readFrame", "(Ljava/nio/ByteBuffer;Ljdk/internal/net/http/websocket/Frame$Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "negativePayload", "(J)Ljdk/internal/net/http/websocket/FailWebSocketException;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AWAITING_FIRST_BYTE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AWAITING_SECOND_BYTE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READING_16_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READING_64_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READING_MASK", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READING_PAYLOAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "accumulator", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mask", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "remainingPayloadLength", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "notMinimalEncoding", "(J)Ljdk/internal/net/http/websocket/FailWebSocketException;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readFrame", "(Ljava/nio/ByteBuffer;Ljdk/internal/net/http/websocket/Frame$Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "negativePayload", "(J)Ljdk/internal/net/http/websocket/FailWebSocketException;"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -269,7 +269,7 @@ public partial class Frame
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Reader() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Reader() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -311,16 +311,16 @@ public partial class Frame
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame$Consumer;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mask", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fin", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "payloadData", "(Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "maskingKey", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv3", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "endFrame", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "payloadLen", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv1", "(Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv2", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mask", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fin", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "payloadData", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "maskingKey", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv3", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "endFrame", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "payloadLen", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv1", "(Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv2", "(Z)V"));
 		}
 
 		[JniSignatureAttribute("(Z)V", "public abstract")]
@@ -399,20 +399,20 @@ public partial class Frame
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame$HeaderWriter;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "firstChar", "C"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "payloadLen", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskingKey", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mask", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HeaderWriter", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mask", "(I)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fin", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "noMask", "()Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv3", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "payloadLen", "(J)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv1", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "rsv2", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "firstChar", "C"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "payloadLen", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskingKey", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mask", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mask", "(I)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opcode", "(Ljdk/internal/net/http/websocket/Frame$Opcode;)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fin", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "noMask", "()Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv3", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "payloadLen", "(J)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv1", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "rsv2", "(Z)Ljdk/internal/net/http/websocket/Frame$HeaderWriter;"));
 		}
 
 		[JniSignatureAttribute("C", "private")]
@@ -477,7 +477,7 @@ public partial class Frame
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public HeaderWriter() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public HeaderWriter() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -563,18 +563,18 @@ public partial class Frame
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame$Masker;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acc", "Ljava/nio/ByteBuffer;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskBytes", "[I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "maskLong", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Masker", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "begin", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mask", "(I)Ljdk/internal/net/http/websocket/Frame$Masker;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "loop", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transferMasking", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/websocket/Frame$Masker;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "transferMasking", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acc", "Ljava/nio/ByteBuffer;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskBytes", "[I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "maskLong", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "end", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "begin", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mask", "(I)Ljdk/internal/net/http/websocket/Frame$Masker;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "loop", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transferMasking", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;)Ljdk/internal/net/http/websocket/Frame$Masker;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "transferMasking", "(Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;I)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/nio/ByteBuffer;", "private final")]
@@ -653,7 +653,7 @@ public partial class Frame
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Masker() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Masker() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -715,31 +715,31 @@ public partial class Frame
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/websocket/Frame$Opcode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTINUATION", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BINARY", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NON_CONTROL_0x3", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NON_CONTROL_0x4", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NON_CONTROL_0x5", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NON_CONTROL_0x6", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NON_CONTROL_0x7", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLOSE", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PING", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PONG", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_0xB", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_0xC", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_0xD", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_0xE", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTROL_0xF", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "opcodes", "[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "code", "B"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Opcode", "(Ljava/lang/String;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isControl", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ofCode", "(I)Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTINUATION", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BINARY", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NON_CONTROL_0x3", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NON_CONTROL_0x4", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NON_CONTROL_0x5", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NON_CONTROL_0x6", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NON_CONTROL_0x7", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLOSE", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PING", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PONG", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_0xB", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_0xC", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_0xD", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_0xE", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTROL_0xF", "Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "opcodes", "[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "code", "B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/internal/net/http/websocket/Frame$Opcode;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isControl", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ofCode", "(I)Ljdk/internal/net/http/websocket/Frame$Opcode;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/net/http/websocket/Frame$Opcode;", "public static final")]
@@ -1014,7 +1014,7 @@ public partial class Frame
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-		public Opcode(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Opcode(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

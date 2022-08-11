@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class ChainEnd
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/geom/ChainEnd;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "head", "Lsun/awt/geom/CurveLink;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tail", "Lsun/awt/geom/CurveLink;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "partner", "Lsun/awt/geom/ChainEnd;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "etag", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ChainEnd", "(Lsun/awt/geom/CurveLink;Lsun/awt/geom/ChainEnd;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "linkTo", "(Lsun/awt/geom/ChainEnd;)Lsun/awt/geom/CurveLink;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChain", "()Lsun/awt/geom/CurveLink;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setOtherEnd", "(Lsun/awt/geom/ChainEnd;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPartner", "()Lsun/awt/geom/ChainEnd;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addLink", "(Lsun/awt/geom/CurveLink;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "()D"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "head", "Lsun/awt/geom/CurveLink;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tail", "Lsun/awt/geom/CurveLink;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "partner", "Lsun/awt/geom/ChainEnd;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "etag", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/awt/geom/CurveLink;Lsun/awt/geom/ChainEnd;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "linkTo", "(Lsun/awt/geom/ChainEnd;)Lsun/awt/geom/CurveLink;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChain", "()Lsun/awt/geom/CurveLink;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setOtherEnd", "(Lsun/awt/geom/ChainEnd;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPartner", "()Lsun/awt/geom/ChainEnd;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addLink", "(Lsun/awt/geom/CurveLink;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX", "()D"));
 	}
 
 	[JniSignatureAttribute("Lsun/awt/geom/CurveLink;", "")]
@@ -106,7 +106,7 @@ public partial class ChainEnd
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/geom/CurveLink;Lsun/awt/geom/ChainEnd;)V", "public")]
-	public ChainEnd(Dova.JDK.sun.awt.geom.CurveLink arg0, Dova.JDK.sun.awt.geom.ChainEnd arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ChainEnd(Dova.JDK.sun.awt.geom.CurveLink arg0, Dova.JDK.sun.awt.geom.ChainEnd arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

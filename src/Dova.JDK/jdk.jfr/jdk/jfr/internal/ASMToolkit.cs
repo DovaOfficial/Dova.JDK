@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,18 +31,18 @@ public partial class ASMToolkit
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/ASMToolkit;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_STRING", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "Type_THREAD", "Ljdk/internal/org/objectweb/asm/Type;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_CLASS", "Ljdk/internal/org/objectweb/asm/Type;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ASMToolkit", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getDescriptor", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invokeVirtual", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invokeStatic", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "invokeSpecial", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toType", "(Ljdk/jfr/ValueDescriptor;)Ljdk/internal/org/objectweb/asm/Type;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInternalName", "(Ljava/lang/String;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeWriteMethod", "(Ljava/util/List;)Ljdk/internal/org/objectweb/asm/commons/Method;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "logASM", "(Ljava/lang/String;[B)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_STRING", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "Type_THREAD", "Ljdk/internal/org/objectweb/asm/Type;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_CLASS", "Ljdk/internal/org/objectweb/asm/Type;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getDescriptor", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invokeVirtual", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invokeStatic", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "invokeSpecial", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Method;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toType", "(Ljdk/jfr/ValueDescriptor;)Ljdk/internal/org/objectweb/asm/Type;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInternalName", "(Ljava/lang/String;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeWriteMethod", "(Ljava/util/List;)Ljdk/internal/org/objectweb/asm/commons/Method;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "logASM", "(Ljava/lang/String;[B)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/Type;", "private static")]
@@ -93,7 +93,7 @@ public partial class ASMToolkit
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public ASMToolkit() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public ASMToolkit() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

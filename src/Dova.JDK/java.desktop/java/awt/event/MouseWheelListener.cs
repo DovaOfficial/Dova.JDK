@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,7 +30,7 @@ public partial interface MouseWheelListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/event/MouseWheelListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mouseWheelMoved", "(Ljava/awt/event/MouseWheelEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/event/MouseWheelEvent;)V", "public abstract")]

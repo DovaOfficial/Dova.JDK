@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,92 +31,92 @@ public partial class TypeAnnotationPosition
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/code/TypeAnnotationPosition;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "emptyPath", "Lcom/sun/tools/javac/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type", "Lcom/sun/tools/javac/code/TargetType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/tools/javac/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pos", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isValidOffset", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "offset", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarOffset", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarLength", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvarIndex", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bound_index", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parameter_index", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "type_index", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception_index", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exceptionStartPos", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "onLambda", "Lcom/sun/tools/javac/tree/JCTree$JCLambda;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "unknown", "Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeAnnotationPosition", "(Lcom/sun/tools/javac/code/TargetType;IILcom/sun/tools/javac/tree/JCTree$JCLambda;IILcom/sun/tools/javac/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "field", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "field", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "field", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasExceptionIndex", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasCatchType", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCatchType", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStartPos", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getBinaryFromTypePath", "(Ljava/util/List;)Lcom/sun/tools/javac/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emitToClassfile", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTypePathFromBinary", "(Ljava/util/List;)Lcom/sun/tools/javac/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newObj", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newObj", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "newObj", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReturn", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReturn", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReturn", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodRef", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodRef", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instanceOf", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instanceOf", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorRef", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorRef", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "localVariable", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "localVariable", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "localVariable", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "resourceVariable", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "resourceVariable", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "resourceVariable", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exceptionParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exceptionParameter", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "exceptionParameter", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setExceptionIndex", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReceiver", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReceiver", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodReceiver", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodTypeParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodTypeParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeParameterBound", "(Lcom/sun/tools/javac/util/List;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeParameterBound", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;III)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodTypeParameterBound", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;III)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodTypeParameterBound", "(Lcom/sun/tools/javac/util/List;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classExtends", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classExtends", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodThrows", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodThrows", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodParameter", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodParameter", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeCast", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeCast", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorRefTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "constructorRefTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodRefTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "methodRefTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getExceptionIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCatchInfo", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "matchesPos", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updatePosOffset", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "typeParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "emptyPath", "Lcom/sun/tools/javac/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type", "Lcom/sun/tools/javac/code/TargetType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/tools/javac/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pos", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isValidOffset", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "offset", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarOffset", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarLength", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvarIndex", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bound_index", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parameter_index", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "type_index", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception_index", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exceptionStartPos", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "onLambda", "Lcom/sun/tools/javac/tree/JCTree$JCLambda;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "unknown", "Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/TargetType;IILcom/sun/tools/javac/tree/JCTree$JCLambda;IILcom/sun/tools/javac/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "field", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "field", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "field", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasExceptionIndex", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasCatchType", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCatchType", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStartPos", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getBinaryFromTypePath", "(Ljava/util/List;)Lcom/sun/tools/javac/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emitToClassfile", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTypePathFromBinary", "(Ljava/util/List;)Lcom/sun/tools/javac/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newObj", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newObj", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "newObj", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReturn", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReturn", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReturn", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodRef", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodRef", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instanceOf", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instanceOf", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorRef", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorRef", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "localVariable", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "localVariable", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "localVariable", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "resourceVariable", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "resourceVariable", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "resourceVariable", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exceptionParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exceptionParameter", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "exceptionParameter", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setExceptionIndex", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReceiver", "(Lcom/sun/tools/javac/util/List;)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReceiver", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodReceiver", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodTypeParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodTypeParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeParameterBound", "(Lcom/sun/tools/javac/util/List;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeParameterBound", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;III)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodTypeParameterBound", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;III)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodTypeParameterBound", "(Lcom/sun/tools/javac/util/List;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classExtends", "(I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classExtends", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classExtends", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodThrows", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodThrows", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodParameter", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodParameter", "(Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeCast", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeCast", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodInvocationTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorRefTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "constructorRefTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodRefTypeArg", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "methodRefTypeArg", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getExceptionIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCatchInfo", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "matchesPos", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updatePosOffset", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeParameter", "(Lcom/sun/tools/javac/util/List;Lcom/sun/tools/javac/tree/JCTree$JCLambda;II)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "typeParameter", "(Lcom/sun/tools/javac/util/List;I)Lcom/sun/tools/javac/code/TypeAnnotationPosition;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/util/List;", "public static final")]
@@ -349,7 +349,7 @@ public partial class TypeAnnotationPosition
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/code/TargetType;IILcom/sun/tools/javac/tree/JCTree$JCLambda;IILcom/sun/tools/javac/util/List;)V", "private")]
-	public TypeAnnotationPosition(Dova.JDK.com.sun.tools.javac.code.TargetType arg0, int arg1, int arg2, Dova.JDK.com.sun.tools.javac.tree.JCTree.JCLambda arg3, int arg4, int arg5, Dova.JDK.com.sun.tools.javac.util.List arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public TypeAnnotationPosition(Dova.JDK.com.sun.tools.javac.code.TargetType arg0, int arg1, int arg2, Dova.JDK.com.sun.tools.javac.tree.JCTree.JCLambda arg3, int arg4, int arg5, Dova.JDK.com.sun.tools.javac.util.List arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
@@ -852,18 +852,18 @@ public partial class TypeAnnotationPosition
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "bytesPerEntry", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arg", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INNER_TYPE", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntry", "(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntry", "(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "fromBinary", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "bytesPerEntry", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tag", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arg", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INNER_TYPE", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WILDCARD", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "fromBinary", "(II)Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntry;"));
 		}
 
 		[JniSignatureAttribute("I", "public static final")]
@@ -956,12 +956,12 @@ public partial class TypeAnnotationPosition
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;)V", "private")]
-		public TypePathEntry(Dova.JDK.com.sun.tools.javac.code.TypeAnnotationPosition.TypePathEntryKind arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TypePathEntry(Dova.JDK.com.sun.tools.javac.code.TypeAnnotationPosition.TypePathEntryKind arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;I)V", "public")]
-		public TypePathEntry(Dova.JDK.com.sun.tools.javac.code.TypeAnnotationPosition.TypePathEntryKind arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public TypePathEntry(Dova.JDK.com.sun.tools.javac.code.TypeAnnotationPosition.TypePathEntryKind arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -1013,16 +1013,16 @@ public partial class TypeAnnotationPosition
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INNER_TYPE", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WILDCARD", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_ARGUMENT", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tag", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypePathEntryKind", "(Ljava/lang/String;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INNER_TYPE", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WILDCARD", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_ARGUMENT", "Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tag", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/code/TypeAnnotationPosition$TypePathEntryKind;", "public static final")]
@@ -1115,7 +1115,7 @@ public partial class TypeAnnotationPosition
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-		public TypePathEntryKind(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public TypePathEntryKind(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

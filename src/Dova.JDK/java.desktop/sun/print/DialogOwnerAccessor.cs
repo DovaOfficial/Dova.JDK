@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class DialogOwnerAccessor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/print/DialogOwnerAccessor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "accessor", "Lsun/print/DialogOwnerAccessor;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DialogOwnerAccessor", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getID", "(Ljavax/print/attribute/standard/DialogOwner;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOwnerID", "(Ljavax/print/attribute/standard/DialogOwner;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAccessor", "(Lsun/print/DialogOwnerAccessor;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "accessor", "Lsun/print/DialogOwnerAccessor;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getID", "(Ljavax/print/attribute/standard/DialogOwner;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOwnerID", "(Ljavax/print/attribute/standard/DialogOwner;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAccessor", "(Lsun/print/DialogOwnerAccessor;)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/print/DialogOwnerAccessor;", "public static")]
@@ -58,7 +58,7 @@ public partial class DialogOwnerAccessor
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DialogOwnerAccessor() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DialogOwnerAccessor() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

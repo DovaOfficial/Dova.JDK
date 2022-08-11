@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,24 +32,24 @@ public partial class DefaultFormatterFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/text/DefaultFormatterFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "displayFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "editFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nullFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFormatterFactory", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFormatterFactory", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFormatterFactory", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFormatterFactory", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultFormatterFactory", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFormatter", "(Ljavax/swing/JFormattedTextField;)Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNullFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEditFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplayFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDefaultFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDefaultFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDisplayFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEditFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setNullFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "displayFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "editFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nullFormat", "Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFormatter", "(Ljavax/swing/JFormattedTextField;)Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNullFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEditFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplayFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDefaultFormatter", "()Ljavax/swing/JFormattedTextField$AbstractFormatter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDefaultFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDisplayFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEditFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setNullFormatter", "(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/JFormattedTextField$AbstractFormatter;", "private")]
@@ -114,27 +114,27 @@ public partial class DefaultFormatterFactory
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", "public")]
-	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg2, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg2, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", "public")]
-	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JFormattedTextField$AbstractFormatter;Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", "public")]
-	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0, Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/JFormattedTextField$AbstractFormatter;)V", "public")]
-	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0))
+	public DefaultFormatterFactory(Dova.JDK.javax.swing.JFormattedTextField.AbstractFormatter arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DefaultFormatterFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4]))
+	public DefaultFormatterFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,27 +31,27 @@ public partial class JdkJfrConsumer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/consumer/JdkJfrConsumer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "instance", "Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdkJfrConsumer", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "instance", "()Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setAccess", "(Ljdk/jfr/internal/consumer/JdkJfrConsumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedThreadGroup", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedThreadGroup;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedFrame", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedFrame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedThread", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedThread;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedMethod", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedMethod;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedEvent", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;JJ)Ljdk/jfr/consumer/RecordedEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventComparator", "()Ljava/util/Comparator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setStartTicks", "(Ljdk/jfr/consumer/RecordedEvent;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEndTicks", "(Ljdk/jfr/consumer/RecordedEvent;J)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventValues", "(Ljdk/jfr/consumer/RecordedEvent;)[Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newMetadataEvent", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljdk/jfr/consumer/MetadataEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "readTypes", "(Ljdk/jfr/consumer/RecordingFile;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forceInitialization", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isLastEventInChunk", "(Ljdk/jfr/consumer/RecordingFile;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOffsetDataTime", "(Ljdk/jfr/consumer/RecordedObject;Ljava/lang/String;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedClass", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedClass;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedClassLoader", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedClassLoader;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRecordedStackTrace", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedStackTrace;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "instance", "Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "instance", "()Ljdk/jfr/internal/consumer/JdkJfrConsumer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setAccess", "(Ljdk/jfr/internal/consumer/JdkJfrConsumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedThreadGroup", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedThreadGroup;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedFrame", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedFrame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedThread", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedThread;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedMethod", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedMethod;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedEvent", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;JJ)Ljdk/jfr/consumer/RecordedEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventComparator", "()Ljava/util/Comparator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setStartTicks", "(Ljdk/jfr/consumer/RecordedEvent;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEndTicks", "(Ljdk/jfr/consumer/RecordedEvent;J)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventValues", "(Ljdk/jfr/consumer/RecordedEvent;)[Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newMetadataEvent", "(Ljava/util/List;Ljava/util/List;Ljava/util/List;)Ljdk/jfr/consumer/MetadataEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "readTypes", "(Ljdk/jfr/consumer/RecordingFile;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forceInitialization", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isLastEventInChunk", "(Ljdk/jfr/consumer/RecordingFile;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOffsetDataTime", "(Ljdk/jfr/consumer/RecordedObject;Ljava/lang/String;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedClass", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedClass;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedClassLoader", "(Ljdk/jfr/internal/consumer/ObjectContext;J[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedClassLoader;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRecordedStackTrace", "(Ljdk/jfr/internal/consumer/ObjectContext;[Ljava/lang/Object;)Ljdk/jfr/consumer/RecordedStackTrace;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/consumer/JdkJfrConsumer;", "private static")]
@@ -74,7 +74,7 @@ public partial class JdkJfrConsumer
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public JdkJfrConsumer() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JdkJfrConsumer() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

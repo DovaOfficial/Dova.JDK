@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class UnsupportedCallbackException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/security/auth/callback/UnsupportedCallbackException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "callback", "Ljavax/security/auth/callback/Callback;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnsupportedCallbackException", "(Ljavax/security/auth/callback/Callback;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnsupportedCallbackException", "(Ljavax/security/auth/callback/Callback;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCallback", "()Ljavax/security/auth/callback/Callback;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "callback", "Ljavax/security/auth/callback/Callback;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/security/auth/callback/Callback;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/security/auth/callback/Callback;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCallback", "()Ljavax/security/auth/callback/Callback;"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -72,12 +72,12 @@ public partial class UnsupportedCallbackException
 	}
 
 	[JniSignatureAttribute("(Ljavax/security/auth/callback/Callback;)V", "public")]
-	public UnsupportedCallbackException(Dova.JDK.javax.security.auth.callback.Callback arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public UnsupportedCallbackException(Dova.JDK.javax.security.auth.callback.Callback arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/security/auth/callback/Callback;Ljava/lang/String;)V", "public")]
-	public UnsupportedCallbackException(Dova.JDK.javax.security.auth.callback.Callback arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public UnsupportedCallbackException(Dova.JDK.javax.security.auth.callback.Callback arg0, Dova.JDK.java.lang.String arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

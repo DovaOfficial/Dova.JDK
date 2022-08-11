@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class Platform
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/Platform;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "os", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arch", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Platform", "(Ljdk/tools/jlink/internal/Platform$OperatingSystem;Ljdk/tools/jlink/internal/Platform$Architecture;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "runtime", "()Ljdk/tools/jlink/internal/Platform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "equals", "(Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashCode", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "os", "()Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "runtimeOS", "()Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "is64Bit", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "runtimeArch", "()Ljdk/tools/jlink/internal/Platform$Architecture;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "parsePlatform", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toArch", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$Architecture;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "arch", "()Ljdk/tools/jlink/internal/Platform$Architecture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "os", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arch", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/Platform$OperatingSystem;Ljdk/tools/jlink/internal/Platform$Architecture;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "runtime", "()Ljdk/tools/jlink/internal/Platform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "equals", "(Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashCode", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "os", "()Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "runtimeOS", "()Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "is64Bit", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "runtimeArch", "()Ljdk/tools/jlink/internal/Platform$Architecture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "parsePlatform", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toArch", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$Architecture;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "arch", "()Ljdk/tools/jlink/internal/Platform$Architecture;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/tools/jlink/internal/Platform$OperatingSystem;", "private final")]
@@ -96,7 +96,7 @@ public partial class Platform
 	}
 
 	[JniSignatureAttribute("(Ljdk/tools/jlink/internal/Platform$OperatingSystem;Ljdk/tools/jlink/internal/Platform$Architecture;)V", "public")]
-	public Platform(Dova.JDK.jdk.tools.jlink.@internal.Platform.OperatingSystem os, Dova.JDK.jdk.tools.jlink.@internal.Platform.Architecture arch) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], os, arch))
+	public Platform(Dova.JDK.jdk.tools.jlink.@internal.Platform.OperatingSystem os, Dova.JDK.jdk.tools.jlink.@internal.Platform.Architecture arch) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], os, arch))
 	{
 	}
 
@@ -196,16 +196,16 @@ public partial class Platform
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/Platform$OperatingSystem;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WINDOWS", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINUX", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MACOS", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AIX", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OperatingSystem", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WINDOWS", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINUX", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MACOS", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AIX", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/tools/jlink/internal/Platform$OperatingSystem;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/tools/jlink/internal/Platform$OperatingSystem;", "public static final")]
@@ -298,7 +298,7 @@ public partial class Platform
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public OperatingSystem(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public OperatingSystem(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -343,16 +343,16 @@ public partial class Platform
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/Platform$Architecture;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "X86", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "x64", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARM", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AARCH64", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Architecture", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$Architecture;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "X86", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "x64", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARM", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AARCH64", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNKNOWN", "Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/tools/jlink/internal/Platform$Architecture;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/tools/jlink/internal/Platform$Architecture;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/tools/jlink/internal/Platform$Architecture;", "public static final")]
@@ -445,7 +445,7 @@ public partial class Platform
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Architecture(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Architecture(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

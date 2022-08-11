@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,26 +31,26 @@ public partial class SystemModulesPlugin
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SYSTEM_MODULES_MAP_CLASS", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SYSTEM_MODULES_CLASS_PREFIX", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_SYSTEM_MODULES_CLASS", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT_SYSTEM_MODULES_CLASS", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enabled", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SystemModulesPlugin", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transform", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljdk/tools/jlink/plugin/ResourcePool;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolve", "(Ljava/lang/module/ModuleFinder;Ljava/util/Set;)Ljava/lang/module/Configuration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getState", "()Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "sorted", "(Ljava/util/Collection;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "pushInt", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sublist", "(Ljava/util/List;Ljava/lang/module/Configuration;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "finderOf", "(Ljava/util/Collection;)Ljava/lang/module/ModuleFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transformModuleInfos", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genSystemModulesClasses", "(Ljava/util/List;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/util/Set;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genSystemModulesClass", "(Ljava/util/List;Ljava/lang/module/Configuration;Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genSystemModulesMapClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasArguments", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "configure", "(Ljava/util/Map;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SYSTEM_MODULES_MAP_CLASS", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SYSTEM_MODULES_CLASS_PREFIX", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_SYSTEM_MODULES_CLASS", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT_SYSTEM_MODULES_CLASS", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enabled", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transform", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljdk/tools/jlink/plugin/ResourcePool;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolve", "(Ljava/lang/module/ModuleFinder;Ljava/util/Set;)Ljava/lang/module/Configuration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getState", "()Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "sorted", "(Ljava/util/Collection;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "pushInt", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sublist", "(Ljava/util/List;Ljava/lang/module/Configuration;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "finderOf", "(Ljava/util/Collection;)Ljava/lang/module/ModuleFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transformModuleInfos", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genSystemModulesClasses", "(Ljava/util/List;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/util/Set;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genSystemModulesClass", "(Ljava/util/List;Ljava/lang/module/Configuration;Ljava/lang/String;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genSystemModulesMapClass", "(Ljava/lang/String;Ljava/lang/String;Ljava/util/Map;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasArguments", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "configure", "(Ljava/util/Map;)V"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -143,7 +143,7 @@ public partial class SystemModulesPlugin
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public SystemModulesPlugin() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public SystemModulesPlugin() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -255,24 +255,24 @@ public partial class SystemModulesPlugin
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$ModuleInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bais", "Ljava/io/ByteArrayInputStream;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attrs", "Ljdk/internal/module/ModuleInfo$Attributes;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packages", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "addModulePackages", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "descriptor", "Ljava/lang/module/ModuleDescriptor;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleInfo", "([BLjava/util/Set;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "target", "()Ljdk/internal/module/ModuleTarget;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBytes", "()[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "()Ljava/util/Set;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "descriptor", "()Ljava/lang/module/ModuleDescriptor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getInputStream", "()Ljava/io/InputStream;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recordedHashes", "()Ljdk/internal/module/ModuleHashes;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moduleResolution", "()Ljdk/internal/module/ModuleResolution;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validatePackages", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "validateNames", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldRewrite", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasModulePackages", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bais", "Ljava/io/ByteArrayInputStream;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attrs", "Ljdk/internal/module/ModuleInfo$Attributes;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packages", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "addModulePackages", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "descriptor", "Ljava/lang/module/ModuleDescriptor;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([BLjava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "target", "()Ljdk/internal/module/ModuleTarget;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBytes", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packages", "()Ljava/util/Set;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "descriptor", "()Ljava/lang/module/ModuleDescriptor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getInputStream", "()Ljava/io/InputStream;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recordedHashes", "()Ljdk/internal/module/ModuleHashes;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moduleResolution", "()Ljdk/internal/module/ModuleResolution;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validatePackages", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "validateNames", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldRewrite", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasModulePackages", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/io/ByteArrayInputStream;", "private final")]
@@ -351,7 +351,7 @@ public partial class SystemModulesPlugin
 		}
 
 		[JniSignatureAttribute("([BLjava/util/Set;)V", "")]
-		public ModuleInfo(JavaArray<byte> arg0, Dova.JDK.java.util.Set arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ModuleInfo(JavaArray<byte> arg0, Dova.JDK.java.util.Set arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -456,10 +456,10 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$ModuleInfo$ModuleInfoRewriter;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extender", "Ljdk/internal/module/ModuleInfoExtender;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleInfoRewriter", "(Ljava/io/InputStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBytes", "()[B"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addModulePackages", "(Ljava/util/Set;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extender", "Ljdk/internal/module/ModuleInfoExtender;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/InputStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBytes", "()[B"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addModulePackages", "(Ljava/util/Set;)V"));
 			}
 
 			[JniSignatureAttribute("Ljdk/internal/module/ModuleInfoExtender;", "final")]
@@ -482,7 +482,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljava/io/InputStream;)V", "")]
-			public ModuleInfoRewriter(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public ModuleInfoRewriter(Dova.JDK.java.io.InputStream arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -520,40 +520,40 @@ public partial class SystemModulesPlugin
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_DESCRIPTOR_BUILDER", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_DESCRIPTOR_ARRAY_SIGNATURE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_TARGET_CLASSNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_TARGET_ARRAY_SIGNATURE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_HASHES_ARRAY_SIGNATURE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_RESOLUTION_CLASSNAME", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_RESOLUTIONS_ARRAY_SIGNATURE", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAX_LOCAL_VARS", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "BUILDER_VAR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "MD_VAR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "MT_VAR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "MH_VAR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextLocalVar", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mv", "Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "className", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "moduleInfos", "Ljava/util/List;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dedupSetBuilder", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$DedupSetBuilder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SystemModulesClassGenerator", "(Ljava/lang/String;Ljava/util/List;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generate", "(Ljdk/internal/org/objectweb/asm/ClassWriter;Ljava/lang/String;Ljava/util/Map;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genHasSplitPackages", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genConstructor", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genIncubatorModules", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genModuleDescriptorsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genModuleTargetsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genModuleHashesMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genModuleResolutionsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genModuleReads", "(Ljdk/internal/org/objectweb/asm/ClassWriter;Ljava/lang/module/Configuration;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "genImmutableSet", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/util/Set;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dedups", "(Ljava/lang/module/ModuleDescriptor;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClassWriter", "(Ljava/lang/module/Configuration;)Ljdk/internal/org/objectweb/asm/ClassWriter;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNextLocalVar", "()I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_DESCRIPTOR_BUILDER", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_DESCRIPTOR_ARRAY_SIGNATURE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_MODIFIER_CLASSNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_TARGET_CLASSNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_TARGET_ARRAY_SIGNATURE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_HASHES_ARRAY_SIGNATURE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_RESOLUTION_CLASSNAME", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_RESOLUTIONS_ARRAY_SIGNATURE", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAX_LOCAL_VARS", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "BUILDER_VAR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "MD_VAR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "MT_VAR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "MH_VAR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextLocalVar", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mv", "Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "className", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "moduleInfos", "Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dedupSetBuilder", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$DedupSetBuilder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/util/List;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "generate", "(Ljdk/internal/org/objectweb/asm/ClassWriter;Ljava/lang/String;Ljava/util/Map;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genHasSplitPackages", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genConstructor", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genIncubatorModules", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genModuleDescriptorsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genModuleTargetsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genModuleHashesMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genModuleResolutionsMethod", "(Ljdk/internal/org/objectweb/asm/ClassWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genModuleReads", "(Ljdk/internal/org/objectweb/asm/ClassWriter;Ljava/lang/module/Configuration;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "genImmutableSet", "(Ljdk/internal/org/objectweb/asm/MethodVisitor;Ljava/util/Set;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dedups", "(Ljava/lang/module/ModuleDescriptor;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClassWriter", "(Ljava/lang/module/Configuration;)Ljdk/internal/org/objectweb/asm/ClassWriter;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNextLocalVar", "()I"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -842,7 +842,7 @@ public partial class SystemModulesPlugin
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/util/List;)V", "public")]
-		public SystemModulesClassGenerator(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SystemModulesClassGenerator(Dova.JDK.java.lang.String arg0, Dova.JDK.java.util.List arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -945,25 +945,25 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$DedupSetBuilder;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringSets", "Ljava/util/Map;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requiresModifiersSets", "Ljava/util/Map;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exportsModifiersSets", "Ljava/util/Map;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "opensModifiersSets", "Ljava/util/Map;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringSetVar", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "enumSetVar", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localVarSupplier", "Ljava/util/function/IntSupplier;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DedupSetBuilder", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/function/IntSupplier;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exportsModifiers", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requiresModifiers", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opensModifiers", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "stringSet", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOfStringSet", "(Ljava/util/Set;)I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOfExportsModifiers", "(Ljava/util/Set;)I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOfOpensModifiers", "(Ljava/util/Set;)I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newStringSet", "(Ljava/util/Set;)I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "indexOfRequiresModifiers", "(Ljava/util/Set;)I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringSets", "Ljava/util/Map;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requiresModifiersSets", "Ljava/util/Map;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exportsModifiersSets", "Ljava/util/Map;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "opensModifiersSets", "Ljava/util/Map;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringSetVar", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "enumSetVar", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localVarSupplier", "Ljava/util/function/IntSupplier;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/function/IntSupplier;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exportsModifiers", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requiresModifiers", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opensModifiers", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "stringSet", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOfStringSet", "(Ljava/util/Set;)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOfExportsModifiers", "(Ljava/util/Set;)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOfOpensModifiers", "(Ljava/util/Set;)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newStringSet", "(Ljava/util/Set;)I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "indexOfRequiresModifiers", "(Ljava/util/Set;)I"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/Map;", "final")]
@@ -1098,7 +1098,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/function/IntSupplier;)V", "")]
-			public DedupSetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.function.IntSupplier arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public DedupSetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.function.IntSupplier arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -1181,47 +1181,47 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$ModuleDescriptorBuilder;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BUILDER_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROVIDES_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_MODIFIER_SET_STRING_SET_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_MODIFIER_SET_STRING_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_MODIFIER_SET_STRING_SET_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_MODIFIER_SET_STRING_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROVIDES_STRING_LIST_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_SET_STRING_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_SET_STRING_STRING_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPORTS_ARRAY_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPENS_ARRAY_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROVIDES_ARRAY_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRES_ARRAY_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SET_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOOLEAN_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "md", "Ljava/lang/module/ModuleDescriptor;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "packages", "Ljava/util/Set;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleDescriptorBuilder", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/lang/module/ModuleDescriptor;Ljava/util/Set;I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version", "(Ljava/lang/module/ModuleDescriptor$Version;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "packages", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exports", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "opens", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uses", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "provides", "(Ljava/util/Collection;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "requires", "(Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mainClass", "(Ljava/lang/String;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newRequires", "(Ljava/util/Set;Ljava/lang/String;Ljava/lang/String;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newExports", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newOpens", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newProvides", "(Ljava/lang/String;Ljava/util/List;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newBuilder", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "putModuleDescriptor", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setModuleBit", "(Ljava/lang/String;Z)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "invokeBuilderMethod", "(Ljava/lang/String;Ljava/lang/String;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BUILDER_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROVIDES_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_MODIFIER_SET_STRING_SET_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_MODIFIER_SET_STRING_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_MODIFIER_SET_STRING_SET_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_MODIFIER_SET_STRING_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROVIDES_STRING_LIST_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_SET_STRING_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_SET_STRING_STRING_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPORTS_ARRAY_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPENS_ARRAY_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROVIDES_ARRAY_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRES_ARRAY_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SET_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRING_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BOOLEAN_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "md", "Ljava/lang/module/ModuleDescriptor;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "packages", "Ljava/util/Set;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/lang/module/ModuleDescriptor;Ljava/util/Set;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version", "(Ljava/lang/module/ModuleDescriptor$Version;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "packages", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exports", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "opens", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uses", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "provides", "(Ljava/util/Collection;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "requires", "(Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mainClass", "(Ljava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newRequires", "(Ljava/util/Set;Ljava/lang/String;Ljava/lang/String;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newExports", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newOpens", "(Ljava/util/Set;Ljava/lang/String;Ljava/util/Set;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newProvides", "(Ljava/lang/String;Ljava/util/List;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newBuilder", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "putModuleDescriptor", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setModuleBit", "(Ljava/lang/String;Z)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "invokeBuilderMethod", "(Ljava/lang/String;Ljava/lang/String;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "static final")]
@@ -1552,7 +1552,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/lang/module/ModuleDescriptor;Ljava/util/Set;I)V", "")]
-			public ModuleDescriptorBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.lang.module.ModuleDescriptor arg1, Dova.JDK.java.util.Set arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+			public ModuleDescriptorBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.lang.module.ModuleDescriptor arg1, Dova.JDK.java.util.Set arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 			{
 			}
 
@@ -1678,17 +1678,17 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$ModuleHashesBuilder;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_HASHES_BUILDER", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODULE_HASHES_BUILDER_TYPE", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING_BYTE_ARRAY_SIG", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recordedHashes", "Ljdk/internal/module/ModuleHashes;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "hmv", "Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "index", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleHashesBuilder", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljdk/internal/module/ModuleHashes;ILjdk/internal/org/objectweb/asm/MethodVisitor;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hashForModule", "(Ljava/lang/String;[B)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newModuleHashesBuilder", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pushModuleHashes", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_HASHES_BUILDER", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODULE_HASHES_BUILDER_TYPE", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRING_BYTE_ARRAY_SIG", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recordedHashes", "Ljdk/internal/module/ModuleHashes;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "hmv", "Ljdk/internal/org/objectweb/asm/MethodVisitor;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "index", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljdk/internal/module/ModuleHashes;ILjdk/internal/org/objectweb/asm/MethodVisitor;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hashForModule", "(Ljava/lang/String;[B)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newModuleHashesBuilder", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pushModuleHashes", "()V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -1781,7 +1781,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljdk/internal/module/ModuleHashes;ILjdk/internal/org/objectweb/asm/MethodVisitor;)V", "")]
-			public ModuleHashesBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.jdk.@internal.module.ModuleHashes arg1, int arg2, Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+			public ModuleHashesBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.jdk.@internal.module.ModuleHashes arg1, int arg2, Dova.JDK.jdk.@internal.org.objectweb.asm.MethodVisitor arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 			{
 			}
 
@@ -1829,9 +1829,9 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$EnumSetBuilder;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "className", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EnumSetBuilder", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;Ljava/lang/String;ILjava/util/function/IntSupplier;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitElement", "(Ljava/lang/Comparable;Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "className", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;Ljava/lang/String;ILjava/util/function/IntSupplier;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitElement", "(Ljava/lang/Comparable;Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -1854,7 +1854,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;Ljava/lang/String;ILjava/util/function/IntSupplier;)V", "")]
-			public EnumSetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.Set arg1, Dova.JDK.java.lang.String arg2, int arg3, Dova.JDK.java.util.function.IntSupplier arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+			public EnumSetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.Set arg1, Dova.JDK.java.lang.String arg2, int arg3, Dova.JDK.java.util.function.IntSupplier arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 			{
 			}
 
@@ -1884,17 +1884,17 @@ public partial class SystemModulesPlugin
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator$SetBuilder;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elements", "Ljava/util/Set;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "defaultVarIndex", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextLocalVar", "Ljava/util/function/IntSupplier;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refCount", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "localVarIndex", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetBuilder", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;ILjava/util/function/IntSupplier;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "increment", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()I"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "generateSetOf", "(I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitElement", "(Ljava/lang/Comparable;Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elements", "Ljava/util/Set;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "defaultVarIndex", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextLocalVar", "Ljava/util/function/IntSupplier;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refCount", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "localVarIndex", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;ILjava/util/function/IntSupplier;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "increment", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()I"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "generateSetOf", "(I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitElement", "(Ljava/lang/Comparable;Ljdk/internal/org/objectweb/asm/MethodVisitor;)V"));
 			}
 
 			[JniSignatureAttribute("Ljava/util/Set;", "private final")]
@@ -1987,7 +1987,7 @@ public partial class SystemModulesPlugin
 			}
 
 			[JniSignatureAttribute("(Ljdk/tools/jlink/internal/plugins/SystemModulesPlugin$SystemModulesClassGenerator;Ljava/util/Set;ILjava/util/function/IntSupplier;)V", "")]
-			public SetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.Set arg1, int arg2, Dova.JDK.java.util.function.IntSupplier arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+			public SetBuilder(Dova.JDK.jdk.tools.jlink.@internal.plugins.SystemModulesPlugin.SystemModulesClassGenerator arg0, Dova.JDK.java.util.Set arg1, int arg2, Dova.JDK.java.util.function.IntSupplier arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 			{
 			}
 

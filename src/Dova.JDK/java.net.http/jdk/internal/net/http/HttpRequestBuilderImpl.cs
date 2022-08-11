@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,49 +32,49 @@ public partial class HttpRequestBuilderImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/HttpRequestBuilderImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "headersBuilder", "Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uri", "Ljava/net/URI;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "method", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "expectContinue", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bodyPublisher", "Ljava/net/http/HttpRequest$BodyPublisher;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Ljava/util/Optional;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "duration", "Ljava/time/Duration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HttpRequestBuilderImpl", "(Ljava/net/URI;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HttpRequestBuilderImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "method", "(Ljava/lang/String;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "method", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version", "()Ljava/util/Optional;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version_0", "(Ljava/net/http/HttpClient$Version;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version_1", "(Ljava/net/http/HttpClient$Version;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uri", "()Ljava/net/URI;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uri_0", "(Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uri_1", "(Ljava/net/URI;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copy_0", "()Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copy_1", "()Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GET", "()Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "timeout", "()Ljava/time/Duration;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "timeout", "(Ljava/time/Duration;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljava/net/http/HttpRequest;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DELETE", "()Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "header_0", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "header_1", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HEAD", "()Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "POST", "(Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PUT", "(Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "headersBuilder", "()Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expectContinue", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expectContinue_0", "(Z)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expectContinue_1", "(Z)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "bodyPublisher", "()Ljava/net/http/HttpRequest$BodyPublisher;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkURI", "(Ljava/net/URI;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHeader_0", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHeader_1", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "checkNameAndValue", "(Ljava/lang/String;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "method0", "(Ljava/lang/String;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildForWebSocket", "()Ljdk/internal/net/http/HttpRequestImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "headers_0", "([Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "headers_1", "([Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "headersBuilder", "Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uri", "Ljava/net/URI;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "method", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "expectContinue", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bodyPublisher", "Ljava/net/http/HttpRequest$BodyPublisher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Ljava/util/Optional;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "duration", "Ljava/time/Duration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/net/URI;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "method", "(Ljava/lang/String;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "method", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version", "()Ljava/util/Optional;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version_0", "(Ljava/net/http/HttpClient$Version;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version_1", "(Ljava/net/http/HttpClient$Version;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uri", "()Ljava/net/URI;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uri_0", "(Ljava/net/URI;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uri_1", "(Ljava/net/URI;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copy_0", "()Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copy_1", "()Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "GET", "()Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "timeout", "()Ljava/time/Duration;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "timeout", "(Ljava/time/Duration;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()Ljava/net/http/HttpRequest;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "DELETE", "()Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "header_0", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "header_1", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "HEAD", "()Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "POST", "(Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "PUT", "(Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "headersBuilder", "()Ljdk/internal/net/http/common/HttpHeadersBuilder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expectContinue", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expectContinue_0", "(Z)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expectContinue_1", "(Z)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "bodyPublisher", "()Ljava/net/http/HttpRequest$BodyPublisher;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkURI", "(Ljava/net/URI;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHeader_0", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHeader_1", "(Ljava/lang/String;Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "checkNameAndValue", "(Ljava/lang/String;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "method0", "(Ljava/lang/String;Ljava/net/http/HttpRequest$BodyPublisher;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildForWebSocket", "()Ljdk/internal/net/http/HttpRequestImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "headers_0", "([Ljava/lang/String;)Ljava/net/http/HttpRequest$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "headers_1", "([Ljava/lang/String;)Ljdk/internal/net/http/HttpRequestBuilderImpl;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/net/http/common/HttpHeadersBuilder;", "private")]
@@ -195,12 +195,12 @@ public partial class HttpRequestBuilderImpl
 	}
 
 	[JniSignatureAttribute("(Ljava/net/URI;)V", "public")]
-	public HttpRequestBuilderImpl(Dova.JDK.java.net.URI arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HttpRequestBuilderImpl(Dova.JDK.java.net.URI arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HttpRequestBuilderImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1]))
+	public HttpRequestBuilderImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1]))
 	{
 	}
 

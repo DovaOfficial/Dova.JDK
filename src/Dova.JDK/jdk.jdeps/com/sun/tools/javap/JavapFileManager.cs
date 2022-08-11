@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,8 +30,8 @@ public partial class JavapFileManager
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/javap/JavapFileManager;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JavapFileManager", "(Lcom/sun/tools/javac/util/Context;Ljava/nio/charset/Charset;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljavax/tools/DiagnosticListener;Ljava/io/PrintWriter;)Lcom/sun/tools/javap/JavapFileManager;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;Ljava/nio/charset/Charset;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljavax/tools/DiagnosticListener;Ljava/io/PrintWriter;)Lcom/sun/tools/javap/JavapFileManager;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -40,7 +40,7 @@ public partial class JavapFileManager
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;Ljava/nio/charset/Charset;)V", "private")]
-	public JavapFileManager(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public JavapFileManager(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.nio.charset.Charset arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

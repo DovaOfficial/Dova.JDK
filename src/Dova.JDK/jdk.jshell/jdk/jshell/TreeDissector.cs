@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,29 +31,29 @@ public partial class TreeDissector
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TreeDissector;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bt", "Ljdk/jshell/TaskFactory$BaseTask;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetClass", "Lcom/sun/source/tree/ClassTree;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "targetCompilationUnit", "Lcom/sun/source/tree/CompilationUnitTree;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "theSourcePositions", "Lcom/sun/source/util/SourcePositions;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "isClassOrInterface", "Ljava/util/function/Predicate;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TreeDissector", "(Ljdk/jshell/TaskFactory$BaseTask;Lcom/sun/source/tree/CompilationUnitTree;Lcom/sun/source/tree/ClassTree;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "signature", "(Lcom/sun/tools/javac/code/Types;Lcom/sun/tools/javac/code/Type$MethodType;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "method", "(Ljdk/jshell/MethodSnippet;)Lcom/sun/source/tree/MethodTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classes", "(Ljava/lang/Iterable;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "classes", "(Lcom/sun/source/tree/CompilationUnitTree;)Ljava/util/stream/Stream;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "types", "()Lcom/sun/tools/javac/code/Types;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trees", "()Lcom/sun/source/util/Trees;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "treeToRange", "(Lcom/sun/source/tree/Tree;)Ljdk/jshell/Wrap$Range;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSourcePositions", "()Lcom/sun/source/util/SourcePositions;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createByFirstClass", "(Ljdk/jshell/TaskFactory$BaseTask;)Ljdk/jshell/TreeDissector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createBySnippet", "(Ljdk/jshell/TaskFactory$BaseTask;Ljdk/jshell/Snippet;)Ljdk/jshell/TreeDissector;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "treeListToRange", "(Ljava/util/List;)Ljdk/jshell/Wrap$Range;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firstStatement", "()Lcom/sun/source/tree/StatementTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firstVariable", "()Lcom/sun/source/tree/VariableTree;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "typeOfMethod", "(Ljdk/jshell/MethodSnippet;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "printType", "(Ljdk/jshell/TaskFactory$AnalyzeTask;Ljdk/jshell/JShell;Ljavax/lang/model/type/TypeMirror;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEndPosition", "(Lcom/sun/source/tree/Tree;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStartPosition", "(Lcom/sun/source/tree/Tree;)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bt", "Ljdk/jshell/TaskFactory$BaseTask;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetClass", "Lcom/sun/source/tree/ClassTree;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "targetCompilationUnit", "Lcom/sun/source/tree/CompilationUnitTree;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "theSourcePositions", "Lcom/sun/source/util/SourcePositions;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "isClassOrInterface", "Ljava/util/function/Predicate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory$BaseTask;Lcom/sun/source/tree/CompilationUnitTree;Lcom/sun/source/tree/ClassTree;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "signature", "(Lcom/sun/tools/javac/code/Types;Lcom/sun/tools/javac/code/Type$MethodType;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "method", "(Ljdk/jshell/MethodSnippet;)Lcom/sun/source/tree/MethodTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classes", "(Ljava/lang/Iterable;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "classes", "(Lcom/sun/source/tree/CompilationUnitTree;)Ljava/util/stream/Stream;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "types", "()Lcom/sun/tools/javac/code/Types;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trees", "()Lcom/sun/source/util/Trees;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "treeToRange", "(Lcom/sun/source/tree/Tree;)Ljdk/jshell/Wrap$Range;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSourcePositions", "()Lcom/sun/source/util/SourcePositions;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createByFirstClass", "(Ljdk/jshell/TaskFactory$BaseTask;)Ljdk/jshell/TreeDissector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createBySnippet", "(Ljdk/jshell/TaskFactory$BaseTask;Ljdk/jshell/Snippet;)Ljdk/jshell/TreeDissector;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "treeListToRange", "(Ljava/util/List;)Ljdk/jshell/Wrap$Range;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "firstStatement", "()Lcom/sun/source/tree/StatementTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "firstVariable", "()Lcom/sun/source/tree/VariableTree;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "typeOfMethod", "(Ljdk/jshell/MethodSnippet;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "printType", "(Ljdk/jshell/TaskFactory$AnalyzeTask;Ljdk/jshell/JShell;Ljavax/lang/model/type/TypeMirror;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEndPosition", "(Lcom/sun/source/tree/Tree;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStartPosition", "(Lcom/sun/source/tree/Tree;)I"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/TaskFactory$BaseTask;", "private final")]
@@ -132,7 +132,7 @@ public partial class TreeDissector
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/TaskFactory$BaseTask;Lcom/sun/source/tree/CompilationUnitTree;Lcom/sun/source/tree/ClassTree;)V", "private")]
-	public TreeDissector(Dova.JDK.jdk.jshell.TaskFactory.BaseTask arg0, Dova.JDK.com.sun.source.tree.CompilationUnitTree arg1, Dova.JDK.com.sun.source.tree.ClassTree arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public TreeDissector(Dova.JDK.jdk.jshell.TaskFactory.BaseTask arg0, Dova.JDK.com.sun.source.tree.CompilationUnitTree arg1, Dova.JDK.com.sun.source.tree.ClassTree arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
@@ -274,12 +274,12 @@ public partial class TreeDissector
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TreeDissector$TDSignatureGenerator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sb", "Ljava/lang/StringBuilder;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TDSignatureGenerator", "(Lcom/sun/tools/javac/code/Types;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(C)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "(Lcom/sun/tools/javac/util/Name;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "append", "([B)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sb", "Ljava/lang/StringBuilder;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/code/Types;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(C)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "(Lcom/sun/tools/javac/util/Name;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "append", "([B)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/StringBuilder;", "")]
@@ -302,7 +302,7 @@ public partial class TreeDissector
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/code/Types;)V", "")]
-		public TDSignatureGenerator(Dova.JDK.com.sun.tools.javac.code.Types arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TDSignatureGenerator(Dova.JDK.com.sun.tools.javac.code.Types arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface RegistryHandler
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/rmi/registry/RegistryHandler;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registryImpl", "(I)Ljava/rmi/registry/Registry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registryStub", "(Ljava/lang/String;I)Ljava/rmi/registry/Registry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registryImpl", "(I)Ljava/rmi/registry/Registry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registryStub", "(Ljava/lang/String;I)Ljava/rmi/registry/Registry;"));
 	}
 
 	[JniSignatureAttribute("(I)Ljava/rmi/registry/Registry;", "public abstract")]

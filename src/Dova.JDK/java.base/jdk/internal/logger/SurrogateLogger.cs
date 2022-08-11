@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class SurrogateLogger
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/SurrogateLogger;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "JUL_DEFAULT_LEVEL", "Lsun/util/logging/PlatformLogger$Level;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "simpleFormatString", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SurrogateLogger", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeSurrogateLogger", "(Ljava/lang/String;)Ljdk/internal/logger/SurrogateLogger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSimpleFormat", "(Ljava/util/function/Function;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isFilteredFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "defaultPlatformLevel", "()Lsun/util/logging/PlatformLogger$Level;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSimpleFormatString", "()Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "JUL_DEFAULT_LEVEL", "Lsun/util/logging/PlatformLogger$Level;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "simpleFormatString", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeSurrogateLogger", "(Ljava/lang/String;)Ljdk/internal/logger/SurrogateLogger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSimpleFormat", "(Ljava/util/function/Function;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isFilteredFrame", "(Ljava/lang/StackWalker$StackFrame;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "defaultPlatformLevel", "()Lsun/util/logging/PlatformLogger$Level;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSimpleFormatString", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("Lsun/util/logging/PlatformLogger$Level;", "private static final")]
@@ -75,7 +75,7 @@ public partial class SurrogateLogger
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-	public SurrogateLogger(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public SurrogateLogger(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

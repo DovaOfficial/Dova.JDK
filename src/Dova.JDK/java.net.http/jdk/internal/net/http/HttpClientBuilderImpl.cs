@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:59)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,38 +32,38 @@ public partial class HttpClientBuilderImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/net/http/HttpClientBuilderImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cookieHandler", "Ljava/net/CookieHandler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connectTimeout", "Ljava/time/Duration;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "followRedirects", "Ljava/net/http/HttpClient$Redirect;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "proxy", "Ljava/net/ProxySelector;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "authenticator", "Ljava/net/Authenticator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "version", "Ljava/net/http/HttpClient$Version;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "executor", "Ljava/util/concurrent/Executor;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sslContext", "Ljavax/net/ssl/SSLContext;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sslParams", "Ljavax/net/ssl/SSLParameters;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "priority", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HttpClientBuilderImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "priority_0", "(I)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "priority_1", "(I)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version_0", "(Ljava/net/http/HttpClient$Version;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "version_1", "(Ljava/net/http/HttpClient$Version;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "proxy_0", "(Ljava/net/ProxySelector;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "proxy_1", "(Ljava/net/ProxySelector;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljava/net/http/HttpClient;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "executor_0", "(Ljava/util/concurrent/Executor;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "executor_1", "(Ljava/util/concurrent/Executor;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sslParameters_0", "(Ljavax/net/ssl/SSLParameters;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sslParameters_1", "(Ljavax/net/ssl/SSLParameters;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cookieHandler_0", "(Ljava/net/CookieHandler;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cookieHandler_1", "(Ljava/net/CookieHandler;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectTimeout_0", "(Ljava/time/Duration;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connectTimeout_1", "(Ljava/time/Duration;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "followRedirects_0", "(Ljava/net/http/HttpClient$Redirect;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "followRedirects_1", "(Ljava/net/http/HttpClient$Redirect;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sslContext_0", "(Ljavax/net/ssl/SSLContext;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sslContext_1", "(Ljavax/net/ssl/SSLContext;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "authenticator_0", "(Ljava/net/Authenticator;)Ljava/net/http/HttpClient$Builder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "authenticator_1", "(Ljava/net/Authenticator;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cookieHandler", "Ljava/net/CookieHandler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connectTimeout", "Ljava/time/Duration;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "followRedirects", "Ljava/net/http/HttpClient$Redirect;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "proxy", "Ljava/net/ProxySelector;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "authenticator", "Ljava/net/Authenticator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "version", "Ljava/net/http/HttpClient$Version;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "executor", "Ljava/util/concurrent/Executor;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sslContext", "Ljavax/net/ssl/SSLContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sslParams", "Ljavax/net/ssl/SSLParameters;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "priority", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "priority_0", "(I)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "priority_1", "(I)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version_0", "(Ljava/net/http/HttpClient$Version;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "version_1", "(Ljava/net/http/HttpClient$Version;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "proxy_0", "(Ljava/net/ProxySelector;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "proxy_1", "(Ljava/net/ProxySelector;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()Ljava/net/http/HttpClient;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "executor_0", "(Ljava/util/concurrent/Executor;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "executor_1", "(Ljava/util/concurrent/Executor;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sslParameters_0", "(Ljavax/net/ssl/SSLParameters;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sslParameters_1", "(Ljavax/net/ssl/SSLParameters;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cookieHandler_0", "(Ljava/net/CookieHandler;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cookieHandler_1", "(Ljava/net/CookieHandler;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connectTimeout_0", "(Ljava/time/Duration;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connectTimeout_1", "(Ljava/time/Duration;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "followRedirects_0", "(Ljava/net/http/HttpClient$Redirect;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "followRedirects_1", "(Ljava/net/http/HttpClient$Redirect;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sslContext_0", "(Ljavax/net/ssl/SSLContext;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sslContext_1", "(Ljavax/net/ssl/SSLContext;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "authenticator_0", "(Ljava/net/Authenticator;)Ljava/net/http/HttpClient$Builder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "authenticator_1", "(Ljava/net/Authenticator;)Ljdk/internal/net/http/HttpClientBuilderImpl;"));
 	}
 
 	[JniSignatureAttribute("Ljava/net/CookieHandler;", "")]
@@ -212,7 +212,7 @@ public partial class HttpClientBuilderImpl
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HttpClientBuilderImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public HttpClientBuilderImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

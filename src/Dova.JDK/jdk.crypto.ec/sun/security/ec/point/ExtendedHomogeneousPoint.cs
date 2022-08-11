@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,23 +32,23 @@ public partial class ExtendedHomogeneousPoint
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ExtendedHomogeneousPoint;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x", "Lsun/security/util/math/IntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y", "Lsun/security/util/math/IntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "t", "Lsun/security/util/math/IntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "z", "Lsun/security/util/math/IntegerModuloP;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExtendedHomogeneousPoint", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_0", "()Lsun/security/ec/point/ImmutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed_1", "()Lsun/security/ec/point/ExtendedHomogeneousPoint$Immutable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getT", "()Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asAffine", "()Lsun/security/ec/point/AffinePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_0", "()Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable_1", "()Lsun/security/ec/point/MutablePoint;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;Lsun/security/ec/point/ExtendedHomogeneousPoint;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "affineEquals", "(Lsun/security/ec/point/Point;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getZ", "()Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getX", "()Lsun/security/util/math/IntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getY", "()Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x", "Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y", "Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "t", "Lsun/security/util/math/IntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "z", "Lsun/security/util/math/IntegerModuloP;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_0", "()Lsun/security/ec/point/ImmutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed_1", "()Lsun/security/ec/point/ExtendedHomogeneousPoint$Immutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getT", "()Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asAffine", "()Lsun/security/ec/point/AffinePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable_0", "()Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable_1", "()Lsun/security/ec/point/MutablePoint;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "affineEquals", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;Lsun/security/ec/point/ExtendedHomogeneousPoint;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "affineEquals", "(Lsun/security/ec/point/Point;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getZ", "()Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getX", "()Lsun/security/util/math/IntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getY", "()Lsun/security/util/math/IntegerModuloP;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/util/math/IntegerModuloP;", "protected final")]
@@ -113,7 +113,7 @@ public partial class ExtendedHomogeneousPoint
 	}
 
 	[JniSignatureAttribute("(Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;Lsun/security/util/math/IntegerModuloP;)V", "protected")]
-	public ExtendedHomogeneousPoint(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2, Dova.JDK.java.lang.Object arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+	public ExtendedHomogeneousPoint(Dova.JDK.java.lang.Object arg0, Dova.JDK.java.lang.Object arg1, Dova.JDK.java.lang.Object arg2, Dova.JDK.java.lang.Object arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 	{
 	}
 
@@ -220,9 +220,9 @@ public partial class ExtendedHomogeneousPoint
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ExtendedHomogeneousPoint$Immutable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Immutable", "(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -231,7 +231,7 @@ public partial class ExtendedHomogeneousPoint
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;)V", "public")]
-		public Immutable(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg2, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Immutable(Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg2, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -269,17 +269,17 @@ public partial class ExtendedHomogeneousPoint
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mutable", "(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setValue_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_0", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet_1", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/MutablePoint;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "conditionalSet", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;I)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_0", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_1", "(Lsun/security/ec/point/Point;)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_0", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setValue_1", "(Lsun/security/ec/point/AffinePoint;)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fixed", "()Lsun/security/ec/point/ImmutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mutable", "()Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "conditionalSet_0", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "conditionalSet_1", "(Lsun/security/ec/point/Point;I)Lsun/security/ec/point/MutablePoint;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "conditionalSet", "(Lsun/security/ec/point/ExtendedHomogeneousPoint;I)Lsun/security/ec/point/ExtendedHomogeneousPoint$Mutable;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -288,7 +288,7 @@ public partial class ExtendedHomogeneousPoint
 		}
 
 		[JniSignatureAttribute("(Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;Lsun/security/util/math/MutableIntegerModuloP;)V", "public")]
-		public Mutable(Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg2, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public Mutable(Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg0, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg1, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg2, Dova.JDK.sun.security.util.math.MutableIntegerModuloP arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

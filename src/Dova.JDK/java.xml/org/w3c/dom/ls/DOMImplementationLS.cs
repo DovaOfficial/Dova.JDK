@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,12 +30,12 @@ public partial interface DOMImplementationLS
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lorg/w3c/dom/ls/DOMImplementationLS;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODE_SYNCHRONOUS", "S"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MODE_ASYNCHRONOUS", "S"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLSParser", "(SLjava/lang/String;)Lorg/w3c/dom/ls/LSParser;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLSSerializer", "()Lorg/w3c/dom/ls/LSSerializer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLSInput", "()Lorg/w3c/dom/ls/LSInput;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODE_SYNCHRONOUS", "S"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MODE_ASYNCHRONOUS", "S"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLSParser", "(SLjava/lang/String;)Lorg/w3c/dom/ls/LSParser;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLSSerializer", "()Lorg/w3c/dom/ls/LSSerializer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLSInput", "()Lorg/w3c/dom/ls/LSInput;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLSOutput", "()Lorg/w3c/dom/ls/LSOutput;"));
 	}
 
 	[JniSignatureAttribute("S", "public static final")]

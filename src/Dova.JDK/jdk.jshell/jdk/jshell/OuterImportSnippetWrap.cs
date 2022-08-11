@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class OuterImportSnippetWrap
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/OuterImportSnippetWrap;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "snippet", "Ljdk/jshell/Snippet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OuterImportSnippetWrap", "(Ljdk/jshell/Wrap;Ljdk/jshell/Snippet;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapDiag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "snippet", "Ljdk/jshell/Snippet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/Wrap;Ljdk/jshell/Snippet;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapDiag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/Snippet;", "private final")]
@@ -57,7 +57,7 @@ public partial class OuterImportSnippetWrap
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/Wrap;Ljdk/jshell/Snippet;)V", "")]
-	public OuterImportSnippetWrap(Dova.JDK.jdk.jshell.Wrap arg0, Dova.JDK.jdk.jshell.Snippet arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public OuterImportSnippetWrap(Dova.JDK.jdk.jshell.Wrap arg0, Dova.JDK.jdk.jshell.Snippet arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

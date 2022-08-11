@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,11 +32,11 @@ public partial class HashPrintJobAttributeSet
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/print/attribute/HashPrintJobAttributeSet;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintJobAttributeSet", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintJobAttributeSet", "([Ljavax/print/attribute/PrintJobAttribute;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintJobAttributeSet", "(Ljavax/print/attribute/PrintJobAttribute;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HashPrintJobAttributeSet", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintJobAttributeSet;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljavax/print/attribute/PrintJobAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/print/attribute/PrintJobAttribute;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("J", "private static final")]
@@ -59,22 +59,22 @@ public partial class HashPrintJobAttributeSet
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/PrintJobAttributeSet;)V", "public")]
-	public HashPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public HashPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttributeSet arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("([Ljavax/print/attribute/PrintJobAttribute;)V", "public")]
-	public HashPrintJobAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.PrintJobAttribute> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0))
+	public HashPrintJobAttributeSet(JavaArray<Dova.JDK.javax.print.attribute.PrintJobAttribute> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljavax/print/attribute/PrintJobAttribute;)V", "public")]
-	public HashPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttribute arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0))
+	public HashPrintJobAttributeSet(Dova.JDK.javax.print.attribute.PrintJobAttribute arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0))
 	{
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public HashPrintJobAttributeSet() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3]))
+	public HashPrintJobAttributeSet() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,18 +31,18 @@ public partial class MetadataWriter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/MetadataWriter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "metadata", "Ljdk/jfr/internal/MetadataDescriptor$Element;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "root", "Ljdk/jfr/internal/MetadataDescriptor$Element;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MetadataWriter", "(Ljdk/jfr/internal/MetadataDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Ljava/io/DataOutput;Ljdk/jfr/internal/MetadataDescriptor$Element;Ljava/util/HashMap;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeInt", "(Ljava/io/DataOutput;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeString", "(Ljava/io/DataOutput;Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "writeBinary", "(Ljava/io/DataOutput;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildStringPool", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljava/util/Set;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeSettingElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/SettingDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeFieldElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/ValueDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeAnnotation", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/AnnotationElement;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeTypeElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/internal/Type;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "metadata", "Ljdk/jfr/internal/MetadataDescriptor$Element;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "root", "Ljdk/jfr/internal/MetadataDescriptor$Element;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/MetadataDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Ljava/io/DataOutput;Ljdk/jfr/internal/MetadataDescriptor$Element;Ljava/util/HashMap;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeInt", "(Ljava/io/DataOutput;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeString", "(Ljava/io/DataOutput;Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "writeBinary", "(Ljava/io/DataOutput;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildStringPool", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljava/util/Set;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeSettingElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/SettingDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeFieldElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/ValueDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeAnnotation", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/AnnotationElement;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeTypeElement", "(Ljdk/jfr/internal/MetadataDescriptor$Element;Ljdk/jfr/internal/Type;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/MetadataDescriptor$Element;", "private final")]
@@ -79,7 +79,7 @@ public partial class MetadataWriter
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/MetadataDescriptor;)V", "public")]
-	public MetadataWriter(Dova.JDK.jdk.jfr.@internal.MetadataDescriptor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public MetadataWriter(Dova.JDK.jdk.jfr.@internal.MetadataDescriptor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

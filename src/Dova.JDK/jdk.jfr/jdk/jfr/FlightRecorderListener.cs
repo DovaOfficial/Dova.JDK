@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface FlightRecorderListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/FlightRecorderListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recorderInitialized", "(Ljdk/jfr/FlightRecorder;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "recordingStateChanged", "(Ljdk/jfr/Recording;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recorderInitialized", "(Ljdk/jfr/FlightRecorder;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "recordingStateChanged", "(Ljdk/jfr/Recording;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/FlightRecorder;)V", "public")]

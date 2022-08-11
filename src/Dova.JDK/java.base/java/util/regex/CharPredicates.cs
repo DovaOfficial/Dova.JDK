@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,39 +30,39 @@ public partial class CharPredicates
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/regex/CharPredicates;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CharPredicates", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "CONTROL", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "range", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "UPPERCASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "category", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ctype", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "DIGIT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "BLANK", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ALNUM", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "GRAPH", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "WORD", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ALPHABETIC", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "JOIN_CONTROL", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "PRINT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "LOWERCASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "TITLECASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "WHITE_SPACE", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "PUNCTUATION", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "HEX_DIGIT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ASSIGNED", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "IDEOGRAPHIC", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "LETTER", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "NONCHARACTER_CODE_POINT", "()Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getUnicodePredicate", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPosixPredicate", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forUnicodeProperty", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forPOSIXName", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forUnicodeScript", "(Ljava/lang/String;)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forUnicodeBlock", "(Ljava/lang/String;)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "forProperty", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ASCII_DIGIT", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ASCII_WORD", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ASCII_SPACE", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "CONTROL", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "range", "(II)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "UPPERCASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "category", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ctype", "(I)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "DIGIT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "BLANK", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ALNUM", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "GRAPH", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "WORD", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ALPHABETIC", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "JOIN_CONTROL", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "PRINT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "LOWERCASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "TITLECASE", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "WHITE_SPACE", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "PUNCTUATION", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "HEX_DIGIT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ASSIGNED", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "IDEOGRAPHIC", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "LETTER", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "NONCHARACTER_CODE_POINT", "()Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getUnicodePredicate", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPosixPredicate", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forUnicodeProperty", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forPOSIXName", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forUnicodeScript", "(Ljava/lang/String;)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forUnicodeBlock", "(Ljava/lang/String;)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "forProperty", "(Ljava/lang/String;Z)Ljava/util/regex/Pattern$CharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ASCII_DIGIT", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ASCII_WORD", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ASCII_SPACE", "()Ljava/util/regex/Pattern$BmpCharPredicate;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -71,7 +71,7 @@ public partial class CharPredicates
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public CharPredicates() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CharPredicates() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

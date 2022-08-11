@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,14 +31,14 @@ public partial class SunDropTargetEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/dnd/SunDropTargetEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MOUSE_DROPPED", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dispatcher", "Lsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SunDropTargetEvent", "(Ljava/awt/Component;IIILsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatch", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paramString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "consume", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDispatcher", "()Lsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MOUSE_DROPPED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dispatcher", "Lsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Component;IIILsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispatch", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paramString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "consume", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDispatcher", "()Lsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;"));
 	}
 
 	[JniSignatureAttribute("I", "public static final")]
@@ -75,7 +75,7 @@ public partial class SunDropTargetEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Component;IIILsun/awt/dnd/SunDropTargetContextPeer$EventDispatcher;)V", "public")]
-	public SunDropTargetEvent(Dova.JDK.java.awt.Component arg0, int arg1, int arg2, int arg3, Dova.JDK.sun.awt.dnd.SunDropTargetContextPeer.EventDispatcher arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public SunDropTargetEvent(Dova.JDK.java.awt.Component arg0, int arg1, int arg2, int arg3, Dova.JDK.sun.awt.dnd.SunDropTargetContextPeer.EventDispatcher arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

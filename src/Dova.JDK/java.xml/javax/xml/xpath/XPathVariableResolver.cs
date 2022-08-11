@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface XPathVariableResolver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/xml/xpath/XPathVariableResolver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolveVariable", "(Ljavax/xml/namespace/QName;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolveVariable", "(Ljavax/xml/namespace/QName;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/xml/namespace/QName;)Ljava/lang/Object;", "public abstract")]

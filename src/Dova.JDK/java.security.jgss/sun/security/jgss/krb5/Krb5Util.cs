@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class Krb5Util
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/jgss/krb5/Krb5Util;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEBUG", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Krb5Util", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "credsToTicket", "(Lsun/security/krb5/Credentials;)Ljavax/security/auth/kerberos/KerberosTicket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getServiceCreds", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;)Lsun/security/jgss/krb5/ServiceCreds;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "ticketToCreds", "(Ljavax/security/auth/kerberos/KerberosTicket;)Lsun/security/krb5/Credentials;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "snapshotFromJavaxKeyTab", "(Ljavax/security/auth/kerberos/KeyTab;)Lsun/security/krb5/internal/ktab/KeyTab;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getServiceTicket", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;Ljava/lang/String;)Ljavax/security/auth/kerberos/KerberosTicket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getInitialTicket", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;)Ljavax/security/auth/kerberos/KerberosTicket;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "keysFromJavaxKeyTab", "(Ljavax/security/auth/kerberos/KeyTab;Lsun/security/krb5/PrincipalName;)[Lsun/security/krb5/EncryptionKey;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEBUG", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "credsToTicket", "(Lsun/security/krb5/Credentials;)Ljavax/security/auth/kerberos/KerberosTicket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getServiceCreds", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;)Lsun/security/jgss/krb5/ServiceCreds;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "ticketToCreds", "(Ljavax/security/auth/kerberos/KerberosTicket;)Lsun/security/krb5/Credentials;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "snapshotFromJavaxKeyTab", "(Ljavax/security/auth/kerberos/KeyTab;)Lsun/security/krb5/internal/ktab/KeyTab;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getServiceTicket", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;Ljava/lang/String;)Ljavax/security/auth/kerberos/KerberosTicket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getInitialTicket", "(Lsun/security/jgss/GSSCaller;Ljava/lang/String;)Ljavax/security/auth/kerberos/KerberosTicket;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "keysFromJavaxKeyTab", "(Ljavax/security/auth/kerberos/KeyTab;Lsun/security/krb5/PrincipalName;)[Lsun/security/krb5/EncryptionKey;"));
 	}
 
 	[JniSignatureAttribute("Z", "static final")]
@@ -62,7 +62,7 @@ public partial class Krb5Util
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public Krb5Util() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public Krb5Util() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class DefaultStripDebugPlugin
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRIP_NATIVE_DEBUG_PLUGIN", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCLUDE_DEBUGINFO", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "javaStripPlugin", "Ljdk/tools/jlink/plugin/Plugin;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stripNativePluginFactory", "Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultStripDebugPlugin", "()V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultStripDebugPlugin", "(Ljdk/tools/jlink/plugin/Plugin;Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "transform", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljdk/tools/jlink/plugin/ResourcePool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRIP_NATIVE_DEBUG_PLUGIN", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCLUDE_DEBUGINFO", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "javaStripPlugin", "Ljdk/tools/jlink/plugin/Plugin;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stripNativePluginFactory", "Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/tools/jlink/plugin/Plugin;Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "transform", "(Ljdk/tools/jlink/plugin/ResourcePool;Ljdk/tools/jlink/plugin/ResourcePoolBuilder;)Ljdk/tools/jlink/plugin/ResourcePool;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/String;", "private static final")]
@@ -102,12 +102,12 @@ public partial class DefaultStripDebugPlugin
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DefaultStripDebugPlugin() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultStripDebugPlugin() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljdk/tools/jlink/plugin/Plugin;Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;)V", "public")]
-	public DefaultStripDebugPlugin(Dova.JDK.jdk.tools.jlink.plugin.Plugin arg0, Dova.JDK.jdk.tools.jlink.@internal.plugins.DefaultStripDebugPlugin.NativePluginFactory arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public DefaultStripDebugPlugin(Dova.JDK.jdk.tools.jlink.plugin.Plugin arg0, Dova.JDK.jdk.tools.jlink.@internal.plugins.DefaultStripDebugPlugin.NativePluginFactory arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -137,8 +137,8 @@ public partial class DefaultStripDebugPlugin
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$DefaultNativePluginFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultNativePluginFactory", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "()Ljdk/tools/jlink/plugin/Plugin;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "()Ljdk/tools/jlink/plugin/Plugin;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -147,7 +147,7 @@ public partial class DefaultStripDebugPlugin
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public DefaultNativePluginFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DefaultNativePluginFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -176,7 +176,7 @@ public partial class DefaultStripDebugPlugin
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/tools/jlink/internal/plugins/DefaultStripDebugPlugin$NativePluginFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "create", "()Ljdk/tools/jlink/plugin/Plugin;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "create", "()Ljdk/tools/jlink/plugin/Plugin;"));
 		}
 
 		[JniSignatureAttribute("()Ljdk/tools/jlink/plugin/Plugin;", "public abstract")]

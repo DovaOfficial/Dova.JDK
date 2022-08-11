@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,13 +32,13 @@ public partial class ContinuousCompletionProvider
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/jshell/tool/ContinuousCompletionProvider;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STARTSWITH_MATCHER", "Ljava/util/function/BiPredicate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PERFECT_MATCHER", "Ljava/util/function/BiPredicate;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "wordCompletionProviderSupplier", "Ljava/util/function/Supplier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matcher", "Ljava/util/function/BiPredicate;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContinuousCompletionProvider", "(Ljava/util/Map;Ljava/util/function/BiPredicate;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ContinuousCompletionProvider", "(Ljava/util/function/Supplier;Ljava/util/function/BiPredicate;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "completionSuggestions", "(Ljava/lang/String;I[I)Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STARTSWITH_MATCHER", "Ljava/util/function/BiPredicate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PERFECT_MATCHER", "Ljava/util/function/BiPredicate;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "wordCompletionProviderSupplier", "Ljava/util/function/Supplier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matcher", "Ljava/util/function/BiPredicate;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/Map;Ljava/util/function/BiPredicate;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/Supplier;Ljava/util/function/BiPredicate;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "completionSuggestions", "(Ljava/lang/String;I[I)Ljava/util/List;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/BiPredicate;", "static final")]
@@ -103,12 +103,12 @@ public partial class ContinuousCompletionProvider
 	}
 
 	[JniSignatureAttribute("(Ljava/util/Map;Ljava/util/function/BiPredicate;)V", "")]
-	public ContinuousCompletionProvider(Dova.JDK.java.util.Map arg0, Dova.JDK.java.util.function.BiPredicate arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public ContinuousCompletionProvider(Dova.JDK.java.util.Map arg0, Dova.JDK.java.util.function.BiPredicate arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Supplier;Ljava/util/function/BiPredicate;)V", "")]
-	public ContinuousCompletionProvider(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.BiPredicate arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public ContinuousCompletionProvider(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.java.util.function.BiPredicate arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 

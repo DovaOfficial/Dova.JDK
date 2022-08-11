@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,10 +32,10 @@ public partial class PoolCleaner
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/jndi/ldap/pool/PoolCleaner;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pools", "[Lcom/sun/jndi/ldap/pool/Pool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "period", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PoolCleaner", "(J[Lcom/sun/jndi/ldap/pool/Pool;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pools", "[Lcom/sun/jndi/ldap/pool/Pool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "period", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J[Lcom/sun/jndi/ldap/pool/Pool;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 	}
 
 	[JniSignatureAttribute("[Lcom/sun/jndi/ldap/pool/Pool;", "private final")]
@@ -72,7 +72,7 @@ public partial class PoolCleaner
 	}
 
 	[JniSignatureAttribute("(J[Lcom/sun/jndi/ldap/pool/Pool;)V", "public")]
-	public PoolCleaner(long arg0, JavaArray<Dova.JDK.com.sun.jndi.ldap.pool.Pool> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public PoolCleaner(long arg0, JavaArray<Dova.JDK.com.sun.jndi.ldap.pool.Pool> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

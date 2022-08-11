@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,62 +31,62 @@ public partial class SignatureScheme
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SignatureScheme;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECDSA_SECP256R1_SHA256", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECDSA_SECP384R1_SHA384", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECDSA_SECP521R1_SHA512", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ED25519", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ED448", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_RSAE_SHA256", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_RSAE_SHA384", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_RSAE_SHA512", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_PSS_SHA256", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_PSS_SHA384", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_PSS_SHA512", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PKCS1_SHA256", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PKCS1_SHA384", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PKCS1_SHA512", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DSA_SHA256", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECDSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ECDSA_SHA1", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PKCS1_SHA1", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DSA_SHA1", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_MD5", "Lsun/security/ssl/SignatureScheme;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "id", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "algorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyAlgorithm", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signAlgParams", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minimalKeySize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "supportedProtocols", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handshakeSupportedProtocols", "Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAvailable", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "hashAlgorithms", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "signatureAlgorithms", "[Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIGNATURE_PRIMITIVE_SET", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/ssl/SignatureScheme;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureScheme", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/NamedGroup;[Lsun/security/ssl/ProtocolVersion;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureScheme", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;I[Lsun/security/ssl/ProtocolVersion;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureScheme", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;Lsun/security/ssl/NamedGroup;I[Lsun/security/ssl/ProtocolVersion;[Lsun/security/ssl/ProtocolVersion;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureScheme", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I[Lsun/security/ssl/ProtocolVersion;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureScheme", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lsun/security/ssl/ProtocolVersion;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/ssl/SignatureScheme;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(I)Lsun/security/ssl/SignatureScheme;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/ssl/SignatureScheme;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSupportedAlgorithms", "(Lsun/security/ssl/SSLConfiguration;Ljava/security/AlgorithmConstraints;Ljava/util/List;)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSupportedAlgorithms", "(Lsun/security/ssl/SSLConfiguration;Ljava/security/AlgorithmConstraints;Lsun/security/ssl/ProtocolVersion;[I)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getSignerOfPreferableAlgorithm", "(Ljava/security/AlgorithmConstraints;Ljava/util/List;Lsun/security/ssl/X509Authentication$X509Possession;Lsun/security/ssl/ProtocolVersion;)Ljava/util/Map$Entry;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getVerifier", "(Ljava/security/PublicKey;)Ljava/security/Signature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPermitted", "(Ljava/security/AlgorithmConstraints;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "sizeInRecord", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getAlgorithmNames", "(Ljava/util/Collection;)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nameOf", "(I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nameOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSigner", "(Ljava/security/PrivateKey;)Ljava/security/Signature;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPreferableAlgorithm", "(Ljava/security/AlgorithmConstraints;Ljava/util/List;Lsun/security/ssl/SignatureScheme;Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECDSA_SECP256R1_SHA256", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECDSA_SECP384R1_SHA384", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECDSA_SECP521R1_SHA512", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ED25519", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ED448", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_RSAE_SHA256", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_RSAE_SHA384", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_RSAE_SHA512", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_PSS_SHA256", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_PSS_SHA384", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_PSS_SHA512", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PKCS1_SHA256", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PKCS1_SHA384", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PKCS1_SHA512", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DSA_SHA256", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECDSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DSA_SHA224", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ECDSA_SHA1", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PKCS1_SHA1", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DSA_SHA1", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_MD5", "Lsun/security/ssl/SignatureScheme;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "id", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "algorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyAlgorithm", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signAlgParams", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "namedGroup", "Lsun/security/ssl/NamedGroup;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minimalKeySize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "supportedProtocols", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handshakeSupportedProtocols", "Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAvailable", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "hashAlgorithms", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "signatureAlgorithms", "[Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SIGNATURE_PRIMITIVE_SET", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/ssl/SignatureScheme;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/NamedGroup;[Lsun/security/ssl/ProtocolVersion;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;I[Lsun/security/ssl/ProtocolVersion;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;Lsun/security/ssl/NamedGroup;I[Lsun/security/ssl/ProtocolVersion;[Lsun/security/ssl/ProtocolVersion;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I[Lsun/security/ssl/ProtocolVersion;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lsun/security/ssl/ProtocolVersion;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/ssl/SignatureScheme;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(I)Lsun/security/ssl/SignatureScheme;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/ssl/SignatureScheme;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSupportedAlgorithms", "(Lsun/security/ssl/SSLConfiguration;Ljava/security/AlgorithmConstraints;Ljava/util/List;)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSupportedAlgorithms", "(Lsun/security/ssl/SSLConfiguration;Ljava/security/AlgorithmConstraints;Lsun/security/ssl/ProtocolVersion;[I)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getSignerOfPreferableAlgorithm", "(Ljava/security/AlgorithmConstraints;Ljava/util/List;Lsun/security/ssl/X509Authentication$X509Possession;Lsun/security/ssl/ProtocolVersion;)Ljava/util/Map$Entry;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getVerifier", "(Ljava/security/PublicKey;)Ljava/security/Signature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPermitted", "(Ljava/security/AlgorithmConstraints;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "sizeInRecord", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getAlgorithmNames", "(Ljava/util/Collection;)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nameOf", "(I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nameOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSigner", "(Ljava/security/PrivateKey;)Ljava/security/Signature;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPreferableAlgorithm", "(Ljava/security/AlgorithmConstraints;Ljava/util/List;Lsun/security/ssl/SignatureScheme;Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/SignatureScheme;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ssl/SignatureScheme;", "public static final")]
@@ -599,27 +599,27 @@ public partial class SignatureScheme
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/NamedGroup;[Lsun/security/ssl/ProtocolVersion;)V", "private")]
-	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.NamedGroup arg6, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.NamedGroup arg6, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;I[Lsun/security/ssl/ProtocolVersion;)V", "private")]
-	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.SignatureScheme.SigAlgParamSpec arg6, int arg7, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg8) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))
+	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.SignatureScheme.SigAlgParamSpec arg6, int arg7, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg8) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;Lsun/security/ssl/NamedGroup;I[Lsun/security/ssl/ProtocolVersion;[Lsun/security/ssl/ProtocolVersion;)V", "private")]
-	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.SignatureScheme.SigAlgParamSpec arg6, Dova.JDK.sun.security.ssl.NamedGroup arg7, int arg8, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg9, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg10) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
+	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.sun.security.ssl.SignatureScheme.SigAlgParamSpec arg6, Dova.JDK.sun.security.ssl.NamedGroup arg7, int arg8, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg9, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg10) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;I[Lsun/security/ssl/ProtocolVersion;)V", "private")]
-	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, int arg6, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg7) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
+	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, int arg6, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg7) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;IILjava/lang/String;Ljava/lang/String;Ljava/lang/String;[Lsun/security/ssl/ProtocolVersion;)V", "private")]
-	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public SignatureScheme(Dova.JDK.java.lang.String arg0, int arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.java.lang.String arg4, Dova.JDK.java.lang.String arg5, JavaArray<Dova.JDK.sun.security.ssl.ProtocolVersion> arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[4], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
@@ -747,17 +747,17 @@ public partial class SignatureScheme
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_SHA256", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_SHA384", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RSA_PSS_SHA512", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parameterSpec", "Ljava/security/spec/AlgorithmParameterSpec;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parameters", "Ljava/security/AlgorithmParameters;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isAvailable", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SigAlgParamSpec", "(Ljava/lang/String;ILjava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_SHA256", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_SHA384", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RSA_PSS_SHA512", "Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parameterSpec", "Ljava/security/spec/AlgorithmParameterSpec;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parameters", "Ljava/security/AlgorithmParameters;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isAvailable", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/SignatureScheme$SigAlgParamSpec;", "public static final")]
@@ -864,7 +864,7 @@ public partial class SignatureScheme
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;I)V", "private")]
-		public SigAlgParamSpec(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public SigAlgParamSpec(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

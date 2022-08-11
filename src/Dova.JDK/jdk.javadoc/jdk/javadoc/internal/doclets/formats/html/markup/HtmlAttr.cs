@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,50 +31,50 @@ public partial class HtmlAttr
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_CONTROLS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_EXPANDED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_LABEL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_LABELLEDBY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_ORIENTATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_SELECTED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLEAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTENT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATA_COPIED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DISABLED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HREF", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTTP_EQUIV", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ID", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LANG", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAME", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONCLICK", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONKEYDOWN", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ONLOAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLACEHOLDER", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROWS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCROLLING", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SRC", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABINDEX", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TARGET", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TITLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VALUE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WIDTH", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlAttr", "(Ljava/lang/String;ILjava/lang/String;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlAttr", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_CONTROLS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_EXPANDED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_LABEL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_LABELLEDBY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_ORIENTATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_SELECTED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLEAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTENT", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DATA_COPIED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DISABLED", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOR", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HREF", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTTP_EQUIV", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ID", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LANG", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAME", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONCLICK", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONKEYDOWN", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ONLOAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLACEHOLDER", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REL", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROWS", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCOPE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCROLLING", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SRC", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABINDEX", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TARGET", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TITLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VALUE", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WIDTH", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjava/lang/String;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr;", "public static final")]
@@ -615,12 +615,12 @@ public partial class HtmlAttr
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjava/lang/String;)V", "private")]
-	public HtmlAttr(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public HtmlAttr(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public HtmlAttr(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public HtmlAttr(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
@@ -671,18 +671,18 @@ public partial class HtmlAttr
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BANNER", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTENTINFO", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAIN", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAVIGATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REGION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "role", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Role", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BANNER", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTENTINFO", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAIN", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAVIGATION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REGION", "Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "role", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/HtmlAttr$Role;", "public static final")]
@@ -789,7 +789,7 @@ public partial class HtmlAttr
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Role(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Role(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

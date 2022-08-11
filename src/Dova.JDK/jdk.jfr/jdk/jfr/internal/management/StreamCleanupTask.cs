@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class StreamCleanupTask
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/management/StreamCleanupTask;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stream", "Ljdk/jfr/internal/management/EventByteStream;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "manager", "Ljdk/jfr/internal/management/StreamManager;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StreamCleanupTask", "(Ljdk/jfr/internal/management/StreamManager;Ljdk/jfr/internal/management/EventByteStream;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stream", "Ljdk/jfr/internal/management/EventByteStream;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "manager", "Ljdk/jfr/internal/management/StreamManager;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jfr/internal/management/StreamManager;Ljdk/jfr/internal/management/EventByteStream;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jfr/internal/management/EventByteStream;", "private final")]
@@ -71,7 +71,7 @@ public partial class StreamCleanupTask
 	}
 
 	[JniSignatureAttribute("(Ljdk/jfr/internal/management/StreamManager;Ljdk/jfr/internal/management/EventByteStream;)V", "")]
-	public StreamCleanupTask(Dova.JDK.jdk.jfr.@internal.management.StreamManager arg0, Dova.JDK.jdk.jfr.@internal.management.EventByteStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public StreamCleanupTask(Dova.JDK.jdk.jfr.@internal.management.StreamManager arg0, Dova.JDK.jdk.jfr.@internal.management.EventByteStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

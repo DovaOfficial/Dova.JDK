@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,15 +29,15 @@ public partial interface Node
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "count", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "spliterator", "()Ljava/util/Spliterator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Object;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChildCount", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChild", "(I)Ljava/util/stream/Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "count", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "spliterator", "()Ljava/util/Spliterator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Object;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChildCount", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChild", "(I)Ljava/util/stream/Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
 	}
 
 	[JniSignatureAttribute("()J", "public abstract")]
@@ -115,7 +115,7 @@ public partial interface Node
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$Builder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "()Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "()Ljava/util/stream/Node;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/util/stream/Node;", "public abstract")]
@@ -140,8 +140,8 @@ public partial interface Node
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$Builder$OfDouble;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_0", "()Ljava/util/stream/Node$OfDouble;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_1", "()Ljava/util/stream/Node;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_0", "()Ljava/util/stream/Node$OfDouble;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_1", "()Ljava/util/stream/Node;"));
 			}
 
 			[JniSignatureAttribute("()Ljava/util/stream/Node$OfDouble;", "public abstract")]
@@ -174,8 +174,8 @@ public partial interface Node
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$Builder$OfLong;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_0", "()Ljava/util/stream/Node$OfLong;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_1", "()Ljava/util/stream/Node;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_0", "()Ljava/util/stream/Node$OfLong;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_1", "()Ljava/util/stream/Node;"));
 			}
 
 			[JniSignatureAttribute("()Ljava/util/stream/Node$OfLong;", "public abstract")]
@@ -208,8 +208,8 @@ public partial interface Node
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$Builder$OfInt;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_0", "()Ljava/util/stream/Node$OfInt;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build_1", "()Ljava/util/stream/Node;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_0", "()Ljava/util/stream/Node$OfInt;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build_1", "()Ljava/util/stream/Node;"));
 			}
 
 			[JniSignatureAttribute("()Ljava/util/stream/Node$OfInt;", "public abstract")]
@@ -242,15 +242,15 @@ public partial interface Node
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$OfDouble;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_0", "(I)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_1", "(I)[D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Double;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Object;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfDouble;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_0", "(I)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_1", "(I)[D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Double;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Object;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfDouble;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/Object;", "public volatile")]
@@ -328,15 +328,15 @@ public partial interface Node
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$OfLong;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_0", "(I)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_1", "(I)[J"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Long;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Object;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfLong;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_0", "(I)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_1", "(I)[J"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Long;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Object;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfLong;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/Object;", "public volatile")]
@@ -414,15 +414,15 @@ public partial interface Node
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$OfInt;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_0", "(I)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray_1", "(I)[I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Integer;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "([Ljava/lang/Object;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfInt;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_0", "(I)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray_1", "(I)[I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forEach", "(Ljava/util/function/Consumer;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Integer;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "([Ljava/lang/Object;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_2", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfInt;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getShape", "()Ljava/util/stream/StreamShape;"));
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/Object;", "public volatile")]
@@ -500,17 +500,17 @@ public partial interface Node
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/stream/Node$OfPrimitive;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newArray", "(I)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "spliterator_0", "()Ljava/util/Spliterator;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "spliterator_1", "()Ljava/util/Spliterator$OfPrimitive;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "forEach", "(Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyInto", "(Ljava/lang/Object;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "asPrimitiveArray", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChild_0", "(I)Ljava/util/stream/Node$OfPrimitive;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChild_1", "(I)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newArray", "(I)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "spliterator_0", "()Ljava/util/Spliterator;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "spliterator_1", "()Ljava/util/Spliterator$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "forEach", "(Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyInto", "(Ljava/lang/Object;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asArray", "(Ljava/util/function/IntFunction;)[Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "asPrimitiveArray", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChild_0", "(I)Ljava/util/stream/Node$OfPrimitive;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChild_1", "(I)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_0", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "truncate_1", "(JJLjava/util/function/IntFunction;)Ljava/util/stream/Node$OfPrimitive;"));
 		}
 
 		[JniSignatureAttribute("(I)Ljava/lang/Object;", "public abstract")]

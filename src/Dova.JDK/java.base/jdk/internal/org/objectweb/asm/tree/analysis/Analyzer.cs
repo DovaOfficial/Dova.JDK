@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,29 +32,29 @@ public partial class Analyzer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/objectweb/asm/tree/analysis/Analyzer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interpreter", "Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insnList", "Ljdk/internal/org/objectweb/asm/tree/InsnList;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "insnListSize", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "handlers", "[Ljava/util/List;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frames", "[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "subroutines", "[Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "inInstructionsToProcess", "[Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instructionsToProcess", "[I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "numInstructionsToProcess", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Analyzer", "(Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "merge", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "merge", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;[Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getHandlers", "(I)Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFrames", "()[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findSubroutine", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Subroutine;Ljava/util/List;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "computeInitialFrame", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newControlFlowEdge", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newControlFlowExceptionEdge", "(ILjdk/internal/org/objectweb/asm/tree/TryCatchBlockNode;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newControlFlowExceptionEdge", "(II)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newFrame", "(II)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newFrame", "(Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interpreter", "Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "insnList", "Ljdk/internal/org/objectweb/asm/tree/InsnList;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "insnListSize", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "handlers", "[Ljava/util/List;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frames", "[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "subroutines", "[Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "inInstructionsToProcess", "[Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instructionsToProcess", "[I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "numInstructionsToProcess", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "merge", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "merge", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;Ljdk/internal/org/objectweb/asm/tree/analysis/Subroutine;[Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getHandlers", "(I)Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFrames", "()[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findSubroutine", "(ILjdk/internal/org/objectweb/asm/tree/analysis/Subroutine;Ljava/util/List;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "computeInitialFrame", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newControlFlowEdge", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newControlFlowExceptionEdge", "(ILjdk/internal/org/objectweb/asm/tree/TryCatchBlockNode;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newControlFlowExceptionEdge", "(II)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newFrame", "(II)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newFrame", "(Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;)Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "(Ljava/lang/String;Ljdk/internal/org/objectweb/asm/tree/MethodNode;)[Ljdk/internal/org/objectweb/asm/tree/analysis/Frame;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;", "private final")]
@@ -189,7 +189,7 @@ public partial class Analyzer
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/tree/analysis/Interpreter;)V", "public")]
-	public Analyzer(Dova.JDK.jdk.@internal.org.objectweb.asm.tree.analysis.Interpreter arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Analyzer(Dova.JDK.jdk.@internal.org.objectweb.asm.tree.analysis.Interpreter arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

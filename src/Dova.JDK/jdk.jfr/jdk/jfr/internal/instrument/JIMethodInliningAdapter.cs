@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class JIMethodInliningAdapter
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jfr/internal/instrument/JIMethodInliningAdapter;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lvs", "Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "end", "Ljdk/internal/org/objectweb/asm/Label;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JIMethodInliningAdapter", "(Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;Ljdk/internal/org/objectweb/asm/Label;ILjava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Remapper;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isStatic", "(I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitInsn", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "visitMaxs", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newLocalMapping", "(Ljdk/internal/org/objectweb/asm/Type;)I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lvs", "Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "end", "Ljdk/internal/org/objectweb/asm/Label;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;Ljdk/internal/org/objectweb/asm/Label;ILjava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Remapper;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isStatic", "(I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitInsn", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "visitMaxs", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newLocalMapping", "(Ljdk/internal/org/objectweb/asm/Type;)I"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;", "private final")]
@@ -74,7 +74,7 @@ public partial class JIMethodInliningAdapter
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/org/objectweb/asm/commons/LocalVariablesSorter;Ljdk/internal/org/objectweb/asm/Label;ILjava/lang/String;Ljdk/internal/org/objectweb/asm/commons/Remapper;)V", "public")]
-	public JIMethodInliningAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.commons.LocalVariablesSorter arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.Label arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.jdk.@internal.org.objectweb.asm.commons.Remapper arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public JIMethodInliningAdapter(Dova.JDK.jdk.@internal.org.objectweb.asm.commons.LocalVariablesSorter arg0, Dova.JDK.jdk.@internal.org.objectweb.asm.Label arg1, int arg2, Dova.JDK.java.lang.String arg3, Dova.JDK.jdk.@internal.org.objectweb.asm.commons.Remapper arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 

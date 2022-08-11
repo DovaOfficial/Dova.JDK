@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,22 +32,22 @@ public partial class GradientPaint
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/GradientPaint;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p1", "Ljava/awt/geom/Point2D$Float;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p2", "Ljava/awt/geom/Point2D$Float;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "color1", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "color2", "Ljava/awt/Color;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cyclic", "Z"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GradientPaint", "(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GradientPaint", "(FFLjava/awt/Color;FFLjava/awt/Color;Z)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GradientPaint", "(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GradientPaint", "(FFLjava/awt/Color;FFLjava/awt/Color;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPoint1", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getColor1", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getPoint2", "()Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getColor2", "()Ljava/awt/Color;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCyclic", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransparency", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p1", "Ljava/awt/geom/Point2D$Float;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p2", "Ljava/awt/geom/Point2D$Float;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "color1", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "color2", "Ljava/awt/Color;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cyclic", "Z"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFLjava/awt/Color;FFLjava/awt/Color;Z)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(FFLjava/awt/Color;FFLjava/awt/Color;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPoint1", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getColor1", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getPoint2", "()Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getColor2", "()Ljava/awt/Color;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCyclic", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransparency", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createContext", "(Ljava/awt/image/ColorModel;Ljava/awt/Rectangle;Ljava/awt/geom/Rectangle2D;Ljava/awt/geom/AffineTransform;Ljava/awt/RenderingHints;)Ljava/awt/PaintContext;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/geom/Point2D$Float;", "")]
@@ -126,22 +126,22 @@ public partial class GradientPaint
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;Z)V", "public")]
-	public GradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.geom.Point2D arg2, Dova.JDK.java.awt.Color arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+	public GradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.geom.Point2D arg2, Dova.JDK.java.awt.Color arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(FFLjava/awt/Color;FFLjava/awt/Color;Z)V", "public")]
-	public GradientPaint(float arg0, float arg1, Dova.JDK.java.awt.Color arg2, float arg3, float arg4, Dova.JDK.java.awt.Color arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public GradientPaint(float arg0, float arg1, Dova.JDK.java.awt.Color arg2, float arg3, float arg4, Dova.JDK.java.awt.Color arg5, bool arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/geom/Point2D;Ljava/awt/Color;Ljava/awt/geom/Point2D;Ljava/awt/Color;)V", "public")]
-	public GradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.geom.Point2D arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
+	public GradientPaint(Dova.JDK.java.awt.geom.Point2D arg0, Dova.JDK.java.awt.Color arg1, Dova.JDK.java.awt.geom.Point2D arg2, Dova.JDK.java.awt.Color arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3))
 	{
 	}
 
 	[JniSignatureAttribute("(FFLjava/awt/Color;FFLjava/awt/Color;)V", "public")]
-	public GradientPaint(float arg0, float arg1, Dova.JDK.java.awt.Color arg2, float arg3, float arg4, Dova.JDK.java.awt.Color arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5))
+	public GradientPaint(float arg0, float arg1, Dova.JDK.java.awt.Color arg2, float arg3, float arg4, Dova.JDK.java.awt.Color arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 

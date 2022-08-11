@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,18 +31,18 @@ public partial class LayoutPathImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOGMAP", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOG", "Ljava/util/Formatter;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LayoutPathImpl", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "()D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getPath", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pointToPath", "(DDLjava/awt/geom/Point2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pointToPath", "(DD)Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pathToPoint", "(DDZ)Ljava/awt/geom/Point2D;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pathToPoint", "(DDZLjava/awt/geom/Point2D;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOGMAP", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOG", "Ljava/util/Formatter;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "start", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "end", "()D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getPath", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pointToPath", "(DDLjava/awt/geom/Point2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pointToPath", "(DD)Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pathToPoint", "(DDZ)Ljava/awt/geom/Point2D;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pathToPoint", "(DDZLjava/awt/geom/Point2D;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
 	}
 
 	[JniSignatureAttribute("Z", "private static final")]
@@ -79,7 +79,7 @@ public partial class LayoutPathImpl
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public LayoutPathImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LayoutPathImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -163,22 +163,22 @@ public partial class LayoutPathImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$SegmentPath;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "[D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "etype", "Lsun/font/LayoutPathImpl$EndType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SegmentPath", "([DLsun/font/LayoutPathImpl$EndType;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl$SegmentPath;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "map", "(IDDLjava/awt/geom/Point2D;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "locateAndGetIndex", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "calcoffset", "(IZLjava/awt/geom/Point2D;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getClosedAdvance", "(DZ)D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSegmentIndexForAdvance", "(DZ)I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "etype", "Lsun/font/LayoutPathImpl$EndType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([DLsun/font/LayoutPathImpl$EndType;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl$SegmentPath;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "map", "(IDDLjava/awt/geom/Point2D;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "start", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "end", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "locateAndGetIndex", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "calcoffset", "(IZLjava/awt/geom/Point2D;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getClosedAdvance", "(DZ)D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSegmentIndexForAdvance", "(DZ)I"));
 		}
 
 		[JniSignatureAttribute("[D", "private")]
@@ -215,7 +215,7 @@ public partial class LayoutPathImpl
 		}
 
 		[JniSignatureAttribute("([DLsun/font/LayoutPathImpl$EndType;)V", "")]
-		public SegmentPath(JavaArray<double> arg0, Dova.JDK.sun.font.LayoutPathImpl.EndType arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public SegmentPath(JavaArray<double> arg0, Dova.JDK.sun.font.LayoutPathImpl.EndType arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -326,17 +326,17 @@ public partial class LayoutPathImpl
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$SegmentPath$Mapper;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "li", "Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "segments", "Ljava/util/ArrayList;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mpt", "Ljava/awt/geom/Point2D$Double;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cpt", "Ljava/awt/geom/Point2D$Double;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "haveMT", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mapper", "(Lsun/font/LayoutPathImpl$SegmentPath;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moveTo", "(DD)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lineTo", "(DD)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "li", "Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "segments", "Ljava/util/ArrayList;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mpt", "Ljava/awt/geom/Point2D$Double;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cpt", "Ljava/awt/geom/Point2D$Double;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "haveMT", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/font/LayoutPathImpl$SegmentPath;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moveTo", "(DD)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lineTo", "(DD)V"));
 			}
 
 			[JniSignatureAttribute("Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;", "final")]
@@ -415,7 +415,7 @@ public partial class LayoutPathImpl
 			}
 
 			[JniSignatureAttribute("(Lsun/font/LayoutPathImpl$SegmentPath;)V", "")]
-			public Mapper(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public Mapper(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -470,20 +470,20 @@ public partial class LayoutPathImpl
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$SegmentPath$Segment;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ix", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ux", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uy", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "temp", "Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "broken", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cx", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cy", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "gp", "Ljava/awt/geom/GeneralPath;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/font/LayoutPathImpl$SegmentPath;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Segment", "(Lsun/font/LayoutPathImpl$SegmentPath;I)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "line", "(Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "init", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "move", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ix", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ux", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uy", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "temp", "Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "broken", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cx", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cy", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "gp", "Ljava/awt/geom/GeneralPath;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/font/LayoutPathImpl$SegmentPath;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/font/LayoutPathImpl$SegmentPath;I)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "line", "(Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "init", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "move", "()V"));
 			}
 
 			[JniSignatureAttribute("I", "final")]
@@ -618,7 +618,7 @@ public partial class LayoutPathImpl
 			}
 
 			[JniSignatureAttribute("(Lsun/font/LayoutPathImpl$SegmentPath;I)V", "")]
-			public Segment(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Segment(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -666,17 +666,17 @@ public partial class LayoutPathImpl
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sx", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sy", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lx", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ly", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "m", "D"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/font/LayoutPathImpl$SegmentPath;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineInfo", "(Lsun/font/LayoutPathImpl$SegmentPath;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "set", "(Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "set", "(DDDD)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pin", "(DDLsun/font/LayoutPathImpl$SegmentPath$LineInfo;)Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pin", "(ILsun/font/LayoutPathImpl$SegmentPath$LineInfo;)Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sx", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sy", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lx", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ly", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "m", "D"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/font/LayoutPathImpl$SegmentPath;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/font/LayoutPathImpl$SegmentPath;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "set", "(Lsun/font/LayoutPathImpl$SegmentPath$LineInfo;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "set", "(DDDD)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pin", "(DDLsun/font/LayoutPathImpl$SegmentPath$LineInfo;)Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pin", "(ILsun/font/LayoutPathImpl$SegmentPath$LineInfo;)Z"));
 			}
 
 			[JniSignatureAttribute("D", "")]
@@ -769,7 +769,7 @@ public partial class LayoutPathImpl
 			}
 
 			[JniSignatureAttribute("(Lsun/font/LayoutPathImpl$SegmentPath;)V", "")]
-			public LineInfo(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public LineInfo(Dova.JDK.sun.font.LayoutPathImpl.SegmentPath arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -820,17 +820,17 @@ public partial class LayoutPathImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$EndType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PINNED", "Lsun/font/LayoutPathImpl$EndType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTENDED", "Lsun/font/LayoutPathImpl$EndType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLOSED", "Lsun/font/LayoutPathImpl$EndType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lsun/font/LayoutPathImpl$EndType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EndType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lsun/font/LayoutPathImpl$EndType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lsun/font/LayoutPathImpl$EndType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lsun/font/LayoutPathImpl$EndType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isClosed", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPinned", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isExtended", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PINNED", "Lsun/font/LayoutPathImpl$EndType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXTENDED", "Lsun/font/LayoutPathImpl$EndType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLOSED", "Lsun/font/LayoutPathImpl$EndType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lsun/font/LayoutPathImpl$EndType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lsun/font/LayoutPathImpl$EndType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lsun/font/LayoutPathImpl$EndType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lsun/font/LayoutPathImpl$EndType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isClosed", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPinned", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isExtended", "()Z"));
 		}
 
 		[JniSignatureAttribute("Lsun/font/LayoutPathImpl$EndType;", "public static final")]
@@ -895,7 +895,7 @@ public partial class LayoutPathImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public EndType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public EndType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -961,14 +961,14 @@ public partial class LayoutPathImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$EmptyPath;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tx", "Ljava/awt/geom/AffineTransform;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EmptyPath", "(Ljava/awt/geom/AffineTransform;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "length", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "start", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "end", "()D"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tx", "Ljava/awt/geom/AffineTransform;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/geom/AffineTransform;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "length", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "start", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "end", "()D"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pointToPath", "(Ljava/awt/geom/Point2D;Ljava/awt/geom/Point2D;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "pathToPoint", "(Ljava/awt/geom/Point2D;ZLjava/awt/geom/Point2D;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mapShape", "(Ljava/awt/Shape;)Ljava/awt/Shape;"));
 		}
 
 		[JniSignatureAttribute("Ljava/awt/geom/AffineTransform;", "private")]
@@ -991,7 +991,7 @@ public partial class LayoutPathImpl
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/geom/AffineTransform;)V", "public")]
-		public EmptyPath(Dova.JDK.java.awt.geom.AffineTransform arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EmptyPath(Dova.JDK.java.awt.geom.AffineTransform arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -1056,21 +1056,21 @@ public partial class LayoutPathImpl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/font/LayoutPathImpl$SegmentPathBuilder;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "data", "[D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "px", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "py", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "a", "D"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pconnect", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SegmentPathBuilder", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "build", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl$SegmentPath;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "complete", "(Lsun/font/LayoutPathImpl$EndType;)Lsun/font/LayoutPathImpl$SegmentPath;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "complete", "()Lsun/font/LayoutPathImpl$SegmentPath;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextPoint", "(DDZ)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "moveTo", "(DD)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lineTo", "(DD)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "data", "[D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "w", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "px", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "py", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "a", "D"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pconnect", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "build", "(Lsun/font/LayoutPathImpl$EndType;[D)Lsun/font/LayoutPathImpl$SegmentPath;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "complete", "(Lsun/font/LayoutPathImpl$EndType;)Lsun/font/LayoutPathImpl$SegmentPath;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "complete", "()Lsun/font/LayoutPathImpl$SegmentPath;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextPoint", "(DDZ)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "moveTo", "(DD)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lineTo", "(DD)V"));
 		}
 
 		[JniSignatureAttribute("[D", "private")]
@@ -1177,7 +1177,7 @@ public partial class LayoutPathImpl
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SegmentPathBuilder() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SegmentPathBuilder() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 

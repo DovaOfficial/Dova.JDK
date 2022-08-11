@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,69 +31,69 @@ public partial class TagName
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "A", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCKQUOTE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BODY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CODE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DIV", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EM", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOOTER", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H1", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H2", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H3", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H4", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H5", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H6", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEADER", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTML", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "I", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMG", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INPUT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LABEL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LI", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LISTING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINK", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAIN", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "META", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAV", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSCRIPT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCRIPT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SECTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SMALL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPAN", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRONG", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUB", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUP", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TBODY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THEAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TH", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TITLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WBR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TagName", "(Ljava/lang/String;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "A", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BUTTON", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCKQUOTE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BODY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CODE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DIV", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EM", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOOTER", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H1", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H2", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H3", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H4", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H5", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H6", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEADER", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTML", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "I", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMG", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INPUT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LABEL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LI", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LISTING", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINK", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAIN", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "META", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAV", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSCRIPT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "P", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCRIPT", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SECTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SMALL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPAN", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRONG", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUB", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUP", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TBODY", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THEAD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TD", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TH", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TITLE", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UL", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WBR", "Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/TagName;", "public static final")]
@@ -914,7 +914,7 @@ public partial class TagName
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-	public TagName(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public TagName(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

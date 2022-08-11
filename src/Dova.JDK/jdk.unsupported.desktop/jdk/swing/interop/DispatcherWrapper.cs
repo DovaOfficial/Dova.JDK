@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class DispatcherWrapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/DispatcherWrapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fwd", "Ljdk/swing/interop/DispatcherWrapper$DispatcherProxy;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DispatcherWrapper", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scheduleDispatch", "(Ljava/lang/Runnable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDispatchThread", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSecondaryLoop", "()Ljava/awt/SecondaryLoop;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "setFwDispatcher", "(Ljava/awt/EventQueue;Ljdk/swing/interop/DispatcherWrapper;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fwd", "Ljdk/swing/interop/DispatcherWrapper$DispatcherProxy;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scheduleDispatch", "(Ljava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDispatchThread", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSecondaryLoop", "()Ljava/awt/SecondaryLoop;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "setFwDispatcher", "(Ljava/awt/EventQueue;Ljdk/swing/interop/DispatcherWrapper;)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/swing/interop/DispatcherWrapper$DispatcherProxy;", "private")]
@@ -59,7 +59,7 @@ public partial class DispatcherWrapper
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DispatcherWrapper() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DispatcherWrapper() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -109,11 +109,11 @@ public partial class DispatcherWrapper
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/DispatcherWrapper$DispatcherProxy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/swing/interop/DispatcherWrapper;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DispatcherProxy", "(Ljdk/swing/interop/DispatcherWrapper;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scheduleDispatch", "(Ljava/lang/Runnable;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDispatchThread", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createSecondaryLoop", "()Ljava/awt/SecondaryLoop;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/swing/interop/DispatcherWrapper;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/swing/interop/DispatcherWrapper;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scheduleDispatch", "(Ljava/lang/Runnable;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDispatchThread", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createSecondaryLoop", "()Ljava/awt/SecondaryLoop;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/swing/interop/DispatcherWrapper;", "final")]
@@ -136,7 +136,7 @@ public partial class DispatcherWrapper
 		}
 
 		[JniSignatureAttribute("(Ljdk/swing/interop/DispatcherWrapper;)V", "private")]
-		public DispatcherProxy(Dova.JDK.jdk.swing.interop.DispatcherWrapper arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DispatcherProxy(Dova.JDK.jdk.swing.interop.DispatcherWrapper arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

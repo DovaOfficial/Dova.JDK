@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface DestSurfaceProvider
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/DestSurfaceProvider;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDestSurface", "()Lsun/java2d/Surface;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDestSurface", "()Lsun/java2d/Surface;"));
 	}
 
 	[JniSignatureAttribute("()Lsun/java2d/Surface;", "public abstract")]

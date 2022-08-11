@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class XSLTTransformParameterSpec
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/xml/crypto/dsig/spec/XSLTTransformParameterSpec;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stylesheet", "Ljavax/xml/crypto/XMLStructure;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "XSLTTransformParameterSpec", "(Ljavax/xml/crypto/XMLStructure;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getStylesheet", "()Ljavax/xml/crypto/XMLStructure;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stylesheet", "Ljavax/xml/crypto/XMLStructure;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/xml/crypto/XMLStructure;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getStylesheet", "()Ljavax/xml/crypto/XMLStructure;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/xml/crypto/XMLStructure;", "private")]
@@ -57,7 +57,7 @@ public partial class XSLTTransformParameterSpec
 	}
 
 	[JniSignatureAttribute("(Ljavax/xml/crypto/XMLStructure;)V", "public")]
-	public XSLTTransformParameterSpec(Dova.JDK.javax.xml.crypto.XMLStructure arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public XSLTTransformParameterSpec(Dova.JDK.javax.xml.crypto.XMLStructure arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,23 +31,23 @@ public partial class CMBuilder
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMBuilder;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fDeclPool", "Lcom/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "fEmptyCM", "Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSEmptyCM;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fLeafCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fParticleCount", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fNodeFactory", "Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMNodeFactory;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CMBuilder", "(Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMNodeFactory;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createAllCM", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDFACM", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;Z)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "useRepeatingLeafNodes", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildCompactSyntaxTree", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "expandContentModel", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;IIZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "multiNodes", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;IZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "copyNode", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildCompactSyntaxTree2", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;II)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDeclPool", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContentModel", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSComplexTypeDecl;Z)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildSyntaxTree", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;ZZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fDeclPool", "Lcom/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "fEmptyCM", "Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSEmptyCM;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fLeafCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fParticleCount", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fNodeFactory", "Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMNodeFactory;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMNodeFactory;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createAllCM", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDFACM", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;Z)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "useRepeatingLeafNodes", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildCompactSyntaxTree", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "expandContentModel", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;IIZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "multiNodes", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;IZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "copyNode", "(Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildCompactSyntaxTree2", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;II)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDeclPool", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContentModel", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSComplexTypeDecl;Z)Lcom/sun/org/apache/xerces/internal/impl/xs/models/XSCMValidator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildSyntaxTree", "(Lcom/sun/org/apache/xerces/internal/impl/xs/XSParticleDecl;ZZ)Lcom/sun/org/apache/xerces/internal/impl/dtd/models/CMNode;"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/org/apache/xerces/internal/impl/xs/XSDeclarationPool;", "private")]
@@ -126,7 +126,7 @@ public partial class CMBuilder
 	}
 
 	[JniSignatureAttribute("(Lcom/sun/org/apache/xerces/internal/impl/xs/models/CMNodeFactory;)V", "public")]
-	public CMBuilder(Dova.JDK.com.sun.org.apache.xerces.@internal.impl.xs.models.CMNodeFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CMBuilder(Dova.JDK.com.sun.org.apache.xerces.@internal.impl.xs.models.CMNodeFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,52 +32,52 @@ public partial class NormalizerBase
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "text", "Ljdk/internal/icu/text/UCharacterIterator;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "norm2", "Ljdk/internal/icu/text/Normalizer2;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mode", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "options", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "nextIndex", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "buffer", "Ljava/lang/StringBuilder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bufferPos", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNICODE_3_2", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNICODE_3_2_0_ORIGINAL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNICODE_LATEST", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DONE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NFD", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NFKD", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NFC", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NFKC", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NormalizerBase", "(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NormalizerBase", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NormalizerBase", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NormalizerBase", "(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clone", "()Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "endIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "current", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "(Ljava/lang/String;Ljava/text/Normalizer$Form;I)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "normalize", "(Ljava/lang/String;Ljava/text/Normalizer$Form;)Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "reset", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "previous", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBeginIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEndIndex", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIndex", "(I)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNormalized", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNormalized", "(Ljava/lang/String;Ljava/text/Normalizer$Form;I)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isNormalized", "(Ljava/lang/String;Ljava/text/Normalizer$Form;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setText", "(Ljava/text/CharacterIterator;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setText", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setMode", "(Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMode", "()Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toMode", "(Ljava/text/Normalizer$Form;)Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextNormalize", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "previousNormalize", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "clearBuffer", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setIndexOnly", "(I)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "text", "Ljdk/internal/icu/text/UCharacterIterator;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "norm2", "Ljdk/internal/icu/text/Normalizer2;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mode", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "options", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "nextIndex", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "buffer", "Ljava/lang/StringBuilder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bufferPos", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNICODE_3_2", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNICODE_3_2_0_ORIGINAL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNICODE_LATEST", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DONE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NFD", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NFKD", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NFC", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NFKC", "Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clone", "()Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "endIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "current", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "(Ljava/lang/String;Ljava/text/Normalizer$Form;I)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "normalize", "(Ljava/lang/String;Ljava/text/Normalizer$Form;)Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "reset", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "previous", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBeginIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEndIndex", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIndex", "(I)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isNormalized", "(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isNormalized", "(Ljava/lang/String;Ljava/text/Normalizer$Form;I)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isNormalized", "(Ljava/lang/String;Ljava/text/Normalizer$Form;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setText", "(Ljava/text/CharacterIterator;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setText", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setMode", "(Ljdk/internal/icu/text/NormalizerBase$Mode;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMode", "()Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toMode", "(Ljava/text/Normalizer$Form;)Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextNormalize", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "previousNormalize", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "clearBuffer", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setIndexOnly", "(I)V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/icu/text/UCharacterIterator;", "private")]
@@ -324,22 +324,22 @@ public partial class NormalizerBase
 	}
 
 	[JniSignatureAttribute("(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V", "public")]
-	public NormalizerBase(Dova.JDK.java.text.CharacterIterator arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public NormalizerBase(Dova.JDK.java.text.CharacterIterator arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;)V", "public")]
-	public NormalizerBase(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+	public NormalizerBase(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/icu/text/NormalizerBase$Mode;I)V", "public")]
-	public NormalizerBase(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+	public NormalizerBase(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/text/CharacterIterator;Ljdk/internal/icu/text/NormalizerBase$Mode;)V", "public")]
-	public NormalizerBase(Dova.JDK.java.text.CharacterIterator arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1))
+	public NormalizerBase(Dova.JDK.java.text.CharacterIterator arg0, Dova.JDK.jdk.@internal.icu.text.NormalizerBase.Mode arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1))
 	{
 	}
 
@@ -530,8 +530,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$Mode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Mode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -540,7 +540,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "protected")]
-		public Mode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Mode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -570,8 +570,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NONEMode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NONEMode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -580,7 +580,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NONEMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NONEMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -610,8 +610,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFDMode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFDMode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -620,7 +620,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFDMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFDMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -650,8 +650,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKDMode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKDMode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -660,7 +660,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKDMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKDMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -690,8 +690,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFCMode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFCMode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -700,7 +700,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFCMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFCMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -730,8 +730,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKCMode;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKCMode", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNormalizer2", "(I)Ljdk/internal/icu/text/Normalizer2;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -740,7 +740,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKCMode() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKCMode() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -770,8 +770,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKC32ModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKC32ModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -794,7 +794,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKC32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKC32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -817,8 +817,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFC32ModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFC32ModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -841,7 +841,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFC32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFC32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -864,8 +864,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKD32ModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKD32ModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -888,7 +888,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKD32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKD32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -911,8 +911,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFD32ModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFD32ModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -935,7 +935,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFD32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFD32ModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -958,8 +958,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$Unicode32;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/UnicodeSet;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Unicode32", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/UnicodeSet;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/UnicodeSet;", "private static final")]
@@ -982,7 +982,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Unicode32() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Unicode32() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1005,8 +1005,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKCModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKCModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -1029,7 +1029,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKCModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKCModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1052,8 +1052,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFCModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFCModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -1076,7 +1076,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFCModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFCModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1099,8 +1099,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFKDModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFKDModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -1123,7 +1123,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFKDModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFKDModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1146,8 +1146,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$NFDModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NFDModeImpl", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljdk/internal/icu/text/NormalizerBase$ModeImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;", "private static final")]
@@ -1170,7 +1170,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public NFDModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public NFDModeImpl() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1193,8 +1193,8 @@ public partial class NormalizerBase
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/icu/text/NormalizerBase$ModeImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "normalizer2", "Ljdk/internal/icu/text/Normalizer2;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModeImpl", "(Ljdk/internal/icu/text/Normalizer2;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "normalizer2", "Ljdk/internal/icu/text/Normalizer2;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/icu/text/Normalizer2;)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/icu/text/Normalizer2;", "private final")]
@@ -1217,7 +1217,7 @@ public partial class NormalizerBase
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/icu/text/Normalizer2;)V", "private")]
-		public ModeImpl(Dova.JDK.jdk.@internal.icu.text.Normalizer2 arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public ModeImpl(Dova.JDK.jdk.@internal.icu.text.Normalizer2 arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

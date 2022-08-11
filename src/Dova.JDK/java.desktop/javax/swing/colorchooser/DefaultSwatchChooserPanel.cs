@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class DefaultSwatchChooserPanel
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "swatchPanel", "Ljavax/swing/colorchooser/SwatchPanel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recentSwatchPanel", "Ljavax/swing/colorchooser/RecentSwatchPanel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainSwatchListener", "Ljava/awt/event/MouseListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recentSwatchListener", "Ljava/awt/event/MouseListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mainSwatchKeyListener", "Ljava/awt/event/KeyListener;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "recentSwatchKeyListener", "Ljava/awt/event/KeyListener;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DefaultSwatchChooserPanel", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplayName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "buildChooser", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "updateChooser", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSmallDisplayIcon", "()Ljavax/swing/Icon;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLargeDisplayIcon", "()Ljavax/swing/Icon;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "installChooserPanel", "(Ljavax/swing/JColorChooser;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "uninstallChooserPanel", "(Ljavax/swing/JColorChooser;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMnemonic", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDisplayedMnemonicIndex", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "swatchPanel", "Ljavax/swing/colorchooser/SwatchPanel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recentSwatchPanel", "Ljavax/swing/colorchooser/RecentSwatchPanel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainSwatchListener", "Ljava/awt/event/MouseListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recentSwatchListener", "Ljava/awt/event/MouseListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mainSwatchKeyListener", "Ljava/awt/event/KeyListener;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "recentSwatchKeyListener", "Ljava/awt/event/KeyListener;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplayName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "buildChooser", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "updateChooser", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSmallDisplayIcon", "()Ljavax/swing/Icon;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLargeDisplayIcon", "()Ljavax/swing/Icon;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "installChooserPanel", "(Ljavax/swing/JColorChooser;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "uninstallChooserPanel", "(Ljavax/swing/JColorChooser;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMnemonic", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDisplayedMnemonicIndex", "()I"));
 	}
 
 	[JniSignatureAttribute("Ljavax/swing/colorchooser/SwatchPanel;", "")]
@@ -139,7 +139,7 @@ public partial class DefaultSwatchChooserPanel
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public DefaultSwatchChooserPanel() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DefaultSwatchChooserPanel() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -221,9 +221,9 @@ public partial class DefaultSwatchChooserPanel
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel$MainSwatchKeyListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MainSwatchKeyListener", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyPressed", "(Ljava/awt/event/KeyEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyPressed", "(Ljava/awt/event/KeyEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;", "final")]
@@ -246,7 +246,7 @@ public partial class DefaultSwatchChooserPanel
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V", "private")]
-		public MainSwatchKeyListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MainSwatchKeyListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -277,9 +277,9 @@ public partial class DefaultSwatchChooserPanel
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel$MainSwatchListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MainSwatchListener", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;", "final")]
@@ -302,7 +302,7 @@ public partial class DefaultSwatchChooserPanel
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V", "")]
-		public MainSwatchListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MainSwatchListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -333,9 +333,9 @@ public partial class DefaultSwatchChooserPanel
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel$RecentSwatchListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RecentSwatchListener", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "mousePressed", "(Ljava/awt/event/MouseEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;", "final")]
@@ -358,7 +358,7 @@ public partial class DefaultSwatchChooserPanel
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V", "")]
-		public RecentSwatchListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public RecentSwatchListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -388,9 +388,9 @@ public partial class DefaultSwatchChooserPanel
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel$RecentSwatchKeyListener;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RecentSwatchKeyListener", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "keyPressed", "(Ljava/awt/event/KeyEvent;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "keyPressed", "(Ljava/awt/event/KeyEvent;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;", "final")]
@@ -413,7 +413,7 @@ public partial class DefaultSwatchChooserPanel
 		}
 
 		[JniSignatureAttribute("(Ljavax/swing/colorchooser/DefaultSwatchChooserPanel;)V", "private")]
-		public RecentSwatchKeyListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public RecentSwatchKeyListener(Dova.JDK.javax.swing.colorchooser.DefaultSwatchChooserPanel arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

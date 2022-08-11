@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,13 +32,13 @@ public partial class AbstractLauncher
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/AbstractLauncher;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "grp", "Ljava/lang/ThreadGroup;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AbstractLauncher", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "name", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "description", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "tokenizeCommand", "(Ljava/lang/String;C)[Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "launch", "([Ljava/lang/String;Ljava/lang/String;Lcom/sun/jdi/connect/spi/TransportService$ListenKey;Lcom/sun/jdi/connect/spi/TransportService;)Lcom/sun/jdi/VirtualMachine;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "launch", "(Ljava/util/Map;)Lcom/sun/jdi/VirtualMachine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "grp", "Ljava/lang/ThreadGroup;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "name", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "description", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "tokenizeCommand", "(Ljava/lang/String;C)[Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "launch", "([Ljava/lang/String;Ljava/lang/String;Lcom/sun/jdi/connect/spi/TransportService$ListenKey;Lcom/sun/jdi/connect/spi/TransportService;)Lcom/sun/jdi/VirtualMachine;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "launch", "(Ljava/util/Map;)Lcom/sun/jdi/VirtualMachine;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/ThreadGroup;", "")]
@@ -61,7 +61,7 @@ public partial class AbstractLauncher
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public AbstractLauncher() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AbstractLauncher() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -119,25 +119,25 @@ public partial class AbstractLauncher
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/AbstractLauncher$Helper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "address", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "listenKey", "Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ts", "Lcom/sun/jdi/connect/spi/TransportService;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "commandArray", "[Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "process", "Ljava/lang/Process;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "connection", "Lcom/sun/jdi/connect/spi/Connection;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "acceptException", "Ljava/io/IOException;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exited", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lcom/sun/tools/jdi/AbstractLauncher;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Helper", "(Lcom/sun/tools/jdi/AbstractLauncher;[Ljava/lang/String;Ljava/lang/String;Lcom/sun/jdi/connect/spi/TransportService$ListenKey;Lcom/sun/jdi/connect/spi/TransportService;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "connection", "()Lcom/sun/jdi/connect/spi/Connection;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "process", "()Ljava/lang/Process;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "launchAndAccept", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptConnection", "()Ljava/lang/Thread;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitorTarget", "()Ljava/lang/Thread;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "commandString", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyOfExit", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyOfConnection", "(Lcom/sun/jdi/connect/spi/Connection;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyOfAcceptException", "(Ljava/io/IOException;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "address", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "listenKey", "Lcom/sun/jdi/connect/spi/TransportService$ListenKey;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ts", "Lcom/sun/jdi/connect/spi/TransportService;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "commandArray", "[Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "process", "Ljava/lang/Process;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "connection", "Lcom/sun/jdi/connect/spi/Connection;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "acceptException", "Ljava/io/IOException;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exited", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lcom/sun/tools/jdi/AbstractLauncher;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/AbstractLauncher;[Ljava/lang/String;Ljava/lang/String;Lcom/sun/jdi/connect/spi/TransportService$ListenKey;Lcom/sun/jdi/connect/spi/TransportService;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "connection", "()Lcom/sun/jdi/connect/spi/Connection;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "process", "()Ljava/lang/Process;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "launchAndAccept", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptConnection", "()Ljava/lang/Thread;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "monitorTarget", "()Ljava/lang/Thread;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "commandString", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyOfExit", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyOfConnection", "(Lcom/sun/jdi/connect/spi/Connection;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyOfAcceptException", "(Ljava/io/IOException;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/String;", "private final")]
@@ -272,7 +272,7 @@ public partial class AbstractLauncher
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/jdi/AbstractLauncher;[Ljava/lang/String;Ljava/lang/String;Lcom/sun/jdi/connect/spi/TransportService$ListenKey;Lcom/sun/jdi/connect/spi/TransportService;)V", "")]
-		public Helper(Dova.JDK.com.sun.tools.jdi.AbstractLauncher arg0, JavaArray<Dova.JDK.java.lang.String> arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey arg3, Dova.JDK.com.sun.jdi.connect.spi.TransportService arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public Helper(Dova.JDK.com.sun.tools.jdi.AbstractLauncher arg0, JavaArray<Dova.JDK.java.lang.String> arg1, Dova.JDK.java.lang.String arg2, Dova.JDK.com.sun.jdi.connect.spi.TransportService.ListenKey arg3, Dova.JDK.com.sun.jdi.connect.spi.TransportService arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,17 +31,17 @@ public partial class StyleResolver
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/utils/StyleResolver;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "source", "Ljava/util/function/Function;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StyleResolver", "(Ljava/util/function/Function;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "apply", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resolve", "(Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "color", "(Ljava/lang/String;)Ljava/lang/Integer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "colorRgb", "(Ljava/lang/String;)Ljava/lang/Integer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyColor", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyAnsi", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyNamed", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "applyReference", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "source", "Ljava/util/function/Function;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/Function;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "apply", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolve", "(Ljava/lang/String;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resolve", "(Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "color", "(Ljava/lang/String;)Ljava/lang/Integer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "colorRgb", "(Ljava/lang/String;)Ljava/lang/Integer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyColor", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyAnsi", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyNamed", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "applyReference", "(Ljdk/internal/org/jline/utils/AttributedStyle;Ljava/lang/String;)Ljdk/internal/org/jline/utils/AttributedStyle;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/function/Function;", "private final")]
@@ -64,7 +64,7 @@ public partial class StyleResolver
 	}
 
 	[JniSignatureAttribute("(Ljava/util/function/Function;)V", "public")]
-	public StyleResolver(Dova.JDK.java.util.function.Function arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public StyleResolver(Dova.JDK.java.util.function.Function arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

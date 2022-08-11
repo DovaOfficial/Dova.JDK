@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,21 +31,21 @@ public partial class DGCClient
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "nextSequenceNum", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "vmid", "Ljava/rmi/dgc/VMID;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "leaseValue", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cleanInterval", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "gcInterval", "J"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dirtyFailureRetries", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "cleanFailureRetries", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "emptyObjIDArray", "[Ljava/rmi/server/ObjID;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "dgcID", "Ljava/rmi/server/ObjID;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SOCKET_ACC", "Ljava/security/AccessControlContext;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DGCClient", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createSocketAcc", "()Ljava/security/AccessControlContext;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getNextSequenceNum", "()J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "computeRenewTime", "(JJ)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "registerRefs", "(Lsun/rmi/transport/Endpoint;Ljava/util/List;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "nextSequenceNum", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "vmid", "Ljava/rmi/dgc/VMID;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "leaseValue", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cleanInterval", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "gcInterval", "J"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dirtyFailureRetries", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "cleanFailureRetries", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "emptyObjIDArray", "[Ljava/rmi/server/ObjID;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "dgcID", "Ljava/rmi/server/ObjID;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SOCKET_ACC", "Ljava/security/AccessControlContext;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createSocketAcc", "()Ljava/security/AccessControlContext;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getNextSequenceNum", "()J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "computeRenewTime", "(JJ)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "registerRefs", "(Lsun/rmi/transport/Endpoint;Ljava/util/List;)V"));
 	}
 
 	[JniSignatureAttribute("J", "private static")]
@@ -194,7 +194,7 @@ public partial class DGCClient
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public DGCClient() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public DGCClient() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -244,32 +244,32 @@ public partial class DGCClient
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient$EndpointEntry;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endpoint", "Lsun/rmi/transport/Endpoint;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dgc", "Ljava/rmi/dgc/DGC;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTable", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "invalidRefs", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "removed", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "renewTime", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "expirationTime", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyFailures", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyFailureStartTime", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyFailureDuration", "J"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "renewCleanThread", "Ljava/lang/Thread;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interruptible", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refQueue", "Ljava/lang/ref/ReferenceQueue;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "pendingCleans", "Ljava/util/Set;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "endpointTable", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "gcLatencyRequest", "Lsun/rmi/transport/GC$LatencyRequest;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EndpointEntry", "(Lsun/rmi/transport/Endpoint;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "lookup", "(Lsun/rmi/transport/Endpoint;)Lsun/rmi/transport/DGCClient$EndpointEntry;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "registerRefs", "(Ljava/util/List;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeDirtyCall", "(Ljava/util/Set;J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createObjIDArray", "(Ljava/util/Set;)[Ljava/rmi/server/ObjID;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setRenewTime", "(J)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeRefEntry", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "processPhantomRefs", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry$PhantomLiveRef;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "makeCleanCalls", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endpoint", "Lsun/rmi/transport/Endpoint;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dgc", "Ljava/rmi/dgc/DGC;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTable", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "invalidRefs", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "removed", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "renewTime", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "expirationTime", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyFailures", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyFailureStartTime", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyFailureDuration", "J"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "renewCleanThread", "Ljava/lang/Thread;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interruptible", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refQueue", "Ljava/lang/ref/ReferenceQueue;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "pendingCleans", "Ljava/util/Set;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "endpointTable", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "gcLatencyRequest", "Lsun/rmi/transport/GC$LatencyRequest;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/rmi/transport/Endpoint;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "lookup", "(Lsun/rmi/transport/Endpoint;)Lsun/rmi/transport/DGCClient$EndpointEntry;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "registerRefs", "(Ljava/util/List;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeDirtyCall", "(Ljava/util/Set;J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createObjIDArray", "(Ljava/util/Set;)[Ljava/rmi/server/ObjID;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setRenewTime", "(J)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeRefEntry", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "processPhantomRefs", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry$PhantomLiveRef;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "makeCleanCalls", "()V"));
 		}
 
 		[JniSignatureAttribute("Lsun/rmi/transport/Endpoint;", "private")]
@@ -516,7 +516,7 @@ public partial class DGCClient
 		}
 
 		[JniSignatureAttribute("(Lsun/rmi/transport/Endpoint;)V", "private")]
-		public EndpointEntry(Dova.JDK.sun.rmi.transport.Endpoint arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public EndpointEntry(Dova.JDK.sun.rmi.transport.Endpoint arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -591,9 +591,9 @@ public partial class DGCClient
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient$EndpointEntry$RenewCleanThread;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/rmi/transport/DGCClient$EndpointEntry;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RenewCleanThread", "(Lsun/rmi/transport/DGCClient$EndpointEntry;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "run", "()V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/rmi/transport/DGCClient$EndpointEntry;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/rmi/transport/DGCClient$EndpointEntry;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "run", "()V"));
 			}
 
 			[JniSignatureAttribute("Lsun/rmi/transport/DGCClient$EndpointEntry;", "final")]
@@ -616,7 +616,7 @@ public partial class DGCClient
 			}
 
 			[JniSignatureAttribute("(Lsun/rmi/transport/DGCClient$EndpointEntry;)V", "private")]
-			public RenewCleanThread(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+			public RenewCleanThread(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 			{
 			}
 
@@ -646,18 +646,18 @@ public partial class DGCClient
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "ref", "Lsun/rmi/transport/LiveRef;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refSet", "Ljava/util/Set;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dirtyFailed", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/rmi/transport/DGCClient$EndpointEntry;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RefEntry", "(Lsun/rmi/transport/DGCClient$EndpointEntry;Lsun/rmi/transport/LiveRef;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRef", "()Lsun/rmi/transport/LiveRef;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addInstanceToRefSet", "(Lsun/rmi/transport/LiveRef;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "markDirtyFailed", "()V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "removeInstanceFromRefSet", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry$PhantomLiveRef;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isRefSetEmpty", "()Z"));
-				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasDirtyFailed", "()Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "ref", "Lsun/rmi/transport/LiveRef;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refSet", "Ljava/util/Set;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dirtyFailed", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/rmi/transport/DGCClient$EndpointEntry;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/rmi/transport/DGCClient$EndpointEntry;Lsun/rmi/transport/LiveRef;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRef", "()Lsun/rmi/transport/LiveRef;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addInstanceToRefSet", "(Lsun/rmi/transport/LiveRef;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "markDirtyFailed", "()V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "removeInstanceFromRefSet", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry$PhantomLiveRef;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isRefSetEmpty", "()Z"));
+				MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasDirtyFailed", "()Z"));
 			}
 
 			[JniSignatureAttribute("Lsun/rmi/transport/LiveRef;", "private")]
@@ -736,7 +736,7 @@ public partial class DGCClient
 			}
 
 			[JniSignatureAttribute("(Lsun/rmi/transport/DGCClient$EndpointEntry;Lsun/rmi/transport/LiveRef;)V", "public")]
-			public RefEntry(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry arg0, Dova.JDK.sun.rmi.transport.LiveRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public RefEntry(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry arg0, Dova.JDK.sun.rmi.transport.LiveRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -798,9 +798,9 @@ public partial class DGCClient
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry$PhantomLiveRef;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$1", "Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PhantomLiveRef", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;Lsun/rmi/transport/LiveRef;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getRefEntry", "()Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$1", "Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;Lsun/rmi/transport/LiveRef;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getRefEntry", "()Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;"));
 				}
 
 				[JniSignatureAttribute("Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;", "final")]
@@ -823,7 +823,7 @@ public partial class DGCClient
 				}
 
 				[JniSignatureAttribute("(Lsun/rmi/transport/DGCClient$EndpointEntry$RefEntry;Lsun/rmi/transport/LiveRef;)V", "public")]
-				public PhantomLiveRef(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry.RefEntry arg0, Dova.JDK.sun.rmi.transport.LiveRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public PhantomLiveRef(Dova.JDK.sun.rmi.transport.DGCClient.EndpointEntry.RefEntry arg0, Dova.JDK.sun.rmi.transport.LiveRef arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -854,11 +854,11 @@ public partial class DGCClient
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lsun/rmi/transport/DGCClient$EndpointEntry$CleanRequest;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objIDs", "[Ljava/rmi/server/ObjID;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sequenceNum", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "strong", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "failures", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CleanRequest", "([Ljava/rmi/server/ObjID;JZ)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objIDs", "[Ljava/rmi/server/ObjID;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sequenceNum", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "strong", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "failures", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([Ljava/rmi/server/ObjID;JZ)V"));
 			}
 
 			[JniSignatureAttribute("[Ljava/rmi/server/ObjID;", "final")]
@@ -923,7 +923,7 @@ public partial class DGCClient
 			}
 
 			[JniSignatureAttribute("([Ljava/rmi/server/ObjID;JZ)V", "")]
-			public CleanRequest(JavaArray<Dova.JDK.java.rmi.server.ObjID> arg0, long arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+			public CleanRequest(JavaArray<Dova.JDK.java.rmi.server.ObjID> arg0, long arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 			{
 			}
 

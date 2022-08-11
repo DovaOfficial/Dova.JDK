@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial class JDWP
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JDWP", "()V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -38,7 +38,7 @@ public partial class JDWP
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public JDWP() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public JDWP() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -60,9 +60,9 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$InvokeOptions;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVOKE_SINGLE_THREADED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVOKE_NONVIRTUAL", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvokeOptions", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVOKE_SINGLE_THREADED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVOKE_NONVIRTUAL", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -99,7 +99,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public InvokeOptions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InvokeOptions() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -122,10 +122,10 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$SuspendPolicy;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EVENT_THREAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SuspendPolicy", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EVENT_THREAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -176,7 +176,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public SuspendPolicy() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SuspendPolicy() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -199,9 +199,9 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StepSize;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MIN", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StepSize", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MIN", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -238,7 +238,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public StepSize() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StepSize() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -261,10 +261,10 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StepDepth;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTO", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OVER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OUT", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StepDepth", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTO", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OVER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OUT", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -315,7 +315,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public StepDepth() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StepDepth() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -338,23 +338,23 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Tag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BYTE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHAR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBJECT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FLOAT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOUBLE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LONG", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VOID", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOOLEAN", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRING", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_GROUP", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_LOADER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_OBJECT", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Tag", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BYTE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHAR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OBJECT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FLOAT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOUBLE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LONG", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHORT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VOID", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BOOLEAN", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRING", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_GROUP", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_LOADER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_OBJECT", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -587,7 +587,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Tag() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Tag() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -610,10 +610,10 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$TypeTag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERFACE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARRAY", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeTag", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERFACE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARRAY", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -664,7 +664,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public TypeTag() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public TypeTag() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -687,11 +687,11 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassStatus;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERIFIED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PREPARED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIALIZED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ERROR", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassStatus", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VERIFIED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PREPARED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIALIZED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ERROR", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -756,7 +756,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ClassStatus() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClassStatus() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -779,8 +779,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$SuspendStatus;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUSPEND_STATUS_SUSPENDED", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SuspendStatus", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUSPEND_STATUS_SUSPENDED", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -803,7 +803,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public SuspendStatus() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SuspendStatus() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -826,12 +826,12 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadStatus;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ZOMBIE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RUNNING", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SLEEPING", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONITOR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WAIT", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadStatus", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ZOMBIE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RUNNING", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SLEEPING", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONITOR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WAIT", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -910,7 +910,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public ThreadStatus() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ThreadStatus() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -933,32 +933,32 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SINGLE_STEP", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BREAKPOINT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAME_POP", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "USER_DEFINED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_START", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_DEATH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_END", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_PREPARE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_UNLOAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_LOAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_ACCESS", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIELD_MODIFICATION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXCEPTION_CATCH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_ENTRY", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_EXIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_EXIT_WITH_RETURN_VALUE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONITOR_CONTENDED_ENTER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONITOR_CONTENDED_ENTERED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONITOR_WAIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONITOR_WAITED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VM_START", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VM_INIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VM_DEATH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VM_DISCONNECTED", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventKind", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SINGLE_STEP", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BREAKPOINT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAME_POP", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCEPTION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "USER_DEFINED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_START", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_DEATH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_END", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_PREPARE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_UNLOAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_LOAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_ACCESS", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIELD_MODIFICATION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXCEPTION_CATCH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_ENTRY", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_EXIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_EXIT_WITH_RETURN_VALUE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONITOR_CONTENDED_ENTER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONITOR_CONTENDED_ENTERED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONITOR_WAIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONITOR_WAITED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VM_START", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VM_INIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VM_DEATH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VM_DISCONNECTED", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -1317,7 +1317,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public EventKind() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public EventKind() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1340,66 +1340,66 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Error;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_THREAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_THREAD_GROUP", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_PRIORITY", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_NOT_SUSPENDED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_SUSPENDED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THREAD_NOT_ALIVE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_OBJECT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_CLASS", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_NOT_PREPARED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_METHODID", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_LOCATION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_FIELDID", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_FRAMEID", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_MORE_FRAMES", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPAQUE_FRAME", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_CURRENT_FRAME", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE_MISMATCH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_SLOT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DUPLICATE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_FOUND", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_MODULE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_MONITOR", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_MONITOR_OWNER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERRUPT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_CLASS_FORMAT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CIRCULAR_CLASS_DEFINITION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FAILS_VERIFICATION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADD_METHOD_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCHEMA_CHANGE_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_TYPESTATE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HIERARCHY_CHANGE_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DELETE_METHOD_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNSUPPORTED_VERSION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAMES_DONT_MATCH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_MODIFIERS_CHANGE_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "METHOD_MODIFIERS_CHANGE_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS_ATTRIBUTE_CHANGE_NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOT_IMPLEMENTED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NULL_POINTER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABSENT_INFORMATION", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_EVENT_TYPE", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ILLEGAL_ARGUMENT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OUT_OF_MEMORY", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCESS_DENIED", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VM_DEAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERNAL", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNATTACHED_THREAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_TAG", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALREADY_INVOKING", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_INDEX", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_LENGTH", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_STRING", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_CLASS_LOADER", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_ARRAY", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRANSPORT_LOAD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRANSPORT_INIT", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NATIVE_METHOD", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID_COUNT", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Error", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_THREAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_THREAD_GROUP", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_PRIORITY", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_NOT_SUSPENDED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_SUSPENDED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THREAD_NOT_ALIVE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_OBJECT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_CLASS", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_NOT_PREPARED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_METHODID", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_LOCATION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_FIELDID", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_FRAMEID", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_MORE_FRAMES", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPAQUE_FRAME", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_CURRENT_FRAME", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE_MISMATCH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_SLOT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DUPLICATE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_FOUND", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_MODULE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_MONITOR", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_MONITOR_OWNER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERRUPT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_CLASS_FORMAT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CIRCULAR_CLASS_DEFINITION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FAILS_VERIFICATION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADD_METHOD_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCHEMA_CHANGE_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_TYPESTATE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HIERARCHY_CHANGE_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DELETE_METHOD_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNSUPPORTED_VERSION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAMES_DONT_MATCH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_MODIFIERS_CHANGE_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "METHOD_MODIFIERS_CHANGE_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS_ATTRIBUTE_CHANGE_NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOT_IMPLEMENTED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NULL_POINTER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABSENT_INFORMATION", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_EVENT_TYPE", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ILLEGAL_ARGUMENT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OUT_OF_MEMORY", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCESS_DENIED", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VM_DEAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERNAL", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNATTACHED_THREAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_TAG", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALREADY_INVOKING", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_INDEX", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_LENGTH", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_STRING", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_CLASS_LOADER", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_ARRAY", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRANSPORT_LOAD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRANSPORT_INIT", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NATIVE_METHOD", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID_COUNT", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2234,7 +2234,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public Error() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Error() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2257,8 +2257,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Event", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -2281,7 +2281,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Event() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Event() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -2303,10 +2303,10 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suspendPolicy", "B"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "events", "[Lcom/sun/tools/jdi/JDWP$Event$Composite$Events;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Composite", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suspendPolicy", "B"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "events", "[Lcom/sun/tools/jdi/JDWP$Event$Composite$Events;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -2357,7 +2357,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-			public Composite(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Composite(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -2379,9 +2379,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "eventKind", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aEventsCommon", "Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$EventsCommon;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Events", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "eventKind", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aEventsCommon", "Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$EventsCommon;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -2418,7 +2418,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-				public Events(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public Events(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -2441,11 +2441,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$VMStart;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VMStart", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -2496,7 +2496,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public VMStart(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public VMStart(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -2526,8 +2526,8 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$EventsCommon;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventsCommon", "()V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -2536,7 +2536,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("()V", "")]
-					public EventsCommon() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+					public EventsCommon() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 					{
 					}
 
@@ -2567,12 +2567,12 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$SingleStep;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SingleStep", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -2637,7 +2637,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public SingleStep(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public SingleStep(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -2668,12 +2668,12 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$Breakpoint;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Breakpoint", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -2738,7 +2738,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public Breakpoint(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public Breakpoint(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -2769,12 +2769,12 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MethodEntry;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodEntry", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -2839,7 +2839,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MethodEntry(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MethodEntry(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -2870,12 +2870,12 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MethodExit;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodExit", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -2940,7 +2940,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MethodExit(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MethodExit(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -2971,13 +2971,13 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MethodExitWithReturnValue;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodExitWithReturnValue", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3056,7 +3056,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MethodExitWithReturnValue(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MethodExitWithReturnValue(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3087,13 +3087,13 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MonitorContendedEnter;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorContendedEnter", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3172,7 +3172,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MonitorContendedEnter(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MonitorContendedEnter(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3203,13 +3203,13 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MonitorContendedEntered;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorContendedEntered", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3288,7 +3288,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MonitorContendedEntered(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MonitorContendedEntered(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3319,14 +3319,14 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MonitorWait;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timeout", "J"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorWait", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timeout", "J"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3419,7 +3419,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MonitorWait(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MonitorWait(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3450,14 +3450,14 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$MonitorWaited;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "timed_out", "Z"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorWaited", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "timed_out", "Z"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3550,7 +3550,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public MonitorWaited(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public MonitorWaited(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3581,14 +3581,14 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$Exception;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "catchLocation", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Exception", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "catchLocation", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3681,7 +3681,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public Exception(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public Exception(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3712,11 +3712,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$ThreadStart;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadStart", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3767,7 +3767,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public ThreadStart(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public ThreadStart(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3798,11 +3798,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$ThreadDeath;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadDeath", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3853,7 +3853,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public ThreadDeath(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public ThreadDeath(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -3884,15 +3884,15 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$ClassPrepare;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassPrepare", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -3999,7 +3999,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public ClassPrepare(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public ClassPrepare(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -4030,11 +4030,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$ClassUnload;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassUnload", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -4085,7 +4085,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public ClassUnload(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public ClassUnload(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -4116,16 +4116,16 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$FieldAccess;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldAccess", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -4246,7 +4246,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public FieldAccess(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public FieldAccess(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -4277,17 +4277,17 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$FieldModification;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valueToBe", "Lcom/sun/tools/jdi/ValueImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldModification", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valueToBe", "Lcom/sun/tools/jdi/ValueImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -4422,7 +4422,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public FieldModification(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public FieldModification(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -4453,10 +4453,10 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Event$Composite$Events$VMDeath;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VMDeath", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "eventKind", "()B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "eventKind", "()B"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -4493,7 +4493,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "")]
-					public VMDeath(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public VMDeath(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -4526,8 +4526,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ModuleReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModuleReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -4550,7 +4550,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ModuleReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ModuleReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4573,12 +4573,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ModuleReference$ClassLoader;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classLoader", "Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassLoader", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ModuleReference$ClassLoader;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ModuleReference$ClassLoader;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classLoader", "Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ModuleReference$ClassLoader;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ModuleReference$ClassLoader;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -4615,7 +4615,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassLoader(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassLoader(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -4660,12 +4660,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ModuleReference$Name;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Name", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ModuleReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ModuleReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ModuleReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ModuleReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ModuleReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -4702,7 +4702,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -4747,8 +4747,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassObjectReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassObjectReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -4771,7 +4771,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ClassObjectReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClassObjectReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4794,13 +4794,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassObjectReference$ReflectedType;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReflectedType", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ClassObjectReference$ReflectedType;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassObjectReference$ReflectedType;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ClassObjectReference$ReflectedType;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassObjectReference$ReflectedType;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -4851,7 +4851,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ReflectedType(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ReflectedType(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -4896,8 +4896,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StackFrame", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -4920,7 +4920,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public StackFrame() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StackFrame() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -4943,11 +4943,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$PopFrames;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "PopFrames", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/JDWP$StackFrame$PopFrames;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$PopFrames;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/JDWP$StackFrame$PopFrames;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$PopFrames;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -4970,7 +4970,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public PopFrames(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public PopFrames(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5015,12 +5015,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$ThisObject;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectThis", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThisObject", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/JDWP$StackFrame$ThisObject;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$ThisObject;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objectThis", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/JDWP$StackFrame$ThisObject;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$ThisObject;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5057,7 +5057,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ThisObject(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ThisObject(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5102,11 +5102,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues$SlotInfo;)Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues$SlotInfo;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues$SlotInfo;)Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues$SlotInfo;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5129,7 +5129,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5173,10 +5173,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$SetValues$SlotInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slot", "I"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slotValue", "Lcom/sun/tools/jdi/ValueImpl;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SlotInfo", "(ILcom/sun/tools/jdi/ValueImpl;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slot", "I"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slotValue", "Lcom/sun/tools/jdi/ValueImpl;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(ILcom/sun/tools/jdi/ValueImpl;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("I", "final")]
@@ -5213,7 +5213,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(ILcom/sun/tools/jdi/ValueImpl;)V", "")]
-				public SlotInfo(int arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public SlotInfo(int arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -5244,12 +5244,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo;)Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo;)Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5286,7 +5286,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5330,10 +5330,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StackFrame$GetValues$SlotInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slot", "I"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sigbyte", "B"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SlotInfo", "(IB)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slot", "I"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sigbyte", "B"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(IB)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("I", "final")]
@@ -5370,7 +5370,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(IB)V", "")]
-				public SlotInfo(int arg0, byte arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public SlotInfo(int arg0, byte arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -5401,8 +5401,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EventRequest", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -5425,7 +5425,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public EventRequest() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public EventRequest() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -5448,11 +5448,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$ClearAllBreakpoints;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClearAllBreakpoints", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$ClearAllBreakpoints;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$ClearAllBreakpoints;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$ClearAllBreakpoints;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$ClearAllBreakpoints;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5475,7 +5475,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClearAllBreakpoints(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClearAllBreakpoints(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5520,11 +5520,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Clear;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Clear", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BI)Lcom/sun/tools/jdi/JDWP$EventRequest$Clear;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$Clear;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BI)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BI)Lcom/sun/tools/jdi/JDWP$EventRequest$Clear;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$Clear;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BI)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5547,7 +5547,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Clear(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Clear(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5592,12 +5592,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "requestID", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Set", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BB[Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BB[Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "requestID", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BB[Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;BB[Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -5634,7 +5634,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Set(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Set(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -5678,10 +5678,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modKind", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "aModifierCommon", "Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Modifier", "(BLcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modKind", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "aModifierCommon", "Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(BLcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -5718,7 +5718,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(BLcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;)V", "")]
-				public Modifier(byte arg0, Dova.JDK.com.sun.tools.jdi.JDWP.EventRequest.Set.Modifier.ModifierCommon arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public Modifier(byte arg0, Dova.JDK.com.sun.tools.jdi.JDWP.EventRequest.Set.Modifier.ModifierCommon arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -5746,8 +5746,8 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ModifierCommon;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ModifierCommon", "()V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 					}
 
 					[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -5756,7 +5756,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("()V", "")]
-					public ModifierCommon() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+					public ModifierCommon() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 					{
 					}
 
@@ -5786,11 +5786,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$SourceNameMatch;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceNamePattern", "Ljava/lang/String;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SourceNameMatch", "(Ljava/lang/String;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceNamePattern", "Ljava/lang/String;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -5827,7 +5827,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-					public SourceNameMatch(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public SourceNameMatch(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -5864,11 +5864,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$InstanceOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instance", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InstanceOnly", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instance", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -5905,7 +5905,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ObjectReferenceImpl;)V", "")]
-					public InstanceOnly(Dova.JDK.com.sun.tools.jdi.ObjectReferenceImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public InstanceOnly(Dova.JDK.com.sun.tools.jdi.ObjectReferenceImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -5942,13 +5942,13 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$Step;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "size", "I"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "depth", "I"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Step", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;II)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "size", "I"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "depth", "I"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;II)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6013,7 +6013,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ThreadReferenceImpl;II)V", "")]
-					public Step(Dova.JDK.com.sun.tools.jdi.ThreadReferenceImpl arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+					public Step(Dova.JDK.com.sun.tools.jdi.ThreadReferenceImpl arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 					{
 					}
 
@@ -6050,12 +6050,12 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$FieldOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "declaring", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldOnly", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;J)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "declaring", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;J)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6106,7 +6106,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ReferenceTypeImpl;J)V", "")]
-					public FieldOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+					public FieldOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, long arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 					{
 					}
 
@@ -6143,13 +6143,13 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ExceptionOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exceptionOrNull", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "caught", "Z"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "uncaught", "Z"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ExceptionOnly", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;ZZ)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;ZZ)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exceptionOrNull", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "caught", "Z"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "uncaught", "Z"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;ZZ)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;ZZ)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6214,7 +6214,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ReferenceTypeImpl;ZZ)V", "")]
-					public ExceptionOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+					public ExceptionOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, bool arg1, bool arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 					{
 					}
 
@@ -6251,11 +6251,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$LocationOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loc", "Lcom/sun/jdi/Location;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LocationOnly", "(Lcom/sun/jdi/Location;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/jdi/Location;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loc", "Lcom/sun/jdi/Location;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/jdi/Location;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/jdi/Location;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6292,7 +6292,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/jdi/Location;)V", "")]
-					public LocationOnly(Dova.JDK.com.sun.jdi.Location arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public LocationOnly(Dova.JDK.com.sun.jdi.Location arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6329,11 +6329,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ClassExclude;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classPattern", "Ljava/lang/String;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassExclude", "(Ljava/lang/String;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classPattern", "Ljava/lang/String;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6370,7 +6370,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-					public ClassExclude(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public ClassExclude(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6407,11 +6407,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ClassMatch;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classPattern", "Ljava/lang/String;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassMatch", "(Ljava/lang/String;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classPattern", "Ljava/lang/String;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6448,7 +6448,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Ljava/lang/String;)V", "")]
-					public ClassMatch(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public ClassMatch(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6485,11 +6485,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ClassOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "clazz", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassOnly", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "clazz", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6526,7 +6526,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ReferenceTypeImpl;)V", "")]
-					public ClassOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public ClassOnly(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6563,11 +6563,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$ThreadOnly;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadOnly", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "thread", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6604,7 +6604,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(Lcom/sun/tools/jdi/ThreadReferenceImpl;)V", "")]
-					public ThreadOnly(Dova.JDK.com.sun.tools.jdi.ThreadReferenceImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public ThreadOnly(Dova.JDK.com.sun.tools.jdi.ThreadReferenceImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6641,11 +6641,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$Conditional;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exprID", "I"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Conditional", "(I)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(I)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exprID", "I"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(I)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6682,7 +6682,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(I)V", "")]
-					public Conditional(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public Conditional(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6719,11 +6719,11 @@ public partial class JDWP
 					{
 						ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier$Count;");
 						ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT_ID", "B"));
-						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "I"));
-						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Count", "(I)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
-						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "create", "(I)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
+						FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT_ID", "B"));
+						FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "I"));
+						ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+						MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "create", "(I)Lcom/sun/tools/jdi/JDWP$EventRequest$Set$Modifier;"));
 					}
 
 					[JniSignatureAttribute("B", "static final")]
@@ -6760,7 +6760,7 @@ public partial class JDWP
 					}
 
 					[JniSignatureAttribute("(I)V", "")]
-					public Count(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+					public Count(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 					{
 					}
 
@@ -6799,8 +6799,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassLoaderReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassLoaderReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -6823,7 +6823,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ClassLoaderReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClassLoaderReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -6846,12 +6846,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses$ClassInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VisibleClasses", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses$ClassInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -6888,7 +6888,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public VisibleClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public VisibleClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -6931,9 +6931,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassLoaderReference$VisibleClasses$ClassInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -6970,7 +6970,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -6995,8 +6995,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArrayReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -7019,7 +7019,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ArrayReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ArrayReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -7042,11 +7042,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayReference$SetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;I[Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/JDWP$ArrayReference$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;I[Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;I[Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/JDWP$ArrayReference$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;I[Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7069,7 +7069,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7114,12 +7114,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayReference$GetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "Ljava/util/List;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$ArrayReference$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;II)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "values", "Ljava/util/List;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$ArrayReference$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;II)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7156,7 +7156,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7201,12 +7201,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayReference$Length;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "arrayLength", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Length", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ArrayReference$Length;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$Length;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "arrayLength", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ArrayReference$Length;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayReference$Length;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7243,7 +7243,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Length(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Length(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7288,8 +7288,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadGroupReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadGroupReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -7312,7 +7312,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ThreadGroupReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ThreadGroupReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -7335,13 +7335,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Children;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "childThreads", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "childGroups", "[Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Children", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Children;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Children;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "childThreads", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "childGroups", "[Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Children;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Children;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7392,7 +7392,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Children(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Children(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7437,12 +7437,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Parent;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parentGroup", "Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Parent", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Parent;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Parent;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parentGroup", "Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Parent;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Parent;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7479,7 +7479,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Parent(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Parent(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7524,12 +7524,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Name;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groupName", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Name", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groupName", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadGroupReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7566,7 +7566,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7611,8 +7611,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -7635,7 +7635,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ThreadReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ThreadReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -7658,11 +7658,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$ForceEarlyReturn;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ForceEarlyReturn", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ForceEarlyReturn;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ForceEarlyReturn;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ForceEarlyReturn;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ForceEarlyReturn;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ValueImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7685,7 +7685,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ForceEarlyReturn(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ForceEarlyReturn(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7730,12 +7730,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "owned", "[Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo$monitor;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OwnedMonitorsStackDepthInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "owned", "[Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo$monitor;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7772,7 +7772,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public OwnedMonitorsStackDepthInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public OwnedMonitorsStackDepthInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7815,9 +7815,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitorsStackDepthInfo$monitor;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "monitor", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stack_depth", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "monitor", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "monitor", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stack_depth", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("Lcom/sun/tools/jdi/ObjectReferenceImpl;", "final")]
@@ -7854,7 +7854,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public monitor(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public monitor(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -7879,12 +7879,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$SuspendCount;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suspendCount", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SuspendCount", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$SuspendCount;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$SuspendCount;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suspendCount", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$SuspendCount;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$SuspendCount;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7921,7 +7921,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SuspendCount(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SuspendCount(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -7966,11 +7966,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Interrupt;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Interrupt", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Interrupt;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Interrupt;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Interrupt;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Interrupt;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -7993,7 +7993,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Interrupt(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Interrupt(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8038,11 +8038,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Stop;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Stop", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Stop;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Stop;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Stop;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Stop;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8065,7 +8065,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Stop(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Stop(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8110,12 +8110,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$CurrentContendedMonitor;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "monitor", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CurrentContendedMonitor", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$CurrentContendedMonitor;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$CurrentContendedMonitor;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "monitor", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$CurrentContendedMonitor;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$CurrentContendedMonitor;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8152,7 +8152,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public CurrentContendedMonitor(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public CurrentContendedMonitor(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8197,12 +8197,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitors;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "owned", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "OwnedMonitors", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitors;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitors;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "owned", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitors;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$OwnedMonitors;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8239,7 +8239,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public OwnedMonitors(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public OwnedMonitors(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8284,12 +8284,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$FrameCount;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameCount", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FrameCount", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$FrameCount;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$FrameCount;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameCount", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$FrameCount;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$FrameCount;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8326,7 +8326,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public FrameCount(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public FrameCount(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8371,12 +8371,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frames", "[Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames$Frame;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Frames", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frames", "[Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames$Frame;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;II)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8413,7 +8413,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Frames(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Frames(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8456,9 +8456,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Frames$Frame;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "location", "Lcom/sun/jdi/Location;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Frame", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "location", "Lcom/sun/jdi/Location;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -8495,7 +8495,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public Frame(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public Frame(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -8520,12 +8520,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$ThreadGroup;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "group", "Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ThreadGroup", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ThreadGroup;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ThreadGroup;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "group", "Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ThreadGroup;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$ThreadGroup;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8562,7 +8562,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ThreadGroup(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ThreadGroup(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8607,13 +8607,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Status;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "threadStatus", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "suspendStatus", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Status", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Status;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Status;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "threadStatus", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "suspendStatus", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Status;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Status;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8664,7 +8664,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Status(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Status(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8709,11 +8709,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Resume;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Resume", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Resume;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Resume;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Resume;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Resume;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8736,7 +8736,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Resume(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Resume(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8781,11 +8781,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Suspend;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Suspend", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Suspend;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Suspend;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Suspend;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Suspend;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8808,7 +8808,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Suspend(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Suspend(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8853,12 +8853,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ThreadReference$Name;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "threadName", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Name", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Name;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "threadName", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ThreadReference$Name;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -8895,7 +8895,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Name(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -8940,8 +8940,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StringReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -8964,7 +8964,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public StringReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public StringReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -8987,12 +8987,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$StringReference$Value;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringValue", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Value", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$StringReference$Value;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StringReference$Value;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringValue", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$StringReference$Value;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$StringReference$Value;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9029,7 +9029,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Value(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Value(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9074,8 +9074,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObjectReference", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -9098,7 +9098,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ObjectReference() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ObjectReference() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -9121,12 +9121,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferringObjects;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "referringObjects", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferringObjects", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;I)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferringObjects;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferringObjects;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "referringObjects", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;I)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferringObjects;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferringObjects;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9163,7 +9163,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ReferringObjects(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ReferringObjects(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9208,12 +9208,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$IsCollected;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isCollected", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IsCollected", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$IsCollected;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$IsCollected;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isCollected", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$IsCollected;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$IsCollected;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9250,7 +9250,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public IsCollected(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public IsCollected(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9295,11 +9295,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$EnableCollection;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EnableCollection", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$EnableCollection;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$EnableCollection;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$EnableCollection;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$EnableCollection;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9322,7 +9322,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public EnableCollection(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public EnableCollection(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9367,11 +9367,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$DisableCollection;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DisableCollection", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$DisableCollection;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$DisableCollection;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$DisableCollection;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$DisableCollection;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9394,7 +9394,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public DisableCollection(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public DisableCollection(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9439,13 +9439,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$InvokeMethod;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvokeMethod", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ClassTypeImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ObjectReference$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ClassTypeImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ClassTypeImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ObjectReference$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;Lcom/sun/tools/jdi/ClassTypeImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9496,7 +9496,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9541,14 +9541,14 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$MonitorInfo;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "owner", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "entryCount", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "waiters", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MonitorInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$MonitorInfo;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$MonitorInfo;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "owner", "Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "entryCount", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "waiters", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$MonitorInfo;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$MonitorInfo;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9613,7 +9613,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public MonitorInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public MonitorInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9658,11 +9658,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues$FieldValue;)Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues$FieldValue;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues$FieldValue;)Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues$FieldValue;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9685,7 +9685,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9729,10 +9729,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$SetValues$FieldValue;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldValue", "(JLcom/sun/tools/jdi/ValueImpl;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLcom/sun/tools/jdi/ValueImpl;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -9769,7 +9769,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(JLcom/sun/tools/jdi/ValueImpl;)V", "")]
-				public FieldValue(long arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public FieldValue(long arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -9800,12 +9800,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues$Field;)Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues$Field;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues$Field;)Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;[Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues$Field;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9842,7 +9842,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -9886,9 +9886,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$GetValues$Field;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Field", "(J)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -9911,7 +9911,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(J)V", "")]
-				public Field(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+				public Field(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 				{
 				}
 
@@ -9942,13 +9942,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferenceType;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceType", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferenceType;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferenceType;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferenceType;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ObjectReference$ReferenceType;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ObjectReferenceImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -9999,7 +9999,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ReferenceType(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ReferenceType(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10044,8 +10044,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Field;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Field", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -10068,7 +10068,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Field() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Field() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -10091,8 +10091,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Method", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -10115,7 +10115,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public Method() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public Method() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -10138,13 +10138,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "argCnt", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slots", "[Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric$SlotInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VariableTableWithGeneric", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "argCnt", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slots", "[Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric$SlotInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -10195,7 +10195,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public VariableTableWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public VariableTableWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10238,13 +10238,13 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$VariableTableWithGeneric$SlotInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codeIndex", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "genericSignature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slot", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SlotInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codeIndex", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "genericSignature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "length", "I"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slot", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -10337,7 +10337,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public SlotInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public SlotInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -10362,12 +10362,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$IsObsolete;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isObsolete", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IsObsolete", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$IsObsolete;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$IsObsolete;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isObsolete", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$IsObsolete;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$IsObsolete;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -10404,7 +10404,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public IsObsolete(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public IsObsolete(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10449,12 +10449,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$Bytecodes;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "[B"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Bytecodes", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$Bytecodes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$Bytecodes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytes", "[B"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$Bytecodes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$Bytecodes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -10491,7 +10491,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Bytecodes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Bytecodes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10536,13 +10536,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$VariableTable;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "argCnt", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slots", "[Lcom/sun/tools/jdi/JDWP$Method$VariableTable$SlotInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VariableTable", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$VariableTable;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$VariableTable;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "argCnt", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slots", "[Lcom/sun/tools/jdi/JDWP$Method$VariableTable$SlotInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$VariableTable;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$VariableTable;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -10593,7 +10593,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public VariableTable(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public VariableTable(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10636,12 +10636,12 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$VariableTable$SlotInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "codeIndex", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "length", "I"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "slot", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SlotInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "codeIndex", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "length", "I"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "slot", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -10720,7 +10720,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public SlotInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public SlotInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -10745,14 +10745,14 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$LineTable;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "start", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "end", "J"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lines", "[Lcom/sun/tools/jdi/JDWP$Method$LineTable$LineInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineTable", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$LineTable;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$LineTable;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "start", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "end", "J"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lines", "[Lcom/sun/tools/jdi/JDWP$Method$LineTable$LineInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/JDWP$Method$LineTable;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$Method$LineTable;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;J)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -10817,7 +10817,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public LineTable(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public LineTable(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -10860,9 +10860,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$Method$LineTable$LineInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lineCodeIndex", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lineNumber", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LineInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lineCodeIndex", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lineNumber", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -10899,7 +10899,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public LineInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public LineInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -10924,8 +10924,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$InterfaceType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InterfaceType", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -10948,7 +10948,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public InterfaceType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public InterfaceType() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -10971,13 +10971,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$InterfaceType$InvokeMethod;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvokeMethod", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/InterfaceTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$InterfaceType$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$InterfaceType$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/InterfaceTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/InterfaceTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$InterfaceType$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$InterfaceType$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/InterfaceTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11028,7 +11028,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11073,8 +11073,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ArrayType", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -11097,7 +11097,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ArrayType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ArrayType() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -11120,12 +11120,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ArrayType$NewInstance;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "newArray", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NewInstance", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayTypeImpl;I)Lcom/sun/tools/jdi/JDWP$ArrayType$NewInstance;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayType$NewInstance;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayTypeImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "newArray", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayTypeImpl;I)Lcom/sun/tools/jdi/JDWP$ArrayType$NewInstance;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ArrayType$NewInstance;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ArrayTypeImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11162,7 +11162,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public NewInstance(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public NewInstance(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11207,8 +11207,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassType", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -11231,7 +11231,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ClassType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ClassType() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -11254,13 +11254,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType$NewInstance;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "newObject", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NewInstance", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ClassType$NewInstance;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$NewInstance;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "newObject", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ClassType$NewInstance;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$NewInstance;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11311,7 +11311,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public NewInstance(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public NewInstance(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11356,13 +11356,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType$InvokeMethod;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InvokeMethod", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ClassType$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$InvokeMethod;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "returnValue", "Lcom/sun/tools/jdi/ValueImpl;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/JDWP$ClassType$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$InvokeMethod;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;Lcom/sun/tools/jdi/ThreadReferenceImpl;J[Lcom/sun/tools/jdi/ValueImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11413,7 +11413,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public InvokeMethod(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11458,11 +11458,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType$SetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;[Lcom/sun/tools/jdi/JDWP$ClassType$SetValues$FieldValue;)Lcom/sun/tools/jdi/JDWP$ClassType$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$SetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;[Lcom/sun/tools/jdi/JDWP$ClassType$SetValues$FieldValue;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;[Lcom/sun/tools/jdi/JDWP$ClassType$SetValues$FieldValue;)Lcom/sun/tools/jdi/JDWP$ClassType$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$SetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;[Lcom/sun/tools/jdi/JDWP$ClassType$SetValues$FieldValue;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11485,7 +11485,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11529,10 +11529,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType$SetValues$FieldValue;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldValue", "(JLcom/sun/tools/jdi/ValueImpl;)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Lcom/sun/tools/jdi/ValueImpl;"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(JLcom/sun/tools/jdi/ValueImpl;)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -11569,7 +11569,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(JLcom/sun/tools/jdi/ValueImpl;)V", "")]
-				public FieldValue(long arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public FieldValue(long arg0, Dova.JDK.com.sun.tools.jdi.ValueImpl arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -11600,12 +11600,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ClassType$Superclass;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "superclass", "Lcom/sun/tools/jdi/ClassTypeImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Superclass", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;)Lcom/sun/tools/jdi/JDWP$ClassType$Superclass;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$Superclass;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "superclass", "Lcom/sun/tools/jdi/ClassTypeImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;)Lcom/sun/tools/jdi/JDWP$ClassType$Superclass;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ClassType$Superclass;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ClassTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11642,7 +11642,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Superclass(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Superclass(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11687,8 +11687,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReferenceType", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -11711,7 +11711,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public ReferenceType() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public ReferenceType() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -11734,12 +11734,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Module;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "module", "Lcom/sun/tools/jdi/ModuleReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Module", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Module;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Module;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "module", "Lcom/sun/tools/jdi/ModuleReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Module;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Module;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11776,7 +11776,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Module(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Module(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11821,13 +11821,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$ConstantPool;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "count", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bytes", "[B"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ConstantPool", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ConstantPool;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ConstantPool;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "count", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bytes", "[B"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ConstantPool;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ConstantPool;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11878,7 +11878,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ConstantPool(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ConstantPool(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -11923,13 +11923,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassFileVersion;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "majorVersion", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "minorVersion", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassFileVersion", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassFileVersion;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassFileVersion;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "majorVersion", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "minorVersion", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassFileVersion;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassFileVersion;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -11980,7 +11980,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassFileVersion(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassFileVersion(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12025,12 +12025,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Instances;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "instances", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Instances", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;I)Lcom/sun/tools/jdi/JDWP$ReferenceType$Instances;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Instances;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "instances", "[Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;I)Lcom/sun/tools/jdi/JDWP$ReferenceType$Instances;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Instances;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12067,7 +12067,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Instances(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Instances(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12112,12 +12112,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric$MethodInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodsWithGeneric", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric$MethodInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12154,7 +12154,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public MethodsWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public MethodsWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12197,12 +12197,12 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$MethodsWithGeneric$MethodInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "genericSignature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modBits", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "genericSignature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modBits", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -12281,7 +12281,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public MethodInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public MethodInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -12306,12 +12306,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric$FieldInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldsWithGeneric", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric$FieldInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12348,7 +12348,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public FieldsWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public FieldsWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12391,12 +12391,12 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$FieldsWithGeneric$FieldInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "genericSignature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modBits", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "genericSignature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modBits", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -12475,7 +12475,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public FieldInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public FieldInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -12500,13 +12500,13 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$SignatureWithGeneric;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "genericSignature", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SignatureWithGeneric", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SignatureWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SignatureWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "genericSignature", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SignatureWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SignatureWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12557,7 +12557,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SignatureWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SignatureWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12602,12 +12602,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceDebugExtension;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "extension", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SourceDebugExtension", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceDebugExtension;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceDebugExtension;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "extension", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceDebugExtension;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceDebugExtension;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12644,7 +12644,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SourceDebugExtension(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SourceDebugExtension(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12689,12 +12689,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassObject;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classObject", "Lcom/sun/tools/jdi/ClassObjectReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassObject", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassObject;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassObject;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classObject", "Lcom/sun/tools/jdi/ClassObjectReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassObject;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassObject;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12731,7 +12731,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassObject(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassObject(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12776,12 +12776,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Interfaces;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "interfaces", "[Lcom/sun/tools/jdi/InterfaceTypeImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Interfaces", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Interfaces;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Interfaces;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "interfaces", "[Lcom/sun/tools/jdi/InterfaceTypeImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Interfaces;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Interfaces;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12818,7 +12818,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Interfaces(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Interfaces(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12863,12 +12863,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Status;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Status", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Status;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Status;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Status;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Status;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12905,7 +12905,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Status(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Status(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -12950,12 +12950,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes$TypeInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "NestedTypes", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes$TypeInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -12992,7 +12992,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public NestedTypes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public NestedTypes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13035,9 +13035,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$NestedTypes$TypeInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TypeInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -13074,7 +13074,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public TypeInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public TypeInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -13099,12 +13099,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceFile;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceFile", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SourceFile", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceFile;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceFile;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceFile", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceFile;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$SourceFile;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13141,7 +13141,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SourceFile(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SourceFile(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13186,12 +13186,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GetValues", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;[Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues$Field;)Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;[Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues$Field;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "values", "[Lcom/sun/tools/jdi/ValueImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;[Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues$Field;)Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;[Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues$Field;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13228,7 +13228,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public GetValues(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13272,9 +13272,9 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$GetValues$Field;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Field", "(J)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(J)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -13297,7 +13297,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(J)V", "")]
-				public Field(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+				public Field(long arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 				{
 				}
 
@@ -13328,12 +13328,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods$MethodInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Methods", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods$MethodInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13370,7 +13370,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Methods(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Methods(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13413,11 +13413,11 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Methods$MethodInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modBits", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MethodInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modBits", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -13482,7 +13482,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public MethodInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public MethodInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -13507,12 +13507,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields$FieldInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Fields", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "declared", "[Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields$FieldInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13549,7 +13549,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Fields(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Fields(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13592,11 +13592,11 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Fields$FieldInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modBits", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "FieldInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modBits", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("J", "final")]
@@ -13661,7 +13661,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public FieldInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public FieldInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -13686,12 +13686,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Modifiers;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modBits", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Modifiers", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Modifiers;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Modifiers;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modBits", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Modifiers;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Modifiers;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13728,7 +13728,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Modifiers(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Modifiers(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13773,12 +13773,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassLoader;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classLoader", "Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassLoader", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassLoader;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassLoader;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classLoader", "Lcom/sun/tools/jdi/ClassLoaderReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassLoader;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$ClassLoader;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13815,7 +13815,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassLoader(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassLoader(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13860,12 +13860,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$ReferenceType$Signature;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Signature", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Signature;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Signature;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Signature;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$ReferenceType$Signature;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -13902,7 +13902,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Signature(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Signature(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -13947,8 +13947,8 @@ public partial class JDWP
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND_SET", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VirtualMachine", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND_SET", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("I", "static final")]
@@ -13971,7 +13971,7 @@ public partial class JDWP
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public VirtualMachine() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public VirtualMachine() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -13994,12 +13994,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllModules;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "modules", "[Lcom/sun/tools/jdi/ModuleReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AllModules", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllModules;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllModules;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "modules", "[Lcom/sun/tools/jdi/ModuleReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllModules;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllModules;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -14036,7 +14036,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public AllModules(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public AllModules(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -14081,12 +14081,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$InstanceCounts;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "counts", "[J"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "InstanceCounts", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$InstanceCounts;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$InstanceCounts;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "counts", "[J"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$InstanceCounts;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$InstanceCounts;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/ReferenceTypeImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -14123,7 +14123,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public InstanceCounts(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public InstanceCounts(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -14168,12 +14168,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric$ClassInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AllClassesWithGeneric", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric$ClassInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -14210,7 +14210,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public AllClassesWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public AllClassesWithGeneric(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -14253,12 +14253,12 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClassesWithGeneric$ClassInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "genericSignature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "genericSignature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -14337,7 +14337,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -14362,11 +14362,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$SetDefaultStratum;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SetDefaultStratum", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$SetDefaultStratum;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$SetDefaultStratum;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$SetDefaultStratum;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$SetDefaultStratum;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -14389,7 +14389,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public SetDefaultStratum(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public SetDefaultStratum(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -14434,11 +14434,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "RedefineClasses", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses$ClassDef;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses$ClassDef;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses$ClassDef;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses$ClassDef;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -14461,7 +14461,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public RedefineClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public RedefineClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -14505,10 +14505,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$RedefineClasses$ClassDef;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refType", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classfile", "[B"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassDef", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;[B)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refType", "Lcom/sun/tools/jdi/ReferenceTypeImpl;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classfile", "[B"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ReferenceTypeImpl;[B)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("Lcom/sun/tools/jdi/ReferenceTypeImpl;", "final")]
@@ -14545,7 +14545,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/ReferenceTypeImpl;[B)V", "")]
-				public ClassDef(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public ClassDef(Dova.JDK.com.sun.tools.jdi.ReferenceTypeImpl arg0, JavaArray<byte> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -14576,43 +14576,43 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$CapabilitiesNew;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canWatchFieldModification", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canWatchFieldAccess", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetBytecodes", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetSyntheticAttribute", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetOwnedMonitorInfo", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetCurrentContendedMonitor", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetMonitorInfo", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canRedefineClasses", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canAddMethod", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canUnrestrictedlyRedefineClasses", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canPopFrames", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canUseInstanceFilters", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetSourceDebugExtension", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canRequestVMDeathEvent", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canSetDefaultStratum", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetInstanceInfo", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canRequestMonitorEvents", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetMonitorFrameInfo", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canUseSourceNameFilters", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetConstantPool", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canForceEarlyReturn", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved22", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved23", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved24", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved25", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved26", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved27", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved28", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved29", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved30", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved31", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "reserved32", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CapabilitiesNew", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CapabilitiesNew;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CapabilitiesNew;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canWatchFieldModification", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canWatchFieldAccess", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetBytecodes", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetSyntheticAttribute", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetOwnedMonitorInfo", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetCurrentContendedMonitor", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetMonitorInfo", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canRedefineClasses", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canAddMethod", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canUnrestrictedlyRedefineClasses", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canPopFrames", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canUseInstanceFilters", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetSourceDebugExtension", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canRequestVMDeathEvent", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canSetDefaultStratum", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetInstanceInfo", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canRequestMonitorEvents", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetMonitorFrameInfo", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canUseSourceNameFilters", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetConstantPool", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canForceEarlyReturn", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved22", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved23", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved24", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved25", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved26", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved27", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved28", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved29", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved30", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved31", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "reserved32", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CapabilitiesNew;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CapabilitiesNew;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15083,7 +15083,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public CapabilitiesNew(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public CapabilitiesNew(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15128,11 +15128,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$ReleaseEvents;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ReleaseEvents", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ReleaseEvents;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ReleaseEvents;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ReleaseEvents;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ReleaseEvents;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15155,7 +15155,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ReleaseEvents(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ReleaseEvents(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15200,11 +15200,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$HoldEvents;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HoldEvents", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$HoldEvents;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$HoldEvents;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$HoldEvents;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$HoldEvents;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15227,7 +15227,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public HoldEvents(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public HoldEvents(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15272,11 +15272,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DisposeObjects", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects$Request;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects$Request;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects$Request;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;[Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects$Request;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15299,7 +15299,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public DisposeObjects(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public DisposeObjects(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15343,10 +15343,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$DisposeObjects$Request;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refCnt", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Request", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;I)V"));
-					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "object", "Lcom/sun/tools/jdi/ObjectReferenceImpl;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refCnt", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/ObjectReferenceImpl;I)V"));
+					MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("Lcom/sun/tools/jdi/ObjectReferenceImpl;", "final")]
@@ -15383,7 +15383,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/ObjectReferenceImpl;I)V", "")]
-				public Request(Dova.JDK.com.sun.tools.jdi.ObjectReferenceImpl arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public Request(Dova.JDK.com.sun.tools.jdi.ObjectReferenceImpl arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -15414,14 +15414,14 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassPaths;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "baseDir", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classpaths", "[Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bootclasspaths", "[Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassPaths", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassPaths;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassPaths;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "baseDir", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classpaths", "[Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bootclasspaths", "[Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassPaths;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassPaths;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15486,7 +15486,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassPaths(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassPaths(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15531,18 +15531,18 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Capabilities;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canWatchFieldModification", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canWatchFieldAccess", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetBytecodes", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetSyntheticAttribute", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetOwnedMonitorInfo", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetCurrentContendedMonitor", "Z"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "canGetMonitorInfo", "Z"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Capabilities", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Capabilities;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Capabilities;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canWatchFieldModification", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canWatchFieldAccess", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetBytecodes", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetSyntheticAttribute", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetOwnedMonitorInfo", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetCurrentContendedMonitor", "Z"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "canGetMonitorInfo", "Z"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Capabilities;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Capabilities;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15663,7 +15663,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Capabilities(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Capabilities(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15708,12 +15708,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$CreateString;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stringObject", "Lcom/sun/tools/jdi/StringReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CreateString", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CreateString;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CreateString;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stringObject", "Lcom/sun/tools/jdi/StringReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CreateString;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$CreateString;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15750,7 +15750,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public CreateString(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public CreateString(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15795,11 +15795,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Exit;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Exit", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;I)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Exit;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Exit;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;I)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Exit;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Exit;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;I)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15822,7 +15822,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Exit(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Exit(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15867,11 +15867,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Resume;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Resume", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Resume;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Resume;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Resume;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Resume;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15894,7 +15894,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Resume(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Resume(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -15939,11 +15939,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Suspend;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Suspend", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Suspend;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Suspend;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Suspend;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Suspend;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -15966,7 +15966,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Suspend(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Suspend(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16011,16 +16011,16 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$IDSizes;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fieldIDSize", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "methodIDSize", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "objectIDSize", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "referenceTypeIDSize", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "frameIDSize", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "IDSizes", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$IDSizes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$IDSizes;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fieldIDSize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "methodIDSize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "objectIDSize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "referenceTypeIDSize", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "frameIDSize", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$IDSizes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$IDSizes;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16113,7 +16113,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public IDSizes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public IDSizes(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16158,11 +16158,11 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Dispose;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Dispose", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Dispose;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Dispose;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Dispose;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Dispose;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16185,7 +16185,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Dispose(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Dispose(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16230,12 +16230,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$TopLevelThreadGroups;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "groups", "[Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TopLevelThreadGroups", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$TopLevelThreadGroups;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$TopLevelThreadGroups;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "groups", "[Lcom/sun/tools/jdi/ThreadGroupReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$TopLevelThreadGroups;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$TopLevelThreadGroups;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16272,7 +16272,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public TopLevelThreadGroups(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public TopLevelThreadGroups(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16317,12 +16317,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllThreads;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "threads", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AllThreads", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllThreads;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllThreads;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "threads", "[Lcom/sun/tools/jdi/ThreadReferenceImpl;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllThreads;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllThreads;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16359,7 +16359,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public AllThreads(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public AllThreads(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16404,12 +16404,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses$ClassInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AllClasses", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses$ClassInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16446,7 +16446,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public AllClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public AllClasses(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16489,11 +16489,11 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$AllClasses$ClassInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "signature", "Ljava/lang/String;"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "signature", "Ljava/lang/String;"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -16558,7 +16558,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -16583,12 +16583,12 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature$ClassInfo;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassesBySignature", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classes", "[Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature$ClassInfo;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Ljava/lang/String;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16625,7 +16625,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public ClassesBySignature(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public ClassesBySignature(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 
@@ -16668,10 +16668,10 @@ public partial class JDWP
 				{
 					ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$ClassesBySignature$ClassInfo;");
 					ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "refTypeTag", "B"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "typeID", "J"));
-					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "I"));
-					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ClassInfo", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "refTypeTag", "B"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "typeID", "J"));
+					FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "I"));
+					ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
 				}
 
 				[JniSignatureAttribute("B", "final")]
@@ -16722,7 +16722,7 @@ public partial class JDWP
 				}
 
 				[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+				public ClassInfo(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 				{
 				}
 
@@ -16747,16 +16747,16 @@ public partial class JDWP
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/tools/jdi/JDWP$VirtualMachine$Version;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMAND", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "description", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jdwpMajor", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "jdwpMinor", "I"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "vmVersion", "Ljava/lang/String;"));
-				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "vmName", "Ljava/lang/String;"));
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Version", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Version;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Version;"));
-				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMAND", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "description", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jdwpMajor", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "jdwpMinor", "I"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "vmVersion", "Ljava/lang/String;"));
+				FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "vmName", "Ljava/lang/String;"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "process", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Version;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "waitForReply", "(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)Lcom/sun/tools/jdi/JDWP$VirtualMachine$Version;"));
+				MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "enqueueCommand", "(Lcom/sun/tools/jdi/VirtualMachineImpl;)Lcom/sun/tools/jdi/PacketStream;"));
 			}
 
 			[JniSignatureAttribute("I", "static final")]
@@ -16849,7 +16849,7 @@ public partial class JDWP
 			}
 
 			[JniSignatureAttribute("(Lcom/sun/tools/jdi/VirtualMachineImpl;Lcom/sun/tools/jdi/PacketStream;)V", "private")]
-			public Version(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+			public Version(Dova.JDK.com.sun.tools.jdi.VirtualMachineImpl arg0, Dova.JDK.com.sun.tools.jdi.PacketStream arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 			{
 			}
 

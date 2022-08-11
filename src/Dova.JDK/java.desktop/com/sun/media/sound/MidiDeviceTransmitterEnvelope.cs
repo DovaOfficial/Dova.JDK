@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,14 +32,14 @@ public partial class MidiDeviceTransmitterEnvelope
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/media/sound/MidiDeviceTransmitterEnvelope;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "device", "Ljavax/sound/midi/MidiDevice;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "transmitter", "Ljavax/sound/midi/Transmitter;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MidiDeviceTransmitterEnvelope", "(Ljavax/sound/midi/MidiDevice;Ljavax/sound/midi/Transmitter;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "close", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMidiDevice", "()Ljavax/sound/midi/MidiDevice;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getReceiver", "()Ljavax/sound/midi/Receiver;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTransmitter", "()Ljavax/sound/midi/Transmitter;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setReceiver", "(Ljavax/sound/midi/Receiver;)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "device", "Ljavax/sound/midi/MidiDevice;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "transmitter", "Ljavax/sound/midi/Transmitter;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sound/midi/MidiDevice;Ljavax/sound/midi/Transmitter;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "close", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMidiDevice", "()Ljavax/sound/midi/MidiDevice;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getReceiver", "()Ljavax/sound/midi/Receiver;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTransmitter", "()Ljavax/sound/midi/Transmitter;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setReceiver", "(Ljavax/sound/midi/Receiver;)V"));
 	}
 
 	[JniSignatureAttribute("Ljavax/sound/midi/MidiDevice;", "private final")]
@@ -76,7 +76,7 @@ public partial class MidiDeviceTransmitterEnvelope
 	}
 
 	[JniSignatureAttribute("(Ljavax/sound/midi/MidiDevice;Ljavax/sound/midi/Transmitter;)V", "public")]
-	public MidiDeviceTransmitterEnvelope(Dova.JDK.javax.sound.midi.MidiDevice arg0, Dova.JDK.javax.sound.midi.Transmitter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public MidiDeviceTransmitterEnvelope(Dova.JDK.javax.sound.midi.MidiDevice arg0, Dova.JDK.javax.sound.midi.Transmitter arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

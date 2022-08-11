@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,16 +32,16 @@ public partial class MultiResolutionToolkitImage
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/MultiResolutionToolkitImage;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "resolutionVariant", "Ljava/awt/Image;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BITS_INFO", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MultiResolutionToolkitImage", "(Ljava/awt/Image;Ljava/awt/Image;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "map", "(Lsun/awt/image/MultiResolutionToolkitImage;Ljava/util/function/Function;)Ljava/awt/Image;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "checkSize", "(DD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolutionVariants", "()Ljava/util/List;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolutionVariant", "()Ljava/awt/Image;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getResolutionVariant", "(DD)Ljava/awt/Image;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getResolutionVariantObserver", "(Ljava/awt/Image;Ljava/awt/image/ImageObserver;IIIIZ)Ljava/awt/image/ImageObserver;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getResolutionVariantObserver", "(Ljava/awt/Image;Ljava/awt/image/ImageObserver;IIII)Ljava/awt/image/ImageObserver;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "resolutionVariant", "Ljava/awt/Image;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BITS_INFO", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/Image;Ljava/awt/Image;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "map", "(Lsun/awt/image/MultiResolutionToolkitImage;Ljava/util/function/Function;)Ljava/awt/Image;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "checkSize", "(DD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolutionVariants", "()Ljava/util/List;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolutionVariant", "()Ljava/awt/Image;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getResolutionVariant", "(DD)Ljava/awt/Image;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getResolutionVariantObserver", "(Ljava/awt/Image;Ljava/awt/image/ImageObserver;IIIIZ)Ljava/awt/image/ImageObserver;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getResolutionVariantObserver", "(Ljava/awt/Image;Ljava/awt/image/ImageObserver;IIII)Ljava/awt/image/ImageObserver;"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/Image;", "")]
@@ -78,7 +78,7 @@ public partial class MultiResolutionToolkitImage
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Image;Ljava/awt/Image;)V", "public")]
-	public MultiResolutionToolkitImage(Dova.JDK.java.awt.Image arg0, Dova.JDK.java.awt.Image arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public MultiResolutionToolkitImage(Dova.JDK.java.awt.Image arg0, Dova.JDK.java.awt.Image arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -150,12 +150,12 @@ public partial class MultiResolutionToolkitImage
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/image/MultiResolutionToolkitImage$ObserverCache;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "concat", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "imageRef", "Ljava/lang/ref/WeakReference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "observerRef", "Ljava/lang/ref/WeakReference;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ObserverCache", "(Ljava/awt/image/ImageObserver;ZLjava/awt/Image;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "imageUpdate", "(Ljava/awt/Image;IIIII)Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "concat", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "imageRef", "Ljava/lang/ref/WeakReference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "observerRef", "Ljava/lang/ref/WeakReference;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/image/ImageObserver;ZLjava/awt/Image;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "imageUpdate", "(Ljava/awt/Image;IIIII)Z"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private static final")]
@@ -220,7 +220,7 @@ public partial class MultiResolutionToolkitImage
 		}
 
 		[JniSignatureAttribute("(Ljava/awt/image/ImageObserver;ZLjava/awt/Image;)V", "private")]
-		public ObserverCache(Dova.JDK.java.awt.image.ImageObserver arg0, bool arg1, Dova.JDK.java.awt.Image arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public ObserverCache(Dova.JDK.java.awt.image.ImageObserver arg0, bool arg1, Dova.JDK.java.awt.Image arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 

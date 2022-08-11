@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,19 +31,19 @@ public partial class Authenticator
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "block", "[B"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Authenticator", "([B)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)Lsun/security/ssl/Authenticator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/Authenticator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nullTlsMac", "()Lsun/security/ssl/Authenticator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "nullDtlsMac", "()Lsun/security/ssl/Authenticator;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumOverflow", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumIsHuge", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEpochNumber", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "increaseSequenceNumber", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toLong", "([B)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sequenceNumber", "()[B"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "block", "[B"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)Lsun/security/ssl/Authenticator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Lsun/security/ssl/ProtocolVersion;)Lsun/security/ssl/Authenticator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nullTlsMac", "()Lsun/security/ssl/Authenticator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "nullDtlsMac", "()Lsun/security/ssl/Authenticator;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumOverflow", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumIsHuge", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEpochNumber", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "increaseSequenceNumber", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toLong", "([B)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sequenceNumber", "()[B"));
 	}
 
 	[JniSignatureAttribute("[B", "protected final")]
@@ -66,7 +66,7 @@ public partial class Authenticator
 	}
 
 	[JniSignatureAttribute("([B)V", "private")]
-	public Authenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public Authenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -164,9 +164,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLS13Authenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK_SIZE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLS13Authenticator", "(Lsun/security/ssl/ProtocolVersion;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK_SIZE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -189,7 +189,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;)V", "private")]
-		public DTLS13Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DTLS13Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -220,9 +220,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLS10Authenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK_SIZE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLS10Authenticator", "(Lsun/security/ssl/ProtocolVersion;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK_SIZE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -245,7 +245,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;)V", "private")]
-		public DTLS10Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DTLS10Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -276,9 +276,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$TLS13Authenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK_SIZE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS13Authenticator", "(Lsun/security/ssl/ProtocolVersion;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK_SIZE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -301,7 +301,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;)V", "private")]
-		public TLS13Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TLS13Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -332,9 +332,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$TLS10Authenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK_SIZE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS10Authenticator", "(Lsun/security/ssl/ProtocolVersion;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK_SIZE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -357,7 +357,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;)V", "private")]
-		public TLS10Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public TLS10Authenticator(Dova.JDK.sun.security.ssl.ProtocolVersion arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -388,9 +388,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$SSL30Authenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK_SIZE", "I"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSL30Authenticator", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK_SIZE", "I"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acquireAuthenticationBytes", "(BI[B)[B"));
 		}
 
 		[JniSignatureAttribute("I", "private static final")]
@@ -413,7 +413,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SSL30Authenticator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SSL30Authenticator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -445,10 +445,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLS10Mac;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLS10Mac", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/Authenticator$MacImpl;", "private final")]
@@ -471,7 +471,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V", "public")]
-		public DTLS10Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public DTLS10Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -510,10 +510,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$TLS10Mac;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TLS10Mac", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/Authenticator$MacImpl;", "private final")]
@@ -536,7 +536,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V", "public")]
-		public TLS10Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public TLS10Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -575,10 +575,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$SSL30Mac;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSL30Mac", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/Authenticator$MacImpl;", "private final")]
@@ -601,7 +601,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V", "public")]
-		public SSL30Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public SSL30Mac(Dova.JDK.sun.security.ssl.ProtocolVersion arg0, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg1, Dova.JDK.javax.crypto.SecretKey arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -640,10 +640,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$SSLNullMac;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLNullMac", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/Authenticator$MacImpl;", "private final")]
@@ -666,7 +666,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public SSLNullMac() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SSLNullMac() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -705,10 +705,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLSNullMac;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLSNullMac", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macImpl", "Lsun/security/ssl/Authenticator$MacImpl;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/Authenticator$MacImpl;", "private final")]
@@ -731,7 +731,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("()V", "public")]
-		public DTLSNullMac() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DTLSNullMac() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -770,13 +770,13 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$MacImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "macAlg", "Lsun/security/ssl/CipherSuite$MacAlg;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mac", "Ljavax/crypto/Mac;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Lsun/security/ssl/Authenticator;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MacImpl", "(Lsun/security/ssl/Authenticator;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MacImpl", "(Lsun/security/ssl/Authenticator;Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "macAlg", "Lsun/security/ssl/CipherSuite$MacAlg;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mac", "Ljavax/crypto/Mac;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Lsun/security/ssl/Authenticator;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/Authenticator;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/security/ssl/Authenticator;Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/ssl/CipherSuite$MacAlg;", "private final")]
@@ -827,12 +827,12 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/Authenticator;)V", "private")]
-		public MacImpl(Dova.JDK.sun.security.ssl.Authenticator arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MacImpl(Dova.JDK.sun.security.ssl.Authenticator arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Lsun/security/ssl/Authenticator;Lsun/security/ssl/ProtocolVersion;Lsun/security/ssl/CipherSuite$MacAlg;Ljavax/crypto/SecretKey;)V", "private")]
-		public MacImpl(Dova.JDK.sun.security.ssl.Authenticator arg0, Dova.JDK.sun.security.ssl.ProtocolVersion arg1, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg2, Dova.JDK.javax.crypto.SecretKey arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public MacImpl(Dova.JDK.sun.security.ssl.Authenticator arg0, Dova.JDK.sun.security.ssl.ProtocolVersion arg1, Dova.JDK.sun.security.ssl.CipherSuite.MacAlg arg2, Dova.JDK.javax.crypto.SecretKey arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -868,9 +868,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$MAC;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compute", "(BLjava/nio/ByteBuffer;Z)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;[BZ)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compute", "(BLjava/nio/ByteBuffer;Z)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "macAlg", "()Lsun/security/ssl/CipherSuite$MacAlg;"));
 		}
 
 		[JniSignatureAttribute("(BLjava/nio/ByteBuffer;[BZ)[B", "public abstract")]
@@ -908,7 +908,7 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLSNullAuthenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLSNullAuthenticator", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -917,7 +917,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public DTLSNullAuthenticator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public DTLSNullAuthenticator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -940,10 +940,10 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$DTLSAuthenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DTLSAuthenticator", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumOverflow", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumIsHuge", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setEpochNumber", "(I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumOverflow", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumIsHuge", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setEpochNumber", "(I)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -952,7 +952,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("([B)V", "private")]
-		public DTLSAuthenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DTLSAuthenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -994,7 +994,7 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$SSLNullAuthenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLNullAuthenticator", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1003,7 +1003,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SSLNullAuthenticator() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SSLNullAuthenticator() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1026,9 +1026,9 @@ public partial class Authenticator
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ssl/Authenticator$SSLAuthenticator;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SSLAuthenticator", "([B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumOverflow", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "seqNumIsHuge", "()Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumOverflow", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "seqNumIsHuge", "()Z"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -1037,7 +1037,7 @@ public partial class Authenticator
 		}
 
 		[JniSignatureAttribute("([B)V", "private")]
-		public SSLAuthenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SSLAuthenticator(JavaArray<byte> arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

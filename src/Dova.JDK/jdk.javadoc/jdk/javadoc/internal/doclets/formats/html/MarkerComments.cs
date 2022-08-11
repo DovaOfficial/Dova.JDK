@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,32 +30,32 @@ public partial class MarkerComments
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclets/formats/html/MarkerComments;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_TOP_NAVBAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "END_OF_TOP_NAVBAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_MODULE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_MODULES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_PACKAGES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_SERVICES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_CLASS_DATA", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "END_OF_CLASS_DATA", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_NESTED_CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_TYPE_OPTIONAL_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_INTERFACE_OPTIONAL_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_TYPE_REQUIRED_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_INTERFACE_REQUIRED_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_CONSTRUCTOR_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ENUM_CONSTANT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_FIELD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_PROPERTY_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_METHOD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_TYPE_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ANNOTATION_INTERFACE_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_METHOD_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_FIELD_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_PROPERTY_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_CONSTRUCTOR_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START_OF_ENUM_CONSTANT_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MarkerComments", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_TOP_NAVBAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "END_OF_TOP_NAVBAR", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_MODULE_DESCRIPTION", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_MODULES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_PACKAGES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_SERVICES_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_CLASS_DATA", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "END_OF_CLASS_DATA", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_NESTED_CLASS_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_TYPE_OPTIONAL_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_INTERFACE_OPTIONAL_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_TYPE_REQUIRED_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_INTERFACE_REQUIRED_MEMBER_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_CONSTRUCTOR_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ENUM_CONSTANT_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_FIELD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_PROPERTY_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_METHOD_SUMMARY", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_TYPE_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ANNOTATION_INTERFACE_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_METHOD_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_FIELD_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_PROPERTY_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_CONSTRUCTOR_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START_OF_ENUM_CONSTANT_DETAILS", "Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclets/formats/html/markup/Comment;", "public static final")]
@@ -414,7 +414,7 @@ public partial class MarkerComments
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public MarkerComments() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MarkerComments() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

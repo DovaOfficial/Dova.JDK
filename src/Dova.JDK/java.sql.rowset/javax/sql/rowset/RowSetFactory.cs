@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,11 +29,11 @@ public partial interface RowSetFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sql/rowset/RowSetFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createFilteredRowSet", "()Ljavax/sql/rowset/FilteredRowSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCachedRowSet", "()Ljavax/sql/rowset/CachedRowSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createJdbcRowSet", "()Ljavax/sql/rowset/JdbcRowSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createJoinRowSet", "()Ljavax/sql/rowset/JoinRowSet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createWebRowSet", "()Ljavax/sql/rowset/WebRowSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createFilteredRowSet", "()Ljavax/sql/rowset/FilteredRowSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCachedRowSet", "()Ljavax/sql/rowset/CachedRowSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createJdbcRowSet", "()Ljavax/sql/rowset/JdbcRowSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createJoinRowSet", "()Ljavax/sql/rowset/JoinRowSet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createWebRowSet", "()Ljavax/sql/rowset/WebRowSet;"));
 	}
 
 	[JniSignatureAttribute("()Ljavax/sql/rowset/FilteredRowSet;", "public abstract")]

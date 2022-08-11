@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,24 +31,24 @@ public partial class TaskFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "compiler", "Ljavax/tools/JavaCompiler;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "fileManager", "Ljdk/jshell/MemoryFileManager;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classpath", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INITIAL_SUPPORTED_VER", "Ljava/lang/Runtime$Version;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "javacTaskPool", "Lcom/sun/tools/javac/api/JavacTaskPool;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TaskFactory", "(Ljdk/jshell/JShell;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "(Ljava/util/Collection;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljava/lang/String;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "(Ljava/lang/String;ZLjdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addToClasspath", "(Ljava/lang/String;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "fileManager", "()Ljdk/jshell/MemoryFileManager;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "initTaskPool", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runTask", "(Ljava/util/stream/Stream;Ljdk/jshell/TaskFactory$SourceHandler;Ljava/util/List;Ljava/util/function/BiFunction;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "(Ljava/util/Collection;Ljava/util/List;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "(Ljdk/jshell/OuterWrap;Ljava/util/List;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "(Ljava/util/Collection;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "(Ljdk/jshell/OuterWrap;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "compiler", "Ljavax/tools/JavaCompiler;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "fileManager", "Ljdk/jshell/MemoryFileManager;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classpath", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INITIAL_SUPPORTED_VER", "Ljava/lang/Runtime$Version;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "javacTaskPool", "Lcom/sun/tools/javac/api/JavacTaskPool;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "(Ljava/util/Collection;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljava/lang/String;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "(Ljava/lang/String;ZLjdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addToClasspath", "(Ljava/lang/String;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "fileManager", "()Ljdk/jshell/MemoryFileManager;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "initTaskPool", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "runTask", "(Ljava/util/stream/Stream;Ljdk/jshell/TaskFactory$SourceHandler;Ljava/util/List;Ljava/util/function/BiFunction;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "(Ljava/util/Collection;Ljava/util/List;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "(Ljdk/jshell/OuterWrap;Ljava/util/List;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "(Ljava/util/Collection;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "(Ljdk/jshell/OuterWrap;Ljdk/jshell/TaskFactory$Worker;)Ljava/lang/Object;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/tools/JavaCompiler;", "private final")]
@@ -141,7 +141,7 @@ public partial class TaskFactory
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;)V", "")]
-	public TaskFactory(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public TaskFactory(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -240,13 +240,13 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$StringSourceHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file2Snippet", "Ljava/util/Map;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "StringSourceHandler", "(Ljdk/jshell/TaskFactory;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/String;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFileObject_0", "(Ljavax/tools/JavaFileObject;)Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFileObject_1", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "file2Snippet", "Ljava/util/Map;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/String;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFileObject_0", "(Ljavax/tools/JavaFileObject;)Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFileObject_1", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -269,7 +269,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;)V", "private")]
-		public StringSourceHandler(Dova.JDK.jdk.jshell.TaskFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public StringSourceHandler(Dova.JDK.jdk.jshell.TaskFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -326,9 +326,9 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$SourceHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFileObject", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFileObject", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;", "public abstract")]
@@ -366,7 +366,7 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$Worker;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "withTask", "(Ljdk/jshell/TaskFactory$BaseTask;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "withTask", "(Ljdk/jshell/TaskFactory$BaseTask;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory$BaseTask;)Ljava/lang/Object;", "public abstract")]
@@ -393,14 +393,14 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$WrapSourceHandler;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "file2Snippet", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WrapSourceHandler", "(Ljdk/jshell/TaskFactory;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljdk/jshell/OuterWrap;)Ljavax/tools/JavaFileObject;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFileObject_0", "(Ljavax/tools/JavaFileObject;)Ljdk/jshell/OuterWrap;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFileObject_1", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "file2Snippet", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljava/lang/Object;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceToFileObject", "(Ljdk/jshell/MemoryFileManager;Ljdk/jshell/OuterWrap;)Ljavax/tools/JavaFileObject;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFileObject_0", "(Ljavax/tools/JavaFileObject;)Ljdk/jshell/OuterWrap;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFileObject_1", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -437,7 +437,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;)V", "private")]
-		public WrapSourceHandler(Dova.JDK.jdk.jshell.TaskFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public WrapSourceHandler(Dova.JDK.jdk.jshell.TaskFactory arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -496,12 +496,12 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$ParseTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cuts", "Ljava/lang/Iterable;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "units", "Ljava/util/List;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ParseTask", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parse", "()Ljava/lang/Iterable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "units", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cuTrees", "()Ljava/lang/Iterable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cuts", "Ljava/lang/Iterable;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "units", "Ljava/util/List;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parse", "()Ljava/lang/Iterable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "units", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cuTrees", "()Ljava/lang/Iterable;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Iterable;", "private final")]
@@ -538,7 +538,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;Z)V", "private")]
-		public ParseTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
+		public ParseTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
@@ -583,28 +583,28 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$BaseTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "diagnostics", "Ljavax/tools/DiagnosticCollector;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "task", "Lcom/sun/tools/javac/api/JavacTaskImpl;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "diags", "Ljdk/jshell/DiagList;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "sourceHandler", "Ljdk/jshell/TaskFactory$SourceHandler;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "messages", "Lcom/sun/tools/javac/util/JavacMessages;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "trees", "Lcom/sun/source/util/Trees;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BaseTask", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getContext", "()Lcom/sun/tools/javac/util/Context;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "types", "()Lcom/sun/tools/javac/code/Types;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasErrors", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "messages", "()Lcom/sun/tools/javac/util/JavacMessages;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "firstCuTree", "()Lcom/sun/source/tree/CompilationUnitTree;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDiagnostics", "()Ljdk/jshell/DiagList;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cuTrees", "()Ljava/lang/Iterable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shortErrorMessage", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "debugPrintDiagnostics", "(Ljava/lang/String;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "sourceForFile", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "trees", "()Lcom/sun/source/util/Trees;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "diagnostics", "Ljavax/tools/DiagnosticCollector;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "task", "Lcom/sun/tools/javac/api/JavacTaskImpl;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "diags", "Ljdk/jshell/DiagList;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "sourceHandler", "Ljdk/jshell/TaskFactory$SourceHandler;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "types", "Lcom/sun/tools/javac/code/Types;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "messages", "Lcom/sun/tools/javac/util/JavacMessages;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "trees", "Lcom/sun/source/util/Trees;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getContext", "()Lcom/sun/tools/javac/util/Context;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "types", "()Lcom/sun/tools/javac/code/Types;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "diag", "(Ljavax/tools/Diagnostic;)Ljdk/jshell/Diag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasErrors", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "messages", "()Lcom/sun/tools/javac/util/JavacMessages;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "firstCuTree", "()Lcom/sun/source/tree/CompilationUnitTree;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDiagnostics", "()Ljdk/jshell/DiagList;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cuTrees", "()Ljava/lang/Iterable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shortErrorMessage", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "debugPrintDiagnostics", "(Ljava/lang/String;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "sourceForFile", "(Ljavax/tools/JavaFileObject;)Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "trees", "()Lcom/sun/source/util/Trees;"));
 		}
 
 		[JniSignatureAttribute("Ljavax/tools/DiagnosticCollector;", "final")]
@@ -739,7 +739,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V", "private")]
-		public BaseTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public BaseTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -846,12 +846,12 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$DisableAccessibilityResolve;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "noAccessChecks", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DisableAccessibilityResolve", "(Lcom/sun/tools/javac/util/Context;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAccessible", "(Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Type;Lcom/sun/tools/javac/code/Symbol;Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isAccessible", "(Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Symbol$TypeSymbol;Z)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "preRegister", "(Lcom/sun/tools/javac/util/Context;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "runWithoutAccessChecks", "(Ljava/lang/Runnable;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "noAccessChecks", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAccessible", "(Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Type;Lcom/sun/tools/javac/code/Symbol;Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isAccessible", "(Lcom/sun/tools/javac/comp/Env;Lcom/sun/tools/javac/code/Symbol$TypeSymbol;Z)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "preRegister", "(Lcom/sun/tools/javac/util/Context;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "runWithoutAccessChecks", "(Ljava/lang/Runnable;)V"));
 		}
 
 		[JniSignatureAttribute("Z", "private")]
@@ -874,7 +874,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;)V", "public")]
-		public DisableAccessibilityResolve(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public DisableAccessibilityResolve(Dova.JDK.com.sun.tools.javac.util.Context arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -921,7 +921,7 @@ public partial class TaskFactory
 			{
 				ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$DisableAccessibilityResolve$Marker;");
 				ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Marker", "()V"));
+				ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 			}
 
 			[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -930,7 +930,7 @@ public partial class TaskFactory
 			}
 
 			[JniSignatureAttribute("()V", "private")]
-			public Marker() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+			public Marker() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 			{
 			}
 
@@ -956,14 +956,14 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$TaskListenerImpl;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "state", "Ljdk/jshell/JShell;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "var2OriginalType", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "variablesSet", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TaskListenerImpl", "(Lcom/sun/tools/javac/util/Context;Ljdk/jshell/JShell;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setVariableType", "(Ljdk/jshell/VarSnippet;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "context", "Lcom/sun/tools/javac/util/Context;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "state", "Ljdk/jshell/JShell;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "var2OriginalType", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "variablesSet", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;Ljdk/jshell/JShell;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "started", "(Lcom/sun/source/util/TaskEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finished", "(Lcom/sun/source/util/TaskEvent;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setVariableType", "(Ljdk/jshell/VarSnippet;)V"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/util/Context;", "private final")]
@@ -1028,7 +1028,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;Ljdk/jshell/JShell;)V", "public")]
-		public TaskListenerImpl(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.jdk.jshell.JShell arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public TaskListenerImpl(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.jdk.jshell.JShell arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1070,13 +1070,13 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$CompileTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "classObjs", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompileTask", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compile", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cuTrees", "()Ljava/lang/Iterable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "listenForNewClassFile", "(Ljdk/jshell/MemoryFileManager$OutputMemoryJavaFileObject;Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "classList", "(Ljdk/jshell/OuterWrap;)Ljava/util/List;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "classObjs", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "this$0", "Ljdk/jshell/TaskFactory;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compile", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cuTrees", "()Ljava/lang/Iterable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "listenForNewClassFile", "(Ljdk/jshell/MemoryFileManager$OutputMemoryJavaFileObject;Ljavax/tools/JavaFileManager$Location;Ljava/lang/String;Ljavax/tools/JavaFileObject$Kind;Ljavax/tools/FileObject;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "classList", "(Ljdk/jshell/OuterWrap;)Ljava/util/List;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/Map;", "private final")]
@@ -1113,7 +1113,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V", "")]
-		public CompileTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public CompileTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -1164,12 +1164,12 @@ public partial class TaskFactory
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/TaskFactory$AnalyzeTask;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cuts", "Ljava/lang/Iterable;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AnalyzeTask", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getElements", "()Ljavax/lang/model/util/Elements;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "cuTrees", "()Ljava/lang/Iterable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "analyze", "()Ljava/lang/Iterable;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getTypes", "()Ljavax/lang/model/util/Types;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cuts", "Ljava/lang/Iterable;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getElements", "()Ljavax/lang/model/util/Elements;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "cuTrees", "()Ljava/lang/Iterable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "analyze", "()Ljava/lang/Iterable;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getTypes", "()Ljavax/lang/model/util/Types;"));
 		}
 
 		[JniSignatureAttribute("Ljava/lang/Iterable;", "private final")]
@@ -1192,7 +1192,7 @@ public partial class TaskFactory
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/TaskFactory;Ljdk/jshell/TaskFactory$SourceHandler;Lcom/sun/tools/javac/api/JavacTaskImpl;Ljavax/tools/DiagnosticCollector;)V", "private")]
-		public AnalyzeTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public AnalyzeTask(Dova.JDK.jdk.jshell.TaskFactory arg0, Dova.JDK.jdk.jshell.TaskFactory.SourceHandler arg1, Dova.JDK.com.sun.tools.javac.api.JavacTaskImpl arg2, Dova.JDK.javax.tools.DiagnosticCollector arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,22 +31,22 @@ public partial class SnippetEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/SnippetEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "snippet", "Ljdk/jshell/Snippet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "previousStatus", "Ljdk/jshell/Snippet$Status;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "Ljdk/jshell/Snippet$Status;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "isSignatureChange", "Z"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "causeSnippet", "Ljdk/jshell/Snippet;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "value", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "exception", "Ljdk/jshell/JShellException;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SnippetEvent", "(Ljdk/jshell/Snippet;Ljdk/jshell/Snippet$Status;Ljdk/jshell/Snippet$Status;ZLjdk/jshell/Snippet;Ljava/lang/String;Ljdk/jshell/JShellException;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "value", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "status", "()Ljdk/jshell/Snippet$Status;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "exception", "()Ljdk/jshell/JShellException;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isSignatureChange", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "causeSnippet", "()Ljdk/jshell/Snippet;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "previousStatus", "()Ljdk/jshell/Snippet$Status;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "snippet", "()Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "snippet", "Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "previousStatus", "Ljdk/jshell/Snippet$Status;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "Ljdk/jshell/Snippet$Status;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "isSignatureChange", "Z"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "causeSnippet", "Ljdk/jshell/Snippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "value", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "exception", "Ljdk/jshell/JShellException;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/Snippet;Ljdk/jshell/Snippet$Status;Ljdk/jshell/Snippet$Status;ZLjdk/jshell/Snippet;Ljava/lang/String;Ljdk/jshell/JShellException;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "value", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "status", "()Ljdk/jshell/Snippet$Status;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "exception", "()Ljdk/jshell/JShellException;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isSignatureChange", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "causeSnippet", "()Ljdk/jshell/Snippet;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "previousStatus", "()Ljdk/jshell/Snippet$Status;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "snippet", "()Ljdk/jshell/Snippet;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/Snippet;", "private final")]
@@ -153,7 +153,7 @@ public partial class SnippetEvent
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/Snippet;Ljdk/jshell/Snippet$Status;Ljdk/jshell/Snippet$Status;ZLjdk/jshell/Snippet;Ljava/lang/String;Ljdk/jshell/JShellException;)V", "")]
-	public SnippetEvent(Dova.JDK.jdk.jshell.Snippet arg0, Dova.JDK.jdk.jshell.Snippet.Status arg1, Dova.JDK.jdk.jshell.Snippet.Status arg2, bool arg3, Dova.JDK.jdk.jshell.Snippet arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.jdk.jshell.JShellException arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public SnippetEvent(Dova.JDK.jdk.jshell.Snippet arg0, Dova.JDK.jdk.jshell.Snippet.Status arg1, Dova.JDK.jdk.jshell.Snippet.Status arg2, bool arg3, Dova.JDK.jdk.jshell.Snippet arg4, Dova.JDK.java.lang.String arg5, Dova.JDK.jdk.jshell.JShellException arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 

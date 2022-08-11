@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class CollatorUtilities
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/text/CollatorUtilities;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "legacyModeMap", "[Ljdk/internal/icu/text/NormalizerBase$Mode;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CollatorUtilities", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toLegacyMode", "(Ljdk/internal/icu/text/NormalizerBase$Mode;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "toNormalizerMode", "(I)Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "legacyModeMap", "[Ljdk/internal/icu/text/NormalizerBase$Mode;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toLegacyMode", "(Ljdk/internal/icu/text/NormalizerBase$Mode;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "toNormalizerMode", "(I)Ljdk/internal/icu/text/NormalizerBase$Mode;"));
 	}
 
 	[JniSignatureAttribute("[Ljdk/internal/icu/text/NormalizerBase$Mode;", "static")]
@@ -57,7 +57,7 @@ public partial class CollatorUtilities
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public CollatorUtilities() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public CollatorUtilities() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

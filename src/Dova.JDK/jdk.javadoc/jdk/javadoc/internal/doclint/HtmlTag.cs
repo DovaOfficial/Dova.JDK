@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,112 +31,112 @@ public partial class HtmlTag
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "A", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABBR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACRONYM", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ADDRESS", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARTICLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ASIDE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "B", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BDI", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BIG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCKQUOTE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BODY", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CAPTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CENTER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CITE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CODE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLGROUP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DFN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DIV", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EM", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FONT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOOTER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIGURE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FIGCAPTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAMESET", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H1", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H2", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H3", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H4", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H5", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "H6", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEAD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEADER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTML", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "I", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IFRAME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INS", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "KBD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LI", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINK", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MAIN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARK", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "META", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAV", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOFRAMES", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSCRIPT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "P", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "Q", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "S", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SAMP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCRIPT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SECTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SMALL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPAN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRIKE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRONG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STYLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUB", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TBODY", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEMPLATE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TFOOT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TH", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THEAD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TIME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TITLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "U", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WBR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VAR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "elemKind", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "blockType", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endKind", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "flags", "Ljava/util/Set;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "attrs", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "index", "Ljava/util/Map;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlTag", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlTag", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlTag", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "HtmlTag", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "attrs", "(Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "acceptsText", "()Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "accepts", "(Ljdk/javadoc/internal/doclint/HtmlTag;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttr", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getAttrKind", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "A", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABBR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACRONYM", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ADDRESS", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARTICLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ASIDE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "B", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BDI", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BIG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCKQUOTE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BODY", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CAPTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CENTER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CITE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CODE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLGROUP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DFN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DIV", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EM", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FONT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOOTER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIGURE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FIGCAPTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAMESET", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H1", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H2", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H3", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H4", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H5", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "H6", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEAD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEADER", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTML", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "I", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IFRAME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INS", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "KBD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LI", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINK", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MAIN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARK", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "META", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAV", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOFRAMES", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSCRIPT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "P", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "Q", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "S", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SAMP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCRIPT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SECTION", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SMALL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPAN", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRIKE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRONG", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STYLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUB", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUP", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TBODY", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEMPLATE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TFOOT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TH", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THEAD", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TIME", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TITLE", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TT", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "U", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UL", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WBR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VAR", "Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "elemKind", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "blockType", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endKind", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "flags", "Ljava/util/Set;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "attrs", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "index", "Ljava/util/Map;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "attrs", "(Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "acceptsText", "()Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "accepts", "(Ljdk/javadoc/internal/doclint/HtmlTag;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttr", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getAttrKind", "(Ljavax/lang/model/element/Name;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag;", "public static final")]
@@ -1433,22 +1433,22 @@ public partial class HtmlTag
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V", "private transient")]
-	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg3, Dova.JDK.java.util.Set arg4, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
+	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg3, Dova.JDK.java.util.Set arg4, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V", "private transient")]
-	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg3, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg3, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;Ljava/util/Set;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V", "private transient")]
-	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.ElemKind arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg3, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg4, Dova.JDK.java.util.Set arg5, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg6) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
+	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.ElemKind arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg3, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg4, Dova.JDK.java.util.Set arg5, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg6) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2, arg3, arg4, arg5, arg6))
 	{
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;ILjdk/javadoc/internal/doclint/HtmlTag$ElemKind;Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;[Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;)V", "private transient")]
-	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.ElemKind arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg3, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg4, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg5) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5))
+	public HtmlTag(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.ElemKind arg2, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.BlockType arg3, Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.EndKind arg4, JavaArray<Dova.JDK.jdk.javadoc.@internal.doclint.HtmlTag.AttrMap> arg5) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[3], arg0, arg1, arg2, arg3, arg4, arg5))
 	{
 	}
 
@@ -1541,15 +1541,15 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OK", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBSOLETE", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTML4", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "ElemKind", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OK", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OBSOLETE", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTML4", "Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$ElemKind;", "public static final")]
@@ -1628,7 +1628,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public ElemKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public ElemKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1673,16 +1673,16 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BLOCK", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INLINE", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIST_ITEM", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE_ITEM", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OTHER", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "BlockType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BLOCK", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INLINE", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIST_ITEM", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE_ITEM", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OTHER", "Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$BlockType;", "public static final")]
@@ -1775,7 +1775,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public BlockType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public BlockType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1820,14 +1820,14 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NONE", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPTIONAL", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REQUIRED", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EndKind", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NONE", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPTIONAL", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REQUIRED", "Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$EndKind;", "public static final")]
@@ -1892,7 +1892,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public EndKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public EndKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1936,8 +1936,8 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$AttrMap;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttrMap", "()V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("J", "private static final")]
@@ -1960,7 +1960,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("()V", "")]
-		public AttrMap() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public AttrMap() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -1984,91 +1984,91 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$Attr;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABBR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALIGN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_ACTIVEDESCENDANT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_CONTROLS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_DESCRIBEDBY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_EXPANDED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_LABEL", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_LABELLEDBY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_LEVEL", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_MULTISELECTABLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_OWNS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_POSINSET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_SETSIZE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_READONLY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_REQUIRED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_SELECTED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARIA_SORT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AXIS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BACKGROUND", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BGCOLOR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BORDER", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CELLSPACING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CELLPADDING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHAR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHAROFF", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHARSET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CITE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLEAR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLOR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLSPAN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMPACT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COORDS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CROSSORIGIN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DATETIME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FRAMEBORDER", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEADERS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HEIGHT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HREF", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ID", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LONGDESC", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARGINHEIGHT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MARGINWIDTH", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NAME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOSHADE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NOWRAP", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROFILE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REV", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "REVERSED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROWSPAN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RULES", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCHEME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCOPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCROLLING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHAPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SIZE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SRC", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "START", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STYLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUMMARY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TARGET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TYPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VALIGN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VALUE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VERSION", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VLINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WIDTH", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "index", "Ljava/util/Map;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Attr", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getText", "()Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABBR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALIGN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_ACTIVEDESCENDANT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_CONTROLS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_DESCRIBEDBY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_EXPANDED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_LABEL", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_LABELLEDBY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_LEVEL", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_MULTISELECTABLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_OWNS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_POSINSET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_SETSIZE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_READONLY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_REQUIRED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_SELECTED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARIA_SORT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AXIS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BACKGROUND", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BGCOLOR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BORDER", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CELLSPACING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CELLPADDING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHAR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHAROFF", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHARSET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CITE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLEAR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLOR", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLSPAN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMPACT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COORDS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CROSSORIGIN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DATETIME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FRAMEBORDER", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEADERS", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HEIGHT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HREF", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ID", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LONGDESC", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARGINHEIGHT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MARGINWIDTH", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NAME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOSHADE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NOWRAP", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROFILE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REV", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "REVERSED", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROWSPAN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RULES", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCHEME", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCOPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCROLLING", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHAPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SIZE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SRC", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "START", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STYLE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUMMARY", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TARGET", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TYPE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VALIGN", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VALUE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VERSION", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VLINK", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSPACE", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WIDTH", "Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "index", "Ljava/util/Map;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Attr;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getText", "()Ljava/lang/String;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$Attr;", "public static final")]
@@ -3197,7 +3197,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Attr(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Attr(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -3249,15 +3249,15 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OK", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INVALID", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OBSOLETE", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HTML4", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AttrKind", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OK", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INVALID", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OBSOLETE", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HTML4", "Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$AttrKind;", "public static final")]
@@ -3336,7 +3336,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public AttrKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AttrKind(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -3381,15 +3381,15 @@ public partial class HtmlTag
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/javadoc/internal/doclint/HtmlTag$Flag;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPTS_BLOCK", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCEPTS_INLINE", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXPECT_CONTENT", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NO_NEST", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Flag", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCEPTS_BLOCK", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCEPTS_INLINE", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXPECT_CONTENT", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NO_NEST", "Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/javadoc/internal/doclint/HtmlTag$Flag;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/javadoc/internal/doclint/HtmlTag$Flag;", "public static final")]
@@ -3468,7 +3468,7 @@ public partial class HtmlTag
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Flag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Flag(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

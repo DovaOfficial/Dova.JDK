@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,14 +32,14 @@ public partial class SunCompositeContext
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/java2d/SunCompositeContext;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "srcCM", "Ljava/awt/image/ColorModel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dstCM", "Ljava/awt/image/ColorModel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "composite", "Ljava/awt/Composite;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "comptype", "Lsun/java2d/loops/CompositeType;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SunCompositeContext", "(Ljava/awt/AlphaComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SunCompositeContext", "(Lsun/java2d/loops/XORComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "compose", "(Ljava/awt/image/Raster;Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "srcCM", "Ljava/awt/image/ColorModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dstCM", "Ljava/awt/image/ColorModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "composite", "Ljava/awt/Composite;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "comptype", "Lsun/java2d/loops/CompositeType;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/awt/AlphaComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lsun/java2d/loops/XORComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "compose", "(Ljava/awt/image/Raster;Ljava/awt/image/Raster;Ljava/awt/image/WritableRaster;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/image/ColorModel;", "")]
@@ -104,12 +104,12 @@ public partial class SunCompositeContext
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/AlphaComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V", "public")]
-	public SunCompositeContext(Dova.JDK.java.awt.AlphaComposite arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.ColorModel arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+	public SunCompositeContext(Dova.JDK.java.awt.AlphaComposite arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.ColorModel arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 	{
 	}
 
 	[JniSignatureAttribute("(Lsun/java2d/loops/XORComposite;Ljava/awt/image/ColorModel;Ljava/awt/image/ColorModel;)V", "public")]
-	public SunCompositeContext(Dova.JDK.sun.java2d.loops.XORComposite arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.ColorModel arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2))
+	public SunCompositeContext(Dova.JDK.sun.java2d.loops.XORComposite arg0, Dova.JDK.java.awt.image.ColorModel arg1, Dova.JDK.java.awt.image.ColorModel arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2))
 	{
 	}
 

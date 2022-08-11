@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,86 +30,86 @@ public partial class VarHandleGuards
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/invoke/VarHandleGuards;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "VarHandleGuards", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LL_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LLL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LLL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LF_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LFF_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LFF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LD_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LDD_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LDD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard__L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_L_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard__I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_I_V", "(Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_II_Z", "(Ljava/lang/invoke/VarHandle;IILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_II_I", "(Ljava/lang/invoke/VarHandle;IILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_I_I", "(Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard__J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_J_V", "(Ljava/lang/invoke/VarHandle;JLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_JJ_Z", "(Ljava/lang/invoke/VarHandle;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_JJ_J", "(Ljava/lang/invoke/VarHandle;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_J_J", "(Ljava/lang/invoke/VarHandle;JLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard__F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_F_V", "(Ljava/lang/invoke/VarHandle;FLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_FF_Z", "(Ljava/lang/invoke/VarHandle;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_FF_F", "(Ljava/lang/invoke/VarHandle;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_F_F", "(Ljava/lang/invoke/VarHandle;FLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard__D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_D_V", "(Ljava/lang/invoke/VarHandle;DLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_DD_Z", "(Ljava/lang/invoke/VarHandle;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_DD_D", "(Ljava/lang/invoke/VarHandle;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_D_D", "(Ljava/lang/invoke/VarHandle;DLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIL_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LILL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LILL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LII_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IIILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IIILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIF_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIFF_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIFF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LI_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LID_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIDD_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LIDD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LID_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJ_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJI_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JIILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JIILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJI_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "guard_LJJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LL_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LLL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LLL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LF_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LFF_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LFF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;FLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LD_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LDD_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LDD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;DLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard__L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_L_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard__I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_I_V", "(Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_II_Z", "(Ljava/lang/invoke/VarHandle;IILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_II_I", "(Ljava/lang/invoke/VarHandle;IILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_I_I", "(Ljava/lang/invoke/VarHandle;ILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard__J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_J_V", "(Ljava/lang/invoke/VarHandle;JLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_JJ_Z", "(Ljava/lang/invoke/VarHandle;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_JJ_J", "(Ljava/lang/invoke/VarHandle;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_J_J", "(Ljava/lang/invoke/VarHandle;JLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard__F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_F_V", "(Ljava/lang/invoke/VarHandle;FLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_FF_Z", "(Ljava/lang/invoke/VarHandle;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_FF_F", "(Ljava/lang/invoke/VarHandle;FFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_F_F", "(Ljava/lang/invoke/VarHandle;FLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard__D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_D_V", "(Ljava/lang/invoke/VarHandle;DLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_DD_Z", "(Ljava/lang/invoke/VarHandle;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_DD_D", "(Ljava/lang/invoke/VarHandle;DDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_D_D", "(Ljava/lang/invoke/VarHandle;DLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIL_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LILL_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LILL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIL_L", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/Object;Ljava/lang/invoke/VarHandle$AccessDescriptor;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LII_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IIILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IIILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIF_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIFF_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFFLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIFF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIF_F", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IFLjava/lang/invoke/VarHandle$AccessDescriptor;)F"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LI_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;ILjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LID_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIDD_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDDLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LIDD_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LID_D", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;IDLjava/lang/invoke/VarHandle$AccessDescriptor;)D"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJ_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JLjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJI_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JILjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJII_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JIILjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJII_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JIILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJI_I", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JILjava/lang/invoke/VarHandle$AccessDescriptor;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJJ_V", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJLjava/lang/invoke/VarHandle$AccessDescriptor;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJJJ_Z", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJJLjava/lang/invoke/VarHandle$AccessDescriptor;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "guard_LJJJ_J", "(Ljava/lang/invoke/VarHandle;Ljava/lang/Object;JJJLjava/lang/invoke/VarHandle$AccessDescriptor;)J"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -118,7 +118,7 @@ public partial class VarHandleGuards
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public VarHandleGuards() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public VarHandleGuards() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface TypeDescriptor
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/invoke/TypeDescriptor;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "descriptorString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "descriptorString", "()Ljava/lang/String;"));
 	}
 
 	[JniSignatureAttribute("()Ljava/lang/String;", "public abstract")]
@@ -53,15 +53,15 @@ public partial interface TypeDescriptor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/invoke/TypeDescriptor$OfMethod;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dropParameterTypes", "(II)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parameterCount", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parameterList", "()Ljava/util/List;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "changeParameterType", "(ILjava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "returnType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parameterType", "(I)Ljava/lang/invoke/TypeDescriptor$OfField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "insertParameterTypes", "(I[Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeReturnType", "(Ljava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dropParameterTypes", "(II)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parameterCount", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parameterList", "()Ljava/util/List;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parameterArray", "()[Ljava/lang/invoke/TypeDescriptor$OfField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "changeParameterType", "(ILjava/lang/invoke/TypeDescriptor$OfField;)Ljava/lang/invoke/TypeDescriptor$OfMethod;"));
 		}
 
 		[JniSignatureAttribute("()Ljava/lang/invoke/TypeDescriptor$OfField;", "public abstract")]
@@ -142,10 +142,10 @@ public partial interface TypeDescriptor
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljava/lang/invoke/TypeDescriptor$OfField;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isArray", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isPrimitive", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isArray", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isPrimitive", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "componentType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "arrayType", "()Ljava/lang/invoke/TypeDescriptor$OfField;"));
 		}
 
 		[JniSignatureAttribute("()Z", "public abstract")]

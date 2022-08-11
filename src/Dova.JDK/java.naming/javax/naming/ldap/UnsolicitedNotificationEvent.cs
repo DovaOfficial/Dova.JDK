@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class UnsolicitedNotificationEvent
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/naming/ldap/UnsolicitedNotificationEvent;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "notice", "Ljavax/naming/ldap/UnsolicitedNotification;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "serialVersionUID", "J"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnsolicitedNotificationEvent", "(Ljava/lang/Object;Ljavax/naming/ldap/UnsolicitedNotification;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispatch", "(Ljavax/naming/ldap/UnsolicitedNotificationListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getNotification", "()Ljavax/naming/ldap/UnsolicitedNotification;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "notice", "Ljavax/naming/ldap/UnsolicitedNotification;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "serialVersionUID", "J"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/Object;Ljavax/naming/ldap/UnsolicitedNotification;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispatch", "(Ljavax/naming/ldap/UnsolicitedNotificationListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getNotification", "()Ljavax/naming/ldap/UnsolicitedNotification;"));
 	}
 
 	[JniSignatureAttribute("Ljavax/naming/ldap/UnsolicitedNotification;", "private")]
@@ -72,7 +72,7 @@ public partial class UnsolicitedNotificationEvent
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/Object;Ljavax/naming/ldap/UnsolicitedNotification;)V", "public")]
-	public UnsolicitedNotificationEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.naming.ldap.UnsolicitedNotification arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public UnsolicitedNotificationEvent(Dova.JDK.java.lang.Object arg0, Dova.JDK.javax.naming.ldap.UnsolicitedNotification arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

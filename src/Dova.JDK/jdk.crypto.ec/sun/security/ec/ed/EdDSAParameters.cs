@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,40 +31,40 @@ public partial class EdDSAParameters
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "namedParams", "Lsun/security/ec/ParametersMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "oid", "Lsun/security/util/ObjectIdentifier;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "field", "Lsun/security/util/math/IntegerFieldModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "orderField", "Lsun/security/util/math/IntegerFieldModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "d", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "edOperations", "Lsun/security/ec/ed/EdECOperations;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "digester", "Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "keyLength", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "bits", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "logCofactor", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "dom", "Ljava/util/function/Function;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "prefixStr25519", "Ljava/lang/String;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "prefixStr448", "Ljava/lang/String;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "EdDSAParameters", "(Ljava/lang/String;Lsun/security/util/ObjectIdentifier;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/ec/ed/EdECOperations;Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;Ljava/util/function/Function;III)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getName", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Ljava/util/function/Function;Lsun/security/x509/AlgorithmId;)Lsun/security/ec/ed/EdDSAParameters;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "get", "(Ljava/util/function/Function;Ljava/security/spec/AlgorithmParameterSpec;)Lsun/security/ec/ed/EdDSAParameters;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "digest", "([[B)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dom", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getKeyLength", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getEdOperations", "()Lsun/security/ec/ed/EdECOperations;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "domImpl", "(Ljava/lang/String;Ljava/security/spec/EdDSAParameterSpec;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getD", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dom2", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "dom4", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getBySize", "(Ljava/util/function/Function;I)Lsun/security/ec/ed/EdDSAParameters;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOrderField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getOid", "()Lsun/security/util/ObjectIdentifier;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getBits", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLogCofactor", "()I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "namedParams", "Lsun/security/ec/ParametersMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "oid", "Lsun/security/util/ObjectIdentifier;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "field", "Lsun/security/util/math/IntegerFieldModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "orderField", "Lsun/security/util/math/IntegerFieldModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "d", "Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "edOperations", "Lsun/security/ec/ed/EdECOperations;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "digester", "Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "keyLength", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "bits", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "logCofactor", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "dom", "Ljava/util/function/Function;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "prefixStr25519", "Ljava/lang/String;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "prefixStr448", "Ljava/lang/String;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Lsun/security/util/ObjectIdentifier;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/ec/ed/EdECOperations;Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;Ljava/util/function/Function;III)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getName", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Ljava/util/function/Function;Lsun/security/x509/AlgorithmId;)Lsun/security/ec/ed/EdDSAParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "get", "(Ljava/util/function/Function;Ljava/security/spec/AlgorithmParameterSpec;)Lsun/security/ec/ed/EdDSAParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "digest", "([[B)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dom", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getKeyLength", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getEdOperations", "()Lsun/security/ec/ed/EdECOperations;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "domImpl", "(Ljava/lang/String;Ljava/security/spec/EdDSAParameterSpec;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getD", "()Lsun/security/util/math/ImmutableIntegerModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dom2", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "dom4", "(Ljava/security/spec/EdDSAParameterSpec;)[B"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getBySize", "(Ljava/util/function/Function;I)Lsun/security/ec/ed/EdDSAParameters;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOrderField", "()Lsun/security/util/math/IntegerFieldModuloP;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getOid", "()Lsun/security/util/ObjectIdentifier;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getBits", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLogCofactor", "()I"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/ec/ParametersMap;", "static")]
@@ -269,7 +269,7 @@ public partial class EdDSAParameters
 	}
 
 	[JniSignatureAttribute("(Ljava/lang/String;Lsun/security/util/ObjectIdentifier;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/IntegerFieldModuloP;Lsun/security/util/math/ImmutableIntegerModuloP;Lsun/security/ec/ed/EdECOperations;Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;Ljava/util/function/Function;III)V", "public")]
-	public EdDSAParameters(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.ObjectIdentifier arg1, Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg2, Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg3, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg4, Dova.JDK.sun.security.ec.ed.EdECOperations arg5, Dova.JDK.sun.security.ec.ed.EdDSAParameters.DigesterFactory arg6, Dova.JDK.java.util.function.Function arg7, int arg8, int arg9, int arg10) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
+	public EdDSAParameters(Dova.JDK.java.lang.String arg0, Dova.JDK.sun.security.util.ObjectIdentifier arg1, Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg2, Dova.JDK.sun.security.util.math.IntegerFieldModuloP arg3, Dova.JDK.sun.security.util.math.ImmutableIntegerModuloP arg4, Dova.JDK.sun.security.ec.ed.EdECOperations arg5, Dova.JDK.sun.security.ec.ed.EdDSAParameters.DigesterFactory arg6, Dova.JDK.java.util.function.Function arg7, int arg8, int arg9, int arg10) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10))
 	{
 	}
 
@@ -423,9 +423,9 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$DigesterFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "digest", "([[B)[B"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "digest", "([[B)[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
 		}
 
 		[JniSignatureAttribute("([[B)[B", "public transient")]
@@ -463,9 +463,9 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$Digester;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "(B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "([BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "digest", "()[B"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "(B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "([BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "digest", "()[B"));
 		}
 
 		[JniSignatureAttribute("(B)V", "public abstract")]
@@ -503,8 +503,8 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$SHA512DigesterFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHA512DigesterFactory", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -513,7 +513,7 @@ public partial class EdDSAParameters
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHA512DigesterFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHA512DigesterFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -544,9 +544,9 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$SHAKE256DigesterFactory;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHAKE256DigesterFactory", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "()Lsun/security/ec/ed/EdDSAParameters$Digester;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDigester", "(I)Lsun/security/ec/ed/EdDSAParameters$Digester;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -555,7 +555,7 @@ public partial class EdDSAParameters
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SHAKE256DigesterFactory() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SHAKE256DigesterFactory() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -594,11 +594,11 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$SHAKE256Digester;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "md", "Lsun/security/provider/SHAKE256;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SHAKE256Digester", "(I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "([BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "(B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "digest", "()[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "md", "Lsun/security/provider/SHAKE256;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "([BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "(B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "digest", "()[B"));
 		}
 
 		[JniSignatureAttribute("Lsun/security/provider/SHAKE256;", "")]
@@ -621,7 +621,7 @@ public partial class EdDSAParameters
 		}
 
 		[JniSignatureAttribute("(I)V", "")]
-		public SHAKE256Digester(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public SHAKE256Digester(int arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -665,11 +665,11 @@ public partial class EdDSAParameters
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/ec/ed/EdDSAParameters$MessageDigester;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "md", "Ljava/security/MessageDigest;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MessageDigester", "(Ljava/security/MessageDigest;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "([BII)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "update", "(B)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "digest", "()[B"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "md", "Ljava/security/MessageDigest;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/security/MessageDigest;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "([BII)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "update", "(B)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "digest", "()[B"));
 		}
 
 		[JniSignatureAttribute("Ljava/security/MessageDigest;", "private final")]
@@ -692,7 +692,7 @@ public partial class EdDSAParameters
 		}
 
 		[JniSignatureAttribute("(Ljava/security/MessageDigest;)V", "private")]
-		public MessageDigester(Dova.JDK.java.security.MessageDigest arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public MessageDigester(Dova.JDK.java.security.MessageDigest arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

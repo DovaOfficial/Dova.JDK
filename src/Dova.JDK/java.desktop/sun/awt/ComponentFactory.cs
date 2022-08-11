@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,34 +29,34 @@ public partial interface ComponentFactory
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/ComponentFactory;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLabel", "(Ljava/awt/Label;)Ljava/awt/peer/LabelPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createFrame", "(Ljava/awt/Frame;)Ljava/awt/peer/FramePeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createWindow", "(Ljava/awt/Window;)Ljava/awt/peer/WindowPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDialog", "(Ljava/awt/Dialog;)Ljava/awt/peer/DialogPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDesktopPeer", "(Ljava/awt/Desktop;)Ljava/awt/peer/DesktopPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTaskbarPeer", "(Ljava/awt/Taskbar;)Ljava/awt/peer/TaskbarPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createButton", "(Ljava/awt/Button;)Ljava/awt/peer/ButtonPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTextField", "(Ljava/awt/TextField;)Ljava/awt/peer/TextFieldPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createList", "(Ljava/awt/List;)Ljava/awt/peer/ListPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCheckbox", "(Ljava/awt/Checkbox;)Ljava/awt/peer/CheckboxPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createScrollbar", "(Ljava/awt/Scrollbar;)Ljava/awt/peer/ScrollbarPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createScrollPane", "(Ljava/awt/ScrollPane;)Ljava/awt/peer/ScrollPanePeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createTextArea", "(Ljava/awt/TextArea;)Ljava/awt/peer/TextAreaPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createChoice", "(Ljava/awt/Choice;)Ljava/awt/peer/ChoicePeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCanvas", "(Ljava/awt/Canvas;)Ljava/awt/peer/CanvasPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPanel", "(Ljava/awt/Panel;)Ljava/awt/peer/PanelPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMenuBar", "(Ljava/awt/MenuBar;)Ljava/awt/peer/MenuBarPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMenu", "(Ljava/awt/Menu;)Ljava/awt/peer/MenuPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createPopupMenu", "(Ljava/awt/PopupMenu;)Ljava/awt/peer/PopupMenuPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMenuItem", "(Ljava/awt/MenuItem;)Ljava/awt/peer/MenuItemPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createFileDialog", "(Ljava/awt/FileDialog;)Ljava/awt/peer/FileDialogPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createCheckboxMenuItem", "(Ljava/awt/CheckboxMenuItem;)Ljava/awt/peer/CheckboxMenuItemPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createDragSourceContextPeer", "(Ljava/awt/dnd/DragGestureEvent;)Ljava/awt/dnd/peer/DragSourceContextPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getFontPeer", "(Ljava/lang/String;I)Ljava/awt/peer/FontPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createRobot", "(Ljava/awt/GraphicsDevice;)Ljava/awt/peer/RobotPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getDataTransferer", "()Lsun/awt/datatransfer/DataTransferer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMouseInfoPeer", "()Ljava/awt/peer/MouseInfoPeer;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createComponent", "(Ljava/awt/Component;)Ljava/awt/peer/LightweightPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLabel", "(Ljava/awt/Label;)Ljava/awt/peer/LabelPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createFrame", "(Ljava/awt/Frame;)Ljava/awt/peer/FramePeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createWindow", "(Ljava/awt/Window;)Ljava/awt/peer/WindowPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDialog", "(Ljava/awt/Dialog;)Ljava/awt/peer/DialogPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDesktopPeer", "(Ljava/awt/Desktop;)Ljava/awt/peer/DesktopPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTaskbarPeer", "(Ljava/awt/Taskbar;)Ljava/awt/peer/TaskbarPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createButton", "(Ljava/awt/Button;)Ljava/awt/peer/ButtonPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTextField", "(Ljava/awt/TextField;)Ljava/awt/peer/TextFieldPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createList", "(Ljava/awt/List;)Ljava/awt/peer/ListPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCheckbox", "(Ljava/awt/Checkbox;)Ljava/awt/peer/CheckboxPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createScrollbar", "(Ljava/awt/Scrollbar;)Ljava/awt/peer/ScrollbarPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createScrollPane", "(Ljava/awt/ScrollPane;)Ljava/awt/peer/ScrollPanePeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createTextArea", "(Ljava/awt/TextArea;)Ljava/awt/peer/TextAreaPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createChoice", "(Ljava/awt/Choice;)Ljava/awt/peer/ChoicePeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCanvas", "(Ljava/awt/Canvas;)Ljava/awt/peer/CanvasPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPanel", "(Ljava/awt/Panel;)Ljava/awt/peer/PanelPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMenuBar", "(Ljava/awt/MenuBar;)Ljava/awt/peer/MenuBarPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMenu", "(Ljava/awt/Menu;)Ljava/awt/peer/MenuPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createPopupMenu", "(Ljava/awt/PopupMenu;)Ljava/awt/peer/PopupMenuPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMenuItem", "(Ljava/awt/MenuItem;)Ljava/awt/peer/MenuItemPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createFileDialog", "(Ljava/awt/FileDialog;)Ljava/awt/peer/FileDialogPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createCheckboxMenuItem", "(Ljava/awt/CheckboxMenuItem;)Ljava/awt/peer/CheckboxMenuItemPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createDragSourceContextPeer", "(Ljava/awt/dnd/DragGestureEvent;)Ljava/awt/dnd/peer/DragSourceContextPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getFontPeer", "(Ljava/lang/String;I)Ljava/awt/peer/FontPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createRobot", "(Ljava/awt/GraphicsDevice;)Ljava/awt/peer/RobotPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getDataTransferer", "()Lsun/awt/datatransfer/DataTransferer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMouseInfoPeer", "()Ljava/awt/peer/MouseInfoPeer;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createComponent", "(Ljava/awt/Component;)Ljava/awt/peer/LightweightPeer;"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/Label;)Ljava/awt/peer/LabelPeer;", "public")]

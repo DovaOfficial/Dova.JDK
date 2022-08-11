@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class CheckedInputStream
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/zip/CheckedInputStream;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cksum", "Ljava/util/zip/Checksum;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CheckedInputStream", "(Ljava/io/InputStream;Ljava/util/zip/Checksum;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "([BII)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "read", "()I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "skip", "(J)J"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChecksum", "()Ljava/util/zip/Checksum;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cksum", "Ljava/util/zip/Checksum;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/InputStream;Ljava/util/zip/Checksum;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "([BII)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "read", "()I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "skip", "(J)J"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChecksum", "()Ljava/util/zip/Checksum;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/zip/Checksum;", "private")]
@@ -59,7 +59,7 @@ public partial class CheckedInputStream
 	}
 
 	[JniSignatureAttribute("(Ljava/io/InputStream;Ljava/util/zip/Checksum;)V", "public")]
-	public CheckedInputStream(Dova.JDK.java.io.InputStream arg0, Dova.JDK.java.util.zip.Checksum arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public CheckedInputStream(Dova.JDK.java.io.InputStream arg0, Dova.JDK.java.util.zip.Checksum arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,11 +31,11 @@ public partial class CheckedOutputStream
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/util/zip/CheckedOutputStream;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cksum", "Ljava/util/zip/Checksum;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CheckedOutputStream", "(Ljava/io/OutputStream;Ljava/util/zip/Checksum;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "([BII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "write", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getChecksum", "()Ljava/util/zip/Checksum;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cksum", "Ljava/util/zip/Checksum;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/OutputStream;Ljava/util/zip/Checksum;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "([BII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "write", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getChecksum", "()Ljava/util/zip/Checksum;"));
 	}
 
 	[JniSignatureAttribute("Ljava/util/zip/Checksum;", "private")]
@@ -58,7 +58,7 @@ public partial class CheckedOutputStream
 	}
 
 	[JniSignatureAttribute("(Ljava/io/OutputStream;Ljava/util/zip/Checksum;)V", "public")]
-	public CheckedOutputStream(Dova.JDK.java.io.OutputStream arg0, Dova.JDK.java.util.zip.Checksum arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public CheckedOutputStream(Dova.JDK.java.io.OutputStream arg0, Dova.JDK.java.util.zip.Checksum arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,63 +31,63 @@ public partial class GTKEngine
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java/swing/plaf/gtk/GTKEngine;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CACHE_SIZE", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "regionToWidgetTypeMap", "Ljava/util/HashMap;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cache", "Lsun/swing/ImageCache;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "x0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "y0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "h0", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "graphics", "Ljava/awt/Graphics;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "cacheArgs", "[Ljava/lang/Object;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLOR_MODELS", "[Ljava/awt/image/ColorModel;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BAND_OFFSETS", "[[I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "GTKEngine", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBackground", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/awt/Color;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSetting", "(Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintFocus", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getWidgetType", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_arrow", "(IIILjava/lang/String;IIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getTextDirection", "(Ljavax/swing/plaf/synth/SynthContext;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_box", "(IIILjava/lang/String;IIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_box_gap", "(IIILjava/lang/String;IIIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_check", "(IILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_expander", "(IILjava/lang/String;IIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_extension", "(IIILjava/lang/String;IIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_flat_box", "(IIILjava/lang/String;IIIIZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_focus", "(IILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_handle", "(IIILjava/lang/String;IIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_hline", "(IILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_option", "(IILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_shadow", "(IIILjava/lang/String;IIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_slider", "(IIILjava/lang/String;IIIIIZ)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_vline", "(IILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_paint_background", "(IIIIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nativeStartPainting", "(II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishPainting", "()Ljava/awt/image/BufferedImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "finishPainting", "(Z)Ljava/awt/image/BufferedImage;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nativeFinishPainting", "([III)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_switch_theme", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "native_get_gtk_setting", "(I)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nativeSetRangeValue", "(IDDDD)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintArrow", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Lcom/sun/java/swing/plaf/gtk/GTKConstants$ArrowType;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBox", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintBoxGap", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$PositionType;II)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintCheck", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintExpander", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ExpanderStyle;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintExtension", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$PositionType;I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintFlatBox", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILjavax/swing/plaf/synth/ColorType;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintHandle", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$Orientation;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintHline", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintOption", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintShadow", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintSlider", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$Orientation;Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintVline", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "paintCachedImage", "(Ljava/awt/Graphics;IIII[Ljava/lang/Object;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "startPainting", "(Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "themeChanged", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setRangeValue", "(Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;DDDD)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CACHE_SIZE", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "regionToWidgetTypeMap", "Ljava/util/HashMap;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cache", "Lsun/swing/ImageCache;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "x0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "y0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "w0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "h0", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "graphics", "Ljava/awt/Graphics;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "cacheArgs", "[Ljava/lang/Object;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLOR_MODELS", "[Ljava/awt/image/ColorModel;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BAND_OFFSETS", "[[I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBackground", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/awt/Color;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSetting", "(Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintFocus", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getWidgetType", "(Ljavax/swing/JComponent;Ljavax/swing/plaf/synth/Region;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_arrow", "(IIILjava/lang/String;IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getTextDirection", "(Ljavax/swing/plaf/synth/SynthContext;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_box", "(IIILjava/lang/String;IIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_box_gap", "(IIILjava/lang/String;IIIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_check", "(IILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_expander", "(IILjava/lang/String;IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_extension", "(IIILjava/lang/String;IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_flat_box", "(IIILjava/lang/String;IIIIZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_focus", "(IILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_handle", "(IIILjava/lang/String;IIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_hline", "(IILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_option", "(IILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_shadow", "(IIILjava/lang/String;IIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_slider", "(IIILjava/lang/String;IIIIIZ)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_vline", "(IILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_paint_background", "(IIIIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nativeStartPainting", "(II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishPainting", "()Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "finishPainting", "(Z)Ljava/awt/image/BufferedImage;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nativeFinishPainting", "([III)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_switch_theme", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "native_get_gtk_setting", "(I)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nativeSetRangeValue", "(IDDDD)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintArrow", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Lcom/sun/java/swing/plaf/gtk/GTKConstants$ArrowType;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBox", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintBoxGap", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$PositionType;II)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintCheck", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintExpander", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ExpanderStyle;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintExtension", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$PositionType;I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintFlatBox", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILjavax/swing/plaf/synth/ColorType;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintHandle", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$Orientation;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintHline", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintOption", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintShadow", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintSlider", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILcom/sun/java/swing/plaf/gtk/GTKConstants$ShadowType;Ljava/lang/String;IIIILcom/sun/java/swing/plaf/gtk/GTKConstants$Orientation;Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintVline", "(Ljava/awt/Graphics;Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;ILjava/lang/String;IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "paintCachedImage", "(Ljava/awt/Graphics;IIII[Ljava/lang/Object;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "startPainting", "(Ljava/awt/Graphics;IIII[Ljava/lang/Object;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "themeChanged", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setRangeValue", "(Ljavax/swing/plaf/synth/SynthContext;Ljavax/swing/plaf/synth/Region;DDDD)V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/GTKEngine;", "static final")]
@@ -264,7 +264,7 @@ public partial class GTKEngine
 	}
 
 	[JniSignatureAttribute("()V", "")]
-	public GTKEngine() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public GTKEngine() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -559,85 +559,85 @@ public partial class GTKEngine
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHECK_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHECK_BOX_MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLOR_CHOOSER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMBO_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMBO_BOX_ARROW_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMBO_BOX_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_ICON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DESKTOP_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EDITOR_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FORMATTED_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HANDLE_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HPROGRESS_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSCROLL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSCROLL_BAR_BUTTON_LEFT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSCROLL_BAR_BUTTON_RIGHT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSCROLL_BAR_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSCROLL_BAR_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSLIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSLIDER_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSLIDER_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "HSPLIT_PANE_DIVIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERNAL_FRAME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERNAL_FRAME_TITLE_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMAGE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LABEL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LIST", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MENU_ITEM_ACCELERATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "OPTION_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PANEL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PASSWORD_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POPUP_MENU", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "POPUP_MENU_SEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RADIO_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RADIO_BUTTON_MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ROOT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SCROLL_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPINNER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPINNER_ARROW_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPINNER_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SPLIT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABBED_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABBED_PANE_TAB_AREA", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABBED_PANE_CONTENT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABBED_PANE_TAB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TABLE_HEADER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_AREA", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TEXT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TITLED_BORDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOGGLE_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_BAR_DRAG_WINDOW", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_BAR_SEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOL_TIP", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TREE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TREE_CELL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VIEWPORT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VPROGRESS_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSCROLL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSCROLL_BAR_BUTTON_UP", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSCROLL_BAR_BUTTON_DOWN", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSCROLL_BAR_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSCROLL_BAR_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSLIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSLIDER_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSLIDER_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VSPLIT_PANE_DIVIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "WidgetType", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHECK_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHECK_BOX_MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLOR_CHOOSER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMBO_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMBO_BOX_ARROW_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMBO_BOX_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_ICON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DESKTOP_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EDITOR_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FORMATTED_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HANDLE_BOX", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HPROGRESS_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSCROLL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSCROLL_BAR_BUTTON_LEFT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSCROLL_BAR_BUTTON_RIGHT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSCROLL_BAR_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSCROLL_BAR_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSLIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSLIDER_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSLIDER_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "HSPLIT_PANE_DIVIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERNAL_FRAME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERNAL_FRAME_TITLE_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMAGE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LABEL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LIST", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MENU_ITEM_ACCELERATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "OPTION_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PANEL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PASSWORD_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POPUP_MENU", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "POPUP_MENU_SEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RADIO_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RADIO_BUTTON_MENU_ITEM", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ROOT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SCROLL_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPINNER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPINNER_ARROW_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPINNER_TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SPLIT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABBED_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABBED_PANE_TAB_AREA", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABBED_PANE_CONTENT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABBED_PANE_TAB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TABLE_HEADER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_AREA", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_FIELD", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TEXT_PANE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TITLED_BORDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOGGLE_BUTTON", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_BAR_DRAG_WINDOW", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_BAR_SEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOL_TIP", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TREE", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TREE_CELL", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VIEWPORT", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VPROGRESS_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSCROLL_BAR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSCROLL_BAR_BUTTON_UP", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSCROLL_BAR_BUTTON_DOWN", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSCROLL_BAR_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSCROLL_BAR_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSEPARATOR", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSLIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSLIDER_TRACK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSLIDER_THUMB", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VSPLIT_PANE_DIVIDER", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/GTKEngine$WidgetType;", "public static final")]
@@ -1696,7 +1696,7 @@ public partial class GTKEngine
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public WidgetType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public WidgetType(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1741,15 +1741,15 @@ public partial class GTKEngine
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTK_FONT_NAME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTK_ICON_SIZES", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTK_CURSOR_BLINK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTK_CURSOR_BLINK_TIME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Settings", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTK_FONT_NAME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTK_ICON_SIZES", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTK_CURSOR_BLINK", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTK_CURSOR_BLINK_TIME", "Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/java/swing/plaf/gtk/GTKEngine$Settings;", "public static final")]
@@ -1828,7 +1828,7 @@ public partial class GTKEngine
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public Settings(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public Settings(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -1872,8 +1872,8 @@ public partial class GTKEngine
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/java/swing/plaf/gtk/GTKEngine$CustomRegion;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TITLED_BORDER", "Ljavax/swing/plaf/synth/Region;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CustomRegion", "(Ljava/lang/String;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TITLED_BORDER", "Ljavax/swing/plaf/synth/Region;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("Ljavax/swing/plaf/synth/Region;", "static")]
@@ -1896,7 +1896,7 @@ public partial class GTKEngine
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "private")]
-		public CustomRegion(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public CustomRegion(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

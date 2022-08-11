@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,15 +31,15 @@ public partial class LazyLoggers
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LOGGERFINDER_PERMISSION", "Ljava/lang/RuntimePermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "provider", "Ljava/lang/System$LoggerFinder;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "loggerSupplier", "Ljava/util/function/BiFunction;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "factories", "Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggers", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLogger", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLazyLogger", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "accessLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "getLoggerFromFinder", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LOGGERFINDER_PERMISSION", "Ljava/lang/RuntimePermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "provider", "Ljava/lang/System$LoggerFinder;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "loggerSupplier", "Ljava/util/function/BiFunction;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "factories", "Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLogger", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLazyLogger", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "accessLoggerFinder", "()Ljava/lang/System$LoggerFinder;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "getLoggerFromFinder", "(Ljava/lang/String;Ljava/lang/Module;)Ljava/lang/System$Logger;"));
 	}
 
 	[JniSignatureAttribute("Ljava/lang/RuntimePermission;", "static final")]
@@ -104,7 +104,7 @@ public partial class LazyLoggers
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public LazyLoggers() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LazyLoggers() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -153,8 +153,8 @@ public partial class LazyLoggers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers$JdkLazyLogger;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdkLazyLogger", "(Ljava/lang/String;Ljava/lang/Module;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "JdkLazyLogger", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljava/lang/Module;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -163,12 +163,12 @@ public partial class LazyLoggers
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljava/lang/Module;)V", "")]
-		public JdkLazyLogger(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Module arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public JdkLazyLogger(Dova.JDK.java.lang.String arg0, Dova.JDK.java.lang.Module arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V", "private")]
-		public JdkLazyLogger(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public JdkLazyLogger(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -191,9 +191,9 @@ public partial class LazyLoggers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loggerSupplier", "Ljava/util/function/BiFunction;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerFactories", "(Ljava/util/function/BiFunction;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerFactories", "(Ljava/util/function/BiFunction;Ljava/lang/Void;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loggerSupplier", "Ljava/util/function/BiFunction;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/BiFunction;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/BiFunction;Ljava/lang/Void;)V"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/BiFunction;", "final")]
@@ -216,12 +216,12 @@ public partial class LazyLoggers
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/BiFunction;)V", "public")]
-		public LazyLoggerFactories(Dova.JDK.java.util.function.BiFunction arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LazyLoggerFactories(Dova.JDK.java.util.function.BiFunction arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/BiFunction;Ljava/lang/Void;)V", "private")]
-		public LazyLoggerFactories(Dova.JDK.java.util.function.BiFunction arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public LazyLoggerFactories(Dova.JDK.java.util.function.BiFunction arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -245,11 +245,11 @@ public partial class LazyLoggers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers$LazyLoggerWrapper;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "loggerAccessor", "Ljdk/internal/logger/LazyLoggers$LoggerAccessor;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerWrapper", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerWrapper", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapped", "()Ljava/lang/System$Logger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "platformProxy", "()Lsun/util/logging/PlatformLogger$Bridge;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "loggerAccessor", "Ljdk/internal/logger/LazyLoggers$LoggerAccessor;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapped", "()Ljava/lang/System$Logger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "platformProxy", "()Lsun/util/logging/PlatformLogger$Bridge;"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/logger/LazyLoggers$LoggerAccessor;", "final")]
@@ -272,12 +272,12 @@ public partial class LazyLoggers
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;)V", "public")]
-		public LazyLoggerWrapper(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public LazyLoggerWrapper(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;Ljava/lang/Void;)V", "private")]
-		public LazyLoggerWrapper(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public LazyLoggerWrapper(Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerAccessor arg0, Dova.JDK.java.lang.Void arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
@@ -316,23 +316,23 @@ public partial class LazyLoggers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "factories", "Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "moduleRef", "Ljava/lang/ref/WeakReference;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "name", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "w", "Ljava/lang/System$Logger;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "p", "Lsun/util/logging/PlatformLogger$Bridge;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$assertionsDisabled", "Z"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerAccessor", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LazyLoggerAccessor", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;Ljava/lang/Void;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "release", "(Ljdk/internal/logger/SimpleConsoleLogger;Z)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "platform", "()Lsun/util/logging/PlatformLogger$Bridge;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLoggerName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConcretePlatformLogger", "(Ljdk/internal/logger/BootstrapLogger;)Lsun/util/logging/PlatformLogger$Bridge;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getConcreteLogger", "(Ljdk/internal/logger/BootstrapLogger;)Ljava/lang/System$Logger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapped", "()Ljava/lang/System$Logger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createLogger", "()Ljava/lang/System$Logger;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "makeAccessor", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;)Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setWrappedIfNotSet", "(Ljava/lang/System$Logger;)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "factories", "Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "moduleRef", "Ljava/lang/ref/WeakReference;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "name", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "w", "Ljava/lang/System$Logger;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "p", "Lsun/util/logging/PlatformLogger$Bridge;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$assertionsDisabled", "Z"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;Ljava/lang/Void;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "release", "(Ljdk/internal/logger/SimpleConsoleLogger;Z)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "platform", "()Lsun/util/logging/PlatformLogger$Bridge;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLoggerName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConcretePlatformLogger", "(Ljdk/internal/logger/BootstrapLogger;)Lsun/util/logging/PlatformLogger$Bridge;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getConcreteLogger", "(Ljdk/internal/logger/BootstrapLogger;)Ljava/lang/System$Logger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapped", "()Ljava/lang/System$Logger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createLogger", "()Ljava/lang/System$Logger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "makeAccessor", "(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;)Ljdk/internal/logger/LazyLoggers$LazyLoggerAccessor;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setWrappedIfNotSet", "(Ljava/lang/System$Logger;)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;", "final")]
@@ -425,12 +425,12 @@ public partial class LazyLoggers
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;)V", "private")]
-		public LazyLoggerAccessor(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerFactories arg1, Dova.JDK.java.lang.Module arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public LazyLoggerAccessor(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerFactories arg1, Dova.JDK.java.lang.Module arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;Ljdk/internal/logger/LazyLoggers$LazyLoggerFactories;Ljava/lang/Module;Ljava/lang/Void;)V", "private")]
-		public LazyLoggerAccessor(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerFactories arg1, Dova.JDK.java.lang.Module arg2, Dova.JDK.java.lang.Void arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
+		public LazyLoggerAccessor(Dova.JDK.java.lang.String arg0, Dova.JDK.jdk.@internal.logger.LazyLoggers.LazyLoggerFactories arg1, Dova.JDK.java.lang.Module arg2, Dova.JDK.java.lang.Void arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3))
 		{
 		}
 
@@ -513,9 +513,9 @@ public partial class LazyLoggers
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/logger/LazyLoggers$LoggerAccessor;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "platform", "()Lsun/util/logging/PlatformLogger$Bridge;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLoggerName", "()Ljava/lang/String;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "wrapped", "()Ljava/lang/System$Logger;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "platform", "()Lsun/util/logging/PlatformLogger$Bridge;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLoggerName", "()Ljava/lang/String;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "wrapped", "()Ljava/lang/System$Logger;"));
 		}
 
 		[JniSignatureAttribute("()Lsun/util/logging/PlatformLogger$Bridge;", "public abstract")]

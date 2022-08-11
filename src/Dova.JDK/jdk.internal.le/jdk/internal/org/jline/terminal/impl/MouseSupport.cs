@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:22)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,12 +30,12 @@ public partial class MouseSupport
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/org/jline/terminal/impl/MouseSupport;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "MouseSupport", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "hasMouseSupport", "(Ljdk/internal/org/jline/terminal/Terminal;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "trackMouse", "(Ljdk/internal/org/jline/terminal/Terminal;Ljdk/internal/org/jline/terminal/Terminal$MouseTracking;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readExt", "(Ljdk/internal/org/jline/terminal/Terminal;)I"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readMouse", "(Ljava/util/function/IntSupplier;Ljdk/internal/org/jline/terminal/MouseEvent;)Ljdk/internal/org/jline/terminal/MouseEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "readMouse", "(Ljdk/internal/org/jline/terminal/Terminal;Ljdk/internal/org/jline/terminal/MouseEvent;)Ljdk/internal/org/jline/terminal/MouseEvent;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "hasMouseSupport", "(Ljdk/internal/org/jline/terminal/Terminal;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "trackMouse", "(Ljdk/internal/org/jline/terminal/Terminal;Ljdk/internal/org/jline/terminal/Terminal$MouseTracking;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readExt", "(Ljdk/internal/org/jline/terminal/Terminal;)I"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readMouse", "(Ljava/util/function/IntSupplier;Ljdk/internal/org/jline/terminal/MouseEvent;)Ljdk/internal/org/jline/terminal/MouseEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "readMouse", "(Ljdk/internal/org/jline/terminal/Terminal;Ljdk/internal/org/jline/terminal/MouseEvent;)Ljdk/internal/org/jline/terminal/MouseEvent;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -44,7 +44,7 @@ public partial class MouseSupport
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public MouseSupport() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public MouseSupport() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

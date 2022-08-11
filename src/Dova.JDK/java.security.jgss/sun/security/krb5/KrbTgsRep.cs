@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,13 +31,13 @@ public partial class KrbTgsRep
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/security/krb5/KrbTgsRep;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "rep", "Lsun/security/krb5/internal/TGSRep;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "creds", "Lsun/security/krb5/Credentials;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "additionalCreds", "Lsun/security/krb5/Credentials;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "KrbTgsRep", "([BLsun/security/krb5/KrbTgsReq;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "isReferralSname", "(Lsun/security/krb5/PrincipalName;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setCredentials", "()Lsun/security/krb5/internal/ccache/Credentials;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getCreds", "()Lsun/security/krb5/Credentials;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "rep", "Lsun/security/krb5/internal/TGSRep;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "creds", "Lsun/security/krb5/Credentials;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "additionalCreds", "Lsun/security/krb5/Credentials;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "([BLsun/security/krb5/KrbTgsReq;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "isReferralSname", "(Lsun/security/krb5/PrincipalName;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setCredentials", "()Lsun/security/krb5/internal/ccache/Credentials;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getCreds", "()Lsun/security/krb5/Credentials;"));
 	}
 
 	[JniSignatureAttribute("Lsun/security/krb5/internal/TGSRep;", "private")]
@@ -88,7 +88,7 @@ public partial class KrbTgsRep
 	}
 
 	[JniSignatureAttribute("([BLsun/security/krb5/KrbTgsReq;)V", "")]
-	public KrbTgsRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.KrbTgsReq arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public KrbTgsRep(JavaArray<byte> arg0, Dova.JDK.sun.security.krb5.KrbTgsReq arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

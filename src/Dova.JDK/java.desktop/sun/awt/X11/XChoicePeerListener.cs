@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,8 +29,8 @@ public partial interface XChoicePeerListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/X11/XChoicePeerListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unfurledChoiceOpening", "(Lsun/awt/X11/ListHelper;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "unfurledChoiceClosing", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unfurledChoiceOpening", "(Lsun/awt/X11/ListHelper;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "unfurledChoiceClosing", "()V"));
 	}
 
 	[JniSignatureAttribute("(Lsun/awt/X11/ListHelper;)V", "public abstract")]

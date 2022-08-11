@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class AssociationChangeNotification
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/AssociationChangeNotification;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AssociationChangeNotification", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "event", "()Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "association", "()Lcom/sun/nio/sctp/Association;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "event", "()Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "association", "()Lcom/sun/nio/sctp/Association;"));
 	}
 
 	[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -42,7 +42,7 @@ public partial class AssociationChangeNotification
 	}
 
 	[JniSignatureAttribute("()V", "protected")]
-	public AssociationChangeNotification() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AssociationChangeNotification() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 
@@ -79,16 +79,16 @@ public partial class AssociationChangeNotification
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMM_UP", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMM_LOST", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RESTART", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHUTDOWN", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CANT_START", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AssocChangeEvent", "(Ljava/lang/String;I)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMM_UP", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMM_LOST", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RESTART", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHUTDOWN", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CANT_START", "Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;I)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/nio/sctp/AssociationChangeNotification$AssocChangeEvent;", "public static final")]
@@ -181,7 +181,7 @@ public partial class AssociationChangeNotification
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;I)V", "private")]
-		public AssocChangeEvent(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public AssocChangeEvent(Dova.JDK.java.lang.String arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,9 +31,9 @@ public partial class UnresolvedReferenceException
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/UnresolvedReferenceException;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "snippet", "Ljdk/jshell/DeclarationSnippet;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "UnresolvedReferenceException", "(Ljdk/jshell/DeclarationSnippet;[Ljava/lang/StackTraceElement;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getSnippet", "()Ljdk/jshell/DeclarationSnippet;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "snippet", "Ljdk/jshell/DeclarationSnippet;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/DeclarationSnippet;[Ljava/lang/StackTraceElement;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getSnippet", "()Ljdk/jshell/DeclarationSnippet;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/jshell/DeclarationSnippet;", "final")]
@@ -56,7 +56,7 @@ public partial class UnresolvedReferenceException
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/DeclarationSnippet;[Ljava/lang/StackTraceElement;)V", "")]
-	public UnresolvedReferenceException(Dova.JDK.jdk.jshell.DeclarationSnippet arg0, JavaArray<Dova.JDK.java.lang.StackTraceElement> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public UnresolvedReferenceException(Dova.JDK.jdk.jshell.DeclarationSnippet arg0, JavaArray<Dova.JDK.java.lang.StackTraceElement> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 

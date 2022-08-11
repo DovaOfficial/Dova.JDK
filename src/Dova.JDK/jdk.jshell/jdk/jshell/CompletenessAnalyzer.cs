@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,28 +31,28 @@ public partial class CompletenessAnalyzer
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scannerFactory", "Lcom/sun/tools/javac/parser/ScannerFactory;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "proc", "Ljdk/jshell/JShell;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XEXPR", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XDECL", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XSTMT", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XEXPR1o", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XDECL1o", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XSTMT1o", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XEXPR1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XDECL1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XSTMT1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XANY1", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XTERM", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XSTART", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XERRO", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XBRACESNEEDED", "I"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "XMODIFIER", "I"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompletenessAnalyzer", "(Ljdk/jshell/JShell;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "error", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "scan", "(Ljava/lang/String;)Ljdk/jshell/CompletenessAnalyzer$CaInfo;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "die", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scannerFactory", "Lcom/sun/tools/javac/parser/ScannerFactory;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "proc", "Ljdk/jshell/JShell;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XEXPR", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XDECL", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XSTMT", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XEXPR1o", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XDECL1o", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XSTMT1o", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XEXPR1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XDECL1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XSTMT1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XANY1", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XTERM", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XSTART", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XERRO", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XBRACESNEEDED", "I"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "XMODIFIER", "I"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/JShell;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "error", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "scan", "(Ljava/lang/String;)Ljdk/jshell/CompletenessAnalyzer$CaInfo;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "die", "()V"));
 	}
 
 	[JniSignatureAttribute("Lcom/sun/tools/javac/parser/ScannerFactory;", "private final")]
@@ -313,7 +313,7 @@ public partial class CompletenessAnalyzer
 	}
 
 	[JniSignatureAttribute("(Ljdk/jshell/JShell;)V", "")]
-	public CompletenessAnalyzer(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CompletenessAnalyzer(Dova.JDK.jdk.jshell.JShell arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
@@ -355,12 +355,12 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$CaLog;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CaLog", "(Lcom/sun/tools/javac/util/Context;Ljava/io/PrintWriter;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(ILjava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "error", "(ILcom/sun/tools/javac/util/JCDiagnostic$Error;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "report", "(Lcom/sun/tools/javac/util/JCDiagnostic;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "createLog", "(Lcom/sun/tools/javac/util/Context;)Ljdk/jshell/CompletenessAnalyzer$CaLog;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/util/Context;Ljava/io/PrintWriter;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(ILjava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "error", "(ILcom/sun/tools/javac/util/JCDiagnostic$Error;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "report", "(Lcom/sun/tools/javac/util/JCDiagnostic;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "createLog", "(Lcom/sun/tools/javac/util/Context;)Ljdk/jshell/CompletenessAnalyzer$CaLog;"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -369,7 +369,7 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/util/Context;Ljava/io/PrintWriter;)V", "private")]
-		public CaLog(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CaLog(Dova.JDK.com.sun.tools.javac.util.Context arg0, Dova.JDK.java.io.PrintWriter arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -424,29 +424,29 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$Parser;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "matchedFactory", "Ljava/util/function/Supplier;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "parseFactory", "Ljava/util/function/Function;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "in", "Ljdk/jshell/CompletenessAnalyzer$Matched;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "token", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "checkResult", "Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Parser", "(Ljava/util/function/Supplier;Lcom/sun/tools/javac/util/Names;Ljava/util/function/Function;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextToken", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "endPos", "()I"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseUnit", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "resetInput", "()V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldAbort", "(Ljdk/jshell/SourceCodeAnalysis$Completeness;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "shouldAbort", "(Ljdk/jshell/CompletenessAnalyzer$TK;)Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseExpressionOptionalSemi", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseSimpleStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseDeclaration", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disambiguateDeclarationVsExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseExpressionStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "disambiguateStatementVsExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "lastly", "(Ljdk/jshell/CompletenessAnalyzer$TK;)Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "optionalFinalSemi", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "parseStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "matchedFactory", "Ljava/util/function/Supplier;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "parseFactory", "Ljava/util/function/Function;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "in", "Ljdk/jshell/CompletenessAnalyzer$Matched;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "token", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "checkResult", "Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "names", "Lcom/sun/tools/javac/util/Names;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/util/function/Supplier;Lcom/sun/tools/javac/util/Names;Ljava/util/function/Function;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextToken", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "endPos", "()I"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseUnit", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "resetInput", "()V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldAbort", "(Ljdk/jshell/SourceCodeAnalysis$Completeness;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "shouldAbort", "(Ljdk/jshell/CompletenessAnalyzer$TK;)Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseExpressionOptionalSemi", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseSimpleStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseDeclaration", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disambiguateDeclarationVsExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseExpressionStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "disambiguateStatementVsExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseExpression", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "lastly", "(Ljdk/jshell/CompletenessAnalyzer$TK;)Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "optionalFinalSemi", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "parseStatement", "()Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
 		}
 
 		[JniSignatureAttribute("Ljava/util/function/Supplier;", "private final")]
@@ -539,7 +539,7 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Ljava/util/function/Supplier;Lcom/sun/tools/javac/util/Names;Ljava/util/function/Function;)V", "")]
-		public Parser(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.com.sun.tools.javac.util.Names arg1, Dova.JDK.java.util.function.Function arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public Parser(Dova.JDK.java.util.function.Supplier arg0, Dova.JDK.com.sun.tools.javac.util.Names arg1, Dova.JDK.java.util.function.Function arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
@@ -672,9 +672,9 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$CaInfo;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "unitEndPos", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "status", "Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CaInfo", "(Ljdk/jshell/SourceCodeAnalysis$Completeness;I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "unitEndPos", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "status", "Ljdk/jshell/SourceCodeAnalysis$Completeness;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/SourceCodeAnalysis$Completeness;I)V"));
 		}
 
 		[JniSignatureAttribute("I", "final")]
@@ -711,7 +711,7 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/SourceCodeAnalysis$Completeness;I)V", "")]
-		public CaInfo(Dova.JDK.jdk.jshell.SourceCodeAnalysis.Completeness arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+		public CaInfo(Dova.JDK.jdk.jshell.SourceCodeAnalysis.Completeness arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 		{
 		}
 
@@ -733,7 +733,7 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$SyntaxException;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "SyntaxException", "()V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -742,7 +742,7 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("()V", "private")]
-		public SyntaxException() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+		public SyntaxException() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 		{
 		}
 
@@ -767,19 +767,19 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$Matched;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "scanner", "Lcom/sun/tools/javac/parser/Scanner;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "current", "Lcom/sun/tools/javac/parser/Tokens$Token;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "prevCT", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "currentCT", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "stack", "Ljava/util/Deque;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Matched", "(Lcom/sun/tools/javac/parser/Scanner;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "hasNext", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next_0", "()Ljdk/jshell/CompletenessAnalyzer$CT;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "next_1", "()Ljava/lang/Object;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "match", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$TokenKind;)Ljdk/jshell/CompletenessAnalyzer$CT;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "db", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "advance", "()Lcom/sun/tools/javac/parser/Tokens$Token;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "nextCT", "()Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "scanner", "Lcom/sun/tools/javac/parser/Scanner;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "current", "Lcom/sun/tools/javac/parser/Tokens$Token;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "prevCT", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "currentCT", "Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "stack", "Ljava/util/Deque;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Lcom/sun/tools/javac/parser/Scanner;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "hasNext", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next_0", "()Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "next_1", "()Ljava/lang/Object;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "match", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$TokenKind;)Ljdk/jshell/CompletenessAnalyzer$CT;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "db", "(Ljava/lang/String;[Ljava/lang/Object;)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "advance", "()Lcom/sun/tools/javac/parser/Tokens$Token;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "nextCT", "()Ljdk/jshell/CompletenessAnalyzer$CT;"));
 		}
 
 		[JniSignatureAttribute("Lcom/sun/tools/javac/parser/Scanner;", "private final")]
@@ -858,7 +858,7 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Lcom/sun/tools/javac/parser/Scanner;)V", "")]
-		public Matched(Dova.JDK.com.sun.tools.javac.parser.Scanner arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Matched(Dova.JDK.com.sun.tools.javac.parser.Scanner arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 
@@ -929,13 +929,13 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$CT;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "kind", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "endPos", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "message", "Ljava/lang/String;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tok", "Lcom/sun/tools/javac/parser/Tokens$Token;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CT", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;Ljava/lang/String;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CT", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CT", "(Ljdk/jshell/CompletenessAnalyzer$TK;I)V"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "kind", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "endPos", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "message", "Ljava/lang/String;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tok", "Lcom/sun/tools/javac/parser/Tokens$Token;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/jshell/CompletenessAnalyzer$TK;I)V"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jshell/CompletenessAnalyzer$TK;", "public final")]
@@ -1000,17 +1000,17 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;Ljava/lang/String;)V", "private")]
-		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, Dova.JDK.com.sun.tools.javac.parser.Tokens.Token arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2))
+		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, Dova.JDK.com.sun.tools.javac.parser.Tokens.Token arg1, Dova.JDK.java.lang.String arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$Token;)V", "private")]
-		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, Dova.JDK.com.sun.tools.javac.parser.Tokens.Token arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1))
+		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, Dova.JDK.com.sun.tools.javac.parser.Tokens.Token arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljdk/jshell/CompletenessAnalyzer$TK;I)V", "private")]
-		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1))
+		public CT(Dova.JDK.jdk.jshell.CompletenessAnalyzer.TK arg0, int arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1))
 		{
 		}
 
@@ -1034,147 +1034,147 @@ public partial class CompletenessAnalyzer
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljdk/jshell/CompletenessAnalyzer$TK;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EOF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ERROR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IDENTIFIER", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNDERSCORE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CLASS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "MONKEYS_AT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMPORT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SEMI", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PACKAGE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONST", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GOTO", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CUSTOM", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ENUM", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IMPLEMENTS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTERFACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THROWS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BOOLEAN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BYTE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOUBLE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FLOAT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LONG", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SHORT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VOID", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ABSTRACT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FINAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NATIVE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STATIC", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRICTFP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PRIVATE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PROTECTED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PUBLIC", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRANSIENT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "VOLATILE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EXTENDS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COMMA", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AMP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LTLT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTGT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTGTGT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "QUES", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ASSERT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BREAK", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CATCH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CONTINUE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DO", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ELSE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FINALLY", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FOR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "IF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RETURN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SWITCH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SYNCHRONIZED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THROW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRY", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WHILE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CASE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DEFAULT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INTLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LONGLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FLOATLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOUBLELITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHARLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STRINGLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TRUE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "FALSE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NULL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "THIS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLUSPLUS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBSUB", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "INSTANCEOF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "NEW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUPER", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ARROW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLCOL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LPAREN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RPAREN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LBRACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RBRACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LBRACKET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "RBRACKET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ELLIPSIS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BANG", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TILDE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLON", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "EQEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BANGEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AMPAMP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BARBAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLUS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUB", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SLASH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CARET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PERCENT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PLUSEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SUBEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "STAREQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SLASHEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "AMPEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BAREQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CARETEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PERCENTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "LTLTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTGTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "GTGTGTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "UNMATCHED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "PARENS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BRACKETS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "BRACES", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOTSTAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "COLCOLNEW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "DOTCLASS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "tokenKindToTKMap", "Ljava/util/EnumMap;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "tokenKind", "Lcom/sun/tools/javac/parser/Tokens$TokenKind;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "belongs", "I"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "valueOp", "Z"));
-			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "mapping", "Ljava/util/function/Function;"));
-			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "$VALUES", "[Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TK", "(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;I)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TK", "(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;IZ)V"));
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "TK", "(Ljava/lang/String;II)V"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "values", "()[Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isError", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "$values", "()[Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassRefPtr, "tokenKindToTK", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$TokenKind;)Ljdk/jshell/CompletenessAnalyzer$TK;"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isStart", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isOkToTerminate", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isDeclaration", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isBracesNeeded", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isModifier", "()Z"));
-			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isExpression", "()Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EOF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ERROR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IDENTIFIER", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNDERSCORE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CLASS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "MONKEYS_AT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMPORT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SEMI", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PACKAGE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONST", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GOTO", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CUSTOM", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ENUM", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IMPLEMENTS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTERFACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THROWS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BOOLEAN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BYTE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOUBLE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FLOAT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LONG", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SHORT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VOID", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ABSTRACT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FINAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NATIVE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STATIC", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRICTFP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PRIVATE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PROTECTED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PUBLIC", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRANSIENT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "VOLATILE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EXTENDS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COMMA", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AMP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LTLT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTGT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTGTGT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "QUES", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ASSERT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BREAK", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CATCH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CONTINUE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DO", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ELSE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FINALLY", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FOR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "IF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RETURN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SWITCH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SYNCHRONIZED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THROW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRY", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WHILE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CASE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DEFAULT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INTLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LONGLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FLOATLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOUBLELITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHARLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STRINGLITERAL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TRUE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "FALSE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NULL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "THIS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLUSPLUS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUBSUB", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "INSTANCEOF", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "NEW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUPER", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ARROW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLCOL", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LPAREN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RPAREN", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LBRACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RBRACE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LBRACKET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "RBRACKET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ELLIPSIS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BANG", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TILDE", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLON", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "EQEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BANGEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AMPAMP", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BARBAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLUS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUB", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SLASH", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CARET", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PERCENT", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PLUSEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SUBEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "STAREQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SLASHEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "AMPEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BAREQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CARETEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PERCENTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "LTLTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTGTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "GTGTGTEQ", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "UNMATCHED", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "PARENS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BRACKETS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "BRACES", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOTSTAR", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "COLCOLNEW", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "DOTCLASS", "Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "tokenKindToTKMap", "Ljava/util/EnumMap;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "tokenKind", "Lcom/sun/tools/javac/parser/Tokens$TokenKind;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "belongs", "I"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "valueOp", "Z"));
+			FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "mapping", "Ljava/util/function/Function;"));
+			FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "$VALUES", "[Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;I)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;IZ)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;II)V"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "values", "()[Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "valueOf", "(Ljava/lang/String;)Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isError", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "$values", "()[Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetStaticMethodId(ClassPtr, "tokenKindToTK", "(Ljdk/jshell/CompletenessAnalyzer$TK;Lcom/sun/tools/javac/parser/Tokens$TokenKind;)Ljdk/jshell/CompletenessAnalyzer$TK;"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isStart", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isOkToTerminate", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isDeclaration", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isBracesNeeded", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isModifier", "()Z"));
+			MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isExpression", "()Z"));
 		}
 
 		[JniSignatureAttribute("Ljdk/jshell/CompletenessAnalyzer$TK;", "public static final")]
@@ -2961,17 +2961,17 @@ public partial class CompletenessAnalyzer
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;I)V", "private")]
-		public TK(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.com.sun.tools.javac.parser.Tokens.TokenKind arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
+		public TK(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.com.sun.tools.javac.parser.Tokens.TokenKind arg2, int arg3) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1, arg2, arg3))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;ILcom/sun/tools/javac/parser/Tokens$TokenKind;IZ)V", "private")]
-		public TK(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.com.sun.tools.javac.parser.Tokens.TokenKind arg2, int arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
+		public TK(Dova.JDK.java.lang.String arg0, int arg1, Dova.JDK.com.sun.tools.javac.parser.Tokens.TokenKind arg2, int arg3, bool arg4) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[1], arg0, arg1, arg2, arg3, arg4))
 		{
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;II)V", "private")]
-		public TK(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[2], arg0, arg1, arg2))
+		public TK(Dova.JDK.java.lang.String arg0, int arg1, int arg2) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[2], arg0, arg1, arg2))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,17 +30,17 @@ public partial class AWTPermissions
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lsun/awt/AWTPermissions;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOPLEVEL_WINDOW_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCESS_CLIPBOARD_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CHECK_AWT_EVENTQUEUE_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "TOOLKIT_MODALITY_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "READ_DISPLAY_PIXELS_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "CREATE_ROBOT_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "WATCH_MOUSE_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "SET_WINDOW_ALWAYS_ON_TOP_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ALL_AWT_EVENTS_PERMISSION", "Ljava/awt/AWTPermission;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassRefPtr, "ACCESS_SYSTEM_TRAY_PERMISSION", "Ljava/awt/AWTPermission;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "AWTPermissions", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOPLEVEL_WINDOW_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCESS_CLIPBOARD_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CHECK_AWT_EVENTQUEUE_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "TOOLKIT_MODALITY_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "READ_DISPLAY_PIXELS_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "CREATE_ROBOT_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "WATCH_MOUSE_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "SET_WINDOW_ALWAYS_ON_TOP_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ALL_AWT_EVENTS_PERMISSION", "Ljava/awt/AWTPermission;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetStaticFieldId(ClassPtr, "ACCESS_SYSTEM_TRAY_PERMISSION", "Ljava/awt/AWTPermission;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/awt/AWTPermission;", "public static final")]
@@ -189,7 +189,7 @@ public partial class AWTPermissions
 	}
 
 	[JniSignatureAttribute("()V", "private")]
-	public AWTPermissions() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public AWTPermissions() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

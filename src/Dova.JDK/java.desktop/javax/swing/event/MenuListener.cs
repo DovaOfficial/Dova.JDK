@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -30,9 +30,9 @@ public partial interface MenuListener
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/swing/event/MenuListener;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "menuSelected", "(Ljavax/swing/event/MenuEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "menuDeselected", "(Ljavax/swing/event/MenuEvent;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "menuCanceled", "(Ljavax/swing/event/MenuEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "menuSelected", "(Ljavax/swing/event/MenuEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "menuDeselected", "(Ljavax/swing/event/MenuEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "menuCanceled", "(Ljavax/swing/event/MenuEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljavax/swing/event/MenuEvent;)V", "public abstract")]

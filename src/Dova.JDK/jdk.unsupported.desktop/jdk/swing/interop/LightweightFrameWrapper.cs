@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,24 +31,24 @@ public partial class LightweightFrameWrapper
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/swing/interop/LightweightFrameWrapper;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "lwFrame", "Lsun/swing/JLightweightFrame;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "LightweightFrameWrapper", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setVisible", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createKeyEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IJIIC)Ljava/awt/event/KeyEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createUngrabEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;)Ljava/awt/AWTEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMouseEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IJIIIIIIZI)Ljava/awt/event/MouseEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "createMouseWheelEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IIII)Ljava/awt/event/MouseWheelEvent;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "isCompEqual", "(Ljava/awt/Component;Ljdk/swing/interop/LightweightFrameWrapper;)Z"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "notifyDisplayChanged", "(I)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "findComponentAt", "(Ljdk/swing/interop/LightweightFrameWrapper;IIZ)Ljava/awt/Component;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setBounds", "(IIII)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "addWindowFocusListener", "(Ljava/awt/event/WindowFocusListener;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getLightweightFrame", "()Lsun/swing/JLightweightFrame;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setContent", "(Ljdk/swing/interop/LightweightContentWrapper;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "overrideNativeWindowHandle", "(JLjava/lang/Runnable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "emulateActivation", "(Z)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setHostBounds", "(IIII)V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "lwFrame", "Lsun/swing/JLightweightFrame;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setVisible", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createKeyEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IJIIC)Ljava/awt/event/KeyEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createUngrabEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;)Ljava/awt/AWTEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMouseEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IJIIIIIIZI)Ljava/awt/event/MouseEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "createMouseWheelEvent", "(Ljdk/swing/interop/LightweightFrameWrapper;IIII)Ljava/awt/event/MouseWheelEvent;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "isCompEqual", "(Ljava/awt/Component;Ljdk/swing/interop/LightweightFrameWrapper;)Z"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "notifyDisplayChanged", "(I)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "findComponentAt", "(Ljdk/swing/interop/LightweightFrameWrapper;IIZ)Ljava/awt/Component;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setBounds", "(IIII)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "addWindowFocusListener", "(Ljava/awt/event/WindowFocusListener;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getLightweightFrame", "()Lsun/swing/JLightweightFrame;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setContent", "(Ljdk/swing/interop/LightweightContentWrapper;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "overrideNativeWindowHandle", "(JLjava/lang/Runnable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "emulateActivation", "(Z)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setHostBounds", "(IIII)V"));
 	}
 
 	[JniSignatureAttribute("Lsun/swing/JLightweightFrame;", "")]
@@ -71,7 +71,7 @@ public partial class LightweightFrameWrapper
 	}
 
 	[JniSignatureAttribute("()V", "public")]
-	public LightweightFrameWrapper() : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0]))
+	public LightweightFrameWrapper() : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0]))
 	{
 	}
 

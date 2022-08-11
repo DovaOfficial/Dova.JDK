@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -32,9 +32,9 @@ public partial class CloseableDisposerRecord
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Lcom/sun/imageio/stream/CloseableDisposerRecord;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "closeable", "Ljava/io/Closeable;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CloseableDisposerRecord", "(Ljava/io/Closeable;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "dispose", "()V"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "closeable", "Ljava/io/Closeable;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/io/Closeable;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "dispose", "()V"));
 	}
 
 	[JniSignatureAttribute("Ljava/io/Closeable;", "private")]
@@ -57,7 +57,7 @@ public partial class CloseableDisposerRecord
 	}
 
 	[JniSignatureAttribute("(Ljava/io/Closeable;)V", "public")]
-	public CloseableDisposerRecord(Dova.JDK.java.io.Closeable arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public CloseableDisposerRecord(Dova.JDK.java.io.Closeable arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 

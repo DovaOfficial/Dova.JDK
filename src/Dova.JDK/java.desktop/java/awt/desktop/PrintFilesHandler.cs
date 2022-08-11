@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -29,7 +29,7 @@ public partial interface PrintFilesHandler
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljava/awt/desktop/PrintFilesHandler;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "printFiles", "(Ljava/awt/desktop/PrintFilesEvent;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "printFiles", "(Ljava/awt/desktop/PrintFilesEvent;)V"));
 	}
 
 	[JniSignatureAttribute("(Ljava/awt/desktop/PrintFilesEvent;)V", "public abstract")]

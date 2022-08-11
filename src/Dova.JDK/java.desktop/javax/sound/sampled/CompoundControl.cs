@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,10 +31,10 @@ public partial class CompoundControl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sound/sampled/CompoundControl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "controls", "[Ljavax/sound/sampled/Control;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "CompoundControl", "(Ljavax/sound/sampled/CompoundControl$Type;[Ljavax/sound/sampled/Control;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "toString", "()Ljava/lang/String;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "getMemberControls", "()[Ljavax/sound/sampled/Control;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "controls", "[Ljavax/sound/sampled/Control;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljavax/sound/sampled/CompoundControl$Type;[Ljavax/sound/sampled/Control;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "toString", "()Ljava/lang/String;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "getMemberControls", "()[Ljavax/sound/sampled/Control;"));
 	}
 
 	[JniSignatureAttribute("[Ljavax/sound/sampled/Control;", "private final")]
@@ -57,7 +57,7 @@ public partial class CompoundControl
 	}
 
 	[JniSignatureAttribute("(Ljavax/sound/sampled/CompoundControl$Type;[Ljavax/sound/sampled/Control;)V", "protected")]
-	public CompoundControl(Dova.JDK.javax.sound.sampled.CompoundControl.Type arg0, JavaArray<Dova.JDK.javax.sound.sampled.Control> arg1) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0, arg1))
+	public CompoundControl(Dova.JDK.javax.sound.sampled.CompoundControl.Type arg0, JavaArray<Dova.JDK.javax.sound.sampled.Control> arg1) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0, arg1))
 	{
 	}
 
@@ -92,7 +92,7 @@ public partial class CompoundControl
 		{
 			ClassPtr = DovaVM.Runtime.FindClass("Ljavax/sound/sampled/CompoundControl$Type;");
 			ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "Type", "(Ljava/lang/String;)V"));
+			ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljava/lang/String;)V"));
 		}
 
 		[JniSignatureAttribute("(System.IntPtr)V", "public")]
@@ -101,7 +101,7 @@ public partial class CompoundControl
 		}
 
 		[JniSignatureAttribute("(Ljava/lang/String;)V", "protected")]
-		public Type(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+		public Type(Dova.JDK.java.lang.String arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 		{
 		}
 

@@ -1,7 +1,7 @@
 /*******************************************************************
  *
  * This file was automatically generated with:
- * Dova.Tools.DefinitionGenerator (on 2022.08.10-01:21)
+ * Dova.Tools.DefinitionGenerator (on 2022.08.11-07:58)
  *
  * For more information please visit:
  * https://github.com/DovaOfficial
@@ -31,12 +31,12 @@ public partial class DelegatingConstructorAccessorImpl
 	{
 		ClassPtr = DovaVM.Runtime.FindClass("Ljdk/internal/reflect/DelegatingConstructorAccessorImpl;");
 		ClassRefPtr = DovaVM.Runtime.NewGlobalRef(ClassPtr);
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "initialDelegate", "Ljdk/internal/reflect/ConstructorAccessorImpl;"));
-		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassRefPtr, "altDelegate", "Ljdk/internal/reflect/ConstructorAccessorImpl;"));
-		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "DelegatingConstructorAccessorImpl", "(Ljdk/internal/reflect/ConstructorAccessorImpl;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "setDelegate", "(Ljdk/internal/reflect/ConstructorAccessorImpl;)V"));
-		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassRefPtr, "delegate", "()Ljdk/internal/reflect/ConstructorAccessorImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "initialDelegate", "Ljdk/internal/reflect/ConstructorAccessorImpl;"));
+		FieldPtrs.Add(DovaVM.Runtime.GetFieldId(ClassPtr, "altDelegate", "Ljdk/internal/reflect/ConstructorAccessorImpl;"));
+		ConstructorPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "<init>", "(Ljdk/internal/reflect/ConstructorAccessorImpl;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "newInstance", "([Ljava/lang/Object;)Ljava/lang/Object;"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "setDelegate", "(Ljdk/internal/reflect/ConstructorAccessorImpl;)V"));
+		MethodPtrs.Add(DovaVM.Runtime.GetMethodId(ClassPtr, "delegate", "()Ljdk/internal/reflect/ConstructorAccessorImpl;"));
 	}
 
 	[JniSignatureAttribute("Ljdk/internal/reflect/ConstructorAccessorImpl;", "private final")]
@@ -73,7 +73,7 @@ public partial class DelegatingConstructorAccessorImpl
 	}
 
 	[JniSignatureAttribute("(Ljdk/internal/reflect/ConstructorAccessorImpl;)V", "")]
-	public DelegatingConstructorAccessorImpl(Dova.JDK.jdk.@internal.reflect.ConstructorAccessorImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassRefPtr, ConstructorPtrs[0], arg0))
+	public DelegatingConstructorAccessorImpl(Dova.JDK.jdk.@internal.reflect.ConstructorAccessorImpl arg0) : base(DovaVM.Runtime.NewObjectA(ClassPtr, ConstructorPtrs[0], arg0))
 	{
 	}
 
